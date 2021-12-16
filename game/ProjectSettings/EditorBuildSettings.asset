@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c8b048d50df7b8d468551e4b60b38ad5
+  - enabled: 1
+    path: Assets/Scenes/LawnWithToupeeMan.unity
+    guid: 6bae818327a8a7a4d9618929c511d242
+  - enabled: 1
+    path: Assets/Scenes/WordSearch.unity
+    guid: 774b6f40213a5d949972d74d5cbb8efd
   m_configObjects: {}
