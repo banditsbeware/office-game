@@ -2,19 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    GameObject[] pauseObjects;
-    // Start is called before the first frame update
+    [HideInInspector] public GameObject[] pauseObjects;
+	[HideInInspector] public GameObject[] notifs;
+	public GameObject canvasNotifs;
+	private TMP_Text canvasText;
+
     void Start()
     {
         Time.timeScale = 1;
         pauseObjects = GameObject.FindGameObjectsWithTag("Pause");
-		hidePaused();
+		notifs = GameObject.FindGameObjectsWithTag("notif");
+		hide(pauseObjects);
+		hide(notifs);
+
+	
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -22,16 +29,16 @@ public class UIManager : MonoBehaviour
             if(Time.timeScale == 1)
             {
                 Time.timeScale = 0;
-                showPaused();
+                show(pauseObjects);
             } else if (Time.timeScale == 0)
             {
                 Debug.Log("high");
                 Time.timeScale = 1;
-                hidePaused();
+                hide(pauseObjects);
             }
         }
     }
-	//finds current scene index and loads it again
+	// reloads current scene index (in Build Management)
     public void Reload(){
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
@@ -40,26 +47,37 @@ public class UIManager : MonoBehaviour
 			if(Time.timeScale == 1)
 			{
 				Time.timeScale = 0;
-				showPaused();
+				show(pauseObjects);
 			} else if (Time.timeScale == 0){
 				Time.timeScale = 1;
-				hidePaused();
+				hide(pauseObjects);
 			}
 	}
 
-	//shows objects with Pause tag
-	public void showPaused(){
-		foreach(GameObject g in pauseObjects){
+	//  shows objects with tag
+	public void show(GameObject[] tagg){
+		foreach(GameObject g in tagg){
 			g.SetActive(true);
 		}
 	}
 
-	//hides objects with Pause tag
-	public void hidePaused(){
-		foreach(GameObject g in pauseObjects){
+	// hides objects with tag
+	public void hide(GameObject[] tagg){
+		foreach(GameObject g in tagg){
 			g.SetActive(false);
 		}
 	}
+	// changes text in popup notification
+	public void notify(string popup){
+		canvasNotifs.GetComponent<TMP_Text>().text = popup;
+		show(notifs);
+	}
+
+	public void denoitfy()
+	{
+		hide(notifs);
+	}
+
 
 	// //loads inputted level
 	// public void LoadLevel(string level){
