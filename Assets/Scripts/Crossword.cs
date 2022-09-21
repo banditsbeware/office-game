@@ -18,12 +18,14 @@ public class Crossword : MonoBehaviour {
 
   // objects for instantiating buttons
   public GameObject exampleButton;
+  private GameObject button;
   private List<GameObject> buttons;
   private Image buttonImage;
 
     void Start()
     {
       CreateGrid();
+      PlaceWord("BRUV");
       
       // letterMatrix[4, 4].GetComponent<Image>().color = new Color32(150, 255, 0, 100);
     }
@@ -35,7 +37,7 @@ public class Crossword : MonoBehaviour {
     void CreateGrid() 
     {
       //create matrix for manipulating letters
-      GameObject[,] letterMatrix = new GameObject[size, size];
+      letterMatrix = new GameObject[size, size];
 
       //get grid components
       gridTrans = gridObject.GetComponent<RectTransform>();
@@ -51,16 +53,28 @@ public class Crossword : MonoBehaviour {
           char letter = alpha[Random.Range(0, 25)];
 
           //create copy of button prefab
-          GameObject button;
           button = Instantiate(exampleButton, gridObject.transform);
 
           //change text of the button to random char
-          TMP_Text text = button.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
-          text.text = char.ToString(letter);
+          ButtonTextComponent(button).text = char.ToString(letter);
 
           //add to independent matrix
           letterMatrix[i, j] = button;
         }
       }
+    }
+
+    void PlaceWord(string word)
+    {
+      for (int let = 0; let < word.Length; let++)
+      {
+        button = letterMatrix[let, 0];
+        ButtonTextComponent(button).text = word[let].ToString();
+      }
+    }
+
+    TMP_Text ButtonTextComponent(GameObject button)
+    {
+      return button.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
     }
 }
