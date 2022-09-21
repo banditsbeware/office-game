@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     [HideInInspector] public GameObject[] pauseObjects;
 	[HideInInspector] public GameObject[] notifs;
+	[HideInInspector] public GameObject[] minigames;
 	public GameObject canvasNotifs;
 	private TMP_Text canvasText;
 
@@ -16,10 +17,10 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1;
         pauseObjects = GameObject.FindGameObjectsWithTag("Pause");
 		notifs = GameObject.FindGameObjectsWithTag("notif");
+		minigames = GameObject.FindGameObjectsWithTag("minigame");
 		hide(pauseObjects);
 		hide(notifs);
-
-	
+		hide(minigames);
     }
 
     void Update()
@@ -32,7 +33,6 @@ public class UIManager : MonoBehaviour
                 show(pauseObjects);
             } else if (Time.timeScale == 0)
             {
-                Debug.Log("high");
                 Time.timeScale = 1;
                 hide(pauseObjects);
             }

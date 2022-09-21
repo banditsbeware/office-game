@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pause
   - notif
+  - minigame
   layers:
   - Default
   - TransparentFX
