@@ -13,16 +13,13 @@ public class Crossword : MonoBehaviour {
   private GridLayoutGroup gridComponent;
   private RectTransform gridTrans;
 
-
-  [SerializeField] public GameObject[,] letterMatrix;
+  //matrix of child objects
+  public GameObject[,] letterMatrix;
 
   // objects for instantiating buttons
   public GameObject exampleButton;
   private GameObject button;
-  private List<GameObject> buttons;
-  private Image buttonImage;
 
-  //word placement variables
   private static Dictionary<string, (int, int)> dirDict = new Dictionary<string, (int, int)>()
   {
     {"N", (0, -1)},
@@ -41,23 +38,35 @@ public class Crossword : MonoBehaviour {
     "E",
     "W",
     "NW",
+    "NW",
+    "SW",
     "SW",
     "NE",
+    "NE",
+    "SE",
     "SE"
   };
+
+  //selection variables 
+  private bool wordCompleted = true;
+  private GameObject firstSel;
+  private GameObject secondSel;
+
+  //words 
+  public GameObject response;
+  public Word[] wordList = new Word[5];
 
   void Start()
   {
     CreateGrid();
-
+    for (int x = 0; x < wordList.Length; x++)
+    {
+      PlaceWord(wordList[x]);
+    }
     //debugging stuff
-    PlaceWord("XXXXXXXXXX", "W", (0, 5));
-    PlaceWord("BEEF");
+    
+    // PlaceWord("XXXXXXXXXX", "W", (0, 5));
     // letterMatrix[4, 4].GetComponent<Image>().color = new Color32(150, 255, 0, 100);
-  }
-
-  void Update() {
-      
   }
 
   void CreateGrid() 
@@ -90,33 +99,27 @@ public class Crossword : MonoBehaviour {
     }
   }
 
-  void PlaceWord(string word, string facing, (int, int) origin)
+  void PlaceWord(Word it, string facing, (int, int) origin)
   {
-    (int, int) direction = dirDict[facing];
-
-    //iterate through each button object in a direction from an origin, change its text to word letter
-    for (int x = 0; x < word.Length; x++)
-    {
-      button = letterMatrix[origin.Item1 + direction.Item1 * x, origin.Item2 + direction.Item2 * x];
-      ButtonTextComponent(button).text = word[x].ToString();
-      button.GetComponent<WordsearchButton>().usedByOtherWord = true;
-    }
+    it.direction = dirDict[facing];
+    ChangeLetters(it);
   }
-  void PlaceWord(string word)
+  void PlaceWord(Word it)
   {
-    (int, int) direction = dirDict[dirList[Random.Range(0, 7)]];
-    (int, int) origin = (Random.Range(0, size), Random.Range(0, size));
+    string word = it.word;
+    it.direction = dirDict[dirList[Random.Range(0, dirList.Length)]];
+    it.origin = (Random.Range(0, size), Random.Range(0, size));
     bool overlap = true;
     int counter = 0;
     
     //check bounds of grid, and whether any letters overlap existing words
     while (overlap == true)
     {
-      while ((0 > origin.Item1 + direction.Item1 * word.Length) || (origin.Item1 + direction.Item1 * word.Length > size) ||
-            (0 > origin.Item2 + direction.Item2 * word.Length) || (origin.Item2 + direction.Item2 * word.Length > size))
+      while ((it.origin.Item1 + it.direction.Item1 * word.Length < 0) || (it.origin.Item1 + it.direction.Item1 * word.Length > size) ||
+            (it.origin.Item2 + it.direction.Item2 * word.Length < 0) || (it.origin.Item2 + it.direction.Item2 * word.Length > size))
       {
-        direction = dirDict[dirList[Random.Range(0, 7)]];
-        origin = (Random.Range(0, size), Random.Range(0, size));
+        it.direction = dirDict[dirList[Random.Range(0, 7)]];
+        it.origin = (Random.Range(0, size), Random.Range(0, size));
         Debug.Log("Attempt to be in square!");
 
         //break for over 200 attempts
@@ -124,7 +127,7 @@ public class Crossword : MonoBehaviour {
         if (counter >= 200)
         {
           Debug.Log("Too many tries :(");
-          break;
+          goto skip;
         }
       }
 
@@ -132,34 +135,114 @@ public class Crossword : MonoBehaviour {
       overlap = false;
       for (int x = 0; x < word.Length; x++)
       {
-        WordsearchButton heIs = letterMatrix[origin.Item1 + direction.Item1 * x, origin.Item2 + direction.Item2 * x].GetComponent<WordsearchButton>();
+        WordsearchButton heIs = letterMatrix[it.origin.Item1 + it.direction.Item1 * x, it.origin.Item2 + it.direction.Item2 * x].GetComponent<WordsearchButton>(); //gets button script to use variable
     
-        if (heIs.usedByOtherWord) //gets variable from button script within matrix
+        if (heIs.usedByOtherWord) 
         {
           overlap = true;
         }
       }
       if (overlap == true)
       {
-        origin = (Random.Range(0, size), Random.Range(0, size));
-        direction = dirDict[dirList[Random.Range(0, 7)]];
+        it.origin = (Random.Range(0, size), Random.Range(0, size));
+        // direction = dirDict[dirList[Random.Range(0, 7)]];
       }
 
       Debug.Log("Check for overlap!");
     }
-    //iterate through each button object in a direction from an origin, change its text to word letter
+    skip:
+    ChangeLetters(it);
+  }
+
+  //iterate through each button object in a direction from an origin, change its text to word letter
+  void ChangeLetters(Word it)
+  {
+    string word = it.word;
     for (int x = 0; x < word.Length; x++)
     {
-      button = letterMatrix[origin.Item1 + direction.Item1 * x, origin.Item2 + direction.Item2 * x];
+      button = letterMatrix[it.origin.Item1 + it.direction.Item1 * x, it.origin.Item2 + it.direction.Item2 * x];
       ButtonTextComponent(button).text = word[x].ToString();
       button.GetComponent<WordsearchButton>().usedByOtherWord = true;
+      if (x == 0)
+      {
+        it.startButton = button;
+      }
+      else if (x == word.Length - 1)
+      {
+        it.endButton = button;
+      }
 
-      Debug.Log(origin.ToString() + direction.ToString());
+      // Debug.Log(origin.ToString() + direction.ToString());
     }
   }
 
   TMP_Text ButtonTextComponent(GameObject button)
   {
-    return button.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+    return button.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
+  }
+
+  public void Selection(GameObject button)
+  {
+    if (wordCompleted)
+    {
+      wordCompleted = false;
+      firstSel = button;
+    }
+    else
+    {
+      wordCompleted = true;
+      secondSel = button;
+      CheckWord();
+    }
+  }
+
+  public void CheckWord()
+  {
+    bool aWordWasFound = false;
+    foreach (Word he in wordList)
+    {
+      if ((firstSel == he.endButton || firstSel == he.startButton) && (secondSel == he.endButton || secondSel == he.startButton))
+      {
+        firstSel.GetComponent<Button>().enabled = false;
+        secondSel.GetComponent<Button>().enabled = false;
+
+        he.found = true;
+        aWordWasFound = true;
+        Respond(he);
+
+        for (int x = 1; x < he.word.Length - 1; x++)
+        {
+          button = letterMatrix[he.origin.Item1 + he.direction.Item1 * x, he.origin.Item2 + he.direction.Item2 * x];
+          button.GetComponent<Image>().color = new Color32(200, 100, 100, 200);
+          button.GetComponent<Button>().enabled = false;
+            
+        }
+        break;
+      }
+    }
+
+    if (!aWordWasFound)
+    {
+      firstSel.GetComponent<WordsearchButton>().Reset();
+      secondSel.GetComponent<WordsearchButton>().Reset();
+    }
+  }
+
+  public void Respond(Word he)
+  {
+    response.GetComponent<TextMeshProUGUI>().text = he.responses[0];
+  }
+
+
+  [System.Serializable] public class Word
+  {
+    public string word;
+    public string[] responses;
+    public bool found = false;
+    public (int, int) direction;
+    public (int, int) origin;
+    [System.NonSerialized] public GameObject startButton;
+    [System.NonSerialized] public GameObject endButton;
   }
 }
+
