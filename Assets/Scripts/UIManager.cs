@@ -60,6 +60,9 @@ public class UIManager : MonoBehaviour
 			g.SetActive(true);
 		}
 	}
+	public void show(GameObject obj){
+			obj.SetActive(true);
+	}
 
 	// hides objects with tag
 	public void hide(GameObject[] tagg){
@@ -67,6 +70,10 @@ public class UIManager : MonoBehaviour
 			g.SetActive(false);
 		}
 	}
+	public void hide(GameObject obj){
+			obj.SetActive(false);
+	}
+	
 	// changes text in popup notification
 	public void notify(string popup){
 		canvasNotifs.GetComponent<TMP_Text>().text = popup;

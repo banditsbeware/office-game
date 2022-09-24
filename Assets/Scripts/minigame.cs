@@ -9,6 +9,7 @@ public class minigame : MonoBehaviour
     public GameObject UI;
     private UIManager UIMan;
     public GameObject notification;
+    public GameObject theMinigame;
     private void Start()
     {
         UIMan = UI.GetComponent<UIManager>();
@@ -47,6 +48,6 @@ public class minigame : MonoBehaviour
 // begins cooler mini-game
     public void startCoolerGame()
     {
-        Debug.Log("GAME!");
+        UIMan.show(theMinigame);
     }
 }
