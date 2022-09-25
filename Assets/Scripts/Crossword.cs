@@ -63,10 +63,10 @@ public class Crossword : MonoBehaviour {
     {
       PlaceWord(wordList[x]);
     }
+
     //debugging stuff
-    
     // PlaceWord("XXXXXXXXXX", "W", (0, 5));
-    // letterMatrix[4, 4].GetComponent<Image>().color = new Color32(150, 255, 0, 100);
+    // PlaceWord("COOMER")
   }
 
   void CreateGrid() 
@@ -163,6 +163,8 @@ public class Crossword : MonoBehaviour {
       button = letterMatrix[it.origin.Item1 + it.direction.Item1 * x, it.origin.Item2 + it.direction.Item2 * x];
       ButtonTextComponent(button).text = word[x].ToString();
       button.GetComponent<WordsearchButton>().usedByOtherWord = true;
+      
+      //assign first and last button to Word object
       if (x == 0)
       {
         it.startButton = button;
@@ -181,6 +183,7 @@ public class Crossword : MonoBehaviour {
     return button.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
   }
 
+//sent by Wordsearch button script when button is pressed
   public void Selection(GameObject button)
   {
     if (wordCompleted)
@@ -199,6 +202,8 @@ public class Crossword : MonoBehaviour {
   public void CheckWord()
   {
     bool aWordWasFound = false;
+
+    //compare first and last button of selection and Word's button objects assigned in ChangeLetters()
     foreach (Word he in wordList)
     {
       if ((firstSel == he.endButton || firstSel == he.startButton) && (secondSel == he.endButton || secondSel == he.startButton))
@@ -210,6 +215,7 @@ public class Crossword : MonoBehaviour {
         aWordWasFound = true;
         Respond(he);
 
+        //take out buttons in middle of word
         for (int x = 1; x < he.word.Length - 1; x++)
         {
           button = letterMatrix[he.origin.Item1 + he.direction.Item1 * x, he.origin.Item2 + he.direction.Item2 * x];
@@ -228,6 +234,7 @@ public class Crossword : MonoBehaviour {
     }
   }
 
+  //set text in minigame canvas to response in Word object
   public void Respond(Word he)
   {
     response.GetComponent<TextMeshProUGUI>().text = he.responses[0];
