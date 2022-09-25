@@ -7,6 +7,7 @@ using TMPro;
 public class Crossword : MonoBehaviour {
   private static char[] alpha = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' }; 
   
+  [SerializeField] private TextWriter textWriter;
   //grid variables
   public int size;
   public GameObject gridObject;
@@ -53,7 +54,7 @@ public class Crossword : MonoBehaviour {
   private GameObject secondSel;
 
   //words 
-  public GameObject response;
+  public TMP_Text response;
   public Word[] wordList = new Word[5];
 
   void Start()
@@ -120,13 +121,13 @@ public class Crossword : MonoBehaviour {
       {
         it.direction = dirDict[dirList[Random.Range(0, 7)]];
         it.origin = (Random.Range(0, size), Random.Range(0, size));
-        Debug.Log("Attempt to be in square!");
+        // Debug.Log("Attempt to be in square!");
 
         //break for over 200 attempts
         counter ++;
         if (counter >= 200)
         {
-          Debug.Log("Too many tries :(");
+          // Debug.Log("Too many tries :(");
           goto skip;
         }
       }
@@ -148,7 +149,7 @@ public class Crossword : MonoBehaviour {
         // direction = dirDict[dirList[Random.Range(0, 7)]];
       }
 
-      Debug.Log("Check for overlap!");
+      // Debug.Log("Check for overlap!");
     }
     skip:
     ChangeLetters(it);
@@ -237,7 +238,7 @@ public class Crossword : MonoBehaviour {
   //set text in minigame canvas to response in Word object
   public void Respond(Word he)
   {
-    response.GetComponent<TextMeshProUGUI>().text = he.responses[0];
+   textWriter.AddWriter(response, he.responses[0]);
   }
 
 

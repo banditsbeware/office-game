@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 245682866}
   - component: {fileID: 245682865}
   m_Layer: 5
-  m_Name: PostIt
+  m_Name: postIt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1006,16 +1006,15 @@ MonoBehaviour:
 
     of Conversation:
 
-    -Fraternity
+    -cherub
 
-    -Beans
+    -beans
 
-    -Juicy
+    -juicy
 
-    -Oh
-    Me, Oh My
+    -yeat
 
-    -Yoink'
+    -evade'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8e590563a4fc57d4d95cb5cb0c1645fb, type: 2}
   m_sharedMaterial: {fileID: -5883756315091729841, guid: 8e590563a4fc57d4d95cb5cb0c1645fb, type: 2}
@@ -1104,7 +1103,7 @@ GameObject:
   - component: {fileID: 900061120}
   - component: {fileID: 900061119}
   m_Layer: 5
-  m_Name: Image
+  m_Name: water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3385,6 +3384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1890632087}
   - component: {fileID: 1890632086}
+  - component: {fileID: 1890632088}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -3423,6 +3423,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890632088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890632085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe696104ec1cf914ea3491d5c95d16b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1900030901
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,10 +3467,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1205700bf89b214d9e6a2578f9d6ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textWriter: {fileID: 1890632088}
   size: 10
   gridObject: {fileID: 1099324278}
   exampleButton: {fileID: 1792997667608175900, guid: aa248ea424af6524f9702284f812f145, type: 3}
-  response: {fileID: 1340357814}
+  response: {fileID: 1340357816}
   wordList:
   - word: CHERUB
     responses:
