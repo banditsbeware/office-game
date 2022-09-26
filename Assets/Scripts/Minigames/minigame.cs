@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class minigame : MonoBehaviour
 {
-    private bool isGame = false;
-    
-    public GameObject UI;
-    private UIManager UIMan;
+    [SerializeField] private UIManager UIMan;
     public GameObject notification;
     public GameObject theMinigame;
+
+    private bool isGame = false;
+    
+    [SerializeField] private string eMessage;
+
     private void Start()
     {
-        UIMan = UI.GetComponent<UIManager>();
     }
     private void Update()
     {
@@ -22,7 +23,7 @@ public class minigame : MonoBehaviour
             {
                 UIMan.denoitfy();
                 
-                startCoolerGame();
+                startGame();
             }
         }
     }
@@ -30,7 +31,7 @@ public class minigame : MonoBehaviour
         if (other.tag == "Player") 
         {
             //changes popup text and shows popup notification in UIManager
-            UIMan.notify("Harold [E]");
+            UIMan.notify(eMessage);
 
             isGame = true;
         }
@@ -46,7 +47,7 @@ public class minigame : MonoBehaviour
         }
     }
 // begins cooler mini-game
-    public void startCoolerGame()
+    public void startGame()
     {
         UIMan.show(theMinigame);
     }

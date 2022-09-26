@@ -20,6 +20,7 @@ public class Crossword : MonoBehaviour {
   // objects for instantiating buttons
   public GameObject exampleButton;
   private GameObject button;
+  private static int fontConst = 600;
 
   private static Dictionary<string, (int, int)> dirDict = new Dictionary<string, (int, int)>()
   {
@@ -32,7 +33,7 @@ public class Crossword : MonoBehaviour {
     {"NE", (-1, -1)},
     {"SE", (-1, 1)}
   };
-  private string[] dirList = new string[]
+  private static string[] dirList = new string[]
   {
     "N",
     "S",
@@ -93,6 +94,7 @@ public class Crossword : MonoBehaviour {
 
         //change text of the button to random char
         ButtonTextComponent(button).text = char.ToString(letter);
+        ButtonTextComponent(button).fontSize = fontConst / size;
 
         //add to independent matrix
         letterMatrix[i, j] = button;
@@ -121,13 +123,13 @@ public class Crossword : MonoBehaviour {
       {
         it.direction = dirDict[dirList[Random.Range(0, 7)]];
         it.origin = (Random.Range(0, size), Random.Range(0, size));
-        // Debug.Log("Attempt to be in square!");
+        Debug.Log("Attempt to be in square!");
 
         //break for over 200 attempts
         counter ++;
         if (counter >= 200)
         {
-          // Debug.Log("Too many tries :(");
+          Debug.Log("Too many tries :(");
           goto skip;
         }
       }
@@ -149,7 +151,7 @@ public class Crossword : MonoBehaviour {
         // direction = dirDict[dirList[Random.Range(0, 7)]];
       }
 
-      // Debug.Log("Check for overlap!");
+      Debug.Log("Check for overlap!");
     }
     skip:
     ChangeLetters(it);

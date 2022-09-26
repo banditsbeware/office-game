@@ -7,7 +7,6 @@ public class MenuButtons : MonoBehaviour
 {
       public void LoadScene(string name)
    {
-      Debug.Log("aaaa");
       SceneManager.LoadScene("Office");
    }
 }
