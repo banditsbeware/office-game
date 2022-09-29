@@ -9,7 +9,7 @@ public class MoveHim : MonoBehaviour {
     public Rigidbody2D rb;
 
     // private BoxCollider2D bc;
-   // private Animator anim;
+    // private Animator anim;
 
     Vector2 v;
 
