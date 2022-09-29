@@ -12,30 +12,26 @@ public class UIManager : MonoBehaviour
 	public GameObject canvasNotifs;
 	private TMP_Text canvasText;
 
+	// gamestates are: pause, play, window
+	public string gameState = "play";
+
     void Start()
     {
         Time.timeScale = 1;
         pauseObjects = GameObject.FindGameObjectsWithTag("Pause");
 		notifs = GameObject.FindGameObjectsWithTag("notif");
 		minigames = GameObject.FindGameObjectsWithTag("minigame");
+
 		hide(pauseObjects);
 		hide(notifs);
-		// hide(minigames);
+		hide(minigames);
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if(Time.timeScale == 1)
-            {
-                Time.timeScale = 0;
-                show(pauseObjects);
-            } else if (Time.timeScale == 0)
-            {
-                Time.timeScale = 1;
-                hide(pauseObjects);
-            }
+            pauseControl();
         }
     }
 	// reloads current scene index (in Build Management)
@@ -43,15 +39,27 @@ public class UIManager : MonoBehaviour
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
-	public void pauseControl(){
-			if(Time.timeScale == 1)
-			{
-				Time.timeScale = 0;
-				show(pauseObjects);
-			} else if (Time.timeScale == 0){
-				Time.timeScale = 1;
-				hide(pauseObjects);
-			}
+	public void pauseControl()
+	{
+		Debug.Log(gameState + Time.time);
+		if(gameState == "play")
+		{
+			Time.timeScale = 0;
+			show(pauseObjects);
+			gameState = "pause";
+		} 
+		else if (gameState == "pause")
+		{
+			Time.timeScale = 1;
+			hide(pauseObjects);
+			gameState = "play";
+		}
+		else if (gameState == "window")
+		{
+			hide(minigames);
+			gameState = "play";
+			Debug.Log("miniGone");
+		}
 	}
 
 	//  shows objects with tag

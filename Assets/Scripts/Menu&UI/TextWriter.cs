@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class TextWriter : MonoBehaviour
 {
     private TMP_Text uiText;
-    private string textToWrite;
+    public string textToWrite;
     private int charIndex;
     private float timePerChar;
     private float timer;
@@ -43,7 +45,7 @@ public class TextWriter : MonoBehaviour
                 string text = textToWrite.Substring(0, charIndex);
                 if (invisChars)
                 {
-                    text += "<alpha=#00>" + textToWrite.Substring(charIndex) + "</color>";
+                    text += "<alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
                 }
                 uiText.text = text;
 
