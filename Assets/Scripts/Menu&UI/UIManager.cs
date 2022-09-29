@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
 		minigames = GameObject.FindGameObjectsWithTag("minigame");
 		hide(pauseObjects);
 		hide(notifs);
-		hide(minigames);
+		// hide(minigames);
     }
 
     void Update()

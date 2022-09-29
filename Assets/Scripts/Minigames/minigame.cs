@@ -12,9 +12,6 @@ public class minigame : MonoBehaviour
     
     [SerializeField] private string eMessage;
 
-    private void Start()
-    {
-    }
     private void Update()
     {
         if (isGame)
