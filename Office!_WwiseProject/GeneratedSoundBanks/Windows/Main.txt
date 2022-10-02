@@ -1,0 +1,18 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2823449565	Stop_Helvetica			\Default Work Unit\Stop_Helvetica	
+	3069382355	Play_Helvetica			\Default Work Unit\Play_Helvetica	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	4091656514	gameState			\Default Work Unit\gameState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	gameState			
+	1256202815	play	gameState			
+	2330457189	window	gameState			
+	2607556080	menu	gameState			
+	3092587493	pause	gameState			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	311612861	helvetica_body	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_body_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Body\helvetica_body		12436232
+	355675837	helvetica_entry	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_entry_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Entry\helvetica_entry		1742676
+

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{906F145D-8EC4-98DD-8896-A13B6757E8AB}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A7D170F8-7AB6-DC43-E3B9-A6F7B339328A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,9 +19,67 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="3127962312" Name="Music Bus"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="4091656514" Name="gameState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1256202815" Name="play"/>
+						<State Id="2330457189" Name="window"/>
+						<State Id="2607556080" Name="menu"/>
+						<State Id="3092587493" Name="pause"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B287D99E-39E8-AB69-963E-726A5EAC9DCF}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="311612861" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>helvetica_body.wav</ShortName>
+					<CachePath>SFX/helvetica_body_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="355675837" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>helvetica_entry.wav</ShortName>
+					<CachePath>SFX/helvetica_entry_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3069382355" Name="Play_Helvetica" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="2607556080"/>
+							<MediaRefs>
+								<MediaRef Id="311612861"/>
+								<MediaRef Id="355675837"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="4091656514" Id="2607556080" Name="menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2823449565" Name="Stop_Helvetica" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="4091656514" Id="1256202815" Name="play"/>
+					</ActionSetState>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="4091656514" Name="gameState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1256202815" Name="play"/>
+						<State Id="2330457189" Name="window"/>
+						<State Id="2607556080" Name="menu"/>
+						<State Id="3092587493" Name="pause"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FF73F5CA-17D1-D9A7-A86E-3B9226CFC49C}</FileHash>
+	<FileHash>{B6514C63-D649-2152-8362-8E7175083677}</FileHash>
 </SoundBanksInfo>

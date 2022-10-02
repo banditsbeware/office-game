@@ -1,4 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	4091656514	gameState			\Default Work Unit\gameState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	gameState			
+	1256202815	play	gameState			
+	2330457189	window	gameState			
+	2607556080	menu	gameState			
+	3092587493	pause	gameState			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	3127962312	Music Bus			\Default Work Unit\Master Audio Bus\Music Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

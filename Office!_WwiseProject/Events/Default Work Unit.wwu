@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Helvetica" ID="{1D09C328-91E0-4EB8-B093-511BBBC30AE1}">
+					<ChildrenList>
+						<Action Name="" ID="{3945DB99-4E2B-464F-B4C1-7070496C567A}" ShortID="951654808">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{DDABF3F8-D8FC-4DCB-AA83-09F624DD9438}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F88F1BF6-0549-4518-AC7F-A7F3B006FAF2}" ShortID="429881720">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Helvetica" ID="{1DB3CC6A-8FD5-4A5F-9122-A0FA6790D55F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Helvetica" ID="{19BD895C-893E-4C00-80AA-6DC32B436618}">
+					<ChildrenList>
+						<Action Name="" ID="{10FC23FA-8E57-4116-AABC-92BE3D60FFF0}" ShortID="117473794">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A12E728E-7958-4DD1-82D5-E0392800F200}" ShortID="730381388">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="10">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A4142F91-A34D-4DF9-BF6A-B9549CCD5A77}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Helvetica" ID="{1DB3CC6A-8FD5-4A5F-9122-A0FA6790D55F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
