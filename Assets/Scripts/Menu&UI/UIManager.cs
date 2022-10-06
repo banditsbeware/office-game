@@ -9,8 +9,7 @@ public class UIManager : MonoBehaviour
     [HideInInspector] public GameObject[] pauseObjects;
 	[HideInInspector] public GameObject[] notifs;
 	[HideInInspector] public GameObject[] minigames;
-	public GameObject canvasNotifs;
-	private TMP_Text canvasText;
+	[SerializeField] private TMP_Text canvasText;
 
 	// gamestates are: pause, play, window
 	public string gameState = "play";
@@ -84,7 +83,7 @@ public class UIManager : MonoBehaviour
 	
 	// changes text in popup notification
 	public void notify(string popup){
-		canvasNotifs.GetComponent<TMP_Text>().text = popup;
+		canvasText.text = popup;
 		show(notifs);
 	}
 

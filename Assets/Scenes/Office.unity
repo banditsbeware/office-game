@@ -3826,7 +3826,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 400, y: 300}
+  m_Size: {x: 50, y: 50}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4760,7 +4760,7 @@ MonoBehaviour:
   pauseObjects: []
   notifs: []
   minigames: []
-  canvasNotifs: {fileID: 1965811755}
+  canvasText: {fileID: 1965811757}
   gameState: play
 --- !u!4 &1890632087
 Transform:
