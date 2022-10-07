@@ -1,4 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
+	219189707	Play_Office_Amb			\Default Work Unit\Play_Office_Amb	
+	1325704673	Stop_Office_Amb			\Default Work Unit\Stop_Office_Amb	
 	2823449565	Stop_Helvetica			\Default Work Unit\Stop_Helvetica	
 	3069382355	Play_Helvetica			\Default Work Unit\Play_Helvetica	
 
@@ -13,6 +15,11 @@ State	ID	Name	State Group			Notes
 	3092587493	pause	gameState			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	311612861	helvetica_body	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_body_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Body\helvetica_body		12436232
-	355675837	helvetica_entry	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_entry_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Entry\helvetica_entry		1742676
+	62476401	Office_Keys1	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_27254CB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys1		13434976
+	202055670	Office_Keys2	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_CA9C8517.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys2		6743072
+	311612861	helvetica_body	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_body_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Body\helvetica_body		12436232
+	355675837	helvetica_entry	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_entry_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Entry\helvetica_entry		1742676
+	374596652	Office_RoomTone	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_8626E18B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_RoomTone		14558852
+	472720849	Office_Silence	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_FB7FCDEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Silence		11319188
+	1067933309	Office_Phone	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_576FCFBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Phone		4576208
 

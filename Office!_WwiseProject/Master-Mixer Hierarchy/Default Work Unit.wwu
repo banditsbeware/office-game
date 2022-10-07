@@ -11,6 +11,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music Bus" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}"/>
+						<Bus Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

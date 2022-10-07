@@ -3,7 +3,218 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Ambience" ID="{D7F574E2-EE45-45BB-9054-D681CE441A9D}" ShortID="881259729"/>
+				<Folder Name="Ambience" ID="{D7F574E2-EE45-45BB-9054-D681CE441A9D}" ShortID="881259729">
+					<ChildrenList>
+						<Sound Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" ShortID="612274254">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Office_Ambiance" ID="{EF1084F8-7369-4D7E-894D-94BC77781DA9}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.33029150823828"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.798174904942961"/>
+										<Property Name="LoopBegin" Type="Real64" Value="4.25693282636248"/>
+										<Property Name="LoopEnd" Type="Real64" Value="71.8357414448669"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="75.8266159695817"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Office_Ambiance.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="374596652"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Office_Ambiance" ID="{EF1084F8-7369-4D7E-894D-94BC77781DA9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" ShortID="322818311">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="15"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Office_Phone" ID="{0015E7CA-08D4-463E-9108-B92DC55A067C}" ShortID="241317461">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Office_Ambiance" ID="{12377CE9-40A5-4164-82D8-269C50F158FE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.33029150823828"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.798174904942961"/>
+												<Property Name="LoopBegin" Type="Real64" Value="79.9074610597713"/>
+												<Property Name="LoopEnd" Type="Real64" Value="103.185822208716"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="79.4569121343078"/>
+												<Property Name="TrimEnd" Type="Real64" Value="103.29083344897"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Office_Ambiance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1067933309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Office_Ambiance" ID="{12377CE9-40A5-4164-82D8-269C50F158FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Office_Keys1" ID="{246B5D78-B0C6-45B7-AF42-EE70CCE03D12}" ShortID="1010449433">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Office_Ambiance" ID="{BE249C91-0096-4D5B-8A14-D2407E20528A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.06423320659063"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.798174904942961"/>
+												<Property Name="LoopBegin" Type="Real64" Value="108.019670468948"/>
+												<Property Name="LoopEnd" Type="Real64" Value="173.736070975919"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="106.423320659062"/>
+												<Property Name="TrimEnd" Type="Real64" Value="176.396653992395"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Office_Ambiance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="62476401"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Office_Ambiance" ID="{BE249C91-0096-4D5B-8A14-D2407E20528A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Office_Keys2" ID="{661FAF63-7930-4B2A-B527-5B98D884A257}" ShortID="869012421">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Office_Ambiance" ID="{3D42B38B-3759-4849-B919-B7DCA398EFF0}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.33029150823828"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.798174904942961"/>
+												<Property Name="LoopBegin" Type="Real64" Value="176.130595690748"/>
+												<Property Name="LoopEnd" Type="Real64" Value="208.057591888466"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="174.800304182509"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Office_Ambiance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="202055670"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Office_Ambiance" ID="{3D42B38B-3759-4849-B919-B7DCA398EFF0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Office_Silence" ID="{8811CBAB-2A96-446F-9514-3FC8CBB1392F}" ShortID="558490475">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Office_Ambiance" ID="{658EA699-8FCC-4287-BEEE-9E99C1271289}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.33029150823828"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.798174904942961"/>
+												<Property Name="LoopBegin" Type="Real64" Value="67.3729627265366"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.41934559438385"/>
+												<Property Name="TrimEnd" Type="Real64" Value="67.3729627265366"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Office_Ambiance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="472720849"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Office_Ambiance" ID="{658EA699-8FCC-4287-BEEE-9E99C1271289}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

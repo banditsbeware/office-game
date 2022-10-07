@@ -9,8 +9,9 @@
   <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
+  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2022.1.0.7985/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2022.1.0.7985</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../Office!_WwiseProject/Office!_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Office!/Office!_WwiseProject/Office!_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

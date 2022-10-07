@@ -55,6 +55,58 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Office_Amb" ID="{434E933B-39FF-45C6-B5BE-312AA1A9F62F}">
+					<ChildrenList>
+						<Action Name="" ID="{A52756B9-2D87-4480-911C-3BBA5EDC87F2}" ShortID="264171854">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8D80F9C5-2EFC-4ACD-A230-D63CCC0B0606}" ShortID="356104271">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C6CA22B4-0077-4BC9-BFAB-72E3E28214DB}" ShortID="161264473">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Office_Amb" ID="{C91156B3-FD71-49AE-9035-F7E6B3F6723A}">
+					<ChildrenList>
+						<Action Name="" ID="{FD24D190-FE0F-4113-BEAF-ECE0E7F438FD}" ShortID="624816195">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{24DCB028-A6C1-464B-88C5-7B9FB0B0AA1D}" ShortID="16743916">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
