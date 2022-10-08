@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c15a791527795da48939d0c31e68084d
+guid: 2fabe30cd15719f43aec289ededf7ebd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cubicle_Main
+      name: Cubicle_
       rect:
         serializedVersion: 2
         x: 0
@@ -137,35 +137,14 @@ TextureImporter:
         width: 64
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcde344515110fd41a19d67746d10cbc
-      internalID: 1733855211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cubicle_Carpet
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1504
-        width: 64
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f26bcab713382943bc3ba6800670fdf
-      internalID: -1522851227
+      spriteID: 9ae248f51cd117d429d1f340cb5b9961
+      internalID: -1041934110
       vertices: []
       indices: 
       edges: []
@@ -174,82 +153,19 @@ TextureImporter:
       name: Cubicle_Mug
       rect:
         serializedVersion: 2
-        x: 74
-        y: 1583
+        x: 64
+        y: 1594
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10f227910453fc946af1e4e9ed70530f
-      internalID: 1701739613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cubicle_Keyboart
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 1579
-        width: 12
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06f992e2474fcc641a7a6c7dc734f18b
-      internalID: 2030533405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cubicle_Chair
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 1559
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97a3cb4b38ec5004ab68cbd3f2c9cf61
-      internalID: 1864761707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cubicle_Mouse
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 1581
-        width: 2
-        height: 3
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2075b85996a5f0744b82d36b5f9bbe31
-      internalID: -1423638542
+      spriteID: 72013dbab52d0a941b4eccea57d7df0e
+      internalID: -660247512
       vertices: []
       indices: 
       edges: []
@@ -258,8 +174,8 @@ TextureImporter:
       name: Cubicle_Computer
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1585
+        x: 80
+        y: 1588
         width: 13
         height: 12
       alignment: 0
@@ -269,18 +185,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 862f7b31fcca75548a031adf97157e17
-      internalID: 586937774
+      spriteID: d9fc4842fd08f8d42947fd18e8b04eba
+      internalID: -2022498750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cubicle_PicFrame
+      name: Cubicle_Keyboart
       rect:
         serializedVersion: 2
-        x: 104
-        y: 1586
+        x: 80
+        y: 1582
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c49f894f75f1d4d9081349fb0baa61
+      internalID: -869329538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_Mouse
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1583
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea8b17e7e757e847912a6c260dfac4c
+      internalID: -1812794706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_Picture
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1594
         width: 7
         height: 6
       alignment: 0
@@ -290,8 +248,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a5ccc3dc77eb094d943b62c7ab485a6
-      internalID: -1773540564
+      spriteID: 4f3fd9b8ee2fcbe4b8c355f97acedb9f
+      internalID: 1945529810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_Laptop
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1568
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104c139ab82004e48858968179518542
+      internalID: -1961622119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_Gamer
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1554
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062c63121b75e874e84b4763e35a7af3
+      internalID: -125182391
       vertices: []
       indices: 
       edges: []
@@ -300,8 +300,8 @@ TextureImporter:
       name: Cubicle_Poster
       rect:
         serializedVersion: 2
-        x: 113
-        y: 1589
+        x: 112
+        y: 1594
         width: 11
         height: 6
       alignment: 0
@@ -311,8 +311,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6990be6343ee894a988f8d0ee2d7da2
-      internalID: -528809439
+      spriteID: 644abd78f329ca441b62a5c4b01fab53
+      internalID: 1914601303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_Chair
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1581
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083e798ea640120439b9ebed7db4e4f9
+      internalID: -1256183574
       vertices: []
       indices: 
       edges: []
@@ -328,15 +349,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cubicle_Keyboart: 2030533405
-      Cubicle_Carpet: -1522851227
-      Cubicle_PicFrame: -1773540564
-      Cubicle_Main: 1733855211
-      Cubicle_Poster: -528809439
-      Cubicle_Computer: 586937774
-      Cubicle_Chair: 1864761707
-      Cubicle_Mouse: -1423638542
-      Cubicle_Mug: 1701739613
+      Cubicle_Keyboart: -869329538
+      Cubicle_: -1041934110
+      Cubicle_Gamer: -125182391
+      Cubicle_Picture: 1945529810
+      Cubicle_Poster: 1914601303
+      Cubicle_Laptop: -1961622119
+      Cubicle_Computer: -2022498750
+      Cubicle_Chair: -1256183574
+      Cubicle_Mouse: -1812794706
+      Cubicle_Mug: -660247512
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
