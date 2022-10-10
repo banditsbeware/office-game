@@ -6,8 +6,7 @@ using TMPro;
 
 public class Crossword : MonoBehaviour {
   private static char[] alpha = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' }; 
-  
-  [SerializeField] private TextWriter textWriter;
+
   //grid variables
   public int size;
   public GameObject gridObject;
@@ -17,7 +16,7 @@ public class Crossword : MonoBehaviour {
   //matrix of child objects
   public GameObject[,] letterMatrix;
 
-  // objects for instantiating buttons
+  //objects for instantiating buttons
   public GameObject exampleButton;
   private GameObject button;
   private static int fontConst = 600;
@@ -55,20 +54,62 @@ public class Crossword : MonoBehaviour {
   private GameObject secondSel;
 
   //words 
-  public TMP_Text response;
-  public Word[] wordList = new Word[5];
+  public TMP_Text haroldSpeech;
+  public TMP_Text playerSpeech;
+  public List<Word> wordsInPlay = new List<Word>();
+  public TMP_Text postIt;
 
-  void Start()
+  IEnumerator ChangeBoards(Word he, string stn)
   {
+    yield return new WaitForSeconds(4f);
+    TextWriter.AddWriter_Static(haroldSpeech, stn);
+    wordsInPlay = he.normalOptions;
+    yield return new WaitForSeconds(5f);
+    DestroyGrid();
     CreateGrid();
-    for (int x = 0; x < wordList.Length; x++)
-    {
-      PlaceWord(wordList[x]);
-    }
+    yield return new WaitForSeconds(.5f);
+    DestroyGrid();
+    CreateGrid();
+    yield return new WaitForSeconds(.5f);
+    DestroyGrid();
+    CreateGrid();
+    PlaceWords();
+  }
 
-    //debugging stuff
-    // PlaceWord("XXXXXXXXXX", "W", (0, 5));
-    // PlaceWord("COOMER")
+  void OnEnable()
+  {
+    wordsInPlay = new List<Word>();
+    CreateWords();
+    DestroyGrid();
+    CreateGrid();
+    PlaceWords();
+  }
+
+  void Update()
+  {
+    if (Input.GetKeyDown(KeyCode.P))
+    	{
+          firstSel = wordsInPlay[0].endButton;
+          secondSel = wordsInPlay[0].startButton;
+        	CheckWord();
+   		}
+  }
+
+  void PlaceWords()
+  {
+    for (int i = 0; i < wordsInPlay.Count; i++)
+    {
+      PlaceWord(wordsInPlay[i]);
+    }
+  }
+
+  void DestroyGrid()
+  {
+    foreach (Transform butt in gridObject.transform)
+    {
+      GameObject.Destroy(butt.gameObject);
+    }
+    
   }
 
   void CreateGrid() 
@@ -99,6 +140,11 @@ public class Crossword : MonoBehaviour {
         //add to independent matrix
         letterMatrix[i, j] = button;
       }
+    }
+
+    postIt.text = "acceptable topics\nof conversation:\n";
+    foreach (Word word in wordsInPlay) {
+      postIt.text += "-" + word.postItDes + "\n";
     }
   }
 
@@ -207,14 +253,12 @@ public class Crossword : MonoBehaviour {
     bool aWordWasFound = false;
 
     //compare first and last button of selection and Word's button objects assigned in ChangeLetters()
-    foreach (Word he in wordList)
+    foreach (Word he in wordsInPlay)
     {
       if ((firstSel == he.endButton || firstSel == he.startButton) && (secondSel == he.endButton || secondSel == he.startButton))
       {
         firstSel.GetComponent<Button>().enabled = false;
         secondSel.GetComponent<Button>().enabled = false;
-
-        he.found = true;
         aWordWasFound = true;
         Respond(he);
 
@@ -240,19 +284,85 @@ public class Crossword : MonoBehaviour {
   //set text in minigame canvas to response in Word object
   public void Respond(Word he)
   {
-   textWriter.AddWriter(response, he.responses[0]);
+    TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
+    StartCoroutine(ChangeBoards(he, he.haroldTalk_normal));
   }
 
 
-  [System.Serializable] public class Word
+  public class Word
   {
     public string word;
-    public string[] responses;
-    public bool found = false;
+    public string postItDes;
+    public List<Word> normalOptions;
+    public List<Word> oddOptions;
+    public List<Word> whackOptions;
+    public string playerTalk_normal;
+    public string playerTalk_odd;
+    public string playerTalk_whack;
+    public string haroldTalk_normal;
+    public string haroldTalk_odd;
+    public string haroldTalk_wack;
     public (int, int) direction;
     public (int, int) origin;
     [System.NonSerialized] public GameObject startButton;
     [System.NonSerialized] public GameObject endButton;
   }
-}
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  public void CreateWords()
+  {
+    //define every word and its responses
+    Word weather = new Word {
+      word = "WEATHER",
+      postItDes = "the climate",
+      playerTalk_normal = "So, how about that weather, huh?",
+      haroldTalk_normal = "Yeah, quite the weather"};
+
+      Word snow = new Word {
+      word = "SNOW",
+      postItDes = "precipitation",
+      playerTalk_normal = "I really wish it snowed more, I quite like snow",
+      haroldTalk_normal = "I'm more of a sunshine guy myself"};
+
+      Word clothes = new Word {
+      word = "CLOTHES",
+      postItDes = "garments",
+      playerTalk_normal = "have enough clothes for the upcoming season?",
+      haroldTalk_normal = "I was going to head shopping with my kids just next week"};
+    
+    Word child = new Word {
+      word = "CHILD",
+      postItDes = "Harold's offspring",
+      playerTalk_normal = "How are the kids doing these days?",
+      haroldTalk_normal = "Little Jimmy just started playing soccer, and he's super excited to start middle school"};
+
+    
+    
+
+
+    
+
+
+    //add options to each word
+    weather.normalOptions = new List<Word>(){snow};
+    //oddOptions = (warming, storm, venus),
+    //whackOptions = (death, corp, coal),
+
+    snow.normalOptions = new List<Word>(){clothes};
+    clothes.normalOptions = new List<Word>(){child};
+    child.normalOptions = new List<Word>(){};
+      
+
+
+
+    wordsInPlay.Add(weather);
+    wordsInPlay.Add(child);
+  }
+
+  
+    
+  }
+  

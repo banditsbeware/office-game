@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//in progrss script for chaos-ing the desks
 public class CubsComponents : MonoBehaviour
 {
     [SerializeField] private Sprite[] monitors;

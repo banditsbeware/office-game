@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour
 	[HideInInspector] public GameObject[] minigames;
 	[SerializeField] private TMP_Text canvasText;
 
+	public GameObject waterStation;
+
 	// gamestates are: pause, play, window
 	public string gameState = "play";
 
@@ -32,6 +34,11 @@ public class UIManager : MonoBehaviour
         {
             pauseControl();
         }
+
+		if (Input.GetKeyDown(KeyCode.P))
+    	{
+        	show(waterStation);
+   		}
     }
 	// reloads current scene index (in Build Management)
     public void Reload(){

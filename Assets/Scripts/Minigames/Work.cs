@@ -15,8 +15,7 @@ public class Work : MonoBehaviour
 
     [SerializeField] private TMP_Text baseText;
     [SerializeField] private TMP_Text topText;
-     [SerializeField] private TMP_Text test;
-    [SerializeField] private TextWriter textWriter;
+    [SerializeField] private TMP_Text test;
     [TextArea] [SerializeField] private string phrase;
 
     void OnEnable()
@@ -26,7 +25,7 @@ public class Work : MonoBehaviour
 
     void beginPhrase()
     {
-        textWriter.AddWriter(baseText, phrase);
+        TextWriter.AddWriter_Static(baseText, phrase);
         topText.text = "";
         nextLetter = phrase[0];
     }
