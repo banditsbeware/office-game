@@ -5657,6 +5657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1205700bf89b214d9e6a2578f9d6ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIMan: {fileID: 1890632086}
   size: 8
   gridObject: {fileID: 1099324278}
   exampleButton: {fileID: 1792997667608175900, guid: aa248ea424af6524f9702284f812f145, type: 3}

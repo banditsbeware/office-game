@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
 	// gamestates are: pause, play, window
 	public string gameState = "play";
 
-    void Start()
+    void Awake()
     {
         Time.timeScale = 1;
         pauseObjects = GameObject.FindGameObjectsWithTag("Pause");

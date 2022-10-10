@@ -7,6 +7,8 @@ using TMPro;
 public class Crossword : MonoBehaviour {
   private static char[] alpha = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' }; 
 
+  public UIManager UIMan;
+
   //grid variables
   public int size;
   public GameObject gridObject;
@@ -56,64 +58,91 @@ public class Crossword : MonoBehaviour {
   //words 
   public TMP_Text haroldSpeech;
   public TMP_Text playerSpeech;
-  public List<Word> wordsInPlay = new List<Word>();
+  public List<Word> avalibleWords = new List<Word>();
   public TMP_Text postIt;
 
-  IEnumerator ChangeBoards(Word he, string stn)
+  IEnumerator ChangeBoards(Word he)
   {
-    yield return new WaitForSeconds(4f);
-    TextWriter.AddWriter_Static(haroldSpeech, stn);
-    wordsInPlay = he.normalOptions;
-    yield return new WaitForSeconds(5f);
-    DestroyGrid();
-    CreateGrid();
+    yield return new WaitForSeconds(he.playerTime);
+    TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
+    avalibleWords = he.normalOptions;
+    yield return new WaitForSeconds(he.haroldTime);
+    DoGrid();
     yield return new WaitForSeconds(.5f);
-    DestroyGrid();
-    CreateGrid();
+    DoGrid();
     yield return new WaitForSeconds(.5f);
-    DestroyGrid();
-    CreateGrid();
+    DoGrid();
     PlaceWords();
+  }
+  IEnumerator Goodbye(Word he)
+  {
+    yield return new WaitForSeconds(he.playerTime);
+    TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
+    yield return new WaitForSeconds(he.haroldTime);
+    UIMan.gameState = "play";
+    gameObject.SetActive(false);
   }
 
   void OnEnable()
   {
-    wordsInPlay = new List<Word>();
+    haroldSpeech.text = "";
+    playerSpeech.text = "";
+    avalibleWords = new List<Word>();
     CreateWords();
-    DestroyGrid();
-    CreateGrid();
+    DoGrid();
     PlaceWords();
+    Debug.Log("words:" + avalibleWords);
   }
 
   void Update()
   {
     if (Input.GetKeyDown(KeyCode.P))
     	{
-          firstSel = wordsInPlay[0].endButton;
-          secondSel = wordsInPlay[0].startButton;
+          firstSel = avalibleWords[0].endButton;
+          secondSel = avalibleWords[0].startButton;
         	CheckWord();
    		}
   }
 
   void PlaceWords()
   {
-    for (int i = 0; i < wordsInPlay.Count; i++)
+    List<int> wordsInPlay = new List<int>();
+
+    //apply postIt header
+    postIt.text = "acceptable topics\nof conversation:\n";
+
+    //display no more than 3 words from list of avalible words
+    if (avalibleWords.Count > 2)
     {
-      PlaceWord(wordsInPlay[i]);
+      while (wordsInPlay.Count < 3)
+      {
+        int index = Random.Range(0, avalibleWords.Count);
+        
+        if (!wordsInPlay.Contains(index))
+        {
+          Debug.Log(index);
+          PlaceWord(avalibleWords[index]);
+          wordsInPlay.Add(index);
+        }
+      }
+    } 
+    else
+    {
+      foreach (Word word in avalibleWords)
+      {
+        PlaceWord(word);
+      }
     }
   }
 
-  void DestroyGrid()
+  void DoGrid() 
   {
+    //destroy prior grid
     foreach (Transform butt in gridObject.transform)
     {
       GameObject.Destroy(butt.gameObject);
     }
-    
-  }
 
-  void CreateGrid() 
-  {
     //create matrix for manipulating letters
     letterMatrix = new GameObject[size, size];
 
@@ -141,17 +170,15 @@ public class Crossword : MonoBehaviour {
         letterMatrix[i, j] = button;
       }
     }
-
-    postIt.text = "acceptable topics\nof conversation:\n";
-    foreach (Word word in wordsInPlay) {
-      postIt.text += "-" + word.postItDes + "\n";
-    }
   }
 
   void PlaceWord(Word it, string facing, (int, int) origin)
   {
     it.direction = dirDict[facing];
     ChangeLetters(it);
+
+    //add to list on postit
+    postIt.text += "-" + it.postItDes + "\n";
   }
   void PlaceWord(Word it)
   {
@@ -169,7 +196,6 @@ public class Crossword : MonoBehaviour {
       {
         it.direction = dirDict[dirList[Random.Range(0, 7)]];
         it.origin = (Random.Range(0, size), Random.Range(0, size));
-        Debug.Log("Attempt to be in square!");
 
         //break for over 200 attempts
         counter ++;
@@ -196,11 +222,11 @@ public class Crossword : MonoBehaviour {
         it.origin = (Random.Range(0, size), Random.Range(0, size));
         // direction = dirDict[dirList[Random.Range(0, 7)]];
       }
-
-      Debug.Log("Check for overlap!");
     }
     skip:
     ChangeLetters(it);
+
+    postIt.text += "-" + it.postItDes + "\n";
   }
 
   //iterate through each button object in a direction from an origin, change its text to word letter
@@ -253,14 +279,25 @@ public class Crossword : MonoBehaviour {
     bool aWordWasFound = false;
 
     //compare first and last button of selection and Word's button objects assigned in ChangeLetters()
-    foreach (Word he in wordsInPlay)
+    foreach (Word he in avalibleWords)
     {
       if ((firstSel == he.endButton || firstSel == he.startButton) && (secondSel == he.endButton || secondSel == he.startButton))
       {
         firstSel.GetComponent<Button>().enabled = false;
         secondSel.GetComponent<Button>().enabled = false;
         aWordWasFound = true;
-        Respond(he);
+
+        //set text in minigame canvas to response in Word object
+        if (he.word == "GOODBYE")
+        {
+          TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
+          StartCoroutine(Goodbye(he));
+        }
+        else
+        {
+          TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
+          StartCoroutine(ChangeBoards(he));
+        }
 
         //take out buttons in middle of word
         for (int x = 1; x < he.word.Length - 1; x++)
@@ -281,13 +318,6 @@ public class Crossword : MonoBehaviour {
     }
   }
 
-  //set text in minigame canvas to response in Word object
-  public void Respond(Word he)
-  {
-    TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
-    StartCoroutine(ChangeBoards(he, he.haroldTalk_normal));
-  }
-
 
   public class Word
   {
@@ -299,9 +329,11 @@ public class Crossword : MonoBehaviour {
     public string playerTalk_normal;
     public string playerTalk_odd;
     public string playerTalk_whack;
+    public float playerTime;
     public string haroldTalk_normal;
     public string haroldTalk_odd;
     public string haroldTalk_wack;
+    public float haroldTime;
     public (int, int) direction;
     public (int, int) origin;
     [System.NonSerialized] public GameObject startButton;
@@ -315,51 +347,73 @@ public class Crossword : MonoBehaviour {
   public void CreateWords()
   {
     //define every word and its responses
+    Word goodbye = new Word {
+      word = "GOODBYE",
+      postItDes = "end the exchange",
+      playerTalk_normal = "alright, bud, I should get back to work",
+      haroldTalk_normal = "see ya round",
+      playerTime = 4f,
+      haroldTime = 3f};
+
     Word weather = new Word {
       word = "WEATHER",
       postItDes = "the climate",
       playerTalk_normal = "So, how about that weather, huh?",
-      haroldTalk_normal = "Yeah, quite the weather"};
+      haroldTalk_normal = "Yeah, quite the weather",
+      playerTime = 4f,
+      haroldTime = 3f};
 
       Word snow = new Word {
       word = "SNOW",
       postItDes = "precipitation",
       playerTalk_normal = "I really wish it snowed more, I quite like snow",
-      haroldTalk_normal = "I'm more of a sunshine guy myself"};
+      haroldTalk_normal = "I'm more of a sunshine guy myself",
+      playerTime = 5f,
+      haroldTime = 4f};
 
       Word clothes = new Word {
       word = "CLOTHES",
       postItDes = "garments",
       playerTalk_normal = "have enough clothes for the upcoming season?",
-      haroldTalk_normal = "I was going to head shopping with my kids just next week"};
+      haroldTalk_normal = "I was going to head shopping with my kids just next week",
+      playerTime = 5f,
+      haroldTime = 6f};
     
     Word child = new Word {
       word = "CHILD",
-      postItDes = "Harold's offspring",
+      postItDes = "harold's offspring",
       playerTalk_normal = "How are the kids doing these days?",
-      haroldTalk_normal = "Little Jimmy just started playing soccer, and he's super excited to start middle school"};
+      haroldTalk_normal = "Little Jimmy's playing soccer, he's quite the young man",
+      playerTime = 4f,
+      haroldTime = 5f};
 
+      Word school = new Word {
+        word = "SCHOOL",
+        postItDes = "education",
+        playerTalk_normal = "nice, how is the schooling coming along?",
+        haroldTalk_normal = "very well. Bs across the board",
+        playerTime = 4f,
+        haroldTime = 3f};
     
-    
-
-
-    
-
+    Word work = new Word {
+          word = "WORK",
+          postItDes = "the job",
+          playerTalk_normal = "work's really been grinding my gears lately",
+          haroldTalk_normal = "tell me about it",
+          playerTime = 4f,
+          haroldTime = 2f};
 
     //add options to each word
-    weather.normalOptions = new List<Word>(){snow};
-    //oddOptions = (warming, storm, venus),
-    //whackOptions = (death, corp, coal),
-
-    snow.normalOptions = new List<Word>(){clothes};
-    clothes.normalOptions = new List<Word>(){child};
-    child.normalOptions = new List<Word>(){};
+    weather.normalOptions = new List<Word>(){snow, goodbye};
+    snow.normalOptions = new List<Word>(){clothes, goodbye};
+    clothes.normalOptions = new List<Word>(){child, goodbye};
+    child.normalOptions = new List<Word>(){school, goodbye};
+    school.normalOptions = new List<Word>(){work, goodbye};
+    work.normalOptions = new List<Word>(){goodbye};
       
-
-
-
-    wordsInPlay.Add(weather);
-    wordsInPlay.Add(child);
+    avalibleWords.Add(weather);
+    avalibleWords.Add(child);
+    avalibleWords.Add(work);
   }
 
   
