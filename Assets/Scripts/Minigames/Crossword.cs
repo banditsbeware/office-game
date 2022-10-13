@@ -403,6 +403,24 @@ public class Crossword : MonoBehaviour {
           playerTime = 4f,
           haroldTime = 2f};
 
+    Word sports = new Word {
+          word = "SPORTS",
+          postItDes = "athletics",
+          playerTalk_normal = "did you watch the game last night?",
+          haroldTalk_normal = "oh yeah, the blue team really pulled it back",
+          playerTime = 3f,
+          haroldTime = 4f};
+      
+    Word movies = new Word {
+          word = "MOVIES",
+          postItDes = "entertainment",
+          playerTalk_normal = "see any new movies letely?",
+          haroldTalk_normal = "oh, just that one with the famous guy, love it on the big screen",
+          playerTime = 2.5f,
+          haroldTime = 5f};
+
+
+
     //add options to each word
     weather.normalOptions = new List<Word>(){snow, goodbye};
     snow.normalOptions = new List<Word>(){clothes, goodbye};
