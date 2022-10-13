@@ -34,11 +34,6 @@ public class UIManager : MonoBehaviour
         {
             pauseControl();
         }
-
-		if (Input.GetKeyDown(KeyCode.P))
-    	{
-        	show(waterStation);
-   		}
     }
 	// reloads current scene index (in Build Management)
     public void Reload(){

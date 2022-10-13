@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
 	<Project Name="Office!_WwiseProject" GUID="{54D2E25B-7EB7-4E7B-9AA1-FC95B8F9BA40}" Generator="2022.1.0.7985"/>
-	<CacheRoot>../../../../Office!_WwiseProject/.cache/</CacheRoot>
+	<CacheRoot>../../../../Office!_WwiseProject/.cache</CacheRoot>
 	<Platforms>
-		<Platform Name="Mac" GUID="{B0071793-055D-4E54-8096-B39F638587EF}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Office!_WwiseProject/GeneratedSoundBanks/Mac/"/>
-		<Platform Name="Windows" GUID="{28BB1D0F-FC75-4D9D-862D-D7437A61BC4B}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Office!_WwiseProject/GeneratedSoundBanks/Windows/"/>
+		<Platform Name="Mac" GUID="{B0071793-055D-4E54-8096-B39F638587EF}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Office!_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{28BB1D0F-FC75-4D9D-862D-D7437A61BC4B}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Office!_WwiseProject/GeneratedSoundBanks/Windows"/>
 	</Platforms>
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{ABCD381B-79F5-497A-8D61-77BC6D98E47F}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{89FA3AE3-DA7E-ABBA-8249-545B2A3C75B1}</FileHash>
+	<FileHash>{A97BE492-8BCE-B232-11BD-B7E61D27C1B1}</FileHash>
 </ProjectInfo>
