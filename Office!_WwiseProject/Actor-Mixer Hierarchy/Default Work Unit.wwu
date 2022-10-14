@@ -215,6 +215,771 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Dialogue" ID="{C0102D99-C4A8-4CEB-955F-875F7B707E37}" ShortID="738307289">
+					<ChildrenList>
+						<Folder Name="Harold" ID="{18A7D527-256C-407C-89B2-EC58CE1695AB}" ShortID="606112557">
+							<ChildrenList>
+								<Sound Name="actor" ID="{3E2AD031-B2E8-4B66-A473-620746CAE14A}" ShortID="793146193">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_actor_dist" ID="{A05A8AA8-892F-488F-A225-4D597C6A9DE8}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_actor_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="699313978"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_actor_dist" ID="{A05A8AA8-892F-488F-A225-4D597C6A9DE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boss" ID="{7BD291F9-44D1-4AB6-BF7B-95D31580FEA9}" ShortID="482020195">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_boss_dist" ID="{CD14CB7B-7F22-4EC4-8888-29295BB9A639}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_boss_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="503512560"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_boss_dist" ID="{CD14CB7B-7F22-4EC4-8888-29295BB9A639}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="child" ID="{A76B247D-F362-4A5E-9BF3-E2E96814E5D8}" ShortID="200357473">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_child_dist" ID="{DA224790-A048-4403-B4BD-631FA02266A2}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_child_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="460433903"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_child_dist" ID="{DA224790-A048-4403-B4BD-631FA02266A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="client" ID="{CFAED199-47AB-43BF-8499-B1221441B8C0}" ShortID="879434261">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_client_dist" ID="{19FB2E9E-A898-4EE3-8118-5494F96AF6FA}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_client_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="383459377"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_client_dist" ID="{19FB2E9E-A898-4EE3-8118-5494F96AF6FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="clothes" ID="{47FDDD27-8E4C-4AE8-95FC-8D7A2146B68F}" ShortID="262388886">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_clothes_02_dist" ID="{157B0542-3671-4D65-AAAC-BA4932CD67A3}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_clothes_02_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="472567484"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_clothes_02_dist" ID="{157B0542-3671-4D65-AAAC-BA4932CD67A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coffee" ID="{70E5E421-D3ED-4998-94AA-45954759C280}" ShortID="1000800631">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_coffee_dist" ID="{888BA6BE-D282-465D-A8E2-A81ED45FB5AD}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_coffee_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="509392946"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_coffee_dist" ID="{888BA6BE-D282-465D-A8E2-A81ED45FB5AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="extra_cough" ID="{2E11990A-C2CC-4869-B51C-4A485A530161}" ShortID="746998639">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_extra_cough_dist" ID="{76672610-DD5A-415D-ACDA-D1013C6384C9}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_extra_cough_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381595372"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_extra_cough_dist" ID="{76672610-DD5A-415D-ACDA-D1013C6384C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="extra_huh" ID="{4C895B9D-90EA-4DAE-BE66-DDB34219BFA6}" ShortID="125262819">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_extra_huh_dist" ID="{E9374D32-F16C-47EF-8EDB-A4F3683336F7}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_extra_huh_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1070652198"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_extra_huh_dist" ID="{E9374D32-F16C-47EF-8EDB-A4F3683336F7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="game" ID="{C4D6F231-ABED-4307-97CF-8315C6456D5F}" ShortID="925847639">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_game_dist" ID="{4D2F2CAF-7494-4B4C-8EDC-153DB5F541DF}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_game_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="38896493"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_game_dist" ID="{4D2F2CAF-7494-4B4C-8EDC-153DB5F541DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="growth" ID="{BC3E5468-F933-4E7B-900E-2948730012E0}" ShortID="357906235">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_growth_dist" ID="{7106289D-E364-4DDC-99C4-CDD4C7FF1A23}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_growth_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="138153152"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_growth_dist" ID="{7106289D-E364-4DDC-99C4-CDD4C7FF1A23}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="hours" ID="{7CCC62CF-BAA9-4711-857E-DE0C1956F712}" ShortID="840774487">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_hours_dist" ID="{9A6E2920-666D-4BEE-8376-B01AC861F148}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_hours_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="421058727"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_hours_dist" ID="{9A6E2920-666D-4BEE-8376-B01AC861F148}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="internet" ID="{B756324A-0BE2-431F-AE10-95C71F8E362B}" ShortID="608363388">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_internet_dist" ID="{E1096374-A318-4D70-8BC0-3BCAE5DA4C76}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_internet_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="646997900"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_internet_dist" ID="{E1096374-A318-4D70-8BC0-3BCAE5DA4C76}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="merger" ID="{2EEE8FB5-C932-4C87-92D9-9BA6B89F27D1}" ShortID="204944171">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_merger_dist" ID="{DECAA6B1-9869-427C-A01D-B8EC50378BD2}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_merger_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="979936609"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_merger_dist" ID="{DECAA6B1-9869-427C-A01D-B8EC50378BD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="movies" ID="{17E5DE57-D472-46D3-96F3-CDF5EE98AE5B}" ShortID="840249533">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_movies_dist" ID="{B4FDD2F1-DF65-47A3-A9DB-E8A09F1F3FE5}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_movies_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452325800"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_movies_dist" ID="{B4FDD2F1-DF65-47A3-A9DB-E8A09F1F3FE5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="prices" ID="{6E4F04D6-29D1-428E-A860-121468E4F9EF}" ShortID="95476977">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_prices_02_dist" ID="{E7F16153-AA49-4E43-B4C8-134E20E67EF1}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_prices_02_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="19725708"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_prices_02_dist" ID="{E7F16153-AA49-4E43-B4C8-134E20E67EF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="release" ID="{AAE0964F-C331-4DD4-88D9-024E36536FED}" ShortID="889847558">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_release_dist" ID="{31E73FE1-96BB-4CC6-BA67-3D76BBC3325E}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_release_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="611446876"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_release_dist" ID="{31E73FE1-96BB-4CC6-BA67-3D76BBC3325E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="school" ID="{479279CF-BEFF-4A50-9538-E94DD967326A}" ShortID="905459623">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_school_dist" ID="{D0E69ECC-AE89-4B24-9DC7-2DA1F17FEED4}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_school_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="420736337"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_school_dist" ID="{D0E69ECC-AE89-4B24-9DC7-2DA1F17FEED4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="scifi" ID="{22860709-2CF9-4DE1-A34F-F61844621B92}" ShortID="448287773">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_scifi_dist" ID="{8124F96E-C160-4EA7-8C38-98A97B87A119}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_scifi_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="821841142"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_scifi_dist" ID="{8124F96E-C160-4EA7-8C38-98A97B87A119}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="snow" ID="{1C6CE825-534D-4EDB-A7EF-9D115ECE4B65}" ShortID="1048089924">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_snow_02_dist" ID="{4AA4789B-705C-4677-8B51-C672644352E7}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_snow_02_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="316028187"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_snow_02_dist" ID="{4AA4789B-705C-4677-8B51-C672644352E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="soccer" ID="{5A592F14-92D0-4307-932E-4701A7711808}" ShortID="244305933">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_soccer_dist" ID="{5C63A2CE-6A66-40C0-A4B4-31EECC71440B}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_soccer_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="604219696"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_soccer_dist" ID="{5C63A2CE-6A66-40C0-A4B4-31EECC71440B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sports" ID="{FD8B6966-7218-443F-A734-D2A100DA7D96}" ShortID="171622593">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_sports_dist" ID="{B9F2A398-A094-47FF-98E5-C26556BEF1B4}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_sports_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="152406515"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_sports_dist" ID="{B9F2A398-A094-47FF-98E5-C26556BEF1B4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="team" ID="{A03C342C-BF90-42A8-8C7C-49725F43C469}" ShortID="765095574">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_team_dist" ID="{D8D06D89-13BB-45ED-BE2A-E33B58F636ED}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_team_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="979785200"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_team_dist" ID="{D8D06D89-13BB-45ED-BE2A-E33B58F636ED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="varsity" ID="{D843E4AA-5993-4313-BE49-DA9CE474A061}" ShortID="37091579">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_varsity_dist" ID="{34AC58D9-833C-4DA2-9C92-6B33B4B406AF}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_varsity_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="73368536"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_varsity_dist" ID="{34AC58D9-833C-4DA2-9C92-6B33B4B406AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="weather" ID="{37AA3166-6EE1-42B4-B2F5-380796B32C22}" ShortID="755300585">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_weather_dist" ID="{F0271045-3F53-4276-AF28-B23A8B1D3596}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_weather_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="597633837"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_weather_dist" ID="{F0271045-3F53-4276-AF28-B23A8B1D3596}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="work" ID="{9FE39D09-0B02-4041-88BC-D8B5EFB2B54C}" ShortID="110387473">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_work_dist" ID="{932EA623-13F9-4029-9326-616BD1C0B1F8}">
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_work_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="55802916"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_work_dist" ID="{932EA623-13F9-4029-9326-616BD1C0B1F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Folder Name="goodbye" ID="{AABCDB2F-99E6-4AFE-806C-2902D591ED09}" ShortID="35738590">
+									<ChildrenList>
+										<Sound Name="goodbye_adios" ID="{B2B6AEB6-323A-4B6B-B395-F820E3033A51}" ShortID="397551677">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Harold_goodbye_adios_dist" ID="{8F8C69DE-F2FB-46FE-B58C-6B4F21F6C3AF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.173864015631601"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.102737827418673"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.85295043831855"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.1016101869455"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>Audio Files\Harold_goodbye_adios_dist.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="523907929"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Harold_goodbye_adios_dist" ID="{8F8C69DE-F2FB-46FE-B58C-6B4F21F6C3AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="goodbye_alrighty" ID="{0DBF694D-1EA8-45DD-BA4E-AB74BC99A4F5}" ShortID="252450970">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Harold_goodbye_alrighty_dist" ID="{BD10826A-3F73-4F61-8836-E95540F33A6E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.177642638360795"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.114945236586396"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.75868567807351"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.67824757076468"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>Audio Files\Harold_goodbye_alrighty_dist.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="814325946"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Harold_goodbye_alrighty_dist" ID="{BD10826A-3F73-4F61-8836-E95540F33A6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="goodbye_seeYa" ID="{8B6ED48F-CF5F-4473-9B11-5D9BB89568D2}" ShortID="1059316447">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Harold_goodbye_seeYa_dist" ID="{4527C298-1C41-471F-9E90-CD15EFE92939}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0935301013941698"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.101324276510351"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.436473806506126"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.25486219370511"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>Audio Files\Harold_goodbye_seeYa_dist.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="839712619"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Harold_goodbye_seeYa_dist" ID="{4527C298-1C41-471F-9E90-CD15EFE92939}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="goodbye_tillNext" ID="{E7802AFC-1E5B-4DC4-9B45-12C087F80292}" ShortID="811617467">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Harold_goodbye_tillNext_dist" ID="{67A115A3-E99F-452C-B138-306A83C44D9A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.085345400295733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.085345400295733"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.707147602450359"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.81663780629489"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>Audio Files\Harold_goodbye_tillNext_dist.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="704986967"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Harold_goodbye_tillNext_dist" ID="{67A115A3-E99F-452C-B138-306A83C44D9A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

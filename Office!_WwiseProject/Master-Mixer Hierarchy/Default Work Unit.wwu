@@ -10,8 +10,9 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music Bus" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}"/>
+						<Bus Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}"/>
 						<Bus Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}"/>
+						<Bus Name="Dialogue'" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

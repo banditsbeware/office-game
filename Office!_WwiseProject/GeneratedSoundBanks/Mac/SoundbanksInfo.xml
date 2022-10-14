@@ -1,15 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="144">
 	<RootPaths>
-		<ProjectRoot>../..</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<ProjectRoot>../../</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac/</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9F50DDEC-96FD-CBE9-EC11-83C057EA6A2F}">
+		<SoundBank Id="630707431" Type="User" Language="English(US)" Hash="{2C81C929-F746-51B3-3E03-84C5AC8D0A47}">
+			<ShortName>Crossword</ShortName>
+			<Path>English(US)/Crossword.bnk</Path>
+			<Media>
+				<File Id="19725708" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_prices_02_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_prices_02_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="38896493" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_game_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_game_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="55802916" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_work_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_work_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="73368536" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_varsity_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_varsity_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="138153152" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_growth_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_growth_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="152406515" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_sports_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_sports_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="316028187" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_snow_02_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_snow_02_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="381595372" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_extra_cough_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_extra_cough_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="383459377" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_client_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_client_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="420736337" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_school_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_school_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="421058727" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_hours_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_hours_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="452325800" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_movies_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_movies_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="460433903" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_child_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_child_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="472567484" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_clothes_02_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_clothes_02_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="503512560" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_boss_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_boss_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="509392946" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_coffee_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_coffee_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="523907929" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_goodbye_adios_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_goodbye_adios_dist_37C5F0FB.wem</CachePath>
+				</File>
+				<File Id="597633837" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_weather_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_weather_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="604219696" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_soccer_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_soccer_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="611446876" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_release_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_release_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="646997900" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_internet_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_internet_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="699313978" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_actor_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_actor_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="704986967" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_goodbye_tillNext_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_goodbye_tillNext_dist_B31162DD.wem</CachePath>
+				</File>
+				<File Id="814325946" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_goodbye_alrighty_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_goodbye_alrighty_dist_F7FF9098.wem</CachePath>
+				</File>
+				<File Id="821841142" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_scifi_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_scifi_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="839712619" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_goodbye_seeYa_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_goodbye_seeYa_dist_0DB85E48.wem</CachePath>
+				</File>
+				<File Id="979785200" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_team_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_team_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="979936609" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_merger_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_merger_dist_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1070652198" Language="English(US)" Streaming="false" Location="Memory">
+					<ShortName>Audio Files\Harold_extra_huh_dist.wav</ShortName>
+					<CachePath>Voices/English(US)/Audio Files/Harold_extra_huh_dist_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3231912389" Name="Play_actor" DurationType="OneShot" DurationMin="7.2403336" DurationMax="7.2403336">
+					<MediaRefs>
+						<MediaRef Id="699313978"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1693071901" Name="Play_boss" DurationType="OneShot" DurationMin="8.115541" DurationMax="8.115541">
+					<MediaRefs>
+						<MediaRef Id="503512560"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2952268476" Name="Play_child" DurationType="OneShot" DurationMin="11.453354" DurationMax="11.453354">
+					<MediaRefs>
+						<MediaRef Id="460433903"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2874228519" Name="Play_client" DurationType="OneShot" DurationMin="8.492937" DurationMax="8.492937">
+					<MediaRefs>
+						<MediaRef Id="383459377"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3037538514" Name="Play_clothes" DurationType="OneShot" DurationMin="6.2057085" DurationMax="6.2057085">
+					<MediaRefs>
+						<MediaRef Id="472567484"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1012391550" Name="Play_coffee" DurationType="OneShot" DurationMin="12.066521" DurationMax="12.066521">
+					<MediaRefs>
+						<MediaRef Id="509392946"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="393588247" Name="Play_extra_cough" DurationType="OneShot" DurationMin="15.94377" DurationMax="15.94377">
+					<MediaRefs>
+						<MediaRef Id="381595372"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1498563514" Name="Play_extra_huh" DurationType="OneShot" DurationMin="10.375937" DurationMax="10.375937">
+					<MediaRefs>
+						<MediaRef Id="1070652198"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="216639764" Name="Play_game" DurationType="OneShot" DurationMin="9.374687" DurationMax="9.374687">
+					<MediaRefs>
+						<MediaRef Id="38896493"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1256120352" Name="Play_goodbye_adios" DurationType="OneShot" DurationMin="1.2486597" DurationMax="1.2486597">
+					<MediaRefs>
+						<MediaRef Id="523907929"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4060144966" Name="Play_goodbye_alrighty" DurationType="OneShot" DurationMin="0.91956186" DurationMax="0.91956186">
+					<MediaRefs>
+						<MediaRef Id="814325946"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="363572393" Name="Play_goodbye_seeYa" DurationType="OneShot" DurationMin="0.8183884" DurationMax="0.8183884">
+					<MediaRefs>
+						<MediaRef Id="839712619"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3414812528" Name="Play_goodbye_tillNext" DurationType="OneShot" DurationMin="1.1094902" DurationMax="1.1094902">
+					<MediaRefs>
+						<MediaRef Id="704986967"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3799175311" Name="Play_growth" DurationType="OneShot" DurationMin="7.990104" DurationMax="7.990104">
+					<MediaRefs>
+						<MediaRef Id="138153152"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1710785415" Name="Play_hours" DurationType="OneShot" DurationMin="9.064021" DurationMax="9.064021">
+					<MediaRefs>
+						<MediaRef Id="421058727"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3049503277" Name="Play_internet" DurationType="OneShot" DurationMin="10.762521" DurationMax="10.762521">
+					<MediaRefs>
+						<MediaRef Id="646997900"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2866310100" Name="Play_merger" DurationType="OneShot" DurationMin="8.956646" DurationMax="8.956646">
+					<MediaRefs>
+						<MediaRef Id="979936609"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1667103285" Name="Play_movies" DurationType="OneShot" DurationMin="6.948125" DurationMax="6.948125">
+					<MediaRefs>
+						<MediaRef Id="452325800"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3331051860" Name="Play_prices" DurationType="OneShot" DurationMin="10.2317295" DurationMax="10.2317295">
+					<MediaRefs>
+						<MediaRef Id="19725708"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="692169189" Name="Play_release" DurationType="OneShot" DurationMin="11.268771" DurationMax="11.268771">
+					<MediaRefs>
+						<MediaRef Id="611446876"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3606423206" Name="Play_school" DurationType="OneShot" DurationMin="9.151417" DurationMax="9.151417">
+					<MediaRefs>
+						<MediaRef Id="420736337"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3039012154" Name="Play_scifi" DurationType="OneShot" DurationMin="10.197104" DurationMax="10.197104">
+					<MediaRefs>
+						<MediaRef Id="821841142"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4026051667" Name="Play_snow" DurationType="OneShot" DurationMin="4.261958" DurationMax="4.261958">
+					<MediaRefs>
+						<MediaRef Id="316028187"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3545779475" Name="Play_soccer" DurationType="OneShot" DurationMin="12.404333" DurationMax="12.404333">
+					<MediaRefs>
+						<MediaRef Id="604219696"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1629223547" Name="Play_sports" DurationType="OneShot" DurationMin="8.66375" DurationMax="8.66375">
+					<MediaRefs>
+						<MediaRef Id="152406515"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3422393765" Name="Play_team" DurationType="OneShot" DurationMin="11.569583" DurationMax="11.569583">
+					<MediaRefs>
+						<MediaRef Id="979785200"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1692086900" Name="Play_varsity" DurationType="OneShot" DurationMin="10.672104" DurationMax="10.672104">
+					<MediaRefs>
+						<MediaRef Id="73368536"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3308884970" Name="Play_weather" DurationType="OneShot" DurationMin="7.242375" DurationMax="7.242375">
+					<MediaRefs>
+						<MediaRef Id="597633837"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1221848793" Name="Play_work" DurationType="OneShot" DurationMin="5.7252083" DurationMax="5.7252083">
+					<MediaRefs>
+						<MediaRef Id="55802916"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F7E990A7-F756-43FD-F340-59BEE8998C40}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -20,8 +289,9 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="85412153" Name="Ambience"/>
-				<Bus Id="3127962312" Name="Music Bus"/>
+				<Bus Id="1669749354" Name="Dialogue'"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<StateGroups>
 				<StateGroup Id="4091656514" Name="gameState">
@@ -35,7 +305,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{152DF759-0823-9788-A4FB-36E5D94C07E5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4DEFFD64-258B-3B8B-AD4C-C0943F5AB1E5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -115,5 +385,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1BEBF6E8-098A-CC39-C3A0-D696D83B344D}</FileHash>
+	<FileHash>{C97868A4-94FD-56AF-EEE1-F0552A832F20}</FileHash>
 </SoundBanksInfo>
