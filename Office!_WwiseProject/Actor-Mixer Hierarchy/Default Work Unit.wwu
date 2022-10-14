@@ -976,6 +976,35 @@
 										</Sound>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Player" ID="{566AA925-95C6-4A06-95B8-BC648671E269}" ShortID="762667556">
+									<ChildrenList>
+										<Sound Name="Player" ID="{522CC9AB-E3F7-42E3-89C2-E0279B498D3E}" ShortID="686988928">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Harold_Player_dist" ID="{5393D06C-9B53-490A-ACD8-A71AF1302592}">
+													<Language>English(US)</Language>
+													<AudioFile>Harold_Player_dist.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="257920647"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Harold_Player_dist" ID="{5393D06C-9B53-490A-ACD8-A71AF1302592}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
