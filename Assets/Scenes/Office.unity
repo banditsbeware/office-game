@@ -1900,7 +1900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564603691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.01, y: -6.08, z: 0}
+  m_LocalPosition: {x: 9.7, y: 7.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6180,6 +6180,18 @@ MonoBehaviour:
   haroldSpeech: {fileID: 1340357816}
   playerSpeech: {fileID: 143577160}
   postIt: {fileID: 795816620}
+  crossBank:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84fbe7a545218de459860d62fcc818e3, type: 2}
+  goodbyeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d1a40f5fea965104e962c6034d4901fa, type: 2}
+  helloRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e51c763fd5be6d9469e03dc19d853ce7, type: 2}
 --- !u!114 &1900030903
 MonoBehaviour:
   m_ObjectHideFlags: 0

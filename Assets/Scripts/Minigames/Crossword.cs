@@ -59,18 +59,31 @@ public class Crossword : MonoBehaviour {
   public TMP_Text haroldSpeech;
   public TMP_Text playerSpeech;
   public List<Word> avalibleWords = new List<Word>();
+  public List<Word> allWords = new List<Word>();
   public TMP_Text postIt;
   //goodbye only global word to be added post-randomization
-  private Word goodbye = new Word();
+  private Word goodbye;
+  private Word hello;
+
+  //WWise
+  public AK.Wwise.Bank crossBank;
+  public AK.Wwise.RTPC goodbyeRTPC;
+  public AK.Wwise.RTPC helloRTPC;
 
   IEnumerator ChangeBoards(Word he)
   {
     TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
+    AkSoundEngine.PostEvent("Play_Player", gameObject);
     yield return new WaitForSeconds(he.playerTime);
+
+    AkSoundEngine.PostEvent("Stop_Player", gameObject);
+    yield return new WaitForSeconds(1.5f);
+  
+    AkSoundEngine.PostEvent(he.post, gameObject);
     TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
     yield return new WaitForSeconds(he.haroldTime);
 
-    //add words not already used in coversation
+    //add word options if not already used in coversation
     avalibleWords = new List<Word>();
     foreach (Word word in he.normalOptions)
     {
@@ -90,7 +103,13 @@ public class Crossword : MonoBehaviour {
   IEnumerator Goodbye(Word he)
   {
     TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
+    AkSoundEngine.PostEvent("Play_Player", gameObject);
     yield return new WaitForSeconds(he.playerTime);
+
+    AkSoundEngine.PostEvent("Stop_Player", gameObject);
+    yield return new WaitForSeconds(1.5f);
+
+    AkSoundEngine.PostEvent(he.post, gameObject);
     TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
     yield return new WaitForSeconds(he.haroldTime);
 
@@ -100,6 +119,8 @@ public class Crossword : MonoBehaviour {
 
   void OnEnable()
   {
+    crossBank.Load();
+
     haroldSpeech.text = "";
     playerSpeech.text = "";
     avalibleWords = new List<Word>();
@@ -108,7 +129,14 @@ public class Crossword : MonoBehaviour {
     DoGrid();
     PlaceWords();
 
-    Debug.Log("words:" + avalibleWords);
+    AkSoundEngine.PostEvent(hello.post, gameObject);
+    TextWriter.AddWriter_Static(haroldSpeech, hello.haroldTalk_normal);
+  }
+
+  void OnDisable()
+  {
+    crossBank.Unload();
+
   }
 
   void PlaceWords()
@@ -207,9 +235,9 @@ public class Crossword : MonoBehaviour {
         it.direction = dirDict[dirList[Random.Range(0, 7)]];
         it.origin = (Random.Range(0, size), Random.Range(0, size));
 
-        //break for over 200 attempts
+        //break for over 500 attempts
         counter ++;
-        if (counter >= 200)
+        if (counter >= 500)
         {
           Debug.Log("Too many tries :(");
           goto skip;
@@ -333,22 +361,35 @@ public class Crossword : MonoBehaviour {
     public string word;
     public string postItDes;
     public List<Word> normalOptions;
-    public List<Word> oddOptions;
-    public List<Word> whackOptions;
+    public string post;
     public string playerTalk_normal;
-    public string playerTalk_odd;
-    public string playerTalk_whack;
     public float playerTime;
     public string haroldTalk_normal;
-    public string haroldTalk_odd;
-    public string haroldTalk_wack;
     public float haroldTime;
 
+    //additions for when it gets chaotic
+
+    // public List<Word> oddOptions;
+    // public List<Word> whackOptions;
+    // public string playerTalk_odd;
+    // public string playerTalk_whack;
+    // public string haroldTalk_odd;
+    // public string haroldTalk_wack;
     public bool used = false;
     public (int, int) direction;
     public (int, int) origin;
     public GameObject startButton;
     public GameObject endButton;
+
+    public Word(List<Word> allWords)
+    {
+      allWords.Add(this);
+    }
+    public Word(List<Word> allWords, List<Word> first)
+    {
+      allWords.Add(this);
+      first.Add(this);
+    }
   }
 
 
@@ -358,198 +399,154 @@ public class Crossword : MonoBehaviour {
 public void CreateWords()
 {
 //define every word and its responses
-goodbye = new Word {
+hello = new Word(allWords){
+  word = "hello",
+  playerTalk_normal = "",
+  haroldTalk_normal = "",};
+
+goodbye = new Word (allWords) {
   word = "GOODBYE",
   postItDes = "end the exchange",
   playerTalk_normal = "alright, bud, I should get back to work",
-  haroldTalk_normal = "see ya round",
-  playerTime = 4f,
-  haroldTime = 3f};
+  haroldTalk_normal = "",};
 
-Word weather = new Word {
+Word weather = new Word (allWords, avalibleWords) {
   word = "WEATHER",
   postItDes = "the climate",
   playerTalk_normal = "so, how about that weather, huh?",
-  haroldTalk_normal = "yeah, quite the weather",
-  playerTime = 4f,
-  haroldTime = 3f};
+  haroldTalk_normal = "yeah, quite the weather",};
 
-  Word snow = new Word {
+  Word snow = new Word (allWords) {
     word = "SNOW",
     postItDes = "precipitation",
     playerTalk_normal = "I really wish it snowed more, I quite like snow",
-    haroldTalk_normal = "I'm more of a sunshine guy myself",
-    playerTime = 5f,
-    haroldTime = 4f};
+    haroldTalk_normal = "I'm more of a sunshine guy myself"};
 
-  Word clothes = new Word {
+  Word clothes = new Word (allWords) {
     word = "CLOTHES",
     postItDes = "garments",
     playerTalk_normal = "have enough clothes for the upcoming season?",
-    haroldTalk_normal = "headed shopping with my kids next week for jackets",
-    playerTime = 5f,
-    haroldTime = 6f};
+    haroldTalk_normal = "plan on going to the store with my kids to get jackets next week"};
 
-  Word coffee = new Word {
+  Word coffee = new Word (allWords) {
     word = "COFFEE",
     postItDes = "warm drinks",
-    playerTalk_normal = "daily cup o' joe really helps",
-    haroldTalk_normal = "I take mine with 2 sugars",
-    playerTime = 4f,
-    haroldTime = 3.5f};
+    playerTalk_normal = "cup o' joe really helps with the cold",
+    haroldTalk_normal = "I take mine with 2 sugars"};
   
-Word child = new Word {
+Word child = new Word (allWords, avalibleWords) {
   word = "CHILD",
   postItDes = "harold's offspring",
   playerTalk_normal = "how are the kids doing these days?",
-  haroldTalk_normal = "little Jimmy's playing soccer, he's quite the young man",
-  playerTime = 4f,
-  haroldTime = 5f};
+  haroldTalk_normal = "little Jimmy's playing soccer, he's quite the young man"};
 
-  Word school = new Word {
+  Word school = new Word (allWords) {
     word = "SCHOOL",
     postItDes = "education",
     playerTalk_normal = "nice, how is the schooling coming along?",
-    haroldTalk_normal = "very well. Bs across the board",
-    playerTime = 4f,
-    haroldTime = 3f};
+    haroldTalk_normal = "very well. B's across the board"};
 
-  Word growth = new Word {
+  Word growth = new Word (allWords) {
     word = "GROWTH",
     postItDes = "how tall Jimmy is",
     playerTalk_normal = "he's growing up so fast, pretty tall for his age",
-    haroldTalk_normal = "yep, soon enough he'll pass me up",
-    playerTime = 4f,
-    haroldTime = 3f};
+    haroldTalk_normal = "yep, soon enough he'll pass me up"};
 
-  Word soccer = new Word {
+  Word soccer = new Word (allWords) {
     word = "SOCCER",
     postItDes = "Jimmy's athletics",
     playerTalk_normal = "Jimmy still playing ball with the team?",
-    haroldTalk_normal = "oh, yeah, he's got a scrimmage next weekend",
-    playerTime = 4f,
-    haroldTime = 4f};
+    haroldTalk_normal = "oh, yeah, he's got a scrimmage next week"};
 
-  Word internet = new Word {
+  Word internet = new Word (allWords) {
     word = "INTERNET",
     postItDes = "kids these days",
     playerTalk_normal = "he on that tink tonk like all the other kids",
-    haroldTalk_normal = "tink tonk, instant grams, all the same to me",
-    playerTime = 4f,
-    haroldTime = 4f};
+    haroldTalk_normal = "tink tonk, instant grams, all the same to me"};
 
-Word work = new Word {
+Word work = new Word (allWords, avalibleWords) {
       word = "WORK",
       postItDes = "the job",
       playerTalk_normal = "work's really been grinding my gears lately",
-      haroldTalk_normal = "tell me about it",
-      playerTime = 4f,
-      haroldTime = 2f};
+      haroldTalk_normal = "tell me about it"};
 
-  Word boss = new Word {
+  Word boss = new Word (allWords) {
     word = "BOSS",
     postItDes = "the big man",
     playerTalk_normal = "boss man's been breathing down my neck",
-    haroldTalk_normal = "guess that's why they pay him the big bucks",
-    playerTime = 4f,
-    haroldTime = 5f};
+    haroldTalk_normal = "guess that's why they pay him the big bucks"};
   
-  Word hours = new Word {
+  Word hours = new Word (allWords) {
     word = "HOURS",
     postItDes = "9 to 5",
     playerTalk_normal = "can't wait till we're off at 5",
-    haroldTalk_normal = "yep, I'll be going home to watch some sportsball",
-    playerTime = 4f,
-    haroldTime = 5f};
+    haroldTalk_normal = "yep, I'll be going home to watch some ball"};
   
-  Word merger = new Word {
+  Word merger = new Word (allWords) {
     word = "MERGER",
     postItDes = "getting bought out",
     playerTalk_normal = "any updates on the merger?",
-    haroldTalk_normal = "man upstairs hasn't given any updates",
-    playerTime = 3f,
-    haroldTime = 4f};
+    haroldTalk_normal = "no updates yet from the man upstairs"};
   
-  Word client = new Word {
+  Word client = new Word (allWords) {
     word = "CLIENT",
     postItDes = "the people you sell to",
     playerTalk_normal = "I dealth with a pretty annoying client today",
-    haroldTalk_normal = "they whine like children, I tell ya",
-    playerTime = 4f,
-    haroldTime = 2f};
+    haroldTalk_normal = "they whine like children, I tell ya"};
 
-Word movies = new Word {
+Word movies = new Word (allWords, avalibleWords) {
       word = "MOVIES",
       postItDes = "entertainment",
       playerTalk_normal = "you a movie guy?",
-      haroldTalk_normal = "love the big screen",
-      playerTime = 2f,
-      haroldTime = 2f};
+      haroldTalk_normal = "love the big screen"};
 
-  Word release = new Word {
+  Word release = new Word (allWords) {
       word = "RELEASE",
       postItDes = "new to theaters",
       playerTalk_normal = "see any new ones letely?",
-      haroldTalk_normal = "the family had a movie marathon when it snowed a few days ago",
-      playerTime = 2.5f,
-      haroldTime = 5f};
+      haroldTalk_normal = "the family did a movie marathon when it snowed a few days ago"};
   
-  Word actor = new Word {
+  Word actor = new Word (allWords) {
       word = "ACTOR",
       postItDes = "the guy on screen",
       playerTalk_normal = "that one guy's getting really famous, huh",
-      haroldTalk_normal = "he's in everything these days",
-      playerTime = 4f,
-      haroldTime = 3f};
+      haroldTalk_normal = "he's in everything these days"};
 
-  Word scifi = new Word {
+  Word scifi = new Word (allWords) {
       word = "SCIFI",
       postItDes = "movies in space",
       playerTalk_normal = "I miss all the good scifi from our childhood",
-      haroldTalk_normal = "visual effects have come such a long way",
-      playerTime = 5f,
-      haroldTime = 5f};
+      haroldTalk_normal = "visual effects have come such a long way"};
 
-  Word prices = new Word {
+  Word prices = new Word (allWords) {
       word = "PRICES",
       postItDes = "ticket costs",
       playerTalk_normal = "theaters are really ripping us off these days",
-      haroldTalk_normal = "back in my day tickets were a dollar",
-      playerTime = 5f,
-      haroldTime = 4f};
+      haroldTalk_normal = "back when we were kids, tickets were just a dollar, remember?"};
 
-Word sports = new Word {
+Word sports = new Word (allWords) {
       word = "SPORTS",
       postItDes = "athletics",
       playerTalk_normal = "how bout them sports",
-      haroldTalk_normal = "yup",
-      playerTime = 3f,
-      haroldTime = 1f};
+      haroldTalk_normal = "yup"};
 
-  Word game = new Word {
+  Word game = new Word (allWords) {
       word = "GAME",
       postItDes = "a recent competition",
       playerTalk_normal = "did you watch the game last night?",
-      haroldTalk_normal = "oh yeah, what a comeback they had",
-      playerTime = 4f,
-      haroldTime = 4f};
+      haroldTalk_normal = "oh yeah, what a comeback"};
 
-  Word team = new Word {
+  Word team = new Word (allWords) {
       word = "TEAM",
       postItDes = "blue jerseys",
       playerTalk_normal = "I'm a pretty big fan of the blue team",
-      haroldTalk_normal = "I'm a red team fan myself",
-      playerTime = 4f,
-      haroldTime = 3f};
+      haroldTalk_normal = "I'm a red team fan myself"};
 
-  Word varsity = new Word {
+  Word varsity = new Word (allWords) {
       word = "VARSITY",
       postItDes = "back in high school",
       playerTalk_normal = "reminds me of the good ol' days as a lineman for the high school",
-      haroldTalk_normal = "that sure takes me back",
-      playerTime = 7f,
-      haroldTime = 3f};
-  
+      haroldTalk_normal = "that sure takes me back"};
 
 
 
@@ -581,11 +578,55 @@ sports.normalOptions = new List<Word>(){game, team, varsity};
   varsity.normalOptions = new List<Word>(){game, team, soccer};
 
 
-  
-avalibleWords.Add(weather);
-avalibleWords.Add(child);
-avalibleWords.Add(work);
-avalibleWords.Add(movies);
-avalibleWords.Add(sports);
+foreach (Word he in allWords)
+{
+  he.post = "Play_" + he.word.ToLower();
+  he.playerTime = ((float)he.playerTalk_normal.Length * .05f) + Random.Range(0f, 1f);
+  he.haroldTime = ((float)he.haroldTalk_normal.Length * .05f);
+}
+
+int goodbyeIndex = Random.Range(0, 4);
+goodbyeRTPC.SetValue(gameObject, goodbyeIndex);
+goodbye.haroldTime = 2f;
+switch (goodbyeIndex)
+{
+case 0:
+goodbye.haroldTalk_normal = "adios amigo";
+break;
+
+case 1:
+goodbye.haroldTalk_normal = "alrighty";
+break;
+
+case 2:
+goodbye.haroldTalk_normal = "see ya";
+break;
+
+case 3:
+goodbye.haroldTalk_normal = "till next time";
+break;
+}
+
+int helloIndex = Random.Range(0, 4);
+helloRTPC.SetValue(gameObject, helloIndex);
+hello.haroldTime = 2f;
+switch (helloIndex)
+{
+case 0:
+hello.haroldTalk_normal = "hello";
+break;
+
+case 1:
+hello.haroldTalk_normal = "howdy";
+break;
+
+case 2:
+hello.haroldTalk_normal = "good to see ya again";
+break;
+
+case 3:
+hello.haroldTalk_normal = "oh, hey";
+break;
+}
 }
 }

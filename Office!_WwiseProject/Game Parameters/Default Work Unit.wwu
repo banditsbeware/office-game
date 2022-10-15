@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AD6EE1F6-773E-4512-BEC9-912B1E12A5BC}" SchemaVersion="110">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{AD6EE1F6-773E-4512-BEC9-912B1E12A5BC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AD6EE1F6-773E-4512-BEC9-912B1E12A5BC}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="goodbyeSwitch" ID="{A297DE9C-EDEE-45F6-9A3F-EB1FC33D0BE0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="4"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="helloSwitch" ID="{9AD2AEDB-5836-4A3E-B2FA-F7CFB726C02D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="4"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

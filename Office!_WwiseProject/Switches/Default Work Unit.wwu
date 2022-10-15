@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}" SchemaVersion="110">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="goodbyeSwitch" ID="{426C7E0E-F611-4F57-8C3D-01FAC6DD40E5}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="adios" ID="{15EE7EE1-57B7-4390-8B0A-6200D8691B3F}"/>
+						<Switch Name="alrighty" ID="{0CEBBF2E-8E3D-4B6A-B8F9-B32225D36A47}"/>
+						<Switch Name="seeYa" ID="{9B21FBE4-AFA3-44F2-AC3F-017464A7D12D}"/>
+						<Switch Name="tillNext" ID="{056A1C30-CC5A-46D3-A1C4-F46EE3F8A6B7}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="goodbyeSwitch" ID="{A297DE9C-EDEE-45F6-9A3F-EB1FC33D0BE0}"/>
+						<Curve Name="" ID="{C52232CF-7669-44BA-BFA0-8E4E7A8A2B8F}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.49881</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1.49881</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2.50119</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="helloSwitch" ID="{05308ED9-43FD-447E-8D25-7F9E8033FB44}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="hello" ID="{3EF2DF8C-DD81-44DD-938E-A9E487F77970}"/>
+						<Switch Name="howdy" ID="{EF25C045-4BF7-4848-B127-6C6C9251E249}"/>
+						<Switch Name="goodToSee" ID="{47DAC00B-0E9C-4D31-9CA3-D52DEBA4B349}"/>
+						<Switch Name="ohHey" ID="{54B5A2F8-5815-481C-A780-703C3B732929}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="helloSwitch" ID="{9AD2AEDB-5836-4A3E-B2FA-F7CFB726C02D}"/>
+						<Curve Name="" ID="{BEDF1B6B-3372-49AD-AA03-B2ACD6CC55C3}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.49881</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1.49881</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2.50119</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

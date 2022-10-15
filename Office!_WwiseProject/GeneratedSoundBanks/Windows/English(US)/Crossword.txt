@@ -1,11 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	216639764	Play_game			\Default Work Unit\Harold\Play_game	
-	363572393	Play_goodbye_seeYa			\Default Work Unit\Harold\goodbye\Play_goodbye_seeYa	
 	393588247	Play_extra_cough			\Default Work Unit\Harold\Play_extra_cough	
+	503260239	Stop_Player			\Default Work Unit\Player\Stop_Player	
 	692169189	Play_release			\Default Work Unit\Harold\Play_release	
 	1012391550	Play_coffee			\Default Work Unit\Harold\Play_coffee	
 	1221848793	Play_work			\Default Work Unit\Harold\Play_work	
-	1256120352	Play_goodbye_adios			\Default Work Unit\Harold\goodbye\Play_goodbye_adios	
 	1498563514	Play_extra_huh			\Default Work Unit\Harold\Play_extra_huh	
 	1629223547	Play_sports			\Default Work Unit\Harold\Play_sports	
 	1667103285	Play_movies			\Default Work Unit\Harold\Play_movies	
@@ -15,48 +14,94 @@ Event	ID	Name			Wwise Object Path	Notes
 	2866310100	Play_merger			\Default Work Unit\Harold\Play_merger	
 	2874228519	Play_client			\Default Work Unit\Harold\Play_client	
 	2952268476	Play_child			\Default Work Unit\Harold\Play_child	
+	2952797154	Play_hello			\Default Work Unit\Harold\Play_hello	
+	3008568847	Play_goodbye			\Default Work Unit\Harold\Play_goodbye	
 	3037538514	Play_clothes			\Default Work Unit\Harold\Play_clothes	
 	3039012154	Play_scifi			\Default Work Unit\Harold\Play_scifi	
 	3049503277	Play_internet			\Default Work Unit\Harold\Play_internet	
 	3231912389	Play_actor			\Default Work Unit\Harold\Play_actor	
 	3308884970	Play_weather			\Default Work Unit\Harold\Play_weather	
 	3331051860	Play_prices			\Default Work Unit\Harold\Play_prices	
-	3414812528	Play_goodbye_tillNext			\Default Work Unit\Harold\goodbye\Play_goodbye_tillNext	
 	3422393765	Play_team			\Default Work Unit\Harold\Play_team	
 	3545779475	Play_soccer			\Default Work Unit\Harold\Play_soccer	
 	3606423206	Play_school			\Default Work Unit\Harold\Play_school	
+	3608805445	Play_Player			\Default Work Unit\Player\Play_Player	
 	3799175311	Play_growth			\Default Work Unit\Harold\Play_growth	
 	4026051667	Play_snow			\Default Work Unit\Harold\Play_snow	
-	4060144966	Play_goodbye_alrighty			\Default Work Unit\Harold\goodbye\Play_goodbye_alrighty	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1227038859	helloSwitch			\Default Work Unit\helloSwitch	
+	3961472506	goodbyeSwitch			\Default Work Unit\goodbyeSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	79545204	howdy	helloSwitch			
+	162350874	goodToSee	helloSwitch			
+	3069866343	hello	helloSwitch			
+	4289414342	ohHey	helloSwitch			
+	405470859	tillNext	goodbyeSwitch			
+	2233318497	adios	goodbyeSwitch			
+	3403688825	alrighty	goodbyeSwitch			
+	4102371168	seeYa	goodbyeSwitch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1227038859	helloSwitch			\Default Work Unit\helloSwitch	
+	3961472506	goodbyeSwitch			\Default Work Unit\goodbyeSwitch	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	19725708	prices	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_prices_02_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\prices		982342
-	38896493	game	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_game_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\game		900066
-	55802916	work	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_work_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\work		549716
-	73368536	varsity	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_varsity_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\varsity		1024618
-	138153152	growth	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_growth_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\growth		767146
-	152406515	sports	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_sports_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\sports		831816
-	316028187	snow	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_snow_02_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\snow		409244
-	381595372	extra_cough	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_extra_cough_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\extra_cough		1530698
-	383459377	client	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_client_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\client		815418
-	420736337	school	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_school_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\school		878632
-	421058727	hours	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_hours_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\hours		870242
-	452325800	movies	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_movies_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\movies		667116
-	460433903	child	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_child_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\child		1099618
-	472567484	clothes	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_clothes_02_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\clothes		595844
-	503512560	boss	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_boss_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\boss		779188
-	509392946	coffee	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_coffee_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\coffee		1158482
-	523907929	goodbye_adios	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_adios_dist_37C5F0FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_adios		119966
-	597633837	weather	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_weather_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\weather		695364
-	604219696	soccer	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_soccer_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\soccer		1190912
-	611446876	release	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_release_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\release		1081898
-	646997900	internet	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_internet_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\internet		1033298
-	699313978	actor	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_actor_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\actor		695168
-	704986967	goodbye_tillNext	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_tillNext_dist_B31162DD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_tillNext		106608
-	814325946	goodbye_alrighty	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_alrighty_dist_F7FF9098.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_alrighty		88374
-	821841142	scifi	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_scifi_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\scifi		979018
-	839712619	goodbye_seeYa	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_seeYa_dist_0DB85E48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_seeYa		78660
-	979785200	team	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_team_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\team		1110776
-	979936609	merger	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_merger_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\merger		859934
-	1070652198	extra_huh	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_extra_huh_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\extra_huh		996186
+	19725708	prices	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_prices_02_dist_131BCBA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\prices		276090
+	28675690	gr	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_817ED58E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\gr		24482
+	38896493	game	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_game_dist_65FD3A69.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\game		153936
+	55802916	work	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_work_dist_76E02141.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\work		74084
+	73368536	varsity	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_varsity_dist_E364BAD9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\varsity		122690
+	100778504	x	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_E1C8F953.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\x		16630
+	124542846	ar	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_990F589D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\ar		33152
+	138153152	growth	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_growth_dist_B76ED04D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\growth		186940
+	143159212	jn	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_C9ECFEBC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\jn		27162
+	152406515	sports	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_sports_dist_7C169336.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\sports		38306
+	171337775	rr	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_DF84C1B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\rr		33648
+	179415209	fy	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_7A1713BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\fy		32540
+	188697987	ta	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_81184A39.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\ta		12986
+	257920647	e	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_5EC1D54C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\e		14326
+	287562875	hello_howdy	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_hello_howdy_dist_F794FB55.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\hello\hello_howdy		45918
+	316028187	snow	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_snow_02_dist_DEB3E48C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\snow		164892
+	330779553	hello_hello	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_hello_hello_dist_E3583CD7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\hello\hello_hello		42190
+	334523883	ha	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_AA2BA028.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\ha		27776
+	381595372	extra_cough	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_extra_cough_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\extra_cough		1530698
+	381849891	hello_goodToSee	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_hello_goodToSee_dist_1EE97443.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\hello\hello_goodToSee		86688
+	383459377	client	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_client_dist_AFDEA1BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\client		185634
+	412725817	fg	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_872CBCCD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\fg		30888
+	420736337	school	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_school_dist_308DF512.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\school		186878
+	421058727	hours	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_hours_dist_A1B300F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\hours		225068
+	452325800	movies	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_movies_dist_E1CA656E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\movies		102716
+	460433903	child	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_child_dist_E2D9726B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\child		260880
+	461780578	hu	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_25D65588.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\hu		30344
+	472567484	clothes	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_clothes_02_dist_DF28380B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\clothes		303062
+	503512560	boss	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_boss_dist_29C69751.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\boss		182384
+	509392946	coffee	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_coffee_dist_13BEF6A2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\coffee		168408
+	523907929	goodbye_adios	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_adios_dist_B3B937D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_adios		119966
+	580024799	hello_ohHey	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_hello_ohHey_dist_EE6A0C71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\hello\hello_ohHey		73738
+	597633837	weather	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_weather_dist_A51EF954.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\weather		123498
+	604219696	soccer	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_soccer_dist_2FAD8199.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\soccer		202382
+	609221544	lr	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_062A2C8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\lr		18464
+	611446876	release	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_release_dist_E09C3871.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\release		274014
+	632862132	shr	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_82D073CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\shr		22772
+	646997900	internet	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_internet_dist_9927E463.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\internet		329044
+	699313978	actor	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_actor_dist_6A09B36A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\actor		142726
+	704986967	goodbye_tillNext	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_tillNext_dist_8438C4D1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_tillNext		106608
+	722714323	da	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_3D70DC07.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\da		17338
+	722975308	la	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_EB9460C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\la		21552
+	723211041	fu	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_324B7157.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\fu		16584
+	728049436	tor	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_26F601DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\tor		29790
+	736719334	lu	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_F90DC5DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\lu		24370
+	745311120	wo	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_70B2CF9A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\wo		36792
+	814325946	goodbye_alrighty	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_alrighty_dist_D6109C74.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_alrighty		88374
+	821841142	scifi	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_scifi_dist_CD707FF6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\scifi		205084
+	839712619	goodbye_seeYa	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_goodbye_seeYa_dist_A557850F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\goodbye\goodbye_seeYa		78660
+	892579934	fr	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_DD5A283D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\fr		28242
+	945202610	hn	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_43A54100.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\hn		23344
+	979785200	team	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_team_dist_0612E1F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\team		194702
+	979936609	merger	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_merger_dist_BF460364.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\merger		203112
+	989646987	to	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_1D5D94DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\to		17438
+	1059986698	un	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Harold_Player_dist_3C7FA0ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\Player\un		17438
+	1070652198	extra_huh	E:\Office!\Office!_WwiseProject\.cache\Windows\Voices\English(US)\Audio Files\Harold_extra_huh_dist_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Harold\extra_huh		996186
 

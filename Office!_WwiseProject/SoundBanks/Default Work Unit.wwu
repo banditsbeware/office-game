@@ -16,6 +16,7 @@
 				<SoundBank Name="Crossword" ID="{BAF11F32-56C2-47DF-9526-9C9437CABE9B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_extra_huh" ID="{404607D1-9DA2-4076-9FE0-2B5A6868A440}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Player" ID="{BB3EDB14-83C7-411A-95FE-47F4CEAA2EFE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_prices" ID="{5C9B724F-52DA-4177-851B-DFA2896864FF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_soccer" ID="{6F1A3C6F-C7D8-4183-8BF4-F2A9D6E93EC4}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_work" ID="{220EE1A7-D685-41B1-9301-A56071C2DA0C}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
@@ -32,6 +33,8 @@
 						<ObjectRef Name="Play_varsity" ID="{240D82E2-159D-4838-9EF6-BCC2C35450F1}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_clothes" ID="{76F43FE2-1943-485B-A868-65A33DB5A718}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_game" ID="{01BE12C5-AD6B-4924-9F2E-8BAC4CF8D8A1}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_goodbye" ID="{32B9ACA3-9EC3-4967-9058-1FCFC2FCD994}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_hello" ID="{E8B614D2-9BE8-4A58-852F-35AE3C9C6D1F}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_snow" ID="{8C185CCE-4466-4A5E-98FB-844A9B1A3946}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_actor" ID="{A0716BF7-0E5D-4AF6-BE66-E90F6863ACC2}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sports" ID="{235A3FFC-8988-4B64-87C2-3E3336007CC7}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
@@ -40,7 +43,7 @@
 						<ObjectRef Name="Play_movies" ID="{039AFA44-B0FB-4DC8-BD2C-5067F05B9A3D}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_coffee" ID="{EE28F294-BC11-4F09-9559-F104004F0948}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_internet" ID="{BD694DE8-C3B5-4F6A-9EDE-C99C4F804B37}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="goodbye" ID="{E78B314F-F3FF-4F82-A017-D05429BD392B}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player" ID="{34F70366-82DB-4F7F-ACBD-10DBD1CE1792}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

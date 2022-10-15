@@ -22,17 +22,16 @@ namespace AK
         static const AkUniqueID PLAY_EXTRA_COUGH = 393588247U;
         static const AkUniqueID PLAY_EXTRA_HUH = 1498563514U;
         static const AkUniqueID PLAY_GAME = 216639764U;
-        static const AkUniqueID PLAY_GOODBYE_ADIOS = 1256120352U;
-        static const AkUniqueID PLAY_GOODBYE_ALRIGHTY = 4060144966U;
-        static const AkUniqueID PLAY_GOODBYE_SEEYA = 363572393U;
-        static const AkUniqueID PLAY_GOODBYE_TILLNEXT = 3414812528U;
+        static const AkUniqueID PLAY_GOODBYE = 3008568847U;
         static const AkUniqueID PLAY_GROWTH = 3799175311U;
+        static const AkUniqueID PLAY_HELLO = 2952797154U;
         static const AkUniqueID PLAY_HELVETICA = 3069382355U;
         static const AkUniqueID PLAY_HOURS = 1710785415U;
         static const AkUniqueID PLAY_INTERNET = 3049503277U;
         static const AkUniqueID PLAY_MERGER = 2866310100U;
         static const AkUniqueID PLAY_MOVIES = 1667103285U;
         static const AkUniqueID PLAY_OFFICE_AMB = 219189707U;
+        static const AkUniqueID PLAY_PLAYER = 3608805445U;
         static const AkUniqueID PLAY_PRICES = 3331051860U;
         static const AkUniqueID PLAY_RELEASE = 692169189U;
         static const AkUniqueID PLAY_SCHOOL = 3606423206U;
@@ -46,6 +45,7 @@ namespace AK
         static const AkUniqueID PLAY_WORK = 1221848793U;
         static const AkUniqueID STOP_HELVETICA = 2823449565U;
         static const AkUniqueID STOP_OFFICE_AMB = 1325704673U;
+        static const AkUniqueID STOP_PLAYER = 503260239U;
     } // namespace EVENTS
 
     namespace STATES
@@ -66,6 +66,42 @@ namespace AK
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace GOODBYESWITCH
+        {
+            static const AkUniqueID GROUP = 3961472506U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ADIOS = 2233318497U;
+                static const AkUniqueID ALRIGHTY = 3403688825U;
+                static const AkUniqueID SEEYA = 4102371168U;
+                static const AkUniqueID TILLNEXT = 405470859U;
+            } // namespace SWITCH
+        } // namespace GOODBYESWITCH
+
+        namespace HELLOSWITCH
+        {
+            static const AkUniqueID GROUP = 1227038859U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GOODTOSEE = 162350874U;
+                static const AkUniqueID HELLO = 3069866343U;
+                static const AkUniqueID HOWDY = 79545204U;
+                static const AkUniqueID OHHEY = 4289414342U;
+            } // namespace SWITCH
+        } // namespace HELLOSWITCH
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID GOODBYESWITCH = 3961472506U;
+        static const AkUniqueID HELLOSWITCH = 1227038859U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -76,7 +112,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCE = 85412153U;
-        static const AkUniqueID DIALOGUE_ = 1669749354U;
+        static const AkUniqueID DIALOGUE = 3930136735U;
+        static const AkUniqueID HAROLD = 4208281901U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES

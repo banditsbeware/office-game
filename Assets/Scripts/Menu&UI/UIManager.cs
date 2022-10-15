@@ -42,7 +42,6 @@ public class UIManager : MonoBehaviour
 
 	public void pauseControl()
 	{
-		Debug.Log(gameState + Time.time);
 		if(gameState == "play")
 		{
 			Time.timeScale = 0;
@@ -59,7 +58,6 @@ public class UIManager : MonoBehaviour
 		{
 			hide(minigames);
 			gameState = "play";
-			Debug.Log("miniGone");
 		}
 	}
 

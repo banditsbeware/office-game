@@ -70,7 +70,7 @@ public class TextWriter : MonoBehaviour
         {
             this.uiText = uiText;
             this.textToWrite = text;
-            timePerChar = .1f;
+            timePerChar = .05f;
             invisChars = true;
             charIndex = 0;       
         }

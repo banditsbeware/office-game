@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 285764986e34605489b0733598996426, type: 3}
+  m_Name: BAF11F32-56C2-47DF-9526-9C9437CABE9B
+  m_EditorClassIdentifier: 
+  objectName: Crossword
+  id: 630707431
+  guid: BAF11F32-56C2-47DF-9526-9C9437CABE9B

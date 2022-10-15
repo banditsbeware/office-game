@@ -384,54 +384,58 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Folder Name="goodbye" ID="{E78B314F-F3FF-4F82-A017-D05429BD392B}" ShortID="1026379331">
+						<Event Name="Play_goodbye" ID="{32B9ACA3-9EC3-4967-9058-1FCFC2FCD994}">
 							<ChildrenList>
-								<Event Name="Play_goodbye_seeYa" ID="{0FDF19B9-77BD-4D37-B835-7D97C2A9EBC9}">
-									<ChildrenList>
-										<Action Name="" ID="{86476FA1-821C-4414-A924-298FD9BF7A66}" ShortID="913731626">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="goodbye_seeYa" ID="{8B6ED48F-CF5F-4473-9B11-5D9BB89568D2}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_goodbye_tillNext" ID="{53B28DE6-AED1-4010-8F04-497C828AFA01}">
-									<ChildrenList>
-										<Action Name="" ID="{85BE700E-D4E3-412B-AD66-7459666CB6F0}" ShortID="903587865">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="goodbye_tillNext" ID="{E7802AFC-1E5B-4DC4-9B45-12C087F80292}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_goodbye_alrighty" ID="{3DDADF7B-AA9F-4C40-AF05-48951CE8B202}">
-									<ChildrenList>
-										<Action Name="" ID="{DC44D6B4-B500-498A-8A41-AB1539DB3EC6}" ShortID="933736750">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="goodbye_alrighty" ID="{0DBF694D-1EA8-45DD-BA4E-AB74BC99A4F5}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_goodbye_adios" ID="{012F4A40-F06B-413F-830A-921D5B978ECF}">
-									<ChildrenList>
-										<Action Name="" ID="{14CFE4BD-C203-4689-85DC-D9CACA2F9EDD}" ShortID="10551030">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="goodbye_adios" ID="{B2B6AEB6-323A-4B6B-B395-F820E3033A51}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
+								<Action Name="" ID="{DE1A1B89-1DB2-4C39-8F66-EEC0B7BCB016}" ShortID="562958127">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="goodbye" ID="{4D75B9E8-8A96-4CC5-8A4F-50E474F74071}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
-						</Folder>
+						</Event>
+						<Event Name="Play_hello" ID="{E8B614D2-9BE8-4A58-852F-35AE3C9C6D1F}">
+							<ChildrenList>
+								<Action Name="" ID="{5D3E2C7C-173B-4C37-94C4-14CC259D42A4}" ShortID="172229367">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="hello" ID="{FE654107-5617-4A15-A744-C71E9A47BDAA}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{1B8A7C3A-10BC-417C-B6B5-08DE75DA5C86}" ShortID="244992044">
+					<ChildrenList>
+						<Event Name="Stop_Player" ID="{BB3EDB14-83C7-411A-95FE-47F4CEAA2EFE}">
+							<ChildrenList>
+								<Action Name="" ID="{2A658127-0230-4869-97A0-86BDEC102A00}" ShortID="550218882">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player" ID="{C4EE45B7-4A91-47B6-B044-46B6170B2BF2}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player" ID="{34F70366-82DB-4F7F-ACBD-10DBD1CE1792}">
+							<ChildrenList>
+								<Action Name="" ID="{714C8192-5311-44B7-BBCF-01FB9B53E087}" ShortID="649787411">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player" ID="{C4EE45B7-4A91-47B6-B044-46B6170B2BF2}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
