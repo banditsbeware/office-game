@@ -48,7 +48,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -239,6 +239,11 @@
 								<Sound Name="actor" ID="{3E2AD031-B2E8-4B66-A473-620746CAE14A}" ShortID="793146193">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -271,6 +276,11 @@
 								<Sound Name="boss" ID="{7BD291F9-44D1-4AB6-BF7B-95D31580FEA9}" ShortID="482020195">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -301,6 +311,11 @@
 								<Sound Name="child" ID="{A76B247D-F362-4A5E-9BF3-E2E96814E5D8}" ShortID="200357473">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -331,6 +346,11 @@
 								<Sound Name="client" ID="{CFAED199-47AB-43BF-8499-B1221441B8C0}" ShortID="879434261">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -361,6 +381,11 @@
 								<Sound Name="clothes" ID="{47FDDD27-8E4C-4AE8-95FC-8D7A2146B68F}" ShortID="262388886">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -391,6 +416,11 @@
 								<Sound Name="coffee" ID="{70E5E421-D3ED-4998-94AA-45954759C280}" ShortID="1000800631">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -421,6 +451,11 @@
 								<Sound Name="extra_cough" ID="{2E11990A-C2CC-4869-B51C-4A485A530161}" ShortID="746998639">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -446,6 +481,11 @@
 								<Sound Name="extra_huh" ID="{4C895B9D-90EA-4DAE-BE66-DDB34219BFA6}" ShortID="125262819">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -471,6 +511,11 @@
 								<Sound Name="game" ID="{C4D6F231-ABED-4307-97CF-8315C6456D5F}" ShortID="925847639">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -501,6 +546,11 @@
 								<Sound Name="growth" ID="{BC3E5468-F933-4E7B-900E-2948730012E0}" ShortID="357906235">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -531,6 +581,11 @@
 								<Sound Name="hours" ID="{7CCC62CF-BAA9-4711-857E-DE0C1956F712}" ShortID="840774487">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -561,6 +616,11 @@
 								<Sound Name="internet" ID="{B756324A-0BE2-431F-AE10-95C71F8E362B}" ShortID="608363388">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -591,6 +651,11 @@
 								<Sound Name="merger" ID="{2EEE8FB5-C932-4C87-92D9-9BA6B89F27D1}" ShortID="204944171">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -621,6 +686,11 @@
 								<Sound Name="movies" ID="{17E5DE57-D472-46D3-96F3-CDF5EE98AE5B}" ShortID="840249533">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -651,6 +721,11 @@
 								<Sound Name="prices" ID="{6E4F04D6-29D1-428E-A860-121468E4F9EF}" ShortID="95476977">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -681,6 +756,11 @@
 								<Sound Name="release" ID="{AAE0964F-C331-4DD4-88D9-024E36536FED}" ShortID="889847558">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -711,6 +791,11 @@
 								<Sound Name="school" ID="{479279CF-BEFF-4A50-9538-E94DD967326A}" ShortID="905459623">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -741,6 +826,11 @@
 								<Sound Name="scifi" ID="{22860709-2CF9-4DE1-A34F-F61844621B92}" ShortID="448287773">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -771,6 +861,11 @@
 								<Sound Name="snow" ID="{1C6CE825-534D-4EDB-A7EF-9D115ECE4B65}" ShortID="1048089924">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -801,6 +896,11 @@
 								<Sound Name="soccer" ID="{5A592F14-92D0-4307-932E-4701A7711808}" ShortID="244305933">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -831,6 +931,11 @@
 								<Sound Name="sports" ID="{FD8B6966-7218-443F-A734-D2A100DA7D96}" ShortID="171622593">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -861,6 +966,11 @@
 								<Sound Name="team" ID="{A03C342C-BF90-42A8-8C7C-49725F43C469}" ShortID="765095574">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -891,6 +1001,11 @@
 								<Sound Name="varsity" ID="{D843E4AA-5993-4313-BE49-DA9CE474A061}" ShortID="37091579">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -921,6 +1036,11 @@
 								<Sound Name="weather" ID="{37AA3166-6EE1-42B4-B2F5-380796B32C22}" ShortID="755300585">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -952,6 +1072,11 @@
 								<Sound Name="work" ID="{9FE39D09-0B02-4041-88BC-D8B5EFB2B54C}" ShortID="110387473">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1000,11 +1125,6 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1720,6 +1840,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<SwitchContainer Name="goodbye" ID="{4D75B9E8-8A96-4CC5-8A4F-50E474F74071}" ShortID="461285491">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -1908,6 +2035,13 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<SwitchContainer Name="hello" ID="{FE654107-5617-4A15-A744-C71E9A47BDAA}" ShortID="861551771">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>

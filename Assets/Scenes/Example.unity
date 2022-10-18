@@ -2658,8 +2658,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1aa4f5dc6f47ca144811dcea75d90ce7, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3493,7 +3493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1370609479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3878,12 +3878,12 @@ SpriteRenderer:
   m_SortingLayerID: -210726649
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1522851227, guid: c15a791527795da48939d0c31e68084d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9dbc005305dd9aa419ee23905f380620, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 400, y: 300}
+  m_Size: {x: 40, y: 30}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4490,7 +4490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1817008660
 Transform:
   m_ObjectHideFlags: 0
@@ -4781,7 +4781,6 @@ MonoBehaviour:
   baseText: {fileID: 1231156475}
   topText: {fileID: 1693928056}
   test: {fileID: 0}
-  textWriter: {fileID: 1890632088}
   phrase: 'Go get some hoes, or else you''ll never be like me, a thicc minded phreak,
     juicy and loosey, bountiful a plenty. '
 --- !u!1 &1890632085
@@ -4817,7 +4816,8 @@ MonoBehaviour:
   pauseObjects: []
   notifs: []
   minigames: []
-  canvasNotifs: {fileID: 1965811755}
+  canvasText: {fileID: 0}
+  waterStation: {fileID: 0}
   gameState: play
 --- !u!4 &1890632087
 Transform:
@@ -4846,7 +4846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe696104ec1cf914ea3491d5c95d16b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: 
 --- !u!1 &1900030901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4879,32 +4878,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1205700bf89b214d9e6a2578f9d6ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textWriter: {fileID: 1890632088}
+  UIMan: {fileID: 0}
   size: 8
   gridObject: {fileID: 1099324278}
   exampleButton: {fileID: 1792997667608175900, guid: aa248ea424af6524f9702284f812f145, type: 3}
-  response: {fileID: 1340357816}
-  wordList:
-  - word: CHERUB
-    responses:
-    - cherub? it really do be lke that sometimes
-    found: 0
-  - word: BEANS
-    responses:
-    - thats a big spicy
-    found: 0
-  - word: JUICY
-    responses:
-    - juicy indeed
-    found: 0
-  - word: YEAT
-    responses:
-    - truly, splendid yeat
-    found: 0
-  - word: EVADE
-    responses:
-    - for whence you are evading that of the most yet also
-    found: 0
+  haroldSpeech: {fileID: 0}
+  playerSpeech: {fileID: 0}
+  postIt: {fileID: 0}
+  crossBank:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  goodbyeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  helloRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1900030903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5387,6 +5379,30 @@ PrefabInstance:
     - target: {fileID: 281645727992740398, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
       propertyPath: m_SortingLayerID
       value: 1305428269
+      objectReference: {fileID: 0}
+    - target: {fileID: 281645728395828065, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
+      propertyPath: m_Size.x
+      value: 0.13301277
+      objectReference: {fileID: 0}
+    - target: {fileID: 281645728395828065, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5130272
+      objectReference: {fileID: 0}
+    - target: {fileID: 281645728395828065, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.4334936
+      objectReference: {fileID: 0}
+    - target: {fileID: 281645728395828065, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2434864
+      objectReference: {fileID: 0}
+    - target: {fileID: 281645728395828066, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
+      propertyPath: m_Size.y
+      value: 0.41251504
+      objectReference: {fileID: 0}
+    - target: {fileID: 281645728395828066, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.29374248
       objectReference: {fileID: 0}
     - target: {fileID: 281645728395828068, guid: 6798f5931e22ea84db64ad327b252744, type: 3}
       propertyPath: m_RootOrder

@@ -17,9 +17,9 @@ public class TextWriter : MonoBehaviour
         writerList = new List<TextWriterSingle>();
     }
 
-    public static void AddWriter_Static(TMP_Text uiText, string text, float time, bool invisChars)
+    public static void AddWriter_Static(TMP_Text uiText, string text, float time)
     {
-        instance?.AddWriter(uiText, text, time, invisChars);
+        instance?.AddWriter(uiText, text, time);
     }
 
     public static void AddWriter_Static(TMP_Text uiText, string text)
@@ -27,9 +27,9 @@ public class TextWriter : MonoBehaviour
         instance?.AddWriter(uiText, text);
     }
 
-    public void AddWriter(TMP_Text uiText, string text, float time, bool invisChars)
+    public void AddWriter(TMP_Text uiText, string text, float time)
     {
-        writerList.Add(new TextWriterSingle(uiText, text, time, invisChars));
+        writerList.Add(new TextWriterSingle(uiText, text, time));
     }
 
     public void AddWriter(TMP_Text uiText, string text)
@@ -58,14 +58,15 @@ public class TextWriter : MonoBehaviour
         private float timer;
         bool invisChars;
 
-        public TextWriterSingle(TMP_Text uiText, string text, float time, bool invisChars)
+        public TextWriterSingle(TMP_Text uiText, string text, float time)
         {
             this.uiText = uiText;
             this.textToWrite = text;
             this.timePerChar = time;
-            this.invisChars = invisChars;
+            this.invisChars = true;
             charIndex = 0;
         }
+        
         public TextWriterSingle(TMP_Text uiText, string text)
         {
             this.uiText = uiText;
@@ -87,7 +88,7 @@ public class TextWriter : MonoBehaviour
                 string text = textToWrite.Substring(0, charIndex);
                 if (invisChars)
                 {
-                    text += "<alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
+                    text += " <alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
                 }
                 uiText.text = text;
 

@@ -10,9 +10,31 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}"/>
-						<Bus Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}"/>
+						<Bus Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}">
+							<PropertyList>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-10"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="4"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MaxDuckVolume" Type="Real64" Value="-10"/>
+								<Property Name="RecoveryTime" Type="Real64" Value="3"/>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}">
 									<PropertyList>
@@ -24,6 +46,18 @@
 									</PropertyList>
 								</Bus>
 							</ChildrenList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}"/>
+									<DuckingParam>
+										<Volume>-10</Volume>
+										<FadeInTime>3</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
