@@ -39,15 +39,18 @@ public class Work : MonoBehaviour
         "diversity quota",
         "data-driven insight"
     };
-    public List<Phrase> activePhrases = new List<Phrase>();
-    public List<string> activeStrings = new List<string>();
+    private List<Phrase> activePhrases = new List<Phrase>();
+    private List<string> activeStrings = new List<string>();
 
     //template for text objects
     public TMP_Text Textplate;
 
     //speed/progression vars
-    public float textSpeed;
-    public float wordSpeed;
+    private float textSpeed;
+    private float wordSpeed;
+    public float textSpeedOnEn;
+    public float wordSpeedOnEn;
+
 
     //short snippets to be typed on computer screen
     public class Phrase {
@@ -92,8 +95,8 @@ public class Work : MonoBehaviour
 
     void OnEnable()
     {
-        textSpeed = .3f;
-        wordSpeed = 5f;
+        textSpeed = textSpeedOnEn;
+        wordSpeed = wordSpeedOnEn;
         resetBoard(textSpeed);
         beginPhrase(currentPhrase);
     }
