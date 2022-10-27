@@ -48,7 +48,7 @@ public class minigame : MonoBehaviour
 // begins cooler mini-game
     public void startGame()
     {
-        UIMan.gameState = "window";
+        UIManager.gameState = "window";
         UIMan.show(theMinigame);
     }
 }

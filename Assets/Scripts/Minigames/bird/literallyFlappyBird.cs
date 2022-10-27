@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class literallyFlappyBird : MonoBehaviour
 {
@@ -8,11 +9,16 @@ public class literallyFlappyBird : MonoBehaviour
     public float scrollV;
     public float pipeBounds;
     private bool jump;
-    public bool inGame;
+    private bool readyTGo;
+    private float numOfPipes = 5f;
+    [System.NonSerialized] public bool inGame;
     public Rigidbody2D bird;
     public Rigidbody2D bg;
     public Rigidbody2D bg2;
     public GameObject pipe;
+    public int score;
+    public TMP_Text scoreTxt;
+    public TMP_Text menu;
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
     private Queue<GameObject> pipes = new Queue<GameObject>();
 
@@ -22,6 +28,18 @@ public class literallyFlappyBird : MonoBehaviour
         scrollers.Add(bg2);
 
         inGame = false;
+        readyTGo = true;
+
+        for (int i = 0; i < numOfPipes; i++)
+        {
+            GameObject pip = Instantiate(pipe, gameObject.transform);
+            pip.transform.localPosition = new Vector3(40f + i * 20f, Random.Range(-pipeBounds, pipeBounds), 0f);
+            pipes.Enqueue(pip);
+            scrollers.Add(pip.GetComponent<Rigidbody2D>());
+        }
+
+        menu.gameObject.SetActive(true);
+        scoreTxt.gameObject.SetActive(false);
     }
 
     void Update()
@@ -36,9 +54,8 @@ public class literallyFlappyBird : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && readyTGo)
             {
-                Debug.Log("began");
                 Begin();
             }
         }
@@ -55,14 +72,17 @@ public class literallyFlappyBird : MonoBehaviour
 
     void Begin()
     {
-        if (pipes.Count != 0)
+        foreach (Rigidbody2D body in scrollers)
         {
-            for (int i = 0; i < pipes.Count; i++)
-            {
-                GameObject pip = pipes.Dequeue();
-                scrollers.Remove(pip.GetComponent<Rigidbody2D>());
-                GameObject.Destroy(pip);
-            }
+            body.velocity = new Vector2(scrollV, 0f);
+        }
+
+        for (int i = 0; i < pipes.Count; i++)
+        {
+            GameObject pip = pipes.Dequeue();
+            pip.transform.localPosition = new Vector3(40f + i * 20f, Random.Range(-pipeBounds, pipeBounds), 0f);
+            pip.GetComponent<Rigidbody2D>().velocity += new Vector2(-2f, 0);
+            pipes.Enqueue(pip);
         }
 
         bird.transform.localPosition = Vector2.zero;
@@ -70,29 +90,16 @@ public class literallyFlappyBird : MonoBehaviour
         bird.angularVelocity = 0;
         bird.simulated = true;
 
-
-
-        foreach (Rigidbody2D body in scrollers)
-        {
-            body.velocity = new Vector2(scrollV, 0f);
-        }
-
-        for (int i = 0; i < 5; i++)
-        {
-            doPipe((float) i);
-        }
-
-        foreach (GameObject pip in pipes)
-        {
-            pip.GetComponent<Rigidbody2D>().velocity += new Vector2(-2f, 0);
-        }
-
-         inGame = true;
+        inGame = true;
+        score = 0;
+        scoreTxt.text = "Score: " + score;
+        menu.gameObject.SetActive(false);
+        scoreTxt.gameObject.SetActive(true);
     }
 
     void FixedUpdate()
     {
-        if (inGame && pipes.Peek() != null)
+        if (inGame && pipes.Count != 0)
         {
             if ((pipes.Peek().transform.position.x < -30))
             {
@@ -106,19 +113,15 @@ public class literallyFlappyBird : MonoBehaviour
         Vector2 offset = new Vector2 (80f, 0);
         obj.position += offset;
     }
-    
-    void doPipe(float i)
-    {
-        GameObject pip = Instantiate(pipe, gameObject.transform);
-        pip.transform.localPosition = new Vector3(40f + i * 20f, Random.Range(-pipeBounds, pipeBounds), 0f);
-        pipes.Enqueue(pip);
-        scrollers.Add(pip.GetComponent<Rigidbody2D>());
-        pip.GetComponent<Rigidbody2D>().velocity = new Vector2(scrollV, 0f);
-    }
 
+    IEnumerator waitToPlay()
+    {
+        yield return new WaitForSeconds(.5f);
+        readyTGo = true;
+    }
     void redoPipe()
     {
-        float offset = 100f;
+        float offset = numOfPipes * 20f;
         GameObject first = pipes.Dequeue();
         first.transform.localPosition = new Vector2(first.transform.position.x + offset, Random.Range(-pipeBounds, pipeBounds));
         pipes.Enqueue(first);
@@ -127,6 +130,8 @@ public class literallyFlappyBird : MonoBehaviour
     public void gameOver()
     {
         inGame = false;
+        readyTGo = false;
+        StartCoroutine(waitToPlay());
 
         foreach (Rigidbody2D obj in scrollers)
         {
@@ -134,5 +139,20 @@ public class literallyFlappyBird : MonoBehaviour
             bird.velocity = new Vector2(Random.Range(-10f, 10f), 30f);
             bird.angularVelocity = Random.Range(-180f, 180f);
         }
+
+        if (score > meta.flappyHighScore)
+        {
+            meta.flappyHighScore = score;
+            menu.text = "bird game\n\n\nhigh score:\n" + meta.flappyHighScore;
+        }
+
+        menu.gameObject.SetActive(true);
+        scoreTxt.gameObject.SetActive(false);
+    }
+
+    public void Score()
+    {
+        score++;
+        scoreTxt.text = "Score: " + score;
     }
 }

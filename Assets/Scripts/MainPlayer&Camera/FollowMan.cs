@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FollowMan : MonoBehaviour
 {
-    private Vector3 xyzMin = new Vector3(0, -5, -10);
-    private Vector3 xyzMax = new Vector3(9, 8, -10);
+    [SerializeField] private Vector3 xyzMin = new Vector3(0, -5, -10);
+    [SerializeField] private Vector3 xyzMax = new Vector3(9, 8, -10);
 
 
     public Transform player;

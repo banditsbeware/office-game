@@ -11,10 +11,9 @@ public class UIManager : MonoBehaviour
 	[HideInInspector] public GameObject[] minigames;
 	[SerializeField] private TMP_Text canvasText;
 
-	public GameObject waterStation;
 
 	// gamestates are: pause, play, window
-	public string gameState = "play";
+	public static string gameState = "play";
 
     void Awake()
     {

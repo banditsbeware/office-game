@@ -815,6 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rb: {fileID: 564603696}
+  UIMan: {fileID: 1890632086}
 --- !u!50 &564603696
 Rigidbody2D:
   serializedVersion: 4
@@ -2253,9 +2254,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff8c1f8dac2358458a726e888055ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UI: {fileID: 1890632085}
+  UIMan: {fileID: 1890632086}
   notification: {fileID: 1965811755}
   theMinigame: {fileID: 1900030901}
+  eMessage: E
 --- !u!1001 &1418859474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2379,7 +2381,7 @@ SpriteRenderer:
   m_Size: {x: 400, y: 300}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1542659570
@@ -2840,7 +2842,9 @@ MonoBehaviour:
   pauseObjects: []
   notifs: []
   minigames: []
-  canvasNotifs: {fileID: 1965811755}
+  canvasText: {fileID: 1965811757}
+  waterStation: {fileID: 1370609478}
+  gameState: play
 --- !u!4 &1890632087
 Transform:
   m_ObjectHideFlags: 0
@@ -2888,31 +2892,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1205700bf89b214d9e6a2578f9d6ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIMan: {fileID: 0}
   size: 10
   gridObject: {fileID: 1099324278}
   exampleButton: {fileID: 1792997667608175900, guid: aa248ea424af6524f9702284f812f145, type: 3}
-  response: {fileID: 1340357814}
-  wordList:
-  - word: FRATERNITY
-    responses:
-    - more like eternity lmao
-    found: 0
-  - word: BEANS
-    responses:
-    - thats a big spicy
-    found: 0
-  - word: JUICY
-    responses:
-    - juicy indeed
-    found: 0
-  - word: YOINK
-    responses:
-    - '!'
-    found: 0
-  - word: OHMEOHMY
-    responses:
-    - truly spectacular
-    found: 0
+  haroldSpeech: {fileID: 0}
+  playerSpeech: {fileID: 0}
+  postIt: {fileID: 0}
+  crossBank:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  goodbyeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  helloRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1900030903
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,8 +7,6 @@ using TMPro;
 public class Crossword : MonoBehaviour {
   private static char[] alpha = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' }; 
 
-  public UIManager UIMan;
-
   //grid variables
   public int size;
   public GameObject gridObject;
@@ -113,7 +111,7 @@ public class Crossword : MonoBehaviour {
     TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
     yield return new WaitForSeconds(he.haroldTime);
 
-    UIMan.gameState = "play";
+    UIManager.gameState = "play";
     gameObject.SetActive(false);
   }
 

@@ -11,6 +11,5 @@ public class pipeCollider : MonoBehaviour
         {
             flapGame.gameOver();
         }
-        Debug.Log("gameOver " + other.name);
     }
 }
