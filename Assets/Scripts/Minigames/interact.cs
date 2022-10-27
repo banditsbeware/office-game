@@ -2,32 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class minigame : MonoBehaviour
+public class interact : MonoBehaviour
 {
-    [SerializeField] private UIManager UIMan;
+    public UIManager UIMan;
     public GameObject notification;
-    public GameObject theMinigame;
-    private bool isGame = false;
+    [System.NonSerialized] public bool isGame = false;
     
     [SerializeField] private string eMessage;
 
-    private void Start()
-    {
-    }
-
-    private void Update()
-    {
-        if (isGame)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                UIMan.denoitfy();
-                
-                startGame();
-            }
-        }
-
-    }
     void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") 
         {
@@ -44,11 +26,5 @@ public class minigame : MonoBehaviour
             UIMan.denoitfy();
             isGame = false;
         }
-    }
-// begins cooler mini-game
-    public void startGame()
-    {
-        UIManager.gameState = "window";
-        UIMan.show(theMinigame);
     }
 }
