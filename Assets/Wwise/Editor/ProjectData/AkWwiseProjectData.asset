@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 157311b17ec9b24b8671ee5c2b7e20d1
     GuidInternal: 
-    m_lastTime: -8585357386259775495
+    m_lastTime: -8585346299728856954
     List:
     - name: Ambience
       guid: ed11e6e89476ba41968b50190e4f06a1
@@ -125,6 +125,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 4f8ca16f5fecf04cbeeac395fa5beb43
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: workBathroomReverb
+      guid: cde8f031b5d0d14283abe7e7e69d5d50
+      id: 1485913236
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 157311b17ec9b24b8671ee5c2b7e20d1
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: workBathroomReverb
+        ObjectType: 1
+        guid: cde8f031b5d0d14283abe7e7e69d5d50
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\workBathroomReverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:

@@ -59,6 +59,13 @@
 								</DuckItem>
 							</DuckingList>
 						</Bus>
+						<AuxBus Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Bathroom1" ID="{1969D30F-C165-45C0-B290-DE3ED07A7AA3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

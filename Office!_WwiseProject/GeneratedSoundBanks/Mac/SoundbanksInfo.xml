@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="630707431" Type="User" Language="English(US)" Hash="{81CDA63B-DC6C-76FC-1A7D-60BE70726325}">
+		<SoundBank Id="630707431" Type="User" Language="English(US)" Hash="{3E036633-B1AC-E7BB-4F3C-25D049848FF3}">
 			<ShortName>Crossword</ShortName>
 			<Path>English(US)/Crossword.bnk</Path>
 			<Media>
@@ -474,7 +474,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B167B467-A25C-8553-A06F-8A52D2DC51AC}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{52FFECB9-F407-3328-E363-3B5C562DB78C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -526,7 +526,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4CA36E8E-AAD4-1D42-E4D3-12F1CB0136A2}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9F135200-9162-14DF-C446-5AD03D8E25A0}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -622,5 +622,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{174DE866-CA29-C21B-562F-9B71C25A0A4E}</FileHash>
+	<FileHash>{8E287802-BEB5-F864-D22B-43B26CFC1781}</FileHash>
 </SoundBanksInfo>

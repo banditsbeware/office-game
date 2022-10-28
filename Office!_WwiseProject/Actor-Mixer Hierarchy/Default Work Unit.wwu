@@ -16,6 +16,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Office_Ambiance" ID="{EF1084F8-7369-4D7E-894D-94BC77781DA9}">
@@ -41,6 +44,11 @@
 						</Sound>
 						<RandomSequenceContainer Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" ShortID="322818311">
 							<PropertyList>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-38</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
@@ -58,6 +66,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

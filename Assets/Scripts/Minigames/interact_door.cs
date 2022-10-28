@@ -17,6 +17,5 @@ public class interact_door : interact
                 loader.LoadLevel(scene);
             }
         }
-
     }
 }

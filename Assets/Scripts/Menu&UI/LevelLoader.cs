@@ -10,6 +10,17 @@ public class LevelLoader : MonoBehaviour
     
     public void LoadLevel(string levelName)
     {
+        if (levelName == "Street")
+        {
+            if (SceneManager.GetActiveScene().name == "Office")
+            {
+                MoveHimSideways.location = 0;
+            }
+            else
+            {
+                MoveHimSideways.location = 30;
+            }
+        }
         StartCoroutine(LoadScene(levelName));
     }
 

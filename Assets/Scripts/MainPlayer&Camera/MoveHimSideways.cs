@@ -5,8 +5,7 @@ using UnityEngine;
 public class MoveHimSideways : MonoBehaviour {
 
     public float speed = 5f;
-    
-    //player's rigidbody
+    public static float location;
     private Rigidbody2D rb;
 
     private Vector2 v;
@@ -14,6 +13,7 @@ public class MoveHimSideways : MonoBehaviour {
     void Awake()
     {
       rb = gameObject.GetComponent<Rigidbody2D>();
+      transform.position = new Vector3(location, 0f, 0f);
     }
     void Update()
     {

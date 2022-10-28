@@ -11,6 +11,12 @@ public class FollowMan : MonoBehaviour
     public Transform player;
     public Vector3 offset;
     public float smoothSpeed = .125f;
+
+    void Start()
+    {
+        transform.position = player.position;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {

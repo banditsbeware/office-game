@@ -682,6 +682,7 @@
 							<PropertyList>
 								<Property Name="HFRatio" Type="Real32" Value="4.5"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
+								<Property Name="ProcessLFE" Type="bool" Value="False"/>
 								<Property Name="ReverbTime" Type="Real32" Value="1"/>
 								<Property Name="WetLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
