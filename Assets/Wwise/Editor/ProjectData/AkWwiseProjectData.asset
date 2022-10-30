@@ -21,13 +21,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 4be986080a0d994d82a88857332bd6c5
-    ParentPath: Virtual Acoustics\Default Work Unit
+    ParentPath: Virtual Acoustics/Default Work Unit
     guid: 4be986080a0d994d82a88857332bd6c5
     GuidInternal: 
-    m_lastTime: -8585392608769359264
+    m_lastTime: -8585379130579788800
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Master-Mixer Hierarchy
       ObjectType: 5
@@ -35,7 +35,7 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 157311b17ec9b24b8671ee5c2b7e20d1
-    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 157311b17ec9b24b8671ee5c2b7e20d1
     GuidInternal: 
     m_lastTime: -8585346299728856954
@@ -56,7 +56,7 @@ MonoBehaviour:
       - ElementName: Ambience
         ObjectType: 2
         guid: ed11e6e89476ba41968b50190e4f06a1
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Ambience
     - name: Dialogue
       guid: 6650112fb0db744687c847ffefc5606e
       id: 3930136735
@@ -73,7 +73,7 @@ MonoBehaviour:
       - ElementName: Dialogue
         ObjectType: 2
         guid: 6650112fb0db744687c847ffefc5606e
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Dialogue
     - name: Harold
       guid: 90363788296ea842ab8e43489bda65db
       id: 4208281901
@@ -93,7 +93,7 @@ MonoBehaviour:
       - ElementName: Harold
         ObjectType: 2
         guid: 90363788296ea842ab8e43489bda65db
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialogue\Harold
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Dialogue/Harold
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -107,7 +107,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
     - name: Music
       guid: 4f8ca16f5fecf04cbeeac395fa5beb43
       id: 3991942870
