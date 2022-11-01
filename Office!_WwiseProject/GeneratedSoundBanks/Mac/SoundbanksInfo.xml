@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="144">
 	<RootPaths>
-		<ProjectRoot>../..</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<ProjectRoot>../../</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac/</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
@@ -474,10 +474,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{52FFECB9-F407-3328-E363-3B5C562DB78C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{578D4538-103B-6F70-2BAA-64BE5E146523}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Sharesets>
+					<Plugin Id="535667444" Name="Bathroom1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+				</Sharesets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -490,6 +493,15 @@
 				<Bus Id="3991942870" Name="Music"/>
 				<Bus Id="4208281901" Name="Harold"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1485913236" Name="workBathroomReverb">
+					<PluginRefs>
+						<Sharesets>
+							<PluginRef Id="535667444"/>
+						</Sharesets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1227038859" Name="helloSwitch"/>
 				<GameParameter Id="3961472506" Name="goodbyeSwitch"/>
@@ -526,7 +538,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9F135200-9162-14DF-C446-5AD03D8E25A0}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E5B96A22-4559-D488-72B4-1AE88476EFBA}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -598,6 +610,9 @@
 						<MediaRef Id="472720849"/>
 						<MediaRef Id="1067933309"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1485913236" Name="workBathroomReverb"/>
+					</AuxBusRefs>
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="4091656514" Id="1256202815" Name="play"/>
 					</ActionSetState>
@@ -622,5 +637,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8E287802-BEB5-F864-D22B-43B26CFC1781}</FileHash>
+	<FileHash>{9166B28E-0235-815D-35A7-D8FD5C55A484}</FileHash>
 </SoundBanksInfo>

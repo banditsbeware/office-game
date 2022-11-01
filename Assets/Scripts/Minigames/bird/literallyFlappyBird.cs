@@ -121,7 +121,7 @@ public class literallyFlappyBird : MonoBehaviour
     }
     void redoPipe()
     {
-        float offset = numOfPipes * 20f;
+        float offset = numOfPipes * 20f - 10f;
         GameObject first = pipes.Dequeue();
         first.transform.localPosition = new Vector2(first.transform.position.x + offset, Random.Range(-pipeBounds, pipeBounds));
         pipes.Enqueue(first);

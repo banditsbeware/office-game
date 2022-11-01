@@ -15,12 +15,12 @@ State	ID	Name	State Group			Notes
 	3092587493	pause	gameState			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	62476401	Office_Keys1	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_9A439F85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys1		3882252
-	202055670	Office_Keys2	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_9902F774.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys2		3646072
-	311612861	helvetica_body	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_body_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Body\helvetica_body		12436232
-	355675837	helvetica_entry	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_entry_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Entry\helvetica_entry		1742676
-	374596652	Office_RoomTone	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_8626E18B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_RoomTone		14558852
-	436947858	PMM-25th-Hour-MASTER_V1	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\PMM-25th-Hour-MASTER_V1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\temp\tempWii_dim\PMM-25th-Hour-MASTER_V1		15950860
-	472720849	Office_Silence	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_FB7FCDEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Silence		11319188
-	1067933309	Office_Phone	E:\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_576FCFBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Phone		4576208
+	62476401	Office_Keys1	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_9A439F85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys1		3882252
+	202055670	Office_Keys2	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_9902F774.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys2		3646072
+	311612861	helvetica_body	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_body_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Body\helvetica_body		12436232
+	355675837	helvetica_entry	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_entry_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Entry\helvetica_entry		1742676
+	374596652	Office_RoomTone	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_8626E18B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_RoomTone		14558852
+	436947858	PMM-25th-Hour-MASTER_V1	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\PMM-25th-Hour-MASTER_V1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\temp\tempWii_dim\PMM-25th-Hour-MASTER_V1		15950860
+	472720849	Office_Silence	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_FB7FCDEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Silence		11319188
+	1067933309	Office_Phone	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_576FCFBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Phone		4576208
 

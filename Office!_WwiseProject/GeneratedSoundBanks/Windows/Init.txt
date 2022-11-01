@@ -29,6 +29,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 	4208281901	Harold			\Default Work Unit\Master Audio Bus\Dialogue\Harold	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1485913236	workBathroomReverb			\Default Work Unit\Master Audio Bus\workBathroomReverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	535667444	Bathroom1	Wwise Matrix Reverb			
+
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			
