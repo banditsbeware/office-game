@@ -38,27 +38,62 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Highpass"/>
+									<Property Name="Lowpass"/>
+									<Property Name="OutputBusVolume"/>
+									<Property Name="Pitch"/>
+									<Property Name="UserAuxSendVolume0"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="room" ID="{49D4860A-7F86-43E2-8EF0-E102949A9A37}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
+										<CustomState Name="" ID="{963C2FC6-5F20-4669-BC47-612246BCD759}" ShortID="68630025"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+										<CustomState Name="" ID="{FDA93CC9-B112-4380-95EA-265238BAABE7}" ShortID="146492561">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64" Value="-40"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
+										<CustomState Name="" ID="{8DB8237B-CC57-455D-AAD7-1438F2DD79CD}" ShortID="1057757250"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
+										<CustomState Name="" ID="{22AE3AD6-B510-4DD7-8F2E-E36BBC0D35F0}" ShortID="70839784"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="office" ID="{93422278-5900-493B-9DD5-28205C0CA9AD}"/>
+										<CustomState Name="" ID="{FDFDCC19-A956-4E23-AAD3-222C850E741D}" ShortID="580731330">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="Office_Ambiance" ID="{EF1084F8-7369-4D7E-894D-94BC77781DA9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" ShortID="322818311">
 							<PropertyList>
-								<Property Name="OutputBusVolume" Type="Real64">
-									<ValueList>
-										<Value>-38</Value>
-									</ValueList>
-								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="15"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -240,6 +275,1314 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Highpass"/>
+									<Property Name="Lowpass"/>
+									<Property Name="OutputBusVolume"/>
+									<Property Name="Pitch"/>
+									<Property Name="UserAuxSendVolume0"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="room" ID="{49D4860A-7F86-43E2-8EF0-E102949A9A37}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
+										<CustomState Name="" ID="{2C6211F9-AF16-4F21-9FE7-525F565E6E65}" ShortID="1044733515">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+										<CustomState Name="" ID="{8FE2DE96-27BB-4BE1-9DE5-DE8B261E72EC}" ShortID="1071728475">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="10"/>
+												<Property Name="OutputBusVolume" Type="Real64" Value="-40"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
+										<CustomState Name="" ID="{8D9CD37F-E55A-4E4D-ACE6-0D9330D386B5}" ShortID="177362837">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
+										<CustomState Name="" ID="{4C0C9C7D-65BE-49D0-ADB3-802C5FA46FC5}" ShortID="308384484">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="office" ID="{93422278-5900-493B-9DD5-28205C0CA9AD}"/>
+										<CustomState Name="" ID="{22AF4C05-E0F8-49E1-A8AF-693E4BD2C4D3}" ShortID="274564866">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</RandomSequenceContainer>
+						<Sound Name="Bath_RoomTone" ID="{371C6951-E44A-4B5F-A74E-508B715DB2F1}" ShortID="829620817">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience, Room Tone, Bathroom, Ventilation Fan SND8590" ID="{CB879908-30EB-478C-B453-625C26B42B26}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="50"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.304489795918371"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.52244897959184"/>
+										<Property Name="LoopEnd" Type="Real64" Value="58.8426530612245"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambience, Room Tone, Bathroom, Ventilation Fan SND8590.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="876062015"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience, Room Tone, Bathroom, Ventilation Fan SND8590" ID="{CB879908-30EB-478C-B453-625C26B42B26}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="bathroomBuddy" ID="{178C5B39-F4AC-4C80-9700-62A87D32CB2A}" ShortID="226104620">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{40AF8133-19AC-4FB4-811E-7891912B0C89}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="buddy" ID="{A743F83C-D71B-4A80-B9CC-CE2D6BB6C4DE}" ShortID="766753614">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F1C71C8A-35EC-4531-80BF-646E3E42B155}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="door" ID="{FB24A54E-5279-4183-ADD0-AA77E6072B2D}" ShortID="103869939">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01" ID="{C96FA7A7-DA6B-4441-9002-38C82EB4C4CF}" ShortID="90148309">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-20</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01" ID="{9F4DB41C-3181-4BF2-BCA2-21602A995D19}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.108466730442177"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.314553518282313"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.20850914115646"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="285198526"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01" ID="{9F4DB41C-3181-4BF2-BCA2-21602A995D19}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02" ID="{3D6E51FF-83B1-4A90-B2F1-069A073C3084}" ShortID="418143492">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-21</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02" ID="{433B69B2-457B-4850-B64D-E7362DD02ABC}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.122123126594388"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.170972377232142"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="643071989"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02" ID="{433B69B2-457B-4850-B64D-E7362DD02ABC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Doors, Wood, Bathroom, Open, Close, Squeak SND8596" ID="{59346F07-712F-4208-B693-760C156F9C40}" ShortID="82671374">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Doors, Wood, Bathroom, Open, Close, Squeak SND8596" ID="{9CB8BCE9-F171-4DBB-B8CF-D7B9F6EE80BA}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.15265306122449"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.374693877551021"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.37061224489796"/>
+																<Property Name="TrimEnd" Type="Real64" Value="9.93632653061225"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Doors, Wood, Bathroom, Open, Close, Squeak SND8596.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="979414591"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Doors, Wood, Bathroom, Open, Close, Squeak SND8596" ID="{9CB8BCE9-F171-4DBB-B8CF-D7B9F6EE80BA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{854ADAB9-5E43-4C1E-821A-4386876023A7}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="70"/>
+														<Property Name="PanY" Type="Real64" Value="10"/>
+													</PropertyList>
+												</Panner>
+												<Position Name="" ID="{534090ED-D1C3-4DCD-899D-05F9AF866F1A}"/>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="walkIn" ID="{3BC77D69-F7AA-4F79-AC20-9AFE13BCC9E6}" ShortID="332970079">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{171F4C48-2BC8-4845-A614-0FE0A362760A}" ShortID="69996103">
+													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{9469DB51-BCC8-41F3-87D4-DD1A3D7A43D6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.105701335674755"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0870481587909753"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="469691241"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{9469DB51-BCC8-41F3-87D4-DD1A3D7A43D6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{C97FD0A8-B64E-4DF6-912A-4D6C56A84B57}" ShortID="984020140">
+													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{6F934791-5E35-466E-9319-D56EFE138001}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0775865261813538"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.119906449553001"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="5.13481736909323"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="75998441"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{6F934791-5E35-466E-9319-D56EFE138001}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{A98E644B-00F3-4675-BAFD-9D982D2278D3}" ShortID="207805852">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{55EFB186-3F3A-41D8-BD3C-93F2C38F92CF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0696605204342273"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.025331098339719"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="918240331"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{55EFB186-3F3A-41D8-BD3C-93F2C38F92CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{09C340C6-5BAD-47F5-9278-FE0DBC578E0B}" ShortID="440121390">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{B0E8C036-20CB-4F34-8FE5-F19811A57532}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.126122286079183"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0588570668369517"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="755235772"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{B0E8C036-20CB-4F34-8FE5-F19811A57532}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{7779D738-37BB-4207-BAC2-08B783FE6C69}"/>
+												<Position Name="" ID="{9423950F-115A-41E2-B053-303AC2DA1FC0}">
+													<ChildrenList>
+														<Path2D Name="walkIn_Path" ID="{8204B49A-0979-4AFA-834B-A93929E8AB15}">
+															<PointList>
+																<Point>
+																	<XPos>70</XPos>
+																	<YPos>10</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>70</YPos>
+																	<Flags>0</Flags>
+																	<Time>2500</Time>
+																</Point>
+																<Point>
+																	<XPos>-70</XPos>
+																	<YPos>10</YPos>
+																	<Flags>0</Flags>
+																	<Time>5000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<Sound Name="flush" ID="{DEA5C72F-DB53-4324-A8F3-B028CA135865}" ShortID="384264599">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{37EA08D2-9FA7-4CA4-A582-73A9D0A9E91E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Water, Plumbing, Bathroom, Toilet Flush, Tank Refill 01 SND3116" ID="{491E9B76-5B35-4999-91D6-7CCFFFC05A92}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.326785714285714"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.280102040816326"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.70280612244898"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Water, Plumbing, Bathroom, Toilet Flush, Tank Refill 01 SND3116.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="232887330"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{22893B31-9B49-4357-8169-327279BA9D9A}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="-65.5971479500891"/>
+														<Property Name="PanY" Type="Real64" Value="74.8560460652591"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Water, Plumbing, Bathroom, Toilet Flush, Tank Refill 01 SND3116" ID="{491E9B76-5B35-4999-91D6-7CCFFFC05A92}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="cough" ID="{5077D96F-829D-4AE5-B6EF-4338450FD9AF}" ShortID="182204569">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{28EA98E4-5FD0-4523-AB22-FA7B22EA59CD}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Human, Cough, Male 03 SND12821" ID="{9FC90010-C68A-43FB-ACC4-5E9A69827FF7}" ShortID="1017145026">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>29</Value>
+															</ValueList>
+														</Property>
+														<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Human, Cough, Male 03 SND12821" ID="{7B983B67-B76D-45A7-A026-C8EBD28BDA7E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0169444643997446"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0847223219987228"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.130714439655172"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.54436689814815"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Human, Cough, Male 03 SND12821.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1027102253"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{504A8BBE-7FAE-4B87-8C70-CB4B76E2B65A}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-65.3571428571429"/>
+																<Property Name="PanY" Type="Real64" Value="40.3846153846154"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="Human, Cough, Male 03 SND12821" ID="{7B983B67-B76D-45A7-A026-C8EBD28BDA7E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{9F2ECF75-9A6C-4726-98E8-0AC9549DD3F4}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="-70"/>
+														<Property Name="PanY" Type="Real64" Value="10"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="outbound" ID="{381E19AD-246B-42A0-AF3B-29D9640EA0C8}" ShortID="875546790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="walkOut" ID="{0422768F-1891-4786-B412-6506835A621E}" ShortID="486175072">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{6B004BCC-EC88-4040-BB64-6C4CBE9A243A}" ShortID="471578381">
+															<PropertyList>
+																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-11</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{B6E2B651-789D-4661-AE49-791BD18841D5}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.105701335674755"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0870481587909753"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="469691241"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{B6E2B651-789D-4661-AE49-791BD18841D5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{46AE9F33-3514-4E70-8E25-584E7D639841}" ShortID="913108781">
+															<PropertyList>
+																<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-11</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{29DE37C2-E008-4814-BD16-D6CFFD7406EA}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0775865261813538"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.119906449553001"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="5.13481736909323"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="75998441"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{29DE37C2-E008-4814-BD16-D6CFFD7406EA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{ADD50BFA-25B2-40DA-996C-3708740A43DB}" ShortID="924697223">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{38212C6F-5F7F-47AD-8FAA-04EF3E6AD9BC}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.126122286079183"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0588570668369517"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="755235772"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{38212C6F-5F7F-47AD-8FAA-04EF3E6AD9BC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{5346DE23-1186-468E-AB87-F7CB362FF790}" ShortID="262929581">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{BB912A23-BD18-4E34-8C99-F1A2D4082894}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0696605204342273"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.025331098339719"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="918240331"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{BB912A23-BD18-4E34-8C99-F1A2D4082894}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{FE55C673-2095-4FCF-A26F-73BF3F948D13}">
+															<ChildrenList>
+																<Path2D Name="walkOut_Path" ID="{F4F872CE-BA35-4B87-AE1C-14D03017FA98}">
+																	<PointList>
+																		<Point>
+																			<XPos>-70</XPos>
+																			<YPos>10</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>70</YPos>
+																			<Flags>0</Flags>
+																			<Time>2500</Time>
+																		</Point>
+																		<Point>
+																			<XPos>70</XPos>
+																			<YPos>10</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="washHands" ID="{76BB679B-D486-488D-B354-3739AAD7FE4A}" ShortID="1025943211">
+													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="toSink" ID="{FFF47F59-31F3-454F-AD74-12F5D4FD1ED5}" ShortID="913878495">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="2"/>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{B975CA48-30F6-4374-A801-B681BA711C2C}" ShortID="531084097">
+																	<PropertyList>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-11</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{CD2F77A1-B0D1-47BC-8DF0-7C8EB7AA9005}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.105701335674755"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0870481587909753"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.66118656875266"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="907633495"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{CD2F77A1-B0D1-47BC-8DF0-7C8EB7AA9005}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{4E1FD589-CDFA-4680-BFB6-01C733302E1F}" ShortID="373505563">
+																	<PropertyList>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-11</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{8D8517B0-F903-4A6C-8F02-8471CB846574}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0775865261813538"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.119906449553001"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.52508876117497"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="267626252"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{8D8517B0-F903-4A6C-8F02-8471CB846574}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{F23946C7-93E2-4CEA-B26B-FC5580CCA361}" ShortID="323847840">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{403F58FB-0B85-49A6-9FE8-DD5E9B4B3F5D}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.126122286079183"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0588570668369517"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.27077128565347"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="668899071"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{403F58FB-0B85-49A6-9FE8-DD5E9B4B3F5D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{0FD5DE39-3CD1-45BE-A63D-7B9AEB68E41A}" ShortID="727047454">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{38686418-11E1-4203-83DC-6EDAC7594714}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0696605204342273"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.025331098339719"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.74842416985951"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="517928142"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{38686418-11E1-4203-83DC-6EDAC7594714}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{5C0228B9-6BEA-4C06-BA4A-925FA092A7B5}">
+																	<ChildrenList>
+																		<Path2D Name="toSink_Path" ID="{6F8ADE8C-BA12-4212-977C-68EABADAAC92}">
+																			<PointList>
+																				<Point>
+																					<XPos>-70</XPos>
+																					<YPos>10</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-20</XPos>
+																					<YPos>80</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="sink" ID="{EC901832-D73F-4F63-8CB0-C488206F1D2A}" ShortID="91319561">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="2"/>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="CenterPercentage" Type="int32">
+																	<ValueList>
+																		<Value>1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01" ID="{AA442B66-4209-489B-9216-51DF6251C31E}" ShortID="207657943">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-19</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01" ID="{B1C82C1F-35D5-4206-BCBC-528894D681DD}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.1955078125"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.1396484375"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="100561115"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01" ID="{B1C82C1F-35D5-4206-BCBC-528894D681DD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02" ID="{1ABAF519-7E4A-4DFA-8ECE-F3AB36BC1DDF}" ShortID="606017071">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-11</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02" ID="{A5EF3058-2857-469A-82C9-183B73A2B42F}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.102256855867347"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.165184151785715"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.228111447704082"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="553170557"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02" ID="{A5EF3058-2857-469A-82C9-183B73A2B42F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{52786A87-4F9F-49C8-B2EA-5FEDE3E05260}">
+																	<PropertyList>
+																		<Property Name="PanX" Type="Real64" Value="-20"/>
+																		<Property Name="PanY" Type="Real64" Value="80"/>
+																	</PropertyList>
+																</Panner>
+																<Position Name="" ID="{37D49782-48B8-471A-8220-57134CD924A9}"/>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="fromSink" ID="{0AD99D52-93DF-4F92-8432-B213E5875A50}" ShortID="501993162">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="2"/>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{8FA47DC7-F2CC-46AA-8BE4-B0D4F27A535A}" ShortID="484076995">
+																	<PropertyList>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-11</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{DFA92266-E63B-4EFB-B4E8-AF7207D3786D}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.105701335674755"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0870481587909753"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.57413840996169"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="639259115"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{DFA92266-E63B-4EFB-B4E8-AF7207D3786D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{F824D270-F32A-4C70-AB99-27D6A5C11E47}" ShortID="1003239151">
+																	<PropertyList>
+																		<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-11</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{DB988454-171D-4074-B0C9-F544A9AF4626}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0775865261813538"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.119906449553001"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.47571551724138"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.13481736909323"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="737327779"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{DB988454-171D-4074-B0C9-F544A9AF4626}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{00DBB28B-4DD2-4916-B4FC-EB877B73ACE2}" ShortID="499204810">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{9E0B7676-69AF-4CC7-B8E2-770089396681}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.126122286079183"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0588570668369517"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.11101638995317"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="339536971"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{9E0B7676-69AF-4CC7-B8E2-770089396681}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{968657F1-CA0B-44AF-B71B-7EF856245091}" ShortID="233269245">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{69DCAC78-758F-47D8-A0E2-4236C223AFE1}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0696605204342273"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.025331098339719"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.79275359195402"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="671972937"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{69DCAC78-758F-47D8-A0E2-4236C223AFE1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{8C8DB6B6-F766-4659-B866-D5C39BA98286}">
+																	<ChildrenList>
+																		<Path2D Name="toSink_Path" ID="{14CC6EA6-1AF4-4C06-89FB-E8213D2F05E7}">
+																			<PointList>
+																				<Point>
+																					<XPos>-20</XPos>
+																					<YPos>80</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>70</XPos>
+																					<YPos>10</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="toSink" ID="{FFF47F59-31F3-454F-AD74-12F5D4FD1ED5}"/>
+														<ItemRef Name="sink" ID="{EC901832-D73F-4F63-8CB0-C488206F1D2A}"/>
+														<ItemRef Name="fromSink" ID="{0AD99D52-93DF-4F92-8432-B213E5875A50}"/>
+													</Playlist>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{17111B58-3627-48DA-AF37-FBDE8049E4DA}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-65.24064171123"/>
+												<Property Name="PanY" Type="Real64" Value="35.700575815739"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{F6B27454-5F31-4895-83A0-E89458559AEC}"/>
+									</PositioningInfo>
+									<Playlist>
+										<ItemRef Name="door" ID="{FB24A54E-5279-4183-ADD0-AA77E6072B2D}"/>
+										<ItemRef Name="walkIn" ID="{3BC77D69-F7AA-4F79-AC20-9AFE13BCC9E6}"/>
+										<ItemRef Name="cough" ID="{5077D96F-829D-4AE5-B6EF-4338450FD9AF}"/>
+										<ItemRef Name="flush" ID="{DEA5C72F-DB53-4324-A8F3-B028CA135865}"/>
+										<ItemRef Name="outbound" ID="{381E19AD-246B-42A0-AF3B-29D9640EA0C8}"/>
+										<ItemRef Name="door" ID="{FB24A54E-5279-4183-ADD0-AA77E6072B2D}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{ED77A137-6517-4A18-BF62-E0D9603EA34C}"/>
+							</PositioningInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

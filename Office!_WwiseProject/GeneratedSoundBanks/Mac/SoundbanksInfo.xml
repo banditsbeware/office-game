@@ -474,7 +474,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{578D4538-103B-6F70-2BAA-64BE5E146523}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{10D371C6-BE4C-5AEE-BBA8-815741BA4F10}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -507,6 +507,16 @@
 				<GameParameter Id="3961472506" Name="goodbyeSwitch"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="2077253480" Name="room">
+					<States>
+						<State Id="446279778" Name="bed"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1375321530" Name="bath"/>
+						<State Id="1547173777" Name="office"/>
+						<State Id="2120052594" Name="dream"/>
+						<State Id="2730119150" Name="outdoors"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="4091656514" Name="gameState">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -538,7 +548,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E5B96A22-4559-D488-72B4-1AE88476EFBA}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8A48955F-9062-6FA9-F438-C053151D1548}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -546,13 +556,37 @@
 					<ShortName>Office_Ambiance.wav</ShortName>
 					<CachePath>SFX/Office_Ambiance_9A439F85.wem</CachePath>
 				</File>
+				<File Id="75998441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_ADA2AD63.wem</CachePath>
+				</File>
+				<File Id="100561115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01.wav</ShortName>
+					<CachePath>SFX/Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01_7626889D.wem</CachePath>
+				</File>
 				<File Id="202055670" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Office_Ambiance.wav</ShortName>
 					<CachePath>SFX/Office_Ambiance_9902F774.wem</CachePath>
 				</File>
+				<File Id="232887330" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water, Plumbing, Bathroom, Toilet Flush, Tank Refill 01 SND3116.wav</ShortName>
+					<CachePath>SFX/Water, Plumbing, Bathroom, Toilet Flush, Tank Refill 01 SND3116_B8868803.wem</CachePath>
+				</File>
+				<File Id="267626252" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_7EDA1B9B.wem</CachePath>
+				</File>
+				<File Id="285198526" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01.wav</ShortName>
+					<CachePath>SFX/Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01_3E23E485.wem</CachePath>
+				</File>
 				<File Id="311612861" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>helvetica_body.wav</ShortName>
 					<CachePath>SFX/helvetica_body_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="339536971" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083_A8F75DC0.wem</CachePath>
 				</File>
 				<File Id="355675837" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>helvetica_entry.wav</ShortName>
@@ -566,9 +600,65 @@
 					<ShortName>PMM-25th-Hour-MASTER_V1.wav</ShortName>
 					<CachePath>SFX/PMM-25th-Hour-MASTER_V1_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="469691241" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_A9CF19D4.wem</CachePath>
+				</File>
 				<File Id="472720849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Office_Ambiance.wav</ShortName>
 					<CachePath>SFX/Office_Ambiance_FB7FCDEC.wem</CachePath>
+				</File>
+				<File Id="517928142" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_4BE419DA.wem</CachePath>
+				</File>
+				<File Id="553170557" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02.wav</ShortName>
+					<CachePath>SFX/Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02_3D789664.wem</CachePath>
+				</File>
+				<File Id="639259115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_D7C9933E.wem</CachePath>
+				</File>
+				<File Id="643071989" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02.wav</ShortName>
+					<CachePath>SFX/Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02_913D75B1.wem</CachePath>
+				</File>
+				<File Id="668899071" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083_4FE8344E.wem</CachePath>
+				</File>
+				<File Id="671972937" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_66A886BF.wem</CachePath>
+				</File>
+				<File Id="737327779" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_8FF53C9B.wem</CachePath>
+				</File>
+				<File Id="755235772" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083_1F8246E3.wem</CachePath>
+				</File>
+				<File Id="876062015" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ambience, Room Tone, Bathroom, Ventilation Fan SND8590.wav</ShortName>
+					<CachePath>SFX/Ambience, Room Tone, Bathroom, Ventilation Fan SND8590_77523734.wem</CachePath>
+				</File>
+				<File Id="907633495" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_F6893C4C.wem</CachePath>
+				</File>
+				<File Id="918240331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_C877638D.wem</CachePath>
+				</File>
+				<File Id="979414591" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Doors, Wood, Bathroom, Open, Close, Squeak SND8596.wav</ShortName>
+					<CachePath>SFX/Doors, Wood, Bathroom, Open, Close, Squeak SND8596_382EA296.wem</CachePath>
+				</File>
+				<File Id="1027102253" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Human, Cough, Male 03 SND12821.wav</ShortName>
+					<CachePath>SFX/Human, Cough, Male 03 SND12821_CDDA1A26.wem</CachePath>
 				</File>
 				<File Id="1067933309" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Office_Ambiance.wav</ShortName>
@@ -576,6 +666,30 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1523620308" Name="Play_Bath_Amb" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="75998441"/>
+						<MediaRef Id="100561115"/>
+						<MediaRef Id="232887330"/>
+						<MediaRef Id="267626252"/>
+						<MediaRef Id="285198526"/>
+						<MediaRef Id="339536971"/>
+						<MediaRef Id="469691241"/>
+						<MediaRef Id="517928142"/>
+						<MediaRef Id="553170557"/>
+						<MediaRef Id="639259115"/>
+						<MediaRef Id="643071989"/>
+						<MediaRef Id="668899071"/>
+						<MediaRef Id="671972937"/>
+						<MediaRef Id="737327779"/>
+						<MediaRef Id="755235772"/>
+						<MediaRef Id="876062015"/>
+						<MediaRef Id="907633495"/>
+						<MediaRef Id="918240331"/>
+						<MediaRef Id="979414591"/>
+						<MediaRef Id="1027102253"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3069382355" Name="Play_Helvetica" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -637,5 +751,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9166B28E-0235-815D-35A7-D8FD5C55A484}</FileHash>
+	<FileHash>{B5A857FD-9692-1949-11CE-404EE7C4A673}</FileHash>
 </SoundBanksInfo>

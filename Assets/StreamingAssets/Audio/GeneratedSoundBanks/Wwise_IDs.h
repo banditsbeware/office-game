@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ACTOR = 3231912389U;
+        static const AkUniqueID PLAY_BATH_AMB = 1523620308U;
         static const AkUniqueID PLAY_BOSS = 1693071901U;
         static const AkUniqueID PLAY_CHILD = 2952268476U;
         static const AkUniqueID PLAY_CLIENT = 2874228519U;
@@ -63,6 +64,21 @@ namespace AK
                 static const AkUniqueID WINDOW = 2330457189U;
             } // namespace STATE
         } // namespace GAMESTATE
+
+        namespace ROOM
+        {
+            static const AkUniqueID GROUP = 2077253480U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BATH = 1375321530U;
+                static const AkUniqueID BED = 446279778U;
+                static const AkUniqueID DREAM = 2120052594U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFFICE = 1547173777U;
+                static const AkUniqueID OUTDOORS = 2730119150U;
+            } // namespace STATE
+        } // namespace ROOM
 
     } // namespace STATES
 

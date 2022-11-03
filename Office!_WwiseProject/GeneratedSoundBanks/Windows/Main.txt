@@ -1,26 +1,63 @@
 Event	ID	Name			Wwise Object Path	Notes
-	219189707	Play_Office_Amb			\Default Work Unit\Play_Office_Amb	
-	1325704673	Stop_Office_Amb			\Default Work Unit\Stop_Office_Amb	
-	2823449565	Stop_Helvetica			\Default Work Unit\Stop_Helvetica	
-	3069382355	Play_Helvetica			\Default Work Unit\Play_Helvetica	
+	219189707	Play_Office_Amb			\Default Work Unit\Ambience\Play_Office_Amb	
+	1325704673	Stop_Office_Amb			\Default Work Unit\Ambience\Stop_Office_Amb	
+	1523620308	Play_Bath_Amb			\Default Work Unit\Ambience\Play_Bath_Amb	
+	2823449565	Stop_Helvetica			\Default Work Unit\Music\Stop_Helvetica	
+	3069382355	Play_Helvetica			\Default Work Unit\Music\Play_Helvetica	
 
 State Group	ID	Name			Wwise Object Path	Notes
+	2077253480	room			\Default Work Unit\room	
 	4091656514	gameState			\Default Work Unit\gameState	
 
 State	ID	Name	State Group			Notes
+	446279778	bed	room			
+	748895195	None	room			
+	1375321530	bath	room			
+	1547173777	office	room			
+	2120052594	dream	room			
+	2730119150	outdoors	room			
 	748895195	None	gameState			
 	1256202815	play	gameState			
 	2330457189	window	gameState			
 	2607556080	menu	gameState			
 	3092587493	pause	gameState			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	146492561	bath	room	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_RoomTone		
+	177362837	outdoors	room	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG		
+	274564866	office	room	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG		
+	308384484	bed	room	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG		
+	580731330	office	room	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_RoomTone		
+	1044733515	dream	room	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG		
+	1071728475	bath	room	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG		
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	62476401	Office_Keys1	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_9A439F85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys1		3882252
+	75998441	Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_ADA2AD63.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\walkIn\Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916		985980
+	100561115	Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01_7626889D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\sink\Water, Plumbing, Bathroom Sink, Washing Hands SND1917 01		2102196
 	202055670	Office_Keys2	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_9902F774.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Keys2		3646072
+	232887330	flush	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Water, Plumbing, Bathroom, Toilet Flush, Tank Refill 01 SND3116_B8868803.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\flush		1479032
+	267626252	Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_7EDA1B9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\toSink\Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916		484912
+	285198526	Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01_3E23E485.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\door\Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01		808128
 	311612861	helvetica_body	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_body_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Body\helvetica_body		12436232
+	339536971	Footsteps, Human, Linoleum, Sneaker, Medium SND1083	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Linoleum, Sneaker, Medium SND1083_A8F75DC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\fromSink\Footsteps, Human, Linoleum, Sneaker, Medium SND1083		333462
 	355675837	helvetica_entry	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\helvetica_entry_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\Helv\Entry\helvetica_entry		1742676
 	374596652	Office_RoomTone	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_8626E18B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_RoomTone		14558852
 	436947858	PMM-25th-Hour-MASTER_V1	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\PMM-25th-Hour-MASTER_V1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Helvetica\temp\tempWii_dim\PMM-25th-Hour-MASTER_V1		15950860
+	469691241	Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_A9CF19D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\walkIn\Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914		934844
 	472720849	Office_Silence	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_FB7FCDEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Silence		11319188
+	517928142	Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_4BE419DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\toSink\Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01		263944
+	553170557	Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02_3D789664.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\sink\Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02		570216
+	639259115	Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_D7C9933E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\fromSink\Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914		440608
+	643071989	Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02_913D75B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\door\Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 02		1225624
+	668899071	Footsteps, Human, Linoleum, Sneaker, Medium SND1083	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Linoleum, Sneaker, Medium SND1083_4FE8344E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\toSink\Footsteps, Human, Linoleum, Sneaker, Medium SND1083		314090
+	671972937	Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_66A886BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\fromSink\Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01		208014
+	737327779	Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_8FF53C9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\fromSink\Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916		510640
+	755235772	Footsteps, Human, Linoleum, Sneaker, Medium SND1083	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Linoleum, Sneaker, Medium SND1083_1F8246E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\walkIn\Footsteps, Human, Linoleum, Sneaker, Medium SND1083		632120
+	876062015	Bath_RoomTone	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Ambience, Room Tone, Bathroom, Ventilation Fan SND8590_77523734.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Bath_RoomTone		11458704
+	907633495	Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_F6893C4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\outbound\washHands\toSink\Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914		511044
+	918240331	Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_C877638D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\walkIn\Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01		476118
+	979414591	Doors, Wood, Bathroom, Open, Close, Squeak SND8596	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Doors, Wood, Bathroom, Open, Close, Squeak SND8596_382EA296.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\door\Doors, Wood, Bathroom, Open, Close, Squeak SND8596		876712
+	1027102253	Human, Cough, Male 03 SND12821	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Human, Cough, Male 03 SND12821_CDDA1A26.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\bathroomBuddy\buddy\cough\Human, Cough, Male 03 SND12821		271516
 	1067933309	Office_Phone	Y:\Desktop\Office!\Office!_WwiseProject\.cache\Windows\SFX\Office_Ambiance_576FCFBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Office_BG\Office_Phone		4576208
 

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 157311b17ec9b24b8671ee5c2b7e20d1
     GuidInternal: 
-    m_lastTime: -8585345085432066762
+    m_lastTime: -8585341787054777358
     List:
     - name: Ambience
       guid: ed11e6e89476ba41968b50190e4f06a1
@@ -154,7 +154,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: ab1342b90cdec1448f76b53e7bf21252
     GuidInternal: 
-    m_lastTime: -8585353044301577603
+    m_lastTime: -8585341785880255205
     List:
     - name: Crossword
       guid: 321ff1bac256df4795269c9437cabe9b
@@ -196,8 +196,25 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 242746b1878c4b40b9836c0496aaf6a3
     GuidInternal: 
-    m_lastTime: -8585353044308280634
+    m_lastTime: -8585340983781408617
     List:
+    - name: Ambience
+      guid: dcca71c57f94ba45984d9fd346fbdd87
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: dcca71c57f94ba45984d9fd346fbdd87
+      Path: Events/Default Work Unit/Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Harold
       guid: 787dd772d8c90a4a925d227438463f31
       id: 4208281901
@@ -212,6 +229,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 787dd772d8c90a4a925d227438463f31
       Path: Events/Default Work Unit/Harold
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 0f81bcb9a5b2124fb1da67f3250ef91a
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Music
+        ObjectType: 4
+        guid: 0f81bcb9a5b2124fb1da67f3250ef91a
+      Path: Events/Default Work Unit/Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -232,6 +266,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: f76b71a05d0ef64abe66e90f6863acc2
       Path: Events/Default Work Unit/Harold/Play_actor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bath_Amb
+      guid: d41ea6a624a7dd43bcaa3b8224f65a51
+      id: 1523620308
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: dcca71c57f94ba45984d9fd346fbdd87
+      - ElementName: Play_Bath_Amb
+        ObjectType: 3
+        guid: d41ea6a624a7dd43bcaa3b8224f65a51
+      Path: Events/Default Work Unit/Ambience/Play_Bath_Amb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -465,10 +519,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Music
+        ObjectType: 4
+        guid: 0f81bcb9a5b2124fb1da67f3250ef91a
       - ElementName: Play_Helvetica
         ObjectType: 3
         guid: 28c3091de091b84eb093511bbbc30ae1
-      Path: Events/Default Work Unit/Play_Helvetica
+      Path: Events/Default Work Unit/Music/Play_Helvetica
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -562,10 +619,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: dcca71c57f94ba45984d9fd346fbdd87
       - ElementName: Play_Office_Amb
         ObjectType: 3
         guid: 3b934e43ff39c645b5be312aa1a9f62f
-      Path: Events/Default Work Unit/Play_Office_Amb
+      Path: Events/Default Work Unit/Ambience/Play_Office_Amb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -836,10 +896,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Music
+        ObjectType: 4
+        guid: 0f81bcb9a5b2124fb1da67f3250ef91a
       - ElementName: Stop_Helvetica
         ObjectType: 3
         guid: 5c89bd193e89004c80aa6dc32b436618
-      Path: Events/Default Work Unit/Stop_Helvetica
+      Path: Events/Default Work Unit/Music/Stop_Helvetica
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -853,10 +916,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: dcca71c57f94ba45984d9fd346fbdd87
       - ElementName: Stop_Office_Amb
         ObjectType: 3
         guid: b35611c971fdae499035f7e6b3f6723a
-      Path: Events/Default Work Unit/Stop_Office_Amb
+      Path: Events/Default Work Unit/Ambience/Stop_Office_Amb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -934,7 +1000,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 53d792756ae4904ab25acc58d3cc630a
     GuidInternal: 
-    m_lastTime: -8585368444202667292
+    m_lastTime: -8585341838658576047
     List:
     - name: gameState
       guid: 9eb2b75b0fe32342891cceaeadfe064c
@@ -1034,6 +1100,120 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: room
+      guid: 0a86d449867fe2438ef0e102949a9a37
+      id: 2077253480
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 53d792756ae4904ab25acc58d3cc630a
+      - ElementName: room
+        ObjectType: 9
+        guid: 0a86d449867fe2438ef0e102949a9a37
+      Path: States/Default Work Unit/room
+      values:
+      - name: bath
+        guid: 94ed6e9f800ab74480e31fe8d99764ce
+        id: 1375321530
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 53d792756ae4904ab25acc58d3cc630a
+        - ElementName: room
+          ObjectType: 9
+          guid: 0a86d449867fe2438ef0e102949a9a37
+        - ElementName: bath
+          ObjectType: 8
+          guid: 94ed6e9f800ab74480e31fe8d99764ce
+      - name: bed
+        guid: d0229b069cf50749b17f03f944c8ac28
+        id: 446279778
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 53d792756ae4904ab25acc58d3cc630a
+        - ElementName: room
+          ObjectType: 9
+          guid: 0a86d449867fe2438ef0e102949a9a37
+        - ElementName: bed
+          ObjectType: 8
+          guid: d0229b069cf50749b17f03f944c8ac28
+      - name: dream
+        guid: 4af6c0e93d2fc542b44e77b3a083727d
+        id: 2120052594
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 53d792756ae4904ab25acc58d3cc630a
+        - ElementName: room
+          ObjectType: 9
+          guid: 0a86d449867fe2438ef0e102949a9a37
+        - ElementName: dream
+          ObjectType: 8
+          guid: 4af6c0e93d2fc542b44e77b3a083727d
+      - name: None
+        guid: d3c939092efb8a4287c0450d8f0a8789
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 53d792756ae4904ab25acc58d3cc630a
+        - ElementName: room
+          ObjectType: 9
+          guid: 0a86d449867fe2438ef0e102949a9a37
+        - ElementName: None
+          ObjectType: 8
+          guid: d3c939092efb8a4287c0450d8f0a8789
+      - name: office
+        guid: 7822429300593b499dd528205c0ca9ad
+        id: 1547173777
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 53d792756ae4904ab25acc58d3cc630a
+        - ElementName: room
+          ObjectType: 9
+          guid: 0a86d449867fe2438ef0e102949a9a37
+        - ElementName: office
+          ObjectType: 8
+          guid: 7822429300593b499dd528205c0ca9ad
+      - name: outdoors
+        guid: 322943987968e6448f4469656418b4b8
+        id: 2730119150
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 53d792756ae4904ab25acc58d3cc630a
+        - ElementName: room
+          ObjectType: 9
+          guid: 0a86d449867fe2438ef0e102949a9a37
+        - ElementName: outdoors
+          ObjectType: 8
+          guid: 322943987968e6448f4469656418b4b8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
@@ -1046,7 +1226,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: b8c8ca23cd60504da86a8a1524ff77b2
     GuidInternal: 
-    m_lastTime: -8585353044301575047
+    m_lastTime: -8585341838658652091
     List:
     - name: goodbyeSwitch
       guid: 0e7e6c4211f6574f8c3d01fac6dd40e5

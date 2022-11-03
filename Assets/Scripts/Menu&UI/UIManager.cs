@@ -41,7 +41,7 @@ public class UIManager : MonoBehaviour
 
 	public void pauseControl()
 	{
-		if(gameState == "play")
+		if (gameState == "play")
 		{
 			Time.timeScale = 0;
 			show(pauseObjects);
@@ -63,7 +63,7 @@ public class UIManager : MonoBehaviour
 	//  shows objects with tag
 	public void show(GameObject[] tagg){
 		foreach(GameObject g in tagg){
-			g.SetActive(true);
+			show(g);
 		}
 	}
 	public void show(GameObject obj){
@@ -73,7 +73,7 @@ public class UIManager : MonoBehaviour
 	// hides objects with tag
 	public void hide(GameObject[] tagg){
 		foreach(GameObject g in tagg){
-			g.SetActive(false);
+			hide(g);
 		}
 	}
 	public void hide(GameObject obj){

@@ -3,110 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Helvetica" ID="{1D09C328-91E0-4EB8-B093-511BBBC30AE1}">
-					<ChildrenList>
-						<Action Name="" ID="{3945DB99-4E2B-464F-B4C1-7070496C567A}" ShortID="951654808">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="menu" ID="{DDABF3F8-D8FC-4DCB-AA83-09F624DD9438}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{F88F1BF6-0549-4518-AC7F-A7F3B006FAF2}" ShortID="429881720">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Helvetica" ID="{1DB3CC6A-8FD5-4A5F-9122-A0FA6790D55F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Helvetica" ID="{19BD895C-893E-4C00-80AA-6DC32B436618}">
-					<ChildrenList>
-						<Action Name="" ID="{10FC23FA-8E57-4116-AABC-92BE3D60FFF0}" ShortID="117473794">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{A12E728E-7958-4DD1-82D5-E0392800F200}" ShortID="730381388">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Delay" Type="Real64" Value="10">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{A4142F91-A34D-4DF9-BF6A-B9549CCD5A77}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Helvetica" ID="{1DB3CC6A-8FD5-4A5F-9122-A0FA6790D55F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Office_Amb" ID="{434E933B-39FF-45C6-B5BE-312AA1A9F62F}">
-					<ChildrenList>
-						<Action Name="" ID="{A52756B9-2D87-4480-911C-3BBA5EDC87F2}" ShortID="264171854">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{8D80F9C5-2EFC-4ACD-A230-D63CCC0B0606}" ShortID="356104271">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C6CA22B4-0077-4BC9-BFAB-72E3E28214DB}" ShortID="161264473">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Office_Amb" ID="{C91156B3-FD71-49AE-9035-F7E6B3F6723A}">
-					<ChildrenList>
-						<Action Name="" ID="{FD24D190-FE0F-4113-BEAF-ECE0E7F438FD}" ShortID="624816195">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{24DCB028-A6C1-464B-88C5-7B9FB0B0AA1D}" ShortID="16743916">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Harold" ID="{72D77D78-C9D8-4A0A-925D-227438463F31}" ShortID="988679718">
 					<ChildrenList>
 						<Event Name="Play_release" ID="{CDF7B0A9-728E-47B3-BBC7-0F0DA5E1B142}">
@@ -431,6 +327,163 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Player" ID="{C4EE45B7-4A91-47B6-B044-46B6170B2BF2}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{B9BC810F-B2A5-4F12-B1DA-67F3250EF91A}" ShortID="151006061">
+					<ChildrenList>
+						<Event Name="Play_Helvetica" ID="{1D09C328-91E0-4EB8-B093-511BBBC30AE1}">
+							<ChildrenList>
+								<Action Name="" ID="{3945DB99-4E2B-464F-B4C1-7070496C567A}" ShortID="951654808">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="menu" ID="{DDABF3F8-D8FC-4DCB-AA83-09F624DD9438}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F88F1BF6-0549-4518-AC7F-A7F3B006FAF2}" ShortID="429881720">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Helvetica" ID="{1DB3CC6A-8FD5-4A5F-9122-A0FA6790D55F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Helvetica" ID="{19BD895C-893E-4C00-80AA-6DC32B436618}">
+							<ChildrenList>
+								<Action Name="" ID="{10FC23FA-8E57-4116-AABC-92BE3D60FFF0}" ShortID="117473794">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A12E728E-7958-4DD1-82D5-E0392800F200}" ShortID="730381388">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="10">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A4142F91-A34D-4DF9-BF6A-B9549CCD5A77}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Helvetica" ID="{1DB3CC6A-8FD5-4A5F-9122-A0FA6790D55F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{C571CADC-947F-45BA-984D-9FD346FBDD87}" ShortID="1022302060">
+					<ChildrenList>
+						<Event Name="Play_Office_Amb" ID="{434E933B-39FF-45C6-B5BE-312AA1A9F62F}">
+							<ChildrenList>
+								<Action Name="" ID="{A52756B9-2D87-4480-911C-3BBA5EDC87F2}" ShortID="264171854">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8D80F9C5-2EFC-4ACD-A230-D63CCC0B0606}" ShortID="356104271">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C6CA22B4-0077-4BC9-BFAB-72E3E28214DB}" ShortID="161264473">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Office_Amb" ID="{C91156B3-FD71-49AE-9035-F7E6B3F6723A}">
+							<ChildrenList>
+								<Action Name="" ID="{FD24D190-FE0F-4113-BEAF-ECE0E7F438FD}" ShortID="624816195">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{24DCB028-A6C1-464B-88C5-7B9FB0B0AA1D}" ShortID="16743916">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Bath_Amb" ID="{A6A61ED4-A724-43DD-BCAA-3B8224F65A51}">
+							<ChildrenList>
+								<Action Name="" ID="{27D6F722-8202-4812-913B-336AC8BB5F3B}" ShortID="533076952">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bath_RoomTone" ID="{371C6951-E44A-4B5F-A74E-508B715DB2F1}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EA217A74-74F3-43E3-AC94-7039FFEA07D2}" ShortID="391834219">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="bathroomBuddy" ID="{178C5B39-F4AC-4C80-9700-62A87D32CB2A}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Bath_Amb" ID="{D3143B54-611D-47E5-A92A-71F39DEA2DAF}">
+							<ChildrenList>
+								<Action Name="" ID="{F4326885-1D78-4303-A7CC-496650E9CDB7}" ShortID="365297352">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="bathroomBuddy" ID="{178C5B39-F4AC-4C80-9700-62A87D32CB2A}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D0C0BCE5-33DE-46C3-93AE-8BB939A1F870}" ShortID="340963139">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bath_RoomTone" ID="{371C6951-E44A-4B5F-A74E-508B715DB2F1}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

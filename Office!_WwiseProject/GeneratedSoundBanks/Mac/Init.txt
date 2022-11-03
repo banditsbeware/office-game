@@ -13,9 +13,16 @@ Switch	ID	Name	Switch Group			Notes
 	4102371168	seeYa	goodbyeSwitch			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	2077253480	room			\Default Work Unit\room	
 	4091656514	gameState			\Default Work Unit\gameState	
 
 State	ID	Name	State Group			Notes
+	446279778	bed	room			
+	748895195	None	room			
+	1375321530	bath	room			
+	1547173777	office	room			
+	2120052594	dream	room			
+	2730119150	outdoors	room			
 	748895195	None	gameState			
 	1256202815	play	gameState			
 	2330457189	window	gameState			

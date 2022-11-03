@@ -4096,8 +4096,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672221620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 5, z: 0}
-  m_LocalScale: {x: 0.9650161, y: 2.1736, z: 1}
+  m_LocalPosition: {x: -3.7476, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1853264405}
@@ -10177,7 +10177,7 @@ Transform:
   m_GameObject: {fileID: 1853264404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4, y: -50, z: 0}
-  m_LocalScale: {x: 1.0362521, y: 0.46006626, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 794250609}
@@ -10539,6 +10539,7 @@ GameObject:
   - component: {fileID: 1900030904}
   - component: {fileID: 1900030903}
   - component: {fileID: 1900030902}
+  - component: {fileID: 1900030907}
   m_Layer: 5
   m_Name: wordMini
   m_TagString: minigame
@@ -10663,6 +10664,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1900030907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900030901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1205700bf89b214d9e6a2578f9d6ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 8
+  gridObject: {fileID: 1099324278}
+  exampleButton: {fileID: 1792997667608175900, guid: aa248ea424af6524f9702284f812f145, type: 3}
+  haroldSpeech: {fileID: 1340357816}
+  playerSpeech: {fileID: 143577160}
+  postIt: {fileID: 795816620}
+  crossBank:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84fbe7a545218de459860d62fcc818e3, type: 2}
+  goodbyeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d1a40f5fea965104e962c6034d4901fa, type: 2}
+  helloRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e51c763fd5be6d9469e03dc19d853ce7, type: 2}
 --- !u!1 &1926376386
 GameObject:
   m_ObjectHideFlags: 0
