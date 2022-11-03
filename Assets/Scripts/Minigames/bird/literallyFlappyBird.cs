@@ -22,6 +22,7 @@ public class literallyFlappyBird : MonoBehaviour
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
     private Queue<GameObject> pipes = new Queue<GameObject>();
 
+
     void OnEnable()
     {
         scrollers.Add(bg);
@@ -40,6 +41,8 @@ public class literallyFlappyBird : MonoBehaviour
 
         menu.gameObject.SetActive(true);
         scoreTxt.gameObject.SetActive(false);
+
+        
     }
 
     void Update()
@@ -121,7 +124,7 @@ public class literallyFlappyBird : MonoBehaviour
     }
     void redoPipe()
     {
-        float offset = numOfPipes * 20f - 10f;
+        float offset = numOfPipes * 20f;
         GameObject first = pipes.Dequeue();
         first.transform.localPosition = new Vector2(first.transform.position.x + offset, Random.Range(-pipeBounds, pipeBounds));
         pipes.Enqueue(first);

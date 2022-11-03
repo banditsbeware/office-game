@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="144">
 	<RootPaths>
-		<ProjectRoot>../../</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Windows/</SourceFilesRoot>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
@@ -548,7 +548,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8A48955F-9062-6FA9-F438-C053151D1548}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{76F60507-7A59-7574-0506-187A6F57511E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -574,7 +574,7 @@
 				</File>
 				<File Id="267626252" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</ShortName>
-					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_7EDA1B9B.wem</CachePath>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916_650C579C.wem</CachePath>
 				</File>
 				<File Id="285198526" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Doors, Wood, Bathroom, Open, Close, Squeak 01 SND11146 01.wav</ShortName>
@@ -610,7 +610,7 @@
 				</File>
 				<File Id="517928142" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</ShortName>
-					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_4BE419DA.wem</CachePath>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01_2E0AD0C2.wem</CachePath>
 				</File>
 				<File Id="553170557" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Water, Plumbing, Bathroom Sink, Washing Hands SND1917 02.wav</ShortName>
@@ -626,7 +626,7 @@
 				</File>
 				<File Id="668899071" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083.wav</ShortName>
-					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083_4FE8344E.wem</CachePath>
+					<CachePath>SFX/Footsteps, Human, Linoleum, Sneaker, Medium SND1083_E876F3FD.wem</CachePath>
 				</File>
 				<File Id="671972937" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</ShortName>
@@ -646,7 +646,7 @@
 				</File>
 				<File Id="907633495" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</ShortName>
-					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_F6893C4C.wem</CachePath>
+					<CachePath>SFX/Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914_AD14E6BE.wem</CachePath>
 				</File>
 				<File Id="918240331" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</ShortName>
@@ -689,6 +689,9 @@
 						<MediaRef Id="979414591"/>
 						<MediaRef Id="1027102253"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1485913236" Name="workBathroomReverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3069382355" Name="Play_Helvetica" DurationType="Infinite">
 					<SwitchContainers>
@@ -731,6 +734,7 @@
 						<ActionSetStateEntry GroupId="4091656514" Id="1256202815" Name="play"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="5140990" Name="Stop_Bath_Amb" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2823449565" Name="Stop_Helvetica" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="4091656514" Id="1256202815" Name="play"/>
@@ -751,5 +755,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B81106E8-B27D-769B-67BC-E5E30C85AA99}</FileHash>
+	<FileHash>{FAC0BF52-C9C4-4554-BFC1-109DF7DD1766}</FileHash>
 </SoundBanksInfo>

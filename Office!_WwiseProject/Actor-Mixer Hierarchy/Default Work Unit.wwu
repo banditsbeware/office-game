@@ -337,6 +337,11 @@
 						<Sound Name="Bath_RoomTone" ID="{371C6951-E44A-4B5F-A74E-508B715DB2F1}" ShortID="829620817">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -371,6 +376,16 @@
 								<Property Name="3DPosition" Type="int16" Value="2"/>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -389,6 +404,11 @@
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -396,6 +416,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="workBathroomReverb" ID="{31F0E8CD-D0B5-42D1-83AB-E7E7E69D5D50}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -453,6 +476,7 @@
 												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning" Type="int16" Value="2"/>
 											</PropertyList>
@@ -832,6 +856,8 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
@@ -899,6 +925,9 @@
 											</PositioningInfo>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="outbound" ID="{381E19AD-246B-42A0-AF3B-29D9640EA0C8}" ShortID="875546790">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -1143,9 +1172,9 @@
 																		<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914" ID="{CD2F77A1-B0D1-47BC-8DF0-7C8EB7AA9005}">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.105701335674755"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0870481587909753"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.260922414743356"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="2.66118656875266"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.69806898668195"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 01 SND0914.wav</AudioFile>
@@ -1179,9 +1208,9 @@
 																		<AudioFileSource Name="Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916" ID="{8D8517B0-F903-4A6C-8F02-8471CB846574}">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.0775865261813538"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.119906449553001"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.22749248851404"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="2.52508876117497"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.54301976766848"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>Footsteps, Human, Hardwood, Boots, Walking By 02 SND0916.wav</AudioFile>
@@ -1207,7 +1236,7 @@
 																		<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083" ID="{403F58FB-0B85-49A6-9FE8-DD5E9B4B3F5D}">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.126122286079183"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0588570668369517"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.37948612527851"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																				<Property Name="TrimEnd" Type="Real64" Value="3.27077128565347"/>
 																			</PropertyList>
@@ -1235,9 +1264,9 @@
 																		<AudioFileSource Name="Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01" ID="{38686418-11E1-4203-83DC-6EDAC7594714}">
 																			<PropertyList>
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.0696605204342273"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.025331098339719"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.239987483621104"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="2.74842416985951"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.97381337440496"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>Footsteps, Human, Linoleum, Sneaker, Medium SND1083 01.wav</AudioFile>
@@ -1284,6 +1313,7 @@
 																	</ValueList>
 																</Property>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="SpeakerPanning" Type="int16" Value="2"/>
 															</PropertyList>
@@ -1559,6 +1589,9 @@
 													</Playlist>
 												</RandomSequenceContainer>
 											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{1DF03FE9-8355-4270-AEEF-B829D0F26A12}"/>
+											</PositioningInfo>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<PositioningInfo>

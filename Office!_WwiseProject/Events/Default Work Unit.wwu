@@ -447,6 +447,9 @@
 						<Event Name="Play_Bath_Amb" ID="{A6A61ED4-A724-43DD-BCAA-3B8224F65A51}">
 							<ChildrenList>
 								<Action Name="" ID="{27D6F722-8202-4812-913B-336AC8BB5F3B}" ShortID="533076952">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Bath_RoomTone" ID="{371C6951-E44A-4B5F-A74E-508B715DB2F1}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>

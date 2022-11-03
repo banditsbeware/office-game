@@ -44,6 +44,7 @@ namespace AK
         static const AkUniqueID PLAY_VARSITY = 1692086900U;
         static const AkUniqueID PLAY_WEATHER = 3308884970U;
         static const AkUniqueID PLAY_WORK = 1221848793U;
+        static const AkUniqueID STOP_BATH_AMB = 5140990U;
         static const AkUniqueID STOP_HELVETICA = 2823449565U;
         static const AkUniqueID STOP_OFFICE_AMB = 1325704673U;
         static const AkUniqueID STOP_PLAYER = 503260239U;
