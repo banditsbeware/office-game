@@ -21,8 +21,12 @@ public class literallyFlappyBird : MonoBehaviour
     public TMP_Text menu;
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
     private Queue<GameObject> pipes = new Queue<GameObject>();
-
-
+    
+    //Wwise
+    public AK.Wwise.Bank Bird;
+    public AK.Wwise.Event flap;
+    public AK.Wwise.Event chime;
+    
     void OnEnable()
     {
         scrollers.Add(bg);

@@ -13,35 +13,15 @@
 				</SoundBank>
 				<SoundBank Name="Crossword" ID="{BAF11F32-56C2-47DF-9526-9C9437CABE9B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_extra_huh" ID="{404607D1-9DA2-4076-9FE0-2B5A6868A440}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Player" ID="{BB3EDB14-83C7-411A-95FE-47F4CEAA2EFE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_prices" ID="{5C9B724F-52DA-4177-851B-DFA2896864FF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_soccer" ID="{6F1A3C6F-C7D8-4183-8BF4-F2A9D6E93EC4}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_work" ID="{220EE1A7-D685-41B1-9301-A56071C2DA0C}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_growth" ID="{AD51A55A-71BE-42DD-84DA-4A39A824B0C6}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_merger" ID="{FBA72DCD-ACDB-43DB-A647-DD4618012923}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_weather" ID="{22B4B7C5-BB41-4462-9A86-7A0E5B562D10}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_hours" ID="{9A4E2157-3A8D-4523-9876-3124D6EFDC89}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_school" ID="{AD7E1BFD-7D92-45EE-9988-DDC825DB2116}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_client" ID="{9F0E6E45-F9B1-4629-84F6-DCE9EB3EE333}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_scifi" ID="{29909D52-535C-462B-9000-0F48375293B2}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_team" ID="{C98622A5-05E3-46B4-BB70-7446CBAB5C7E}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_release" ID="{CDF7B0A9-728E-47B3-BBC7-0F0DA5E1B142}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_child" ID="{5BDE7EC6-2ECE-4816-865B-4843D4FE0194}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_varsity" ID="{240D82E2-159D-4838-9EF6-BCC2C35450F1}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_clothes" ID="{76F43FE2-1943-485B-A868-65A33DB5A718}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_game" ID="{01BE12C5-AD6B-4924-9F2E-8BAC4CF8D8A1}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_goodbye" ID="{32B9ACA3-9EC3-4967-9058-1FCFC2FCD994}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_hello" ID="{E8B614D2-9BE8-4A58-852F-35AE3C9C6D1F}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_snow" ID="{8C185CCE-4466-4A5E-98FB-844A9B1A3946}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_actor" ID="{A0716BF7-0E5D-4AF6-BE66-E90F6863ACC2}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_sports" ID="{235A3FFC-8988-4B64-87C2-3E3336007CC7}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_boss" ID="{7759C9B4-1151-4BB1-A84D-06FEE4DEF356}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_extra_cough" ID="{3D5DADED-CC5B-4BB9-B70C-404C004F4B59}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_movies" ID="{039AFA44-B0FB-4DC8-BD2C-5067F05B9A3D}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_coffee" ID="{EE28F294-BC11-4F09-9559-F104004F0948}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_internet" ID="{BD694DE8-C3B5-4F6A-9EDE-C99C4F804B37}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Player" ID="{34F70366-82DB-4F7F-ACBD-10DBD1CE1792}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player" ID="{1B8A7C3A-10BC-417C-B6B5-08DE75DA5C86}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Harold" ID="{72D77D78-C9D8-4A0A-925D-227438463F31}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Bird" ID="{A0E76B54-A151-493F-9B72-FCE2B4434EFD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Bird" ID="{80A3D1BD-EAE0-45D6-A09F-AA46DD9E9232}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

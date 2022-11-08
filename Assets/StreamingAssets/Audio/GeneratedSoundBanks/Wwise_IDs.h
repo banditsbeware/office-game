@@ -15,6 +15,9 @@ namespace AK
     {
         static const AkUniqueID PLAY_ACTOR = 3231912389U;
         static const AkUniqueID PLAY_BATH_AMB = 1523620308U;
+        static const AkUniqueID PLAY_BIRD_COIN = 2159632377U;
+        static const AkUniqueID PLAY_BIRD_FLAPS = 2261578938U;
+        static const AkUniqueID PLAY_BIRD_IMPACT = 2704207640U;
         static const AkUniqueID PLAY_BOSS = 1693071901U;
         static const AkUniqueID PLAY_CHILD = 2952268476U;
         static const AkUniqueID PLAY_CLIENT = 2874228519U;
@@ -122,6 +125,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID BIRD = 1544377644U;
         static const AkUniqueID CROSSWORD = 630707431U;
         static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS
