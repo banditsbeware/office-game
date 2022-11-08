@@ -90,10 +90,4 @@ public class UIManager : MonoBehaviour
 	{
 		hide(notifs);
 	}
-
-
-	// //loads inputted level
-	// public void LoadLevel(string level){
-	// 	Application.LoadLevel(level);
-	// }
 }

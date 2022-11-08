@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="144">
 	<RootPaths>
-		<ProjectRoot>../../</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Mac/</SourceFilesRoot>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
@@ -829,5 +829,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F3CE20B1-E064-2FAF-75F0-5AD2E9FDFD9C}</FileHash>
+	<FileHash>{20823FFE-61B6-4111-5FBB-D1C330065313}</FileHash>
 </SoundBanksInfo>

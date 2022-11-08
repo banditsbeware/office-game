@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="144">
 	<RootPaths>
-		<ProjectRoot>../../</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Windows/</SourceFilesRoot>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
@@ -829,5 +829,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5D207AA7-B703-6A8E-3AB1-DC91DD511AD4}</FileHash>
+	<FileHash>{01FAEBE4-413B-BBBF-9E76-6B1860CE22A0}</FileHash>
 </SoundBanksInfo>
