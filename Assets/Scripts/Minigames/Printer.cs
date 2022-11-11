@@ -24,6 +24,11 @@ public class Printer : MonoBehaviour
         }
     }
 
+    public void enter()
+    {
+        numScreen.text = "";
+    }
+
     void Update()
     {
         foreach (char c in Input.inputString)
