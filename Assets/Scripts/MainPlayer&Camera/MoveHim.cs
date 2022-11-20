@@ -28,7 +28,7 @@ public class MoveHim : MonoBehaviour {
       //if playing, change the position of the regidbody
       if ((v.magnitude != 0) && (UIManager.gameState == "play")) 
       {
-        rb.MovePosition(rb.position + v/v.magnitude * speed * Time.fixedDeltaTime); 
+        rb.AddForce(v/v.magnitude * speed); 
       }
     }
 

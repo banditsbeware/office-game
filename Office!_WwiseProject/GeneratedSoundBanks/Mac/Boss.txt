@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1932424354	Play_convert_test			\Default Work Unit\Minigames\Boss\Play_convert_test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	798596562	vert	E:\Office!\Office!_WwiseProject\.cache\Mac\SFX\convert_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\convert_test\vert\vert		20000320
+

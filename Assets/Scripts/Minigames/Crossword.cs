@@ -56,6 +56,9 @@ public class Crossword : MonoBehaviour {
   //words 
   public TMP_Text haroldSpeech;
   public TMP_Text playerSpeech;
+  public GameObject haroldBubble;
+  public GameObject playerBubble;
+  public Animator animator;
   public List<Word> avalibleWords = new List<Word>();
   public List<Word> allWords = new List<Word>();
   public TMP_Text postIt;
@@ -70,6 +73,7 @@ public class Crossword : MonoBehaviour {
 
   IEnumerator ChangeBoards(Word he)
   {
+    playerBubble.SetActive(true);
     TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
     AkSoundEngine.PostEvent("Play_Player", gameObject);
     yield return new WaitForSeconds(he.playerTime);
@@ -77,9 +81,15 @@ public class Crossword : MonoBehaviour {
     AkSoundEngine.PostEvent("Stop_Player", gameObject);
     yield return new WaitForSeconds(1.5f);
   
+    playerBubble.SetActive(false);
+    playerSpeech.text = "";
+    animator.SetBool("isSpeaking", true);
+    haroldBubble.SetActive(true);
     AkSoundEngine.PostEvent(he.post, gameObject);
     TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
     yield return new WaitForSeconds(he.haroldTime);
+
+    animator.SetBool("isSpeaking", false);
 
     //add word options if not already used in coversation
     avalibleWords = new List<Word>();
@@ -95,11 +105,14 @@ public class Crossword : MonoBehaviour {
     yield return new WaitForSeconds(.5f);
     DoGrid();
     yield return new WaitForSeconds(.5f);
+    haroldSpeech.text = "";
+    haroldBubble.SetActive(false);
     DoGrid();
     PlaceWords();
   }
   IEnumerator Goodbye(Word he)
   {
+    playerBubble.SetActive(true);
     TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
     AkSoundEngine.PostEvent("Play_Player", gameObject);
     yield return new WaitForSeconds(he.playerTime);
@@ -107,12 +120,25 @@ public class Crossword : MonoBehaviour {
     AkSoundEngine.PostEvent("Stop_Player", gameObject);
     yield return new WaitForSeconds(1.5f);
 
+    playerBubble.SetActive(false);
+    playerSpeech.text = "";
+    animator.SetBool("isSpeaking", true);
+    haroldBubble.SetActive(true);
     AkSoundEngine.PostEvent(he.post, gameObject);
     TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
     yield return new WaitForSeconds(he.haroldTime);
 
+    haroldBubble.SetActive(false);
+    haroldSpeech.text = "";
     UIManager.gameState = "play";
     gameObject.SetActive(false);
+  }
+
+  IEnumerator HelloWait()
+  {
+    yield return new WaitForSeconds(1.5f);
+    haroldSpeech.text = "";
+    haroldBubble.SetActive(false);
   }
 
   void OnEnable()
@@ -127,8 +153,13 @@ public class Crossword : MonoBehaviour {
     DoGrid();
     PlaceWords();
 
+    playerBubble.SetActive(false);
+    haroldBubble.SetActive(true);
+
     AkSoundEngine.PostEvent(hello.post, gameObject);
     TextWriter.AddWriter_Static(haroldSpeech, hello.haroldTalk_normal);
+
+    StartCoroutine(HelloWait());
   }
 
   void OnDisable()

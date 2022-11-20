@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_CLIENT = 2874228519U;
         static const AkUniqueID PLAY_CLOTHES = 3037538514U;
         static const AkUniqueID PLAY_COFFEE = 1012391550U;
+        static const AkUniqueID PLAY_CONVERT_TEST = 1932424354U;
         static const AkUniqueID PLAY_EXTRA_COUGH = 393588247U;
         static const AkUniqueID PLAY_EXTRA_HUH = 1498563514U;
         static const AkUniqueID PLAY_GAME = 216639764U;
@@ -47,9 +48,7 @@ namespace AK
         static const AkUniqueID PLAY_VARSITY = 1692086900U;
         static const AkUniqueID PLAY_WEATHER = 3308884970U;
         static const AkUniqueID PLAY_WORK = 1221848793U;
-        static const AkUniqueID STOP_BATH_AMB = 5140990U;
         static const AkUniqueID STOP_HELVETICA = 2823449565U;
-        static const AkUniqueID STOP_OFFICE_AMB = 1325704673U;
         static const AkUniqueID STOP_PLAYER = 503260239U;
     } // namespace EVENTS
 
@@ -126,6 +125,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BIRD = 1544377644U;
+        static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID CROSSWORD = 630707431U;
         static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS

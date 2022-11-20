@@ -154,7 +154,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ab1342b90cdec1448f76b53e7bf21252
     GuidInternal: 
-    m_lastTime: -8585336786546295213
+    m_lastTime: -8585327057935273945
     List:
     - name: Bird
       guid: 546be7a051a13f499b72fce2b4434efd
@@ -170,6 +170,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 546be7a051a13f499b72fce2b4434efd
       Path: SoundBanks\Default Work Unit\Bird
+    - name: Boss
+      guid: 58331fc1f5daca4e83e0ed33fff96c01
+      id: 1560169506
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ab1342b90cdec1448f76b53e7bf21252
+      - ElementName: Boss
+        ObjectType: 7
+        guid: 58331fc1f5daca4e83e0ed33fff96c01
+      Path: SoundBanks\Default Work Unit\Boss
     - name: Crossword
       guid: 321ff1bac256df4795269c9437cabe9b
       id: 630707431
@@ -210,7 +224,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 242746b1878c4b40b9836c0496aaf6a3
     GuidInternal: 
-    m_lastTime: -8585336786560141232
+    m_lastTime: -8585327057935383926
     List:
     - name: Ambience
       guid: dcca71c57f94ba45984d9fd346fbdd87
@@ -246,6 +260,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: bdd1a380e0ead645a09faa46dd9e9232
       Path: Events\Default Work Unit\Minigames\Bird
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Boss
+      guid: f718f580fff724468e67cd477be097e9
+      id: 1560169506
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Minigames
+        ObjectType: 4
+        guid: 28277b9e05d37c42b19476e3d99c3b5e
+      - ElementName: Boss
+        ObjectType: 4
+        guid: f718f580fff724468e67cd477be097e9
+      Path: Events\Default Work Unit\Minigames\Boss
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -530,6 +564,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 94f228ee11bc094f9559f104004f0948
       Path: Events\Default Work Unit\Minigames\Harold\Play_coffee
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_convert_test
+      guid: ed9bfeb7a22b284fa493720b0bb8548a
+      id: 1932424354
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 242746b1878c4b40b9836c0496aaf6a3
+      - ElementName: Minigames
+        ObjectType: 4
+        guid: 28277b9e05d37c42b19476e3d99c3b5e
+      - ElementName: Boss
+        ObjectType: 4
+        guid: f718f580fff724468e67cd477be097e9
+      - ElementName: Play_convert_test
+        ObjectType: 3
+        guid: ed9bfeb7a22b284fa493720b0bb8548a
+      Path: Events\Default Work Unit\Minigames\Boss\Play_convert_test
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1093,29 +1150,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Stop_Bath_Amb
-      guid: 543b14d31d61e547a92a71f39dea2daf
-      id: 5140990
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 242746b1878c4b40b9836c0496aaf6a3
-      - ElementName: Minigames
-        ObjectType: 4
-        guid: 28277b9e05d37c42b19476e3d99c3b5e
-      - ElementName: Bird
-        ObjectType: 4
-        guid: bdd1a380e0ead645a09faa46dd9e9232
-      - ElementName: Stop_Bath_Amb
-        ObjectType: 3
-        guid: 543b14d31d61e547a92a71f39dea2daf
-      Path: Events\Default Work Unit\Minigames\Bird\Stop_Bath_Amb
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Stop_Helvetica
       guid: 5c89bd193e89004c80aa6dc32b436618
       id: 2823449565
@@ -1133,26 +1167,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5c89bd193e89004c80aa6dc32b436618
       Path: Events\Default Work Unit\Music\Stop_Helvetica
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop_Office_Amb
-      guid: b35611c971fdae499035f7e6b3f6723a
-      id: 1325704673
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 242746b1878c4b40b9836c0496aaf6a3
-      - ElementName: Ambience
-        ObjectType: 4
-        guid: dcca71c57f94ba45984d9fd346fbdd87
-      - ElementName: Stop_Office_Amb
-        ObjectType: 3
-        guid: b35611c971fdae499035f7e6b3f6723a
-      Path: Events\Default Work Unit\Ambience\Stop_Office_Amb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1637,7 +1651,7 @@ MonoBehaviour:
     m_lastTime: -8585369404771906020
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000080000000f000000100000002200000027000000
+  ExpandedWaapiItemIds: 0500000006000000070000000f000000100000001100000027000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

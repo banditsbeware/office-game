@@ -26,6 +26,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Boss" ID="{C11F3358-DAF5-4ECA-83E0-ED33FFF96C01}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Boss" ID="{80F518F7-F7FF-4624-8E67-CD477BE097E9}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

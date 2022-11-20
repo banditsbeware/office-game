@@ -548,7 +548,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1544377644" Type="User" Language="SFX" Hash="{DCB72EEA-5907-BC87-0062-13D3F069F9BB}">
+		<SoundBank Id="1544377644" Type="User" Language="SFX" Hash="{A91A1B52-9A9C-9C06-03AB-1C3C532CD4B0}">
 			<ShortName>Bird</ShortName>
 			<Path>Bird.bnk</Path>
 			<Media>
@@ -727,10 +727,26 @@
 						<AuxBusRef Id="1485913236" Name="workBathroomReverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="5140990" Name="Stop_Bath_Amb" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{822D42E8-35B4-5CA4-3393-536DC0C95F08}">
+		<SoundBank Id="1560169506" Type="User" Language="SFX" Hash="{EEBD0D12-FA00-144C-66BB-507134AD0F64}">
+			<ShortName>Boss</ShortName>
+			<Path>Boss.bnk</Path>
+			<Media>
+				<File Id="798596562" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>convert.wav</ShortName>
+					<CachePath>SFX/convert_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1932424354" Name="Play_convert_test" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="798596562"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0422BA78-8A80-1DB2-DEEE-5321F5964C93}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -814,7 +830,6 @@
 						<ActionSetStateEntry GroupId="4091656514" Id="1256202815" Name="play"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1325704673" Name="Stop_Office_Amb" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="4091656514" Name="gameState">
@@ -829,5 +844,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{01FAEBE4-413B-BBBF-9E76-6B1860CE22A0}</FileHash>
+	<FileHash>{7346262F-4FED-954E-98DC-B0FD98F78712}</FileHash>
 </SoundBanksInfo>
