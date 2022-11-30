@@ -21,17 +21,6 @@ public class Crossword : MonoBehaviour {
   private GameObject button;
   private static int fontConst = 600;
 
-  private static Dictionary<string, (int, int)> dirDict = new Dictionary<string, (int, int)>()
-  {
-    {"N", (0, -1)},
-    {"S", (0, 1)},
-    {"E", (-1, 0)},
-    {"W", (1, 0)},
-    {"NW", (1, -1)},
-    {"SW", (1, 1)},
-    {"NE", (-1, -1)},
-    {"SE", (-1, 1)}
-  };
   private static string[] dirList = new string[]
   {
     "N",
@@ -47,6 +36,20 @@ public class Crossword : MonoBehaviour {
     "SE",
     "SE"
   };
+  
+  private static Dictionary<string, (int, int)> dirDict = new Dictionary<string, (int, int)>()
+  {
+    {"N", (0, -1)},
+    {"S", (0, 1)},
+    {"E", (-1, 0)},
+    {"W", (1, 0)},
+    {"NW", (1, -1)},
+    {"SW", (1, 1)},
+    {"NE", (-1, -1)},
+    {"SE", (-1, 1)}
+  };
+
+
 
   //selection variables 
   private bool wordCompleted = true;

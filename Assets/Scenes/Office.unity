@@ -614,6 +614,7 @@ GameObject:
   - component: {fileID: 143577162}
   - component: {fileID: 143577161}
   - component: {fileID: 143577160}
+  - component: {fileID: 143577163}
   m_Layer: 5
   m_Name: yourWords
   m_TagString: Untagged
@@ -738,6 +739,18 @@ RectTransform:
   m_AnchoredPosition: {x: 618.3957, y: 252.96}
   m_SizeDelta: {x: 370.1055, y: 79.215}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &143577163
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143577159}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &155311370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,7 +4240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564603691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.93, y: -8.67, z: 0}
+  m_LocalPosition: {x: 11.46, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13843,6 +13856,7 @@ GameObject:
   - component: {fileID: 1945808981}
   - component: {fileID: 1945808983}
   - component: {fileID: 1945808982}
+  - component: {fileID: 1945808984}
   m_Layer: 5
   m_Name: playerBox
   m_TagString: Untagged
@@ -13908,6 +13922,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945808980}
   m_CullTransparentMesh: 1
+--- !u!225 &1945808984
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945808980}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1952739815
 GameObject:
   m_ObjectHideFlags: 0
