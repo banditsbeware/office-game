@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//boss minigame words flying across screen
 public class wordMovement : MonoBehaviour
 {
     public float vel = 0f;

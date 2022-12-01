@@ -12,18 +12,25 @@ public class LevelLoader : MonoBehaviour
     {
         if (levelName == "Street")
         {
+            //control which door you spawn from when level loads
             if (SceneManager.GetActiveScene().name == "Office")
             {
-                MoveHimSideways.location = 0;
+                MoveHim.spawnLocation.x = 0;
             }
             else
             {
-                MoveHimSideways.location = 30;
+                MoveHim.spawnLocation.x = 30;
             }
         }
+        else
+        {
+            MoveHim.spawnLocation = new Vector3(0, 0, 0);
+        }
+
         StartCoroutine(LoadScene(levelName));
     }
 
+    //fade in/out
     IEnumerator LoadScene(string levelName)
     {
         fadeTransition.SetTrigger("Start");

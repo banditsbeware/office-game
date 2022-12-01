@@ -74,12 +74,12 @@ public class Crossword : MonoBehaviour {
   public AK.Wwise.RTPC goodbyeRTPC;
   public AK.Wwise.RTPC helloRTPC;
 
-  IEnumerator ChangeBoards(Word he)
+  IEnumerator ChangeBoards(Word word)
   {
     playerBubble.SetActive(true);
-    TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
+    TextWriter.AddWriter_Static(playerSpeech, word.playerTalk_normal);
     AkSoundEngine.PostEvent("Play_Player", gameObject);
-    yield return new WaitForSeconds(he.playerTime);
+    yield return new WaitForSeconds(word.playerTime);
 
     AkSoundEngine.PostEvent("Stop_Player", gameObject);
     yield return new WaitForSeconds(1.5f);
@@ -88,19 +88,19 @@ public class Crossword : MonoBehaviour {
     playerSpeech.text = "";
     animator.SetBool("isSpeaking", true);
     haroldBubble.SetActive(true);
-    AkSoundEngine.PostEvent(he.post, gameObject);
-    TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
-    yield return new WaitForSeconds(he.haroldTime);
+    AkSoundEngine.PostEvent(word.post, gameObject);
+    TextWriter.AddWriter_Static(haroldSpeech, word.haroldTalk_normal);
+    yield return new WaitForSeconds(word.haroldTime);
 
     animator.SetBool("isSpeaking", false);
 
     //add word options if not already used in coversation
     avalibleWords = new List<Word>();
-    foreach (Word word in he.normalOptions)
+    foreach (Word w in word.normalOptions)
     {
-      if (!word.used)
+      if (!w.used)
       {
-        avalibleWords.Add(word);
+        avalibleWords.Add(w);
       }
     }
       
@@ -113,12 +113,12 @@ public class Crossword : MonoBehaviour {
     DoGrid();
     PlaceWords();
   }
-  IEnumerator Goodbye(Word he)
+  IEnumerator Goodbye(Word word)
   {
     playerBubble.SetActive(true);
-    TextWriter.AddWriter_Static(playerSpeech, he.playerTalk_normal);
+    TextWriter.AddWriter_Static(playerSpeech, word.playerTalk_normal);
     AkSoundEngine.PostEvent("Play_Player", gameObject);
-    yield return new WaitForSeconds(he.playerTime);
+    yield return new WaitForSeconds(word.playerTime);
 
     AkSoundEngine.PostEvent("Stop_Player", gameObject);
     yield return new WaitForSeconds(1.5f);
@@ -127,9 +127,9 @@ public class Crossword : MonoBehaviour {
     playerSpeech.text = "";
     animator.SetBool("isSpeaking", true);
     haroldBubble.SetActive(true);
-    AkSoundEngine.PostEvent(he.post, gameObject);
-    TextWriter.AddWriter_Static(haroldSpeech, he.haroldTalk_normal);
-    yield return new WaitForSeconds(he.haroldTime);
+    AkSoundEngine.PostEvent(word.post, gameObject);
+    TextWriter.AddWriter_Static(haroldSpeech, word.haroldTalk_normal);
+    yield return new WaitForSeconds(word.haroldTime);
 
     haroldBubble.SetActive(false);
     haroldSpeech.text = "";
@@ -250,22 +250,22 @@ public class Crossword : MonoBehaviour {
     //add to list on postit
     postIt.text += "-" + it.postItDes + "\n";
   }
-  void PlaceWord(Word it)
+  void PlaceWord(Word word)
   {
-    string word = it.word;
-    it.direction = dirDict[dirList[Random.Range(0, dirList.Length)]];
-    it.origin = (Random.Range(0, size), Random.Range(0, size));
+    string wordString = word.word;
+    word.direction = dirDict[dirList[Random.Range(0, dirList.Length)]];
+    word.origin = (Random.Range(0, size), Random.Range(0, size));
     bool overlap = true;
     int counter = 0;
     
     //check bounds of grid, and whether any letters overlap existing words
     while (overlap == true)
     {
-      while ((it.origin.Item1 + it.direction.Item1 * word.Length < 0) || (it.origin.Item1 + it.direction.Item1 * word.Length > size) ||
-            (it.origin.Item2 + it.direction.Item2 * word.Length < 0) || (it.origin.Item2 + it.direction.Item2 * word.Length > size))
+      while ((word.origin.Item1 + word.direction.Item1 * wordString.Length < 0) || (word.origin.Item1 + word.direction.Item1 * wordString.Length > size) ||
+            (word.origin.Item2 + word.direction.Item2 * wordString.Length < 0) || (word.origin.Item2 + word.direction.Item2 * wordString.Length > size))
       {
-        it.direction = dirDict[dirList[Random.Range(0, 7)]];
-        it.origin = (Random.Range(0, size), Random.Range(0, size));
+        word.direction = dirDict[dirList[Random.Range(0, 7)]];
+        word.origin = (Random.Range(0, size), Random.Range(0, size));
 
         //break for over 500 attempts
         counter ++;
@@ -278,9 +278,9 @@ public class Crossword : MonoBehaviour {
 
       //check overlap
       overlap = false;
-      for (int x = 0; x < word.Length; x++)
+      for (int x = 0; x < wordString.Length; x++)
       {
-        WordsearchButton heIs = letterMatrix[it.origin.Item1 + it.direction.Item1 * x, it.origin.Item2 + it.direction.Item2 * x].GetComponent<WordsearchButton>(); //gets button script to use variable
+        WordsearchButton heIs = letterMatrix[word.origin.Item1 + word.direction.Item1 * x, word.origin.Item2 + word.direction.Item2 * x].GetComponent<WordsearchButton>(); //gets button script to use variable
     
         if (heIs.usedByOtherWord) 
         {
@@ -289,34 +289,34 @@ public class Crossword : MonoBehaviour {
       }
       if (overlap == true)
       {
-        it.origin = (Random.Range(0, size), Random.Range(0, size));
+        word.origin = (Random.Range(0, size), Random.Range(0, size));
         // direction = dirDict[dirList[Random.Range(0, 7)]];
       }
     }
     skip:
-    ChangeLetters(it);
+    ChangeLetters(word);
 
-    postIt.text += "-" + it.postItDes + "\n";
+    postIt.text += "-" + word.postItDes + "\n";
   }
 
   //iterate through each button object in a direction from an origin, change its text to word letter
-  void ChangeLetters(Word it)
+  void ChangeLetters(Word word)
   {
-    string word = it.word;
-    for (int x = 0; x < word.Length; x++)
+    string wordString = word.word;
+    for (int x = 0; x < wordString.Length; x++)
     {
-      button = letterMatrix[it.origin.Item1 + it.direction.Item1 * x, it.origin.Item2 + it.direction.Item2 * x];
-      ButtonTextComponent(button).text = word[x].ToString();
+      button = letterMatrix[word.origin.Item1 + word.direction.Item1 * x, word.origin.Item2 + word.direction.Item2 * x];
+      ButtonTextComponent(button).text = wordString[x].ToString();
       button.GetComponent<WordsearchButton>().usedByOtherWord = true;
       
       //assign first and last button to Word object
       if (x == 0)
       {
-        it.startButton = button;
+        word.startButton = button;
       }
-      else if (x == word.Length - 1)
+      else if (x == wordString.Length - 1)
       {
-        it.endButton = button;
+        word.endButton = button;
       }
 
       // Debug.Log(origin.ToString() + direction.ToString());
@@ -349,29 +349,29 @@ public class Crossword : MonoBehaviour {
     bool aWordWasFound = false;
 
     //compare first and last button of selection and Word's button objects assigned in ChangeLetters()
-    foreach (Word he in avalibleWords)
+    foreach (Word word in avalibleWords)
     {
-      if ((firstSel == he.endButton || firstSel == he.startButton) && (secondSel == he.endButton || secondSel == he.startButton))
+      if ((firstSel == word.endButton || firstSel == word.startButton) && (secondSel == word.endButton || secondSel == word.startButton))
       {
         firstSel.GetComponent<Button>().enabled = false;
         secondSel.GetComponent<Button>().enabled = false;
         aWordWasFound = true;
 
         //set text in minigame canvas to response in Word object
-        if (he.word == "GOODBYE")
+        if (word.word == "GOODBYE")
         {
-          StartCoroutine(Goodbye(he));
+          StartCoroutine(Goodbye(word));
         }
         else
         {
-          StartCoroutine(ChangeBoards(he));
-          he.used = true;
+          StartCoroutine(ChangeBoards(word));
+          word.used = true;
         }
 
         //take out buttons in middle of word
-        for (int x = 1; x < he.word.Length - 1; x++)
+        for (int x = 1; x < word.word.Length - 1; x++)
         {
-          button = letterMatrix[he.origin.Item1 + he.direction.Item1 * x, he.origin.Item2 + he.direction.Item2 * x];
+          button = letterMatrix[word.origin.Item1 + word.direction.Item1 * x, word.origin.Item2 + word.direction.Item2 * x];
           button.GetComponent<Image>().color = new Color32(200, 100, 100, 200);
           button.GetComponent<Button>().enabled = false;
             
@@ -610,11 +610,11 @@ sports.normalOptions = new List<Word>(){game, team, varsity};
   varsity.normalOptions = new List<Word>(){game, team, soccer};
 
 
-foreach (Word he in allWords)
+foreach (Word word in allWords)
 {
-  he.post = "Play_" + he.word.ToLower();
-  he.playerTime = ((float)he.playerTalk_normal.Length * .05f) + Random.Range(0f, 1f);
-  he.haroldTime = ((float)he.haroldTalk_normal.Length * .05f);
+  word.post = "Play_" + word.word.ToLower();
+  word.playerTime = ((float)word.playerTalk_normal.Length * .05f) + Random.Range(0f, 1f);
+  word.haroldTime = ((float)word.haroldTalk_normal.Length * .05f);
 }
 
 int goodbyeIndex = Random.Range(0, 4);
@@ -622,21 +622,21 @@ goodbyeRTPC.SetValue(gameObject, goodbyeIndex);
 goodbye.haroldTime = 2f;
 switch (goodbyeIndex)
 {
-case 0:
-goodbye.haroldTalk_normal = "adios amigo";
-break;
+  case 0:
+  goodbye.haroldTalk_normal = "adios amigo";
+  break;
 
-case 1:
-goodbye.haroldTalk_normal = "alrighty";
-break;
+  case 1:
+  goodbye.haroldTalk_normal = "alrighty";
+  break;
 
-case 2:
-goodbye.haroldTalk_normal = "see ya";
-break;
+  case 2:
+  goodbye.haroldTalk_normal = "see ya";
+  break;
 
-case 3:
-goodbye.haroldTalk_normal = "till next time";
-break;
+  case 3:
+  goodbye.haroldTalk_normal = "till next time";
+  break;
 }
 
 int helloIndex = Random.Range(0, 4);
@@ -644,21 +644,21 @@ helloRTPC.SetValue(gameObject, helloIndex);
 hello.haroldTime = 2f;
 switch (helloIndex)
 {
-case 0:
-hello.haroldTalk_normal = "hello";
-break;
+  case 0:
+  hello.haroldTalk_normal = "hello";
+  break;
 
-case 1:
-hello.haroldTalk_normal = "howdy";
-break;
+  case 1:
+  hello.haroldTalk_normal = "howdy";
+  break;
 
-case 2:
-hello.haroldTalk_normal = "good to see ya again";
-break;
+  case 2:
+  hello.haroldTalk_normal = "good to see ya again";
+  break;
 
-case 3:
-hello.haroldTalk_normal = "oh, hey";
-break;
+  case 3:
+  hello.haroldTalk_normal = "oh, hey";
+  break;
 }
 }
 }

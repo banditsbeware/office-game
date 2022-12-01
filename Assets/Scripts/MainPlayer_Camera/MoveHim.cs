@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class MoveHim : MonoBehaviour {
 
-    public float speed = 5f;
+    [SerializeField] private float speed = 1000f;
     
     //player's rigidbody
     private Rigidbody2D rb;
 
     //velocity
     private Vector2 v;
-    [SerializeField] private UIManager UIMan;
+    public static Vector3 spawnLocation;
+
     void Awake()
     {
       rb = gameObject.GetComponent<Rigidbody2D>();
+      transform.position = spawnLocation;
     }
     void Update()
     {
@@ -31,8 +33,4 @@ public class MoveHim : MonoBehaviour {
         rb.AddForce(v/v.magnitude * speed); 
       }
     }
-
-    // void OnTriggerEnter2D(Collider2D c) {
-    //   c.GetComponent<TriggerScript>().changeColor();
-    // }
 }

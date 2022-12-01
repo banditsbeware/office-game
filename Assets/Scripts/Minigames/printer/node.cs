@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class node : MonoBehaviour
 {
-    [System.NonSerialized] public bool active;
+    [System.NonSerialized] public bool active; //mouse is above
 
     void OnEnable()
     {

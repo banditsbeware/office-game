@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//interact_door and interact_minigame inherit this class
 public class interact : MonoBehaviour
 {
     public UIManager UIMan;

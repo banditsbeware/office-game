@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class nodeManager : MonoBehaviour
 {
+
     private static LineRenderer line;
     public static GameObject activeNode;
     private node[] nodes;
-    [SerializeField] private GameObject compLine;
-    public List<string[]> completedWires;
-    public static Transform endpoint;
+    [SerializeField] private GameObject compLine;  //prefab of completed wire
+    public List<string[]> completedWires;  //list of (name, name) completed wires
+    public static Transform endpoint;  //gameObject to handle mouse tracking and node collision
     public static bool mouseOnNode;
 
     void OnEnable()
     {
         endpoint = transform.Find("endpoint");
         nodes = GetComponentsInChildren<node>();
+
+        //when no node is selected, activeNode is the parent gameObject
         activeNode = gameObject;
         line = transform.GetComponentInChildren<LineRenderer>();
         completedWires = new List<string[]>();
@@ -27,19 +30,22 @@ public class nodeManager : MonoBehaviour
         {
             if (mouseOnNode)
             {
-                if (activeNode == gameObject)
+                if (activeNode == gameObject) //if no node selected
                 {
+                    //create line by adding 2 points to LineRenderer
                     line.positionCount = 2;
                     activeNode = checkNodes();
                     line.SetPosition(0, activeNode.transform.localPosition);
                 }
-                else
+                else //one node selected, holding wire
                 {
                     string clicked = checkNodes().name;
 
+                    //duplicate prefab for completed wire
                     GameObject setWire = Instantiate(compLine, transform);
                     setWire.GetComponent<LineRenderer>().SetPositions(new Vector3[2]{activeNode.transform.localPosition, checkNodes().transform.localPosition});
 
+                    //check if wire already exists, otherwise add both variations
                     if(!completedWires.Contains(new string[2] {activeNode.name, clicked})) 
                     {
                         completedWires.Add(new string[2] {activeNode.name, clicked});
@@ -48,9 +54,9 @@ public class nodeManager : MonoBehaviour
                     releaseWire();
                 }
             }
-            else
+            else //mouse is not on a node
             {
-                if (activeNode != gameObject)
+                if (activeNode != gameObject) //you're holding a wire
                 {
                     releaseWire();
                 }
@@ -80,6 +86,7 @@ public class nodeManager : MonoBehaviour
         activeNode = gameObject;
     }
 
+    //return gameObject that mouse is currently above
     GameObject checkNodes()
     {
         foreach (node n in nodes)

@@ -4,9 +4,11 @@ using System;
 using UnityEngine;
 using TMPro;
 
-public class Printer : MonoBehaviour
+public class numPad : MonoBehaviour
 {
     public TMP_Text numScreen;
+
+    //called bu button component on each key
     public void keypadInput(int num)
     {
         if (numScreen.text.Length < 8)
@@ -16,6 +18,7 @@ public class Printer : MonoBehaviour
         
     }
 
+    //called by back button
     public void back()
     {
         if (numScreen.text.Length > 0)
@@ -24,6 +27,7 @@ public class Printer : MonoBehaviour
         }
     }
 
+    //called by enter button
     public void enter()
     {
         numScreen.text = "";
@@ -31,6 +35,7 @@ public class Printer : MonoBehaviour
 
     void Update()
     {
+        //translates keyboard input onto keypad
         foreach (char c in Input.inputString)
             {
                 if (Char.IsDigit(c))

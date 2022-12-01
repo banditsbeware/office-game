@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
 {
     [HideInInspector] public GameObject[] pauseObjects;
 	[HideInInspector] public GameObject[] notifs;
+
+	//minigames are all made in UI, I'm so sorry
 	[HideInInspector] public GameObject[] minigames;
 	[SerializeField] private TMP_Text canvasText;
 

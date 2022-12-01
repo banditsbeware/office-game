@@ -13,22 +13,22 @@ public class syncManagement : MonoBehaviour
     public float great = .0250f;
     public float perfect = .01f;
     public float delayCorrection = .01f;
-    private string debugText;
 
-    //time management
-    
+    //player input time
     public float attempt = 0f;
 
     //feedback
     public TMP_Text feedback;
     public TMP_Text bossWord;
-    public Queue<Cue> cues = new Queue<Cue>();
+
+    //holds multiple beats, added in PostMusic.cs
+    public Queue<Cue> cues = new Queue<Cue>(); 
 
     void Update()
     {
         if (cues.Count != 0)
         {
-            if (Time.time - cues.Peek().cueTime > nice)
+            if (Time.time - cues.Peek().cueTime > nice) //if word passes left bound, miss
             {
                 cues.Dequeue().text.color = new Color32(0, 0, 0, 225);
                 feedback.text = "miss";
@@ -47,6 +47,7 @@ public class syncManagement : MonoBehaviour
             return;
             
         }
+        
         attempt = Time.time - delayCorrection;
         float nextBeat = cues.Peek().cueTime;
         Debug.Log(string.Format("Attempt Time: {0}, Beat Time: {1}", attempt, nextBeat));
@@ -85,8 +86,10 @@ public class syncManagement : MonoBehaviour
 
     }
 
+    //info about cue from Wwise
     public class Cue 
     {
+        //cue is always 1 bar before actual input
         public float cueTime = 0f;
         public float barTime = 0f;
         public string word = "";
@@ -100,16 +103,11 @@ public class syncManagement : MonoBehaviour
             word = text;
             this.sync = sync;
 
+            //immediately create word on right side of screen, add a velocity to the left so it hits center the moment you're supposed to click
             this.text = Instantiate(sync.bossWord, sync.transform.parent);
             this.text.text = word;
             this.text.GetComponent<wordMovement>().vel = -1200 / (barTime * 50);
         }
     }
-
-    public void StartWord(float time, string word)
-    {
-        
-    }
-    
 }
 

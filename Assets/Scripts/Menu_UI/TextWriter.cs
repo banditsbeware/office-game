@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
+//this is direct from this tutorial: https://www.youtube.com/watch?v=ZVh4nH8Mayg
 public class TextWriter : MonoBehaviour
 {
     private static TextWriter instance;
