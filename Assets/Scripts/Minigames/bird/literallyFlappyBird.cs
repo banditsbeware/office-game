@@ -5,23 +5,26 @@ using TMPro;
 
 public class literallyFlappyBird : MonoBehaviour
 {
-    public float jumpValue;
-    public float scrollV;
-    public float pipeBounds;
+    [SerializeField] private float jumpValue;
+    [SerializeField] private float scrollV;
+    [SerializeField] private float pipeBounds;
     private bool jump;
     private bool readyTGo;
     private float numOfPipes = 5f;
     [System.NonSerialized] public bool inGame;
-    public Rigidbody2D bird;
-    public Rigidbody2D bg;
-    public Rigidbody2D bg2;
-    public GameObject pipe;
-    public int score;
-    public TMP_Text scoreTxt;
-    public TMP_Text menu;
-    public GameObject referenceMini;
+    [SerializeField] private Rigidbody2D bird;
+    [SerializeField] private Rigidbody2D bg;
+    [SerializeField] private Rigidbody2D bg2;
+    [SerializeField] private GameObject pipe;
+    private int score;
+    [SerializeField] private TMP_Text scoreTxt;
+    [SerializeField] private TMP_Text menu;
+    [SerializeField] private GameObject referenceMini;
+    [SerializeField] private fingerClicky clickMang;
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
     private Queue<GameObject> pipes = new Queue<GameObject>();
+
+
 
     
     
@@ -56,31 +59,34 @@ public class literallyFlappyBird : MonoBehaviour
 
     void Update()
     {
-        if (inGame)
+        if(referenceMini.activeSelf) 
         {
-            bird.rotation = bird.velocity.y;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (inGame)
             {
-                bird.velocity = new Vector2(0, jumpValue);
-                flap.Post(gameObject);
+                bird.rotation = bird.velocity.y;
+                if (isJumping())
+                {
+                    bird.velocity = new Vector2(0, jumpValue);
+                    flap.Post(gameObject);
+                }
             }
-        }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Space) && readyTGo && referenceMini.activeSelf)
+            else
             {
-                Begin();
-                flap.Post(gameObject);
+                if (isJumping() && readyTGo)
+                {
+                    Begin();
+                    flap.Post(gameObject);
+                }
             }
-        }
-
-        if (bg.position.x < -35)
-        {
-            repo(bg);
-        }
-        if (bg2.position.x < -35)
-        {
-            repo(bg2);
+    
+            if (bg.position.x < -35)
+            {
+                repo(bg);
+            }
+            if (bg2.position.x < -35)
+            {
+                repo(bg2);
+            }
         }
     }
 
@@ -190,5 +196,17 @@ public class literallyFlappyBird : MonoBehaviour
     {
         score++;
         scoreTxt.text = "Score: " + score;
+    }
+
+    private bool isJumping()
+    {
+        if (clickMang.clicked || Input.GetKeyDown(KeyCode.Space))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

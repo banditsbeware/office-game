@@ -3881,7 +3881,7 @@ GameObject:
   - component: {fileID: 1581296541}
   - component: {fileID: 1581296540}
   m_Layer: 0
-  m_Name: outdoor
+  m_Name: door_Street
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,7 +6,7 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    [HideInInspector] public GameObject[] pauseObjects;
+  [HideInInspector] public GameObject[] pauseObjects;
 	[HideInInspector] public GameObject[] notifs;
 
 	//minigames are all made in UI, I'm so sorry
@@ -92,4 +92,11 @@ public class UIManager : MonoBehaviour
 	{
 		hide(notifs);
 	}
+
+	public static Vector3 mouseLocation()
+    {
+			Vector3 screenPoint = Input.mousePosition;
+			screenPoint.z = 10; //distance of the plane from the camera
+			return Camera.main.ScreenToWorldPoint(screenPoint); 
+    }
 }

@@ -63,21 +63,13 @@ public class nodeManager : MonoBehaviour
             }
         }
 
-        endpoint.position = mouseLocation();
+        endpoint.position = UIManager.mouseLocation();
 
         // update held wire
         if (activeNode != gameObject)
         {
             line.SetPosition(1, endpoint.localPosition);
         }
-    }
-
-    
-    Vector3 mouseLocation()
-    {
-        Vector3 screenPoint = Input.mousePosition;
-        screenPoint.z = 10; //distance of the plane from the camera
-        return Camera.main.ScreenToWorldPoint(screenPoint); 
     }
 
     void releaseWire()

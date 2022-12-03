@@ -11,6 +11,7 @@ public class Bath : MonoBehaviour
     {
         birdBank.Load();
         StartCoroutine(beginNoise());
+        Cursor.visible = false;
     }
 
     IEnumerator beginNoise()
@@ -26,5 +27,6 @@ public class Bath : MonoBehaviour
         game.ExitBath();
         AkSoundEngine.ExecuteActionOnEvent("Play_Bath_Amb", 0, gameObject, 500);
         AkSoundEngine.SetState("room", "office");
+        Cursor.visible = true;
     }
 }

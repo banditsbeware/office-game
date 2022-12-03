@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 1421963092}
   - component: {fileID: 1421963093}
   m_Layer: 0
-  m_Name: door_office
+  m_Name: door_Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 1784228258}
   - component: {fileID: 1784228257}
   m_Layer: 0
-  m_Name: door_apt
+  m_Name: door_Apartment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

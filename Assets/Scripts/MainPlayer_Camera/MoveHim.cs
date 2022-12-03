@@ -11,12 +11,22 @@ public class MoveHim : MonoBehaviour {
 
     //velocity
     private Vector2 v;
-    public static Vector3 spawnLocation;
+
+    //spawning
+    public static string doorToExit;
+    private Transform door;
+    private Vector3 spawnLocation;
 
     void Awake()
     {
+      if(doorToExit != null) 
+      {
+        door = GameObject.Find(doorToExit).transform;
+        spawnLocation = door.position + new Vector3(0, 0, 1);
+        transform.position = spawnLocation;
+      }
+
       rb = gameObject.GetComponent<Rigidbody2D>();
-      transform.position = spawnLocation;
     }
     void Update()
     {
