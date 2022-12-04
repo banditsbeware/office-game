@@ -4,24 +4,39 @@ using UnityEngine;
 
 public class nodeManager : MonoBehaviour
 {
+    private Printer printer;
 
-    private static LineRenderer line;
-    public static GameObject activeNode;
+    //node organization
     private node[] nodes;
-    [SerializeField] private GameObject compLine;  //prefab of completed wire
-    public List<string[]> completedWires;  //list of (name, name) completed wires
-    public static Transform endpoint;  //gameObject to handle mouse tracking and node collision
+    public static node activeNode;
+    public List<NodeTuple> completedNodePairs;
+    public List<GameObject> completedWires;
     public static bool mouseOnNode;
+
+    //LineRendering
+    private static LineRenderer line;
+    [SerializeField] private GameObject compLine;  //prefab of completed wire
+    public static Transform endpoint;  //gameObject to handle mouse tracking and node collision
 
     void OnEnable()
     {
-        endpoint = transform.Find("endpoint");
-        nodes = GetComponentsInChildren<node>();
+        printer = transform.parent.GetComponent<Printer>();
 
-        //when no node is selected, activeNode is the parent gameObject
-        activeNode = gameObject;
+        nodes = GetComponentsInChildren<node>();
+        activeNode = null;
+        completedNodePairs = new List<NodeTuple>();
+        completedWires = new List<GameObject>();
+
         line = transform.GetComponentInChildren<LineRenderer>();
-        completedWires = new List<string[]>();
+        endpoint = transform.Find("endpoint");
+    }
+
+    void OnDisable()
+    {
+        foreach (GameObject wire in completedWires)
+        {
+            Destroy(wire);
+        }
     }
 
     void Update()
@@ -30,26 +45,27 @@ public class nodeManager : MonoBehaviour
         {
             if (mouseOnNode)
             {
-                if (activeNode == gameObject) //if no node selected
+                if (activeNode == null) //if no node selected
                 {
                     //create line by adding 2 points to LineRenderer
                     line.positionCount = 2;
-                    activeNode = checkNodes();
+                    activeNode = clickedNode();
                     line.SetPosition(0, activeNode.transform.localPosition);
                 }
                 else //one node selected, holding wire
                 {
-                    string clicked = checkNodes().name;
-
-                    //duplicate prefab for completed wire
-                    GameObject setWire = Instantiate(compLine, transform);
-                    setWire.GetComponent<LineRenderer>().SetPositions(new Vector3[2]{activeNode.transform.localPosition, checkNodes().transform.localPosition});
-
-                    //check if wire already exists, otherwise add both variations
-                    if(!completedWires.Contains(new string[2] {activeNode.name, clicked})) 
+                    //check if wire already exists
+                    if(!completedNodePairs.Contains(new NodeTuple(activeNode, clickedNode())) && !completedNodePairs.Contains(new NodeTuple(clickedNode(), activeNode)))
                     {
-                        completedWires.Add(new string[2] {activeNode.name, clicked});
-                        completedWires.Add(new string[2] {clicked, activeNode.name});
+                        completedNodePairs.Add(new NodeTuple(activeNode, clickedNode()));
+                         
+                        //duplicate prefab for completed wire
+                        GameObject setWire = Instantiate(compLine, transform);
+                        setWire.GetComponent<LineRenderer>().SetPositions(new Vector3[2]{activeNode.transform.localPosition, clickedNode().transform.localPosition});
+                        completedWires.Add(setWire);
+
+                        printer.currentError.wiresCompleted(activeNode.name, clickedNode().name);
+
                     }
                     releaseWire();
                 }
@@ -66,7 +82,7 @@ public class nodeManager : MonoBehaviour
         endpoint.position = UIManager.mouseLocation();
 
         // update held wire
-        if (activeNode != gameObject)
+        if (activeNode != null)
         {
             line.SetPosition(1, endpoint.localPosition);
         }
@@ -75,24 +91,11 @@ public class nodeManager : MonoBehaviour
     void releaseWire()
     {
         line.positionCount = 0;
-        activeNode = gameObject;
+        activeNode = null;
     }
 
     //return gameObject that mouse is currently above
-    GameObject checkNodes()
-    {
-        foreach (node n in nodes)
-        {
-            if (n.active)
-            {
-                return n.gameObject;
-            }
-        }
-        
-        return null;
-    }
-
-    node checkNodes(string returnNode)
+    node clickedNode()
     {
         foreach (node n in nodes)
         {
@@ -101,7 +104,6 @@ public class nodeManager : MonoBehaviour
                 return n;
             }
         }
-        
         return null;
     }
 }

@@ -22,9 +22,13 @@ public class MoveHim : MonoBehaviour {
       if(doorToExit != null) 
       {
         door = GameObject.Find(doorToExit).transform;
-        spawnLocation = door.position + new Vector3(0, 0, 1);
         transform.position = spawnLocation;
+        if(doorToExit == "door_Street")
+        {
+          spawnLocation += new Vector3(0, 0, 1);
+        }
       }
+
 
       rb = gameObject.GetComponent<Rigidbody2D>();
     }
