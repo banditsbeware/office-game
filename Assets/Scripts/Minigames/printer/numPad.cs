@@ -6,14 +6,21 @@ using TMPro;
 
 public class numPad : MonoBehaviour
 {
-    public TMP_Text numScreen;
+    [SerializeField] private TMP_Text numScreen;
+    private int number;
 
-    //called bu button component on each key
+    void Start()
+    {
+        ErrorPuzzle.OnFailed += ResetNumbers;
+    }
+
+    //called by button component on each key
     public void keypadInput(int num)
     {
         if (numScreen.text.Length < 8)
         {
             numScreen.text += num;
+            number = int.Parse(numScreen.text);
         }
         
     }
@@ -24,13 +31,18 @@ public class numPad : MonoBehaviour
         if (numScreen.text.Length > 0)
         {
             numScreen.text = numScreen.text.Remove(numScreen.text.Length - 1);
+            number = int.Parse(numScreen.text);
         }
     }
 
     //called by enter button
     public void enter()
     {
-        numScreen.text = "";
+        //checks if these number completes current printer task
+        ErrorPuzzle ce = Printer.currentError;
+        ce.Completed(ce.currentTask().Check(number));
+
+        ResetNumbers(this, EventArgs.Empty);
     }
 
     void Update()
@@ -43,5 +55,11 @@ public class numPad : MonoBehaviour
                     keypadInput((int) Char.GetNumericValue(c));
                 }
             }
+    }
+
+    private void ResetNumbers(object sender, EventArgs e)
+    {
+        number = 0;
+        numScreen.text = "";
     }
 }

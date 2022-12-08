@@ -1,28 +1,74 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Printer : MonoBehaviour
 {
-    public ErrorPuzzle currentError;
+    public static ErrorPuzzle currentError;
+    public static List<ErrorPuzzle> errors;
+    public static int errorIndex;
 
     private ErrorPuzzle error_1337 = new ErrorPuzzle
     {
         tasks = new List<Task>{
-            new WiresTask("red", "purple"),
-            new WiresTask("blue", "orange")
+            new MultiTask(new List<Task>{
+                new WiresTask("red", "purple"),
+                new WiresTask("blue", "orange")
+                }),
+            new NumbersTask(12345),
+            new ButtonTask("green", true)
+        }
+    };
+    private ErrorPuzzle error_69 = new ErrorPuzzle
+    {
+        tasks = new List<Task>{
+            new NumbersTask(696969),
+            new WiresTask("orange", "red"),
+            new MultiTask(new List<Task>{
+                new NumbersTask(420),
+                new WiresTask("red", "green"),
+                new ButtonTask("green", true)
+                })
         }
     };
 
-    void OnEnable()
+    void Start()
     {
-        currentError = error_1337;
+        ErrorPuzzle.OnComplete += Printer_OnErrorComplete;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("index: " + errorIndex + " err len: " + errors.Count);
+        }
+    }
 
+    void OnEnable()
+    {
+        errors = new List<ErrorPuzzle>{
+            error_1337,
+            error_69
+        };
+        errorIndex = 0;
+        currentError = errors[errorIndex];
+        
+    }
 
-
-
+    private static void Printer_OnErrorComplete(object sender, EventArgs e)
+    {
+        if(errorIndex < errors.Count) 
+        {
+            errorIndex += 1;
+            currentError = errors[errorIndex];
+        }
+        else
+        {
+            Debug.Log("errors complete!");
+        }
+    }
 }
 
 
@@ -31,40 +77,50 @@ public class ErrorPuzzle
 {
     public List<Task> tasks;
     public int currentTaskIndex = 0;
+    public static event EventHandler OnComplete;
+    public static event EventHandler OnFailed;
+    
 
-    //called from nodeManager when a wire is completed
-    public void wiresCompleted(string node1, string node2)
+    //called from task scripts, test is the bool from checking the task's correctness
+    public void Completed(bool isCorrect)
     {
-        //specific to WiresTask class, checks if two selected nodes match the current task's nodes
-        if (tasks[currentTaskIndex].Check(node1, node2))
-        {
-            Debug.Log("woah! wires complete!");
-            currentTaskIndex += 1;
-            
-            CheckCompletion();
+        if (isCorrect){
+            if (currentTask() is MultiTask)
+            {
+                if(currentTask().CheckMulti())
+                {
+                    Debug.Log("woah! multi-task complete!");
+                    currentTaskIndex += 1;
+                    
+                    CheckErrorCompletion();
+                }
+            }
+            else
+            {
+                Debug.Log("woah! task complete!");
+                currentTaskIndex += 1;
+                
+                CheckErrorCompletion();
+            }
         }
         else
         {
-            Debug.Log("Uh Oh! go back to the start of the errors!");
             currentTaskIndex = 0;
+            OnFailed(this, EventArgs.Empty);
         }
     }
 
-    public void keyPadCompleted()
-    {
-
-    }
-
-    public void buttonsCompleted()
-    {
-
-    }
-
-    public void CheckCompletion()
+    public void CheckErrorCompletion()
     {
         if (currentTaskIndex == tasks.Count)
             {
-                //Error completed
+                OnComplete?.Invoke(this, EventArgs.Empty);
+                Debug.Log("Error completed!");
             }
+    }
+
+    public Task currentTask()
+    {
+        return tasks[currentTaskIndex];
     }
 }

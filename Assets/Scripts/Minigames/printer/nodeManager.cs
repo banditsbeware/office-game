@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,16 +9,21 @@ public class nodeManager : MonoBehaviour
 
     //node organization
     private node[] nodes;
-    public static node activeNode;
-    public List<NodeTuple> completedNodePairs;
-    public List<GameObject> completedWires;
+    private static node activeNode;
+    private List<NodeTuple> completedNodePairs;
+    private List<GameObject> completedWires;
     public static bool mouseOnNode;
 
     //LineRendering
     private static LineRenderer line;
-    [SerializeField] private GameObject compLine;  //prefab of completed wire
+    [SerializeField] private GameObject completedLinePrefab;
     public static Transform endpoint;  //gameObject to handle mouse tracking and node collision
 
+    void Start()
+    {
+        ErrorPuzzle.OnComplete += ResetWires;
+        ErrorPuzzle.OnFailed += ResetWires;
+    }
     void OnEnable()
     {
         printer = transform.parent.GetComponent<Printer>();
@@ -33,10 +39,7 @@ public class nodeManager : MonoBehaviour
 
     void OnDisable()
     {
-        foreach (GameObject wire in completedWires)
-        {
-            Destroy(wire);
-        }
+        ResetWires(this, EventArgs.Empty);
     }
 
     void Update()
@@ -60,11 +63,13 @@ public class nodeManager : MonoBehaviour
                         completedNodePairs.Add(new NodeTuple(activeNode, clickedNode()));
                          
                         //duplicate prefab for completed wire
-                        GameObject setWire = Instantiate(compLine, transform);
+                        GameObject setWire = Instantiate(completedLinePrefab, transform);
                         setWire.GetComponent<LineRenderer>().SetPositions(new Vector3[2]{activeNode.transform.localPosition, clickedNode().transform.localPosition});
                         completedWires.Add(setWire);
 
-                        printer.currentError.wiresCompleted(activeNode.name, clickedNode().name);
+                        //checks if these wires complete current printer task
+                        ErrorPuzzle ce = Printer.currentError;
+                        ce.Completed(ce.currentTask().Check(activeNode.name, clickedNode().name));
 
                     }
                     releaseWire();
@@ -88,7 +93,7 @@ public class nodeManager : MonoBehaviour
         }
     }
 
-    void releaseWire()
+    private void releaseWire()
     {
         line.positionCount = 0;
         activeNode = null;
@@ -105,5 +110,16 @@ public class nodeManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    private void ResetWires(object sender, EventArgs e)
+    {
+        foreach (GameObject wire in completedWires)
+        {
+            Destroy(wire);
+        }
+        activeNode = null;
+        completedNodePairs = new List<NodeTuple>();
+        completedWires = new List<GameObject>();
     }
 }
