@@ -2,6 +2,14 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+# DKR
+.DS_Store
+.zip
+.vscode
+.vsconfig
+.meta
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
