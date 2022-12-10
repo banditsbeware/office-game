@@ -562,6 +562,10 @@ class AkSoundEnginePINVOKE {
   public static extern void CSharp_AkInitSettings_uMonitorQueuePoolSize_set(global::System.IntPtr jarg1, uint jarg2);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitSettings_uMonitorQueuePoolSize_get")]
   public static extern uint CSharp_AkInitSettings_uMonitorQueuePoolSize_get(global::System.IntPtr jarg1);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitSettings_uCpuMonitorQueueMaxSize_set")]
+  public static extern void CSharp_AkInitSettings_uCpuMonitorQueueMaxSize_set(global::System.IntPtr jarg1, uint jarg2);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitSettings_uCpuMonitorQueueMaxSize_get")]
+  public static extern uint CSharp_AkInitSettings_uCpuMonitorQueueMaxSize_get(global::System.IntPtr jarg1);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitSettings_settingsMainOutput_set")]
   public static extern void CSharp_AkInitSettings_settingsMainOutput_set(global::System.IntPtr jarg1, global::System.IntPtr jarg2);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitSettings_settingsMainOutput_get")]
@@ -2522,6 +2526,8 @@ class AkSoundEnginePINVOKE {
   public static extern int CSharp_QueryReflectionPaths(ulong jarg1, uint jarg2, ref UnityEngine.Vector3 jarg3, ref UnityEngine.Vector3 jarg4, global::System.IntPtr jarg5, out uint jarg6);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_QueryDiffractionPaths")]
   public static extern int CSharp_QueryDiffractionPaths(ulong jarg1, uint jarg2, ref UnityEngine.Vector3 jarg3, ref UnityEngine.Vector3 jarg4, global::System.IntPtr jarg5, out uint jarg6);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_PerformStreamMgrIO")]
+  public static extern void CSharp_PerformStreamMgrIO();
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkPlaylist_SWIGUpcast")]
   public static extern global::System.IntPtr CSharp_AkPlaylist_SWIGUpcast(global::System.IntPtr jarg1);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkMIDIPost_SWIGUpcast")]

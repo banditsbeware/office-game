@@ -1193,6 +1193,8 @@ public partial class AkSoundEngine {
 
   public static AKRESULT QueryDiffractionPaths(ulong in_gameObjectID, uint in_positionIndex, ref UnityEngine.Vector3 out_listenerPos, ref UnityEngine.Vector3 out_emitterPos, AkDiffractionPathInfoArray out_aPaths, out uint io_uArraySize) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_QueryDiffractionPaths(in_gameObjectID, in_positionIndex, ref out_listenerPos, ref out_emitterPos, out_aPaths.GetBuffer(), out io_uArraySize); }
 
+  public static void PerformStreamMgrIO() { AkSoundEnginePINVOKE.CSharp_PerformStreamMgrIO(); }
+
   public const int AK_SIMD_ALIGNMENT = 16;
   public const int AK_BUFFER_ALIGNMENT = 16;
   public const int AK_MAX_PATH = 260;

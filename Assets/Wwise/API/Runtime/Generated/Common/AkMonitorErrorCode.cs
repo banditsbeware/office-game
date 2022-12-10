@@ -199,8 +199,6 @@ public enum AkMonitorErrorCode {
   ErrorCode_3DAudioUnsupportedSize,
   ErrorCode_AmbisonicNotAvailable,
   ErrorCode_NoAudioDevice,
-  ErrorCode_PreConnectionError,
-  ErrorCode_EndPreConnectionError,
   ErrorCode_Support,
   ErrorCode_ReplayMessage,
   ErrorCode_GameMessage,

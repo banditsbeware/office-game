@@ -1,9 +1,20 @@
 #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2017 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
+/*******************************************************************************
+The content of this file includes portions of the proprietary AUDIOKINETIC Wwise
+Technology released in source code form as part of the game integration package.
+The content of this file may not be used without valid licenses to the
+AUDIOKINETIC Wwise Technology.
+Note that the use of the game engine is subject to the Unity(R) Terms of
+Service at https://unity3d.com/legal/terms-of-service
+ 
+License Usage
+ 
+Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
+this file in accordance with the end user license agreement provided with the
+software or, alternatively, in accordance with the terms contained
+in a written agreement between you and Audiokinetic Inc.
+Copyright (c) 2022 Audiokinetic Inc.
+*******************************************************************************/
 
 /// @brief Contains C# functions exposed from the Wwise C++ API.
 /// 
@@ -512,7 +523,7 @@ public partial class AkSoundEngine
 		var in_gameObjectID_id = AkSoundEngine.GetAkGameObjectID(in_gameObjectID);
 		AkSoundEngine.PreGameObjectAPICall(in_gameObjectID, in_gameObjectID_id);
 
-#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX) && !UNITY_EDITOR
+#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX || UNITY_WEBGL) && !UNITY_EDITOR
 		return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_6(in_eventID, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker, in_PlayingID);
 #else
 		{ return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_9(in_eventID, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker, in_PlayingID); }
@@ -524,7 +535,7 @@ public partial class AkSoundEngine
 		var in_gameObjectID_id = AkSoundEngine.GetAkGameObjectID(in_gameObjectID);
 		AkSoundEngine.PreGameObjectAPICall(in_gameObjectID, in_gameObjectID_id);
 
-#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX) && !UNITY_EDITOR
+#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX || UNITY_WEBGL) && !UNITY_EDITOR
 		return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_7(in_eventID, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker);
 #else
 		{ return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_10(in_eventID, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker); }
@@ -536,7 +547,7 @@ public partial class AkSoundEngine
 		var in_gameObjectID_id = AkSoundEngine.GetAkGameObjectID(in_gameObjectID);
 		AkSoundEngine.PreGameObjectAPICall(in_gameObjectID, in_gameObjectID_id);
 
-#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX) && !UNITY_EDITOR
+#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX || UNITY_WEBGL) && !UNITY_EDITOR
 		return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_8(in_eventID, in_gameObjectID_id, in_fPercent);
 #else
 		{ return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_11(in_eventID, in_gameObjectID_id, in_fPercent); }
@@ -548,7 +559,7 @@ public partial class AkSoundEngine
 		var in_gameObjectID_id = AkSoundEngine.GetAkGameObjectID(in_gameObjectID);
 		AkSoundEngine.PreGameObjectAPICall(in_gameObjectID, in_gameObjectID_id);
 
-#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX) && !UNITY_EDITOR
+#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX || UNITY_WEBGL) && !UNITY_EDITOR
 		return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_9(in_pszEventName, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker, in_PlayingID);
 #else
 		{ return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_12(in_pszEventName, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker, in_PlayingID); }
@@ -560,7 +571,7 @@ public partial class AkSoundEngine
 		var in_gameObjectID_id = AkSoundEngine.GetAkGameObjectID(in_gameObjectID);
 		AkSoundEngine.PreGameObjectAPICall(in_gameObjectID, in_gameObjectID_id);
 
-#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX) && !UNITY_EDITOR
+#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX || UNITY_WEBGL) && !UNITY_EDITOR
 		return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_10(in_pszEventName, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker);
 #else
 		{ return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_13(in_pszEventName, in_gameObjectID_id, in_fPercent, in_bSeekToNearestMarker); }
@@ -572,7 +583,7 @@ public partial class AkSoundEngine
 		var in_gameObjectID_id = AkSoundEngine.GetAkGameObjectID(in_gameObjectID);
 		AkSoundEngine.PreGameObjectAPICall(in_gameObjectID, in_gameObjectID_id);
 
-#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX) && !UNITY_EDITOR
+#if (UNITY_SWITCH || UNITY_ANDROID || UNITY_STANDALONE_LINUX || UNITY_WEBGL) && !UNITY_EDITOR
 		return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_11(in_pszEventName, in_gameObjectID_id, in_fPercent);
 #else
 		{ return (AKRESULT)AkSoundEnginePINVOKE.CSharp_SeekOnEvent__SWIG_14(in_pszEventName, in_gameObjectID_id, in_fPercent); }
