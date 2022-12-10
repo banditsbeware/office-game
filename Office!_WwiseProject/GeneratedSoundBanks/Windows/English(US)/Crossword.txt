@@ -1,33 +1,33 @@
 Event	ID	Name			Wwise Object Path	Notes
-	216639764	Play_game			\Default Work Unit\Harold\Play_game	
-	393588247	Play_extra_cough			\Default Work Unit\Harold\Play_extra_cough	
+	216639764	Play_game			\Default Work Unit\Minigames\Harold\Play_game	
+	393588247	Play_extra_cough			\Default Work Unit\Minigames\Harold\Play_extra_cough	
 	503260239	Stop_Player			\Default Work Unit\Player\Stop_Player	
-	692169189	Play_release			\Default Work Unit\Harold\Play_release	
-	1012391550	Play_coffee			\Default Work Unit\Harold\Play_coffee	
-	1221848793	Play_work			\Default Work Unit\Harold\Play_work	
-	1498563514	Play_extra_huh			\Default Work Unit\Harold\Play_extra_huh	
-	1629223547	Play_sports			\Default Work Unit\Harold\Play_sports	
-	1667103285	Play_movies			\Default Work Unit\Harold\Play_movies	
-	1692086900	Play_varsity			\Default Work Unit\Harold\Play_varsity	
-	1693071901	Play_boss			\Default Work Unit\Harold\Play_boss	
-	1710785415	Play_hours			\Default Work Unit\Harold\Play_hours	
-	2866310100	Play_merger			\Default Work Unit\Harold\Play_merger	
-	2874228519	Play_client			\Default Work Unit\Harold\Play_client	
-	2952268476	Play_child			\Default Work Unit\Harold\Play_child	
-	2952797154	Play_hello			\Default Work Unit\Harold\Play_hello	
-	3008568847	Play_goodbye			\Default Work Unit\Harold\Play_goodbye	
-	3037538514	Play_clothes			\Default Work Unit\Harold\Play_clothes	
-	3039012154	Play_scifi			\Default Work Unit\Harold\Play_scifi	
-	3049503277	Play_internet			\Default Work Unit\Harold\Play_internet	
-	3231912389	Play_actor			\Default Work Unit\Harold\Play_actor	
-	3308884970	Play_weather			\Default Work Unit\Harold\Play_weather	
-	3331051860	Play_prices			\Default Work Unit\Harold\Play_prices	
-	3422393765	Play_team			\Default Work Unit\Harold\Play_team	
-	3545779475	Play_soccer			\Default Work Unit\Harold\Play_soccer	
-	3606423206	Play_school			\Default Work Unit\Harold\Play_school	
+	692169189	Play_release			\Default Work Unit\Minigames\Harold\Play_release	
+	1012391550	Play_coffee			\Default Work Unit\Minigames\Harold\Play_coffee	
+	1221848793	Play_work			\Default Work Unit\Minigames\Harold\Play_work	
+	1498563514	Play_extra_huh			\Default Work Unit\Minigames\Harold\Play_extra_huh	
+	1629223547	Play_sports			\Default Work Unit\Minigames\Harold\Play_sports	
+	1667103285	Play_movies			\Default Work Unit\Minigames\Harold\Play_movies	
+	1692086900	Play_varsity			\Default Work Unit\Minigames\Harold\Play_varsity	
+	1693071901	Play_boss			\Default Work Unit\Minigames\Harold\Play_boss	
+	1710785415	Play_hours			\Default Work Unit\Minigames\Harold\Play_hours	
+	2866310100	Play_merger			\Default Work Unit\Minigames\Harold\Play_merger	
+	2874228519	Play_client			\Default Work Unit\Minigames\Harold\Play_client	
+	2952268476	Play_child			\Default Work Unit\Minigames\Harold\Play_child	
+	2952797154	Play_hello			\Default Work Unit\Minigames\Harold\Play_hello	
+	3008568847	Play_goodbye			\Default Work Unit\Minigames\Harold\Play_goodbye	
+	3037538514	Play_clothes			\Default Work Unit\Minigames\Harold\Play_clothes	
+	3039012154	Play_scifi			\Default Work Unit\Minigames\Harold\Play_scifi	
+	3049503277	Play_internet			\Default Work Unit\Minigames\Harold\Play_internet	
+	3231912389	Play_actor			\Default Work Unit\Minigames\Harold\Play_actor	
+	3308884970	Play_weather			\Default Work Unit\Minigames\Harold\Play_weather	
+	3331051860	Play_prices			\Default Work Unit\Minigames\Harold\Play_prices	
+	3422393765	Play_team			\Default Work Unit\Minigames\Harold\Play_team	
+	3545779475	Play_soccer			\Default Work Unit\Minigames\Harold\Play_soccer	
+	3606423206	Play_school			\Default Work Unit\Minigames\Harold\Play_school	
 	3608805445	Play_Player			\Default Work Unit\Player\Play_Player	
-	3799175311	Play_growth			\Default Work Unit\Harold\Play_growth	
-	4026051667	Play_snow			\Default Work Unit\Harold\Play_snow	
+	3799175311	Play_growth			\Default Work Unit\Minigames\Harold\Play_growth	
+	4026051667	Play_snow			\Default Work Unit\Minigames\Harold\Play_snow	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1227038859	helloSwitch			\Default Work Unit\helloSwitch	

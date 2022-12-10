@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="144">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
 		<ProjectRoot>../..</ProjectRoot>
 		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="630707431" Type="User" Language="English(US)" Hash="{3E036633-B1AC-E7BB-4F3C-25D049848FF3}">
+		<SoundBank Id="630707431" Type="User" Language="English(US)" Hash="{7A06D9E7-631E-4E8C-EE72-865F409AA125}">
 			<ShortName>Crossword</ShortName>
 			<Path>English(US)/Crossword.bnk</Path>
 			<Media>
@@ -239,52 +239,52 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3231912389" Name="Play_actor" DurationType="OneShot" DurationMin="1.4857332" DurationMax="1.4857332">
+				<Event Id="3231912389" Name="Play_actor" DurationType="OneShot" DurationMin="1.6676791" DurationMax="1.6676791">
 					<MediaRefs>
 						<MediaRef Id="699313978"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1693071901" Name="Play_boss" DurationType="OneShot" DurationMin="1.8988286" DurationMax="1.8988286">
+				<Event Id="1693071901" Name="Play_boss" DurationType="OneShot" DurationMin="2.1313632" DurationMax="2.1313632">
 					<MediaRefs>
 						<MediaRef Id="503512560"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2952268476" Name="Play_child" DurationType="OneShot" DurationMin="2.7165008" DurationMax="2.7165008">
+				<Event Id="2952268476" Name="Play_child" DurationType="OneShot" DurationMin="3.049169" DurationMax="3.049169">
 					<MediaRefs>
 						<MediaRef Id="460433903"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2874228519" Name="Play_client" DurationType="OneShot" DurationMin="1.9326878" DurationMax="1.9326878">
+				<Event Id="2874228519" Name="Play_client" DurationType="OneShot" DurationMin="2.1693687" DurationMax="2.1693687">
 					<MediaRefs>
 						<MediaRef Id="383459377"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3037538514" Name="Play_clothes" DurationType="OneShot" DurationMin="3.1558945" DurationMax="3.1558945">
+				<Event Id="3037538514" Name="Play_clothes" DurationType="OneShot" DurationMin="3.5423717" DurationMax="3.5423717">
 					<MediaRefs>
 						<MediaRef Id="472567484"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1012391550" Name="Play_coffee" DurationType="OneShot" DurationMin="1.7532551" DurationMax="1.7532551">
+				<Event Id="1012391550" Name="Play_coffee" DurationType="OneShot" DurationMin="1.9679623" DurationMax="1.9679623">
 					<MediaRefs>
 						<MediaRef Id="509392946"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="393588247" Name="Play_extra_cough" DurationType="OneShot" DurationMin="15.94377" DurationMax="15.94377">
+				<Event Id="393588247" Name="Play_extra_cough" DurationType="OneShot" DurationMin="17.896276" DurationMax="17.896276">
 					<MediaRefs>
 						<MediaRef Id="381595372"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1498563514" Name="Play_extra_huh" DurationType="OneShot" DurationMin="10.375937" DurationMax="10.375937">
+				<Event Id="1498563514" Name="Play_extra_huh" DurationType="OneShot" DurationMin="11.646596" DurationMax="11.646596">
 					<MediaRefs>
 						<MediaRef Id="1070652198"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="216639764" Name="Play_game" DurationType="OneShot" DurationMin="1.6025107" DurationMax="1.6025107">
+				<Event Id="216639764" Name="Play_game" DurationType="OneShot" DurationMin="1.7987574" DurationMax="1.7987574">
 					<MediaRefs>
 						<MediaRef Id="38896493"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3008568847" Name="Play_goodbye" DurationType="OneShot" DurationMin="0.8183884" DurationMax="1.2486597">
+				<Event Id="3008568847" Name="Play_goodbye" DurationType="OneShot" DurationMin="0.9186099" DurationMax="1.4015732">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3961472506" Id="3403688825"/>
@@ -312,12 +312,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3799175311" Name="Play_growth" DurationType="OneShot" DurationMin="1.9463074" DurationMax="1.9463074">
+				<Event Id="3799175311" Name="Play_growth" DurationType="OneShot" DurationMin="2.1846561" DurationMax="2.1846561">
 					<MediaRefs>
 						<MediaRef Id="138153152"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2952797154" Name="Play_hello" DurationType="OneShot" DurationMin="0.43846643" DurationMax="0.90198386">
+				<Event Id="2952797154" Name="Play_hello" DurationType="OneShot" DurationMin="0.49216193" DurationMax="1.0124426">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="1227038859" Id="162350874"/>
@@ -345,22 +345,22 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1710785415" Name="Play_hours" DurationType="OneShot" DurationMin="2.3434756" DurationMax="2.3434756">
+				<Event Id="1710785415" Name="Play_hours" DurationType="OneShot" DurationMin="2.6304624" DurationMax="2.6304624">
 					<MediaRefs>
 						<MediaRef Id="421058727"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3049503277" Name="Play_internet" DurationType="OneShot" DurationMin="3.4265292" DurationMax="3.4265292">
+				<Event Id="3049503277" Name="Play_internet" DurationType="OneShot" DurationMin="3.846149" DurationMax="3.846149">
 					<MediaRefs>
 						<MediaRef Id="646997900"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2866310100" Name="Play_merger" DurationType="OneShot" DurationMin="2.1147635" DurationMax="2.1147635">
+				<Event Id="2866310100" Name="Play_merger" DurationType="OneShot" DurationMin="2.3737416" DurationMax="2.3737416">
 					<MediaRefs>
 						<MediaRef Id="979936609"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1667103285" Name="Play_movies" DurationType="OneShot" DurationMin="1.0689423" DurationMax="1.0689423">
+				<Event Id="1667103285" Name="Play_movies" DurationType="OneShot" DurationMin="1.1998471" DurationMax="1.1998471">
 					<MediaRefs>
 						<MediaRef Id="452325800"/>
 					</MediaRefs>
@@ -392,57 +392,57 @@
 						<MediaRef Id="1059986698"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3331051860" Name="Play_prices" DurationType="OneShot" DurationMin="2.874941" DurationMax="2.874941">
+				<Event Id="3331051860" Name="Play_prices" DurationType="OneShot" DurationMin="3.2270122" DurationMax="3.2270122">
 					<MediaRefs>
 						<MediaRef Id="19725708"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="692169189" Name="Play_release" DurationType="OneShot" DurationMin="2.8533106" DurationMax="2.8533106">
+				<Event Id="692169189" Name="Play_release" DurationType="OneShot" DurationMin="3.2027328" DurationMax="3.2027328">
 					<MediaRefs>
 						<MediaRef Id="611446876"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3606423206" Name="Play_school" DurationType="OneShot" DurationMin="1.9456538" DurationMax="1.9456538">
+				<Event Id="3606423206" Name="Play_school" DurationType="OneShot" DurationMin="2.1839225" DurationMax="2.1839225">
 					<MediaRefs>
 						<MediaRef Id="420736337"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3039012154" Name="Play_scifi" DurationType="OneShot" DurationMin="2.135291" DurationMax="2.135291">
+				<Event Id="3039012154" Name="Play_scifi" DurationType="OneShot" DurationMin="2.396783" DurationMax="2.396783">
 					<MediaRefs>
 						<MediaRef Id="821841142"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4026051667" Name="Play_snow" DurationType="OneShot" DurationMin="1.7166221" DurationMax="1.7166221">
+				<Event Id="4026051667" Name="Play_snow" DurationType="OneShot" DurationMin="1.9268432" DurationMax="1.9268432">
 					<MediaRefs>
 						<MediaRef Id="316028187"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3545779475" Name="Play_soccer" DurationType="OneShot" DurationMin="2.1071463" DurationMax="2.1071463">
+				<Event Id="3545779475" Name="Play_soccer" DurationType="OneShot" DurationMin="2.3651917" DurationMax="2.3651917">
 					<MediaRefs>
 						<MediaRef Id="604219696"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1629223547" Name="Play_sports" DurationType="OneShot" DurationMin="0.39801416" DurationMax="0.39801416">
+				<Event Id="1629223547" Name="Play_sports" DurationType="OneShot" DurationMin="0.44675577" DurationMax="0.44675577">
 					<MediaRefs>
 						<MediaRef Id="152406515"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3422393765" Name="Play_team" DurationType="OneShot" DurationMin="2.0271492" DurationMax="2.0271492">
+				<Event Id="3422393765" Name="Play_team" DurationType="OneShot" DurationMin="2.275398" DurationMax="2.275398">
 					<MediaRefs>
 						<MediaRef Id="979785200"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1692086900" Name="Play_varsity" DurationType="OneShot" DurationMin="1.2770039" DurationMax="1.2770039">
+				<Event Id="1692086900" Name="Play_varsity" DurationType="OneShot" DurationMin="1.4333884" DurationMax="1.4333884">
 					<MediaRefs>
 						<MediaRef Id="73368536"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3308884970" Name="Play_weather" DurationType="OneShot" DurationMin="1.2854432" DurationMax="1.2854432">
+				<Event Id="3308884970" Name="Play_weather" DurationType="OneShot" DurationMin="1.4428612" DurationMax="1.4428612">
 					<MediaRefs>
 						<MediaRef Id="597633837"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1221848793" Name="Play_work" DurationType="OneShot" DurationMin="0.7707011" DurationMax="0.7707011">
+				<Event Id="1221848793" Name="Play_work" DurationType="OneShot" DurationMin="0.86508274" DurationMax="0.86508274">
 					<MediaRefs>
 						<MediaRef Id="55802916"/>
 					</MediaRefs>
@@ -474,13 +474,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1557F82F-B744-AA36-0E71-89A11A6B3EE5}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{43795144-5C44-75EC-F2BA-FED70CF2CFBA}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
-				<Sharesets>
+				<ShareSets>
 					<Plugin Id="535667444" Name="Bathroom1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
-				</Sharesets>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -496,9 +496,9 @@
 			<AuxBusses>
 				<AuxBus Id="1485913236" Name="workBathroomReverb">
 					<PluginRefs>
-						<Sharesets>
+						<ShareSets>
 							<PluginRef Id="535667444"/>
-						</Sharesets>
+						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
@@ -548,7 +548,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1544377644" Type="User" Language="SFX" Hash="{A91A1B52-9A9C-9C06-03AB-1C3C532CD4B0}">
+		<SoundBank Id="1544377644" Type="User" Language="SFX" Hash="{143A970D-E679-CFB7-401A-7BDEAF8CF2D5}">
 			<ShortName>Bird</ShortName>
 			<Path>Bird.bnk</Path>
 			<Media>
@@ -729,7 +729,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1560169506" Type="User" Language="SFX" Hash="{EEBD0D12-FA00-144C-66BB-507134AD0F64}">
+		<SoundBank Id="1560169506" Type="User" Language="SFX" Hash="{2140B7C9-DAEB-3071-DF4B-3ABCE0654EF3}">
 			<ShortName>Boss</ShortName>
 			<Path>Boss.bnk</Path>
 			<Media>
@@ -746,7 +746,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0422BA78-8A80-1DB2-DEEE-5321F5964C93}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EE7A83DE-1F03-26F4-C70C-37B50BE7AC01}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -844,5 +844,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7346262F-4FED-954E-98DC-B0FD98F78712}</FileHash>
+	<FileHash>{EFA01236-F03B-634F-48BB-67E17446F856}</FileHash>
 </SoundBanksInfo>
