@@ -16,8 +16,9 @@ public class Printer : MonoBehaviour
                 new WiresTask("red", "purple"),
                 new WiresTask("blue", "orange")
                 }),
+            new ButtonTask("green", true),
             new NumbersTask(12345),
-            new ButtonTask("green", true)
+            new ButtonTask("green", false)
         }
     };
     private ErrorPuzzle error_69 = new ErrorPuzzle

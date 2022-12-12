@@ -77,7 +77,7 @@ public class nodeManager : MonoBehaviour
             }
             else //mouse is not on a node
             {
-                if (activeNode != gameObject) //you're holding a wire
+                if (activeNode != null) //you're holding a wire
                 {
                     releaseWire();
                 }

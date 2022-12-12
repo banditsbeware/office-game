@@ -28,11 +28,17 @@ public class numPad : MonoBehaviour
     //called by back button
     public void back()
     {
-        if (numScreen.text.Length > 0)
+        if (numScreen.text.Length == 1)
+        {
+            numScreen.text = "";
+            number = 0;
+        }
+        if (numScreen.text.Length > 1)
         {
             numScreen.text = numScreen.text.Remove(numScreen.text.Length - 1);
             number = int.Parse(numScreen.text);
         }
+        
     }
 
     //called by enter button
