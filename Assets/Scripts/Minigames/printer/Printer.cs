@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Printer : MonoBehaviour
 {
     public static ErrorPuzzle currentError;
     public static List<ErrorPuzzle> errors;
     public static int errorIndex;
+    [SerializeField] private TMP_Text popup;
+    
 
     private ErrorPuzzle error_1337 = new ErrorPuzzle
     {
@@ -19,7 +22,8 @@ public class Printer : MonoBehaviour
             new ButtonTask("green", true),
             new NumbersTask(12345),
             new ButtonTask("green", false)
-        }
+        },
+        errorPopup = "A printer accessory has failed, please refer to manual or contact a certified printer engineer for repairs.\nerror#1337"
     };
     private ErrorPuzzle error_69 = new ErrorPuzzle
     {
@@ -27,11 +31,24 @@ public class Printer : MonoBehaviour
             new NumbersTask(696969),
             new WiresTask("orange", "red"),
             new MultiTask(new List<Task>{
-                new NumbersTask(420),
-                new WiresTask("red", "green"),
-                new ButtonTask("green", true)
-                })
-        }
+                new ButtonTask("orange", true),
+                new ButtonTask("red", true)
+                }),
+            new WiresTask("blue", "green"),
+            new MultiTask(new List<Task>{
+                new ButtonTask("orange", false),
+                new ButtonTask("red", false),
+                new ButtonTask("blue", true),
+                new ButtonTask("green", true),
+                }),
+            new NumbersTask(420),
+            new MultiTask(new List<Task>{
+                new ButtonTask("green", false),
+                new ButtonTask("blue", false),
+                }),
+
+        },
+        errorPopup = "The printer's port seed has come undone. Please contact a certified HB technician.\nerror#69"
     };
 
     void Start()
@@ -50,20 +67,22 @@ public class Printer : MonoBehaviour
     void OnEnable()
     {
         errors = new List<ErrorPuzzle>{
+            error_69,
             error_1337,
-            error_69
         };
         errorIndex = 0;
         currentError = errors[errorIndex];
+        popup.text = currentError.errorPopup;
         
     }
 
-    private static void Printer_OnErrorComplete(object sender, EventArgs e)
+    private void Printer_OnErrorComplete(object sender, EventArgs e)
     {
-        if(errorIndex < errors.Count) 
+        if(errorIndex < errors.Count - 1) 
         {
             errorIndex += 1;
             currentError = errors[errorIndex];
+            popup.text = currentError.errorPopup;
         }
         else
         {
@@ -78,6 +97,7 @@ public class ErrorPuzzle
 {
     public List<Task> tasks;
     public int currentTaskIndex = 0;
+    public string errorPopup;
     public static event EventHandler OnComplete;
     public static event EventHandler OnFailed;
     

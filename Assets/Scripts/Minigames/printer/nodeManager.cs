@@ -19,10 +19,13 @@ public class nodeManager : MonoBehaviour
     [SerializeField] private GameObject completedLinePrefab;
     public static Transform endpoint;  //gameObject to handle mouse tracking and node collision
 
+    private Animator spark;
+
     void Start()
     {
         ErrorPuzzle.OnComplete += ResetWires;
         ErrorPuzzle.OnFailed += ResetWires;
+        spark = transform.Find("spark").GetComponent<Animator>();
     }
     void OnEnable()
     {
@@ -58,7 +61,7 @@ public class nodeManager : MonoBehaviour
                 else //one node selected, holding wire
                 {
                     //check if wire already exists
-                    if(!completedNodePairs.Contains(new NodeTuple(activeNode, clickedNode())) && !completedNodePairs.Contains(new NodeTuple(clickedNode(), activeNode)))
+                    if (!completedNodePairs.Contains(new NodeTuple(activeNode, clickedNode())) && !completedNodePairs.Contains(new NodeTuple(clickedNode(), activeNode)))
                     {
                         completedNodePairs.Add(new NodeTuple(activeNode, clickedNode()));
                          
@@ -68,9 +71,18 @@ public class nodeManager : MonoBehaviour
                         completedWires.Add(setWire);
 
                         //checks if these wires complete current printer task
-                        ErrorPuzzle ce = Printer.currentError;
-                        ce.Completed(ce.currentTask().Check(activeNode.name, clickedNode().name));
+                        ErrorPuzzle currentErrorPuzzle = Printer.currentError;
 
+                        //check if this completes the current task
+                        if (currentErrorPuzzle.currentTask().Check(activeNode.name, clickedNode().name))
+                        {    
+                            currentErrorPuzzle.Completed(true);
+                            spark.GetComponent<RectTransform>().localPosition = clickedNode().transform.localPosition + new Vector3(0, 40f, 0);
+                            spark.SetTrigger("connection");
+                        }
+                        else{
+                            currentErrorPuzzle.Completed(false);
+                        }
                     }
                     releaseWire();
                 }
