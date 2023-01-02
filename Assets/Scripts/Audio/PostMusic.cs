@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class PostMusic : MonoBehaviour
 {
-    public AK.Wwise.Event MusicEvent;
+    [SerializeField] private AK.Wwise.Event playBossMusicEvent;
+    [SerializeField] private AK.Wwise.Event stopBossMusicEvent;
     public syncManagement sync;
 
-    void Start()
+    void OnEnable()
     {
-        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallCueSync);
+        playBossMusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallCueSync);
+    }
+
+    void OnDisable()
+    {
+        stopBossMusicEvent.Post(gameObject);
     }
 
     void CallCueSync(object in_cookie, AkCallbackType in_type, object in_info)

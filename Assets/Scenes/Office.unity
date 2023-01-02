@@ -1206,7 +1206,7 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -580724789
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_Positions: []
   m_Parameters:
@@ -2489,7 +2489,6 @@ GameObject:
   - component: {fileID: 368170827}
   - component: {fileID: 368170826}
   - component: {fileID: 368170825}
-  - component: {fileID: 368170830}
   m_Layer: 0
   m_Name: bossStation
   m_TagString: Untagged
@@ -2576,30 +2575,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &368170830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368170824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb0a643dd62fec44a6a00d5cff1a62a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6acff2866ae389d4db7e38c74da4fc50, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1 &369943046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,7 +4411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564603691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.92, y: -4.06, z: 0}
+  m_LocalPosition: {x: 3.99, y: -8.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9518,10 +9493,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75416b97308b17b48b2d5a375cac4e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicEvent:
+  playBossMusicEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a3a57aca5fefba3479a7845dbb4f1f31, type: 2}
+  stopBossMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e7aa5cba97e4b0145ad0249f43e8302c, type: 2}
   sync: {fileID: 1169456495}
 --- !u!114 &1169456495
 MonoBehaviour:
@@ -12425,7 +12404,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014033794, y: 0.5632446}
+  m_Offset: {x: 0.014033794, y: 0.15813693}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12436,7 +12415,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4546957, y: 0.80301815}
+  m_Size: {x: 2.4546957, y: 0.71440035}
   m_EdgeRadius: 0
 --- !u!4 &1581296543
 Transform:
@@ -12446,7 +12425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581296539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -10, z: 0}
+  m_LocalPosition: {x: 4, y: -9.41, z: 0}
   m_LocalScale: {x: 0.9650161, y: 2.1736, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -498,6 +498,21 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Stop_convert_test" ID="{25EB755B-70D3-4706-B15A-F0230C57DA7D}">
+									<ChildrenList>
+										<Action Name="" ID="{4D23F5AD-A29B-48BB-86FC-86EE25356188}" ShortID="298247065">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="convert_test" ID="{2A99377D-97B0-401A-8EF3-403F2F8C76B0}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

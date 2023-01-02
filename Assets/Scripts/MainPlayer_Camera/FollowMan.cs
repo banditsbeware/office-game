@@ -23,6 +23,8 @@ public class FollowMan : MonoBehaviour
         Vector3 desiredPos = player.transform.position + offset;
         Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothSpeed);
         transform.position = Clamp(smoothedPos, xyzMin, xyzMax);
+
+        Debug.Log(desiredPos.y.ToString());
     }
 
     // public static int Clamp(int value, int min, int max)

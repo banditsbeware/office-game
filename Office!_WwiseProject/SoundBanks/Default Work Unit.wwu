@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{A284346A-64AA-4846-850E-14CA9AB4FFDD}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Ambience" ID="{C571CADC-947F-45BA-984D-9FD346FBDD87}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Boss" ID="{80F518F7-F7FF-4624-8E67-CD477BE097E9}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{B9BC810F-B2A5-4F12-B1DA-67F3250EF91A}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -22,13 +23,6 @@
 				<SoundBank Name="Bird" ID="{A0E76B54-A151-493F-9B72-FCE2B4434EFD}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Bird" ID="{80A3D1BD-EAE0-45D6-A09F-AA46DD9E9232}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Boss" ID="{C11F3358-DAF5-4ECA-83E0-ED33FFF96C01}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Boss" ID="{80F518F7-F7FF-4624-8E67-CD477BE097E9}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

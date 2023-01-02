@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 285764986e34605489b0733598996426, type: 3}
-  m_Name: C11F3358-DAF5-4ECA-83E0-ED33FFF96C01
+  m_Script: {fileID: 11500000, guid: b6a05661cb21c824d84872b0b5e04770, type: 3}
+  m_Name: 25EB755B-70D3-4706-B15A-F0230C57DA7D
   m_EditorClassIdentifier: 
-  objectName: Boss
-  id: 1560169506
-  guid: C11F3358-DAF5-4ECA-83E0-ED33FFF96C01
+  objectName: Stop_convert_test
+  id: 436755844
+  guid: 25EB755B-70D3-4706-B15A-F0230C57DA7D
