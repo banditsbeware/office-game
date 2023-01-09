@@ -56,14 +56,6 @@ public class Printer : MonoBehaviour
         ErrorPuzzle.OnComplete += Printer_OnErrorComplete;
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            Debug.Log("index: " + errorIndex + " err len: " + errors.Count);
-        }
-    }
-
     void OnEnable()
     {
         errors = new List<ErrorPuzzle>{
@@ -73,7 +65,7 @@ public class Printer : MonoBehaviour
         errorIndex = 0;
         currentError = errors[errorIndex];
         popup.text = currentError.errorPopup;
-        
+        AkSoundEngine.PostEvent("Play_printer_jam", gameObject);
     }
 
     private void Printer_OnErrorComplete(object sender, EventArgs e)
@@ -88,6 +80,7 @@ public class Printer : MonoBehaviour
         {
             Debug.Log("errors complete!");
         }
+        transform.Find("paper").GetComponent<Animator>().SetTrigger("print");
     }
 }
 
@@ -120,13 +113,13 @@ public class ErrorPuzzle
             {
                 Debug.Log("woah! task complete!");
                 currentTaskIndex += 1;
-                
                 CheckErrorCompletion();
             }
         }
         else
         {
             currentTaskIndex = 0;
+            AkSoundEngine.PostEvent("Play_printer_error", GameObject.Find("printerStation"));
             OnFailed(this, EventArgs.Empty);
         }
     }

@@ -91,31 +91,69 @@
 				</Folder>
 				<Folder Name="Ambience" ID="{C571CADC-947F-45BA-984D-9FD346FBDD87}" ShortID="1022302060">
 					<ChildrenList>
-						<Event Name="Play_Office_Amb" ID="{434E933B-39FF-45C6-B5BE-312AA1A9F62F}">
+						<Folder Name="Street" ID="{61B7A30C-4728-4278-BB24-E14DEFAC5FAA}" ShortID="276943042">
 							<ChildrenList>
-								<Action Name="" ID="{A52756B9-2D87-4480-911C-3BBA5EDC87F2}" ShortID="264171854">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{8D80F9C5-2EFC-4ACD-A230-D63CCC0B0606}" ShortID="356104271">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{C6CA22B4-0077-4BC9-BFAB-72E3E28214DB}" ShortID="161264473">
+								<Event Name="Play_Street_Amb" ID="{47D79C0E-8E9C-4A78-B318-8F376FE17703}">
+									<ChildrenList>
+										<Action Name="" ID="{77856F8E-726A-40EE-90CE-A2B6C7ECA973}" ShortID="1021328306">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Street_Amb_01" ID="{1C90C0B5-42EC-4BA4-A19B-3B4844C1FE0F}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{52DE4495-45BD-4939-8F84-4F53E2CD1851}" ShortID="181625845">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Street_Amb_02" ID="{C91A68EE-3F06-4974-9944-EEA745B862AA}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Office" ID="{BAB3AA77-5F26-422C-B376-04425E5DBCDE}" ShortID="700691533">
+							<ChildrenList>
+								<Event Name="Play_Office_Amb" ID="{434E933B-39FF-45C6-B5BE-312AA1A9F62F}">
+									<ChildrenList>
+										<Action Name="" ID="{A52756B9-2D87-4480-911C-3BBA5EDC87F2}" ShortID="264171854">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Office_RoomTone" ID="{E9BD725C-5B23-4339-B87D-892A86EBB0D4}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8D80F9C5-2EFC-4ACD-A230-D63CCC0B0606}" ShortID="356104271">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Office_BG" ID="{8B9A8DF5-A354-4B4B-B219-9A5915130802}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{C6CA22B4-0077-4BC9-BFAB-72E3E28214DB}" ShortID="161264473">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}">
+							<ChildrenList>
+								<Action Name="" ID="{C9AB29A2-2648-499D-A112-12738BCED8CE}" ShortID="724652482">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.9"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="play" ID="{5D955E6F-B96C-44A1-806C-17B3AF843B6B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 								</Action>
 							</ChildrenList>
 						</Event>
@@ -503,11 +541,144 @@
 										<Action Name="" ID="{4D23F5AD-A29B-48BB-86FC-86EE25356188}" ShortID="298247065">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="convert_test" ID="{2A99377D-97B0-401A-8EF3-403F2F8C76B0}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Printer" ID="{AB174E0C-237C-48FC-BAC4-F5C0A5FD284E}" ShortID="315821028">
+							<ChildrenList>
+								<Event Name="Play_printer_click_other_off" ID="{967D6B9C-F298-4F0A-9C39-DB5888219CE5}">
+									<ChildrenList>
+										<Action Name="" ID="{A3853E1B-7F36-4633-B640-EA6618F5FB7E}" ShortID="432876609">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_click_other_off" ID="{AE2E343D-C8E7-437D-9629-CB180CCA5910}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_click_keyPad" ID="{8DD6F7B6-967D-4FF3-AD4B-81B1DF50CB20}">
+									<ChildrenList>
+										<Action Name="" ID="{86DA03E1-414B-44FE-AEEF-34C4A603F395}" ShortID="1061144926">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_click_keyPad" ID="{756CCFE9-1C5F-4623-BB97-3A73B46452C0}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_jam" ID="{82FD553A-0DAC-4D21-90CD-D8A8DFF5A02D}">
+									<ChildrenList>
+										<Action Name="" ID="{72E9D036-7192-43D1-A4BE-B99A04FF9444}" ShortID="238634992">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_jam_extras" ID="{9CC38887-C090-4C9D-B015-DEF3D8D85FE2}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{63986344-F50B-4640-8CBC-6327FC703CCE}" ShortID="395089599">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printerJam" ID="{E5BE0E3F-75FD-447C-B468-661614DB167C}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_print" ID="{6844317F-F1DA-4577-A651-FE5F29E60F47}">
+									<ChildrenList>
+										<Action Name="" ID="{D320DCE8-2F90-477D-8B36-24F299BE77D7}" ShortID="270236188">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_print" ID="{C8069B24-8E8B-4773-AFB8-EB6D5398B3B5}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{1EB0D86D-CC04-4825-9F5D-2F907B07B39D}" ShortID="1001993429">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_error" ID="{BDF1247C-9ED5-435D-A541-F31CCA197E0E}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_wires" ID="{2912CF5D-586A-45AC-85DA-CE832D04C6CD}">
+									<ChildrenList>
+										<Action Name="" ID="{8264B9B3-934B-445A-BE6D-422E37F06C22}" ShortID="887382265">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_wires" ID="{BC6756C6-1678-46F6-931C-C1D6E78C83B5}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_paper" ID="{B6643892-A774-486E-9F14-5B70EB747796}">
+									<ChildrenList>
+										<Action Name="" ID="{562D218D-53C7-4986-AE4E-6C72DE2B4D7F}" ShortID="121415269">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_paper" ID="{EFAB4330-87CE-4741-A272-65410D0632D8}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_click_other_on" ID="{71FEAFD3-9CC7-4579-B73F-084B00EB8BFD}">
+									<ChildrenList>
+										<Action Name="" ID="{B4030E8C-17F9-47E4-B2CF-05C910C5FD2E}" ShortID="339327993">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_click_other_on" ID="{44278798-739E-4955-AC7D-3F5B43FD9A19}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_error" ID="{23C07771-81D4-4DA5-AE05-4241D45CCAD1}">
+									<ChildrenList>
+										<Action Name="" ID="{571F69A8-BFE3-4D60-9551-64DA00F9896B}" ShortID="717842141">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_error" ID="{BDF1247C-9ED5-435D-A541-F31CCA197E0E}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_cover_close" ID="{7FC03AEC-3EA0-42E7-9593-C3CD77919F56}">
+									<ChildrenList>
+										<Action Name="" ID="{EE33AD1E-53CD-48B2-9512-987B4579B32D}" ShortID="600782227">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_cover_close" ID="{53F9E6C5-3D9B-4AAB-A1CC-03A5E8BA162A}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_printer_cover_open" ID="{28A0CE46-7E67-486D-B3B1-BFEA44866976}">
+									<ChildrenList>
+										<Action Name="" ID="{A3C8CE66-B81E-40C8-BF90-C1CF47BB748E}" ShortID="518661117">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="printer_cover_open" ID="{B3552F89-ADB9-4DAD-B089-7FCF40019379}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

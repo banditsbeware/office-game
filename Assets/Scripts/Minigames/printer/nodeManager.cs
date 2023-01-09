@@ -80,7 +80,8 @@ public class nodeManager : MonoBehaviour
                             spark.GetComponent<RectTransform>().localPosition = clickedNode().transform.localPosition + new Vector3(0, 40f, 0);
                             spark.SetTrigger("connection");
                         }
-                        else{
+                        else
+                        {
                             currentErrorPuzzle.Completed(false);
                         }
                     }

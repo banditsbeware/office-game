@@ -30,12 +30,14 @@ public class otherButtonSingle : MonoBehaviour
         {
             StartCoroutine(pressedOff());
             //checks if these wires complete current printer task
+            AkSoundEngine.PostEvent("Play_printer_click_other_off", gameObject);
             ErrorPuzzle ce = Printer.currentError;
             ce.Completed(ce.currentTask().Check(gameObject.name, false));
         }
         else
         {
             StartCoroutine(pressedOn());
+            AkSoundEngine.PostEvent("Play_printer_click_other_on", gameObject);
             ErrorPuzzle ce = Printer.currentError;
             ce.Completed(ce.currentTask().Check(gameObject.name, true));
         }   
@@ -44,7 +46,6 @@ public class otherButtonSingle : MonoBehaviour
     private void ResetOtherButtons(object sender, EventArgs e)
     {
         pressed = false;
-        img.sprite = offSprite;
     }
 
     IEnumerator pressedOn()
@@ -54,7 +55,15 @@ public class otherButtonSingle : MonoBehaviour
         img.sprite = downSprite;
         yield return new WaitForSeconds(.3f);
         buttonText.GetComponent<RectTransform>().localPosition += new Vector3(0, 5, 0);
-        img.sprite = onSprite;
+        if (pressed)
+        {
+            img.sprite = onSprite;
+        }
+        else
+        {
+            img.sprite = offSprite;
+        }
+        
 
     }
     IEnumerator pressedOff()

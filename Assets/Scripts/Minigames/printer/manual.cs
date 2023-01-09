@@ -27,6 +27,7 @@ public class manual : MonoBehaviour
         if(pageNumber < contents.Count - 1) 
         {
             pageNumber += 1;
+
             manualAnimator.SetInteger("page_number", pageNumber);
             manualAnimator.SetTrigger("page_open");
             turningPage.text = currentPage.text;

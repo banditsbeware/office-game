@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FADE_ALL = 432238011U;
         static const AkUniqueID PLAY_ACTOR = 3231912389U;
         static const AkUniqueID PLAY_BATH_AMB = 1523620308U;
         static const AkUniqueID PLAY_BIRD_COIN = 2159632377U;
@@ -38,16 +39,28 @@ namespace AK
         static const AkUniqueID PLAY_OFFICE_AMB = 219189707U;
         static const AkUniqueID PLAY_PLAYER = 3608805445U;
         static const AkUniqueID PLAY_PRICES = 3331051860U;
+        static const AkUniqueID PLAY_PRINTER_CLICK_KEYPAD = 294769442U;
+        static const AkUniqueID PLAY_PRINTER_CLICK_OTHER_OFF = 3710204462U;
+        static const AkUniqueID PLAY_PRINTER_CLICK_OTHER_ON = 887450000U;
+        static const AkUniqueID PLAY_PRINTER_COVER_CLOSE = 2859113611U;
+        static const AkUniqueID PLAY_PRINTER_COVER_OPEN = 2870518349U;
+        static const AkUniqueID PLAY_PRINTER_ERROR = 1111640261U;
+        static const AkUniqueID PLAY_PRINTER_JAM = 422864183U;
+        static const AkUniqueID PLAY_PRINTER_PAPER = 2551381385U;
+        static const AkUniqueID PLAY_PRINTER_PRINT = 2216146290U;
+        static const AkUniqueID PLAY_PRINTER_WIRES = 3867243761U;
         static const AkUniqueID PLAY_RELEASE = 692169189U;
         static const AkUniqueID PLAY_SCHOOL = 3606423206U;
         static const AkUniqueID PLAY_SCIFI = 3039012154U;
         static const AkUniqueID PLAY_SNOW = 4026051667U;
         static const AkUniqueID PLAY_SOCCER = 3545779475U;
         static const AkUniqueID PLAY_SPORTS = 1629223547U;
+        static const AkUniqueID PLAY_STREET_AMB = 3151250082U;
         static const AkUniqueID PLAY_TEAM = 3422393765U;
         static const AkUniqueID PLAY_VARSITY = 1692086900U;
         static const AkUniqueID PLAY_WEATHER = 3308884970U;
         static const AkUniqueID PLAY_WORK = 1221848793U;
+        static const AkUniqueID STOP_CONVERT_TEST = 436755844U;
         static const AkUniqueID STOP_HELVETICA = 2823449565U;
         static const AkUniqueID STOP_PLAYER = 503260239U;
     } // namespace EVENTS
@@ -125,9 +138,10 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BIRD = 1544377644U;
-        static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID CROSSWORD = 630707431U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID PRINTER = 1425580747U;
+        static const AkUniqueID STREET = 4142189312U;
     } // namespace BANKS
 
     namespace BUSSES

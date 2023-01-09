@@ -19,6 +19,8 @@ public class LevelLoader : MonoBehaviour
     {
         fadeTransition.SetTrigger("Start");
 
+        AkSoundEngine.PostEvent("Fade_All", gameObject);
+
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(levelName);

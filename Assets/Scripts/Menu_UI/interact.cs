@@ -11,7 +11,7 @@ public class interact : MonoBehaviour
     
     [SerializeField] private string eMessage;
 
-    void OnTriggerEnter2D(Collider2D other) {
+    virtual public void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") 
         {
             //changes popup text and shows popup notification in UIManager
@@ -20,7 +20,7 @@ public class interact : MonoBehaviour
         }
     }
     
-    void OnTriggerExit2D(Collider2D other) {
+    virtual public void OnTriggerExit2D(Collider2D other) {
         if (other.tag == "Player") 
         {
             //hides popup notification in UIManager

@@ -22,7 +22,7 @@ public class numPad : MonoBehaviour
             numScreen.text += num;
             number = int.Parse(numScreen.text);
         }
-        
+        PlayClick();
     }
 
     //called by back button
@@ -38,7 +38,7 @@ public class numPad : MonoBehaviour
             numScreen.text = numScreen.text.Remove(numScreen.text.Length - 1);
             number = int.Parse(numScreen.text);
         }
-        
+        PlayClick();
     }
 
     //called by enter button
@@ -49,6 +49,7 @@ public class numPad : MonoBehaviour
         ce.Completed(ce.currentTask().Check(number));
 
         ResetNumbers(this, EventArgs.Empty);
+        PlayClick();
     }
 
     void Update()
@@ -67,5 +68,10 @@ public class numPad : MonoBehaviour
     {
         number = 0;
         numScreen.text = "";
+    }
+
+    private void PlayClick()
+    {
+        AkSoundEngine.PostEvent("Play_printer_click_keyPad", gameObject);
     }
 }
