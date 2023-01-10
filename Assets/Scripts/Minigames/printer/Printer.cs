@@ -65,7 +65,11 @@ public class Printer : MonoBehaviour
         errorIndex = 0;
         currentError = errors[errorIndex];
         popup.text = currentError.errorPopup;
-        AkSoundEngine.PostEvent("Play_printer_jam", gameObject);
+        
+        if(transform.parent.GetComponent<interact_minigame>().isGame) 
+        {
+            AkSoundEngine.PostEvent("Play_printer_jam", gameObject);
+        }
     }
 
     private void Printer_OnErrorComplete(object sender, EventArgs e)

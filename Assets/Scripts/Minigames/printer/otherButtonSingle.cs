@@ -46,6 +46,7 @@ public class otherButtonSingle : MonoBehaviour
     private void ResetOtherButtons(object sender, EventArgs e)
     {
         pressed = false;
+        img.sprite = offSprite;
     }
 
     IEnumerator pressedOn()

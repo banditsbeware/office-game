@@ -83,6 +83,7 @@ public class nodeManager : MonoBehaviour
                         else
                         {
                             currentErrorPuzzle.Completed(false);
+                            AkSoundEngine.PostEvent("Play_printer_wires", gameObject);
                         }
                     }
                     releaseWire();

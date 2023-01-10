@@ -20,15 +20,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1844479352, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+      value: {fileID: 1994447712, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
     - time: 0.33333334
-      value: {fileID: 947206549, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+      value: {fileID: 1028195670, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
     - time: 0.6666667
-      value: {fileID: 1190172477, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+      value: {fileID: -977639379, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
     - time: 1
-      value: {fileID: -2001013460, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+      value: {fileID: 1842418809, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
     - time: 1.3333334
-      value: {fileID: -1284776320, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+      value: {fileID: -1109395101, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -48,11 +48,11 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1844479352, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
-    - {fileID: 947206549, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
-    - {fileID: 1190172477, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
-    - {fileID: -2001013460, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
-    - {fileID: -1284776320, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+    - {fileID: 1994447712, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+    - {fileID: 1028195670, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+    - {fileID: -977639379, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+    - {fileID: 1842418809, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
+    - {fileID: -1109395101, guid: f0cc5f9ef920d1843b6f4a05bb71909e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -81,6 +81,13 @@ AnimationClip:
   - time: 0
     functionName: PostEvent
     data: Play_printer_print
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.2916666
+    functionName: MakePaper
+    data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
