@@ -1189,7 +1189,7 @@
 								<Query Name="from event id" ID="{135776D0-7B81-4B18-A26A-1AE0BE76F059}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from object &quot;Event:2952797154&quot;"/>
+										<Property Name="WAQL" Type="string" Value="$ from object &quot;Event:1523620308 &quot;"/>
 									</PropertyList>
 								</Query>
 								<Query Name="from default work unit" ID="{7B8B7165-4605-4288-AFC3-CEDC4499F7D5}">

@@ -28,7 +28,7 @@ public class Printer : MonoBehaviour
     private ErrorPuzzle error_69 = new ErrorPuzzle
     {
         tasks = new List<Task>{
-            new NumbersTask(696969),
+            new NumbersTask(12345),
             new WiresTask("orange", "red"),
             new MultiTask(new List<Task>{
                 new ButtonTask("orange", true),
@@ -41,14 +41,14 @@ public class Printer : MonoBehaviour
                 new ButtonTask("blue", true),
                 new ButtonTask("green", true),
                 }),
-            new NumbersTask(420),
+            new NumbersTask(42),
             new MultiTask(new List<Task>{
                 new ButtonTask("green", false),
                 new ButtonTask("blue", false),
                 }),
 
         },
-        errorPopup = "The printer's port seed has come undone. Please contact a certified HB technician.\nerror#69"
+        errorPopup = "The printer's port seed has come undone. Please contact a certified HB technician.\nerror#42"
     };
 
     void Start()
@@ -69,7 +69,13 @@ public class Printer : MonoBehaviour
         if(transform.parent.GetComponent<interact_minigame>().isGame) 
         {
             AkSoundEngine.PostEvent("Play_printer_jam", gameObject);
+            AkSoundEngine.SetState("room", "officeMinigame");
         }
+    }
+
+    void OnDisable()
+    {
+        AkSoundEngine.SetState("room", "office");
     }
 
     private void Printer_OnErrorComplete(object sender, EventArgs e)

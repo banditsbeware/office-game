@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class literallyFlappyBird : MonoBehaviour
+public class literallyFlappyBird : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private float jumpValue;
     [SerializeField] private float scrollV;
@@ -17,17 +17,13 @@ public class literallyFlappyBird : MonoBehaviour
     [SerializeField] private Rigidbody2D bg2;
     [SerializeField] private GameObject pipe;
     private int score;
+    private int highScore;
     [SerializeField] private TMP_Text scoreTxt;
     [SerializeField] private TMP_Text menu;
     [SerializeField] private GameObject referenceMini;
     [SerializeField] private fingerClicky clickMang;
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
     private Queue<GameObject> pipes = new Queue<GameObject>();
-
-
-
-    
-    
     //Wwise
     public AK.Wwise.Event flap;
     
@@ -182,10 +178,10 @@ public class literallyFlappyBird : MonoBehaviour
             obj.velocity = Vector2.zero;
         }
 
-        if (score > meta.flappyHighScore)
+        if (score > highScore)
         {
-            meta.flappyHighScore = score;
-            menu.text = "bird game\n\n\nhigh score:\n" + meta.flappyHighScore;
+            highScore = score;
+            menu.text = "bird game\n\n\nhigh score:\n" + highScore;
         }
 
         menu.gameObject.SetActive(true);
@@ -208,5 +204,15 @@ public class literallyFlappyBird : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void LoadData(meta data)
+    {
+        this.highScore = data.flappyHighScore;
+    }
+
+    public void SaveData(ref meta data)
+    {
+        data.flappyHighScore = this.highScore;
     }
 }

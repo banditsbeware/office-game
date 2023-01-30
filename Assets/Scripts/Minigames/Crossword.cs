@@ -146,8 +146,6 @@ public class Crossword : MonoBehaviour {
 
   void OnEnable()
   {
-    crossBank.Load();
-
     haroldSpeech.text = "";
     playerSpeech.text = "";
     avalibleWords = new List<Word>();
@@ -158,8 +156,11 @@ public class Crossword : MonoBehaviour {
 
     playerBubble.SetActive(false);
     haroldBubble.SetActive(true);
-
-    AkSoundEngine.PostEvent(hello.post, gameObject);
+    if(transform.parent.GetComponent<interact_minigame>().isGame) 
+        {
+            AkSoundEngine.PostEvent(hello.post, gameObject);
+            AkSoundEngine.SetState("room", "officeMinigame");
+        }
     TextWriter.AddWriter_Static(haroldSpeech, hello.haroldTalk_normal);
 
     StartCoroutine(HelloWait());
@@ -167,8 +168,7 @@ public class Crossword : MonoBehaviour {
 
   void OnDisable()
   {
-    crossBank.Unload();
-
+    AkSoundEngine.SetState("room", "office");
   }
 
   void PlaceWords()

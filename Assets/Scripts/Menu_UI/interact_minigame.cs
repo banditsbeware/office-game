@@ -14,7 +14,7 @@ public class interact_minigame : interact
             {
                 UIMan.denoitfy();
                 UIManager.gameState = "window";
-                UIMan.show(theGame);
+                UIManager.show(theGame);
             }
         }
 

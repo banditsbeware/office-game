@@ -92,6 +92,7 @@ namespace AK
                 static const AkUniqueID DREAM = 2120052594U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OFFICE = 1547173777U;
+                static const AkUniqueID OFFICEMINIGAME = 1411971626U;
                 static const AkUniqueID OUTDOORS = 2730119150U;
             } // namespace STATE
         } // namespace ROOM

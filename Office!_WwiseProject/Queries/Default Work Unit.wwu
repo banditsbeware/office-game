@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{92C49BB2-B41C-45FB-AC25-FD42F2ACF441}" SchemaVersion="110">
 	<Queries>
-		<WorkUnit Name="Default Work Unit" ID="{92C49BB2-B41C-45FB-AC25-FD42F2ACF441}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{92C49BB2-B41C-45FB-AC25-FD42F2ACF441}" PersistMode="Standalone">
+			<ChildrenList>
+				<Query Name="eventID" ID="{5A0CD506-0C5B-42B6-9B50-9C5F627E0750}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Queries>
 </WwiseDocument>

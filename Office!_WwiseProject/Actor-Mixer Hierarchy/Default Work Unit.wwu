@@ -60,10 +60,14 @@
 												<CustomState Name="" ID="{963C2FC6-5F20-4669-BC47-612246BCD759}" ShortID="68630025"/>
 											</CustomState>
 											<CustomState>
+												<StateRef Name="officeMinigame" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+												<CustomState Name="" ID="{0DD2E922-891A-4CBC-B494-F738B99DA54F}" ShortID="583906359"/>
+											</CustomState>
+											<CustomState>
 												<StateRef Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
 												<CustomState Name="" ID="{FDA93CC9-B112-4380-95EA-265238BAABE7}" ShortID="146492561">
 													<PropertyList>
-														<Property Name="OutputBusVolume" Type="Real64" Value="-40"/>
+														<Property Name="OutputBusVolume" Type="Real64" Value="-44"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -96,6 +100,16 @@
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="15"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -301,11 +315,21 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
+												<StateRef Name="officeMinigame" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+												<CustomState Name="" ID="{B703ED33-1A03-4C03-9B6F-36BA1D17288B}" ShortID="626184452">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="20"/>
+														<Property Name="OutputBusVolume" Type="Real64" Value="-5"/>
+														<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
 												<StateRef Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
 												<CustomState Name="" ID="{8FE2DE96-27BB-4BE1-9DE5-DE8B261E72EC}" ShortID="1071728475">
 													<PropertyList>
 														<Property Name="Lowpass" Type="int16" Value="10"/>
-														<Property Name="OutputBusVolume" Type="Real64" Value="-40"/>
+														<Property Name="OutputBusVolume" Type="Real64" Value="-42"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -548,7 +572,6 @@
 													</ValueList>
 												</Property>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -902,7 +925,7 @@
 													<PropertyList>
 														<Property Name="InitialDelay" Type="Real64">
 															<ValueList>
-																<Value>6</Value>
+																<Value>2</Value>
 															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
@@ -1582,6 +1605,172 @@
 														<Position Name="" ID="{1DF03FE9-8355-4270-AEEF-B829D0F26A12}"/>
 													</PositioningInfo>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="doodoo" ID="{E817620E-7DBE-4D17-80BD-1E45E24824DF}" ShortID="1065805924">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>7</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="pee" ID="{74BABC5A-C674-4E39-9578-99B207CF0B9D}" ShortID="269281748">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-5</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>80</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pee" ID="{BD793340-10A3-4671-8235-866A01527DC0}">
+																	<Language>SFX</Language>
+																	<AudioFile>pee.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="61845634"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="pee" ID="{BD793340-10A3-4671-8235-866A01527DC0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="plop-001" ID="{DAF6DADC-5127-48D8-BD77-B17BC9C73B3E}" ShortID="8328409">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>30</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="plop-001" ID="{AFD4F531-0D72-48B0-A10F-05C123FAD4D1}">
+																	<Language>SFX</Language>
+																	<AudioFile>plop-001.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1034752089"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="plop-001" ID="{AFD4F531-0D72-48B0-A10F-05C123FAD4D1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="plop-002" ID="{F37087CC-8D7F-4680-BEF4-4F116A8CA67C}" ShortID="389141595">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>30</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="plop-002" ID="{7AD172E0-AD9D-4490-B453-2AE6108CFAF6}">
+																	<Language>SFX</Language>
+																	<AudioFile>plop-002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="482279924"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="plop-002" ID="{7AD172E0-AD9D-4490-B453-2AE6108CFAF6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="plop-003" ID="{8AA99800-659B-4EF6-B898-AE9992C11FE8}" ShortID="586421581">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>30</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="plop-003" ID="{4E891DF2-C2BC-4BAC-BB6B-83FD0E8DD69D}">
+																	<Language>SFX</Language>
+																	<AudioFile>plop-003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="658035455"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="plop-003" ID="{4E891DF2-C2BC-4BAC-BB6B-83FD0E8DD69D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{8B13899E-02BD-4DAC-BBF7-B798A765D72F}"/>
+														<Position Name="" ID="{6251A53B-09AF-4881-BDCF-2A830807544E}">
+															<ChildrenList>
+																<Path2D Name="doodoo_Path" ID="{83909634-0592-407B-AEFE-0B54F2C69B5E}">
+																	<PointList>
+																		<Point>
+																			<XPos>-70</XPos>
+																			<YPos>10</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
 												<Panner Name="" ID="{17111B58-3627-48DA-AF37-FBDE8049E4DA}">
@@ -1595,6 +1784,7 @@
 											<Playlist>
 												<ItemRef Name="door" ID="{FB24A54E-5279-4183-ADD0-AA77E6072B2D}"/>
 												<ItemRef Name="walkIn" ID="{3BC77D69-F7AA-4F79-AC20-9AFE13BCC9E6}"/>
+												<ItemRef Name="doodoo" ID="{E817620E-7DBE-4D17-80BD-1E45E24824DF}"/>
 												<ItemRef Name="cough" ID="{5077D96F-829D-4AE5-B6EF-4338450FD9AF}"/>
 												<ItemRef Name="flush" ID="{DEA5C72F-DB53-4324-A8F3-B028CA135865}"/>
 												<ItemRef Name="outbound" ID="{381E19AD-246B-42A0-AF3B-29D9640EA0C8}"/>
@@ -3912,6 +4102,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="otherButton_off-001" ID="{D1D6809C-0FBD-4047-88B1-80905F8E905E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00330760749724366"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0165380374862183"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>otherButton_off-001.wav</AudioFile>
 											<MediaIDList>

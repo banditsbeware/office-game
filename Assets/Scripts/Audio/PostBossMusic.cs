@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PostMusic : MonoBehaviour
+public class PostBossMusic : MonoBehaviour
 {
     [SerializeField] private AK.Wwise.Event playBossMusicEvent;
     [SerializeField] private AK.Wwise.Event stopBossMusicEvent;

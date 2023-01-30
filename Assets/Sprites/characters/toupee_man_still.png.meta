@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ab47968334215a47af30b89b56a6b04
+guid: 76a270f97d0c5a44689bef8184f8cf17
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -129,12 +129,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toupee-man_0
+      name: toupee_man_still_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 29
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 903aef4505b80cb4bb82614e92f85e3c
-      internalID: 818950843
+      spriteID: 02fb542f9056e0d45a7b267e84a62fd5
+      internalID: 1102679736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toupee-man_1
+      name: toupee_man_still_1
       rect:
         serializedVersion: 2
-        x: 29
+        x: 32
         y: 0
-        width: 29
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,19 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c52586fdeb8ceb458ff68b9b42949ec
-      internalID: -758138892
+      spriteID: 64571911d7c14bd4495bd1c0a7c97cf8
+      internalID: 290360221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toupee-man_2
+      name: toupee_man_still_2
       rect:
         serializedVersion: 2
-        x: 58
+        x: 64
         y: 0
-        width: 29
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -185,92 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7c1cabc16aab3540b6eac2ff6c5e97f
-      internalID: -1948114819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toupee-man_3
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2510a277d7870014189b6ac23f4b27f0
-      internalID: 1055879057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toupee-man_4
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f98b8adbcbb72cb419e3fa8eef341b6d
-      internalID: 982681652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toupee-man_5
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9927fc9172bb1404eaa47958f8596920
-      internalID: -1524256053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toupee-man_6
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cbd3a4d5edf1cd438faa4c1fa7954a6
-      internalID: 1342746079
+      spriteID: 3a85021cdc88bca48aac4d2e1fe422ee
+      internalID: 1912393939
       vertices: []
       indices: 
       edges: []
@@ -286,13 +202,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      toupee-man_3: 1055879057
-      toupee-man_5: -1524256053
-      toupee-man_2: -1948114819
-      toupee-man_4: 982681652
-      toupee-man_1: -758138892
-      toupee-man_6: 1342746079
-      toupee-man_0: 818950843
+      toupee_man_still_0: 1102679736
+      toupee_man_still_1: 290360221
+      toupee_man_still_2: 1912393939
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -20,6 +20,7 @@
 						<State Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
 						<State Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
 						<State Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
+						<State Name="officeMinigame" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>

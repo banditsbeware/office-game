@@ -10,7 +10,7 @@ public class manual : MonoBehaviour
     private int pageNumber;
     private List<string> contents = new List<string>(){
         "",
-        "Error 69:\n\n- Input technician code\n- connect red and orange ports\n- activate red and orange ports\n- connect blue and green ports\n- de-activate red and orange ports\n- activate blue and green ports\n- Input 'port seed reset' code\n- de-activate blue and green ports",
+        "Error 42:\n\n- Input technician code\n- connect red and orange ports\n- activate red and orange ports\n- connect blue and green ports\n- de-activate red and orange ports\n- activate blue and green ports\n- Input 'port seed reset' code\n- de-activate blue and green ports",
         "Error 1337:\n\nAttempt turning printer on and back off again\nIf this does not fix the problem:\n- Ensure proper connections between red and purple ports, as well as the blue and orange.\n- activate any unused ports.\n- input your personalized printer access code\n- de-activate unused ports\n- try printing again",
     };
     [SerializeField] private TMP_Text currentPage;

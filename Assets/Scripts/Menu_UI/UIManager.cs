@@ -6,7 +6,7 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-  	[HideInInspector] public GameObject[] pauseObjects;
+  [HideInInspector] public GameObject[] pauseObjects;
 	[HideInInspector] public GameObject[] notifs;
 
 	//minigames are all made in UI, I'm so sorry
@@ -17,28 +17,28 @@ public class UIManager : MonoBehaviour
 	// gamestates are: pause, play, window
 	public static string gameState = "play";
 
-    void Awake()
-    {
-        Time.timeScale = 1;
-        pauseObjects = GameObject.FindGameObjectsWithTag("Pause");
+	void Awake()
+	{
+		Time.timeScale = 1;
+		pauseObjects = GameObject.FindGameObjectsWithTag("Pause");
 		notifs = GameObject.FindGameObjectsWithTag("notif");
 		minigames = GameObject.FindGameObjectsWithTag("minigame");
 
 		hide(pauseObjects);
 		hide(notifs);
 		hide(minigames);
-    }
+	}
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            pauseControl();
-        }
-    }
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+				pauseControl();
+		}
+	}
 	// reloads current scene index (in Build Management)
-    public void Reload(){
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	public void Reload(){
+	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
 	public void pauseControl()
@@ -63,22 +63,26 @@ public class UIManager : MonoBehaviour
 	}
 
 	//  shows objects with tag
-	public void show(GameObject[] tagg){
-		foreach(GameObject g in tagg){
+	public static void show(GameObject[] tagg){
+		foreach(GameObject g in tagg)
+		{
 			show(g);
 		}
 	}
-	public void show(GameObject obj){
+
+	public static void show(GameObject obj){
 			obj.SetActive(true);
 	}
 
 	// hides objects with tag
-	public void hide(GameObject[] tagg){
-		foreach(GameObject g in tagg){
+	public static void hide(GameObject[] tagg){
+		foreach(GameObject g in tagg)
+		{
 			hide(g);
 		}
 	}
-	public void hide(GameObject obj){
+
+	public static void hide(GameObject obj){
 			obj.SetActive(false);
 	}
 	

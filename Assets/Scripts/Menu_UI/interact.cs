@@ -5,8 +5,7 @@ using UnityEngine;
 //interact_door and interact_minigame inherit this class
 public class interact : MonoBehaviour
 {
-    public UIManager UIMan;
-    public GameObject notification;
+    public UIManager UIMan;   
     [System.NonSerialized] public bool isGame = false;
     
     [SerializeField] private string eMessage;
