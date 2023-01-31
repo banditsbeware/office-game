@@ -5,6 +5,8 @@ using UnityEngine;
 public class menuOption : MonoBehaviour
 {
     [SerializeField] private GameObject submenu;
+    private SaveLoadSystem saveLoad;
+    private LevelLoader loader;
     private static GameObject[] submenus = new GameObject[0];
     
     void Start()
@@ -13,8 +15,10 @@ public class menuOption : MonoBehaviour
         {
             submenus = GameObject.FindGameObjectsWithTag("submenu");
             UIManager.hide(submenus);
-            Debug.Log("nice!");
         }
+
+        saveLoad = GameObject.Find("LevelLoader").GetComponent<SaveLoadSystem>();
+        loader = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
     }
 
     public void enableSubmenu()
@@ -23,4 +27,13 @@ public class menuOption : MonoBehaviour
         submenu.SetActive(true);
     }
 
+    public void NewGameClicked()
+    {
+        meta.ResetData();
+        loader.LoadLevel(meta.currentScene);
+    }
+    public void ContinueClicked()
+    {
+        loader.LoadLevel(meta.currentScene);
+    }
 }

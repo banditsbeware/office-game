@@ -21,7 +21,7 @@ public class syncManagement : MonoBehaviour
     public TMP_Text feedback;
     public TMP_Text bossWord;
 
-    //holds multiple beats, added in PostMusic.cs
+    //holds multiple beats
     public Queue<Cue> cues = new Queue<Cue>(); 
 
     void Update()
@@ -37,6 +37,7 @@ public class syncManagement : MonoBehaviour
         }
     }
 
+    //called when player clicks
     public void playerCue()
     {
         if(cues.Count == 0)
@@ -52,6 +53,7 @@ public class syncManagement : MonoBehaviour
         float nextBeat = cues.Peek().cueTime;
         Debug.Log(string.Format("Attempt Time: {0}, Beat Time: {1}", attempt, nextBeat));
 
+        //calculate the scale of the margin of error
         if (Abs(attempt - nextBeat) < nice)
         {
             feedback.fontSize = 96;

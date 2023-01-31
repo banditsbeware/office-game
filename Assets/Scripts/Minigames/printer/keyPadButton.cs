@@ -14,9 +14,9 @@ public class keyPadButton : MonoBehaviour
 
     void Start()
     {
-        buttonContents = gameObject.name;
+        buttonContents = gameObject.name; //one of the colors
 
-        buttonText = GetComponentInChildren<TMP_Text>();
+        buttonText = GetComponentInChildren<TMP_Text>(); 
         buttonImg = GetComponentInChildren<Image>();
         upButton = buttonImg.sprite;
 

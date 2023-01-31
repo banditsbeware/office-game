@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//interact minigame only used on minigames on a Canvas
 public class interact_minigame : interact
 {
     public GameObject theGame;
     public AK.Wwise.Bank minigameBank;
     private void Update()
     {
-        if (isGame)
+        if (isInteractable)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -20,6 +21,7 @@ public class interact_minigame : interact
 
     }
 
+    //loads/unloads a soundbank specific to the minigame before the minigame starts
     public override void OnTriggerEnter2D(Collider2D other)
     {
         base.OnTriggerEnter2D(other);

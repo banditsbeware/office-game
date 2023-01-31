@@ -6,7 +6,7 @@ using UnityEngine;
 public class interact : MonoBehaviour
 {
     public UIManager UIMan;   
-    [System.NonSerialized] public bool isGame = false;
+    [System.NonSerialized] public bool isInteractable = false; //isInteractable is true when the player is within the trigger for the interactable object
     
     [SerializeField] private string eMessage;
 
@@ -15,7 +15,7 @@ public class interact : MonoBehaviour
         {
             //changes popup text and shows popup notification in UIManager
             UIMan.notify(eMessage);
-            isGame = true;
+            isInteractable = true;
         }
     }
     
@@ -24,7 +24,7 @@ public class interact : MonoBehaviour
         {
             //hides popup notification in UIManager
             UIMan.denoitfy();
-            isGame = false;
+            isInteractable = false;
         }
     }
 }

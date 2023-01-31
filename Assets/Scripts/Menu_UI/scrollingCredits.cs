@@ -5,8 +5,7 @@ using UnityEngine;
 public class scrollingCredits : MonoBehaviour
 {
     [SerializeField] private float speed;
-    
-    [SerializeField] private Vector2Int boundaries;
+    [SerializeField] private Vector2Int boundaries; //min and max for y values of credits
     private Vector3 speedV3;
     private RectTransform trf;
     void Start() 

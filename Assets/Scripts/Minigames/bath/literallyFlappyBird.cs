@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class literallyFlappyBird : MonoBehaviour, IDataPersistence
+public class literallyFlappyBird : MonoBehaviour
 {
     [SerializeField] private float jumpValue;
     [SerializeField] private float scrollV;
@@ -17,7 +17,6 @@ public class literallyFlappyBird : MonoBehaviour, IDataPersistence
     [SerializeField] private Rigidbody2D bg2;
     [SerializeField] private GameObject pipe;
     private int score;
-    private int highScore;
     [SerializeField] private TMP_Text scoreTxt;
     [SerializeField] private TMP_Text menu;
     [SerializeField] private GameObject referenceMini;
@@ -39,6 +38,8 @@ public class literallyFlappyBird : MonoBehaviour, IDataPersistence
         bird.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
         bird.simulated = false;
 
+        menu.text = "bird game\n\n\nhigh score:\n" + meta.flappyHighScore;
+
         for (int i = 0; i < numOfPipes; i++)
         {
             GameObject pip = Instantiate(pipe, gameObject.transform);
@@ -49,8 +50,6 @@ public class literallyFlappyBird : MonoBehaviour, IDataPersistence
 
         menu.gameObject.SetActive(true);
         scoreTxt.gameObject.SetActive(false);
-
-        
     }
 
     void Update()
@@ -178,10 +177,10 @@ public class literallyFlappyBird : MonoBehaviour, IDataPersistence
             obj.velocity = Vector2.zero;
         }
 
-        if (score > highScore)
+        if (score > meta.flappyHighScore)
         {
-            highScore = score;
-            menu.text = "bird game\n\n\nhigh score:\n" + highScore;
+            meta.flappyHighScore = score;
+            menu.text = "bird game\n\n\nhigh score:\n" + meta.flappyHighScore;
         }
 
         menu.gameObject.SetActive(true);
@@ -204,15 +203,5 @@ public class literallyFlappyBird : MonoBehaviour, IDataPersistence
         {
             return false;
         }
-    }
-
-    public void LoadData(meta data)
-    {
-        this.highScore = data.flappyHighScore;
-    }
-
-    public void SaveData(ref meta data)
-    {
-        data.flappyHighScore = this.highScore;
     }
 }

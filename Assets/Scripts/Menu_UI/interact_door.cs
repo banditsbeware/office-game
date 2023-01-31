@@ -9,7 +9,7 @@ public class interact_door : interact
 
     private void Update()
     {
-        if (isGame)
+        if (isInteractable)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {

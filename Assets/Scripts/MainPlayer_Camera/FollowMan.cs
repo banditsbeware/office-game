@@ -30,6 +30,7 @@ public class FollowMan : MonoBehaviour
     //     return (value < min) ? min : (value > max) ? max : value;
     // }
 
+    //Keep an input Vector3 within a range
     public static Vector3 Clamp(Vector3 vector, Vector3 min, Vector3 max)
     {
         Vector3 clampd = new Vector3(0, 0, 0);

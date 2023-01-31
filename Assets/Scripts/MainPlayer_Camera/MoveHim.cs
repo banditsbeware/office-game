@@ -14,35 +14,28 @@ public class MoveHim : MonoBehaviour {
 
     //spawning
     public static string doorToExit = null;
-    private Transform door;
-    private Vector3 spawnLocation;
+    private door door;
+    private Transform doorTransform;
 
     [SerializeField] private Animator toupee;
 
     void Awake()
     {
-      
-      if(doorToExit != null) 
+      //always have a door to exit from
+      if (doorToExit == "door_MainMenu")
       {
-        door = GameObject.Find(doorToExit).transform;
+        doorToExit = null;
       }
-      
-      if(doorToExit == "door_Street")
+      if (doorToExit == null) 
       {
-        spawnLocation = door.position + new Vector3(0, 1, 0);
+        doorToExit = "door_origin";
       }
-      else if (doorToExit == "door_MainMenu")
-      {
-        spawnLocation = new Vector3(door.position.x, door.position.y, 0);
-      }
-      else
-      {
-        spawnLocation = new Vector3(door.position.x, 0, 9);
-      }
+      //find the door you're exiting from
+      door = GameObject.Find(doorToExit).GetComponent<door>();
+      doorTransform = door.transform;
 
-      transform.position = spawnLocation;
-      Debug.Log(doorToExit);
       
+      transform.position = doorTransform.position + door.spawnPointOffset;
 
       rb = gameObject.GetComponent<Rigidbody2D>();
     }

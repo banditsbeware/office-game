@@ -156,7 +156,7 @@ public class Crossword : MonoBehaviour {
 
     playerBubble.SetActive(false);
     haroldBubble.SetActive(true);
-    if(transform.parent.GetComponent<interact_minigame>().isGame) 
+    if(transform.parent.GetComponent<interact_minigame>().isInteractable) 
         {
             AkSoundEngine.PostEvent(hello.post, gameObject);
             AkSoundEngine.SetState("room", "officeMinigame");

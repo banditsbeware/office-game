@@ -6,11 +6,11 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-  [HideInInspector] public GameObject[] pauseObjects;
-	[HideInInspector] public GameObject[] notifs;
+  [HideInInspector] public GameObject[] pauseObjects; //Objects in Pause menu
+	[HideInInspector] public GameObject[] notifs; //any UI popups not part of pause menu
 
 	//minigames are all made in UI, I'm so sorry
-	[HideInInspector] public GameObject[] minigames;
+	[HideInInspector] public GameObject[] minigames; 
 	[SerializeField] private TMP_Text canvasText;
 
 
@@ -43,19 +43,19 @@ public class UIManager : MonoBehaviour
 
 	public void pauseControl()
 	{
-		if (gameState == "play")
+		if (gameState == "play") //when esc is it while playing
 		{
 			Time.timeScale = 0;
 			show(pauseObjects);
 			gameState = "pause";
 		} 
-		else if (gameState == "pause")
+		else if (gameState == "pause") //when resume or esc are hit in pause menu
 		{
 			Time.timeScale = 1;
 			hide(pauseObjects);
 			gameState = "play";
 		}
-		else if (gameState == "window")
+		else if (gameState == "window") // exit from minigame
 		{
 			hide(minigames);
 			gameState = "play";

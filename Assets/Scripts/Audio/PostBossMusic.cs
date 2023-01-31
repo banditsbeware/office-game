@@ -8,6 +8,7 @@ public class PostBossMusic : MonoBehaviour
     [SerializeField] private AK.Wwise.Event stopBossMusicEvent;
     public syncManagement sync;
 
+    //posts music event and sets up callback
     void OnEnable()
     {
         playBossMusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallCueSync);
@@ -18,6 +19,7 @@ public class PostBossMusic : MonoBehaviour
         stopBossMusicEvent.Post(gameObject);
     }
 
+    //called every CueSync in Wwise
     void CallCueSync(object in_cookie, AkCallbackType in_type, object in_info)
     {
         AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo)in_info;

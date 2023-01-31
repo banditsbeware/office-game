@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//an authentic recreation of our first attempt at interaction
 public class interact_square : interact
 {
     private SpriteRenderer sprite;
@@ -13,7 +14,7 @@ public class interact_square : interact
 
     void Update()
     {
-        if (isGame)
+        if (isInteractable)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {

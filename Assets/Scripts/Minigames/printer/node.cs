@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class node : MonoBehaviour
 {
-    [System.NonSerialized] public bool active; //mouse is above
+    [System.NonSerialized] public bool active; //true when mouse is above node
 
     void OnEnable()
     {
@@ -13,7 +13,7 @@ public class node : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other) //endpoint is tracked with mouse, so when mouse collides with node
     {
         if (other == nodeManager.endpoint.GetComponent<Collider2D>())
         {
@@ -31,7 +31,8 @@ public class node : MonoBehaviour
         }
     }
 }
-
+ 
+//for keeping a list of pairs in nodeManager
 public class NodeTuple : System.IEquatable<NodeTuple>
 {
     public (node, node) pair;

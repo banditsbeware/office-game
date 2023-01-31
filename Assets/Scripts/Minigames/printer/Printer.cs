@@ -66,7 +66,7 @@ public class Printer : MonoBehaviour
         currentError = errors[errorIndex];
         popup.text = currentError.errorPopup;
         
-        if(transform.parent.GetComponent<interact_minigame>().isGame) 
+        if(transform.parent.GetComponent<interact_minigame>().isInteractable) 
         {
             AkSoundEngine.PostEvent("Play_printer_jam", gameObject);
             AkSoundEngine.SetState("room", "officeMinigame");

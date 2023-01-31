@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OpenURL : MonoBehaviour
 {
+    //for linking to outside stuff
     [SerializeField] private string permaURL;
     public static void openUrl(string url)
     {

@@ -9,8 +9,8 @@ public class parallaxBackground : MonoBehaviour
     [SerializeField] private Transform bg2;
     [SerializeField] private Transform mainCamera;
     public Vector3 movementSpeed;
-    private float bumpAmount = 250f;
-    private float gateAmount = -100f;
+    private float bumpAmount = 250f; //amount to move when one sprite needs to be reset, double the lenght of a single sprite  
+    private float gateAmount = -100f;  //value at which sprite will jump
 
     void FixedUpdate()
     {

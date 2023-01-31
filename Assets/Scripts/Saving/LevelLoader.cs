@@ -23,7 +23,8 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
+        meta.currentScene = levelName;
+
         SceneManager.LoadScene(levelName);
     }
-
 }

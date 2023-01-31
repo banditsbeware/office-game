@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//for scrolling with UI Raw Images
 public class ScrollingBackground : MonoBehaviour
 {
     [SerializeField] private RawImage scrollBackground;

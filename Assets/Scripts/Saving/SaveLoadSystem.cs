@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using System.Linq;
+using UnityEngine.SceneManagement;
 
-public class FileDataHandler
+public class SaveLoadSystem : MonoBehaviour
 {
-    private string dataDirPath = "";
-    private string dataFileName = "juicy.fruit";
+    private static string dataDirPath;
+    private static string dataFileName = "juicy.fruit";
 
-    public FileDataHandler(string dirPath, string fileName)
+    //finds permanent data path for storing files
+    private void Awake() 
     {
         dataDirPath = Application.persistentDataPath;
-        dataFileName = fileName;
     }
 
-    public meta Load()
+    //imports data from JSON file and applies to meta's static variables
+    public static void Load()
     {
         string path = Path.Combine(dataDirPath, dataFileName);
-        meta loadedData = null;
         if (File.Exists(path))
         {
             try
@@ -34,7 +36,8 @@ public class FileDataHandler
                     }
                 }
             //convert back to c# object
-            loadedData = JsonUtility.FromJson<meta>(dataToLoad);
+            SerializableMeta loadedData = JsonUtility.FromJson<SerializableMeta>(dataToLoad);
+            meta.Import(loadedData);
 
             }
             catch (Exception e)
@@ -42,11 +45,17 @@ public class FileDataHandler
                 Debug.LogError("oops: " + path + "\n" + e);
             }
         }
-        return loadedData;
+        
     }
-    public void Save(meta data)
+
+    //saves current static meta variables to a JSON file
+    public static void Save()
     {
         string path = Path.Combine(dataDirPath, dataFileName);
+
+        SerializableMeta data = new SerializableMeta();
+        data = meta.Serialize();
+
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(path));
@@ -59,10 +68,15 @@ public class FileDataHandler
                     writer.Write(dataToStore);
                 }
             }
+            Debug.Log(dataToStore);
         }
         catch (Exception e)
         {
             Debug.LogError("oops: " + path + "\n" + e);
         }
+    }
+
+    private void OnApplicationQuit() {
+        Save();
     }
 }

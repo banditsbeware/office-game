@@ -15,7 +15,7 @@ public class fingerClicky : MonoBehaviour
         toClick = transform.GetComponent<Animator>();
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col) //can only click when fingy on something clickable
     {
         if (col == interactor)
         {
