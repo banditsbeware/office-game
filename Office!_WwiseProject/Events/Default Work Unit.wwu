@@ -111,6 +111,24 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_car" ID="{0882EDFF-4369-46ED-B845-71E3D7FEF519}">
+									<ChildrenList>
+										<Action Name="" ID="{EF27E530-F10C-4316-8BA7-B67495AA63A2}" ShortID="770512152">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="car_engine" ID="{0E6D0763-84CC-4270-AE8B-3F1B0884D13C}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{5CC2A884-1A22-4444-BFBB-7583322E5337}" ShortID="945848429">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="car_wheel" ID="{AABA5382-E60A-4F14-A472-B417C093D02C}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Office" ID="{BAB3AA77-5F26-422C-B376-04425E5DBCDE}" ShortID="700691533">
