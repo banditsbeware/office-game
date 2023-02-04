@@ -268,9 +268,9 @@ GameObject:
   m_Component:
   - component: {fileID: 61104051}
   - component: {fileID: 61104050}
-  - component: {fileID: 61104052}
+  - component: {fileID: 61104054}
   m_Layer: 0
-  m_Name: MenuMusic
+  m_Name: MenuAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,7 +313,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61104052
+--- !u!114 &61104054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,7 +333,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6b96bc646b6340d4d83e5c43454dd398, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 187501068}
   - component: {fileID: 187501070}
   - component: {fileID: 187501069}
+  - component: {fileID: 187501071}
   m_Layer: 5
   m_Name: newGame
   m_TagString: Untagged
@@ -520,6 +521,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187501067}
   m_CullTransparentMesh: 1
+--- !u!114 &187501071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187501067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb89221bc9c2e5b4bb16305ed8c0c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  submenu: {fileID: 0}
 --- !u!1 &250266399
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 325121373}
   - component: {fileID: 325121374}
+  - component: {fileID: 325121375}
   m_Layer: 5
   m_Name: volumeSlider
   m_TagString: Untagged
@@ -929,6 +944,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &325121375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325121372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb89221bc9c2e5b4bb16305ed8c0c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  submenu: {fileID: 0}
 --- !u!1 &380885368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1036,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
+  unloadTriggerList: 
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!1 &383329490
@@ -2562,6 +2590,7 @@ GameObject:
   - component: {fileID: 1005122667}
   - component: {fileID: 1005122669}
   - component: {fileID: 1005122668}
+  - component: {fileID: 1005122670}
   m_Layer: 5
   m_Name: continue
   m_TagString: Untagged
@@ -2667,6 +2696,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005122666}
   m_CullTransparentMesh: 1
+--- !u!114 &1005122670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005122666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb89221bc9c2e5b4bb16305ed8c0c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  submenu: {fileID: 0}
 --- !u!1 &1011508599
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,6 +4814,7 @@ GameObject:
   - component: {fileID: 1888712279}
   - component: {fileID: 1888712280}
   - component: {fileID: 1888712281}
+  - component: {fileID: 1888712282}
   m_Layer: 5
   m_Name: ShaneDavid
   m_TagString: Untagged
@@ -4890,6 +4933,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   permaURL: 
+--- !u!114 &1888712282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888712277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb89221bc9c2e5b4bb16305ed8c0c9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  submenu: {fileID: 0}
 --- !u!1 &1889079150
 GameObject:
   m_ObjectHideFlags: 0

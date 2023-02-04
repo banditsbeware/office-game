@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID PLAY_BIRD_FLAPS = 2261578938U;
         static const AkUniqueID PLAY_BIRD_IMPACT = 2704207640U;
         static const AkUniqueID PLAY_BOSS = 1693071901U;
+        static const AkUniqueID PLAY_CAR = 2690797144U;
         static const AkUniqueID PLAY_CHILD = 2952268476U;
         static const AkUniqueID PLAY_CLIENT = 2874228519U;
         static const AkUniqueID PLAY_CLOTHES = 3037538514U;
@@ -57,6 +58,13 @@ namespace AK
         static const AkUniqueID PLAY_SPORTS = 1629223547U;
         static const AkUniqueID PLAY_STREET_AMB = 3151250082U;
         static const AkUniqueID PLAY_TEAM = 3422393765U;
+        static const AkUniqueID PLAY_UI_SELECT_01 = 4294397211U;
+        static const AkUniqueID PLAY_UI_SELECT_02 = 4294397208U;
+        static const AkUniqueID PLAY_UI_SELECT_03 = 4294397209U;
+        static const AkUniqueID PLAY_UI_SELECT_04 = 4294397214U;
+        static const AkUniqueID PLAY_UI_SELECT_05 = 4294397215U;
+        static const AkUniqueID PLAY_UI_SELECT_06 = 4294397212U;
+        static const AkUniqueID PLAY_UI_SELECT_07 = 4294397213U;
         static const AkUniqueID PLAY_VARSITY = 1692086900U;
         static const AkUniqueID PLAY_WEATHER = 3308884970U;
         static const AkUniqueID PLAY_WORK = 1221848793U;
@@ -131,6 +139,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DOPPLERNUM = 4066377393U;
         static const AkUniqueID GOODBYESWITCH = 3961472506U;
         static const AkUniqueID HELLOSWITCH = 1227038859U;
     } // namespace GAME_PARAMETERS
@@ -139,8 +148,10 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BIRD = 1544377644U;
+        static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID CROSSWORD = 630707431U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID OFFICE = 1547173777U;
         static const AkUniqueID PRINTER = 1425580747U;
         static const AkUniqueID STREET = 4142189312U;
     } // namespace BANKS

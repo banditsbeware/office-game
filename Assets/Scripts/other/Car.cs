@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-    private float velocity = .1f;
+    private float velocity = .15f;
     private Vector3 rightSpawnLocation = new Vector3(35, -.5f, 8);
     private Vector3 leftSpawnLocation = new Vector3(-5, -.5f, 7.5f);
+
+    //wwise doppler effect stuff
+    private AK.Wwise.RTPC dopplerNum;
+
     private void FixedUpdate() 
     {
         transform.position += new Vector3(velocity, 0, 0);

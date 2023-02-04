@@ -2233,7 +2233,7 @@ MonoBehaviour:
   minigameBank:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a5f89247fc1d3a341b061e6b6d7c3e42, type: 2}
 --- !u!61 &368170826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6601,7 +6601,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5c362637d2a5f164c851b7e9ea0cabff, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 61d43e77f58a02b4680d56e4986b0491, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -12309,6 +12309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1584307083}
   - component: {fileID: 1584307082}
+  - component: {fileID: 1584307084}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -12356,6 +12357,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1584307084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584307081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb0a643dd62fec44a6a00d5cff1a62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5c362637d2a5f164c851b7e9ea0cabff, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1591850471
 GameObject:
   m_ObjectHideFlags: 0

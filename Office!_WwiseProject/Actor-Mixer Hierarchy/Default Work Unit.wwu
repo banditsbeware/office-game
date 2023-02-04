@@ -368,7 +368,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-23</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -419,7 +419,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-21</Value>
+												<Value>-27</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -456,7 +456,18 @@
 								<Folder Name="car" ID="{8505B195-BBC8-4E46-8958-E4F37D00408D}" ShortID="1048758358">
 									<ChildrenList>
 										<Sound Name="car_wheel" ID="{AABA5382-E60A-4F14-A472-B417C093D02C}" ShortID="373589936">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="CarOnStreet" ID="{3E13FE4D-B8B0-4F7D-B5BF-190163D386C9}" WorkUnitID="{B47C0A2B-DD2A-4DCF-A230-3C5432B928ED}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 												</Reference>
@@ -473,6 +484,55 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{23FFCAB4-B54B-484C-935F-6A0991B722FF}" ShortID="685120866">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="dopplerNum" ID="{8858DDD2-BAAE-4C8E-A845-9F2D09B032CF}" WorkUnitID="{AD6EE1F6-773E-4512-BEC9-912B1E12A5BC}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{79613D5D-A451-4A82-A745-37EAC4D80F10}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-2000</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.9</XPos>
+																						<YPos>-500</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.1</XPos>
+																						<YPos>500</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>2000</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 											<ActiveSourceList>
 												<ActiveSource Name="tire_friction-004" ID="{62CE8F6C-C5D5-4E2D-ADB0-244B38371D9D}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -480,6 +540,11 @@
 										<RandomSequenceContainer Name="car_engine" ID="{0E6D0763-84CC-4270-AE8B-3F1B0884D13C}" ShortID="883559207">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -581,12 +646,22 @@
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-500</YPos>
+																						<YPos>-2000</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>100</XPos>
+																						<XPos>0.9</XPos>
+																						<YPos>-500</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.1</XPos>
 																						<YPos>500</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2</XPos>
+																						<YPos>2000</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -4594,7 +4669,7 @@
 						</Folder>
 						<Folder Name="UI" ID="{9BAA218E-A28B-4510-9338-2BBFE418FDC3}" ShortID="727352532">
 							<ChildrenList>
-								<Sound Name="UI_select-001" ID="{E216317A-0B94-414B-BE61-B2E55EDF568A}" ShortID="246460429">
+								<Sound Name="UI_select_01" ID="{E216317A-0B94-414B-BE61-B2E55EDF568A}" ShortID="246460429">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -4616,7 +4691,7 @@
 										<ActiveSource Name="select-008" ID="{3F77C20A-D89D-4177-841D-DD5838687A24}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="UI_select-002" ID="{0A306BE9-BE5E-4DA7-AF61-910E2D45A4DB}" ShortID="815902329">
+								<Sound Name="UI_select_02" ID="{0A306BE9-BE5E-4DA7-AF61-910E2D45A4DB}" ShortID="815902329">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -4638,7 +4713,7 @@
 										<ActiveSource Name="select-009" ID="{4374D67D-9765-4B60-9C14-8792DF2F404C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="UI_select-003" ID="{1764F56C-7696-4B64-8ABB-DFAEB1DDEC26}" ShortID="271883054">
+								<Sound Name="UI_select_03" ID="{1764F56C-7696-4B64-8ABB-DFAEB1DDEC26}" ShortID="271883054">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -4660,7 +4735,7 @@
 										<ActiveSource Name="select-010" ID="{AF179451-AC36-4CBE-8D2A-8195B1F92DF5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="UI_select-004" ID="{85C8947D-8366-483E-899E-31986902124F}" ShortID="793236368">
+								<Sound Name="UI_select_04" ID="{85C8947D-8366-483E-899E-31986902124F}" ShortID="793236368">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -4682,7 +4757,7 @@
 										<ActiveSource Name="select-011" ID="{84AF9C52-1AD8-4C09-8376-FE9FF2FF33E4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="UI_select-005" ID="{998F09F8-6ACF-4600-BAC2-C4AE53585B2D}" ShortID="684921604">
+								<Sound Name="UI_select_05" ID="{998F09F8-6ACF-4600-BAC2-C4AE53585B2D}" ShortID="684921604">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -4704,7 +4779,7 @@
 										<ActiveSource Name="select-012" ID="{568FEFDF-BE9D-435D-90D1-E0B2CD8BEA0A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="UI_select-006" ID="{0599E82D-56CB-4BCA-9CD4-5112B0139774}" ShortID="889428749">
+								<Sound Name="UI_select_06" ID="{0599E82D-56CB-4BCA-9CD4-5112B0139774}" ShortID="889428749">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -4726,7 +4801,7 @@
 										<ActiveSource Name="select-013" ID="{5AF27DF7-A948-4160-BE65-034C69F15C6A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="UI_select-007" ID="{E26B5B4F-F04D-466A-84A8-4D2104016A18}" ShortID="203527382">
+								<Sound Name="UI_select_07" ID="{E26B5B4F-F04D-466A-84A8-4D2104016A18}" ShortID="203527382">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>

@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class WordsearchButton : MonoBehaviour
+public class WordsearchButton : MonoBehaviour, IPointerEnterHandler
 {
     public bool usedByOtherWord = false;
     private bool selected = false;
@@ -23,5 +24,10 @@ public class WordsearchButton : MonoBehaviour
     {
         selected = false;
         GetComponent<Image>().color = new Color32(255, 255, 255, 30);
+    }
+
+    public void OnPointerEnter(PointerEventData pointerData)
+    {
+        AkSoundEngine.PostEvent("Play_UI_select_03", gameObject);
     }
 }   

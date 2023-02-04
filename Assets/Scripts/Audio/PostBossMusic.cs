@@ -11,12 +11,18 @@ public class PostBossMusic : MonoBehaviour
     //posts music event and sets up callback
     void OnEnable()
     {
-        playBossMusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallCueSync);
+        if(transform.parent.GetComponentInParent<interact>().isInteractable) 
+        {
+            playBossMusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallCueSync);
+        }
     }
 
     void OnDisable()
     {
-        stopBossMusicEvent.Post(gameObject);
+        if(transform.parent.GetComponentInParent<interact>().isInteractable) 
+        {
+            stopBossMusicEvent.Post(gameObject);
+        }
     }
 
     //called every CueSync in Wwise

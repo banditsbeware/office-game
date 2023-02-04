@@ -177,7 +177,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Minigames" ID="{9E7B2728-D305-427C-B194-76E3D99C3B5E}" ShortID="677138562">
+				<Folder Name="FX" ID="{9E7B2728-D305-427C-B194-76E3D99C3B5E}" ShortID="677138562">
 					<ChildrenList>
 						<Folder Name="Harold" ID="{72D77D78-C9D8-4A0A-925D-227438463F31}" ShortID="988679718">
 							<ChildrenList>
@@ -697,6 +697,87 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="printer_cover_open" ID="{B3552F89-ADB9-4DAD-B089-7FCF40019379}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UI" ID="{6E2E08F4-2B4C-4948-A15D-37C526671D62}" ShortID="705515077">
+							<ChildrenList>
+								<Event Name="Play_UI_select_04" ID="{A05228D0-67B7-4564-A4D8-E5BE775A5B2C}">
+									<ChildrenList>
+										<Action Name="" ID="{03EC6828-6DE4-44F8-81C4-6AF9FFB17B76}" ShortID="139241941">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_select_04" ID="{85C8947D-8366-483E-899E-31986902124F}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UI_select_06" ID="{0D762BA7-AF3E-428D-B3CE-77BCDA1285A6}">
+									<ChildrenList>
+										<Action Name="" ID="{A442834A-ADB5-491A-9B9E-79A548A34A1F}" ShortID="139451261">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_select_05" ID="{998F09F8-6ACF-4600-BAC2-C4AE53585B2D}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UI_select_03" ID="{324DFC9D-DC16-4AC2-9852-12C0F5F39909}">
+									<ChildrenList>
+										<Action Name="" ID="{87527477-2C48-4227-B5CB-BDA1B10FBC99}" ShortID="229886166">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_select_06" ID="{0599E82D-56CB-4BCA-9CD4-5112B0139774}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UI_select_07" ID="{4EEA5484-FA2F-4DB4-99C0-84D0A1B59772}">
+									<ChildrenList>
+										<Action Name="" ID="{5AB7094F-31A4-4E22-A3E4-E7AB51BC9687}" ShortID="692162176">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_select_07" ID="{E26B5B4F-F04D-466A-84A8-4D2104016A18}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UI_select_01" ID="{0BFAFC7D-7E94-49C2-812E-A99F240CF623}">
+									<ChildrenList>
+										<Action Name="" ID="{72D9F480-13CB-4E84-ABFD-82960CAB1787}" ShortID="418810635">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_select_01" ID="{E216317A-0B94-414B-BE61-B2E55EDF568A}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UI_select_02" ID="{2AACEF1E-368C-450E-BA1F-6956227F4D57}">
+									<ChildrenList>
+										<Action Name="" ID="{02BC379D-02BF-4129-83BA-DB10BF85F8EE}" ShortID="596322087">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_select_02" ID="{0A306BE9-BE5E-4DA7-AF61-910E2D45A4DB}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UI_select_05" ID="{05800681-C7BD-4A5F-A1B8-976AB954CE54}">
+									<ChildrenList>
+										<Action Name="" ID="{A8A628E3-E1EE-44C1-9C02-E3F6C9800891}" ShortID="988839293">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_select_03" ID="{1764F56C-7696-4B64-8ABB-DFAEB1DDEC26}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
