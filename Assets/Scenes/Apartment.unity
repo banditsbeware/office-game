@@ -768,7 +768,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5c362637d2a5f164c851b7e9ea0cabff, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 61d43e77f58a02b4680d56e4986b0491, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   minigameBank:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6a79159b0e0f7d84b830314da8321e53, type: 2}
 --- !u!1 &697063691
 GameObject:
   m_ObjectHideFlags: 0

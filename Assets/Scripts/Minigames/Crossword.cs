@@ -417,7 +417,7 @@ public class Crossword : MonoBehaviour {
     {
       allWords.Add(this);
     }
-    public Word(List<Word> allWords, List<Word> first)
+    public Word(List<Word> allWords, List<Word> first)  //adds word to the first list of options that appear upon opening the minigame
     {
       allWords.Add(this);
       first.Add(this);

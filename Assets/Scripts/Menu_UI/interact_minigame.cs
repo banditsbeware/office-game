@@ -25,7 +25,7 @@ public class interact_minigame : interact
     public override void OnTriggerEnter2D(Collider2D other)
     {
         base.OnTriggerEnter2D(other);
-        if (other.tag == "Player")
+        if (other.tag == "Player" && minigameBank != null)
         {
             minigameBank.Load();
         }
@@ -34,7 +34,7 @@ public class interact_minigame : interact
     public override void OnTriggerExit2D(Collider2D other)
     {
         base.OnTriggerExit2D(other);
-        if (other.tag == "Player")
+        if (other.tag == "Player" && minigameBank != null)
         {
             minigameBank.Unload();
         }

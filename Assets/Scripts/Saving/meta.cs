@@ -4,9 +4,9 @@ using UnityEngine;
 
 //contains saved data that transcends an entire play of the game
 [System.Serializable]
-public static class meta 
+public static class meta
 {
-    public static float chaos {get; private set;} //float from 1 to 100, scalable chaos
+    public static int chaos {get; private set;} //float from 1 to 100, scalable chaos
     public static int flappyHighScore; //high score in bird game
     public static string currentScene; 
 
@@ -39,9 +39,9 @@ public static class meta
     }
 }
 
-public class SerializableMeta 
+public class SerializableMeta
 {
-    public float chaos;
+    public int chaos;
     public int flappyHighScore;
     public string currentScene;
 }
