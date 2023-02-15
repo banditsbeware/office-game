@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: player_guffaw
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: player_guffaw
+  <IsPlayer>k__BackingField: 1
+  <DialogueText>k__BackingField: garzon! please show this man the door!
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Dialogue
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0eeea9e3e12b7eb4c9026866dd5e49a9, type: 2}
+  <NodeType>k__BackingField: 0
+  <speechTime>k__BackingField: 2.5628583

@@ -1,27 +1,31 @@
-using System.Collections;
+using System;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace SpeakEasy.Elements
 {
-    using Data.Save;
     using Enumerations;
     using Utilities;
     using Windows;
+    using Data.Save;
 
-    public class SESingleChoiceNode : SESpeakingNode
+  public class SEEntryNode : SENode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
-            base.Initialize(seGraphView, position, nodeName, isPlayer);
+            base.Initialize(seGraphView, position, nodeName);
+
+            NodeName = "_entry";
+
+            NodeType = SENodeType.Entry;
 
             SEChoiceSaveData choiceData = new SEChoiceSaveData()
             {
-                Text = "Next Dialogue"
+                Text = "First Node"
             };
-
-            NodeType = SENodeType.SingleChoice;
 
             Choices.Add(choiceData);
         }
@@ -29,7 +33,10 @@ namespace SpeakEasy.Elements
         public override void Draw()
         {
             base.Draw();
-            
+
+            // Input Container //
+            inputContainer.Clear();
+
             // Output Container //
             foreach(SEChoiceSaveData choice in Choices)
             {

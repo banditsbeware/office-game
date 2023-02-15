@@ -97,8 +97,10 @@ namespace SpeakEasy.Windows
             this.AddManipulator(new RectangleSelector());
             this.AddManipulator(new ContentDragger());
 
-            this.AddManipulator(CreateNodeContextualMenu(SENodeType.SingleChoice, "Add Node (Single Choice)"));
-            this.AddManipulator(CreateNodeContextualMenu(SENodeType.MultiChoice,  "Add Node (Multi Choice)"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.SingleChoice, "Add Single Choice Node"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.MultiChoice,  "Add Multi Choice Node"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Entry,  "Add Entry Node"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Exit,  "Add Exit Node"));
             this.AddManipulator(CreateGroupContextualMenu());
         }
 
@@ -121,12 +123,12 @@ namespace SpeakEasy.Windows
         #endregion
 
         #region Elements
-        public SENode CreateNode(SENodeType dialogueType, Vector2 position, string nodeName = "Dialogue Node", bool shouldDraw = true)
+        public SENode CreateNode(SENodeType dialogueType, Vector2 position, string nodeName = "Dialogue Node", bool isPlayer = false, bool shouldDraw = true)
         {
             Type nodeType = Type.GetType($"SpeakEasy.Elements.SE{dialogueType}Node");
             SENode node = (SENode) Activator.CreateInstance(nodeType);
 
-            node.Initialize(this, position, nodeName);  //sets default text and values
+            node.Initialize(this, position, nodeName, isPlayer);  //sets default text and values
 
             if (shouldDraw)
             {
@@ -405,7 +407,7 @@ namespace SpeakEasy.Windows
         #region Repeated Elements
         public void LogUngroupedNode(SENode node)
         {
-            string nodeName = node.DialogueName.ToLower();
+            string nodeName = node.NodeName.ToLower();
 
             if (!ungroupedNodes.ContainsKey(nodeName))
             {
@@ -433,7 +435,7 @@ namespace SpeakEasy.Windows
 
         public void UnlogUngroupedNode(SENode node)
         {
-            string nodeName = node.DialogueName.ToLower();
+            string nodeName = node.NodeName.ToLower();
 
             ungroupedNodes[nodeName].Nodes.Remove(node);
 
@@ -458,7 +460,7 @@ namespace SpeakEasy.Windows
 
         public void LogGroupedNode(SENode node, SEGroup group)
         {
-            string nodeName = node.DialogueName.ToLower();
+            string nodeName = node.NodeName.ToLower();
 
             node.Group = group;
 
@@ -493,7 +495,7 @@ namespace SpeakEasy.Windows
 
         public void UnlogGroupedNode(SENode node, SEGroup group)
         {
-            string nodeName = node.DialogueName.ToLower();
+            string nodeName = node.NodeName.ToLower();
 
             node.Group = null;
 

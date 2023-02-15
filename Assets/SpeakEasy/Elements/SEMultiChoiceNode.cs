@@ -11,11 +11,11 @@ namespace SpeakEasy.Elements
     using Utilities;
     using Windows;
   
-    public class SEMultiChoiceNode : SENode
+    public class SEMultiChoiceNode : SESpeakingNode
     {
-        public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName)
+        public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
-            base.Initialize(seGraphView, position, nodeName);
+            base.Initialize(seGraphView, position, nodeName, isPlayer);
 
             NodeType = SENodeType.MultiChoice;
 

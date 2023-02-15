@@ -20,6 +20,16 @@
 
 /* INPUTS */
 
+.se-node__toggle
+{
+	padding-top: var(--se-metrics-window-pixels-4);
+}
+
+.se-node__label
+{
+	-unity-text-align: middle-center;
+}
+
 .se-node__text-field > .unity-text-field__input
 {
 	background-color: var(--se-colors-window-dark-grey-1);
@@ -29,6 +39,7 @@
 	min-width: var(--se-metrics-window-pixels-160);
 	padding: var(--se-metrics-window-pixels-8);
 	white-space: normal;
+	overflow: visible;
 }
 
 .se-node__text-field__hidden > .unity-text-field__input
@@ -72,7 +83,7 @@
 	border-left-color: var(--se-colors-window-dark-grey-6);
 	border-left-width: var(--se-metrics-window-pixels-4);
 	padding: var(--se-metrics-window-pixels-16);
-	max-width: var(--se-metrics-window-pixels-600);
+	max-width: var(--se-metrics-window-pixels-240);
 }
 
 .se-node__quote-text-field > .unity-text-field__input:hover

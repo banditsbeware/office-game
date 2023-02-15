@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,8 +12,9 @@ namespace SpeakEasy.Utilities
     using ScriptableObjects;
     using Windows;
     using Elements;
-  using SpeakEasy.Data;
-  using System;
+    using SpeakEasy.Data;
+    using Enumerations;
+    
 
   public static class SEIOUtility
     {
@@ -115,7 +117,7 @@ namespace SpeakEasy.Utilities
 
             createdGroups.Add(group.ID, dialogueGroup);
 
-            dialogueContainer.DialogueGroups.Add(dialogueGroup, new List<SENodeSO>());
+            dialogueContainer.NodeGroups.Add(dialogueGroup, new List<SENodeSO>());
 
             SaveAsset(dialogueGroup);
         }
@@ -135,11 +137,6 @@ namespace SpeakEasy.Utilities
             graphData.OldGroupNames = new List<string>(currentGroupNames);
         }
 
-        private static void RemoveFolder(string fullPath)
-        {
-            FileUtil.DeleteFileOrDirectory($"{fullPath}.meta");
-            FileUtil.DeleteFileOrDirectory($"{fullPath}/");
-        }
         #endregion
 
         #region Nodes
@@ -156,12 +153,12 @@ namespace SpeakEasy.Utilities
 
                 if (node.Group != null)
                 {
-                    groupedNodeNames.AddItem(node.Group.title, node.DialogueName);
+                    groupedNodeNames.AddItem(node.Group.title, node.NodeName);
 
                     continue;
                 }
 
-                ungroupedNodeNames.Add(node.DialogueName);
+                ungroupedNodeNames.Add(node.NodeName);
             }
 
             UpdateChoiceConnections();
@@ -178,12 +175,13 @@ namespace SpeakEasy.Utilities
             SENodeSaveData nodeData = new SENodeSaveData()
             {
                 ID = node.ID,
-                Name = node.DialogueName,
+                Name = node.NodeName,
                 Choices = choices,
-                Text = node.Text,
+                Text = node.DialogueText,
                 GroupID = node.Group?.ID,
                 NodeType = node.NodeType,
-                Position = node.GetPosition().position
+                Position = node.GetPosition().position,
+                IsPlayer = node.IsPlayer
             };
 
             graphData.Nodes.Add(nodeData);
@@ -195,18 +193,18 @@ namespace SpeakEasy.Utilities
 
             if (node.Group != null)
             {
-                dialogue = CreateAsset<SENodeSO>($"{containerFolderPath}/Groups/{node.Group.title}/Nodes", node.DialogueName);
+                dialogue = CreateAsset<SENodeSO>($"{containerFolderPath}/Groups/{node.Group.title}/Nodes", node.NodeName);
 
-                container.DialogueGroups.AddItem(createdGroups[node.Group.ID], dialogue);
+                container.NodeGroups.AddItem(createdGroups[node.Group.ID], dialogue);
             }
             else
             {
-                dialogue = CreateAsset<SENodeSO>($"{containerFolderPath}/Global/Nodes", node.DialogueName);
+                dialogue = CreateAsset<SENodeSO>($"{containerFolderPath}/Global/Nodes", node.NodeName);
 
                 container.UngroupedNodes.Add(dialogue);
             }
 
-            dialogue.Initialize(node.DialogueName, node.Text, ConvertChoiceDataToSaveData(node.Choices), node.NodeType, node.IsStartingNode());
+            dialogue.Initialize(node.NodeName, node.DialogueText, ConvertChoiceDataToSaveData(node.Choices), node.NodeType, node.IsPlayer);
 
             createdNodes.Add(node.ID, dialogue);
 
@@ -345,14 +343,22 @@ namespace SpeakEasy.Utilities
 
         private static void LoadNodes(List<SENodeSaveData> nodes)
         {
+            graphView.NameErrors = 0;
+
             foreach (SENodeSaveData nodeData in nodes)
             {
-                List<SEChoiceSaveData> choices = CloneChoices(nodeData.Choices);
-                SENode node = graphView.CreateNode(nodeData.NodeType, nodeData.Position, nodeData.Name, false);
+                List<SEChoiceSaveData> choices = new List<SEChoiceSaveData>();
+
+                if (nodeData.NodeType != SENodeType.Exit)
+                {
+                    choices = CloneChoices(nodeData.Choices);
+                }
+
+                SENode node = graphView.CreateNode(nodeData.NodeType, nodeData.Position, nodeData.Name, nodeData.IsPlayer, false);
 
                 node.ID = nodeData.ID;
                 node.Choices = choices;
-                node.Text = nodeData.Text;
+                node.DialogueText = nodeData.Text;
 
                 node.Draw();
 
@@ -415,7 +421,7 @@ namespace SpeakEasy.Utilities
             
         }
 
-        private static void CreateFolder(string path, string folderName)
+        public static void CreateFolder(string path, string folderName)
         {
             if (AssetDatabase.IsValidFolder($"{path}/{folderName}"))
             {
@@ -425,7 +431,7 @@ namespace SpeakEasy.Utilities
             AssetDatabase.CreateFolder(path, folderName);
         }
         
-        private static T CreateAsset<T>(string path, string assetName) where T : ScriptableObject
+        public static T CreateAsset<T>(string path, string assetName) where T : ScriptableObject
         {
             string fullPath = $"{path}/{assetName}.asset";
 
@@ -440,7 +446,7 @@ namespace SpeakEasy.Utilities
             return asset;
         }
 
-        private static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject
+        public static T LoadAsset<T>(string path, string assetName) where T : ScriptableObject
         {
             string fullPath = $"{path}/{assetName}.asset";
 
@@ -451,11 +457,17 @@ namespace SpeakEasy.Utilities
         
         #region Deletion Methods
 
-        private static void RemoveAsset(string path, string assetName)
+        public static void RemoveAsset(string path, string assetName)
         {
             AssetDatabase.DeleteAsset($"{path}/{assetName}.asset");
         }
 
+        public static void RemoveFolder(string fullPath)
+        {
+            FileUtil.DeleteFileOrDirectory($"{fullPath}.meta");
+            FileUtil.DeleteFileOrDirectory($"{fullPath}/");
+        }
+        
         #endregion
 
         #region Inquiry Methods

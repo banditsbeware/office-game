@@ -56,6 +56,17 @@ namespace SpeakEasy.Utilities
             return button;
         }
 
+        public static Toggle CreateToggle(bool isOn, EventCallback<ChangeEvent<bool>> onValueChanged = null)
+        {
+            Toggle toggle = new Toggle();
+
+            toggle.RegisterValueChangedCallback<bool>(onValueChanged);
+
+            toggle.value = isOn;
+
+            return toggle;
+        }
+
         public static Port CreatePort(this SENode node, string portName = "", Orientation orientation = Orientation.Horizontal, Direction direction = Direction.Output, Port.Capacity capacity = Port.Capacity.Single)
         {
             Port port = node.InstantiatePort(orientation, direction, capacity, typeof(bool));

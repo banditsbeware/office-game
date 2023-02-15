@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: Testy
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Testy
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: e2aed0c0-268e-4e3e-8263-fbde30a0239e
+    <Name>k__BackingField: schnastyLanguage
+    <Position>k__BackingField: {x: 971, y: 256}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: b8314146-f35c-40ed-8775-c8b18527f311
+    <Name>k__BackingField: player_guffaw
+    <Text>k__BackingField: garzon! please show this man the door!
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 36d90220-a74e-4583-9a70-2bbbcd3aa10b
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1876, y: -1}
+  - <ID>k__BackingField: 6ce4d307-c6d1-41d6-856f-144013347c0a
+    <Name>k__BackingField: player_mineEyes
+    <Text>k__BackingField: Mine eyes doth decieve me, hooligan
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 36d90220-a74e-4583-9a70-2bbbcd3aa10b
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1876, y: -207}
+  - <ID>k__BackingField: 7bb9f4cf-93c2-44af-b8e4-f25e90f83162
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 9b771a19-53fd-4be6-9569-b4bca1fd42ba
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: 362, y: 158}
+  - <ID>k__BackingField: 9b771a19-53fd-4be6-9569-b4bca1fd42ba
+    <Name>k__BackingField: computer_hello
+    <Text>k__BackingField: sup pussy
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: how dare thee
+      <NodeID>k__BackingField: 6c68013f-1d1f-449a-88bb-ba680d1b738d
+    - <Text>k__BackingField: bitch
+      <NodeID>k__BackingField: efb1ca6a-04ca-4c9b-b499-8c69232349c7
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 613, y: 134}
+  - <ID>k__BackingField: efb1ca6a-04ca-4c9b-b499-8c69232349c7
+    <Name>k__BackingField: player_fuckYou
+    <Text>k__BackingField: fuck you
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 4cf38233-f1ee-4872-942f-5cb60025d281
+    <GroupID>k__BackingField: e2aed0c0-268e-4e3e-8263-fbde30a0239e
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 996, y: 315}
+  - <ID>k__BackingField: 4cf38233-f1ee-4872-942f-5cb60025d281
+    <Name>k__BackingField: player_suckMyDick
+    <Text>k__BackingField: suck my dick
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 9e9ab453-5914-45d1-a688-884f93a52964
+    <GroupID>k__BackingField: e2aed0c0-268e-4e3e-8263-fbde30a0239e
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1296, y: 315}
+  - <ID>k__BackingField: 9e9ab453-5914-45d1-a688-884f93a52964
+    <Name>k__BackingField: Dialogue Node
+    <Text>k__BackingField: That's what your mom said last night
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 36d90220-a74e-4583-9a70-2bbbcd3aa10b
+    <GroupID>k__BackingField: e2aed0c0-268e-4e3e-8263-fbde30a0239e
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1592, y: 315}
+  - <ID>k__BackingField: 6c68013f-1d1f-449a-88bb-ba680d1b738d
+    <Name>k__BackingField: player_howDareThee
+    <Text>k__BackingField: how dare thee, I doth thine is thou
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: e3a3f735-169c-4db5-9e90-9e5dc3aec46d
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 996, y: -29}
+  - <ID>k__BackingField: e3a3f735-169c-4db5-9e90-9e5dc3aec46d
+    <Name>k__BackingField: computer_shakespeareBitch
+    <Text>k__BackingField: what is this shakespeare? you cunt
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: hooligan
+      <NodeID>k__BackingField: 6ce4d307-c6d1-41d6-856f-144013347c0a
+    - <Text>k__BackingField: waiter!
+      <NodeID>k__BackingField: b8314146-f35c-40ed-8775-c8b18527f311
+    - <Text>k__BackingField: sheeeeeeit
+      <NodeID>k__BackingField: efb1ca6a-04ca-4c9b-b499-8c69232349c7
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1318, y: -53}
+  - <ID>k__BackingField: 36d90220-a74e-4583-9a70-2bbbcd3aa10b
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 2443, y: -1}
+  <OldGroupNames>k__BackingField:
+  - schnastyLanguage
+  <OldUngroupedNames>k__BackingField:
+  - player_guffaw
+  - player_mineEyes
+  - _entry
+  - computer_hello
+  - player_howDareThee
+  - computer_shakespeareBitch
+  - _exit
+  <OldGroupedNames>k__BackingField:
+    list:
+    - Key: schnastyLanguage
+      Value:
+      - player_fuckYou
+      - player_suckMyDick
+      - Dialogue Node

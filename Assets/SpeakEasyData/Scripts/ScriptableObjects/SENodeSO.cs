@@ -9,18 +9,23 @@ namespace SpeakEasy.ScriptableObjects
     public class SENodeSO : ScriptableObject
     {
         [field: SerializeField] public string NodeName {get; set;}
-        [field: SerializeField] [field: TextArea] public string Text {get; set;}
+        [field: SerializeField] public bool IsPlayer {get; set;}
+        [field: SerializeField] [field: TextArea] public string DialogueText {get; set;}
         [field: SerializeField] public List<SEChoiceData> Choices {get; set;}
         [field: SerializeField] public SENodeType NodeType {get; set;}
-        [field: SerializeField] public bool IsStartingDialogue {get; set;}
+        [field: SerializeField] public float speechTime {get; set;}
 
-        public void Initialize(string nodeName, string text, List<SEChoiceData> choices, SENodeType nodeType, bool isStartingDialogue)
+        public void Initialize(string nodeName, string text, List<SEChoiceData> choices, SENodeType nodeType, bool isPlayer)
         {
             NodeName = nodeName;
-            Text = text;
+            DialogueText = text;
             Choices = choices;
             NodeType = nodeType;
-            IsStartingDialogue = isStartingDialogue;
+            IsPlayer = isPlayer;
+
+            speechTime = (float)text.Length * .05f + Random.Range(0f, 1f);
         }
+
+
     }
 }

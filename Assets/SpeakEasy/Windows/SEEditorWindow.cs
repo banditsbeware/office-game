@@ -118,8 +118,6 @@ namespace SpeakEasy.Windows
 
             Clear(true);
 
-            Debug.Log("it's loading");
-
             SEIOUtility.Initialize(graphView, Path.GetFileNameWithoutExtension(filePath));
             SEIOUtility.Load();
         }

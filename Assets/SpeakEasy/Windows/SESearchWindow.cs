@@ -36,6 +36,16 @@ namespace SpeakEasy.Windows
                     level = 2,
                     userData = SENodeType.MultiChoice
                 },
+                new SearchTreeEntry(new GUIContent("Entry", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.Entry
+                },
+                new SearchTreeEntry(new GUIContent("Exit", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.Exit
+                },
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Group"), 1),
                 new SearchTreeEntry(new GUIContent("Single Group", indentation))
                 {
@@ -63,6 +73,18 @@ namespace SpeakEasy.Windows
                 {
                     SEMultiChoiceNode multiChoiceNode = (SEMultiChoiceNode) graphView.CreateNode(SENodeType.MultiChoice, localMousePosition);
                     graphView.AddElement(multiChoiceNode);
+                    return true;
+                }
+                case SENodeType.Entry:
+                {
+                    SEEntryNode entryNode = (SEEntryNode) graphView.CreateNode(SENodeType.Entry, localMousePosition);
+                    graphView.AddElement(entryNode);
+                    return true;
+                }
+                case SENodeType.Exit:
+                {
+                    SEExitNode exitNode = (SEExitNode) graphView.CreateNode(SENodeType.Exit, localMousePosition);
+                    graphView.AddElement(exitNode);
                     return true;
                 }
                 case Group _:

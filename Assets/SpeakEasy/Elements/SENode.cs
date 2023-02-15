@@ -15,20 +15,22 @@ namespace SpeakEasy.Elements
   public class SENode : Node
     {
         public string ID {get; set;}
-        public string DialogueName {get; set;}
+        public string NodeName {get; set;}
+        public string DialogueText {get; set;}
+
+        public bool IsPlayer;
+
         public List<SEChoiceSaveData> Choices {get; set;}
-        public string Text {get; set;}
         public SENodeType NodeType {get; set;}
         public SEGroup Group {get; set;}
         protected SEGraphView graphView;
         private Color defaultBackgroundColor;
 
-        public virtual void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName)
+        public virtual void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
             ID = Guid.NewGuid().ToString();
-            DialogueName = nodeName;
+            NodeName = nodeName;
             Choices = new List<SEChoiceSaveData>();
-            Text = "Dialoge text.";
             
             graphView = seGraphView;
             defaultBackgroundColor  = new Color(29f / 255f, 29 / 255f, 30 / 255f);
@@ -42,14 +44,14 @@ namespace SpeakEasy.Elements
         public virtual void Draw()
         {
             // Title Contianer //
-            TextField dialogueNameTextField = SEElementUtility.CreateTextField(DialogueName, null, callback =>
+            TextField dialogueNameTextField = SEElementUtility.CreateTextField(NodeName, null, callback =>
             {
                 TextField target = (TextField) callback.target;
                 target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
 
                 if (string.IsNullOrEmpty(target.value))
                 {
-                    if (!string.IsNullOrEmpty(DialogueName))
+                    if (!string.IsNullOrEmpty(NodeName))
                     {
 
                         graphView.NameErrors++;
@@ -57,7 +59,7 @@ namespace SpeakEasy.Elements
                 }
                 else
                 {
-                    if (string.IsNullOrEmpty(DialogueName))
+                    if (string.IsNullOrEmpty(NodeName))
                     {
                         graphView.NameErrors--;
                     }
@@ -67,7 +69,7 @@ namespace SpeakEasy.Elements
                 {
                     graphView.UnlogUngroupedNode(this);
 
-                    DialogueName = target.value; //value of changed text field when finished editing
+                    NodeName = target.value; //value of changed text field when finished editing
 
                     graphView.LogUngroupedNode(this);
 
@@ -77,7 +79,7 @@ namespace SpeakEasy.Elements
                 SEGroup currentGroup = Group;
 
                 graphView.UnlogGroupedNode(this, Group);
-                DialogueName = target.value;
+                NodeName = target.value;
                 graphView.LogGroupedNode(this, currentGroup);
             }
             );
@@ -93,26 +95,6 @@ namespace SpeakEasy.Elements
             // Input Container //
             Port inputPort = this.CreatePort("in", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
             inputContainer.Add(inputPort);  //inputContainer is a child of the middle container in the Node, on the left side
-
-            // Extensions Container //
-            VisualElement customDataContainer = new VisualElement();
-
-            customDataContainer.AddToClassList("se-node__custom-data-container");
-
-            Foldout textFoldout = SEElementUtility.CreateFoldout("Dialogue Text");
-            TextField textTextField = SEElementUtility.CreateTextArea(Text, null, callback =>
-            {
-                Text = callback.newValue;
-            });
-
-            textTextField.AddClasses(
-                "se-node__text-field",
-                "se-node__quote-text-field"
-            );
-            
-            textFoldout.Add(textTextField);
-            customDataContainer.Add(textFoldout);
-            extensionContainer.Add(customDataContainer);
         }
 
         public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
@@ -140,13 +122,6 @@ namespace SpeakEasy.Elements
 
                 graphView.DeleteElements(port.connections);
             }
-        }
-
-        public bool IsStartingNode()
-        {
-            Port inputPort = (Port) inputContainer.Children().First();
-
-            return !inputPort.connected;
         }
 
         public void SetErrorColor(Color color)
