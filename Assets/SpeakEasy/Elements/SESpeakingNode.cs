@@ -1,18 +1,13 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace SpeakEasy.Elements
 {
-    using Enumerations;
     using Utilities;
     using Windows;
-    using Data.Save;
 
-  public class SESpeakingNode : SENode
+    //class parent to SingleChoice and MultiChoice nodes. Add the Dialogue Text dropdown underneath the node and the isPlayer Toggle
+    public class SESpeakingNode : SENode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {

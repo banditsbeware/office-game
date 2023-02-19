@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System;
 using System.IO;
 using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SaveLoadSystem : MonoBehaviour
@@ -68,7 +68,6 @@ public class SaveLoadSystem : MonoBehaviour
                     writer.Write(dataToStore);
                 }
             }
-            Debug.Log(dataToStore);
         }
         catch (Exception e)
         {

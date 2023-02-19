@@ -61,19 +61,21 @@ public class TextWriter : MonoBehaviour
         public TextWriterSingle(TMP_Text uiText, string text, float time)
         {
             this.uiText = uiText;
-            this.textToWrite = text;
-            this.timePerChar = time;
-            this.invisChars = true;
+            textToWrite = text;
+            timePerChar = time;
+            invisChars = true;
             charIndex = 0;
+            timer = -.1f; 
         }
         
         public TextWriterSingle(TMP_Text uiText, string text)
         {
             this.uiText = uiText;
-            this.textToWrite = text;
+            textToWrite = text;
             timePerChar = .05f;
             invisChars = true;
-            charIndex = 0;       
+            charIndex = 0;    
+            timer = 0f;   
         }
         
         //return true on isComplete
@@ -90,6 +92,7 @@ public class TextWriter : MonoBehaviour
                 {
                     text += " <alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
                 }
+
                 uiText.text = text;
 
                 if (charIndex >= textToWrite.Length)

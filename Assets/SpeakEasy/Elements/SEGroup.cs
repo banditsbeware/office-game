@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace SpeakEasy.Elements
 {
+    //contains nodes on graph for visual organization, allows repeaded node names as long as they're in separate graphs
     public class SEGroup : Group
     {
         public string ID;

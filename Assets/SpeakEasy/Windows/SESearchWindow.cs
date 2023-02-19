@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -35,6 +34,12 @@ namespace SpeakEasy.Windows
                 {
                     level = 2,
                     userData = SENodeType.MultiChoice
+                },
+                new SearchTreeGroupEntry(new GUIContent("Logic Node"), 1),
+                new SearchTreeEntry(new GUIContent("If", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.If
                 },
                 new SearchTreeEntry(new GUIContent("Entry", indentation))
                 {

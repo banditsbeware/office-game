@@ -191,6 +191,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: text_bubbles_empty
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 791
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8f2b146e01eb741b415f226c7a4ab6
+      internalID: 1754910736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -203,6 +224,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       text_bubbles_14ppu_2: -412031149
+      text_bubbles_empty: 1754910736
       text_bubbles_14ppu_1: -412031149
       text_bubbles_14ppu_0: 665816856
   spritePackingTag: 

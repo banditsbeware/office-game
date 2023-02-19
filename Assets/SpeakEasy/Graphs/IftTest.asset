@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: IftTest
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: IftTest
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: a4ba99dc-64de-4e88-ba6c-87478321e3a5
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 77090d66-3b37-41ae-b9dd-18d1eb588dbe
+    <IfStatements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: 98, y: 386}
+  - <ID>k__BackingField: 77090d66-3b37-41ae-b9dd-18d1eb588dbe
+    <Name>k__BackingField: flappy_check
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 472c1a49-c9ac-4628-857e-fb365bc18ceb
+      <contextVariableName>k__BackingField: flappyHighScore
+      <comparisonSign>k__BackingField: '>='
+      <comparisonValue>k__BackingField: 1
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 865f5b89-b1ac-42ed-aa17-f1ffde599805
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 4
+    <Position>k__BackingField: {x: 348, y: 386}
+  - <ID>k__BackingField: 472c1a49-c9ac-4628-857e-fb365bc18ceb
+    <Name>k__BackingField: flap
+    <Text>k__BackingField: Wow! big boy flappy!
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ebd0525a-482f-45cd-8a94-91087f8b1cb8
+    <IfStatements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 752, y: 272}
+  - <ID>k__BackingField: 865f5b89-b1ac-42ed-aa17-f1ffde599805
+    <Name>k__BackingField: no_flap
+    <Text>k__BackingField: oh no, no no flappy
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 358c4e83-495e-4b7f-b0d6-ac2757ed0857
+    <IfStatements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 752, y: 487}
+  - <ID>k__BackingField: 58dff875-c9c7-4da9-a40e-66c45e8ec8cd
+    <Name>k__BackingField: Dialogue Node
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: b0fb0929-0c5b-421d-bd2c-734309e990c6
+      <contextVariableName>k__BackingField: currentScene
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: Street
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ebd0525a-482f-45cd-8a94-91087f8b1cb8
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 4
+    <Position>k__BackingField: {x: 1503, y: 615}
+  - <ID>k__BackingField: b0fb0929-0c5b-421d-bd2c-734309e990c6
+    <Name>k__BackingField: stinky
+    <Text>k__BackingField: Whoops
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: ebd0525a-482f-45cd-8a94-91087f8b1cb8
+    <IfStatements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1903, y: 693}
+  - <ID>k__BackingField: ebd0525a-482f-45cd-8a94-91087f8b1cb8
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 2371, y: 487}
+  - <ID>k__BackingField: 358c4e83-495e-4b7f-b0d6-ac2757ed0857
+    <Name>k__BackingField: choice
+    <Text>k__BackingField: choose end if street
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: end if Street
+      <NodeID>k__BackingField: 58dff875-c9c7-4da9-a40e-66c45e8ec8cd
+    - <Text>k__BackingField: new choice
+      <NodeID>k__BackingField: ebd0525a-482f-45cd-8a94-91087f8b1cb8
+    <IfStatements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1162, y: 593}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNames>k__BackingField:
+  - _entry
+  - flappy_check
+  - flap
+  - no_flap
+  - Dialogue Node
+  - stinky
+  - _exit
+  - choice
+  <OldGroupedNames>k__BackingField:
+    list: []

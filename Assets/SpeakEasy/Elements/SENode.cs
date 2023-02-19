@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -12,18 +11,20 @@ namespace SpeakEasy.Elements
     using Windows;
     using Data.Save;
 
-  public class SENode : Node
+    //base class for all nodes on graph
+     public class SENode : Node
     {
-        public string ID {get; set;}
-        public string NodeName {get; set;}
-        public string DialogueText {get; set;}
+        public string ID {get; set;}  //unique ID
+        public string NodeName {get; set;}   //node title, used for playing audio/identifying
+        public string DialogueText {get; set;}    //text to be shown on screen, dialogue contents
 
-        public bool IsPlayer;
+        public bool IsPlayer;   //dialogue in node is spoken by player
 
-        public List<SEChoiceSaveData> Choices {get; set;}
-        public SENodeType NodeType {get; set;}
-        public SEGroup Group {get; set;}
-        protected SEGraphView graphView;
+        public List<SEChoiceSaveData> Choices {get; set;}   //list of choice output ports. Used by SingleChoice and MultiChoice (and technically entry node)
+        public List<SEIfSaveData> IfStatements {get; set;}   //list of logic output ports. Used by IfNode
+        public SENodeType NodeType {get; set;}   //See Enumerations.SENodeType
+        public SEGroup Group {get; set;}   //group the node is inside
+        protected SEGraphView graphView;   //reference to the graph
         private Color defaultBackgroundColor;
 
         public virtual void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
@@ -31,6 +32,7 @@ namespace SpeakEasy.Elements
             ID = Guid.NewGuid().ToString();
             NodeName = nodeName;
             Choices = new List<SEChoiceSaveData>();
+            IfStatements = new List<SEIfSaveData>();
             
             graphView = seGraphView;
             defaultBackgroundColor  = new Color(29f / 255f, 29 / 255f, 30 / 255f);
@@ -44,11 +46,12 @@ namespace SpeakEasy.Elements
         public virtual void Draw()
         {
             // Title Contianer //
-            TextField dialogueNameTextField = SEElementUtility.CreateTextField(NodeName, null, callback =>
+            TextField nodeNameTextField = SEElementUtility.CreateTextField(NodeName, null, callback =>
             {
                 TextField target = (TextField) callback.target;
                 target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
 
+                //adds error to graph if, and only if, you delete the last character from the node title
                 if (string.IsNullOrEmpty(target.value))
                 {
                     if (!string.IsNullOrEmpty(NodeName))
@@ -65,6 +68,7 @@ namespace SpeakEasy.Elements
                     }
                 }
 
+                //NodeName has to be taken out of graphview, then updated, then put back in, so that old versions of nodes aren't left in the lists in graphView
                 if (Group == null)
                 {
                     graphView.UnlogUngroupedNode(this);
@@ -84,19 +88,20 @@ namespace SpeakEasy.Elements
             }
             );
 
-            dialogueNameTextField.AddClasses(
+            nodeNameTextField.AddClasses(
                 "se-node__text-field",
                 "se-node__filename-text-field",
                 "se-node__text-field__hidden"
             );
 
-            titleContainer.Insert(0, dialogueNameTextField);  //titleContainer is part of the Node class, it's essentially the header
+            titleContainer.Insert(0, nodeNameTextField);  //titleContainer is part of the inherited Node class, it's essentially the header
 
             // Input Container //
             Port inputPort = this.CreatePort("in", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
             inputContainer.Add(inputPort);  //inputContainer is a child of the middle container in the Node, on the left side
         }
 
+        //menu that appears when you right click on the graph
         public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
         {
             evt.menu.AppendAction("Disconnect Inputs", actionEvent => DisconnectPorts(inputContainer));

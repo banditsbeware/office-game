@@ -1,18 +1,12 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace SpeakEasy.Elements
 {
     using Enumerations;
-    using Utilities;
     using Windows;
-    using Data.Save;
 
-  public class SEExitNode : SENode
+    //node to be used to end the dialogue, may be used anywhere on graph
+    public class SEExitNode : SENode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
@@ -25,7 +19,7 @@ namespace SpeakEasy.Elements
 
         public override void Draw()
         {
-            base.Draw();
+            base.Draw(); //the single input port is initialized in the base class
 
             outputContainer.Clear();
         }

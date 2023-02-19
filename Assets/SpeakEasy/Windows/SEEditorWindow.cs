@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 namespace SpeakEasy.Windows
 {
     using Utilities;
+    
     //creates the window in Unity in which the magic happens
     public class SEEditorWindow : EditorWindow
     {

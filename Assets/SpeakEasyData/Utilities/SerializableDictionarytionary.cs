@@ -105,7 +105,7 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
     {
         if (KeyPositions.ContainsKey(key))
         {
-            throw new ArgumentException("An element with the same key already exists in the dictionary.");
+            return;
         }
         else
         {
@@ -159,7 +159,7 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
     public int Count => list.Count;
     public bool IsReadOnly => false;
  
-    public void Add(KeyValuePair<TKey, TValue> kvp) => Add(kvp.Key, kvp.Value);
+    public void Add(string v, KeyValuePair<TKey, TValue> kvp) => Add(kvp.Key, kvp.Value);
  
     public void Clear()
     {
@@ -200,5 +200,10 @@ public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDic
         }
     }
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+
+    public void Add(KeyValuePair<TKey, TValue> item)
+    {
+        throw new NotImplementedException();
+    }
     #endregion
 }

@@ -1,14 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
-using UnityEngine;
-using TMPro;
 
 namespace SpeakEasy.Inspectors
 {
-  using SpeakEasy.ScriptableObjects;
-  using Utilities;
+    using SpeakEasy.ScriptableObjects;
+    using Utilities;
 
+    //creates custom inspector for showing SEDialogue on GameObject
     [CustomEditor(typeof(SEDialogue))]
     public class SEInspector : Editor
     {

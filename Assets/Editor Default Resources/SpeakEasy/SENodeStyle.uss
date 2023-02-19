@@ -97,6 +97,20 @@
 	border-color: var(--se-colors-window-dark-grey-6);
 }
 
+.se-node__context-popup-field
+{
+	width: var(--se-metrics-window-pixels-160);
+	color: var(--se-colors-window-dark-grey-1);
+	white-space: nowrap;
+}
+
+.se-node__symbol-popup-field
+{
+	width: var(--se-metrics-window-pixels-35);
+	color: var(--se-colors-window-dark-grey-1);
+	white-space: nowrap;
+}
+
 /* BUTTONS */
 
 .se-node__button

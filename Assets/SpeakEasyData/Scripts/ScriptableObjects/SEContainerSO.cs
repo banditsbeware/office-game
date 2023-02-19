@@ -1,15 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace SpeakEasy.ScriptableObjects
 {
     using Enumerations;
+    //holds information about each dialogue graph to be used during runtime
     public class SEContainerSO : ScriptableObject
     {
-        public string FileName {get; set;}
-        public SerializableDictionary<SEGroupSO, List<SENodeSO>> NodeGroups {get; set;}
-        public List<SENodeSO> UngroupedNodes {get; set;}
+        [field: SerializeField] public string FileName {get; set;}
+        [field: SerializeField] public SerializableDictionary<SEGroupSO, List<SENodeSO>> NodeGroups {get; set;}
+        [field: SerializeField] public List<SENodeSO> UngroupedNodes {get; set;}
         
         public void Initialize(string fileName)
         {

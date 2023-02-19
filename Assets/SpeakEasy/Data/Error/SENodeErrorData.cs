@@ -4,7 +4,7 @@ namespace SpeakEasy.Data.Error
 {
     using Elements;
 
-    //contains a list of nodes that have the same title, a new instance is created for each unique title
+    //error data about nodes
     public class SENodeErrorData
     {
         public SEErrorData ErrorData { get; set; }

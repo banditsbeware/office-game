@@ -18,9 +18,9 @@ namespace SpeakEasy.Utilities
         {
             foreach (string styleSheetName in styleSheetNames)
             {
-            StyleSheet styleSheet = (StyleSheet) EditorGUIUtility.Load(styleSheetName);
+                StyleSheet styleSheet = (StyleSheet) EditorGUIUtility.Load(styleSheetName);
 
-            element.styleSheets.Add(styleSheet); 
+                element.styleSheets.Add(styleSheet); 
             }
 
             return element;

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.Experimental.GraphView;
@@ -11,6 +9,7 @@ namespace SpeakEasy.Elements
     using Utilities;
     using Windows;
   
+    //node for choosing from a selection of dialogue choices
     public class SEMultiChoiceNode : SESpeakingNode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
@@ -31,7 +30,7 @@ namespace SpeakEasy.Elements
         {
             base.Draw();
 
-            // Main Container //
+            // Main Container (above inputs/outputs) //
             Button addChoiceButton = SEElementUtility.CreateButton("Add Port", () =>
             {
                 SEChoiceSaveData choiceData = new SEChoiceSaveData()
@@ -88,7 +87,7 @@ namespace SpeakEasy.Elements
             });
 
             deletePortButton.AddToClassList("se-node__button");
-
+            
             TextField choiceTextField = SEElementUtility.CreateTextField(choiceData.Text, null, callback =>
             {
                 choiceData.Text = callback.newValue;
@@ -104,7 +103,7 @@ namespace SpeakEasy.Elements
             choicePort.Add(deletePortButton);
 
             return choicePort;
-    }
+        }
         #endregion
     }
 }

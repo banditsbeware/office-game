@@ -1,9 +1,5 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace SpeakEasy.Elements
 {
@@ -12,7 +8,9 @@ namespace SpeakEasy.Elements
     using Windows;
     using Data.Save;
 
-  public class SEEntryNode : SENode
+    //node to be used to begin the dialogue tree from a runtime event (opening a minigame)
+    //should be only one per graph
+    public class SEEntryNode : SENode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {

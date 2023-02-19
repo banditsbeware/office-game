@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 
 namespace SpeakEasy.Data.Error
 {
-  using Elements;
-
+    using Elements;
+    // error data about groups
     public class SEGroupErrorData
     {
         public SEErrorData ErrorData { get; set; }

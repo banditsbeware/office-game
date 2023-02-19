@@ -1,18 +1,18 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEditor;
 using TMPro;
 
 namespace SpeakEasy
 {
     using ScriptableObjects;
-    using Enumerations;
+    using static Enumerations.SENodeType;
     using Data;
-    using UnityEngine.UIElements;
 
-  //The Class you place on a Dialogue Handler to operate in Game
-  public class SEDialogue : MonoBehaviour
+    //The Class you place on a Dialogue Handler to operate in Game
+    public class SEDialogue : MonoBehaviour
     {
         //Dialogue ScriptableObjects
         [SerializeField] private SEContainerSO container;
@@ -39,17 +39,43 @@ namespace SpeakEasy
 
         private Coroutine speakingCoroutine;
 
+        private Image playerBubbleImage;
+        private Image npcBubbleImage;
 
-        private void OnEnable() 
+        private Sprite playerBubbleSprite;
+        private Sprite npcBubbleSprite;
+        private Sprite emptySprite;
+
+        private void Awake() 
         {
+            meta.AddVariablesToList();
+
             playerSpeechText = playerSpeechBubble.GetComponentInChildren<TMP_Text>();
             npcSpeechText = npcSpeechBubble.GetComponentInChildren<TMP_Text>();
+
+            npcBubbleImage = npcSpeechBubble.GetComponent<Image>();
+            playerBubbleImage = playerSpeechBubble.GetComponent<Image>();
+
+            npcBubbleSprite = npcBubbleImage.sprite;
+            playerBubbleSprite = playerBubbleImage.sprite;
+
+            emptySprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Sprites/empty.png");
+        }
+
+        //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
+        private void OnEnable() 
+        {
+            npcSpeechText.text = "";
+            playerSpeechText.text = "";
+
+            npcBubbleImage.sprite = emptySprite;
+            playerBubbleImage.sprite = emptySprite;
 
             HideChoices();
 
             node = NextNode(entryNode);
 
-            BeginNode();
+            StartCoroutine(BeginningDelay(1f));
         }
 
         // private void Update() 
@@ -64,24 +90,42 @@ namespace SpeakEasy
 
         private void BeginNode()
         {
-            if (node.NodeType == SENodeType.SingleChoice || node.NodeType == SENodeType.MultiChoice) //if it's a speaking node
+            if (node.NodeType == SingleChoice || node.NodeType == MultiChoice) //if it's a speaking node
             {
                 if (node.IsPlayer)
                 {
-                    speakingCoroutine = StartCoroutine(PlayerSpeak(node));
+                    speakingCoroutine = StartCoroutine(PlayerSpeak());
                 }
                 else
                 {
-                    speakingCoroutine = StartCoroutine(NpcSpeak(node));
+                    speakingCoroutine = StartCoroutine(NpcSpeak());
                 }
-
                 return;
             }
+            else if (node.NodeType == If)
+            {
+                ParseLogic();
+            }
+            else if (node.NodeType == Exit)
+            {
+                UIManager.gameState = "play";
+                transform.parent.gameObject.SetActive(false);
+            }
+
+            
         }
 
         private SENodeSO NextNode(SENodeSO currentNode, int choiceIndex = 0)
         {
             SENodeSO nextNode = currentNode.Choices[choiceIndex].NextDialogue;
+
+            return nextNode;
+        }
+
+        private SENodeSO NextLogicStep(SENodeSO currentNode, int choiceIndex = 0)
+        {
+
+            SENodeSO nextNode = currentNode.IfStatements[choiceIndex].NextDialogue;
 
             return nextNode;
         }
@@ -94,8 +138,8 @@ namespace SpeakEasy
 
             HideChoices();
 
-            npcSpeechBubble.SetActive(false);
-            playerSpeechBubble.SetActive(false);
+            npcSpeechText.text = "";
+            npcBubbleImage.sprite = emptySprite;
 
             BeginNode();
         }
@@ -104,57 +148,76 @@ namespace SpeakEasy
 
         #region Speaking
 
-        IEnumerator PlayerSpeak(SENodeSO currentNode)
+        IEnumerator PlayerSpeak()
         {
-
-            playerSpeechBubble.SetActive(true);
-
-            TextWriter.AddWriter_Static(playerSpeechText, currentNode.DialogueText);
+            TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText);
+            playerBubbleImage.sprite = playerBubbleSprite;
 
             AkSoundEngine.PostEvent("Play_Player", gameObject);
 
-            yield return new WaitForSeconds(currentNode.speechTime);
+            yield return new WaitForSeconds(node.speechTime);
 
             AkSoundEngine.PostEvent("Stop_Player", gameObject);
 
             yield return new WaitForSeconds(1.5f);
         
-            playerSpeechBubble.SetActive(false);
             playerSpeechText.text = "";
+            playerBubbleImage.sprite = emptySprite;
 
             speakingCoroutine = null;
 
-            node = NextNode(currentNode);
+            node = NextNode(node);
 
             BeginNode();
         }
 
 
-        IEnumerator NpcSpeak(SENodeSO currentNode)
+        IEnumerator NpcSpeak()
         {
-            //npcAnimator.SetBool("isSpeaking", true);
-            npcSpeechBubble.SetActive(true);
+            npcAnimator.SetBool("isSpeaking", true);
+            npcBubbleImage.sprite = npcBubbleSprite;
 
             //AkSoundEngine.PostEvent(word.post, gameObject);
 
-            TextWriter.AddWriter_Static(npcSpeechText, currentNode.DialogueText);
+            TextWriter.AddWriter_Static(npcSpeechText, node.DialogueText);
+            
 
-            yield return new WaitForSeconds(currentNode.speechTime);
+            yield return new WaitForSeconds(node.speechTime);
 
-            //npcAnimator.SetBool("isSpeaking", false);
+            npcAnimator.SetBool("isSpeaking", false);
 
             speakingCoroutine = null;
 
-            if (NextNode(currentNode).IsPlayer)
+            if (node.NodeType == MultiChoice)
             {
                 PresentChoices();
             }
             else
             {
-                node = NextNode(currentNode);
-
+                node = NextNode(node);
                 BeginNode();
             }   
+        }
+
+        #endregion
+
+        #region Logic-ing
+
+        private void ParseLogic()
+        {
+            if (node.IfStatements.Count > 0)
+            {
+                if (meta.IfStatement((SEIfData) node.IfStatements[0])) //checks the truth of the if statement in an if node
+                {
+                    node = NextLogicStep(node, 0);
+                }
+                else
+                {
+                    node = NextLogicStep(node, 1);
+                }
+            }
+
+            BeginNode();
         }
 
         #endregion
@@ -172,7 +235,7 @@ namespace SpeakEasy
             for (int i = 0; i < numberOfChoices; i++)
             {
                 choiceButtons[i].SetActive(true);
-                choiceButtons[i].GetComponentInChildren<TMP_Text>().text = node.Choices[i].Text;
+                choiceButtons[i].GetComponentInChildren<TMP_Text>().text = node.Choices[i].Text;  
             }
         }
 
@@ -184,6 +247,13 @@ namespace SpeakEasy
             }
         }
 
+        IEnumerator BeginningDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+
+            BeginNode();
+        }
+ 
         #endregion
     }
 }

@@ -1,6 +1,4 @@
-using System;
 using System.Linq;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
@@ -15,20 +13,20 @@ namespace SpeakEasy.Utilities
     using SpeakEasy.Data;
     using Enumerations;
     
-
-  public static class SEIOUtility
+    //all the methods required for saving and loading the graph window, and saving and loading to scriptable objects
+    public static class SEIOUtility
     {
         private static SEGraphView graphView;
         public static string graphFileName;
         private static string containerFolderPath;
 
-        private static List<SEGroup> groups;
+        private static List<SEGroup> groups;   //used when getting elements from graphView
         private static List<SENode> nodes;
 
-        private static Dictionary<string, SEGroupSO> createdGroups;
+        private static Dictionary<string, SEGroupSO> createdGroups;   //dictionaries of element IDs and elements. Used for making ScriptableObjects
         private static Dictionary<string, SENodeSO> createdNodes;
 
-        private static Dictionary<string, SEGroup> loadedGroups;
+        private static Dictionary<string, SEGroup> loadedGroups;   //used in Loading process
         private static Dictionary<string, SENode> loadedNodes;
 
         public static void Initialize(SEGraphView seGraphView, string graphName)
@@ -171,12 +169,14 @@ namespace SpeakEasy.Utilities
         private static void SaveNodeToGraph(SENode node, SEGraphSaveDataSO graphData)
         {
             List<SEChoiceSaveData> choices = CloneChoices(node.Choices);
+            List<SEIfSaveData> ifs = CloneIfs(node.IfStatements);
 
             SENodeSaveData nodeData = new SENodeSaveData()
             {
                 ID = node.ID,
                 Name = node.NodeName,
                 Choices = choices,
+                IfStatements = ifs,
                 Text = node.DialogueText,
                 GroupID = node.Group?.ID,
                 NodeType = node.NodeType,
@@ -189,31 +189,32 @@ namespace SpeakEasy.Utilities
 
         private static void SaveNodeToSO(SENode node, SEContainerSO container)
         {
-            SENodeSO dialogue;
+            SENodeSO nodeSO;
 
             if (node.Group != null)
             {
-                dialogue = CreateAsset<SENodeSO>($"{containerFolderPath}/Groups/{node.Group.title}/Nodes", node.NodeName);
+                nodeSO = CreateAsset<SENodeSO>($"{containerFolderPath}/Groups/{node.Group.title}/Nodes", node.NodeName);
 
-                container.NodeGroups.AddItem(createdGroups[node.Group.ID], dialogue);
+                container.NodeGroups.AddItem(createdGroups[node.Group.ID], nodeSO);
             }
             else
             {
-                dialogue = CreateAsset<SENodeSO>($"{containerFolderPath}/Global/Nodes", node.NodeName);
+                nodeSO = CreateAsset<SENodeSO>($"{containerFolderPath}/Global/Nodes", node.NodeName);
 
-                container.UngroupedNodes.Add(dialogue);
+                container.UngroupedNodes.Add(nodeSO);
             }
 
-            dialogue.Initialize(node.NodeName, node.DialogueText, ConvertChoiceDataToSaveData(node.Choices), node.NodeType, node.IsPlayer);
+            nodeSO.Initialize(node.NodeName, node.DialogueText, ConvertSaveDataToChoiceData(node.Choices, node.IfStatements), node.NodeType, node.IsPlayer);
 
-            createdNodes.Add(node.ID, dialogue);
+            createdNodes.Add(node.ID, nodeSO);
 
-            SaveAsset(dialogue);
+            SaveAsset(nodeSO);
         }
 
-        private static List<SEChoiceData> ConvertChoiceDataToSaveData(List<SEChoiceSaveData> choices)
+        private static (List<SEChoiceData>, List<SEIfData>) ConvertSaveDataToChoiceData(List<SEChoiceSaveData> choices, List<SEIfSaveData> ifStatements)
         {
             List<SEChoiceData> dialogueChoices = new List<SEChoiceData>();
+            List<SEIfData> dialogueIfs = new List<SEIfData>();
 
             foreach (SEChoiceSaveData choice in choices)
             {
@@ -221,18 +222,28 @@ namespace SpeakEasy.Utilities
                 {
                     Text = choice.Text
                 };
-
                 dialogueChoices.Add(choiceData);
             }
+            foreach (SEIfSaveData ifStatement in ifStatements)
+            {
+                SEIfData ifData = new SEIfData()
+                {
+                    contextVariableName = ifStatement.contextVariableName,
+                    comparisonSign = ifStatement.comparisonSign,
+                    comparisonValue = ifStatement.comparisonValue
+                };
 
-            return dialogueChoices;
+                dialogueIfs.Add(ifData);
+            }
+
+            return (dialogueChoices, dialogueIfs);
         }
 
         private static void UpdateChoiceConnections()
         {
             foreach (SENode node in nodes)
             {
-                SENodeSO dialogue = createdNodes[node.ID];
+                SENodeSO nodeSO = createdNodes[node.ID];
 
                 for (int choiceIndex = 0; choiceIndex < node.Choices.Count; choiceIndex++)
                 {
@@ -243,10 +254,22 @@ namespace SpeakEasy.Utilities
                         continue;
                     }
 
-                    dialogue.Choices[choiceIndex].NextDialogue = createdNodes[choice.NodeID];
-
-                    SaveAsset(dialogue);
+                    nodeSO.Choices[choiceIndex].NextDialogue = createdNodes[choice.NodeID];
                 }
+
+                for (int ifIndex = 0; ifIndex < node.IfStatements.Count; ifIndex++)
+                {
+                    SEIfSaveData ifStatement = node.IfStatements[ifIndex];
+
+                    if (string.IsNullOrEmpty(ifStatement.NodeID))
+                    {
+                        continue;
+                    }
+
+                    nodeSO.IfStatements[ifIndex].NextDialogue = createdNodes[ifStatement.NodeID];
+                }
+
+                SaveAsset(nodeSO);
             }
         }
         
@@ -300,11 +323,28 @@ namespace SpeakEasy.Utilities
                     Text = choice.Text,
                     NodeID = choice.NodeID
                 };
-
                 choices.Add(choiceData);
             }
 
             return choices;
+        }
+        private static List<SEIfSaveData> CloneIfs(List<SEIfSaveData> nodeIfs)
+        {
+            List<SEIfSaveData> ifs = new List<SEIfSaveData>();
+
+            foreach (SEIfSaveData ifStatement in nodeIfs)
+            {
+                SEIfSaveData choiceData = new SEIfSaveData()
+                {
+                    NodeID = ifStatement.NodeID,
+                    contextVariableName = ifStatement.contextVariableName,
+                    comparisonSign = ifStatement.comparisonSign,
+                    comparisonValue = ifStatement.comparisonValue
+                };
+                ifs.Add(choiceData);
+            }
+
+            return ifs;
         }
         
         #endregion
@@ -348,16 +388,19 @@ namespace SpeakEasy.Utilities
             foreach (SENodeSaveData nodeData in nodes)
             {
                 List<SEChoiceSaveData> choices = new List<SEChoiceSaveData>();
+                List<SEIfSaveData> ifs = new List<SEIfSaveData>();
 
                 if (nodeData.NodeType != SENodeType.Exit)
                 {
                     choices = CloneChoices(nodeData.Choices);
+                    ifs = CloneIfs(nodeData.IfStatements);
                 }
 
                 SENode node = graphView.CreateNode(nodeData.NodeType, nodeData.Position, nodeData.Name, nodeData.IsPlayer, false);
 
                 node.ID = nodeData.ID;
                 node.Choices = choices;
+                node.IfStatements = ifs;
                 node.DialogueText = nodeData.Text;
 
                 node.Draw();
@@ -383,9 +426,9 @@ namespace SpeakEasy.Utilities
         {
             foreach (KeyValuePair<string, SENode> loadedNode in loadedNodes)
             {
-                foreach (Port choicePort in loadedNode.Value.outputContainer.Children())
+                foreach (Port outPort in loadedNode.Value.outputContainer.Children())
                 {
-                    SEChoiceSaveData choiceData = (SEChoiceSaveData) choicePort.userData;
+                    SEChoiceSaveData choiceData = (SEChoiceSaveData) outPort.userData;
 
                     if (string.IsNullOrEmpty(choiceData.NodeID))
                     {
@@ -396,7 +439,7 @@ namespace SpeakEasy.Utilities
 
                     Port nextNodeInput = (Port) nextNode.inputContainer.Children().First();
 
-                    Edge newEdge = choicePort.ConnectTo(nextNodeInput);
+                    Edge newEdge = outPort.ConnectTo(nextNodeInput);
 
                     graphView.AddElement(newEdge);
 

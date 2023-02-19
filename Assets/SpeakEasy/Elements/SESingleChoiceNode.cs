@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -10,6 +8,7 @@ namespace SpeakEasy.Elements
     using Utilities;
     using Windows;
 
+    //node for when there is only one option of dialogue
     public class SESingleChoiceNode : SESpeakingNode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)

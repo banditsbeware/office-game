@@ -1504,7 +1504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIMan: {fileID: 1890632086}
   eMessage: bathroom [E]
-  theGame: {fileID: 0}
+  theGame: {fileID: 697063691}
   minigameBank:
     idInternal: 0
     valueGuidInternal: 

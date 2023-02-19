@@ -1,9 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace SpeakEasy.Data.Save
 {
+    //holds data for rebuilding the VisualElements of the graph
     public class SEGraphSaveDataSO : ScriptableObject
     {
         [field: SerializeField] public string FileName {get; set;}

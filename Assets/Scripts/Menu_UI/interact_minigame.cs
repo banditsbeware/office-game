@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-//interact minigame only used on minigames on a Canvas
+//interact minigame only used for minigames made on a Canvas
 public class interact_minigame : interact
 {
     public GameObject theGame;
     public AK.Wwise.Bank minigameBank;
-    private void Update()
+    virtual public void Update()
     {
         if (isInteractable)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == "play")
             {
                 UIMan.denoitfy();
                 UIManager.gameState = "window";

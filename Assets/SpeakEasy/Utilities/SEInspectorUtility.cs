@@ -3,6 +3,7 @@ using UnityEditor;
 
 namespace SpeakEasy.Utilities
 {
+    //utility methods for creating elements in inspector
     public static class SEInspectorUtility
     {
         public static void DrawDisabledFields(Action action)

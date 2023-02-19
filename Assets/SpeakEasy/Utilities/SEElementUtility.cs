@@ -1,13 +1,14 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
-using UnityEngine;
+using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
 namespace SpeakEasy.Utilities
 {
     using Elements;
+
+    //Utility methods for making VisualElements in graph
     public static class SEElementUtility
     {
         public static TextField CreateTextField(string value = null, string label = null, EventCallback<ChangeEvent<string>> onValueChanged = null)
@@ -33,6 +34,13 @@ namespace SpeakEasy.Utilities
             textArea.multiline = true;
 
             return textArea;
+        }
+
+        public static PopupField<T> CreatePopupField<T>(List<T> choices, int startingIndex = 0)
+        {
+            PopupField<T> popupField = new PopupField<T>(choices, startingIndex);
+
+            return popupField;
         }
 
         public static Foldout CreateFoldout(string title, bool collapsed = false)
