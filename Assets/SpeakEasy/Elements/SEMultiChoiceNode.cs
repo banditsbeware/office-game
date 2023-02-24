@@ -59,51 +59,5 @@ namespace SpeakEasy.Elements
 
             RefreshExpandedState();
         }
-
-        #region Element Creation
-        private Port CreateChoicePort(object userData)
-        {
-            Port choicePort = this.CreatePort();
-
-            choicePort.userData = userData;
-
-            SEChoiceSaveData choiceData = (SEChoiceSaveData) userData;
-
-            Button deletePortButton = SEElementUtility.CreateButton("x", () =>
-            {
-                if (Choices.Count == 1)
-                {
-                    return;
-                }
-
-                if (choicePort.connected)
-                {
-                    graphView.DeleteElements(choicePort.connections);
-                }
-
-                Choices.Remove(choiceData);
-
-                graphView.RemoveElement(choicePort);
-            });
-
-            deletePortButton.AddToClassList("se-node__button");
-            
-            TextField choiceTextField = SEElementUtility.CreateTextField(choiceData.Text, null, callback =>
-            {
-                choiceData.Text = callback.newValue;
-            });
-
-            choiceTextField.AddClasses(
-                "se-node__text-field",
-                "se-node__choice-text-field",
-                "se-node__text-field__hidden"
-            );
-
-            choicePort.Add(choiceTextField);
-            choicePort.Add(deletePortButton);
-
-            return choicePort;
-        }
-        #endregion
     }
 }

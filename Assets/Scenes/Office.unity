@@ -424,7 +424,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.7092286, y: 0, z: 0, w: 0}
+  m_margin: {x: -27.916214, y: -8.713406, z: -3.485184, w: -31.368244}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -445,17 +445,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143577159}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3333333, y: 0.3333333, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1900030906}
-  m_RootOrder: 5
+  m_Father: {fileID: 1945808981}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 618.3957, y: 252.96}
+  m_AnchoredPosition: {x: -9.201416, y: 6.986603}
   m_SizeDelta: {x: 370.1055, y: 79.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &143577163
@@ -939,7 +939,7 @@ RectTransform:
   m_Children:
   - {fileID: 795816619}
   m_Father: {fileID: 1900030906}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2227,7 +2227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: boss' office [E]
   theGame: {fileID: 1217866227}
   minigameBank:
@@ -3938,7 +3937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: wornk [E]
   theGame: {fileID: 1880701866}
   minigameBank:
@@ -4136,7 +4134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564603691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.69, y: -3.96, z: 0}
+  m_LocalPosition: {x: 4.003, y: -8.588, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4191,9 +4189,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.06522745}
+  m_Offset: {x: 0, y: 0.042891085}
   serializedVersion: 2
-  m_Radius: 0.46956044
+  m_Radius: 0.44722408
 --- !u!95 &564603698
 Animator:
   serializedVersion: 4
@@ -5265,7 +5263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: bathroom [E]
   theGame: {fileID: 509083987}
   minigameBank:
@@ -7059,7 +7056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: read memos [E]
   theGame: {fileID: 1391994533}
   minigameBank:
@@ -9556,7 +9552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22422917, y: 0.9085173}
   m_AnchorMax: {x: 0.22422917, y: 0.9085173}
-  m_AnchoredPosition: {x: -341.59918, y: 77.17963}
+  m_AnchoredPosition: {x: -341.59912, y: 77.17963}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.045, y: 0.98}
 --- !u!114 &1183255294
@@ -10887,17 +10883,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340357814}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3333333, y: 0.3333333, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1900030906}
-  m_RootOrder: 6
+  m_Father: {fileID: 2028910260}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -657.5616, y: 347.59}
+  m_AnchoredPosition: {x: -0.18713379, y: 11.529938}
   m_SizeDelta: {x: 362.5995, y: 189.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340357816
@@ -10929,7 +10925,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -10983,7 +10979,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -10.456085, y: 0, z: -17.426804, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11280,7 +11276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: Harold [E]
   theGame: {fileID: 1900030901}
   minigameBank:
@@ -12115,7 +12110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec205704ac1e0674cb5340876085cf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: leave [E]
   loader: {fileID: 762731329}
   scene: Street
@@ -13647,7 +13641,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1900030906}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14947,8 +14941,6 @@ RectTransform:
   - {fileID: 1099324280}
   - {fileID: 2028910260}
   - {fileID: 1945808981}
-  - {fileID: 143577162}
-  - {fileID: 1340357815}
   - {fileID: 245682864}
   - {fileID: 1799542790}
   m_Father: {fileID: 1370609482}
@@ -14989,7 +14981,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 143577162}
   m_Father: {fileID: 1900030906}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15018,7 +15011,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -327532014, guid: 1c28571633333074b8283eb4acfba39d, type: 3}
+  m_Sprite: {fileID: 665816856, guid: 9c48d73d4f388e94180d3629f5f7aff0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16228,7 +16221,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1340357815}
   m_Father: {fileID: 1900030906}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16257,7 +16251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2020975506, guid: 1c28571633333074b8283eb4acfba39d, type: 3}
+  m_Sprite: {fileID: -1102559207, guid: 9c48d73d4f388e94180d3629f5f7aff0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16405,7 +16399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: printer [E]
   theGame: {fileID: 895259983}
   minigameBank:

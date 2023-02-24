@@ -13,7 +13,7 @@ public class interact_door : interact
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                UIMan.denoitfy();
+                UIManager.denoitfy();
                 loader.LoadLevel(scene);
             }
         }

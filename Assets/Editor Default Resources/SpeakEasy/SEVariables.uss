@@ -25,6 +25,7 @@
 	--se-metrics-window-pixels-16: 16px;
 	--se-metrics-window-pixels-25: 25px;
 	--se-metrics-window-pixels-35: 35px;
+	--se-metrics-window-pixels-80: 80px;
 	--se-metrics-window-pixels-120: 120px;
 	--se-metrics-window-pixels-160: 160px;
 	--se-metrics-window-pixels-240: 240px;

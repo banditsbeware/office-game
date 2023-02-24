@@ -13,7 +13,7 @@ namespace SpeakEasy.Elements
     using Utilities;
 
     //node used for testing values in meta. changes dialogue based on game state
-    public class SEIfNode : SENode
+    public class SEIfNode : SELogicNode
     {
         List<string> comparisons = new List<string>(){"==", "!=", "<", ">", "<=", ">="};
 
@@ -55,53 +55,5 @@ namespace SpeakEasy.Elements
 
             RefreshExpandedState();
         }
-
-        #region Element Creation
-        private Port CreateLogicPort(object userData)
-        {
-            Port choicePort = this.CreatePort();
-
-            SEIfSaveData ifData = new SEIfSaveData();
-            
-            ifData = (SEIfSaveData) userData;
-            choicePort.userData = ifData;  //storing save data about the if statement in the Port's userData
-
-            int contextVariableIndex = meta.getAllVariableNames().IndexOf(ifData.contextVariableName);
-            int comparisonIndex = comparisons.IndexOf(ifData.comparisonSign);
-
-            // Port Contents //
-
-            PopupField<string> contextVariables = SEElementUtility.CreatePopupField(meta.getAllVariableNames(), contextVariableIndex);
-            contextVariables.RegisterValueChangedCallback(evt => 
-            {
-                ifData.contextVariableName = evt.newValue;
-            });
-
-            PopupField<string> comparisonSigns = SEElementUtility.CreatePopupField(comparisons, comparisonIndex);
-            comparisonSigns.RegisterValueChangedCallback(evt => 
-            {
-                ifData.comparisonSign = evt.newValue;
-            });
-
-            TextField choiceTextField = SEElementUtility.CreateTextField(ifData.comparisonValue, null, callback =>
-            {
-                ifData.comparisonValue = callback.newValue;
-            });
-
-            contextVariables.contentContainer.AddToClassList("se-node__context-popup-field");
-            comparisonSigns.contentContainer.AddToClassList("se-node__symbol-popup-field");
-            choiceTextField.AddClasses(
-                "se-node__text-field",
-                "se-node__choice-text-field",
-                "se-node__text-field__hidden"
-            );
-
-            choicePort.Add(choiceTextField);
-            choicePort.Add(comparisonSigns);
-            choicePort.Add(contextVariables);
-
-            return choicePort;
-        }
-        #endregion
     }
 }

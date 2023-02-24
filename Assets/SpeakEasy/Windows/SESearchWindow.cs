@@ -41,6 +41,11 @@ namespace SpeakEasy.Windows
                     level = 2,
                     userData = SENodeType.If
                 },
+                new SearchTreeEntry(new GUIContent("WeightedRandom", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.WeightedRandom
+                },
                 new SearchTreeEntry(new GUIContent("Entry", indentation))
                 {
                     level = 2,
@@ -80,6 +85,12 @@ namespace SpeakEasy.Windows
                     graphView.AddElement(multiChoiceNode);
                     return true;
                 }
+                case SENodeType.If:
+                {
+                    SEIfNode ifNode = (SEIfNode) graphView.CreateNode(SENodeType.If, localMousePosition);
+                    graphView.AddElement(ifNode);
+                    return true;
+                }
                 case SENodeType.Entry:
                 {
                     SEEntryNode entryNode = (SEEntryNode) graphView.CreateNode(SENodeType.Entry, localMousePosition);
@@ -89,6 +100,12 @@ namespace SpeakEasy.Windows
                 case SENodeType.Exit:
                 {
                     SEExitNode exitNode = (SEExitNode) graphView.CreateNode(SENodeType.Exit, localMousePosition);
+                    graphView.AddElement(exitNode);
+                    return true;
+                }
+                case SENodeType.WeightedRandom:
+                {
+                    SEExitNode exitNode = (SEExitNode) graphView.CreateNode(SENodeType.WeightedRandom, localMousePosition);
                     graphView.AddElement(exitNode);
                     return true;
                 }

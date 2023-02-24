@@ -8,6 +8,6 @@ namespace SpeakEasy.Enumerations
         Entry,
         Exit,
         If,
-        IfElseIf
+        WeightedRandom
     }
 } 

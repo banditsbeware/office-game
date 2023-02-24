@@ -9,7 +9,7 @@ namespace SpeakEasy.Elements
     using Windows;
 
     //currently not implemented
-    public class SEIfElseIfNode : SENode
+    public class SEIfElseIfNode : SELogicNode
     {
         // public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         // {

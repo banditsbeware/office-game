@@ -6,7 +6,7 @@ namespace SpeakEasy.Elements
     using Windows;
 
     //node to be used to end the dialogue, may be used anywhere on graph
-    public class SEExitNode : SENode
+    public class SEExitNode : SELogicNode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {

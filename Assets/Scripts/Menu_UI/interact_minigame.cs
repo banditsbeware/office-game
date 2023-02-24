@@ -11,7 +11,7 @@ public class interact_minigame : interact
         {
             if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == "play")
             {
-                UIMan.denoitfy();
+                UIManager.denoitfy();
                 UIManager.gameState = "window";
                 UIManager.show(theGame);
             }

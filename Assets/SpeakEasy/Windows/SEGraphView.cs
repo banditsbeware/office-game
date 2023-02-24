@@ -102,6 +102,7 @@ namespace SpeakEasy.Windows
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.SingleChoice, "Add Single Choice Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.MultiChoice,  "Add Multi Choice Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.If, "Add If Node"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.WeightedRandom, "Add Weighted Random Node"));
             
             this.AddManipulator(CreateGroupContextualMenu());
         }

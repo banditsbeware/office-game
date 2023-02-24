@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: NewDialogueGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: NewDialogueGraph
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 655cf048-e0b6-4fbc-8a31-b56177d03f7e
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 1689, y: 354}
+  - <ID>k__BackingField: 19a5ec3a-9ae2-49fd-a937-19676b456acd
+    <Name>k__BackingField: s
+    <Text>k__BackingField: heads
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 655cf048-e0b6-4fbc-8a31-b56177d03f7e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1088, y: 69}
+  - <ID>k__BackingField: 759233df-54aa-4f13-8799-0286422b36bc
+    <Name>k__BackingField: Dialogue Node
+    <Text>k__BackingField: tails
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 655cf048-e0b6-4fbc-8a31-b56177d03f7e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: chaos
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1088, y: 408}
+  - <ID>k__BackingField: 9b838306-3501-45e1-a2ea-befb3ab4ff6d
+    <Name>k__BackingField: ranf
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 50
+      <NodeID>k__BackingField: 19a5ec3a-9ae2-49fd-a937-19676b456acd
+    - <Text>k__BackingField: 50
+      <NodeID>k__BackingField: 759233df-54aa-4f13-8799-0286422b36bc
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: 580, y: 251}
+  - <ID>k__BackingField: ccfb51cc-ca61-45f0-936c-d84cd4e8126a
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 9b838306-3501-45e1-a2ea-befb3ab4ff6d
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: 342, y: 275}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNames>k__BackingField:
+  - _exit
+  - s
+  - Dialogue Node
+  - ranf
+  - _entry
+  <OldGroupedNames>k__BackingField:
+    list: []

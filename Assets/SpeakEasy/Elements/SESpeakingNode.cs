@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEditor.UIElements;
+using System.Collections.Generic;
+
 
 namespace SpeakEasy.Elements
 {
     using Utilities;
     using Windows;
-
-    //class parent to SingleChoice and MultiChoice nodes. Add the Dialogue Text dropdown underneath the node and the isPlayer Toggle
-    public class SESpeakingNode : SENode
+    using Data.Save;
+  
+  //class parent to SingleChoice and MultiChoice nodes. Add the Dialogue Text dropdown underneath the node and the isPlayer Toggle
+  public class SESpeakingNode : SENode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
@@ -50,10 +54,12 @@ namespace SpeakEasy.Elements
                 "se-node__text-field",
                 "se-node__quote-text-field"
             );
-            
+
             textFoldout.Add(textTextField);
             customDataContainer.Add(textFoldout);
+
             extensionContainer.Add(customDataContainer);
+            extensionContainer.Add(CreateCallbackFoldout());
         }
     }
 }

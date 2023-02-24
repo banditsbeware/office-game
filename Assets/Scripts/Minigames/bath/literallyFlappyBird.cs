@@ -38,7 +38,7 @@ public class literallyFlappyBird : MonoBehaviour
         bird.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
         bird.simulated = false;
 
-        menu.text = "bird game\n\n\nhigh score:\n" + meta.flappyHighScore;
+        menu.text = "bird game\n\n\nhigh score:\n" + meta.Variables["flappyHighScore"];
 
         for (int i = 0; i < numOfPipes; i++)
         {
@@ -163,6 +163,29 @@ public class literallyFlappyBird : MonoBehaviour
         readyTGo = true;
     }
     
+    public void Setup()
+    {
+        inGame = false;
+        readyTGo = false;
+
+        bird.velocity = new Vector2(Random.Range(-10f, 10f), 30f);
+        bird.angularVelocity = Random.Range(-180f, 180f);
+
+        foreach (Rigidbody2D obj in scrollers)
+        {
+            obj.velocity = Vector2.zero;
+        }
+
+        if (score > meta.Variables["flappyHighScore"])
+        {
+            meta.Variables["flappyHighScore"] = score;
+            menu.text = "bird game\n\n\nhigh score:\n" + meta.Variables["flappyHighScore"];
+        }
+
+        menu.gameObject.SetActive(true);
+        scoreTxt.gameObject.SetActive(false);
+    }
+    
     public void gameOver()
     {
         inGame = false;
@@ -177,10 +200,10 @@ public class literallyFlappyBird : MonoBehaviour
             obj.velocity = Vector2.zero;
         }
 
-        if (score > meta.flappyHighScore)
+        if (score > meta.Variables["flappyHighScore"])
         {
-            meta.flappyHighScore = score;
-            menu.text = "bird game\n\n\nhigh score:\n" + meta.flappyHighScore;
+            meta.Variables["flappyHighScore"] = score;
+            menu.text = "bird game\n\n\nhigh score:\n" + meta.Variables["flappyHighScore"];
         }
 
         menu.gameObject.SetActive(true);

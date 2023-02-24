@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,11 @@ namespace SpeakEasy
     using ScriptableObjects;
     using static Enumerations.SENodeType;
     using Data;
+    using Data.Save;
+  
 
-    //The Class you place on a Dialogue Handler to operate in Game
-    public class SEDialogue : MonoBehaviour
+  //The Class you place on a Dialogue Handler to operate in Game
+  public class SEDialogue : MonoBehaviour
     {
         //Dialogue ScriptableObjects
         [SerializeField] private SEContainerSO container;
@@ -48,8 +51,6 @@ namespace SpeakEasy
 
         private void Awake() 
         {
-            meta.AddVariablesToList();
-
             playerSpeechText = playerSpeechBubble.GetComponentInChildren<TMP_Text>();
             npcSpeechText = npcSpeechBubble.GetComponentInChildren<TMP_Text>();
 
@@ -73,7 +74,8 @@ namespace SpeakEasy
 
             HideChoices();
 
-            node = NextNode(entryNode);
+            node = entryNode;
+            node = NextNode();
 
             StartCoroutine(BeginningDelay(1f));
         }
@@ -90,6 +92,8 @@ namespace SpeakEasy
 
         private void BeginNode()
         {
+            PerformCallbacks();
+
             if (node.NodeType == SingleChoice || node.NodeType == MultiChoice) //if it's a speaking node
             {
                 if (node.IsPlayer)
@@ -106,18 +110,25 @@ namespace SpeakEasy
             {
                 ParseLogic();
             }
+            else if (node.NodeType == WeightedRandom)
+            {
+                ChooseWeightedRandom();
+            }
             else if (node.NodeType == Exit)
             {
                 UIManager.gameState = "play";
                 transform.parent.gameObject.SetActive(false);
             }
-
+            else
+            {
+                Debug.Log("Whoops, this node shouldn't exist!");
+            }
             
         }
 
-        private SENodeSO NextNode(SENodeSO currentNode, int choiceIndex = 0)
+        private SENodeSO NextNode(int choiceIndex = 0)
         {
-            SENodeSO nextNode = currentNode.Choices[choiceIndex].NextDialogue;
+            SENodeSO nextNode = node.Choices[choiceIndex].NextDialogue;
 
             return nextNode;
         }
@@ -134,7 +145,7 @@ namespace SpeakEasy
         {
             int choiceIndex = choiceButtons.IndexOf(button);
 
-            node = NextNode(node, choiceIndex);
+            node = NextNode(choiceIndex);
 
             HideChoices();
 
@@ -142,6 +153,29 @@ namespace SpeakEasy
             npcBubbleImage.sprite = emptySprite;
 
             BeginNode();
+        }
+
+        public void PerformCallbacks()
+        {
+            foreach (SECallbackSaveData callback in node.Callbacks)
+            {
+                Type variableType = meta.Variables[callback.callbackVariableName].GetType();
+
+                switch (callback.callbackAction)
+                {
+                    case "SetValue":
+                        if (variableType == typeof(string)) meta.Variables[callback.callbackVariableName] = callback.callbackValue;
+                        if (variableType == typeof(int)) meta.Variables[callback.callbackVariableName] = int.Parse(callback.callbackValue);
+                        if (variableType == typeof(bool)) meta.Variables[callback.callbackVariableName] = bool.Parse(callback.callbackValue);
+                        break;
+                    case "Increment":
+                        meta.Variables[callback.callbackVariableName] += int.Parse(callback.callbackValue);
+                        break;
+                    case "Decrement":
+                        meta.Variables[callback.callbackVariableName] -= int.Parse(callback.callbackValue);
+                        break;
+                }
+            }
         }
 
         #endregion
@@ -166,7 +200,7 @@ namespace SpeakEasy
 
             speakingCoroutine = null;
 
-            node = NextNode(node);
+            node = NextNode();
 
             BeginNode();
         }
@@ -194,7 +228,7 @@ namespace SpeakEasy
             }
             else
             {
-                node = NextNode(node);
+                node = NextNode();
                 BeginNode();
             }   
         }
@@ -205,19 +239,40 @@ namespace SpeakEasy
 
         private void ParseLogic()
         {
-            if (node.IfStatements.Count > 0)
+            if (meta.IfStatement(node.IfStatements[0])) //checks the truth of the if statement in an if node
             {
-                if (meta.IfStatement((SEIfData) node.IfStatements[0])) //checks the truth of the if statement in an if node
-                {
-                    node = NextLogicStep(node, 0);
-                }
-                else
-                {
-                    node = NextLogicStep(node, 1);
-                }
+                node = NextLogicStep(node, 0);
+            }
+            else
+            {
+                node = NextLogicStep(node, 1);
             }
 
             BeginNode();
+        }
+
+        private void ChooseWeightedRandom()
+        {
+            int totalWeight = 0;
+            int runningTotal = 0;
+
+            foreach (SEChoiceData possibility in node.Choices)
+            {
+                totalWeight += int.Parse(possibility.Text);
+            }
+
+            int randy = UnityEngine.Random.Range(0, totalWeight);
+
+            for (int i = 0; i < node.Choices.Count; i++)
+            {
+                runningTotal += int.Parse(node.Choices[i].Text);
+
+                if (randy < runningTotal)
+                {
+                    node = NextNode(i);
+                    BeginNode();
+                }
+            }
         }
 
         #endregion

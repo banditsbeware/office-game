@@ -170,6 +170,7 @@ namespace SpeakEasy.Utilities
         {
             List<SEChoiceSaveData> choices = CloneChoices(node.Choices);
             List<SEIfSaveData> ifs = CloneIfs(node.IfStatements);
+            List<SECallbackSaveData> callbacks = CloneCallbacks(node.Callbacks);
 
             SENodeSaveData nodeData = new SENodeSaveData()
             {
@@ -177,6 +178,7 @@ namespace SpeakEasy.Utilities
                 Name = node.NodeName,
                 Choices = choices,
                 IfStatements = ifs,
+                Callbacks = callbacks,
                 Text = node.DialogueText,
                 GroupID = node.Group?.ID,
                 NodeType = node.NodeType,
@@ -204,7 +206,7 @@ namespace SpeakEasy.Utilities
                 container.UngroupedNodes.Add(nodeSO);
             }
 
-            nodeSO.Initialize(node.NodeName, node.DialogueText, ConvertSaveDataToChoiceData(node.Choices, node.IfStatements), node.NodeType, node.IsPlayer);
+            nodeSO.Initialize(node.NodeName, node.DialogueText, ConvertSaveDataToChoiceData(node.Choices, node.IfStatements), node.Callbacks, node.NodeType, node.IsPlayer);
 
             createdNodes.Add(node.ID, nodeSO);
 
@@ -346,6 +348,24 @@ namespace SpeakEasy.Utilities
 
             return ifs;
         }
+
+        private static List<SECallbackSaveData> CloneCallbacks(List<SECallbackSaveData> nodeCallbacks)
+        {
+            List<SECallbackSaveData> callbacks = new List<SECallbackSaveData>();
+
+            foreach (SECallbackSaveData callback in nodeCallbacks)
+            {
+                SECallbackSaveData callbackData = new SECallbackSaveData()
+                {
+                    callbackVariableName = callback.callbackVariableName,
+                    callbackAction = callback.callbackAction,
+                    callbackValue = callback.callbackValue
+                };
+                callbacks.Add(callbackData);
+            }
+
+            return callbacks;
+        }
         
         #endregion
 
@@ -389,6 +409,7 @@ namespace SpeakEasy.Utilities
             {
                 List<SEChoiceSaveData> choices = new List<SEChoiceSaveData>();
                 List<SEIfSaveData> ifs = new List<SEIfSaveData>();
+                List<SECallbackSaveData> callbacks = new List<SECallbackSaveData>();
 
                 if (nodeData.NodeType != SENodeType.Exit)
                 {
@@ -396,11 +417,14 @@ namespace SpeakEasy.Utilities
                     ifs = CloneIfs(nodeData.IfStatements);
                 }
 
+                callbacks = CloneCallbacks(nodeData.Callbacks);
+
                 SENode node = graphView.CreateNode(nodeData.NodeType, nodeData.Position, nodeData.Name, nodeData.IsPlayer, false);
 
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.IfStatements = ifs;
+                node.Callbacks = callbacks;
                 node.DialogueText = nodeData.Text;
 
                 node.Draw();

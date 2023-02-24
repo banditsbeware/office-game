@@ -111,6 +111,13 @@
 	white-space: nowrap;
 }
 
+.se-node__action-popup-field
+{
+	width: var(--se-metrics-window-pixels-80);
+	color: var(--se-colors-window-dark-grey-1);
+	white-space: nowrap;
+}
+
 /* BUTTONS */
 
 .se-node__button
@@ -137,6 +144,12 @@
 TextField
 {
 	margin-left: var(--se-metrics-window-pixels-0);
+}
+
+.se-node__callback
+{
+	flex-direction: row;
+	align-items: center;
 }
 
 .se-node__custom-data-container > Foldout

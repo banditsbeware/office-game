@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System;
-using UnityEngine;
+using Microsoft.CSharp;
 
 public class ChaosAgent
 {
@@ -10,9 +7,9 @@ public class ChaosAgent
     public int Weight() //returns the likelihood of agent ocurring based on its threshold
     {
         int weight = 0;
-        if(meta.chaos >= threshold) 
+        if(meta.Variables["chaos"] >= threshold) 
         {
-            weight = (threshold * meta.chaos) / (threshold * threshold);
+            weight = (threshold * meta.Variables["chaos"]) / (threshold * threshold);
         }
         return weight;
     }

@@ -1,93 +1,113 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System;
 using SpeakEasy.Data;
+using UnityEngine;
 
 //contains saved data that transcends an entire play of the game
 [System.Serializable]
 public static class meta
 {
     //world variables
-    public static int chaos; //float from 1 to 100, scalable chaos
-    public static int day; //day in game
-    public static int flappyHighScore; //high score in bird game
+    public static Dictionary<string, dynamic> Variables = new Dictionary<string, dynamic>();
     public static string currentScene = "Office";
-    
 
+    private static void InitializeVariables()
+    {
+        // Set initial values for the static variables here
+        MetaSet("chaos", 0);
+        MetaSet("day", 1);
+        MetaSet("flappyHighScore", 0);
+        MetaSet("currentScene", "Office");
+    }
 
+    public static List<string> GetVaraibleKeys()
+    {
+        InitializeVariables();
+        return Variables.Keys.ToList<string>();
+    }
 
-    //for calling data in dialogues
-    public delegate T GetIntDelegate<T>();
-    public static SerializableDictionary<string, GetIntDelegate<object>> VariableMap = new SerializableDictionary<string, GetIntDelegate<object>>();
-    private static bool listIsPopulated;
+    public static void MetaSet(string name, object value)
+    {
+        if (Variables.ContainsKey(name))
+        {
+            Variables[name] = value;
+        }
+        else
+        {
+            Variables.Add(name, value);
+        }
+    }
+
+    public static T MetaGet<T>(string name)
+    {
+        if (Variables.ContainsKey(name))
+        {
+            return (T) Variables[name];
+        }
+        else
+        {
+            return default (T);
+        }
+    }
 
     #region Saving and Loading
     public static void ResetData()
     {
-        chaos = 0;
-        flappyHighScore = 0;
-        currentScene = "Office"; //scene loaded on new game
+        InitializeVariables();
     }
 
     //use to serialize static data into an instance to be saved in JSON
     public static SerializableMeta Serialize()
     {
         SerializableMeta data = new SerializableMeta();
-
-        data.chaos = chaos;
-        data.flappyHighScore = flappyHighScore;
-        data.currentScene = currentScene;
-
+        foreach (KeyValuePair<string, dynamic> pair in Variables)
+        {
+            if (pair.Value is int)
+            {
+                data.metaInts.Add(pair.Key, pair.Value);
+            }
+            if (pair.Value is string)
+            {
+                data.metaStrings.Add(pair.Key, pair.Value);
+            }
+            if (pair.Value is bool)
+            {
+                data.metaBools.Add(pair.Key, pair.Value);
+            }
+        }
+        
         return data;
     }
 
     // import instance data from JSON into the static variables
     public static void Import(SerializableMeta data)
     {
-        chaos = data.chaos;
-        flappyHighScore = data.flappyHighScore;
-        currentScene = data.currentScene;
-    }
-    #endregion
-
-    #region SpeakEasy Utility
-    //get a list of all meta variables' names
-    public static List<string> getAllVariableNames()
-    {
-        AddVariablesToList();
-
-        return VariableMap.Keys.ToList<string>();
-    }
-    
-    #endregion
-
-    #region Runtime Utility
-
-    public static void AddVariablesToList() //populates a map of variables and calls to those variables
-    {
-        if (!listIsPopulated)
+        foreach (KeyValuePair<string, int> datum in data.metaInts)
         {
-            VariableMap.Add("chaos", () => chaos);
-            VariableMap.Add("flappyHighScore", () => flappyHighScore);
-            VariableMap.Add("currentScene", () => currentScene);
-
-            listIsPopulated = true;
+            MetaSet(datum.Key, datum.Value);
+        }
+        foreach (KeyValuePair<string, string> datum in data.metaStrings)
+        {
+            MetaSet(datum.Key, datum.Value);
+        }
+        foreach (KeyValuePair<string, bool> datum in data.metaBools)
+        {
+            MetaSet(datum.Key, datum.Value);
         }
     }
-
     #endregion
+
     public static bool IfStatement(SEIfData ifData) //compares the variable names/values held in IfData, which is held in the Node Scriptable Object
     {
         string variable = ifData.contextVariableName;
         string symbol = ifData.comparisonSign;
         string toCompare = ifData.comparisonValue;
 
-        Type variableType = VariableMap[variable]().GetType();
-
-
-        if (variableType == typeof(int))
+        if (Variables[variable] is int)
         {
-            int variableValue = (int) VariableMap[variable]();
+            int variableValue = Variables[variable];
             int toCompareValue = int.Parse(toCompare);
             switch (symbol)
             {
@@ -112,9 +132,9 @@ public static class meta
             return false;
         }
 
-        if (variableType == typeof(string))
+        if (Variables[variable] is string)
         {
-            string variableValue = (string) VariableMap[variable]();
+            string variableValue = Variables[variable];
             switch (symbol)
             {
                 case "==":
@@ -125,9 +145,9 @@ public static class meta
             }
             return false;
         }
-        else if (variableType == typeof(bool))
+        else if (Variables[variable] is bool)
         {
-            bool variableValue = (bool) VariableMap[variable]();
+            bool variableValue = Variables[variable];
             bool toCompareValue = bool.Parse(toCompare);
             switch (symbol)
             {
@@ -146,7 +166,16 @@ public static class meta
 
 public class SerializableMeta
 {
-    public int chaos;
-    public int flappyHighScore;
-    public string currentScene;
+    public SerializableDictionary<string, int> metaInts = new SerializableDictionary<string, int>();
+    public SerializableDictionary<string, string> metaStrings = new SerializableDictionary<string, string>();
+    public SerializableDictionary<string, bool> metaBools = new SerializableDictionary<string, bool>();
+
+    public List<SerializableDictionary> dictionaries = new List<SerializableDictionary>();
+
+    public SerializableMeta()
+    {
+        dictionaries.Add(metaInts);
+        dictionaries.Add(metaStrings);
+        dictionaries.Add(metaBools);
+    }
 }

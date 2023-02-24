@@ -52,6 +52,7 @@
 				<SoundBank Name="Office" ID="{0E3EB1D2-1DAD-4A13-8693-5024AB0BF4A4}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Office" ID="{BAB3AA77-5F26-422C-B376-04425E5DBCDE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

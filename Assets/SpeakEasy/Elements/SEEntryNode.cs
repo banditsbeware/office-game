@@ -10,7 +10,7 @@ namespace SpeakEasy.Elements
 
     //node to be used to begin the dialogue tree from a runtime event (opening a minigame)
     //should be only one per graph
-    public class SEEntryNode : SENode
+    public class SEEntryNode : SELogicNode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {

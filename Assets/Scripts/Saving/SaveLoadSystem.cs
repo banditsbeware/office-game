@@ -15,6 +15,11 @@ public class SaveLoadSystem : MonoBehaviour
     private void Awake() 
     {
         dataDirPath = Application.persistentDataPath;
+        
+        if (meta.Variables.Count == 0)
+        {
+            meta.ResetData();
+        }
     }
 
     //imports data from JSON file and applies to meta's static variables

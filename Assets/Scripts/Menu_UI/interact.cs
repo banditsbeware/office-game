@@ -4,8 +4,7 @@ using UnityEngine;
 
 //interact_door and interact_minigame inherit this class
 public class interact : MonoBehaviour
-{
-    public UIManager UIMan;   
+{ 
     [System.NonSerialized] public bool isInteractable = false; //isInteractable is true when the player is within the trigger for the interactable object
     
     [SerializeField] private string eMessage;
@@ -14,7 +13,7 @@ public class interact : MonoBehaviour
         if (other.tag == "Player") 
         {
             //changes popup text and shows popup notification in UIManager
-            UIMan.notify(eMessage);
+            UIManager.notify(eMessage);
             isInteractable = true;
         }
     }
@@ -23,7 +22,7 @@ public class interact : MonoBehaviour
         if (other.tag == "Player") 
         {
             //hides popup notification in UIManager
-            UIMan.denoitfy();
+            UIManager.denoitfy();
             isInteractable = false;
         }
     }

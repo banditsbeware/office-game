@@ -15,7 +15,7 @@ namespace SpeakEasy.Data.Save
       [field: SerializeField] public bool IsPlayer {get; set;}
       [field: SerializeField] public List<SEChoiceSaveData> Choices {get; set;}
       [field: SerializeField] public List<SEIfSaveData> IfStatements {get; set;}
-
+      [field: SerializeField] public List<SECallbackSaveData> Callbacks {get; set;}
       [field: SerializeField] public string GroupID {get; set;}
       [field: SerializeField] public SENodeType NodeType {get; set;}
       [field: SerializeField] public Vector2 Position {get; set;}

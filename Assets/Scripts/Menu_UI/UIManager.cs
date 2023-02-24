@@ -4,44 +4,25 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class UIManager : MonoBehaviour
+public static class UIManager
 {
-  [HideInInspector] public GameObject[] pauseObjects; //Objects in Pause menu
-	[HideInInspector] public GameObject[] notifs; //any UI popups not part of pause menu
+	public static UIManagerInstance instance;
+
+  [HideInInspector] public static GameObject[] pauseObjects; //Objects in Pause menu
+	[HideInInspector] public static GameObject[] notifs; //any UI popups not part of pause menu
 
 	//minigames are all made in UI, I'm so sorry
-	[HideInInspector] public GameObject[] minigames; 
-	[SerializeField] private TMP_Text canvasText;
-
+	[HideInInspector] public static GameObject[] minigames; 
 
 	// gamestates are: pause, play, window
 	public static string gameState = "play";
 
-	void Awake()
-	{
-		Time.timeScale = 1;
-		pauseObjects = GameObject.FindGameObjectsWithTag("Pause");
-		notifs = GameObject.FindGameObjectsWithTag("notif");
-		minigames = GameObject.FindGameObjectsWithTag("minigame");
-
-		hide(pauseObjects);
-		hide(notifs);
-		hide(minigames);
-	}
-
-	void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.Escape))
-		{
-				pauseControl();
-		}
-	}
 	// reloads current scene index (in Build Management)
-	public void Reload(){
+	public static void Reload(){
 	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
-	public void pauseControl()
+	public static void pauseControl()
 	{
 		if (gameState == "play") //when esc is it while playing
 		{
@@ -87,12 +68,12 @@ public class UIManager : MonoBehaviour
 	}
 	
 	// changes text in popup notification
-	public void notify(string popup){
-		canvasText.text = popup;
+	public static void notify(string popup){
+		instance.canvasText.text = popup;
 		show(notifs);
 	}
 
-	public void denoitfy()
+	public static void denoitfy()
 	{
 		hide(notifs);
 	}
