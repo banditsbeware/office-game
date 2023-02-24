@@ -31,6 +31,8 @@ namespace SpeakEasy.Elements
         public SEGroup Group {get; set;}   //group the node is inside
         protected SEGraphView graphView;   //reference to the graph
         private Color defaultBackgroundColor;
+        private SECallbackSearchWindow searchWindow;
+        private delegate void searchCallbacks();
 
         public virtual void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
@@ -108,6 +110,8 @@ namespace SpeakEasy.Elements
         }
 
         #region Elements
+
+        #region Callbacks
         public VisualElement CreateCallbackFoldout()
         {
             VisualElement foldoutContainer = new VisualElement();
@@ -199,6 +203,19 @@ namespace SpeakEasy.Elements
 
             return callback;
         }
+
+        private void AddCallbackSearchWindow()
+        {
+            if(searchWindow == null)
+            {
+                searchWindow = ScriptableObject.CreateInstance<SECallbackSearchWindow>();
+                searchWindow.Initialize(graphView);
+            }
+
+            SearchWindow.Open(new SearchWindowContext(GUIUtility.GUIToScreenPoint(Event.current.mousePosition)), searchWindow);
+        }
+
+        #endregion
 
         public Port CreateChoicePort(object userData)
         {

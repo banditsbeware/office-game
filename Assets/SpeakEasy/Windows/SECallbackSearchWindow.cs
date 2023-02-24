@@ -6,7 +6,7 @@ namespace SpeakEasy.Windows
 {
     using Enumerations;
     using Elements;
-    public class SESearchWindow : ScriptableObject, ISearchWindowProvider
+    public class SECallbackSearchWindow : ScriptableObject, ISearchWindowProvider
     {
         private SEGraphView graphView;
         private Texture2D indentation;
@@ -21,7 +21,7 @@ namespace SpeakEasy.Windows
         }
         public List<SearchTreeEntry> CreateSearchTree(SearchWindowContext context)
         {
-            List<SearchTreeEntry> searchTreeEntries = new List<SearchTreeEntry>()
+            List<SearchTreeEntry> searchTreeeEntries = new List<SearchTreeEntry>()
             {
                 new SearchTreeGroupEntry(new GUIContent("Create Element")),
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Node"), 1),
@@ -64,7 +64,7 @@ namespace SpeakEasy.Windows
                 }
             };
 
-            return searchTreeEntries;
+            return searchTreeeEntries;
         }
 
         public bool OnSelectEntry(SearchTreeEntry SearchTreeEntry, SearchWindowContext context)
