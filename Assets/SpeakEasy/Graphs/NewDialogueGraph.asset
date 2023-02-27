@@ -57,9 +57,9 @@ MonoBehaviour:
     <Text>k__BackingField: 
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
-    - <Text>k__BackingField: 50
+    - <Text>k__BackingField: 10
       <NodeID>k__BackingField: 19a5ec3a-9ae2-49fd-a937-19676b456acd
-    - <Text>k__BackingField: 50
+    - <Text>k__BackingField: 90
       <NodeID>k__BackingField: 759233df-54aa-4f13-8799-0286422b36bc
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []

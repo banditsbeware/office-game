@@ -14,7 +14,7 @@ namespace SpeakEasy.Elements
     using Data.Save;
   
   //base class for all nodes on graph
-  public class SENode : Node
+    public class SENode : Node
     {
         private static List<string> callbackActions = new List<string>(){"SetValue", "Increment", "Decrement"};   //used to draw callbacks
 
@@ -31,8 +31,6 @@ namespace SpeakEasy.Elements
         public SEGroup Group {get; set;}   //group the node is inside
         protected SEGraphView graphView;   //reference to the graph
         private Color defaultBackgroundColor;
-        private SECallbackSearchWindow searchWindow;
-        private delegate void searchCallbacks();
 
         public virtual void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
@@ -168,8 +166,13 @@ namespace SpeakEasy.Elements
 
                 container.Remove(callback);
             });
-            
+
             PopupField<string> changeVariables = SEElementUtility.CreatePopupField(meta.GetVaraibleKeys(), callbackVariableIndex);
+            changeVariables.RegisterValueChangedCallback(evt => 
+            {
+                callbackData.callbackVariableName = evt.newValue;
+            });
+
             changeVariables.RegisterValueChangedCallback(evt => 
             {
                 callbackData.callbackVariableName = evt.newValue;
@@ -202,17 +205,6 @@ namespace SpeakEasy.Elements
             callback.Add(changeValue);
 
             return callback;
-        }
-
-        private void AddCallbackSearchWindow()
-        {
-            if(searchWindow == null)
-            {
-                searchWindow = ScriptableObject.CreateInstance<SECallbackSearchWindow>();
-                searchWindow.Initialize(graphView);
-            }
-
-            SearchWindow.Open(new SearchWindowContext(GUIUtility.GUIToScreenPoint(Event.current.mousePosition)), searchWindow);
         }
 
         #endregion
