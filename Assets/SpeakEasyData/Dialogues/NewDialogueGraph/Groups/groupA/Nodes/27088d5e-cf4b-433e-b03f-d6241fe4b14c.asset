@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: s
+  m_Name: 27088d5e-cf4b-433e-b03f-d6241fe4b14c
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: s
+  <NodeName>k__BackingField: 27088d5e-cf4b-433e-b03f-d6241fe4b14c
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: heads
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: Next Dialogue
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 86bb986306e023e418eb7b7e3e053bc2, type: 2}
+  - <Text>k__BackingField: out
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7148b8feabae09f4bab612ba5bb3f777, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
-  <NodeType>k__BackingField: 0
-  <speechTime>k__BackingField: 0.7823381
+  <NodeType>k__BackingField: 7
+  <speechTime>k__BackingField: 0

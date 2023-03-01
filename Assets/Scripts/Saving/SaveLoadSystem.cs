@@ -16,9 +16,9 @@ public class SaveLoadSystem : MonoBehaviour
     {
         dataDirPath = Application.persistentDataPath;
         
-        if (meta.Variables.Count == 0)
+        if (Meta.Variables.Count == 0)
         {
-            meta.ResetData();
+            Meta.ResetData();
         }
     }
 
@@ -42,7 +42,7 @@ public class SaveLoadSystem : MonoBehaviour
                 }
             //convert back to c# object
             SerializableMeta loadedData = JsonUtility.FromJson<SerializableMeta>(dataToLoad);
-            meta.Import(loadedData);
+            Meta.Import(loadedData);
 
             }
             catch (Exception e)
@@ -59,7 +59,7 @@ public class SaveLoadSystem : MonoBehaviour
         string path = Path.Combine(dataDirPath, dataFileName);
 
         SerializableMeta data = new SerializableMeta();
-        data = meta.Serialize();
+        data = Meta.Serialize();
 
         try
         {

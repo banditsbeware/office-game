@@ -4,14 +4,14 @@ using System.Reflection;
 using System;
 using SpeakEasy.Data;
 using UnityEngine;
+using SpeakEasy.Enumerations;
 
 //contains saved data that transcends an entire play of the game
 [System.Serializable]
-public static class meta
+public static class Meta
 {
     //world variables
     public static Dictionary<string, dynamic> Variables = new Dictionary<string, dynamic>();
-    public static string currentScene = "Office";
 
     private static void InitializeVariables()
     {

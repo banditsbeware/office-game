@@ -28,7 +28,7 @@ namespace SpeakEasy.ScriptableObjects
             NodeType = nodeType;
             IsPlayer = isPlayer;
 
-            if (nodeType == SingleChoice || nodeType == MultiChoice)
+            if (nodeType == Speaking)
             {
                 speechTime = (float)text.Length * .05f + Random.Range(0f, 1f);
             }

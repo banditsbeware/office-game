@@ -9,7 +9,7 @@ public class interact_bed : interact_minigame
         {
             if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == "play")
             {
-                meta.Variables["day"] += 1;
+                Meta.Variables["day"] += 1;
                 UIManager.denoitfy();
                 UIManager.gameState = "window";
                 UIManager.show(theGame);

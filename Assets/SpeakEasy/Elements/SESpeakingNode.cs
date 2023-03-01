@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 
 
 namespace SpeakEasy.Elements
@@ -9,21 +10,53 @@ namespace SpeakEasy.Elements
     using Utilities;
     using Windows;
     using Data.Save;
-  
+    using Enumerations;
+
+
   //class parent to SingleChoice and MultiChoice nodes. Add the Dialogue Text dropdown underneath the node and the isPlayer Toggle
   public class SESpeakingNode : SENode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
+            base.Initialize(seGraphView, position, nodeName, isPlayer);
+
+            SEChoiceSaveData choiceData = new SEChoiceSaveData()
+            {
+                Text = "Next Node"
+            };
+
+            NodeType = SENodeType.Speaking;
+
+            Choices.Add(choiceData);
+
             DialogueText = "Dialoge text.";
 
             IsPlayer = isPlayer;
-
-            base.Initialize(seGraphView, position, nodeName);
         }
 
         public override void Draw()
         {
+            // Extensions Container //
+            VisualElement customDataContainer = new VisualElement();
+
+            customDataContainer.AddToClassList("se-node__custom-data-container");
+
+            Foldout textFoldout = SEElementUtility.CreateFoldout("Dialogue Text");
+
+            TextField textTextField = SEElementUtility.CreateTextArea(DialogueText, null, callback => DialogueText = callback.newValue);
+
+            textTextField.AddClasses(
+                "se-node__text-field",
+                "se-node__quote-text-field"
+            );
+
+            textFoldout.Add(textTextField);
+            customDataContainer.Add(textFoldout);
+            extensionContainer.Add(customDataContainer);
+
+            textFoldout.value = false;
+
+            // Base Draw
             base.Draw();
 
             // Title Container //
@@ -41,25 +74,17 @@ namespace SpeakEasy.Elements
             titleContainer.Insert(1, toggleLabel);
             titleContainer.Insert(2, isPlayerToggle);
 
-            // Extensions Container //
-            VisualElement customDataContainer = new VisualElement();
+            // Output Container //
+            foreach(SEChoiceSaveData choice in Choices)
+            {
+                Port outPort = this.CreatePort(choice.Text);
 
-            customDataContainer.AddToClassList("se-node__custom-data-container");
+                outPort.userData = choice;
+                
+                outputContainer.Add(outPort);
+            }
 
-            Foldout textFoldout = SEElementUtility.CreateFoldout("Dialogue Text");
-
-            TextField textTextField = SEElementUtility.CreateTextArea(DialogueText, null, callback => DialogueText = callback.newValue);
-
-            textTextField.AddClasses(
-                "se-node__text-field",
-                "se-node__quote-text-field"
-            );
-
-            textFoldout.Add(textTextField);
-            customDataContainer.Add(textFoldout);
-
-            extensionContainer.Add(customDataContainer);
-            extensionContainer.Add(CreateCallbackFoldout());
+            RefreshExpandedState();
         }
     }
 }

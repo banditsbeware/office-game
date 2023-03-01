@@ -1,7 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+using static SpeakEasy.Enumerations.MetaVariable;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class LevelLoader : MonoBehaviour
 
     void Start()
     {
-        meta.currentScene = SceneManager.GetActiveScene().name;
+        Meta.Variables["currentScene"] = SceneManager.GetActiveScene().name;
     }
 
     public void LoadLevel(string levelName)
@@ -27,7 +28,7 @@ public class LevelLoader : MonoBehaviour
 
         AkSoundEngine.PostEvent("Fade_All", gameObject);
 
-        if(meta.currentScene != "MainMenu") 
+        if(Meta.Variables["currentScene"] != "MainMenu") 
         {
             Time.timeScale = 1;
 			UIManager.hide(UIManager.pauseObjects);
@@ -36,7 +37,7 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
-        meta.currentScene = levelName;
+        Meta.Variables["currentScene"] = levelName;
 
         SceneManager.LoadScene(levelName);
     }

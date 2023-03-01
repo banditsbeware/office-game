@@ -105,6 +105,11 @@ namespace SpeakEasy.Elements
             // Input Container //
             Port inputPort = this.CreatePort("in", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
             inputContainer.Add(inputPort);  //inputContainer is a child of the middle container in the Node, on the left side
+
+            // Extensions Container //
+            extensionContainer.Add(CreateCallbackFoldout());
+
+            RefreshExpandedState();
         }
 
         #region Elements
@@ -155,7 +160,7 @@ namespace SpeakEasy.Elements
 
         private VisualElement CreateCallback(SECallbackSaveData callbackData, VisualElement container = null) 
         {
-            int callbackVariableIndex = meta.GetVaraibleKeys().IndexOf(callbackData.callbackVariableName);
+            int callbackVariableIndex = Meta.GetVaraibleKeys().IndexOf(callbackData.callbackVariableName);
             int callbackActionIndex = callbackActions.IndexOf(callbackData.callbackAction);
 
             VisualElement callback = new VisualElement();
@@ -167,7 +172,7 @@ namespace SpeakEasy.Elements
                 container.Remove(callback);
             });
 
-            PopupField<string> changeVariables = SEElementUtility.CreatePopupField(meta.GetVaraibleKeys(), callbackVariableIndex);
+            PopupField<string> changeVariables = SEElementUtility.CreatePopupField(Meta.GetVaraibleKeys(), callbackVariableIndex);
             changeVariables.RegisterValueChangedCallback(evt => 
             {
                 callbackData.callbackVariableName = evt.newValue;

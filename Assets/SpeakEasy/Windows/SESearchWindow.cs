@@ -25,10 +25,10 @@ namespace SpeakEasy.Windows
             {
                 new SearchTreeGroupEntry(new GUIContent("Create Element")),
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Node"), 1),
-                new SearchTreeEntry(new GUIContent("Single Choice", indentation))
+                new SearchTreeEntry(new GUIContent("Speaking", indentation))
                 {
                     level = 2,
-                    userData = SENodeType.SingleChoice
+                    userData = SENodeType.Speaking
                 },
                 new SearchTreeEntry(new GUIContent("Multi Choice", indentation))
                 {
@@ -56,6 +56,18 @@ namespace SpeakEasy.Windows
                     level = 2,
                     userData = SENodeType.Exit
                 },
+                new SearchTreeEntry(new GUIContent("Delay", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.Delay
+                },
+                new SearchTreeGroupEntry(new GUIContent("Cosmetic"), 1),
+                new SearchTreeEntry(new GUIContent("Connector", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.Connector
+                },
+
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Group"), 1),
                 new SearchTreeEntry(new GUIContent("Single Group", indentation))
                 {
@@ -73,10 +85,10 @@ namespace SpeakEasy.Windows
 
             switch(SearchTreeEntry.userData)
             {
-                case SENodeType.SingleChoice:
+                case SENodeType.Speaking:
                 {
-                    SESingleChoiceNode singleChoiceNode = (SESingleChoiceNode) graphView.CreateNode(SENodeType.SingleChoice, localMousePosition);
-                    graphView.AddElement(singleChoiceNode);
+                    SESpeakingNode speakingNode = (SESpeakingNode) graphView.CreateNode(SENodeType.Speaking, localMousePosition);
+                    graphView.AddElement(speakingNode);
                     return true;
                 }
                 case SENodeType.MultiChoice:
@@ -105,10 +117,23 @@ namespace SpeakEasy.Windows
                 }
                 case SENodeType.WeightedRandom:
                 {
-                    SEExitNode exitNode = (SEExitNode) graphView.CreateNode(SENodeType.WeightedRandom, localMousePosition);
-                    graphView.AddElement(exitNode);
+                    SEWeightedRandomNode weightedNode = (SEWeightedRandomNode) graphView.CreateNode(SENodeType.WeightedRandom, localMousePosition);
+                    graphView.AddElement(weightedNode);
                     return true;
                 }
+                case SENodeType.Delay:
+                {
+                    SEDelayNode delayNode = (SEDelayNode) graphView.CreateNode(SENodeType.Delay, localMousePosition);
+                    graphView.AddElement(delayNode);
+                    return true;
+                }
+                case SENodeType.Connector:
+                {
+                    SEConnectorNode connectorNode = (SEConnectorNode) graphView.CreateNode(SENodeType.Connector, localMousePosition);
+                    graphView.AddElement(connectorNode);
+                    return true;
+                }
+
                 case Group _:
                 {
                     graphView.CreateGroup("DialogueGroup", localMousePosition);

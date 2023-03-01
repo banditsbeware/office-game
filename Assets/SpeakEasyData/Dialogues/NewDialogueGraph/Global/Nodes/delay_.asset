@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: _entry
+  m_Name: delay_
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: _entry
+  <NodeName>k__BackingField: delay_
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: First Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b93f4b216ab627b43b26d8ba2616d54a, type: 2}
+  - <Text>k__BackingField: 1.2
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 43fc946f634abd84b896cba73e490763, type: 2}
   <IfStatements>k__BackingField: []
-  <Callbacks>k__BackingField:
-  - <callbackVariableName>k__BackingField: currentScene
-    <callbackAction>k__BackingField: SetValue
-    <callbackValue>k__BackingField: 0
-  <NodeType>k__BackingField: 2
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 6
   <speechTime>k__BackingField: 0

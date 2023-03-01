@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: _entry
+  m_Name: rando
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: _entry
+  <NodeName>k__BackingField: rando
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: First Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b93f4b216ab627b43b26d8ba2616d54a, type: 2}
+  - <Text>k__BackingField: 50
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7ae704564e92a3f48a236c9aa68d9ea5, type: 2}
+  - <Text>k__BackingField: 50
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7ff18f472b857b343bc9fb47dd001a56, type: 2}
   <IfStatements>k__BackingField: []
-  <Callbacks>k__BackingField:
-  - <callbackVariableName>k__BackingField: currentScene
-    <callbackAction>k__BackingField: SetValue
-    <callbackValue>k__BackingField: 0
-  <NodeType>k__BackingField: 2
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 5
   <speechTime>k__BackingField: 0

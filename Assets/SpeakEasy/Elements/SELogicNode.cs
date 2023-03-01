@@ -22,15 +22,6 @@ namespace SpeakEasy.Elements
             base.Initialize(seGraphView, position, nodeName, isPlayer);
         }
 
-        public override void Draw()
-        {
-            base.Draw();
-
-            extensionContainer.Add(CreateCallbackFoldout());
-
-            RefreshExpandedState();
-        }
-
         #region Element Creation
         public Port CreateLogicPort(object userData)
         {
@@ -41,12 +32,12 @@ namespace SpeakEasy.Elements
             ifData = (SEIfSaveData) userData;
             choicePort.userData = ifData;  //storing save data about the if statement in the Port's userData
 
-            int contextVariableIndex = meta.GetVaraibleKeys().IndexOf(ifData.contextVariableName);
+            int contextVariableIndex = Meta.GetVaraibleKeys().IndexOf(ifData.contextVariableName);
             int comparisonIndex = comparisons.IndexOf(ifData.comparisonSign);
 
             // Port Contents //
 
-            PopupField<string> contextVariables = SEElementUtility.CreatePopupField(meta.GetVaraibleKeys(), contextVariableIndex);
+            PopupField<string> contextVariables = SEElementUtility.CreatePopupField(Meta.GetVaraibleKeys(), contextVariableIndex);
             contextVariables.RegisterValueChangedCallback(evt => 
             {
                 ifData.contextVariableName = evt.newValue;

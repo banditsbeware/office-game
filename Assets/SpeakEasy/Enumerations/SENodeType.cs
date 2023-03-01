@@ -3,11 +3,13 @@ namespace SpeakEasy.Enumerations
     //types of nodes
     public enum SENodeType
     {
-        SingleChoice,
+        Speaking,
         MultiChoice,
         Entry,
         Exit,
         If,
-        WeightedRandom
+        WeightedRandom,
+        Delay,
+        Connector
     }
 } 

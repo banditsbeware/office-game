@@ -18,38 +18,38 @@ namespace SpeakEasy
   public class SEDialogue : MonoBehaviour
     {
         //Dialogue ScriptableObjects
-        [SerializeField] private SEContainerSO container;
-        [SerializeField] private SEGroupSO group;
-        [SerializeField] private SENodeSO node;
-        [SerializeField] private SENodeSO entryNode;
+        [SerializeField] internal SEContainerSO container;
+        [SerializeField] internal SEGroupSO group;
+        [SerializeField] internal SENodeSO node;
+        [SerializeField] internal SENodeSO entryNode;
 
         //Filters
-        [SerializeField] private bool startingNodesOnly;
+        [SerializeField] internal bool startingNodesOnly;
 
         //Indexes
-        [SerializeField] private int selectedGroupIndex;
-        [SerializeField] private int selectedNodeIndex;
+        [SerializeField] internal int selectedGroupIndex;
+        [SerializeField] internal int selectedNodeIndex;
 
         //Objects
-        [SerializeField] private GameObject playerSpeechBubble;
-        [SerializeField] private TMP_Text playerSpeechText;
+        [SerializeField] internal GameObject playerSpeechBubble;
+        [SerializeField] internal TMP_Text playerSpeechText;
 
-        [SerializeField] private GameObject npcSpeechBubble;
-        [SerializeField] private TMP_Text npcSpeechText;
-        [SerializeField] private Animator npcAnimator;
+        [SerializeField] internal GameObject npcSpeechBubble;
+        [SerializeField] internal TMP_Text npcSpeechText;
+        [SerializeField] internal Animator npcAnimator;
 
         [SerializeField] private List<GameObject> choiceButtons;
 
-        private Coroutine speakingCoroutine;
+        internal Coroutine speakingCoroutine;
 
-        private Image playerBubbleImage;
-        private Image npcBubbleImage;
+        [HideInInspector] internal Image playerBubbleImage;
+        [HideInInspector] internal Image npcBubbleImage;
 
-        private Sprite playerBubbleSprite;
-        private Sprite npcBubbleSprite;
-        private Sprite emptySprite;
+        [HideInInspector] internal Sprite playerBubbleSprite;
+        [HideInInspector] internal Sprite npcBubbleSprite;
+        [HideInInspector] internal Sprite emptySprite;
 
-        private void Awake() 
+        internal virtual void Awake() 
         {
             playerSpeechText = playerSpeechBubble.GetComponentInChildren<TMP_Text>();
             npcSpeechText = npcSpeechBubble.GetComponentInChildren<TMP_Text>();
@@ -64,7 +64,7 @@ namespace SpeakEasy
         }
 
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
-        private void OnEnable() 
+        internal virtual void OnEnable() 
         {
             npcSpeechText.text = "";
             playerSpeechText.text = "";
@@ -77,7 +77,7 @@ namespace SpeakEasy
             node = entryNode;
             node = NextNode();
 
-            StartCoroutine(BeginningDelay(1f));
+            BeginNode();
         }
 
         // private void Update() 
@@ -90,50 +90,65 @@ namespace SpeakEasy
 
         #region Event Handling
 
-        private void BeginNode()
+        internal virtual void BeginNode()
         {
             PerformCallbacks();
 
-            if (node.NodeType == SingleChoice || node.NodeType == MultiChoice) //if it's a speaking node
+            switch (this.node.NodeType)
             {
-                if (node.IsPlayer)
-                {
-                    speakingCoroutine = StartCoroutine(PlayerSpeak());
-                }
-                else
-                {
-                    speakingCoroutine = StartCoroutine(NpcSpeak());
-                }
-                return;
-            }
-            else if (node.NodeType == If)
-            {
-                ParseLogic();
-            }
-            else if (node.NodeType == WeightedRandom)
-            {
-                ChooseWeightedRandom();
-            }
-            else if (node.NodeType == Exit)
-            {
-                UIManager.gameState = "play";
-                transform.parent.gameObject.SetActive(false);
-            }
-            else
-            {
-                Debug.Log("Whoops, this node shouldn't exist!");
-            }
-            
+                case Speaking:
+                    if (node.IsPlayer)
+                    {
+                        speakingCoroutine = StartCoroutine(PlayerSpeak());
+                    }
+                    else
+                    {
+                        speakingCoroutine = StartCoroutine(NpcSpeak());
+                    }
+                    break;
+                
+                case MultiChoice:
+                    PresentChoices();
+                    break;
+
+
+                case If:
+                    ParseLogic();
+                    break;
+
+                case WeightedRandom:
+                    ChooseWeightedRandom();
+                    break;
+
+                case Exit:
+                    UIManager.gameState = "play";
+                    transform.parent.gameObject.SetActive(false);
+                    break;
+
+                case Delay:
+                    float delayTime = float.Parse(node.Choices[0].Text);
+                    StartCoroutine(DelayNode(delayTime));
+                    break;
+                
+                case Connector:
+                    node = NextNode();
+                    BeginNode();
+                    break;
+
+                default:
+                    Debug.Log("Whoops, this node shouldn't exist!");
+                    break;
+            } 
         }
 
-        private SENodeSO NextNode(int choiceIndex = 0)
+        internal virtual SENodeSO NextNode(int choiceIndex = 0)
         {
             SENodeSO nextNode = node.Choices[choiceIndex].NextDialogue;
 
             return nextNode;
         }
 
-        private SENodeSO NextLogicStep(SENodeSO currentNode, int choiceIndex = 0)
+        internal virtual SENodeSO NextLogicStep(SENodeSO currentNode, int choiceIndex = 0)
         {
 
             SENodeSO nextNode = currentNode.IfStatements[choiceIndex].NextDialogue;
@@ -141,7 +156,7 @@ namespace SpeakEasy
             return nextNode;
         }
 
-        public void ChoiceMade(GameObject button)
+        public virtual void ChoiceMade(GameObject button)
         {
             int choiceIndex = choiceButtons.IndexOf(button);
 
@@ -159,20 +174,20 @@ namespace SpeakEasy
         {
             foreach (SECallbackSaveData callback in node.Callbacks)
             {
-                Type variableType = meta.Variables[callback.callbackVariableName].GetType();
+                Type variableType = Meta.Variables[callback.callbackVariableName].GetType();
 
                 switch (callback.callbackAction)
                 {
                     case "SetValue":
-                        if (variableType == typeof(string)) meta.Variables[callback.callbackVariableName] = callback.callbackValue;
-                        if (variableType == typeof(int)) meta.Variables[callback.callbackVariableName] = int.Parse(callback.callbackValue);
-                        if (variableType == typeof(bool)) meta.Variables[callback.callbackVariableName] = bool.Parse(callback.callbackValue);
+                        if (variableType == typeof(string)) Meta.Variables[callback.callbackVariableName] = callback.callbackValue;
+                        if (variableType == typeof(int)) Meta.Variables[callback.callbackVariableName] = int.Parse(callback.callbackValue);
+                        if (variableType == typeof(bool)) Meta.Variables[callback.callbackVariableName] = bool.Parse(callback.callbackValue);
                         break;
                     case "Increment":
-                        meta.Variables[callback.callbackVariableName] += int.Parse(callback.callbackValue);
+                        Meta.Variables[callback.callbackVariableName] += int.Parse(callback.callbackValue);
                         break;
                     case "Decrement":
-                        meta.Variables[callback.callbackVariableName] -= int.Parse(callback.callbackValue);
+                        Meta.Variables[callback.callbackVariableName] -= int.Parse(callback.callbackValue);
                         break;
                 }
             }
@@ -201,7 +216,6 @@ namespace SpeakEasy
             speakingCoroutine = null;
 
             node = NextNode();
-
             BeginNode();
         }
 
@@ -222,24 +236,17 @@ namespace SpeakEasy
 
             speakingCoroutine = null;
 
-            if (node.NodeType == MultiChoice)
-            {
-                PresentChoices();
-            }
-            else
-            {
-                node = NextNode();
-                BeginNode();
-            }   
+            node = NextNode();
+            BeginNode();
         }
 
         #endregion
 
         #region Logic-ing
 
-        private void ParseLogic()
+        internal void ParseLogic()
         {
-            if (meta.IfStatement(node.IfStatements[0])) //checks the truth of the if statement in an if node
+            if (Meta.IfStatement(node.IfStatements[0])) //checks the truth of the if statement in an if node
             {
                 node = NextLogicStep(node, 0);
             }
@@ -251,7 +258,7 @@ namespace SpeakEasy
             BeginNode();
         }
 
-        private void ChooseWeightedRandom()
+        internal void ChooseWeightedRandom()
         {
             int totalWeight = 0;
             int runningTotal = 0;
@@ -284,7 +291,7 @@ namespace SpeakEasy
             return speakingCoroutine != null;
         }
 
-        private void PresentChoices()
+        internal virtual void PresentChoices()
         {
             int numberOfChoices = node.Choices.Count;
             for (int i = 0; i < numberOfChoices; i++)
@@ -302,8 +309,12 @@ namespace SpeakEasy
             }
         }
 
-        IEnumerator BeginningDelay(float delay)
+        IEnumerator DelayNode(float delay)
         {
+            Debug.Log("we've arrived");
+
+            node = NextNode();
+
             yield return new WaitForSeconds(delay);
 
             BeginNode();

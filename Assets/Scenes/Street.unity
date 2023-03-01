@@ -1799,7 +1799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: bodega [E]
   theGame: {fileID: 763681268}
   minigameBank:
@@ -2326,7 +2325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec205704ac1e0674cb5340876085cf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: enter [E]
   loader: {fileID: 199737407}
   scene: Office
@@ -2897,7 +2895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec205704ac1e0674cb5340876085cf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: enter [E]
   loader: {fileID: 199737407}
   scene: Apartment
@@ -3110,9 +3107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ed8795b209a0a428b7002839a288f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseObjects: []
-  notifs: []
-  minigames: []
   canvasText: {fileID: 108837072}
 --- !u!4 &1890632087
 Transform:

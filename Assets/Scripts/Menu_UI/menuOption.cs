@@ -32,12 +32,12 @@ public class menuOption : MonoBehaviour, ISelectHandler, IPointerEnterHandler
 
     public void NewGameClicked()
     {
-        meta.ResetData();
-        loader.LoadLevel(meta.Variables["currentScene"]);
+        Meta.ResetData();
+        loader.LoadLevel(Meta.Variables["currentScene"]);
     }
     public void ContinueClicked()
     {
-        loader.LoadLevel(meta.Variables["currentScene"]);
+        loader.LoadLevel(Meta.Variables["currentScene"]);
     }
     
     public void OnPointerEnter(PointerEventData pointerData)

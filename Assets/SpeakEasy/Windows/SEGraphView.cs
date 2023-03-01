@@ -99,10 +99,12 @@ namespace SpeakEasy.Windows
 
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.Entry,  "Add Entry Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.Exit,  "Add Exit Node"));
-            this.AddManipulator(CreateNodeContextualMenu(SENodeType.SingleChoice, "Add Single Choice Node"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Speaking, "Add Speaking Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.MultiChoice,  "Add Multi Choice Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.If, "Add If Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.WeightedRandom, "Add Weighted Random Node"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Delay, "Add Delay Node"));
+            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Connector, "Add Connector"));
             
             this.AddManipulator(CreateGroupContextualMenu());
         }

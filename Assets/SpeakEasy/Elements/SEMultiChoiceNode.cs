@@ -10,7 +10,7 @@ namespace SpeakEasy.Elements
     using Windows;
   
     //node for choosing from a selection of dialogue choices
-    public class SEMultiChoiceNode : SESpeakingNode
+    public class SEMultiChoiceNode : SENode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
