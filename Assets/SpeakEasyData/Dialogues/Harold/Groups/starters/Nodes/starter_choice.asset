@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: starter_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: starter_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: '-climate
+
+    -posterity
+
+    -occupation
+
+    -cinema
+
+    -athletics'
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: weather
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: f50263c29393260419534200c24cd3cc, type: 2}
+  - <Text>k__BackingField: child
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60f4be1b89528984fa734aab4efd2502, type: 2}
+  - <Text>k__BackingField: work
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4403e774e6639f64583f5597669a9173, type: 2}
+  - <Text>k__BackingField: movies
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c7c4765c30903094eaae95b19ddd9b83, type: 2}
+  - <Text>k__BackingField: sports
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: aca329195ee5c3d488427cb91a706cbc, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <speechTime>k__BackingField: 0

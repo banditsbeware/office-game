@@ -15,7 +15,11 @@ namespace SpeakEasy
   
     public class CrosswordDialogue : SEDialogue
     {
-        private SENodeSO goodbyeNode;
+        //Jumped to Nodes, repeat tracker
+        public SENodeSO goodbyeNode;
+        public SENodeSO repeatWordNode;
+        public bool wordRepeated;
+
 
         private static char[] alpha = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' }; 
 
@@ -69,6 +73,7 @@ namespace SpeakEasy
         //words 
         public List<Word> avalibleWords = new List<Word>();
         public List<Word> allWords = new List<Word>();
+        public List<string> usedWords = new List<string>();
         public TMP_Text postIt;
 
         //WWise
@@ -93,25 +98,28 @@ namespace SpeakEasy
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
         internal override void OnEnable() 
         {
-            if(transform.parent.GetComponent<interact_minigame>().isInteractable) 
-            {
-                AkSoundEngine.SetState("room", "officeMinigame");
-            }
+          if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
+          {
+              AkSoundEngine.SetState("room", "officeMinigame");
+          }
 
-            npcSpeechText.text = "";
-            playerSpeechText.text = "";
+          npcSpeechText.text = "";
+          playerSpeechText.text = "";
 
-            npcBubbleImage.sprite = emptySprite;
-            playerBubbleImage.sprite = emptySprite;
+          npcBubbleImage.sprite = emptySprite;
+          playerBubbleImage.sprite = emptySprite;
 
-            avalibleWords = new List<Word>();
+          avalibleWords = new List<Word>();
 
-            node = entryNode;
-            node = NextNode();
+          node = entryNode;
 
-            DoGrid();
-
-            BeginNode();
+          if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
+          {
+              node = NextNode();
+              DoGrid();
+              BeginNode();
+          }
+            
         }
 
         void OnDisable()
@@ -133,91 +141,52 @@ namespace SpeakEasy
         {
             PerformCallbacks();
 
-            if (node.NodeType == Speaking || node.NodeType == MultiChoice) //if it's a speaking node
+            switch (node.NodeType)
             {
-                if (node.IsPlayer)
-                {
-                    speakingCoroutine = StartCoroutine(PlayerSpeak());
-                }
-                else
-                {
-                    speakingCoroutine = StartCoroutine(NpcSpeak());
-                }
-                return;
-            }
-            else if (node.NodeType == If)
-            {
-                ParseLogic();
-            }
-            else if (node.NodeType == WeightedRandom)
-            {
-                ChooseWeightedRandom();
-            }
-            else if (node.NodeType == Exit)
-            {
-                UIManager.gameState = "play";
-                transform.parent.gameObject.SetActive(false);
-            }
-            else
-            {
-                Debug.Log("Whoops, this node shouldn't exist!");
-            }
+                case Speaking:
+                    if (node.IsPlayer)
+                    {
+                        speakingCoroutine = StartCoroutine(PlayerSpeak());
+                    }
+                    else
+                    {
+                        speakingCoroutine = StartCoroutine(NpcSpeak());
+                    }
+                    break;
+                
+                case MultiChoice:
+                    StartCoroutine(ChangeBoards());
+                    break;
+
+                case If:
+                case IfElseIf:
+                    ParseIfLogic();
+                    break;
+
+                case WeightedRandom:
+                    ChooseWeightedRandom();
+                    break;
+
+                case Exit:
+                    UIManager.gameState = "play";
+                    transform.parent.gameObject.SetActive(false);
+                    break;
+
+                case Delay:
+                    float delayTime = float.Parse(node.Choices[0].Text);
+                    StartCoroutine(DelayNode(delayTime));
+                    break;
+                
+                case Connector:
+                    node = NextNode();
+                    BeginNode();
+                    break;
+
+                default:
+                    Debug.Log("Whoops, this node shouldn't exist!");
+                    break;
+            } 
             
-        }
-
-        #endregion
-
-        #region Speaking
-
-        IEnumerator PlayerSpeak()
-        {
-            TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText);
-            playerBubbleImage.sprite = playerBubbleSprite;
-
-            AkSoundEngine.PostEvent("Play_Player", gameObject);
-
-            yield return new WaitForSeconds(node.speechTime);
-
-            AkSoundEngine.PostEvent("Stop_Player", gameObject);
-
-            yield return new WaitForSeconds(1.5f);
-        
-            playerSpeechText.text = "";
-            playerBubbleImage.sprite = emptySprite;
-
-            speakingCoroutine = null;
-
-            node = NextNode();
-
-            BeginNode();
-        }
-
-
-        IEnumerator NpcSpeak()
-        {
-            npcAnimator.SetBool("isSpeaking", true);
-            npcBubbleImage.sprite = npcBubbleSprite;
-
-            //AkSoundEngine.PostEvent(word.post, gameObject);
-
-            TextWriter.AddWriter_Static(npcSpeechText, node.DialogueText);
-            
-
-            yield return new WaitForSeconds(node.speechTime);
-
-            npcAnimator.SetBool("isSpeaking", false);
-
-            speakingCoroutine = null;
-
-            if (node.NodeType == MultiChoice)
-            {
-                ChangeBoards();
-            }
-            else
-            {
-                node = NextNode();
-                BeginNode();
-            }   
         }
 
         #endregion
@@ -233,6 +202,35 @@ namespace SpeakEasy
 
         #endregion
     
+        internal override IEnumerator PlayerSpeak()
+        {
+            TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText.Split("\n")[0]); //first half of text box, excludes post it description
+            playerBubbleImage.sprite = playerBubbleSprite;
+
+            AkSoundEngine.PostEvent("Play_Player", gameObject);
+
+            yield return new WaitForSeconds(node.speechTime);
+
+            AkSoundEngine.PostEvent("Stop_Player", gameObject);
+
+            yield return new WaitForSeconds(1.5f);
+        
+            playerSpeechText.text = "";
+            playerBubbleImage.sprite = emptySprite;
+
+            speakingCoroutine = null;
+
+            if (wordRepeated)
+            {
+              wordRepeated = false;
+              node = repeatWordNode;
+            }
+
+            node = NextNode();
+            BeginNode();
+        }
+
+
         #region Crossword
 
         IEnumerator ChangeBoards()
@@ -284,26 +282,17 @@ namespace SpeakEasy
 
         void PlaceWords()
         {
+          avalibleWords.Clear();
           List<int> wordsInPlay = new List<int>();
 
           //apply postIt header
-          postIt.text = "acceptable topics\nof conversation:\n\n";
+          postIt.text = "acceptable topics\nof conversation:\n";
+          List<string> postItDescriptions = new List<string>();
 
           foreach (SEChoiceData choice in node.Choices)
           {
-            string[] postItDescriptions = node.DialogueText.Split("\n");
-            string correctPostIt = "";
-
-            foreach(string description in postItDescriptions)
-            {
-              if (description.Contains(choice.Text.ToUpper()))
-              {
-                correctPostIt = description.TrimStart(choice.Text.ToCharArray());
-                correctPostIt.Trim();
-              }
-            }
-
-            Debug.Log(correctPostIt);
+            string correctPostIt = node.DialogueText.Split("\n")[node.Choices.IndexOf(choice)];
+            postItDescriptions.Add(correctPostIt);
 
             avalibleWords.Add(new Word(){
               word = choice.Text.ToUpper(),
@@ -336,7 +325,7 @@ namespace SpeakEasy
           Word goodbye = new Word()
           {
             word = "GOODBYE",
-            postItDes = "say you goodbyes"
+            postItDes = "-say your goodbyes"
           };
 
           avalibleWords.Add(goodbye);
@@ -390,6 +379,7 @@ namespace SpeakEasy
                 overlap = true;
               }
             }
+
             if (overlap == true)
             {
               word.origin = (UnityEngine.Random.Range(0, size), UnityEngine.Random.Range(0, size));
@@ -398,7 +388,7 @@ namespace SpeakEasy
           }
           ChangeLetters(word);
 
-          postIt.text += "-" + word.postItDes + "\n";
+          postIt.text += word.postItDes + "\n";
         }
 
         //iterate through each button object in a direction from an origin, change its text to word letter
@@ -410,6 +400,11 @@ namespace SpeakEasy
             button = letterMatrix[word.origin.Item1 + word.direction.Item1 * x, word.origin.Item2 + word.direction.Item2 * x];
             ButtonTextComponent(button).text = wordString[x].ToString();
             button.GetComponent<WordsearchButton>().usedByOtherWord = true;
+
+            if (Meta.DebuggingMode)
+            {
+              button.GetComponent<Image>().color = new Color32(200, 200, 0, 150);
+            }
             
             //assign first and last button to Word object
             if (x == 0)
@@ -448,8 +443,6 @@ namespace SpeakEasy
 
         public void CheckWord()
         {
-          bool aWordWasFound = false;
-
           //compare first and last button of selection and Word's button objects assigned in ChangeLetters()
           foreach (Word word in avalibleWords)
           {
@@ -457,10 +450,6 @@ namespace SpeakEasy
             {
               firstSel.GetComponent<Button>().enabled = false;
               secondSel.GetComponent<Button>().enabled = false;
-              aWordWasFound = true;
-
-              //set text in minigame canvas to response in Word object
-              word.used = true;
 
               //take out buttons in middle of word
               for (int x = 1; x < word.word.Length - 1; x++)
@@ -471,27 +460,39 @@ namespace SpeakEasy
                   
               }
 
+              if (word.word == "GOODBYE")
+              {
+                node = goodbyeNode;
+                node = NextNode();
+              }
+
+              if (usedWords.Contains(word.word))
+              {
+                wordRepeated = true;
+              }
+              else
+              {
+                usedWords.Add(word.word);
+              }
+
               int choiceIndex = avalibleWords.IndexOf(word);
               node = NextNode(choiceIndex);
 
-              npcSpeechText.text = "";
-              npcBubbleImage.sprite = emptySprite;
-
+              ClearNPC();
               BeginNode();
-              break;
+
+              return;
             }
           }
 
-          if (!aWordWasFound)
-          {
-            firstSel.GetComponent<WordsearchButton>().Reset();
-            secondSel.GetComponent<WordsearchButton>().Reset();
-          }
+          //if no word is found
+          firstSel.GetComponent<WordsearchButton>().Reset();
+          secondSel.GetComponent<WordsearchButton>().Reset();
         }
 
-        #endregion
-    
-    }
+    #endregion
+
+  }
 }
  
         

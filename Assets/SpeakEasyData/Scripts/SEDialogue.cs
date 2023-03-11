@@ -66,11 +66,9 @@ namespace SpeakEasy
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
         internal virtual void OnEnable() 
         {
-            npcSpeechText.text = "";
             playerSpeechText.text = "";
-
-            npcBubbleImage.sprite = emptySprite;
             playerBubbleImage.sprite = emptySprite;
+            ClearNPC();
 
             HideChoices();
 
@@ -94,7 +92,7 @@ namespace SpeakEasy
         {
             PerformCallbacks();
 
-            switch (this.node.NodeType)
+            switch (node.NodeType)
             {
                 case Speaking:
                     if (node.IsPlayer)
@@ -111,9 +109,9 @@ namespace SpeakEasy
                     PresentChoices();
                     break;
 
-
                 case If:
-                    ParseLogic();
+                case IfElseIf:
+                    ParseIfLogic();
                     break;
 
                 case WeightedRandom:
@@ -150,7 +148,6 @@ namespace SpeakEasy
 
         internal virtual SENodeSO NextLogicStep(SENodeSO currentNode, int choiceIndex = 0)
         {
-
             SENodeSO nextNode = currentNode.IfStatements[choiceIndex].NextDialogue;
 
             return nextNode;
@@ -163,9 +160,7 @@ namespace SpeakEasy
             node = NextNode(choiceIndex);
 
             HideChoices();
-
-            npcSpeechText.text = "";
-            npcBubbleImage.sprite = emptySprite;
+            ClearNPC();
 
             BeginNode();
         }
@@ -174,20 +169,22 @@ namespace SpeakEasy
         {
             foreach (SECallbackSaveData callback in node.Callbacks)
             {
-                Type variableType = Meta.Variables[callback.callbackVariableName].GetType();
+                Dictionary<string, dynamic> blackboard = Meta.BlackboardThatContains(callback.callbackVariableName);
+
+                Type variableType = blackboard[callback.callbackVariableName].GetType();
 
                 switch (callback.callbackAction)
                 {
                     case "SetValue":
-                        if (variableType == typeof(string)) Meta.Variables[callback.callbackVariableName] = callback.callbackValue;
-                        if (variableType == typeof(int)) Meta.Variables[callback.callbackVariableName] = int.Parse(callback.callbackValue);
-                        if (variableType == typeof(bool)) Meta.Variables[callback.callbackVariableName] = bool.Parse(callback.callbackValue);
+                        if (variableType == typeof(string)) blackboard[callback.callbackVariableName] = callback.callbackValue;
+                        if (variableType == typeof(int)) blackboard[callback.callbackVariableName] = int.Parse(callback.callbackValue);
+                        if (variableType == typeof(bool)) blackboard[callback.callbackVariableName] = bool.Parse(callback.callbackValue);
                         break;
                     case "Increment":
-                        Meta.Variables[callback.callbackVariableName] += int.Parse(callback.callbackValue);
+                        blackboard[callback.callbackVariableName] += int.Parse(callback.callbackValue);
                         break;
                     case "Decrement":
-                        Meta.Variables[callback.callbackVariableName] -= int.Parse(callback.callbackValue);
+                        blackboard[callback.callbackVariableName] -= int.Parse(callback.callbackValue);
                         break;
                 }
             }
@@ -197,7 +194,7 @@ namespace SpeakEasy
 
         #region Speaking
 
-        IEnumerator PlayerSpeak()
+        internal virtual IEnumerator PlayerSpeak()
         {
             TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText);
             playerBubbleImage.sprite = playerBubbleSprite;
@@ -220,20 +217,26 @@ namespace SpeakEasy
         }
 
 
-        IEnumerator NpcSpeak()
+        public IEnumerator NpcSpeak()
         {
             npcAnimator.SetBool("isSpeaking", true);
             npcBubbleImage.sprite = npcBubbleSprite;
 
-            //AkSoundEngine.PostEvent(word.post, gameObject);
+            //for implementing dialogue prior to recording. only tries playing if event exists
+            if (AkSoundEngine.PrepareEvent(AkPreparationType.Preparation_Load, new string[]{$"Play_{node.NodeName}"}, 1) == AKRESULT.AK_IDNotFound)
+            {
+                Debug.Log("Whoops, Wwise event doesn't exist yet");
+            }
+            else
+            {
+                AkSoundEngine.PostEvent($"Play_{node.NodeName}", gameObject);
+            }
 
             TextWriter.AddWriter_Static(npcSpeechText, node.DialogueText);
-            
 
             yield return new WaitForSeconds(node.speechTime);
 
             npcAnimator.SetBool("isSpeaking", false);
-
             speakingCoroutine = null;
 
             node = NextNode();
@@ -244,17 +247,21 @@ namespace SpeakEasy
 
         #region Logic-ing
 
-        internal void ParseLogic()
+        internal void ParseIfLogic()
         {
-            if (Meta.IfStatement(node.IfStatements[0])) //checks the truth of the if statement in an if node
+            for (int i = 0; i < node.IfStatements.Count; i++)
             {
-                node = NextLogicStep(node, 0);
+                if (i == node.IfStatements.Count - 1) //don't send the else statement thru Meta.isIfStatementTrue
+                {
+                    node = NextLogicStep(node, i);
+                    break;
+                }
+                if (Meta.isIfStatementTrue(node.IfStatements[i]))
+                {
+                    node = NextLogicStep(node, i);
+                    break;
+                }
             }
-            else
-            {
-                node = NextLogicStep(node, 1);
-            }
-
             BeginNode();
         }
 
@@ -318,6 +325,12 @@ namespace SpeakEasy
             yield return new WaitForSeconds(delay);
 
             BeginNode();
+        }
+
+        internal void ClearNPC()
+        {
+            npcSpeechText.text = "";
+            npcBubbleImage.sprite = emptySprite;
         }
  
         #endregion

@@ -8,6 +8,7 @@ namespace SpeakEasy.Enumerations
         Entry,
         Exit,
         If,
+        IfElseIf,
         WeightedRandom,
         Delay,
         Connector

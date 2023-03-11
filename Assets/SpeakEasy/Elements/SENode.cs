@@ -100,6 +100,29 @@ namespace SpeakEasy.Elements
                 "se-node__text-field__hidden"
             );
 
+            Button addCallbacksButton = SEElementUtility.CreateButton("CB", () =>
+            {
+                if (Callbacks.Count == 0)
+                {
+                    extensionContainer.Add(CreateCallbackFoldout());
+                    RefreshExpandedState();
+                }
+            });
+            addCallbacksButton.AddToClassList("se-node__mini-button");
+
+            Button addDialoguesButton = SEElementUtility.CreateButton("D", () =>
+            {
+                extensionContainer.Add(CreateDialogueFoldout());
+                RefreshExpandedState();
+            });
+            addDialoguesButton.AddToClassList("se-node__mini-button");
+
+            VisualElement buttonsContainer = new VisualElement();
+            buttonsContainer.Add(addCallbacksButton);
+            buttonsContainer.Add(addDialoguesButton);
+            buttonsContainer.AddToClassList("se-node__callback");
+
+            titleContainer.Insert(1, buttonsContainer);
             titleContainer.Insert(0, nodeNameTextField);  //titleContainer is part of the inherited Node class, it's essentially the header
 
             // Input Container //
@@ -107,8 +130,14 @@ namespace SpeakEasy.Elements
             inputContainer.Add(inputPort);  //inputContainer is a child of the middle container in the Node, on the left side
 
             // Extensions Container //
-            extensionContainer.Add(CreateCallbackFoldout());
-
+            if (Callbacks.Count != 0)
+            {
+                extensionContainer.Add(CreateCallbackFoldout());
+            }
+            if (DialogueText != null && DialogueText != "")
+            {
+                extensionContainer.Add(CreateDialogueFoldout());
+            }
             RefreshExpandedState();
         }
 
@@ -119,7 +148,16 @@ namespace SpeakEasy.Elements
         {
             VisualElement foldoutContainer = new VisualElement();
 
+            Button deleteFoldoutButton = SEElementUtility.CreateButton("x", () =>
+            {
+                Callbacks.Clear();
+                extensionContainer.Remove(foldoutContainer);
+            });
+            deleteFoldoutButton.AddToClassList("se-node__mini-button");
+
             Foldout callbackFoldout = SEElementUtility.CreateFoldout("Callback");
+
+            // Contents //
 
             Button addCallbackButton = SEElementUtility.CreateButton("Add Callback", () =>
             {
@@ -147,12 +185,18 @@ namespace SpeakEasy.Elements
 
                 RefreshExpandedState();
             }
-            
-            callbackFoldout.Add(addCallbackButton);
+
+            VisualElement buttonsContainer = new VisualElement();
+
+            buttonsContainer.Add(addCallbackButton);
+            buttonsContainer.Add(deleteFoldoutButton);
+            buttonsContainer.AddToClassList("se-node__callback");
+
+            callbackFoldout.Add(buttonsContainer);
             callbackFoldout.value = false;
-
+            
             foldoutContainer.Add(callbackFoldout);
-
+            
             foldoutContainer.AddToClassList("se-node__custom-data-container");
 
             return foldoutContainer;
@@ -235,7 +279,6 @@ namespace SpeakEasy.Elements
                 }
 
                 Choices.Remove(choiceData);
-
                 graphView.RemoveElement(choicePort);
             });
 
@@ -258,6 +301,30 @@ namespace SpeakEasy.Elements
             return choicePort;
         }
 
+        public VisualElement CreateDialogueFoldout()
+        {
+            VisualElement customDataContainer = new VisualElement();
+
+            customDataContainer.AddToClassList("se-node__custom-data-container");
+
+            Foldout textFoldout = SEElementUtility.CreateFoldout("Dialogue Text");
+
+            textFoldout.RegisterValueChangedCallback((evt) => this.BringToFront());
+
+            TextField textTextField = SEElementUtility.CreateTextArea(DialogueText, null, callback => DialogueText = callback.newValue);
+
+            textTextField.AddClasses(
+                "se-node__text-field",
+                "se-node__quote-text-field"
+            );
+
+            textFoldout.Add(textTextField);
+            customDataContainer.Add(textFoldout);
+
+            textFoldout.value = false;
+
+            return customDataContainer;
+        }
         #endregion
 
         #region Utilities

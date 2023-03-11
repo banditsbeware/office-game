@@ -18,6 +18,8 @@ namespace SpeakEasy.Elements
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
+            DialogueText = "Dialoge text.";
+
             base.Initialize(seGraphView, position, nodeName, isPlayer);
 
             SEChoiceSaveData choiceData = new SEChoiceSaveData()
@@ -29,33 +31,11 @@ namespace SpeakEasy.Elements
 
             Choices.Add(choiceData);
 
-            DialogueText = "Dialoge text.";
-
             IsPlayer = isPlayer;
         }
 
         public override void Draw()
         {
-            // Extensions Container //
-            VisualElement customDataContainer = new VisualElement();
-
-            customDataContainer.AddToClassList("se-node__custom-data-container");
-
-            Foldout textFoldout = SEElementUtility.CreateFoldout("Dialogue Text");
-
-            TextField textTextField = SEElementUtility.CreateTextArea(DialogueText, null, callback => DialogueText = callback.newValue);
-
-            textTextField.AddClasses(
-                "se-node__text-field",
-                "se-node__quote-text-field"
-            );
-
-            textFoldout.Add(textTextField);
-            customDataContainer.Add(textFoldout);
-            extensionContainer.Add(customDataContainer);
-
-            textFoldout.value = false;
-
             // Base Draw
             base.Draw();
 

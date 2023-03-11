@@ -12,8 +12,6 @@ namespace SpeakEasy.Elements
         {
             base.Initialize(seGraphView, position, nodeName);
 
-            NodeName = "_exit";
-
             NodeType = SENodeType.Exit;
         }
 

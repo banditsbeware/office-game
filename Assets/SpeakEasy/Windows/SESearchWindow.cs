@@ -41,6 +41,11 @@ namespace SpeakEasy.Windows
                     level = 2,
                     userData = SENodeType.If
                 },
+                new SearchTreeEntry(new GUIContent("If Else If", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.IfElseIf
+                },
                 new SearchTreeEntry(new GUIContent("WeightedRandom", indentation))
                 {
                     level = 2,
@@ -103,15 +108,21 @@ namespace SpeakEasy.Windows
                     graphView.AddElement(ifNode);
                     return true;
                 }
+                case SENodeType.IfElseIf:
+                {
+                    SEIfElseIfNode ifNode = (SEIfElseIfNode) graphView.CreateNode(SENodeType.IfElseIf, localMousePosition);
+                    graphView.AddElement(ifNode);
+                    return true;
+                }
                 case SENodeType.Entry:
                 {
-                    SEEntryNode entryNode = (SEEntryNode) graphView.CreateNode(SENodeType.Entry, localMousePosition);
+                    SEEntryNode entryNode = (SEEntryNode) graphView.CreateNode(SENodeType.Entry, localMousePosition, "_entry");
                     graphView.AddElement(entryNode);
                     return true;
                 }
                 case SENodeType.Exit:
                 {
-                    SEExitNode exitNode = (SEExitNode) graphView.CreateNode(SENodeType.Exit, localMousePosition);
+                    SEExitNode exitNode = (SEExitNode) graphView.CreateNode(SENodeType.Exit, localMousePosition, "_exit");
                     graphView.AddElement(exitNode);
                     return true;
                 }
@@ -123,7 +134,7 @@ namespace SpeakEasy.Windows
                 }
                 case SENodeType.Delay:
                 {
-                    SEDelayNode delayNode = (SEDelayNode) graphView.CreateNode(SENodeType.Delay, localMousePosition);
+                    SEDelayNode delayNode = (SEDelayNode) graphView.CreateNode(SENodeType.Delay, localMousePosition, "_delay");
                     graphView.AddElement(delayNode);
                     return true;
                 }

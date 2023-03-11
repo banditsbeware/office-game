@@ -1,8 +1,11 @@
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
+using System;
 
 namespace SpeakEasy.Utilities
 {
@@ -12,13 +15,14 @@ namespace SpeakEasy.Utilities
     using Elements;
     using SpeakEasy.Data;
     using Enumerations;
-    
-    //all the methods required for saving and loading the graph window, and saving and loading to scriptable objects
-    public static class SEIOUtility
+  
+  //all the methods required for saving and loading the graph window, and saving and loading to scriptable objects
+  public static class SEIOUtility
     {
         private static SEGraphView graphView;
         public static string graphFileName;
         private static string containerFolderPath;
+        private static string bufferFolderPath;
 
         private static List<SEGroup> groups;   //used when getting elements from graphView
         private static List<SENode> nodes;
@@ -29,11 +33,14 @@ namespace SpeakEasy.Utilities
         private static Dictionary<string, SEGroup> loadedGroups;   //used in Loading process
         private static Dictionary<string, SENode> loadedNodes;
 
+        private static SEGraphSaveDataSO bufferGraph;
+
         public static void Initialize(SEGraphView seGraphView, string graphName)
         {
             graphView = seGraphView;
             graphFileName = graphName;
             containerFolderPath = $"Assets/SpeakEasyData/Dialogues/{graphFileName}";
+            bufferFolderPath = $"Assets/SpeakEasyData/CopyPasteBuffer";
 
             groups = new List<SEGroup>();
             nodes = new List<SENode>();
@@ -53,7 +60,6 @@ namespace SpeakEasy.Utilities
             GetElementsFromGraphView();
 
             SEGraphSaveDataSO graphData = CreateAsset<SEGraphSaveDataSO>("Assets/SpeakEasy/Graphs", graphFileName);
-
             graphData.Initialize(graphFileName);
 
             SEContainerSO container = CreateAsset<SEContainerSO>(containerFolderPath, graphFileName);
@@ -90,7 +96,7 @@ namespace SpeakEasy.Utilities
             UpdateOldGroups(groupNames, graphData);
         }
 
-        private static void SaveGroupToGraph(SEGroup group, SEGraphSaveDataSO graphData)
+        public static void SaveGroupToGraph(SEGroup group, SEGraphSaveDataSO graphData)
         {
             SEGroupSaveData groupData = new SEGroupSaveData()
             {
@@ -166,7 +172,7 @@ namespace SpeakEasy.Utilities
             UpdateOldUngroupedNodes(ungroupedNodeNames, graphData);
         }
 
-        private static void SaveNodeToGraph(SENode node, SEGraphSaveDataSO graphData)
+        public static void SaveNodeToGraph(SENode node, SEGraphSaveDataSO graphData)
         {
             List<SEChoiceSaveData> choices = CloneChoices(node.Choices);
             List<SEIfSaveData> ifs = CloneIfs(node.IfStatements);
@@ -232,7 +238,8 @@ namespace SpeakEasy.Utilities
                 {
                     contextVariableName = ifStatement.contextVariableName,
                     comparisonSign = ifStatement.comparisonSign,
-                    comparisonValue = ifStatement.comparisonValue
+                    comparisonValue = ifStatement.comparisonValue,
+                    isMetaVariableComparison = ifStatement.isMetaVariableComparison
                 };
 
                 dialogueIfs.Add(ifData);
@@ -341,7 +348,8 @@ namespace SpeakEasy.Utilities
                     NodeID = ifStatement.NodeID,
                     contextVariableName = ifStatement.contextVariableName,
                     comparisonSign = ifStatement.comparisonSign,
-                    comparisonValue = ifStatement.comparisonValue
+                    comparisonValue = ifStatement.comparisonValue,
+                    isMetaVariableComparison = ifStatement.isMetaVariableComparison
                 };
                 ifs.Add(choiceData);
             }
@@ -387,6 +395,13 @@ namespace SpeakEasy.Utilities
             LoadGroups(graphData.Groups);
             LoadNodes(graphData.Nodes);
             LoadNodeConnections();
+
+            //for some reason, the nodes' positions aren't updated immediately, so you can't calculate which edges go backwards.
+            //thus, this method has to be delayed
+            EditorApplication.delayCall += () =>
+            {
+                graphView.UpdateEdgeColors();
+            };
         }
 
         private static void LoadGroups(List<SEGroupSaveData> groups)
@@ -421,6 +436,7 @@ namespace SpeakEasy.Utilities
 
                 SENode node = graphView.CreateNode(nodeData.NodeType, nodeData.Position, nodeData.Name, nodeData.IsPlayer, false);
 
+                node.NodeName = nodeData.Name;
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.IfStatements = ifs;
@@ -446,7 +462,7 @@ namespace SpeakEasy.Utilities
             }
         }
 
-        private static void LoadNodeConnections()
+        private static void LoadNodeConnections(bool isPaste = false)
         {
             foreach (KeyValuePair<string, SENode> loadedNode in loadedNodes)
             {
@@ -454,7 +470,7 @@ namespace SpeakEasy.Utilities
                 {
                     SEChoiceSaveData choiceData = (SEChoiceSaveData) outPort.userData;
 
-                    if (string.IsNullOrEmpty(choiceData.NodeID))
+                    if (string.IsNullOrEmpty(choiceData.NodeID) || !loadedNodes.ContainsKey(choiceData.NodeID))
                     {
                         continue;
                     }
@@ -466,6 +482,17 @@ namespace SpeakEasy.Utilities
                     Edge newEdge = outPort.ConnectTo(nextNodeInput);
 
                     graphView.AddElement(newEdge);
+                    
+                    if (loadedNode.Value.GetPosition().x < newEdge.output.node.GetPosition().x)
+                    {
+                        newEdge.input.portColor = new Color32(100, 100, 100, 100);
+                        newEdge.output.portColor = new Color32(100, 100, 100, 100);
+                    }
+
+                    if (isPaste)
+                    {
+                        graphView.AddToSelection(newEdge);
+                    }
 
                     loadedNode.Value.RefreshPorts();
                 }
@@ -476,7 +503,7 @@ namespace SpeakEasy.Utilities
 
         #region Creation Methods
 
-        private static void CreatePermanentFolders()
+        public static void CreatePermanentFolders()
         {
             CreateFolder("Assets/SpeakEasy", "Graphs");
             CreateFolder("Assets", "SpeakEasyData");                        
@@ -485,7 +512,6 @@ namespace SpeakEasy.Utilities
             CreateFolder(containerFolderPath, "Global");                    //total graph data, including filename, lists of groups and nodes, etc
             CreateFolder(containerFolderPath, "Groups");                    //group and grouped node data for each graph
             CreateFolder($"{containerFolderPath}/Global", "Nodes");         //ungrouped node data for each graph
-            
         }
 
         public static void CreateFolder(string path, string folderName)
@@ -533,8 +559,172 @@ namespace SpeakEasy.Utilities
         {
             FileUtil.DeleteFileOrDirectory($"{fullPath}.meta");
             FileUtil.DeleteFileOrDirectory($"{fullPath}/");
+            AssetDatabase.Refresh();
         }
         
+        #endregion
+
+        #region Copy & Paste
+
+        //returns the GraphSO that you'll save nodes and groups to
+        public static SEGraphSaveDataSO CreateBufferElements()
+        {
+            CreateFolder("Assets/SpeakEasyData", "CopyPasteBuffer");
+            return CreateAsset<SEGraphSaveDataSO>(bufferFolderPath, "BufferGraph");
+        }
+
+        public static void Copy(IEnumerable<VisualElement> selection)
+        {
+                RemoveFolder("Assets/SpeakEasyData/CopyPasteBuffer");
+                bufferGraph = SEIOUtility.CreateBufferElements();
+                bufferGraph.Initialize("BUFFER");
+
+                List<SENode> nodesToCopy = new List<SENode>();
+                List<SEGroup> groupsToCopy = new List<SEGroup>();
+
+                foreach (VisualElement element in selection)
+                {
+                    if (element is SENode)
+                    {
+                        SENode reference = (SENode) element;
+                        nodesToCopy.Add(reference);
+                    }
+                    else if (element is SEGroup)
+                    {
+                        SEGroup reference = (SEGroup) element;
+                        groupsToCopy.Add(reference);
+                    }
+                }
+
+                //copies group with same ID adds _copy
+                foreach (SEGroup group in groupsToCopy)
+                {
+                    SEGroupSaveData groupData = new SEGroupSaveData()
+                    {
+                        ID = group.ID,
+                        Name = group.title + "_copy",
+                        Position = group.GetPosition().position
+                    };
+
+                    bufferGraph.Groups.Add(groupData);
+                }
+
+                //copies node with same data and ID and add _copy
+                foreach (SENode node in nodesToCopy)
+                {
+                    List<SEChoiceSaveData> choices = CloneChoices(node.Choices);
+                    List<SEIfSaveData> ifs = CloneIfs(node.IfStatements);
+                    List<SECallbackSaveData> callbacks = CloneCallbacks(node.Callbacks);
+                    SENodeSaveData nodeData = new SENodeSaveData()
+                    {
+                        ID = node.ID,
+                        Name = node.NodeName + "_copy",
+                        Text = node.DialogueText,
+                        Choices = choices,
+                        IfStatements = ifs,
+                        Callbacks = callbacks,
+                        NodeType = node.NodeType,
+                        Position = node.GetPosition().position + new Vector2(5, 5),
+                        IsPlayer = node.IsPlayer
+                    };
+
+                    bufferGraph.Nodes.Add(nodeData);
+                }
+        }
+
+        public static void Paste()
+        {
+            //Update IDs
+            Dictionary<string, string> oldIDNewID = new Dictionary<string, string>();
+
+            foreach (SEGroupSaveData group in bufferGraph.Groups)
+            {
+                string newID = Guid.NewGuid().ToString();
+
+                oldIDNewID.Add(group.ID, newID);
+
+                group.ID = newID;
+            }
+
+            foreach (SENodeSaveData node in bufferGraph.Nodes)
+            {
+                string newID = Guid.NewGuid().ToString();
+
+                oldIDNewID.Add(node.ID, newID);
+                
+                node.ID = newID;
+
+                if(node.GroupID != null) 
+                {
+                    if(oldIDNewID.ContainsKey(node.GroupID)) 
+                    {
+                        node.GroupID = oldIDNewID[node.GroupID];
+                    }
+                }
+            }
+
+            //updates choice data for each node (must happen after all node IDs are updated)
+            foreach (SENodeSaveData nodeData in bufferGraph.Nodes)
+            {
+                foreach (SEChoiceSaveData choiceData in nodeData.Choices)
+                {
+                    if (choiceData.NodeID == null)
+                    {
+                        continue;
+                    }
+
+                    if (oldIDNewID.ContainsKey(choiceData.NodeID))
+                    {
+                        choiceData.NodeID = oldIDNewID[choiceData.NodeID];
+                    }
+                    else
+                    {
+                        choiceData.NodeID = null;
+                    }
+                }
+                foreach (SEIfSaveData ifData in nodeData.IfStatements)
+                {
+                    if (ifData.NodeID == null)
+                    {
+                        continue;
+                    }
+
+                    if (oldIDNewID.ContainsKey(ifData.NodeID))
+                    {
+                        ifData.NodeID = oldIDNewID[ifData.NodeID];
+                    }
+                    else
+                    {
+                        ifData.NodeID = null;
+                    }
+                }
+            }
+
+            if (bufferGraph == null)
+            {
+                EditorUtility.DisplayDialog("Silly Goose!", "Copy Something First!", "K");
+                return;
+            }
+
+            graphView.ClearSelection();
+
+            loadedGroups = new Dictionary<string, SEGroup>();
+            loadedNodes = new Dictionary<string, SENode>();
+
+            LoadGroups(bufferGraph.Groups);
+            LoadNodes(bufferGraph.Nodes);
+            LoadNodeConnections(true);
+
+            foreach (SENode node in loadedNodes.Values)
+            {
+                graphView.AddToSelection(node);
+            }
+            foreach (SEGroup group in loadedGroups.Values)
+            {
+                graphView.AddToSelection(group);
+            }
+        }
+
         #endregion
 
         #region Inquiry Methods

@@ -2028,7 +2028,7 @@
 					<ChildrenList>
 						<Folder Name="Harold" ID="{18A7D527-256C-407C-89B2-EC58CE1695AB}" ShortID="606112557">
 							<ChildrenList>
-								<Sound Name="actor" ID="{3E2AD031-B2E8-4B66-A473-620746CAE14A}" ShortID="793146193">
+								<Sound Name="h_hes_in" ID="{3E2AD031-B2E8-4B66-A473-620746CAE14A}" ShortID="793146193">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2070,7 +2070,7 @@
 										<ActiveSource Name="Harold_actor_dist" ID="{A05A8AA8-892F-488F-A225-4D597C6A9DE8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="boss" ID="{7BD291F9-44D1-4AB6-BF7B-95D31580FEA9}" ShortID="482020195">
+								<Sound Name="h_big_bucks" ID="{7BD291F9-44D1-4AB6-BF7B-95D31580FEA9}" ShortID="482020195">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2110,7 +2110,7 @@
 										<ActiveSource Name="Harold_boss_dist" ID="{CD14CB7B-7F22-4EC4-8888-29295BB9A639}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="child" ID="{A76B247D-F362-4A5E-9BF3-E2E96814E5D8}" ShortID="200357473">
+								<Sound Name="h_soccer" ID="{A76B247D-F362-4A5E-9BF3-E2E96814E5D8}" ShortID="200357473">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2150,7 +2150,7 @@
 										<ActiveSource Name="Harold_child_dist" ID="{DA224790-A048-4403-B4BD-631FA02266A2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="client" ID="{CFAED199-47AB-43BF-8499-B1221441B8C0}" ShortID="879434261">
+								<Sound Name="h_whine" ID="{CFAED199-47AB-43BF-8499-B1221441B8C0}" ShortID="879434261">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2190,7 +2190,7 @@
 										<ActiveSource Name="Harold_client_dist" ID="{19FB2E9E-A898-4EE3-8118-5494F96AF6FA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="clothes" ID="{47FDDD27-8E4C-4AE8-95FC-8D7A2146B68F}" ShortID="262388886">
+								<Sound Name="h_jacket_store" ID="{47FDDD27-8E4C-4AE8-95FC-8D7A2146B68F}" ShortID="262388886">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2230,7 +2230,7 @@
 										<ActiveSource Name="Harold_clothes_02_dist" ID="{157B0542-3671-4D65-AAAC-BA4932CD67A3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="coffee" ID="{70E5E421-D3ED-4998-94AA-45954759C280}" ShortID="1000800631">
+								<Sound Name="h_2_sugars" ID="{70E5E421-D3ED-4998-94AA-45954759C280}" ShortID="1000800631">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2340,7 +2340,7 @@
 										<ActiveSource Name="Harold_extra_huh_dist" ID="{E9374D32-F16C-47EF-8EDB-A4F3683336F7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="game" ID="{C4D6F231-ABED-4307-97CF-8315C6456D5F}" ShortID="925847639">
+								<Sound Name="h_comeback" ID="{C4D6F231-ABED-4307-97CF-8315C6456D5F}" ShortID="925847639">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2380,7 +2380,7 @@
 										<ActiveSource Name="Harold_game_dist" ID="{4D2F2CAF-7494-4B4C-8EDC-153DB5F541DF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="growth" ID="{BC3E5468-F933-4E7B-900E-2948730012E0}" ShortID="357906235">
+								<Sound Name="h_pass_me" ID="{BC3E5468-F933-4E7B-900E-2948730012E0}" ShortID="357906235">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2420,7 +2420,7 @@
 										<ActiveSource Name="Harold_growth_dist" ID="{7106289D-E364-4DDC-99C4-CDD4C7FF1A23}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="hours" ID="{7CCC62CF-BAA9-4711-857E-DE0C1956F712}" ShortID="840774487">
+								<Sound Name="h_watch_ball" ID="{7CCC62CF-BAA9-4711-857E-DE0C1956F712}" ShortID="840774487">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2460,7 +2460,7 @@
 										<ActiveSource Name="Harold_hours_dist" ID="{9A6E2920-666D-4BEE-8376-B01AC861F148}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="internet" ID="{B756324A-0BE2-431F-AE10-95C71F8E362B}" ShortID="608363388">
+								<Sound Name="h_tinktonk" ID="{B756324A-0BE2-431F-AE10-95C71F8E362B}" ShortID="608363388">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2500,7 +2500,7 @@
 										<ActiveSource Name="Harold_internet_dist" ID="{E1096374-A318-4D70-8BC0-3BCAE5DA4C76}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="merger" ID="{2EEE8FB5-C932-4C87-92D9-9BA6B89F27D1}" ShortID="204944171">
+								<Sound Name="h_no_updates" ID="{2EEE8FB5-C932-4C87-92D9-9BA6B89F27D1}" ShortID="204944171">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2540,7 +2540,7 @@
 										<ActiveSource Name="Harold_merger_dist" ID="{DECAA6B1-9869-427C-A01D-B8EC50378BD2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="movies" ID="{17E5DE57-D472-46D3-96F3-CDF5EE98AE5B}" ShortID="840249533">
+								<Sound Name="h_big_screen" ID="{17E5DE57-D472-46D3-96F3-CDF5EE98AE5B}" ShortID="840249533">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2580,7 +2580,7 @@
 										<ActiveSource Name="Harold_movies_dist" ID="{B4FDD2F1-DF65-47A3-A9DB-E8A09F1F3FE5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="prices" ID="{6E4F04D6-29D1-428E-A860-121468E4F9EF}" ShortID="95476977">
+								<Sound Name="h_tickets" ID="{6E4F04D6-29D1-428E-A860-121468E4F9EF}" ShortID="95476977">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2620,7 +2620,7 @@
 										<ActiveSource Name="Harold_prices_02_dist" ID="{E7F16153-AA49-4E43-B4C8-134E20E67EF1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="release" ID="{AAE0964F-C331-4DD4-88D9-024E36536FED}" ShortID="889847558">
+								<Sound Name="h_movie_marathon" ID="{AAE0964F-C331-4DD4-88D9-024E36536FED}" ShortID="889847558">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2660,7 +2660,7 @@
 										<ActiveSource Name="Harold_release_dist" ID="{31E73FE1-96BB-4CC6-BA67-3D76BBC3325E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="school" ID="{479279CF-BEFF-4A50-9538-E94DD967326A}" ShortID="905459623">
+								<Sound Name="h_Bs" ID="{479279CF-BEFF-4A50-9538-E94DD967326A}" ShortID="905459623">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2700,7 +2700,7 @@
 										<ActiveSource Name="Harold_school_dist" ID="{D0E69ECC-AE89-4B24-9DC7-2DA1F17FEED4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="scifi" ID="{22860709-2CF9-4DE1-A34F-F61844621B92}" ShortID="448287773">
+								<Sound Name="h_visual_effects" ID="{22860709-2CF9-4DE1-A34F-F61844621B92}" ShortID="448287773">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2740,7 +2740,7 @@
 										<ActiveSource Name="Harold_scifi_dist" ID="{8124F96E-C160-4EA7-8C38-98A97B87A119}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="snow" ID="{1C6CE825-534D-4EDB-A7EF-9D115ECE4B65}" ShortID="1048089924">
+								<Sound Name="h_sunshine" ID="{1C6CE825-534D-4EDB-A7EF-9D115ECE4B65}" ShortID="1048089924">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2780,7 +2780,7 @@
 										<ActiveSource Name="Harold_snow_02_dist" ID="{4AA4789B-705C-4677-8B51-C672644352E7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="soccer" ID="{5A592F14-92D0-4307-932E-4701A7711808}" ShortID="244305933">
+								<Sound Name="h_scrimmage" ID="{5A592F14-92D0-4307-932E-4701A7711808}" ShortID="244305933">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2820,7 +2820,7 @@
 										<ActiveSource Name="Harold_soccer_dist" ID="{5C63A2CE-6A66-40C0-A4B4-31EECC71440B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="sports" ID="{FD8B6966-7218-443F-A734-D2A100DA7D96}" ShortID="171622593">
+								<Sound Name="h_yup" ID="{FD8B6966-7218-443F-A734-D2A100DA7D96}" ShortID="171622593">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2860,7 +2860,7 @@
 										<ActiveSource Name="Harold_sports_dist" ID="{B9F2A398-A094-47FF-98E5-C26556BEF1B4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="team" ID="{A03C342C-BF90-42A8-8C7C-49725F43C469}" ShortID="765095574">
+								<Sound Name="h_red_team" ID="{A03C342C-BF90-42A8-8C7C-49725F43C469}" ShortID="765095574">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2900,7 +2900,7 @@
 										<ActiveSource Name="Harold_team_dist" ID="{D8D06D89-13BB-45ED-BE2A-E33B58F636ED}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="varsity" ID="{D843E4AA-5993-4313-BE49-DA9CE474A061}" ShortID="37091579">
+								<Sound Name="h_takes_me_back" ID="{D843E4AA-5993-4313-BE49-DA9CE474A061}" ShortID="37091579">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2940,7 +2940,7 @@
 										<ActiveSource Name="Harold_varsity_dist" ID="{34AC58D9-833C-4DA2-9C92-6B33B4B406AF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="weather" ID="{37AA3166-6EE1-42B4-B2F5-380796B32C22}" ShortID="755300585">
+								<Sound Name="h_weather" ID="{37AA3166-6EE1-42B4-B2F5-380796B32C22}" ShortID="755300585">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2981,7 +2981,7 @@
 										<ActiveSource Name="Harold_weather_dist" ID="{F0271045-3F53-4276-AF28-B23A8B1D3596}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="work" ID="{9FE39D09-0B02-4041-88BC-D8B5EFB2B54C}" ShortID="110387473">
+								<Sound Name="h_tell_me" ID="{9FE39D09-0B02-4041-88BC-D8B5EFB2B54C}" ShortID="110387473">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -3021,1135 +3021,991 @@
 										<ActiveSource Name="Harold_work_dist" ID="{932EA623-13F9-4029-9326-616BD1C0B1F8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<RandomSequenceContainer Name="Player" ID="{C4EE45B7-4A91-47B6-B044-46B6170B2BF2}" ShortID="108127988">
+								<Sound Name="h_good_to" ID="{221E61CB-1CCE-47BD-AA34-F794D3A47D1A}" ShortID="773912995">
 									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-500</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{EA2FFFE9-6062-4ADF-9A80-486478DB9E01}">
-														<PropertyList>
-															<Property Name="Min" Type="Real64" Value="-0.15"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="e" ID="{522CC9AB-E3F7-42E3-89C2-E0279B498D3E}" ShortID="686988928">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_e" ID="{5393D06C-9B53-490A-ACD8-A71AF1302592}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.768483536722593"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.916708620737168"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="257920647"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_e" ID="{5393D06C-9B53-490A-ACD8-A71AF1302592}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="x" ID="{133235E1-8119-44E4-B120-0E38C04D91D4}" ShortID="311561533">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_x" ID="{661B4EB3-A604-45FA-A538-505BA0EAA781}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.922685892500456"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.09492609749683"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="100778504"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_x" ID="{661B4EB3-A604-45FA-A538-505BA0EAA781}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="un" ID="{D8793EB2-983C-40D9-979D-CF0ED84C0EE8}" ShortID="1002760618">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_un" ID="{F690C742-49F2-4568-BB0E-BD866FCECC79}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="1.91020915448551"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.09086097159419"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1059986698"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_un" ID="{F690C742-49F2-4568-BB0E-BD866FCECC79}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="to" ID="{9E348DF8-3ECD-4017-9954-749D8186CC72}" ShortID="553062101">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_to" ID="{CC2CDCAA-CC99-4010-ACB1-D6FA0B9A2D5D}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.94760890031337"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.12826071742205"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="989646987"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_to" ID="{CC2CDCAA-CC99-4010-ACB1-D6FA0B9A2D5D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="hn" ID="{3EE55C65-2F99-4EDC-9FB8-6177120C3F63}" ShortID="150808945">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_hn" ID="{E3171B63-D45B-4380-950F-980F8C32BBA6}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="4.02549737380296"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.26766639907606"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="945202610"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_hn" ID="{E3171B63-D45B-4380-950F-980F8C32BBA6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="tor" ID="{D71547FF-AF4D-4A8F-97A7-517C1DBB7D5A}" ShortID="406683479">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_tor" ID="{66812B47-4E7E-401A-A00C-73D382420A9E}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="5.13763327947605"/>
-														<Property Name="TrimEnd" Type="Real64" Value="5.44694884807776"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="728049436"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_tor" ID="{66812B47-4E7E-401A-A00C-73D382420A9E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="da" ID="{E9F18CFA-436D-4669-A5E7-9C797CD6452C}" ShortID="850366423">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_da" ID="{F5751E0D-3D18-4062-A488-6420CEE4726F}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="6.22277006478902"/>
-														<Property Name="TrimEnd" Type="Real64" Value="6.40238073144255"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="722714323"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_da" ID="{F5751E0D-3D18-4062-A488-6420CEE4726F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="rr" ID="{D6939BA0-3BF7-409C-955A-3BE9FBBA635A}" ShortID="353718290">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-												<Property Name="Weight" Type="Real64">
-													<ValueList>
-														<Value>30</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_rr" ID="{CFFF8192-7B01-4E47-B30C-E92189ED00DF}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="7.39559467113738"/>
-														<Property Name="TrimEnd" Type="Real64" Value="7.74510049104698"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="171337775"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_rr" ID="{CFFF8192-7B01-4E47-B30C-E92189ED00DF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="ta" ID="{5EA2CCB1-5B19-4F83-AE96-092F3A19C500}" ShortID="587461336">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_ta" ID="{3C41B5FC-3803-4CA9-A5A1-5D4031BA3DBB}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="8.40467140585017"/>
-														<Property Name="TrimEnd" Type="Real64" Value="8.53894099208707"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="188697987"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_ta" ID="{3C41B5FC-3803-4CA9-A5A1-5D4031BA3DBB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="fu" ID="{926ED7FD-F40C-44AE-AF2F-652AC6CA1A47}" ShortID="409605731">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_fu" ID="{E4E27B03-9419-4412-9E37-F618E19FF724}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="9.41043244483006"/>
-														<Property Name="TrimEnd" Type="Real64" Value="9.58219657637522"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="723211041"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_fu" ID="{E4E27B03-9419-4412-9E37-F618E19FF724}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="lr" ID="{91AA142B-5B8B-4D4D-8636-C40FCF210FFC}" ShortID="487354505">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_lr" ID="{26E895CA-2238-4377-ACFD-378A13995F15}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="10.4325010060296"/>
-														<Property Name="TrimEnd" Type="Real64" Value="10.623844995069"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="609221544"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_lr" ID="{26E895CA-2238-4377-ACFD-378A13995F15}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="lu" ID="{CB6E76DD-272E-4F57-9207-8A690DE42E45}" ShortID="326964416">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_lu" ID="{9548FE63-6BA7-402B-BE63-A3023D20281B}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.00534932244908148"/>
-														<Property Name="LoopEnd" Type="Real64" Value="11.6482402440678"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="11.4167763366603"/>
-														<Property Name="TrimEnd" Type="Real64" Value="11.6696375338641"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="736719334"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_lu" ID="{9548FE63-6BA7-402B-BE63-A3023D20281B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="ha" ID="{9F157436-7F00-49DE-AA1B-7EA025814940}" ShortID="555947923">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_ha" ID="{76D352BB-7813-4618-9286-1244BF8E11B7}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="12.3779603584021"/>
-														<Property Name="TrimEnd" Type="Real64" Value="12.6662994999479"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="334523883"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_ha" ID="{76D352BB-7813-4618-9286-1244BF8E11B7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="shr" ID="{078837C4-7B5D-4B4A-A639-89166720E99B}" ShortID="409466103">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_shr" ID="{3BE2779C-F23B-49BC-AC36-C6C401FCF4BD}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="13.3005123359014"/>
-														<Property Name="TrimEnd" Type="Real64" Value="13.5367298967976"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="632862132"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_shr" ID="{3BE2779C-F23B-49BC-AC36-C6C401FCF4BD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="fr" ID="{CFBEEC88-DC9E-434B-88D9-05D881A9A432}" ShortID="498453089">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_fr" ID="{41EFB9B4-BFEF-4770-A519-88708AC6EF20}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="14.3400247701413"/>
-														<Property Name="TrimEnd" Type="Real64" Value="14.6332019164753"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="892579934"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_fr" ID="{41EFB9B4-BFEF-4770-A519-88708AC6EF20}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="gr" ID="{46196817-18AA-4FBB-9ECB-B3C1D7EE6656}" ShortID="890381545">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_gr" ID="{F22B35BD-91E9-488C-874D-B458EC11924E}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="16.3254223200577"/>
-														<Property Name="TrimEnd" Type="Real64" Value="16.5794397514032"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="28675690"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_gr" ID="{F22B35BD-91E9-488C-874D-B458EC11924E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="la" ID="{E6AD4885-DB3F-443E-B311-C518A5CACA4D}" ShortID="704301441">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_la" ID="{DA7A6D8F-81EB-4364-95B9-FDE2915F7C36}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="17.2869435185455"/>
-														<Property Name="TrimEnd" Type="Real64" Value="17.5104364673994"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="722975308"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_la" ID="{DA7A6D8F-81EB-4364-95B9-FDE2915F7C36}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="fy" ID="{B5F0C696-55EA-482F-8E68-AACD0E59152D}" ShortID="398244140">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_fy" ID="{7B3C2689-5BEC-487A-A13A-7D1BD25D518E}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="18.3400381645084"/>
-														<Property Name="TrimEnd" Type="Real64" Value="18.677997922706"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="179415209"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_fy" ID="{7B3C2689-5BEC-487A-A13A-7D1BD25D518E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="fg" ID="{5D51D78E-1552-4F70-B3B4-97AB44B3C370}" ShortID="619798229">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_fg" ID="{6487102C-79BA-4AAA-96EC-AA25F5779F96}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="19.3548453397577"/>
-														<Property Name="TrimEnd" Type="Real64" Value="19.6756049763409"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="412725817"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_fg" ID="{6487102C-79BA-4AAA-96EC-AA25F5779F96}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="jn" ID="{331EC915-A011-43C2-B546-3367AC114D57}" ShortID="1058283146">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_jn" ID="{E4340416-1BC1-466A-B5AA-6BADB58570F4}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="20.3484017448375"/>
-														<Property Name="TrimEnd" Type="Real64" Value="20.6303253004404"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="143159212"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_jn" ID="{E4340416-1BC1-466A-B5AA-6BADB58570F4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="hu" ID="{AD21644B-3D61-44B7-88EC-657B377A6D65}" ShortID="1006633386">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_hu" ID="{C5E40B3E-677B-4186-867A-BA490252A52B}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="21.3008051730726"/>
-														<Property Name="TrimEnd" Type="Real64" Value="21.6158970072707"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="461780578"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_hu" ID="{C5E40B3E-677B-4186-867A-BA490252A52B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="wo" ID="{DC2C511B-7707-464E-B73E-8F8F141BC755}" ShortID="961664572">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_wo" ID="{918B431E-EF20-4651-998F-2D65F07AE28A}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="22.2661419318719"/>
-														<Property Name="TrimEnd" Type="Real64" Value="22.6483876275517"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="745311120"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_wo" ID="{918B431E-EF20-4651-998F-2D65F07AE28A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="ar" ID="{D028AAAD-6BD8-42F6-A59D-0C415EDD02BD}" ShortID="790261213">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_Player_ar" ID="{3F99D2AD-71AE-42FC-A3D4-A81A38465C74}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="23.2611902897294"/>
-														<Property Name="TrimEnd" Type="Real64" Value="23.6055293813004"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_Player_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="124542846"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_Player_ar" ID="{3F99D2AD-71AE-42FC-A3D4-A81A38465C74}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<SwitchContainer Name="goodbye" ID="{4D75B9E8-8A96-4CC5-8A4F-50E474F74071}" ShortID="461285491">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-200</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="seeYa" ID="{9B21FBE4-AFA3-44F2-AC3F-017464A7D12D}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="goodbyeSwitch" ID="{426C7E0E-F611-4F57-8C3D-01FAC6DD40E5}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
-										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="goodbye_seeYa" ID="{8B6ED48F-CF5F-4473-9B11-5D9BB89568D2}" ShortID="1059316447">
+										<AudioFileSource Name="Harold_hello_goodToSee_dist" ID="{9B9A0415-006D-47E3-98DB-3BBE393A43C2}">
 											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.17033932069088"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.07232318376068"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_goodbye_seeYa_dist" ID="{4527C298-1C41-471F-9E90-CD15EFE92939}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0935301013941698"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.101324276510351"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.436473806506126"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.25486219370511"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Audio Files\Harold_goodbye_seeYa_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="839712619"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_goodbye_seeYa_dist" ID="{4527C298-1C41-471F-9E90-CD15EFE92939}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="goodbye_tillNext" ID="{E7802AFC-1E5B-4DC4-9B45-12C087F80292}" ShortID="811617467">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_goodbye_tillNext_dist" ID="{67A115A3-E99F-452C-B138-306A83C44D9A}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.085345400295733"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.085345400295733"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.707147602450359"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.81663780629489"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Audio Files\Harold_goodbye_tillNext_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="704986967"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_goodbye_tillNext_dist" ID="{67A115A3-E99F-452C-B138-306A83C44D9A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="goodbye_adios" ID="{B2B6AEB6-323A-4B6B-B395-F820E3033A51}" ShortID="397551677">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_goodbye_adios_dist" ID="{8F8C69DE-F2FB-46FE-B58C-6B4F21F6C3AF}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.173864015631601"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.102737827418673"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.85295043831855"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.1016101869455"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Audio Files\Harold_goodbye_adios_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="523907929"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_goodbye_adios_dist" ID="{8F8C69DE-F2FB-46FE-B58C-6B4F21F6C3AF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="goodbye_alrighty" ID="{0DBF694D-1EA8-45DD-BA4E-AB74BC99A4F5}" ShortID="252450970">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_goodbye_alrighty_dist" ID="{BD10826A-3F73-4F61-8836-E95540F33A6E}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.177642638360795"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.114945236586396"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.75868567807351"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.67824757076468"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Audio Files\Harold_goodbye_alrighty_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="814325946"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_goodbye_alrighty_dist" ID="{BD10826A-3F73-4F61-8836-E95540F33A6E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_hello_goodToSee_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381849891"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="goodbye_alrighty" ID="{0DBF694D-1EA8-45DD-BA4E-AB74BC99A4F5}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="goodbye_seeYa" ID="{8B6ED48F-CF5F-4473-9B11-5D9BB89568D2}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="goodbye_adios" ID="{B2B6AEB6-323A-4B6B-B395-F820E3033A51}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="goodbye_tillNext" ID="{E7802AFC-1E5B-4DC4-9B45-12C087F80292}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="alrighty" ID="{0CEBBF2E-8E3D-4B6A-B8F9-B32225D36A47}"/>
-												<ItemList>
-													<ItemRef Name="goodbye_alrighty" ID="{0DBF694D-1EA8-45DD-BA4E-AB74BC99A4F5}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="tillNext" ID="{056A1C30-CC5A-46D3-A1C4-F46EE3F8A6B7}"/>
-												<ItemList>
-													<ItemRef Name="goodbye_tillNext" ID="{E7802AFC-1E5B-4DC4-9B45-12C087F80292}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="adios" ID="{15EE7EE1-57B7-4390-8B0A-6200D8691B3F}"/>
-												<ItemList>
-													<ItemRef Name="goodbye_adios" ID="{B2B6AEB6-323A-4B6B-B395-F820E3033A51}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="seeYa" ID="{9B21FBE4-AFA3-44F2-AC3F-017464A7D12D}"/>
-												<ItemList>
-													<ItemRef Name="goodbye_seeYa" ID="{8B6ED48F-CF5F-4473-9B11-5D9BB89568D2}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="hello" ID="{FE654107-5617-4A15-A744-C71E9A47BDAA}" ShortID="861551771">
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_hello_goodToSee_dist" ID="{9B9A0415-006D-47E3-98DB-3BBE393A43C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="h_oh_hey" ID="{049CAA8D-24CD-4DDA-9635-9CFB32A2CE3D}" ShortID="157900210">
 									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-200</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="ohHey" ID="{54B5A2F8-5815-481C-A780-703C3B732929}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_hello_ohHey_dist" ID="{4A9017CF-C801-49A6-8D42-25710CAEED06}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.454904380341882"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.22199804131055"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_hello_ohHey_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="580024799"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_hello_ohHey_dist" ID="{4A9017CF-C801-49A6-8D42-25710CAEED06}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="h_hello" ID="{B6A3FD4A-7482-4CC7-BECF-43735B0ABA27}" ShortID="707673280">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="helloSwitch" ID="{05308ED9-43FD-447E-8D25-7F9E8033FB44}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_hello_hello_dist" ID="{91D00A4D-9B3E-4034-9930-BE98EE031814}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.69825498575499"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.13672142094017"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_hello_hello_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="330779553"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_hello_hello_dist" ID="{91D00A4D-9B3E-4034-9930-BE98EE031814}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="h_howdy" ID="{F1DD5CF8-5888-46AE-9A91-1772BB742B2F}" ShortID="147164844">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="hello_goodToSee" ID="{221E61CB-1CCE-47BD-AA34-F794D3A47D1A}" ShortID="773912995">
+										<AudioFileSource Name="Harold_hello_howdy_dist" ID="{0F9E65CB-6AFE-48BC-92A8-9410C8B7636A}">
 											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.0028963897792"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.48021794871794"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_hello_goodToSee_dist" ID="{9B9A0415-006D-47E3-98DB-3BBE393A43C2}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="3.17033932069088"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.07232318376068"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_hello_goodToSee_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="381849891"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_hello_goodToSee_dist" ID="{9B9A0415-006D-47E3-98DB-3BBE393A43C2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="hello_hello" ID="{B6A3FD4A-7482-4CC7-BECF-43735B0ABA27}" ShortID="707673280">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_hello_hello_dist" ID="{91D00A4D-9B3E-4034-9930-BE98EE031814}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.69825498575499"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.13672142094017"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_hello_hello_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="330779553"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_hello_hello_dist" ID="{91D00A4D-9B3E-4034-9930-BE98EE031814}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="hello_howdy" ID="{F1DD5CF8-5888-46AE-9A91-1772BB742B2F}" ShortID="147164844">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_hello_howdy_dist" ID="{0F9E65CB-6AFE-48BC-92A8-9410C8B7636A}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="3.0028963897792"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.48021794871794"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_hello_howdy_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="287562875"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_hello_howdy_dist" ID="{0F9E65CB-6AFE-48BC-92A8-9410C8B7636A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="hello_ohHey" ID="{049CAA8D-24CD-4DDA-9635-9CFB32A2CE3D}" ShortID="157900210">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Harold_hello_ohHey_dist" ID="{4A9017CF-C801-49A6-8D42-25710CAEED06}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.454904380341882"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.22199804131055"/>
-													</PropertyList>
-													<Language>English(US)</Language>
-													<AudioFile>Harold_hello_ohHey_dist.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="580024799"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Harold_hello_ohHey_dist" ID="{4A9017CF-C801-49A6-8D42-25710CAEED06}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_hello_howdy_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="287562875"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="hello_hello" ID="{B6A3FD4A-7482-4CC7-BECF-43735B0ABA27}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="hello_ohHey" ID="{049CAA8D-24CD-4DDA-9635-9CFB32A2CE3D}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="hello_goodToSee" ID="{221E61CB-1CCE-47BD-AA34-F794D3A47D1A}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="hello_howdy" ID="{F1DD5CF8-5888-46AE-9A91-1772BB742B2F}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="goodToSee" ID="{47DAC00B-0E9C-4D31-9CA3-D52DEBA4B349}"/>
-												<ItemList>
-													<ItemRef Name="hello_goodToSee" ID="{221E61CB-1CCE-47BD-AA34-F794D3A47D1A}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="howdy" ID="{EF25C045-4BF7-4848-B127-6C6C9251E249}"/>
-												<ItemList>
-													<ItemRef Name="hello_howdy" ID="{F1DD5CF8-5888-46AE-9A91-1772BB742B2F}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="hello" ID="{3EF2DF8C-DD81-44DD-938E-A9E487F77970}"/>
-												<ItemList>
-													<ItemRef Name="hello_hello" ID="{B6A3FD4A-7482-4CC7-BECF-43735B0ABA27}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="ohHey" ID="{54B5A2F8-5815-481C-A780-703C3B732929}"/>
-												<ItemList>
-													<ItemRef Name="hello_ohHey" ID="{049CAA8D-24CD-4DDA-9635-9CFB32A2CE3D}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_hello_howdy_dist" ID="{0F9E65CB-6AFE-48BC-92A8-9410C8B7636A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="h_alrighty" ID="{0DBF694D-1EA8-45DD-BA4E-AB74BC99A4F5}" ShortID="252450970">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_goodbye_alrighty_dist" ID="{BD10826A-3F73-4F61-8836-E95540F33A6E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.177642638360795"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.114945236586396"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.75868567807351"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67824757076468"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_goodbye_alrighty_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="814325946"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_goodbye_alrighty_dist" ID="{BD10826A-3F73-4F61-8836-E95540F33A6E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="h_see_ya" ID="{8B6ED48F-CF5F-4473-9B11-5D9BB89568D2}" ShortID="1059316447">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_goodbye_seeYa_dist" ID="{4527C298-1C41-471F-9E90-CD15EFE92939}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0935301013941698"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.101324276510351"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.436473806506126"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.25486219370511"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_goodbye_seeYa_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="839712619"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_goodbye_seeYa_dist" ID="{4527C298-1C41-471F-9E90-CD15EFE92939}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="h_adios" ID="{B2B6AEB6-323A-4B6B-B395-F820E3033A51}" ShortID="397551677">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_goodbye_adios_dist" ID="{8F8C69DE-F2FB-46FE-B58C-6B4F21F6C3AF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.173864015631601"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.102737827418673"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.85295043831855"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.1016101869455"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_goodbye_adios_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="523907929"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_goodbye_adios_dist" ID="{8F8C69DE-F2FB-46FE-B58C-6B4F21F6C3AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="h_till" ID="{E7802AFC-1E5B-4DC4-9B45-12C087F80292}" ShortID="811617467">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_goodbye_tillNext_dist" ID="{67A115A3-E99F-452C-B138-306A83C44D9A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.085345400295733"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.085345400295733"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.707147602450359"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.81663780629489"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Audio Files\Harold_goodbye_tillNext_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="704986967"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_goodbye_tillNext_dist" ID="{67A115A3-E99F-452C-B138-306A83C44D9A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
+						<RandomSequenceContainer Name="Player" ID="{C4EE45B7-4A91-47B6-B044-46B6170B2BF2}" ShortID="108127988">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-500</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EA2FFFE9-6062-4ADF-9A80-486478DB9E01}">
+												<PropertyList>
+													<Property Name="Min" Type="Real64" Value="-0.15"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="e" ID="{522CC9AB-E3F7-42E3-89C2-E0279B498D3E}" ShortID="686988928">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_e" ID="{5393D06C-9B53-490A-ACD8-A71AF1302592}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.768483536722593"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.916708620737168"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="257920647"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_e" ID="{5393D06C-9B53-490A-ACD8-A71AF1302592}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="x" ID="{133235E1-8119-44E4-B120-0E38C04D91D4}" ShortID="311561533">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_x" ID="{661B4EB3-A604-45FA-A538-505BA0EAA781}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.922685892500456"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.09492609749683"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="100778504"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_x" ID="{661B4EB3-A604-45FA-A538-505BA0EAA781}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="un" ID="{D8793EB2-983C-40D9-979D-CF0ED84C0EE8}" ShortID="1002760618">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_un" ID="{F690C742-49F2-4568-BB0E-BD866FCECC79}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.91020915448551"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.09086097159419"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1059986698"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_un" ID="{F690C742-49F2-4568-BB0E-BD866FCECC79}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="to" ID="{9E348DF8-3ECD-4017-9954-749D8186CC72}" ShortID="553062101">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_to" ID="{CC2CDCAA-CC99-4010-ACB1-D6FA0B9A2D5D}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.94760890031337"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.12826071742205"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="989646987"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_to" ID="{CC2CDCAA-CC99-4010-ACB1-D6FA0B9A2D5D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="hn" ID="{3EE55C65-2F99-4EDC-9FB8-6177120C3F63}" ShortID="150808945">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_hn" ID="{E3171B63-D45B-4380-950F-980F8C32BBA6}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.02549737380296"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.26766639907606"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="945202610"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_hn" ID="{E3171B63-D45B-4380-950F-980F8C32BBA6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="tor" ID="{D71547FF-AF4D-4A8F-97A7-517C1DBB7D5A}" ShortID="406683479">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_tor" ID="{66812B47-4E7E-401A-A00C-73D382420A9E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.13763327947605"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.44694884807776"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="728049436"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_tor" ID="{66812B47-4E7E-401A-A00C-73D382420A9E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="da" ID="{E9F18CFA-436D-4669-A5E7-9C797CD6452C}" ShortID="850366423">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_da" ID="{F5751E0D-3D18-4062-A488-6420CEE4726F}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.22277006478902"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.40238073144255"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="722714323"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_da" ID="{F5751E0D-3D18-4062-A488-6420CEE4726F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="rr" ID="{D6939BA0-3BF7-409C-955A-3BE9FBBA635A}" ShortID="353718290">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_rr" ID="{CFFF8192-7B01-4E47-B30C-E92189ED00DF}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.39559467113738"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.74510049104698"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="171337775"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_rr" ID="{CFFF8192-7B01-4E47-B30C-E92189ED00DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ta" ID="{5EA2CCB1-5B19-4F83-AE96-092F3A19C500}" ShortID="587461336">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_ta" ID="{3C41B5FC-3803-4CA9-A5A1-5D4031BA3DBB}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.40467140585017"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.53894099208707"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="188697987"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_ta" ID="{3C41B5FC-3803-4CA9-A5A1-5D4031BA3DBB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fu" ID="{926ED7FD-F40C-44AE-AF2F-652AC6CA1A47}" ShortID="409605731">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_fu" ID="{E4E27B03-9419-4412-9E37-F618E19FF724}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.41043244483006"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.58219657637522"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="723211041"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_fu" ID="{E4E27B03-9419-4412-9E37-F618E19FF724}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="lr" ID="{91AA142B-5B8B-4D4D-8636-C40FCF210FFC}" ShortID="487354505">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_lr" ID="{26E895CA-2238-4377-ACFD-378A13995F15}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="10.4325010060296"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.623844995069"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="609221544"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_lr" ID="{26E895CA-2238-4377-ACFD-378A13995F15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="lu" ID="{CB6E76DD-272E-4F57-9207-8A690DE42E45}" ShortID="326964416">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_lu" ID="{9548FE63-6BA7-402B-BE63-A3023D20281B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00534932244908148"/>
+												<Property Name="LoopEnd" Type="Real64" Value="11.6482402440678"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="11.4167763366603"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.6696375338641"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="736719334"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_lu" ID="{9548FE63-6BA7-402B-BE63-A3023D20281B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ha" ID="{9F157436-7F00-49DE-AA1B-7EA025814940}" ShortID="555947923">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_ha" ID="{76D352BB-7813-4618-9286-1244BF8E11B7}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="12.3779603584021"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.6662994999479"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="334523883"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_ha" ID="{76D352BB-7813-4618-9286-1244BF8E11B7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="shr" ID="{078837C4-7B5D-4B4A-A639-89166720E99B}" ShortID="409466103">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_shr" ID="{3BE2779C-F23B-49BC-AC36-C6C401FCF4BD}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="13.3005123359014"/>
+												<Property Name="TrimEnd" Type="Real64" Value="13.5367298967976"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="632862132"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_shr" ID="{3BE2779C-F23B-49BC-AC36-C6C401FCF4BD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fr" ID="{CFBEEC88-DC9E-434B-88D9-05D881A9A432}" ShortID="498453089">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_fr" ID="{41EFB9B4-BFEF-4770-A519-88708AC6EF20}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="14.3400247701413"/>
+												<Property Name="TrimEnd" Type="Real64" Value="14.6332019164753"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="892579934"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_fr" ID="{41EFB9B4-BFEF-4770-A519-88708AC6EF20}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gr" ID="{46196817-18AA-4FBB-9ECB-B3C1D7EE6656}" ShortID="890381545">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_gr" ID="{F22B35BD-91E9-488C-874D-B458EC11924E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="16.3254223200577"/>
+												<Property Name="TrimEnd" Type="Real64" Value="16.5794397514032"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="28675690"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_gr" ID="{F22B35BD-91E9-488C-874D-B458EC11924E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="la" ID="{E6AD4885-DB3F-443E-B311-C518A5CACA4D}" ShortID="704301441">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_la" ID="{DA7A6D8F-81EB-4364-95B9-FDE2915F7C36}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="17.2869435185455"/>
+												<Property Name="TrimEnd" Type="Real64" Value="17.5104364673994"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="722975308"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_la" ID="{DA7A6D8F-81EB-4364-95B9-FDE2915F7C36}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fy" ID="{B5F0C696-55EA-482F-8E68-AACD0E59152D}" ShortID="398244140">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_fy" ID="{7B3C2689-5BEC-487A-A13A-7D1BD25D518E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="18.3400381645084"/>
+												<Property Name="TrimEnd" Type="Real64" Value="18.677997922706"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="179415209"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_fy" ID="{7B3C2689-5BEC-487A-A13A-7D1BD25D518E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fg" ID="{5D51D78E-1552-4F70-B3B4-97AB44B3C370}" ShortID="619798229">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_fg" ID="{6487102C-79BA-4AAA-96EC-AA25F5779F96}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="19.3548453397577"/>
+												<Property Name="TrimEnd" Type="Real64" Value="19.6756049763409"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="412725817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_fg" ID="{6487102C-79BA-4AAA-96EC-AA25F5779F96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="jn" ID="{331EC915-A011-43C2-B546-3367AC114D57}" ShortID="1058283146">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_jn" ID="{E4340416-1BC1-466A-B5AA-6BADB58570F4}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="20.3484017448375"/>
+												<Property Name="TrimEnd" Type="Real64" Value="20.6303253004404"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="143159212"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_jn" ID="{E4340416-1BC1-466A-B5AA-6BADB58570F4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="hu" ID="{AD21644B-3D61-44B7-88EC-657B377A6D65}" ShortID="1006633386">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_hu" ID="{C5E40B3E-677B-4186-867A-BA490252A52B}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="21.3008051730726"/>
+												<Property Name="TrimEnd" Type="Real64" Value="21.6158970072707"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="461780578"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_hu" ID="{C5E40B3E-677B-4186-867A-BA490252A52B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="wo" ID="{DC2C511B-7707-464E-B73E-8F8F141BC755}" ShortID="961664572">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_wo" ID="{918B431E-EF20-4651-998F-2D65F07AE28A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="22.2661419318719"/>
+												<Property Name="TrimEnd" Type="Real64" Value="22.6483876275517"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745311120"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_wo" ID="{918B431E-EF20-4651-998F-2D65F07AE28A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ar" ID="{D028AAAD-6BD8-42F6-A59D-0C415EDD02BD}" ShortID="790261213">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Harold_Player_ar" ID="{3F99D2AD-71AE-42FC-A3D4-A81A38465C74}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="23.2611902897294"/>
+												<Property Name="TrimEnd" Type="Real64" Value="23.6055293813004"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>Harold_Player_dist.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="124542846"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Harold_Player_ar" ID="{3F99D2AD-71AE-42FC-A3D4-A81A38465C74}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FX" ID="{D9050B47-7B9E-43A6-88CC-0127D7859201}" ShortID="958512556">

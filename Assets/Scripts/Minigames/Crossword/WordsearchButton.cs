@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using SpeakEasy;
 
 public class WordsearchButton : MonoBehaviour, IPointerEnterHandler
 {
@@ -16,7 +17,7 @@ public class WordsearchButton : MonoBehaviour, IPointerEnterHandler
         {
             selected = true;
             GetComponent<Image>().color = new Color32(200, 100, 100, 200);
-            transform.parent.transform.parent.GetComponent<Crossword>().Selection(gameObject);
+            transform.parent.transform.parent.GetComponent<CrosswordDialogue>().Selection(gameObject);
         }
     }
 

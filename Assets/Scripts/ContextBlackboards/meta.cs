@@ -10,46 +10,65 @@ using SpeakEasy.Enumerations;
 [System.Serializable]
 public static class Meta
 {
+    public static bool DebuggingMode = true;
+
+
     //world variables
-    public static Dictionary<string, dynamic> Variables = new Dictionary<string, dynamic>();
+    public static Dictionary<string, dynamic> Global = new Dictionary<string, dynamic>();
+    public static Dictionary<string, dynamic> Dailies = new Dictionary<string, dynamic>();
 
     private static void InitializeVariables()
     {
         // Set initial values for the static variables here
-        MetaSet("chaos", 0);
-        MetaSet("day", 1);
-        MetaSet("flappyHighScore", 0);
-        MetaSet("currentScene", "Office");
+        SetValue("chaos", 0, Global);
+        SetValue("day", 1, Global);
+        SetValue("flappyHighScore", 0, Global);
+        SetValue("currentScene", "Office", Global);
+
+        ResetDailies();
     }
 
+    public static void ResetDailies()
+    {
+        SetValue("h_repeatedChoice", 0, Dailies);
+    }
+
+    //only used when editing dialogue graphs
     public static List<string> GetVaraibleKeys()
     {
         InitializeVariables();
-        return Variables.Keys.ToList<string>();
+
+        List<string> names = new List<string>();
+
+        names.AddRange(Global.Keys.ToList<string>());
+        names.AddRange(Dailies.Keys.ToList<string>());
+
+        return names;
     }
 
-    public static void MetaSet(string name, object value)
+    public static void SetValue(string name, object value, Dictionary<string, dynamic> blackboard)
     {
-        if (Variables.ContainsKey(name))
+        if (blackboard.ContainsKey(name))
         {
-            Variables[name] = value;
+            blackboard[name] = value;
         }
         else
         {
-            Variables.Add(name, value);
+            blackboard.Add(name, value);
         }
     }
 
-    public static T MetaGet<T>(string name)
+    public static T GetValue<T>(string name)
     {
-        if (Variables.ContainsKey(name))
+        Dictionary<string, dynamic> blackboard = BlackboardThatContains(name);
+
+        if (blackboard != null)
         {
-            return (T) Variables[name];
+            return (T) blackboard[name];
         }
-        else
-        {
-            return default (T);
-        }
+        
+        return default (T);
+        
     }
 
     #region Saving and Loading
@@ -62,7 +81,7 @@ public static class Meta
     public static SerializableMeta Serialize()
     {
         SerializableMeta data = new SerializableMeta();
-        foreach (KeyValuePair<string, dynamic> pair in Variables)
+        foreach (KeyValuePair<string, dynamic> pair in Global)
         {
             if (pair.Value is int)
             {
@@ -86,29 +105,43 @@ public static class Meta
     {
         foreach (KeyValuePair<string, int> datum in data.metaInts)
         {
-            MetaSet(datum.Key, datum.Value);
+            SetValue(datum.Key, datum.Value, Global);
         }
         foreach (KeyValuePair<string, string> datum in data.metaStrings)
         {
-            MetaSet(datum.Key, datum.Value);
+            SetValue(datum.Key, datum.Value, Global);
         }
         foreach (KeyValuePair<string, bool> datum in data.metaBools)
         {
-            MetaSet(datum.Key, datum.Value);
+            SetValue(datum.Key, datum.Value, Global);
         }
     }
     #endregion
 
-    public static bool IfStatement(SEIfData ifData) //compares the variable names/values held in IfData, which is held in the Node Scriptable Object
+    //compares the variable names/values held in IfData, which is held in the Node Scriptable Object
+    public static bool isIfStatementTrue(SEIfData ifData) 
     {
         string variable = ifData.contextVariableName;
         string symbol = ifData.comparisonSign;
         string toCompare = ifData.comparisonValue;
 
-        if (Variables[variable] is int)
+        Dictionary<string, dynamic> blackboard = BlackboardThatContains(variable);
+
+        if (blackboard[variable] is int)
         {
-            int variableValue = Variables[variable];
-            int toCompareValue = int.Parse(toCompare);
+            int variableValue = blackboard[variable];
+            int toCompareValue = 0;
+            
+            //sets comparison value either to the contents of the data, or the variable value
+            if (ifData.isMetaVariableComparison)
+            {
+                toCompareValue = blackboard[toCompare];
+            }
+            else
+            {
+                toCompareValue = int.Parse(toCompare);
+            }
+            
             switch (symbol)
             {
                 case "==":
@@ -132,23 +165,44 @@ public static class Meta
             return false;
         }
 
-        if (Variables[variable] is string)
+        if (blackboard[variable] is string)
         {
-            string variableValue = Variables[variable];
+            string variableValue = blackboard[variable];
+            string toCompareValue = "";
+
+            if (ifData.isMetaVariableComparison)
+            {
+                toCompareValue = blackboard[toCompare];
+            }
+            else
+            {
+                toCompareValue = toCompare;
+            }
+
             switch (symbol)
             {
                 case "==":
-                    return variableValue == toCompare;
+                    return variableValue == toCompareValue;
 
                 case "!=":
-                    return variableValue != toCompare;
+                    return variableValue != toCompareValue;
             }
             return false;
         }
-        else if (Variables[variable] is bool)
+        else if (blackboard[variable] is bool)
         {
-            bool variableValue = Variables[variable];
-            bool toCompareValue = bool.Parse(toCompare);
+            bool variableValue = blackboard[variable];
+            bool toCompareValue = false;
+
+            if (ifData.isMetaVariableComparison)
+            {
+                toCompareValue = blackboard[toCompare];
+            }
+            else
+            {
+                toCompareValue = bool.Parse(toCompare);
+            }
+
             switch (symbol)
             {
                 case "==":
@@ -162,6 +216,25 @@ public static class Meta
 
         return false;
     }
+
+    #region Utility
+
+    public static Dictionary<string, dynamic> BlackboardThatContains(string variableName)
+    {
+        if (Dailies.ContainsKey(variableName))
+        {
+            return Dailies;
+        }
+        if (Global.ContainsKey(variableName))
+        {
+            return Global;
+        }
+
+        return null;
+        
+    }
+
+    #endregion
 }
 
 public class SerializableMeta

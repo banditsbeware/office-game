@@ -7,9 +7,9 @@ public class ChaosAgent
     public int Weight() //returns the likelihood of agent ocurring based on its threshold
     {
         int weight = 0;
-        if(Meta.Variables["chaos"] >= threshold) 
+        if(Meta.Global["chaos"] >= threshold) 
         {
-            weight = (threshold * Meta.Variables["chaos"]) / (threshold * threshold);
+            weight = (threshold * Meta.Global["chaos"]) / (threshold * threshold);
         }
         return weight;
     }

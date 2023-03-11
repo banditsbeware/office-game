@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: work_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: work_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: '-management
+
+    -9 to 5
+
+    -getting bought
+
+    -company
+    customer'
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: boss
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ec5dcadc3806e5940883e6d88c6045f5, type: 2}
+  - <Text>k__BackingField: hours
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 24e2fa31bbb49504e8dda7c4f39bbb90, type: 2}
+  - <Text>k__BackingField: merger
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: aa81482618c11a94293602119f1c30be, type: 2}
+  - <Text>k__BackingField: client
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b0a60aff1bc7b464db747c40e76fb884, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <speechTime>k__BackingField: 0

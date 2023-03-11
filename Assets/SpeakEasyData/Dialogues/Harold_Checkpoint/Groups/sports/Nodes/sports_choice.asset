@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: sports_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: sports_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: '-competition
+
+    -sport collaborators
+
+    -elite
+    team'
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: game
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c4679aa8548e9074d81d36d5c5d66ac0, type: 2}
+  - <Text>k__BackingField: team
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3befd3de734707a4d80799dfac49d284, type: 2}
+  - <Text>k__BackingField: varsity
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: acd67b2a899044a4a8df1d20993be4a8, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <speechTime>k__BackingField: 0

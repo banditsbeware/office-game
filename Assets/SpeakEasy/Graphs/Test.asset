@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Test
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 321a90b9-8371-4156-9b23-494e0a4c337b
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: dc1d447b-c656-4203-9866-3ef331d9c682
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: 38, y: 319}
+  - <ID>k__BackingField: dc1d447b-c656-4203-9866-3ef331d9c682
+    <Name>k__BackingField: checkscore
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 6ad47052-1c82-4eda-bd8c-9e9e3c93d001
+      <contextVariableName>k__BackingField: flappyHighScore
+      <comparisonSign>k__BackingField: <
+      <comparisonValue>k__BackingField: 2
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: c5f64865-322e-49a2-aca4-33cccf89e70b
+      <contextVariableName>k__BackingField: flappyHighScore
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 2
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: e33f7339-b67f-43d7-949f-fac3d36de7d2
+      <contextVariableName>k__BackingField: flappyHighScore
+      <comparisonSign>k__BackingField: '>'
+      <comparisonValue>k__BackingField: 2
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: 221, y: 277}
+  - <ID>k__BackingField: 6ad47052-1c82-4eda-bd8c-9e9e3c93d001
+    <Name>k__BackingField: less
+    <Text>k__BackingField: bad
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ca82ca2e-2c75-4c10-8d0f-585cc16a79c9
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 771, y: 179}
+  - <ID>k__BackingField: c5f64865-322e-49a2-aca4-33cccf89e70b
+    <Name>k__BackingField: average
+    <Text>k__BackingField: average
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ca82ca2e-2c75-4c10-8d0f-585cc16a79c9
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 771, y: 358}
+  - <ID>k__BackingField: e33f7339-b67f-43d7-949f-fac3d36de7d2
+    <Name>k__BackingField: e
+    <Text>k__BackingField: I guess
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ca82ca2e-2c75-4c10-8d0f-585cc16a79c9
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 771, y: 541}
+  - <ID>k__BackingField: ca82ca2e-2c75-4c10-8d0f-585cc16a79c9
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 1125, y: 358}
+  - <ID>k__BackingField: 5d697716-007b-4111-a598-e23a265bd4b5
+    <Name>k__BackingField: Dialogue Node
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: new choice
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1370, y: 120}
+  - <ID>k__BackingField: 670ec202-3d8c-4439-8470-bd9dafc5af9e
+    <Name>k__BackingField: eee
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <contextVariableName>k__BackingField: chaos
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 4
+    <Position>k__BackingField: {x: 1050, y: 70}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNames>k__BackingField:
+  - _entry
+  - checkscore
+  - less
+  - average
+  - e
+  - _exit
+  - Dialogue Node
+  - eee
+  <OldGroupedNames>k__BackingField:
+    list: []

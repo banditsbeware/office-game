@@ -16,7 +16,7 @@ public class SaveLoadSystem : MonoBehaviour
     {
         dataDirPath = Application.persistentDataPath;
         
-        if (Meta.Variables.Count == 0)
+        if (Meta.Global.Count == 0)
         {
             Meta.ResetData();
         }

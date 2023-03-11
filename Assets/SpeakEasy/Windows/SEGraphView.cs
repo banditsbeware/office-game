@@ -63,6 +63,8 @@ namespace SpeakEasy.Windows
             OnGroupElementsRemoved();
             OnGroupRenamed();
             OnGraphViewChanged();
+            OnSerializeGraphElements();
+            OnUnserializeAndPaste();
             
             AddStyles();
             AddMiniMapStyles();
@@ -97,13 +99,9 @@ namespace SpeakEasy.Windows
             this.AddManipulator(new RectangleSelector());
             this.AddManipulator(new ContentDragger());
 
-            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Entry,  "Add Entry Node"));
-            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Exit,  "Add Exit Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.Speaking, "Add Speaking Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.MultiChoice,  "Add Multi Choice Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.If, "Add If Node"));
-            this.AddManipulator(CreateNodeContextualMenu(SENodeType.WeightedRandom, "Add Weighted Random Node"));
-            this.AddManipulator(CreateNodeContextualMenu(SENodeType.Delay, "Add Delay Node"));
             this.AddManipulator(CreateNodeContextualMenu(SENodeType.Connector, "Add Connector"));
             
             this.AddManipulator(CreateGroupContextualMenu());
@@ -310,7 +308,10 @@ namespace SpeakEasy.Windows
 
                     SENode node = (SENode) element;
 
-                    UnlogUngroupedNode(node);
+                    if(ungroupedNodes.ContainsKey(node.NodeName)) 
+                    {
+                        UnlogUngroupedNode(node);
+                    }
                     LogGroupedNode(node, (SEGroup) group);
                 }
             };
@@ -381,6 +382,12 @@ namespace SpeakEasy.Windows
                         SEChoiceSaveData choiceData = (SEChoiceSaveData) edge.output.userData;
 
                         choiceData.NodeID = nextNode.ID;
+
+                        if (edge.input.node.GetPosition().x < edge.output.node.GetPosition().x)
+                        {
+                            edge.input.portColor = new Color32(100, 100, 100, 100);
+                            edge.output.portColor = new Color32(100, 100, 100, 100);
+                        }
                     }
                 }
 
@@ -397,6 +404,12 @@ namespace SpeakEasy.Windows
 
                         Edge edge = (Edge) element;
 
+                        if (edge.input.node.GetPosition().x < edge.output.node.GetPosition().x)
+                        {
+                            edge.input.portColor = edge.defaultColor;
+                            edge.output.portColor = edge.defaultColor;
+                        }
+
                         SEChoiceSaveData choiceData = (SEChoiceSaveData) edge.output.userData;
 
                         choiceData.NodeID = "";
@@ -407,6 +420,26 @@ namespace SpeakEasy.Windows
                 return changes;
             };
         }
+        
+        private void OnSerializeGraphElements()
+        { 
+            serializeGraphElements = (selection) =>
+            {
+                SEIOUtility.Copy(selection);
+                
+                return "Selection Data";
+            };
+            
+        }
+
+        private void OnUnserializeAndPaste()
+        {
+            unserializeAndPaste = (operationName, data) =>
+            {
+                SEIOUtility.Paste();
+            };
+        }
+        
         #endregion
 
         #region Repeated Elements
@@ -442,9 +475,13 @@ namespace SpeakEasy.Windows
         {
             string nodeName = node.NodeName.ToLower();
 
+            
+
             ungroupedNodes[nodeName].Nodes.Remove(node);
 
             List<SENode> ungroupedNodesList = ungroupedNodes[nodeName].Nodes;
+
+            
 
             node.ResetColor();
 
@@ -614,6 +651,23 @@ namespace SpeakEasy.Windows
         public void ToggleMiniMap()
         {
             miniMap.visible = !miniMap.visible;
+        }
+
+        public void UpdateEdgeColors()
+        {
+            foreach (GraphElement element in graphElements)
+            {
+                if (element is Edge) 
+                {
+                    Edge edge = (Edge) element;
+
+                    if (edge.input.node.GetPosition().x < edge.output.node.GetPosition().x)
+                    {
+                        edge.input.portColor = new Color32(100, 100, 100, 100);
+                        edge.output.portColor = new Color32(100, 100, 100, 100);
+                    }
+                }
+            }
         }
         #endregion
     }

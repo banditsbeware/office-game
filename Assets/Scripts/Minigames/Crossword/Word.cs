@@ -6,7 +6,6 @@ public class Word
 {
     public string word;
     public string postItDes;
-    public bool used = false;
     public (int, int) direction;
     public (int, int) origin;
     public GameObject startButton;

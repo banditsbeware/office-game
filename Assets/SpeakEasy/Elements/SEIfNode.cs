@@ -3,6 +3,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
+using System.Linq;
 
 
 namespace SpeakEasy.Elements
@@ -12,8 +13,8 @@ namespace SpeakEasy.Elements
     using Windows;
     using Utilities;
 
-    //node used for testing values in meta. changes dialogue based on game state
-    public class SEIfNode : SELogicNode
+  //node used for testing values in meta. changes dialogue based on game state
+  public class SEIfNode : SELogicNode
     {
         List<string> comparisons = new List<string>(){"==", "!=", "<", ">", "<=", ">="};
 
@@ -25,7 +26,8 @@ namespace SpeakEasy.Elements
             {
                 contextVariableName = "chaos",
                 comparisonSign = "==",
-                comparisonValue = "1"
+                comparisonValue = "1",
+                isMetaVariableComparison = false
             };
 
             SEIfSaveData elseData = new SEIfSaveData();
@@ -41,18 +43,60 @@ namespace SpeakEasy.Elements
             base.Draw();
             
             // Output Container //
+            Port ifPort = this.CreateLogicPort(IfStatements[0]);
+            
+            outputContainer.Add(ifPort);
 
-                Port ifPort = this.CreateLogicPort(IfStatements[0]);
+            Port elsePort = this.CreatePort("else:");
+
+            elsePort.userData = IfStatements[1];
+            
+            outputContainer.Add(elsePort);
+
+            //Main Container
+            //button toggles whether you're comparing to a user-defined value or a second variable
+            Button toggleValueButton = SEElementUtility.CreateButton("Toggle Value Field", () =>
+            {
+                IfStatements[0].isMetaVariableComparison = !IfStatements[0].isMetaVariableComparison;
                 
-                outputContainer.Add(ifPort);
+                ifPort.Remove(ifPort.Children().ElementAt(2));
 
-                Port elsePort = this.CreatePort("else:");
+                if (IfStatements[0].isMetaVariableComparison)
+                {
+                    //index in list of variables
+                    //if the text field contents doesn't exist in the list of variables, default to first in list
+                    int comparisonVariableIndex = Meta.GetVaraibleKeys().IndexOf(IfStatements[0].comparisonValue);
+                    if (comparisonVariableIndex == -1) comparisonVariableIndex = 0;
 
-                elsePort.userData = IfStatements[1];
-                
-                outputContainer.Add(elsePort);
+                    PopupField<string> comparisonVariablePopup = SEElementUtility.CreatePopupField(Meta.GetVaraibleKeys(), comparisonVariableIndex);
+                    comparisonVariablePopup.RegisterValueChangedCallback(evt => 
+                    {
+                        IfStatements[0].comparisonValue = evt.newValue;
+                    });
+                    comparisonVariablePopup.contentContainer.AddToClassList("se-node__context-popup-field");
+
+                    ifPort.Insert(2, comparisonVariablePopup);
+                    
+                }
+                else
+                {
+                    TextField choiceTextField = SEElementUtility.CreateTextField(IfStatements[0].comparisonValue, null, callback =>
+                    {
+                        IfStatements[0].comparisonValue = callback.newValue;
+                    });
+                    choiceTextField.AddClasses(
+                        "se-node__text-field",
+                        "se-node__choice-text-field",
+                        "se-node__text-field__hidden"
+                    );
+
+                    ifPort.Insert(2, choiceTextField);
+                }
+            });
+            toggleValueButton.AddToClassList("se-node__button");
+
+            mainContainer.Insert(1, toggleValueButton);
         
-
             RefreshExpandedState();
         }
     }

@@ -1,0 +1,838 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: Harold_Checkpoint
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Harold_Checkpoint
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 66530f1d-3cb5-4f2e-a261-cec83ff6fd03
+    <Name>k__BackingField: Hello
+    <Position>k__BackingField: {x: 313, y: -566}
+  - <ID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <Name>k__BackingField: Starters
+    <Position>k__BackingField: {x: 636, y: -566}
+  - <ID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <Name>k__BackingField: goodbye
+    <Position>k__BackingField: {x: -440, y: 479}
+  - <ID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <Name>k__BackingField: weather
+    <Position>k__BackingField: {x: 1277, y: -1394}
+  - <ID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <Name>k__BackingField: child
+    <Position>k__BackingField: {x: 1280, y: -890}
+  - <ID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <Name>k__BackingField: work
+    <Position>k__BackingField: {x: 1305, y: -254}
+  - <ID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <Name>k__BackingField: movies
+    <Position>k__BackingField: {x: 1307, y: 383}
+  - <ID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <Name>k__BackingField: sports
+    <Position>k__BackingField: {x: 1309, y: 1012}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 2461de9a-72d8-4e3c-8709-d819d4d4f3c5
+    <Name>k__BackingField: random_goodbye
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: dce19572-86ef-4a47-9982-82eb65afbb14
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: bd46ec7a-5ce6-4637-8e42-384ca05c1962
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: c8cf8463-efbf-475e-a7ad-277402ba0d81
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: 243af5e1-e767-464c-94ff-b61d66f447f8
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 6
+    <Position>k__BackingField: {x: -153, y: 770}
+  - <ID>k__BackingField: dce19572-86ef-4a47-9982-82eb65afbb14
+    <Name>k__BackingField: h_adios
+    <Text>k__BackingField: adios, amigo
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 151, y: 538}
+  - <ID>k__BackingField: bd46ec7a-5ce6-4637-8e42-384ca05c1962
+    <Name>k__BackingField: h_alrighty
+    <Text>k__BackingField: alrighty
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 151, y: 710}
+  - <ID>k__BackingField: c8cf8463-efbf-475e-a7ad-277402ba0d81
+    <Name>k__BackingField: h_see_ya
+    <Text>k__BackingField: see ya
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 151, y: 882}
+  - <ID>k__BackingField: 243af5e1-e767-464c-94ff-b61d66f447f8
+    <Name>k__BackingField: h_till
+    <Text>k__BackingField: till next time
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 151, y: 1054}
+  - <ID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+    <Name>k__BackingField: _exit_goodbyes
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 480, y: 816}
+  - <ID>k__BackingField: 68d68f69-997b-41be-82df-76c721bfaeab
+    <Name>k__BackingField: _entry_goodbye
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 2461de9a-72d8-4e3c-8709-d819d4d4f3c5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -415, y: 805}
+  - <ID>k__BackingField: 21b41ac6-6d8d-462b-9aa0-2440ca950dba
+    <Name>k__BackingField: random_hello
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: aa3a9709-e8f0-49fc-93fc-bbe05dc7d023
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: 49a23aac-f3e1-46b9-8f2b-8be224a68b1a
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: 9a1f3897-0809-4bc1-9a53-b83b197bb60f
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: fa346a6b-776d-42c7-a751-2d9254f72c38
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 6
+    <Position>k__BackingField: {x: 102, y: -360}
+  - <ID>k__BackingField: e6ac6696-40b1-4511-a0ed-b1926ba735be
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 21b41ac6-6d8d-462b-9aa0-2440ca950dba
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -116, y: -333}
+  - <ID>k__BackingField: 49a23aac-f3e1-46b9-8f2b-8be224a68b1a
+    <Name>k__BackingField: h_howdy
+    <Text>k__BackingField: howdy
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 473f0d34-ac2b-4c4e-b094-7341911c37fa
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 66530f1d-3cb5-4f2e-a261-cec83ff6fd03
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 338, y: -374}
+  - <ID>k__BackingField: aa3a9709-e8f0-49fc-93fc-bbe05dc7d023
+    <Name>k__BackingField: h_hello
+    <Text>k__BackingField: hello
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 473f0d34-ac2b-4c4e-b094-7341911c37fa
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 66530f1d-3cb5-4f2e-a261-cec83ff6fd03
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 338, y: -507}
+  - <ID>k__BackingField: 9a1f3897-0809-4bc1-9a53-b83b197bb60f
+    <Name>k__BackingField: h_good_to
+    <Text>k__BackingField: good to see ya again
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 473f0d34-ac2b-4c4e-b094-7341911c37fa
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 66530f1d-3cb5-4f2e-a261-cec83ff6fd03
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 338, y: -241}
+  - <ID>k__BackingField: fa346a6b-776d-42c7-a751-2d9254f72c38
+    <Name>k__BackingField: h_oh_hey
+    <Text>k__BackingField: oh, hey
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 473f0d34-ac2b-4c4e-b094-7341911c37fa
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 66530f1d-3cb5-4f2e-a261-cec83ff6fd03
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 338, y: -108}
+  - <ID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
+    <Name>k__BackingField: p_water_child
+    <Text>k__BackingField: how are the kids doing these days?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 906165d4-46b8-40cc-8ef8-d9fba07e3445
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 919, y: -374}
+  - <ID>k__BackingField: b7366ce3-dfd1-44ff-a955-6f1c77a076e9
+    <Name>k__BackingField: p_water_weather
+    <Text>k__BackingField: so, how about that weather, huh?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 658cd5f0-1590-4763-8e75-185175598928
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 919, y: -507}
+  - <ID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
+    <Name>k__BackingField: p_water_sports
+    <Text>k__BackingField: how bout them sports
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 81b7fbdd-0863-49b8-9f9d-98672462c376
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 918, y: 25}
+  - <ID>k__BackingField: 473f0d34-ac2b-4c4e-b094-7341911c37fa
+    <Name>k__BackingField: starter_choice
+    <Text>k__BackingField: '-climate
+
+      -posterity
+
+      -occupation
+
+      -cinema
+
+      -athletics'
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: weather
+      <NodeID>k__BackingField: b7366ce3-dfd1-44ff-a955-6f1c77a076e9
+    - <Text>k__BackingField: child
+      <NodeID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
+    - <Text>k__BackingField: work
+      <NodeID>k__BackingField: 0854f783-cb83-42f5-b96e-61ae2ff4a945
+    - <Text>k__BackingField: movies
+      <NodeID>k__BackingField: 8e4bb26c-c279-4266-a82e-4753aec0b587
+    - <Text>k__BackingField: sports
+      <NodeID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 661, y: -333}
+  - <ID>k__BackingField: 0854f783-cb83-42f5-b96e-61ae2ff4a945
+    <Name>k__BackingField: p_water_work
+    <Text>k__BackingField: work's really been grinding my gears lately
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: deb80d8b-318c-4a9a-9877-34ed6be56879
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 918, y: -241}
+  - <ID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
+    <Name>k__BackingField: p_water_coffee
+    <Text>k__BackingField: Dialoge text.
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 79b0c575-6d27-4c3f-9cb4-f6a116402fa4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1832, y: -1069}
+  - <ID>k__BackingField: dac58ef7-79b4-4beb-910e-ee0a0435acff
+    <Name>k__BackingField: weather_choice
+    <Text>k__BackingField: '-solid precipitation
+
+      -garments
+
+      -warm caffiene'
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: snow
+      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
+    - <Text>k__BackingField: clothes
+      <NodeID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
+    - <Text>k__BackingField: coffee
+      <NodeID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1574, y: -1249}
+  - <ID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
+    <Name>k__BackingField: p_water_snow
+    <Text>k__BackingField: Dialoge text.
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 79b0c575-6d27-4c3f-9cb4-f6a116402fa4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1832, y: -1335}
+  - <ID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
+    <Name>k__BackingField: p_water_clothes
+    <Text>k__BackingField: Dialoge text.
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 79b0c575-6d27-4c3f-9cb4-f6a116402fa4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1832, y: -1202}
+  - <ID>k__BackingField: 658cd5f0-1590-4763-8e75-185175598928
+    <Name>k__BackingField: h_weather
+    <Text>k__BackingField: yeah, quite the weather
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: dac58ef7-79b4-4beb-910e-ee0a0435acff
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1302, y: -1225}
+  - <ID>k__BackingField: 906165d4-46b8-40cc-8ef8-d9fba07e3445
+    <Name>k__BackingField: h_soccer
+    <Text>k__BackingField: little Jimmy's playing soccer, he's quite the young man
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8c671cf5-93cb-4430-8f4d-a873429415f6
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1305, y: -683}
+  - <ID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
+    <Name>k__BackingField: p_water_growth
+    <Text>k__BackingField: he's growing up so fast, pretty tall for his age
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ebf47261-d3a6-4940-a147-e4d7646179c6
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1835, y: -698}
+  - <ID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
+    <Name>k__BackingField: p_water_school
+    <Text>k__BackingField: nice, how is the schooling coming along?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ebf47261-d3a6-4940-a147-e4d7646179c6
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1835, y: -831}
+  - <ID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
+    <Name>k__BackingField: p_water_soccer
+    <Text>k__BackingField: Jimmy still playing ball with the team?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ebf47261-d3a6-4940-a147-e4d7646179c6
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1835, y: -565}
+  - <ID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
+    <Name>k__BackingField: p_water_internet
+    <Text>k__BackingField: he on that thick tock like all the other kids
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ebf47261-d3a6-4940-a147-e4d7646179c6
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1835, y: -432}
+  - <ID>k__BackingField: 79b0c575-6d27-4c3f-9cb4-f6a116402fa4
+    <Name>k__BackingField: 79b0c575-6d27-4c3f-9cb4-f6a116402fa4
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: c4e1bc23-fdcf-4572-b5b3-4f70756def41
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 2163, y: -1165}
+  - <ID>k__BackingField: ebf47261-d3a6-4940-a147-e4d7646179c6
+    <Name>k__BackingField: ebf47261-d3a6-4940-a147-e4d7646179c6
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: c4e1bc23-fdcf-4572-b5b3-4f70756def41
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 2163, y: -585}
+  - <ID>k__BackingField: deb80d8b-318c-4a9a-9877-34ed6be56879
+    <Name>k__BackingField: h_tell_me
+    <Text>k__BackingField: tell me about it
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d61eba2b-d7ac-4924-9c52-21a9a5672d20
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1330, y: -34}
+  - <ID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
+    <Name>k__BackingField: p_water_client
+    <Text>k__BackingField: I dealth with a pretty annoying client today
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1829, y: 204}
+  - <ID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
+    <Name>k__BackingField: p_water_boss
+    <Text>k__BackingField: boss man's been breathing down my neck
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1827, y: -195}
+  - <ID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
+    <Name>k__BackingField: p_water_hours
+    <Text>k__BackingField: can't wait till we're off at 5
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1827, y: -62}
+  - <ID>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5
+    <Name>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: c4e1bc23-fdcf-4572-b5b3-4f70756def41
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 2151, y: 51}
+  - <ID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
+    <Name>k__BackingField: p_water_merger
+    <Text>k__BackingField: any updates on the merger?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1827, y: 71}
+  - <ID>k__BackingField: 8e4bb26c-c279-4266-a82e-4753aec0b587
+    <Name>k__BackingField: p_water_movies
+    <Text>k__BackingField: you a movie guy?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 41907b04-fa4b-43e4-87d8-cfe8491b5fd7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 918, y: -108}
+  - <ID>k__BackingField: ccb8d775-fa8a-4433-a1fd-ea18febd0003
+    <Name>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5_copy
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: c4e1bc23-fdcf-4572-b5b3-4f70756def41
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 2153, y: 688}
+  - <ID>k__BackingField: 41907b04-fa4b-43e4-87d8-cfe8491b5fd7
+    <Name>k__BackingField: h_big_screen
+    <Text>k__BackingField: love the big screen
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ba339992-97d3-4e04-b417-7736b0013a2b
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1332, y: 603}
+  - <ID>k__BackingField: ba339992-97d3-4e04-b417-7736b0013a2b
+    <Name>k__BackingField: movies_choice
+    <Text>k__BackingField: '-new to theaters
+
+      -famous man
+
+      -science movie
+
+      -ticket
+      cost'
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: release
+      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
+    - <Text>k__BackingField: actor
+      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
+    - <Text>k__BackingField: scifi
+      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
+    - <Text>k__BackingField: prices
+      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1584, y: 579}
+  - <ID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
+    <Name>k__BackingField: p_water_release
+    <Text>k__BackingField: see any new ones letely?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ccb8d775-fa8a-4433-a1fd-ea18febd0003
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1829, y: 442}
+  - <ID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
+    <Name>k__BackingField: p_water_actor
+    <Text>k__BackingField: that one guy's getting really famous, huh
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ccb8d775-fa8a-4433-a1fd-ea18febd0003
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1829, y: 575}
+  - <ID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
+    <Name>k__BackingField: p_water_scifi
+    <Text>k__BackingField: I miss all the good scifi from our childhood
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ccb8d775-fa8a-4433-a1fd-ea18febd0003
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1829, y: 708}
+  - <ID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
+    <Name>k__BackingField: p_water_prices
+    <Text>k__BackingField: theaters are really ripping us off these days
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ccb8d775-fa8a-4433-a1fd-ea18febd0003
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1831, y: 841}
+  - <ID>k__BackingField: 27041067-ea8e-4f72-a7e3-068bcd26e64e
+    <Name>k__BackingField: 9d84b5dc-a862-4884-8dfb-cb76721bdae5_copy_copy
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: c4e1bc23-fdcf-4572-b5b3-4f70756def41
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 2155, y: 1317}
+  - <ID>k__BackingField: 81b7fbdd-0863-49b8-9f9d-98672462c376
+    <Name>k__BackingField: h_yup
+    <Text>k__BackingField: yup
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: eecb9867-a023-4815-94f4-414e3b1abf75
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1334, y: 1232}
+  - <ID>k__BackingField: eecb9867-a023-4815-94f4-414e3b1abf75
+    <Name>k__BackingField: sports_choice
+    <Text>k__BackingField: '-competition
+
+      -sport collaborators
+
+      -elite
+      team'
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: game
+      <NodeID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
+    - <Text>k__BackingField: team
+      <NodeID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
+    - <Text>k__BackingField: varsity
+      <NodeID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1586, y: 1208}
+  - <ID>k__BackingField: c4e1bc23-fdcf-4572-b5b3-4f70756def41
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 2695, y: 13}
+  - <ID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
+    <Name>k__BackingField: p_water_game
+    <Text>k__BackingField: did you watch the game last night?
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 27041067-ea8e-4f72-a7e3-068bcd26e64e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1831, y: 1071}
+  - <ID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
+    <Name>k__BackingField: p_water_team
+    <Text>k__BackingField: I'm a pretty big fan of the blue team
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 27041067-ea8e-4f72-a7e3-068bcd26e64e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1831, y: 1204}
+  - <ID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
+    <Name>k__BackingField: p_water_varsity
+    <Text>k__BackingField: reminds me of the good ol' days as a lineman for the high
+      school
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 27041067-ea8e-4f72-a7e3-068bcd26e64e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1831, y: 1337}
+  - <ID>k__BackingField: 8c671cf5-93cb-4430-8f4d-a873429415f6
+    <Name>k__BackingField: child_choice
+    <Text>k__BackingField: '-education
+
+      -enlargement
+
+      -foot sport
+
+      -www'
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: school
+      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
+    - <Text>k__BackingField: growth
+      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
+    - <Text>k__BackingField: soccer
+      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
+    - <Text>k__BackingField: internet
+      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1557, y: -707}
+  - <ID>k__BackingField: d61eba2b-d7ac-4924-9c52-21a9a5672d20
+    <Name>k__BackingField: work_choice
+    <Text>k__BackingField: '-management
+
+      -9 to 5
+
+      -getting bought
+
+      -company
+      customer'
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: boss
+      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
+    - <Text>k__BackingField: hours
+      <NodeID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
+    - <Text>k__BackingField: merger
+      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
+    - <Text>k__BackingField: client
+      <NodeID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1582, y: -58}
+  <OldGroupNames>k__BackingField:
+  - Hello
+  - Starters
+  - goodbye
+  - weather
+  - child
+  - work
+  - movies
+  - sports
+  <OldUngroupedNames>k__BackingField:
+  - random_hello
+  - _entry
+  - _exit
+  <OldGroupedNames>k__BackingField:
+    list:
+    - Key: goodbye
+      Value:
+      - random_goodbye
+      - h_adios
+      - h_alrighty
+      - h_see_ya
+      - h_till
+      - _exit_goodbyes
+      - _entry_goodbye
+    - Key: Hello
+      Value:
+      - h_howdy
+      - h_hello
+      - h_good_to
+      - h_oh_hey
+    - Key: Starters
+      Value:
+      - p_water_child
+      - p_water_weather
+      - p_water_sports
+      - starter_choice
+      - p_water_work
+      - p_water_movies
+    - Key: weather
+      Value:
+      - p_water_coffee
+      - weather_choice
+      - p_water_snow
+      - p_water_clothes
+      - h_weather
+      - 79b0c575-6d27-4c3f-9cb4-f6a116402fa4
+    - Key: child
+      Value:
+      - h_soccer
+      - p_water_growth
+      - p_water_school
+      - p_water_soccer
+      - p_water_internet
+      - ebf47261-d3a6-4940-a147-e4d7646179c6
+      - child_choice
+    - Key: work
+      Value:
+      - h_tell_me
+      - p_water_client
+      - p_water_boss
+      - p_water_hours
+      - 9d84b5dc-a862-4884-8dfb-cb76721bdae5
+      - p_water_merger
+      - work_choice
+    - Key: movies
+      Value:
+      - 9d84b5dc-a862-4884-8dfb-cb76721bdae5_copy
+      - h_big_screen
+      - movies_choice
+      - p_water_release
+      - p_water_actor
+      - p_water_scifi
+      - p_water_prices
+    - Key: sports
+      Value:
+      - 9d84b5dc-a862-4884-8dfb-cb76721bdae5_copy_copy
+      - h_yup
+      - sports_choice
+      - p_water_game
+      - p_water_team
+      - p_water_varsity

@@ -7,6 +7,8 @@ using UnityEngine.UIElements;
 namespace SpeakEasy.Windows
 {
     using Utilities;
+    using Elements;
+    using Enumerations;
     
     //creates the window in Unity in which the magic happens
     public class SEEditorWindow : EditorWindow
@@ -33,6 +35,50 @@ namespace SpeakEasy.Windows
             AddGraphView();
             AddToolbar();
             AddStyles();
+
+            SEIOUtility.Initialize(graphView, graphView.name);
+
+            // HOTKEYS //
+            rootVisualElement.RegisterCallback<KeyDownEvent>(evt =>
+            {
+                Vector2 localMousePosition = graphView.GetLocalMousePosition(evt.originalMousePosition);
+
+                switch (evt.keyCode)
+                {
+                    case KeyCode.Alpha1:
+                        SESpeakingNode speakingNode = (SESpeakingNode) graphView.CreateNode(SENodeType.Speaking, localMousePosition);
+                        graphView.AddElement(speakingNode);
+                        break;
+
+                    case KeyCode.Alpha2:
+                        SEMultiChoiceNode multiChoiceNode = (SEMultiChoiceNode) graphView.CreateNode(SENodeType.MultiChoice, localMousePosition);
+                        graphView.AddElement(multiChoiceNode);
+                        break;
+
+                    case KeyCode.Alpha3:
+                        SEIfNode ifNode = (SEIfNode) graphView.CreateNode(SENodeType.If, localMousePosition);
+                        graphView.AddElement(ifNode);
+                        break;
+
+                    case KeyCode.Alpha4:
+                        SEDelayNode delayNode = (SEDelayNode) graphView.CreateNode(SENodeType.Delay, localMousePosition, "_delay");
+                        graphView.AddElement(delayNode);
+                        break;
+
+                    case KeyCode.Alpha5:
+                        SEConnectorNode connectorNode = (SEConnectorNode) graphView.CreateNode(SENodeType.Connector, localMousePosition);
+                        graphView.AddElement(connectorNode);
+                        break;
+
+                    case KeyCode.Alpha9: //debugging
+                        break;
+                }
+            });
+        }
+
+        private void OnDestroy() 
+        {
+            SEIOUtility.RemoveFolder("Assets/SpeakEasyData/CopyPasteBuffer");
         }
 
         #region Elements
@@ -91,10 +137,6 @@ namespace SpeakEasy.Windows
 
         private void Clear(bool isLoading = false)
         {
-            if (isLoading)
-            {
-                return;
-            }
             if (EditorUtility.DisplayDialog("Double Checking", "Are you sure you want to clear the dialogue graph", "go for it", "whoops sorry no"))
             {
                 graphView.ClearGraph();
@@ -117,7 +159,7 @@ namespace SpeakEasy.Windows
                 return;
             }
 
-            Clear(true);
+            graphView.ClearGraph();
 
             SEIOUtility.Initialize(graphView, Path.GetFileNameWithoutExtension(filePath));
             SEIOUtility.Load();
@@ -128,6 +170,8 @@ namespace SpeakEasy.Windows
             graphView.ToggleMiniMap();
 
             miniMapButton.ToggleInClassList("se-toolbar__button__selected");
+
+            graphView.UpdateEdgeColors();
         }
         #endregion
 

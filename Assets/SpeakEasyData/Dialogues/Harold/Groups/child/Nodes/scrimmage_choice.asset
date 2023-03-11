@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: scrimmage_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: scrimmage_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: '-education
+
+    -www
+
+    -enlargement
+
+    -athletics'
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: school
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 89b293d33c62abe46b0f112587ddc077, type: 2}
+  - <Text>k__BackingField: internet
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: aaea046ec4958844d9502718a0ef2861, type: 2}
+  - <Text>k__BackingField: growth
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: cbe6e5fa789dea7468a4d6df353864e2, type: 2}
+  - <Text>k__BackingField: sports
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: aca329195ee5c3d488427cb91a706cbc, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <speechTime>k__BackingField: 0

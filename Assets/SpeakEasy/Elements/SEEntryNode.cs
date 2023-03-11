@@ -16,8 +16,6 @@ namespace SpeakEasy.Elements
         {
             base.Initialize(seGraphView, position, nodeName);
 
-            NodeName = "_entry";
-
             NodeType = SENodeType.Entry;
 
             SEChoiceSaveData choiceData = new SEChoiceSaveData()

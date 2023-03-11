@@ -17,8 +17,6 @@ namespace SpeakEasy.Elements
         {
             base.Initialize(seGraphView, position, nodeName);
 
-            NodeName = "delay_";
-
             NodeType = SENodeType.Delay;
 
             SEChoiceSaveData choiceData = new SEChoiceSaveData()

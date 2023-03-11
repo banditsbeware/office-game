@@ -1,18 +1,18 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-using static SpeakEasy.Enumerations.MetaVariable;
+using TMPro;
 
 public class LevelLoader : MonoBehaviour
 {
     public Animator fadeTransition;
     public float transitionTime = 1f;
     private Transform door;  //door you will be exiting from
+    public TMP_Text debugText;
 
     void Start()
     {
-        Meta.Variables["currentScene"] = SceneManager.GetActiveScene().name;
+        Meta.Global["currentScene"] = SceneManager.GetActiveScene().name;
     }
 
     public void LoadLevel(string levelName)
@@ -28,7 +28,7 @@ public class LevelLoader : MonoBehaviour
 
         AkSoundEngine.PostEvent("Fade_All", gameObject);
 
-        if(Meta.Variables["currentScene"] != "MainMenu") 
+        if(Meta.Global["currentScene"] != "MainMenu") 
         {
             Time.timeScale = 1;
 			UIManager.hide(UIManager.pauseObjects);
@@ -37,8 +37,17 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
-        Meta.Variables["currentScene"] = levelName;
+        Meta.Global["currentScene"] = levelName;
 
         SceneManager.LoadScene(levelName);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Meta.DebuggingMode = !Meta.DebuggingMode;
+            debugText.text = Meta.DebuggingMode.ToString();
+        }
     }
 }
