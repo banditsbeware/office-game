@@ -22,6 +22,9 @@ public static class Meta
         // Set initial values for the static variables here
         SetValue("chaos", 0, Global);
         SetValue("day", 1, Global);
+        SetValue("eggs", 0, Global);
+        SetValue("alcohol", 0, Global);
+        SetValue("cigs", 0, Global);
         SetValue("flappyHighScore", 0, Global);
         SetValue("currentScene", "Office", Global);
 
@@ -31,6 +34,10 @@ public static class Meta
     public static void ResetDailies()
     {
         SetValue("h_repeatedChoice", 0, Dailies);
+        SetValue("bodega_visits", 0, Dailies);
+        SetValue("bodega_bought_eggs", false, Dailies);
+        SetValue("bodega_bought_alcohol", false, Dailies);
+        SetValue("bodega_bought_cigs", false, Dailies);
     }
 
     //only used when editing dialogue graphs
@@ -43,6 +50,11 @@ public static class Meta
         names.AddRange(Global.Keys.ToList<string>());
         names.AddRange(Dailies.Keys.ToList<string>());
 
+        foreach (string name in names)
+        {
+            name.RemoveWhitespaces();
+        }
+
         return names;
     }
 
@@ -50,7 +62,9 @@ public static class Meta
     {
         if (blackboard.ContainsKey(name))
         {
-            blackboard[name] = value;
+            if (blackboard[name] is string) blackboard[name] = value;
+            if (blackboard[name] is int) blackboard[name] = int.Parse(value.ToString());
+            if (blackboard[name] is bool) blackboard[name] = bool.Parse(value.ToString());
         }
         else
         {

@@ -205,7 +205,7 @@ namespace SpeakEasy
 
             AkSoundEngine.PostEvent("Stop_Player", gameObject);
 
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1f);
         
             playerSpeechText.text = "";
             playerBubbleImage.sprite = emptySprite;
@@ -318,8 +318,6 @@ namespace SpeakEasy
 
         IEnumerator DelayNode(float delay)
         {
-            Debug.Log("we've arrived");
-
             node = NextNode();
 
             yield return new WaitForSeconds(delay);

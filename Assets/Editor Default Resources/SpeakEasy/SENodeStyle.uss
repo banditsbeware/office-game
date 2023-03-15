@@ -101,7 +101,7 @@
 .se-node__context-popup-field
 {
 	min-width: var(--se-metrics-window-pixels-35);
-	max-width: var(--se-metrics-window-pixels-160);
+	max-width: var(--se-metrics-window-pixels-120);
 	color: var(--se-colors-window-dark-grey-1);
 	white-space: nowrap;
 }

@@ -464,6 +464,11 @@ namespace SpeakEasy
               {
                 node = goodbyeNode;
                 node = NextNode();
+
+                ClearNPC();
+                BeginNode();
+
+                return;
               }
 
               if (usedWords.Contains(word.word))
@@ -477,6 +482,8 @@ namespace SpeakEasy
 
               int choiceIndex = avalibleWords.IndexOf(word);
               node = NextNode(choiceIndex);
+
+              
 
               ClearNPC();
               BeginNode();

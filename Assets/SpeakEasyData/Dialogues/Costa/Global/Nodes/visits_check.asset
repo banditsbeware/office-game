@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: checkscore
+  m_Name: visits_check
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: checkscore
+  <NodeName>k__BackingField: visits_check
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField: []
   <IfStatements>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 947d065c7d1b83849a8de7a5eb6a5993, type: 2}
-    <contextVariableName>k__BackingField: flappyHighScore
-    <comparisonSign>k__BackingField: <
-    <comparisonValue>k__BackingField: 2
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 116cfdbf7b0054eb09d1479ac2218263, type: 2}
+    <contextVariableName>k__BackingField: bodega_visits
+    <comparisonSign>k__BackingField: ==
+    <comparisonValue>k__BackingField: 1
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1f5cf5e38843c2147b86d5ae78568b1c, type: 2}
-    <contextVariableName>k__BackingField: flappyHighScore
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 34ec46391ce4147558ecf6cf54cc9fea, type: 2}
+    <contextVariableName>k__BackingField: bodega_visits
     <comparisonSign>k__BackingField: ==
     <comparisonValue>k__BackingField: 2
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 70125fae193a18848a4fecc0ca75648f, type: 2}
-    <contextVariableName>k__BackingField: flappyHighScore
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6e188f657164d467995bf7f622d8d9bf, type: 2}
+    <contextVariableName>k__BackingField: bodega_visits
     <comparisonSign>k__BackingField: '>'
     <comparisonValue>k__BackingField: 2
     <isMetaVariableComparison>k__BackingField: 0
@@ -41,6 +41,9 @@ MonoBehaviour:
     <comparisonSign>k__BackingField: 
     <comparisonValue>k__BackingField: 
     <isMetaVariableComparison>k__BackingField: 0
-  <Callbacks>k__BackingField: []
+  <Callbacks>k__BackingField:
+  - <callbackVariableName>k__BackingField: bodega_visits
+    <callbackAction>k__BackingField: Increment
+    <callbackValue>k__BackingField: 1
   <NodeType>k__BackingField: 5
   <speechTime>k__BackingField: 0

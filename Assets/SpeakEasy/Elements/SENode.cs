@@ -100,67 +100,18 @@ namespace SpeakEasy.Elements
                 "se-node__text-field__hidden"
             );
 
-            Button addCallbacksButton = SEElementUtility.CreateButton("CB", () =>
+            VisualElement callbackFoldout = new VisualElement();
+
+            Button addCallbackButton = SEElementUtility.CreateButton("CB", () =>
             {
                 if (Callbacks.Count == 0)
                 {
-                    extensionContainer.Add(CreateCallbackFoldout());
+                    callbackFoldout = CreateCallbackFoldout();
+
+                    extensionContainer.Add(callbackFoldout);
                     RefreshExpandedState();
                 }
-            });
-            addCallbacksButton.AddToClassList("se-node__mini-button");
 
-            Button addDialoguesButton = SEElementUtility.CreateButton("D", () =>
-            {
-                extensionContainer.Add(CreateDialogueFoldout());
-                RefreshExpandedState();
-            });
-            addDialoguesButton.AddToClassList("se-node__mini-button");
-
-            VisualElement buttonsContainer = new VisualElement();
-            buttonsContainer.Add(addCallbacksButton);
-            buttonsContainer.Add(addDialoguesButton);
-            buttonsContainer.AddToClassList("se-node__callback");
-
-            titleContainer.Insert(1, buttonsContainer);
-            titleContainer.Insert(0, nodeNameTextField);  //titleContainer is part of the inherited Node class, it's essentially the header
-
-            // Input Container //
-            Port inputPort = this.CreatePort("in", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
-            inputContainer.Add(inputPort);  //inputContainer is a child of the middle container in the Node, on the left side
-
-            // Extensions Container //
-            if (Callbacks.Count != 0)
-            {
-                extensionContainer.Add(CreateCallbackFoldout());
-            }
-            if (DialogueText != null && DialogueText != "")
-            {
-                extensionContainer.Add(CreateDialogueFoldout());
-            }
-            RefreshExpandedState();
-        }
-
-        #region Elements
-
-        #region Callbacks
-        public VisualElement CreateCallbackFoldout()
-        {
-            VisualElement foldoutContainer = new VisualElement();
-
-            Button deleteFoldoutButton = SEElementUtility.CreateButton("x", () =>
-            {
-                Callbacks.Clear();
-                extensionContainer.Remove(foldoutContainer);
-            });
-            deleteFoldoutButton.AddToClassList("se-node__mini-button");
-
-            Foldout callbackFoldout = SEElementUtility.CreateFoldout("Callback");
-
-            // Contents //
-
-            Button addCallbackButton = SEElementUtility.CreateButton("Add Callback", () =>
-            {
                 SECallbackSaveData callbackData = new SECallbackSaveData()
                 {
                     callbackVariableName = "chaos",
@@ -175,31 +126,65 @@ namespace SpeakEasy.Elements
                 callbackFoldout.Add(callbackElement);
 
                 RefreshExpandedState();
+                
             });
+            addCallbackButton.AddToClassList("se-node__mini-button");
+
+            Button addDialoguesButton = SEElementUtility.CreateButton("D", () =>
+            {
+                extensionContainer.Add(CreateDialogueFoldout());
+                RefreshExpandedState();
+            });
+            addDialoguesButton.AddToClassList("se-node__mini-button");
+
+            VisualElement buttonsContainer = new VisualElement();
+            buttonsContainer.Add(addCallbackButton);
+            buttonsContainer.Add(addDialoguesButton);
+            buttonsContainer.AddToClassList("se-node__callback");
+
+            titleContainer.Insert(1, buttonsContainer);
+            titleContainer.Insert(0, nodeNameTextField);  //titleContainer is part of the inherited Node class, it's essentially the header
+
+            // Input Container //
+            Port inputPort = this.CreatePort("in", Orientation.Horizontal, Direction.Input, Port.Capacity.Multi);
+            inputContainer.Add(inputPort);  //inputContainer is a child of the middle container in the Node, on the left side
+
+            // Extensions Container //
+            if (Callbacks.Count != 0)
+            {
+                callbackFoldout = CreateCallbackFoldout();
+                extensionContainer.Add(callbackFoldout);
+            }
+            if (DialogueText != null && DialogueText != "")
+            {
+                extensionContainer.Add(CreateDialogueFoldout());
+            }
+            RefreshExpandedState();
+        }
+
+        #region Elements
+
+        #region Callbacks
+        public Foldout CreateCallbackFoldout()
+        {
+            Foldout callbackFoldout = SEElementUtility.CreateFoldout("Callback");
+
+            // Contents //
 
             foreach(SECallbackSaveData callbackData in Callbacks)
             {
-                VisualElement callbackElement = CreateCallback(callbackData, callbackFoldout.contentContainer);
-
-                callbackFoldout.Add(callbackElement);
+                callbackFoldout.Add(CreateCallback(callbackData, callbackFoldout.contentContainer));
 
                 RefreshExpandedState();
             }
 
-            VisualElement buttonsContainer = new VisualElement();
-
-            buttonsContainer.Add(addCallbackButton);
-            buttonsContainer.Add(deleteFoldoutButton);
-            buttonsContainer.AddToClassList("se-node__callback");
-
-            callbackFoldout.Add(buttonsContainer);
             callbackFoldout.value = false;
             
-            foldoutContainer.Add(callbackFoldout);
+            callbackFoldout.Add(callbackFoldout);
             
-            foldoutContainer.AddToClassList("se-node__custom-data-container");
+            callbackFoldout.AddToClassList("se-node__custom-data-container");
 
-            return foldoutContainer;
+            return callbackFoldout;
         }
 
         private VisualElement CreateCallback(SECallbackSaveData callbackData, VisualElement container = null) 
@@ -214,6 +199,11 @@ namespace SpeakEasy.Elements
                 Callbacks.Remove(callbackData);
 
                 container.Remove(callback);
+
+                if (Callbacks.Count == 0)
+                {
+                    extensionContainer.Remove(container.parent);
+                }
             });
 
             PopupField<string> changeVariables = SEElementUtility.CreatePopupField(Meta.GetVaraibleKeys(), callbackVariableIndex);

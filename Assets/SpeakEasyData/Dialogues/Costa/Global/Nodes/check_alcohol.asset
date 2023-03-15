@@ -10,31 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: Dialogue Node
+  m_Name: check_alcohol
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: Dialogue Node
+  <NodeName>k__BackingField: check_alcohol
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField: []
   <IfStatements>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 0}
-    <contextVariableName>k__BackingField: chaos
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b0f972cb8792d4011b58454c6dd51bb4, type: 2}
+    <contextVariableName>k__BackingField: bodega_bought_alcohol
     <comparisonSign>k__BackingField: ==
-    <comparisonValue>k__BackingField: 1
+    <comparisonValue>k__BackingField: true
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: da62787ff31df43c699661bcb1ceaba8, type: 2}
     <contextVariableName>k__BackingField: 
     <comparisonSign>k__BackingField: 
     <comparisonValue>k__BackingField: 
     <isMetaVariableComparison>k__BackingField: 0
-  <Callbacks>k__BackingField:
-  - <callbackVariableName>k__BackingField: bodega_bought_eggs
-    <callbackAction>k__BackingField: Increment
-    <callbackValue>k__BackingField: 2
-  - <callbackVariableName>k__BackingField: bodega_bought_alcohol
-    <callbackAction>k__BackingField: SetValue
-    <callbackValue>k__BackingField: 7
+  <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 4
   <speechTime>k__BackingField: 0
