@@ -17,14 +17,14 @@ MonoBehaviour:
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: eggs
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 318d2b6d347a24d219cdcfd1b5381a31, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c34efa6e33ab9ab4b9ffdce1c47ebf41, type: 2}
   - <Text>k__BackingField: alcohol
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c15c04d7632dd4ae4a91542c94abfaf0, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 694ca37a7192e9c49a729b14d281322a, type: 2}
   - <Text>k__BackingField: cigs
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 35e6dcc736d1749b0995d43885530579, type: 2}
-  - <Text>k__BackingField: new choice
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 321d70a16f6fac7468c16749716ff662, type: 2}
+  - <Text>k__BackingField: nothing
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 221c5f308a155614ab22cf979da6f8da, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 1
-  <speechTime>k__BackingField: 0
+  <SpeechTime>k__BackingField: 0

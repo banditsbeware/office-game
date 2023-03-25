@@ -630,7 +630,7 @@
 										<Action Name="" ID="{EA6F97DA-EAE6-447F-A5A2-5E7780686873}" ShortID="141812046">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="extra_cough" ID="{2E11990A-C2CC-4869-B51C-4A485A530161}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+													<ObjectRef Name="h_extra_cough" ID="{2E11990A-C2CC-4869-B51C-4A485A530161}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -806,7 +806,7 @@
 										<Action Name="" ID="{82E7010C-4D62-4D5F-B805-F47CE1E6FCC5}" ShortID="895751709">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="extra_huh" ID="{4C895B9D-90EA-4DAE-BE66-DDB34219BFA6}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+													<ObjectRef Name="h_extra_huh" ID="{4C895B9D-90EA-4DAE-BE66-DDB34219BFA6}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -848,6 +848,208 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Player" ID="{C4EE45B7-4A91-47B6-B044-46B6170B2BF2}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Costa" ID="{83F61FA7-E54E-48A2-ACB9-44C01858AE85}" ShortID="910051257">
+							<ChildrenList>
+								<Event Name="Play_c_here_friend" ID="{78CD4A1D-0A20-4655-B2B3-8DBF30358E33}">
+									<ChildrenList>
+										<Action Name="" ID="{E5811D5D-9D60-4D61-A026-0FC1F6F6D15D}" ShortID="739976295">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_here_friend" ID="{BE76F6E7-5142-4939-B45C-7B44D0EFC427}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_heres_a_pack" ID="{F9031589-2A4C-486D-A221-5089B342D280}">
+									<ChildrenList>
+										<Action Name="" ID="{526592B5-E6C6-43D1-93F1-11EA7B80266E}" ShortID="856063849">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_heres_a_pack" ID="{57266EF5-6B27-48AD-8399-9D443D48F9EA}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_looking_to" ID="{EBEE6D07-FF40-43B8-A7C8-EC9DD41771C8}">
+									<ChildrenList>
+										<Action Name="" ID="{F67BBA0C-E132-4074-9762-B671C8A3AE60}" ShortID="964161776">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_looking_to" ID="{785240F4-F35B-4A6C-B683-9FA1E92682DB}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_one_bottle" ID="{68BD27B5-854F-4B74-8DE9-46557CFD8338}">
+									<ChildrenList>
+										<Action Name="" ID="{FE1856F2-7D1B-4517-A810-3F084C6BFA52}" ShortID="1063100398">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_one_bottle" ID="{A2BFD1F0-051F-413B-866A-44C85237E3D3}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_police" ID="{D5A11BAA-F586-4AB6-9415-2A35271D0DAA}">
+									<ChildrenList>
+										<Action Name="" ID="{78BC1295-7BE0-43B1-B9FD-4AC9546BBA40}" ShortID="336889737">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_police" ID="{15EC411D-86D5-4C04-AD58-D890B4A9D131}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_so_many_eggs" ID="{2E9D6C00-E4CA-4E41-8761-DE42D5F14244}">
+									<ChildrenList>
+										<Action Name="" ID="{1F1BC6FA-477D-46C0-B4E0-BDDFCB8583CE}" ShortID="93707411">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_so_many_eggs" ID="{D961DF87-2CB9-4751-9628-B79572B0DA2A}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_bottle_for_you" ID="{761337D5-6382-4A20-9F0B-8CB02C7417B9}">
+									<ChildrenList>
+										<Action Name="" ID="{46874692-7E6F-4CB7-98D9-6AF89A0A8E02}" ShortID="214083690">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_bottle_for_you" ID="{4D16E951-BCD3-4C60-A351-CD9CCA0909D0}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_step_off" ID="{D2A0664D-2603-41DF-8900-CF29F847F412}">
+									<ChildrenList>
+										<Action Name="" ID="{B3D148CC-141F-48F3-A6E1-EB0E3B2EF26C}" ShortID="457880079">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_step_off" ID="{98F44345-8B4E-4F14-BB7A-5F9A73E9ED3B}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_what_do_you" ID="{806B1DBF-040C-495C-91CF-07BC051BBF81}">
+									<ChildrenList>
+										<Action Name="" ID="{F37C1DBA-67E1-4504-AC62-2E6A3382506D}" ShortID="433340456">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_what_do_you" ID="{33E8B8C4-648C-427E-8307-23D26931ACBB}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_anything_else" ID="{D94AD6AD-ED5D-4DA0-9003-603C89342EAA}">
+									<ChildrenList>
+										<Action Name="" ID="{89C3808A-1D3B-4880-A702-F9CAE8F0F545}" ShortID="311418709">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_anything_else" ID="{EF9749F5-0E22-4AF6-85E3-091720EBBCBB}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_is_there_something" ID="{B800C237-1DA6-4EE7-8AEF-C2DA3A2495BD}">
+									<ChildrenList>
+										<Action Name="" ID="{0A152EBA-9413-47D5-B729-D95FE65B224C}" ShortID="676487514">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_is_there_something" ID="{3EF4F9EE-0188-4936-BCA3-9E2056812891}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_why_do_you" ID="{AD1CAD69-CCAD-40E7-B9FE-03A9B76EC516}">
+									<ChildrenList>
+										<Action Name="" ID="{15B91B24-1B29-470F-8F42-EE4043147FE4}" ShortID="448855408">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_why_do_you" ID="{B97927C0-6A5C-443B-B1B2-4FC8BB43DAC3}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_city_law" ID="{EF7AEF29-8072-48F4-A87A-444D32BBFFEC}">
+									<ChildrenList>
+										<Action Name="" ID="{F67D6437-B427-4046-ADF3-828004AD4525}" ShortID="832648198">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_city_law" ID="{F7B408A7-556D-498D-BD48-2FF694843E61}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_scramble" ID="{D521DCFC-237D-469A-9A13-BDC73B505C91}">
+									<ChildrenList>
+										<Action Name="" ID="{91DB5B22-E01B-4B2C-8CCB-23C966A32BD9}" ShortID="776028256">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_scramble" ID="{382AA458-AF0A-49C9-80F3-7CB584980FEF}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_are_you_deaf" ID="{583BB95D-6EF3-41C4-98B4-79112A053487}">
+									<ChildrenList>
+										<Action Name="" ID="{5E9E16E3-C59B-4394-B087-192823FADB08}" ShortID="355511996">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_are_you_deaf" ID="{3CE8FB3E-5F95-49B5-B371-283A19CDC738}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_have_good" ID="{3B4D335F-CE07-4F88-B352-EA579F24FF9D}">
+									<ChildrenList>
+										<Action Name="" ID="{1B2A495E-BB68-4DD4-9A76-575547E3C902}" ShortID="967861045">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_have_good" ID="{27343939-4F54-4D81-B986-7B2E07D521D6}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_you_drunks" ID="{2D6CDCDB-B6CF-4B10-A855-D99566532760}">
+									<ChildrenList>
+										<Action Name="" ID="{DC1D99B2-88EB-46DC-AEA2-1EE193F4D3E4}" ShortID="357679762">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_you_drunks" ID="{289B471E-9676-4A7C-A2FE-3F85233169C6}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_c_you_again" ID="{1C3B22AB-9FA8-491F-BCA3-B2A76701F782}">
+									<ChildrenList>
+										<Action Name="" ID="{BA85AAE8-714F-4911-A5FB-211CF7652BE0}" ShortID="329616622">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="c_you_again" ID="{D9B76EAE-6AB2-4C09-8334-60D597E7276C}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -15,36 +15,35 @@ MonoBehaviour:
   <FileName>k__BackingField: Test
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: 701dbbcf-1bb3-440a-813e-e1b89469e1f7
-    <Name>k__BackingField: Dialogue Node
-    <Text>k__BackingField: 
+  - <ID>k__BackingField: f1b621c4-f6ed-4c73-84b1-820b4aae8c8d
+    <Name>k__BackingField: time
+    <Text>k__BackingField: Dialoge text.
+    <SpeechTime>k__BackingField: 4
     <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField:
-    - <Text>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
       <NodeID>k__BackingField: 
-      <contextVariableName>k__BackingField: chaos
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: 1
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
-      <contextVariableName>k__BackingField: 
-      <comparisonSign>k__BackingField: 
-      <comparisonValue>k__BackingField: 
-      <isMetaVariableComparison>k__BackingField: 0
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: bodega_bought_eggs
-      <callbackAction>k__BackingField: Increment
-      <callbackValue>k__BackingField: 2
-    - <callbackVariableName>k__BackingField: bodega_bought_alcohol
-      <callbackAction>k__BackingField: SetValue
-      <callbackValue>k__BackingField: 7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 4
-    <Position>k__BackingField: {x: 427, y: 278}
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 304, y: 369}
+  - <ID>k__BackingField: 18cf52e1-ae2b-416d-9072-5447d85aa0d3
+    <Name>k__BackingField: untime
+    <Text>k__BackingField: this dhit whack
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 758, y: 305}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
-  - Dialogue Node
+  - time
+  - untime
   <OldGroupedNames>k__BackingField:
     list: []

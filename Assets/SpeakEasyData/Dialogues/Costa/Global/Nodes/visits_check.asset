@@ -19,31 +19,31 @@ MonoBehaviour:
   <IfStatements>k__BackingField:
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 116cfdbf7b0054eb09d1479ac2218263, type: 2}
-    <contextVariableName>k__BackingField: bodega_visits
+    <contextVariableName>k__BackingField: bVisits
     <comparisonSign>k__BackingField: ==
     <comparisonValue>k__BackingField: 1
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 34ec46391ce4147558ecf6cf54cc9fea, type: 2}
-    <contextVariableName>k__BackingField: bodega_visits
+    <contextVariableName>k__BackingField: bVisits
     <comparisonSign>k__BackingField: ==
     <comparisonValue>k__BackingField: 2
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6e188f657164d467995bf7f622d8d9bf, type: 2}
-    <contextVariableName>k__BackingField: bodega_visits
-    <comparisonSign>k__BackingField: '>'
-    <comparisonValue>k__BackingField: 2
+    <contextVariableName>k__BackingField: bVisits
+    <comparisonSign>k__BackingField: ==
+    <comparisonValue>k__BackingField: 3
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9a99c9f12a57fe44c97fa90f24075164, type: 2}
     <contextVariableName>k__BackingField: 
     <comparisonSign>k__BackingField: 
     <comparisonValue>k__BackingField: 
     <isMetaVariableComparison>k__BackingField: 0
   <Callbacks>k__BackingField:
-  - <callbackVariableName>k__BackingField: bodega_visits
+  - <callbackVariableName>k__BackingField: bVisits
     <callbackAction>k__BackingField: Increment
     <callbackValue>k__BackingField: 1
   <NodeType>k__BackingField: 5
-  <speechTime>k__BackingField: 0
+  <SpeechTime>k__BackingField: 0

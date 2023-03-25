@@ -45,6 +45,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 2461de9a-72d8-4e3c-8709-d819d4d4f3c5
     <Name>k__BackingField: random_goodbye
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: 1
@@ -63,6 +64,7 @@ MonoBehaviour:
   - <ID>k__BackingField: dce19572-86ef-4a47-9982-82eb65afbb14
     <Name>k__BackingField: h_adios
     <Text>k__BackingField: adios, amigo
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -75,6 +77,7 @@ MonoBehaviour:
   - <ID>k__BackingField: bd46ec7a-5ce6-4637-8e42-384ca05c1962
     <Name>k__BackingField: h_alrighty
     <Text>k__BackingField: alrighty
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -87,6 +90,7 @@ MonoBehaviour:
   - <ID>k__BackingField: c8cf8463-efbf-475e-a7ad-277402ba0d81
     <Name>k__BackingField: h_see_ya
     <Text>k__BackingField: see ya
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -99,6 +103,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 243af5e1-e767-464c-94ff-b61d66f447f8
     <Name>k__BackingField: h_till
     <Text>k__BackingField: till next time
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -111,6 +116,7 @@ MonoBehaviour:
   - <ID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
     <Name>k__BackingField: _exit_goodbyes
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField: []
     <IfStatements>k__BackingField: []
@@ -121,6 +127,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 68d68f69-997b-41be-82df-76c721bfaeab
     <Name>k__BackingField: _entry_goodbye
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: First Node
@@ -133,6 +140,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 21b41ac6-6d8d-462b-9aa0-2440ca950dba
     <Name>k__BackingField: random_hello
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: 1
@@ -151,6 +159,7 @@ MonoBehaviour:
   - <ID>k__BackingField: e6ac6696-40b1-4511-a0ed-b1926ba735be
     <Name>k__BackingField: _entry
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: First Node
@@ -163,6 +172,7 @@ MonoBehaviour:
   - <ID>k__BackingField: b7366ce3-dfd1-44ff-a955-6f1c77a076e9
     <Name>k__BackingField: p_water_weather
     <Text>k__BackingField: so, how about that weather, huh?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -175,6 +185,7 @@ MonoBehaviour:
   - <ID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
     <Name>k__BackingField: p_water_sports
     <Text>k__BackingField: how bout them sports
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -187,6 +198,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 0854f783-cb83-42f5-b96e-61ae2ff4a945
     <Name>k__BackingField: p_water_work
     <Text>k__BackingField: work's really been grinding my gears lately
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -199,6 +211,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 658cd5f0-1590-4763-8e75-185175598928
     <Name>k__BackingField: h_weather
     <Text>k__BackingField: yeah, quite the weather
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -211,6 +224,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 906165d4-46b8-40cc-8ef8-d9fba07e3445
     <Name>k__BackingField: h_soccer
     <Text>k__BackingField: little Jimmy's playing soccer, he's quite the young man
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -223,6 +237,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
     <Name>k__BackingField: p_water_growth
     <Text>k__BackingField: he's growing up so fast, pretty tall for his age
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -235,6 +250,7 @@ MonoBehaviour:
   - <ID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
     <Name>k__BackingField: p_water_internet
     <Text>k__BackingField: he on that thick tock like all the other kids
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -247,6 +263,7 @@ MonoBehaviour:
   - <ID>k__BackingField: deb80d8b-318c-4a9a-9877-34ed6be56879
     <Name>k__BackingField: h_tell_me
     <Text>k__BackingField: tell me about it
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -259,6 +276,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
     <Name>k__BackingField: p_water_client
     <Text>k__BackingField: I dealth with a pretty annoying client today
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -271,6 +289,7 @@ MonoBehaviour:
   - <ID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
     <Name>k__BackingField: p_water_hours
     <Text>k__BackingField: can't wait till we're off at 5
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -283,6 +302,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
     <Name>k__BackingField: p_water_merger
     <Text>k__BackingField: any updates on the merger?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -295,6 +315,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 8e4bb26c-c279-4266-a82e-4753aec0b587
     <Name>k__BackingField: p_water_movies
     <Text>k__BackingField: you a movie guy?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -307,6 +328,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 41907b04-fa4b-43e4-87d8-cfe8491b5fd7
     <Name>k__BackingField: h_big_screen
     <Text>k__BackingField: love the big screen
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -319,6 +341,7 @@ MonoBehaviour:
   - <ID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
     <Name>k__BackingField: p_water_release
     <Text>k__BackingField: see any new ones letely?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -331,6 +354,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
     <Name>k__BackingField: p_water_actor
     <Text>k__BackingField: that one guy's getting really famous, huh
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -343,6 +367,7 @@ MonoBehaviour:
   - <ID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
     <Name>k__BackingField: p_water_scifi
     <Text>k__BackingField: I miss all the good scifi from our childhood
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -355,6 +380,7 @@ MonoBehaviour:
   - <ID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
     <Name>k__BackingField: p_water_prices
     <Text>k__BackingField: theaters are really ripping us off these days
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -367,6 +393,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 81b7fbdd-0863-49b8-9f9d-98672462c376
     <Name>k__BackingField: h_yup
     <Text>k__BackingField: yup
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -379,6 +406,7 @@ MonoBehaviour:
   - <ID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
     <Name>k__BackingField: p_water_game
     <Text>k__BackingField: did you watch the game last night?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -391,6 +419,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
     <Name>k__BackingField: p_water_team
     <Text>k__BackingField: I'm a pretty big fan of the blue team
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -404,6 +433,7 @@ MonoBehaviour:
     <Name>k__BackingField: p_water_varsity
     <Text>k__BackingField: reminds me of the good ol' days as a lineman for the high
       school
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -416,6 +446,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 1e4d804b-8e99-4f51-be96-316a0efbef6a
     <Name>k__BackingField: h_sunshine
     <Text>k__BackingField: I'm more of a sunshine guy myself
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -429,6 +460,7 @@ MonoBehaviour:
     <Name>k__BackingField: h_jacket_store
     <Text>k__BackingField: plan on going to the store with my kids to get jackets
       next week
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -441,6 +473,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 2383b345-eb42-4080-b42b-fc8263268b4a
     <Name>k__BackingField: h_2_sugars
     <Text>k__BackingField: I take mine with 2 sugars
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -453,6 +486,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
     <Name>k__BackingField: p_water_school
     <Text>k__BackingField: nice, how is the schooling coming along?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -465,6 +499,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 19f7f252-50f3-42d1-b6fe-567df5ddc30a
     <Name>k__BackingField: h_Bs
     <Text>k__BackingField: very well. B's across the board
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -477,6 +512,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 79befe0c-ce22-4df9-9db6-64f7a7df9197
     <Name>k__BackingField: h_pass_me
     <Text>k__BackingField: yep, soon enough he'll pass me up
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -489,6 +525,7 @@ MonoBehaviour:
   - <ID>k__BackingField: c2cdc782-3b33-4457-866f-3ba5c66f39f9
     <Name>k__BackingField: h_scrimmage
     <Text>k__BackingField: oh, yeah, he's got a scrimmage next week
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -501,6 +538,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 949e9ec3-8db3-4cbc-bd3a-bbd860373d1d
     <Name>k__BackingField: h_tinktonk
     <Text>k__BackingField: tink tonk, instant grams, all the same to me
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -513,6 +551,7 @@ MonoBehaviour:
   - <ID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
     <Name>k__BackingField: p_water_boss
     <Text>k__BackingField: boss man's been breathing down my neck
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -525,6 +564,7 @@ MonoBehaviour:
   - <ID>k__BackingField: ae1f4c99-f5bd-4880-858b-836b9e88a02c
     <Name>k__BackingField: h_big_bucks
     <Text>k__BackingField: guess that's why they pay him the big bucks
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -537,6 +577,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 2a303e10-6351-4a35-95e6-e6cb36ef907f
     <Name>k__BackingField: h_watch_ball
     <Text>k__BackingField: yep, I'll be going home to watch some ball
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -549,6 +590,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 37e214a7-2bfd-402f-aba9-5e1eb0e6d687
     <Name>k__BackingField: h_no_updates
     <Text>k__BackingField: no updates yet from the man upstairs
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -561,6 +603,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 2fa63bdc-eecd-4cfd-bbf4-a64437ae42d0
     <Name>k__BackingField: h_whine
     <Text>k__BackingField: they whine like children, I tell ya
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -573,6 +616,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 54257387-5c59-4983-aa5d-e05b7bcde542
     <Name>k__BackingField: h_tickets
     <Text>k__BackingField: back when we were kids, tickets were just a dollar, remember?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -586,6 +630,7 @@ MonoBehaviour:
     <Name>k__BackingField: h_movie_marathon
     <Text>k__BackingField: the family did a movie marathon when it snowed a few days
       ago
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -598,6 +643,7 @@ MonoBehaviour:
   - <ID>k__BackingField: e97a241d-3554-47c3-b8a4-eda54de4f963
     <Name>k__BackingField: h_hes_in
     <Text>k__BackingField: he's in everything these days
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -610,6 +656,7 @@ MonoBehaviour:
   - <ID>k__BackingField: a86fa923-63bf-48d7-9b74-680a3743e61d
     <Name>k__BackingField: h_comeback
     <Text>k__BackingField: oh yeah, what a comeback
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -622,6 +669,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 6aca9f2b-db4a-4763-97aa-a1796d5ae495
     <Name>k__BackingField: h_red_team
     <Text>k__BackingField: I'm a red team fan myself
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -634,6 +682,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 7c6432e4-6c0e-45f6-bc82-1fdba2d7432e
     <Name>k__BackingField: h_takes_me_back
     <Text>k__BackingField: that sure takes me back
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -646,6 +695,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 49a23aac-f3e1-46b9-8f2b-8be224a68b1a
     <Name>k__BackingField: h_howdy
     <Text>k__BackingField: howdy
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -658,6 +708,7 @@ MonoBehaviour:
   - <ID>k__BackingField: aa3a9709-e8f0-49fc-93fc-bbe05dc7d023
     <Name>k__BackingField: h_hello
     <Text>k__BackingField: hello
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -670,6 +721,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 9a1f3897-0809-4bc1-9a53-b83b197bb60f
     <Name>k__BackingField: h_good_to
     <Text>k__BackingField: good to see ya again
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -682,6 +734,7 @@ MonoBehaviour:
   - <ID>k__BackingField: fa346a6b-776d-42c7-a751-2d9254f72c38
     <Name>k__BackingField: h_oh_hey
     <Text>k__BackingField: oh, hey
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -694,6 +747,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
     <Name>k__BackingField: p_water_child
     <Text>k__BackingField: how are the kids doing these days?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -710,6 +764,7 @@ MonoBehaviour:
       -garments
 
       -warm caffiene'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: snow
@@ -734,6 +789,7 @@ MonoBehaviour:
       -cinema
 
       -athletics'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: weather
@@ -756,6 +812,7 @@ MonoBehaviour:
     <Text>k__BackingField: '-garments
 
       -warm caffiene'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: clothes
@@ -774,6 +831,7 @@ MonoBehaviour:
       -warm caffiene
 
       -solid precipitation'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: child
@@ -792,6 +850,7 @@ MonoBehaviour:
     <Text>k__BackingField: '-solid precipitation
 
       -garments'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: snow
@@ -812,6 +871,7 @@ MonoBehaviour:
       -foot sport
 
       -www'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: school
@@ -834,6 +894,7 @@ MonoBehaviour:
       -foot sport
 
       -www'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: school
@@ -854,6 +915,7 @@ MonoBehaviour:
       -foot sport
 
       -www'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: growth
@@ -876,6 +938,7 @@ MonoBehaviour:
       -enlargement
 
       -athletics'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: school
@@ -898,6 +961,7 @@ MonoBehaviour:
       -foot sport
 
       -education'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: growth
@@ -921,6 +985,7 @@ MonoBehaviour:
 
       -company
       customer'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: boss
@@ -943,6 +1008,7 @@ MonoBehaviour:
       -getting bought
 
       -company customer'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: hours
@@ -963,6 +1029,7 @@ MonoBehaviour:
       -getting bought
 
       -athletics'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: boss
@@ -981,6 +1048,7 @@ MonoBehaviour:
     <Text>k__BackingField: '-management
 
       -company customer'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: boss
@@ -1001,6 +1069,7 @@ MonoBehaviour:
       -getting bought
 
       -posterity'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: boss
@@ -1026,6 +1095,7 @@ MonoBehaviour:
 
       -ticket
       cost'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: release
@@ -1049,6 +1119,7 @@ MonoBehaviour:
 
       -ticket
       cost'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: release
@@ -1065,6 +1136,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 74cb0dc1-1f18-46a9-95aa-1cab24c0eea5
     <Name>k__BackingField: h_visual_effects
     <Text>k__BackingField: visual effects have come such a long way
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -1086,6 +1158,7 @@ MonoBehaviour:
       precipitate
 
       -posterity'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: actor
@@ -1110,6 +1183,7 @@ MonoBehaviour:
       -famous man
 
       -ticket cost'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: release
@@ -1130,6 +1204,7 @@ MonoBehaviour:
       -famous man
 
       -science movie'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: release
@@ -1146,6 +1221,7 @@ MonoBehaviour:
   - <ID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
     <Name>k__BackingField: p_water_soccer
     <Text>k__BackingField: Jimmy still playing ball with the team?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -1163,6 +1239,7 @@ MonoBehaviour:
 
       -elite
       team'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: game
@@ -1181,6 +1258,7 @@ MonoBehaviour:
     <Text>k__BackingField: '-sport collaborators
 
       -elite team'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: team
@@ -1200,6 +1278,7 @@ MonoBehaviour:
 
       -foot
       sport'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: game
@@ -1218,6 +1297,7 @@ MonoBehaviour:
     <Text>k__BackingField: '-competition
 
       -elite team'
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: game
@@ -1232,6 +1312,7 @@ MonoBehaviour:
   - <ID>k__BackingField: d60718b6-1d24-4d63-87ac-c4af4a78e955
     <Name>k__BackingField: _exit_repeats
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField: []
     <IfStatements>k__BackingField: []
@@ -1242,24 +1323,25 @@ MonoBehaviour:
   - <ID>k__BackingField: 58a987f8-286e-4af6-b4c6-b2f2621e5c7b
     <Name>k__BackingField: repeat_check
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField: []
     <IfStatements>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 2400d754-d18b-4c8a-91b6-1394340f1916
-      <contextVariableName>k__BackingField: h_repeatedChoice
+      <contextVariableName>k__BackingField: waRepeatedChoice
       <comparisonSign>k__BackingField: ==
       <comparisonValue>k__BackingField: 1
       <isMetaVariableComparison>k__BackingField: 0
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 98bd7db2-28af-4ded-bf7a-5ba600f05f7a
-      <contextVariableName>k__BackingField: h_repeatedChoice
+      <contextVariableName>k__BackingField: waRepeatedChoice
       <comparisonSign>k__BackingField: ==
       <comparisonValue>k__BackingField: 2
       <isMetaVariableComparison>k__BackingField: 0
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: ae132ec2-ee1d-4a92-9674-a7e026f073b8
-      <contextVariableName>k__BackingField: h_repeatedChoice
+      <contextVariableName>k__BackingField: waRepeatedChoice
       <comparisonSign>k__BackingField: '>'
       <comparisonValue>k__BackingField: 2
       <isMetaVariableComparison>k__BackingField: 0
@@ -1270,7 +1352,7 @@ MonoBehaviour:
       <comparisonValue>k__BackingField: 
       <isMetaVariableComparison>k__BackingField: 0
     <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: h_repeatedChoice
+    - <callbackVariableName>k__BackingField: waRepeatedChoice
       <callbackAction>k__BackingField: Increment
       <callbackValue>k__BackingField: 1
     <GroupID>k__BackingField: df81f0eb-475c-4abd-ae1e-480495e14f75
@@ -1279,6 +1361,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 7b438ea5-e326-4344-a577-e52b27ba9fe5
     <Name>k__BackingField: _entry_repeated
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: First Node
@@ -1291,6 +1374,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
     <Name>k__BackingField: p_water_snow
     <Text>k__BackingField: I really wish it snowed more, I quite like snow
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -1303,6 +1387,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
     <Name>k__BackingField: p_water_clothes
     <Text>k__BackingField: have enough clothes for the upcoming season?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -1315,6 +1400,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
     <Name>k__BackingField: p_water_coffee
     <Text>k__BackingField: cup o' joe really helps with the cold
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -1327,6 +1413,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 2400d754-d18b-4c8a-91b6-1394340f1916
     <Name>k__BackingField: h_deja_vu
     <Text>k__BackingField: deja vu, I feel like we've talked about this already
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -1340,6 +1427,7 @@ MonoBehaviour:
     <Name>k__BackingField: h_are_you_alright
     <Text>k__BackingField: are you alright? you keep bringing up the same topics.
       I'm going to let you have a second
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -1352,6 +1440,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 98bd7db2-28af-4ded-bf7a-5ba600f05f7a
     <Name>k__BackingField: h_huh_have_we
     <Text>k__BackingField: huh, have we really run out of new topics of conversation?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node

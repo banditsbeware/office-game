@@ -81,7 +81,7 @@ public static class UIManager
 	public static Vector3 mouseLocation()
     {
 			Vector3 screenPoint = Input.mousePosition;
-			screenPoint.z = 10; //distance of the plane from the camera
+			screenPoint.z = -Camera.main.transform.position.z; //distance of the plane from the camera
 			return Camera.main.ScreenToWorldPoint(screenPoint); 
     }
 }

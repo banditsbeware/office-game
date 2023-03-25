@@ -209,7 +209,7 @@ namespace SpeakEasy
 
             AkSoundEngine.PostEvent("Play_Player", gameObject);
 
-            yield return new WaitForSeconds(node.speechTime);
+            yield return new WaitForSeconds(node.SpeechTime);
 
             AkSoundEngine.PostEvent("Stop_Player", gameObject);
 

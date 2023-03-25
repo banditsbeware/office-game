@@ -571,6 +571,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5398091636242138936, guid: a7e2445ae2f733743a3299b45ab8b4ea, type: 3}
+      propertyPath: debugText
+      value: 
+      objectReference: {fileID: 776858334}
     - target: {fileID: 7117242683169774092, guid: a7e2445ae2f733743a3299b45ab8b4ea, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1724,6 +1728,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &776858334 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1235472951587911453, guid: e8494f0ef75489b4597ae9ee4eca38b7, type: 3}
+  m_PrefabInstance: {fileID: 108837071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &830656981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,7 +1775,7 @@ MonoBehaviour:
   minigameBank:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 84fbe7a545218de459860d62fcc818e3, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 3d2ce9d0545ebf646b6e0dca5cb757cb, type: 2}
 --- !u!61 &830656983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3300,6 +3315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2136347626}
   - component: {fileID: 2136347625}
+  - component: {fileID: 2136347629}
   - component: {fileID: 2136347628}
   - component: {fileID: 2136347627}
   m_Layer: 0
@@ -3404,6 +3420,30 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &2136347629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136347624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb0a643dd62fec44a6a00d5cff1a62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5c362637d2a5f164c851b7e9ea0cabff, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!114 &324778988817164282
 MonoBehaviour:
   m_ObjectHideFlags: 0

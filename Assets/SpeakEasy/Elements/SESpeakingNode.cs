@@ -49,8 +49,16 @@ namespace SpeakEasy.Elements
                 IsPlayer = callback.newValue;
             });
 
+            Button addTimeButton = SEElementUtility.CreateButton("T", () =>
+            {
+                extensionContainer.Add(CreateSpeechTimeFoldout());
+                RefreshExpandedState();
+            });
+            addTimeButton.AddToClassList("se-node__mini-button");
+
             isPlayerToggle.AddClasses("se-node");
 
+            titleContainer[1].Add(addTimeButton);  //adds to button container
             titleContainer.Insert(1, toggleLabel);
             titleContainer.Insert(2, isPlayerToggle);
 

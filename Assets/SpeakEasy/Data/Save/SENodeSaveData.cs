@@ -12,6 +12,7 @@ namespace SpeakEasy.Data.Save
       [field: SerializeField] public string ID {get; set;}
       [field: SerializeField] public string Name {get; set;}
       [field: SerializeField] public string Text {get; set;}
+      [field: SerializeField] public float SpeechTime {get; set;}
       [field: SerializeField] public bool IsPlayer {get; set;}
       [field: SerializeField] public List<SEChoiceSaveData> Choices {get; set;}
       [field: SerializeField] public List<SEIfSaveData> IfStatements {get; set;}

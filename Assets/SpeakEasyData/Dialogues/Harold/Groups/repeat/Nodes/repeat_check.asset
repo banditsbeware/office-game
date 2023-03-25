@@ -19,19 +19,19 @@ MonoBehaviour:
   <IfStatements>k__BackingField:
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 61234480ef7964345ac15e44cfae8f5f, type: 2}
-    <contextVariableName>k__BackingField: h_repeatedChoice
+    <contextVariableName>k__BackingField: waRepeatedChoice
     <comparisonSign>k__BackingField: ==
     <comparisonValue>k__BackingField: 1
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 96230ca126daaab4ea3633920d97e66b, type: 2}
-    <contextVariableName>k__BackingField: h_repeatedChoice
+    <contextVariableName>k__BackingField: waRepeatedChoice
     <comparisonSign>k__BackingField: ==
     <comparisonValue>k__BackingField: 2
     <isMetaVariableComparison>k__BackingField: 0
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 143a393181b2c884fa50be39e00365a2, type: 2}
-    <contextVariableName>k__BackingField: h_repeatedChoice
+    <contextVariableName>k__BackingField: waRepeatedChoice
     <comparisonSign>k__BackingField: '>'
     <comparisonValue>k__BackingField: 2
     <isMetaVariableComparison>k__BackingField: 0
@@ -42,8 +42,8 @@ MonoBehaviour:
     <comparisonValue>k__BackingField: 
     <isMetaVariableComparison>k__BackingField: 0
   <Callbacks>k__BackingField:
-  - <callbackVariableName>k__BackingField: h_repeatedChoice
+  - <callbackVariableName>k__BackingField: waRepeatedChoice
     <callbackAction>k__BackingField: Increment
     <callbackValue>k__BackingField: 1
   <NodeType>k__BackingField: 5
-  <speechTime>k__BackingField: 0
+  <SpeechTime>k__BackingField: 0

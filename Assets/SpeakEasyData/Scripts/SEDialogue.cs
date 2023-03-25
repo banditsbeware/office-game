@@ -80,9 +80,9 @@ namespace SpeakEasy
 
         // private void Update() 
         // {
-        //     if (Input.anyKeyDown)
+        //     if (Input.GetKeyDown(KeyCode.P))
         //     {
-        //         Debug.Log(speakingCoroutine != null);
+        //         Debug.Log(Meta.Dailies["bodega_bought_cigs"]);
         //     }
         // }
 
@@ -171,14 +171,10 @@ namespace SpeakEasy
             {
                 Dictionary<string, dynamic> blackboard = Meta.BlackboardThatContains(callback.callbackVariableName);
 
-                Type variableType = blackboard[callback.callbackVariableName].GetType();
-
                 switch (callback.callbackAction)
                 {
                     case "SetValue":
-                        if (variableType == typeof(string)) blackboard[callback.callbackVariableName] = callback.callbackValue;
-                        if (variableType == typeof(int)) blackboard[callback.callbackVariableName] = int.Parse(callback.callbackValue);
-                        if (variableType == typeof(bool)) blackboard[callback.callbackVariableName] = bool.Parse(callback.callbackValue);
+                        Meta.SetValue(callback.callbackVariableName, callback.callbackValue, blackboard);
                         break;
                     case "Increment":
                         blackboard[callback.callbackVariableName] += int.Parse(callback.callbackValue);
@@ -201,7 +197,7 @@ namespace SpeakEasy
 
             AkSoundEngine.PostEvent("Play_Player", gameObject);
 
-            yield return new WaitForSeconds(node.speechTime);
+            yield return new WaitForSeconds(node.SpeechTime);
 
             AkSoundEngine.PostEvent("Stop_Player", gameObject);
 
@@ -234,7 +230,7 @@ namespace SpeakEasy
 
             TextWriter.AddWriter_Static(npcSpeechText, node.DialogueText);
 
-            yield return new WaitForSeconds(node.speechTime);
+            yield return new WaitForSeconds(node.SpeechTime);
 
             npcAnimator.SetBool("isSpeaking", false);
             speakingCoroutine = null;

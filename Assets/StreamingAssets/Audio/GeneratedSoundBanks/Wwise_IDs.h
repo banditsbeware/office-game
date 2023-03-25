@@ -18,6 +18,24 @@ namespace AK
         static const AkUniqueID PLAY_BIRD_COIN = 2159632377U;
         static const AkUniqueID PLAY_BIRD_FLAPS = 2261578938U;
         static const AkUniqueID PLAY_BIRD_IMPACT = 2704207640U;
+        static const AkUniqueID PLAY_C_ANYTHING_ELSE = 3614802538U;
+        static const AkUniqueID PLAY_C_ARE_YOU_DEAF = 111059461U;
+        static const AkUniqueID PLAY_C_BOTTLE_FOR_YOU = 4141825396U;
+        static const AkUniqueID PLAY_C_CITY_LAW = 1304055848U;
+        static const AkUniqueID PLAY_C_HAVE_GOOD = 1686113934U;
+        static const AkUniqueID PLAY_C_HERE_FRIEND = 2710596957U;
+        static const AkUniqueID PLAY_C_HERES_A_PACK = 4076454847U;
+        static const AkUniqueID PLAY_C_IS_THERE_SOMETHING = 2723017458U;
+        static const AkUniqueID PLAY_C_LOOKING_TO = 3285998561U;
+        static const AkUniqueID PLAY_C_ONE_BOTTLE = 3194709983U;
+        static const AkUniqueID PLAY_C_POLICE = 1139221090U;
+        static const AkUniqueID PLAY_C_SCRAMBLE = 1518517573U;
+        static const AkUniqueID PLAY_C_SO_MANY_EGGS = 2929896877U;
+        static const AkUniqueID PLAY_C_STEP_OFF = 3663159116U;
+        static const AkUniqueID PLAY_C_WHAT_DO_YOU = 1880416538U;
+        static const AkUniqueID PLAY_C_WHY_DO_YOU = 1807542386U;
+        static const AkUniqueID PLAY_C_YOU_AGAIN = 1598758000U;
+        static const AkUniqueID PLAY_C_YOU_DRUNKS = 690378273U;
         static const AkUniqueID PLAY_CAR = 2690797144U;
         static const AkUniqueID PLAY_CONVERT_TEST = 1932424354U;
         static const AkUniqueID PLAY_EXTRA_COUGH = 393588247U;
@@ -154,6 +172,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BIRD = 1544377644U;
+        static const AkUniqueID BODEGA = 2424680877U;
         static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID CROSSWORD = 630707431U;
         static const AkUniqueID MAIN = 3161908922U;
@@ -166,9 +185,9 @@ namespace AK
     {
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID DIALOGUE = 3930136735U;
-        static const AkUniqueID HAROLD = 4208281901U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID NPC_SPEECH = 3577798351U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

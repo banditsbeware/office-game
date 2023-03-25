@@ -186,6 +186,7 @@ namespace SpeakEasy.Utilities
                 IfStatements = ifs,
                 Callbacks = callbacks,
                 Text = node.DialogueText,
+                SpeechTime = node.speechTime,
                 GroupID = node.Group?.ID,
                 NodeType = node.NodeType,
                 Position = node.GetPosition().position,
@@ -212,7 +213,7 @@ namespace SpeakEasy.Utilities
                 container.UngroupedNodes.Add(nodeSO);
             }
 
-            nodeSO.Initialize(node.NodeName, node.DialogueText, ConvertSaveDataToChoiceData(node.Choices, node.IfStatements), node.Callbacks, node.NodeType, node.IsPlayer);
+            nodeSO.Initialize(node.NodeName, node.DialogueText, ConvertSaveDataToChoiceData(node.Choices, node.IfStatements), node.Callbacks, node.NodeType, node.IsPlayer, node.speechTime);
 
             createdNodes.Add(node.ID, nodeSO);
 
@@ -442,6 +443,7 @@ namespace SpeakEasy.Utilities
                 node.IfStatements = ifs;
                 node.Callbacks = callbacks;
                 node.DialogueText = nodeData.Text;
+                node.speechTime = nodeData.SpeechTime;
 
                 node.Draw();
 

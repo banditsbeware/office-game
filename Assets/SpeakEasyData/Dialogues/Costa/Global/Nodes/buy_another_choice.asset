@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: buy_another_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: buy_another_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: eggs
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c34efa6e33ab9ab4b9ffdce1c47ebf41, type: 2}
+  - <Text>k__BackingField: alcohol
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 694ca37a7192e9c49a729b14d281322a, type: 2}
+  - <Text>k__BackingField: cigs
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 321d70a16f6fac7468c16749716ff662, type: 2}
+  - <Text>k__BackingField: no
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5dd84c6de261a6c47ad99574a43d7043, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <SpeechTime>k__BackingField: 0

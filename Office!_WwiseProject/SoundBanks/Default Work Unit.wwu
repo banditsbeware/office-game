@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{A284346A-64AA-4846-850E-14CA9AB4FFDD}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Player" ID="{1B8A7C3A-10BC-417C-B6B5-08DE75DA5C86}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI" ID="{9BAA218E-A28B-4510-9338-2BBFE418FDC3}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{B9BC810F-B2A5-4F12-B1DA-67F3250EF91A}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
@@ -14,7 +15,6 @@
 				</SoundBank>
 				<SoundBank Name="Crossword" ID="{BAF11F32-56C2-47DF-9526-9C9437CABE9B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Player" ID="{1B8A7C3A-10BC-417C-B6B5-08DE75DA5C86}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Harold" ID="{D27BA07D-4B1C-44BA-BF8B-DAD8386D98FE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -53,6 +53,13 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Office" ID="{BAB3AA77-5F26-422C-B376-04425E5DBCDE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Bodega" ID="{FE92B717-B107-47B8-B5D2-B77D964CBB84}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Costa" ID="{83F61FA7-E54E-48A2-ACB9-44C01858AE85}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

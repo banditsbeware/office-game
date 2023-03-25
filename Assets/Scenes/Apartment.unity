@@ -1833,8 +1833,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672221620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.57, y: -3.57, z: 0}
-  m_LocalScale: {x: 0.9650161, y: 2.1736, z: 1}
+  m_LocalPosition: {x: 6.69, y: -3.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1110435326}
@@ -1880,7 +1880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: bathroom [E]
   theGame: {fileID: 697063691}
   minigameBank:
@@ -1993,14 +1992,14 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -580724789
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2276,8 +2275,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110435324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.647507, y: -20.187708, z: 0}
-  m_LocalScale: {x: 1.0362521, y: 0.46006626, z: 1}
+  m_LocalPosition: {x: -9.647507, y: -58.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1541063765}
@@ -2396,7 +2395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: sleep [E]
   theGame: {fileID: 609048218}
   minigameBank:
@@ -3340,7 +3338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec205704ac1e0674cb5340876085cf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMan: {fileID: 1890632086}
   eMessage: leave [E]
   loader: {fileID: 762731329}
   scene: Street
@@ -3792,9 +3789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ed8795b209a0a428b7002839a288f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseObjects: []
-  notifs: []
-  minigames: []
   canvasText: {fileID: 27043052}
 --- !u!4 &1890632087
 Transform:

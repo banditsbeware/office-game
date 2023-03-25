@@ -36,11 +36,11 @@
 								<Property Name="RecoveryTime" Type="Real64" Value="3"/>
 							</PropertyList>
 							<ChildrenList>
-								<Bus Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}">
+								<Bus Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

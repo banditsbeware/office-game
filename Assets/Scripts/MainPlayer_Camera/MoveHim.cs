@@ -43,7 +43,7 @@ public class MoveHim : MonoBehaviour {
     {
       //get keyboard/controller input, put into Vector2 v
       v.x = Input.GetAxisRaw("Horizontal");   
-      v.y = Input.GetAxisRaw("Vertical");   
+      v.y = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()

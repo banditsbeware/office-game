@@ -22,6 +22,8 @@ namespace SpeakEasy.Elements
         public string NodeName {get; set;}   //node title, used for playing audio/identifying
         public string DialogueText {get; set;}    //text to be shown on screen, dialogue contents
 
+        public float speechTime {get; set;}
+
         public bool IsPlayer;   //dialogue in node is spoken by player
 
         public List<SEChoiceSaveData> Choices {get; set;}   //list of choice output ports. Used by SingleChoice and MultiChoice (and technically entry node)
@@ -39,6 +41,7 @@ namespace SpeakEasy.Elements
             Choices = new List<SEChoiceSaveData>();
             IfStatements = new List<SEIfSaveData>();
             Callbacks = new List<SECallbackSaveData>();
+            speechTime = 0f;
             
             graphView = seGraphView;
             defaultBackgroundColor  = new Color(29f / 255f, 29 / 255f, 30 / 255f);
@@ -159,6 +162,10 @@ namespace SpeakEasy.Elements
             {
                 extensionContainer.Add(CreateDialogueFoldout());
             }
+            if (speechTime != 0)
+            {
+                extensionContainer.Add(CreateSpeechTimeFoldout());
+            }
             RefreshExpandedState();
         }
 
@@ -168,6 +175,8 @@ namespace SpeakEasy.Elements
         public Foldout CreateCallbackFoldout()
         {
             Foldout callbackFoldout = SEElementUtility.CreateFoldout("Callback");
+
+            callbackFoldout.RegisterValueChangedCallback((evt) => this.BringToFront());
 
             // Contents //
 
@@ -291,14 +300,11 @@ namespace SpeakEasy.Elements
             return choicePort;
         }
 
-        public VisualElement CreateDialogueFoldout()
+        public Foldout CreateDialogueFoldout()
         {
-            VisualElement customDataContainer = new VisualElement();
-
-            customDataContainer.AddToClassList("se-node__custom-data-container");
-
             Foldout textFoldout = SEElementUtility.CreateFoldout("Dialogue Text");
 
+            textFoldout.AddToClassList("se-node__custom-data-container");
             textFoldout.RegisterValueChangedCallback((evt) => this.BringToFront());
 
             TextField textTextField = SEElementUtility.CreateTextArea(DialogueText, null, callback => DialogueText = callback.newValue);
@@ -309,11 +315,31 @@ namespace SpeakEasy.Elements
             );
 
             textFoldout.Add(textTextField);
-            customDataContainer.Add(textFoldout);
 
             textFoldout.value = false;
 
-            return customDataContainer;
+            return textFoldout;
+        }
+
+        public Foldout CreateSpeechTimeFoldout()
+        {
+            Foldout timeFoldout = SEElementUtility.CreateFoldout("Custom Speech Time");
+
+            timeFoldout.AddToClassList("se-node__custom-data-container");
+            timeFoldout.RegisterValueChangedCallback((evt) => this.BringToFront());
+
+            TextField timeTextField = SEElementUtility.CreateTextArea(speechTime.ToString(), null, callback => speechTime = float.Parse(callback.newValue));
+
+            timeTextField.AddClasses(
+                "se-node__text-field",
+                "se-node__quote-text-field"
+            );
+
+            timeFoldout.Add(timeTextField);
+
+            timeFoldout.value = false;
+
+            return timeFoldout;
         }
         #endregion
 

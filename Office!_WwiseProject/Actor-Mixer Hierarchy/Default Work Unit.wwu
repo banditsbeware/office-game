@@ -2036,18 +2036,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2078,18 +2073,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2118,18 +2108,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2158,18 +2143,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2198,18 +2178,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2238,18 +2213,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2270,17 +2240,12 @@
 										<ActiveSource Name="Harold_coffee_dist" ID="{888BA6BE-D282-465D-A8E2-A81ED45FB5AD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="extra_cough" ID="{2E11990A-C2CC-4869-B51C-4A485A530161}" ShortID="746998639">
+								<Sound Name="h_extra_cough" ID="{2E11990A-C2CC-4869-B51C-4A485A530161}" ShortID="746998639">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-200</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2289,7 +2254,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2305,17 +2270,12 @@
 										<ActiveSource Name="Harold_extra_cough_dist" ID="{76672610-DD5A-415D-ACDA-D1013C6384C9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="extra_huh" ID="{4C895B9D-90EA-4DAE-BE66-DDB34219BFA6}" ShortID="125262819">
+								<Sound Name="h_extra_huh" ID="{4C895B9D-90EA-4DAE-BE66-DDB34219BFA6}" ShortID="125262819">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-200</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2324,7 +2284,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2348,18 +2308,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2388,18 +2343,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2428,18 +2378,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2468,18 +2413,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2508,18 +2448,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2548,18 +2483,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2588,18 +2518,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2628,18 +2553,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2668,18 +2588,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2708,18 +2623,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2748,18 +2658,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2788,18 +2693,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2828,18 +2728,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2868,18 +2763,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2908,18 +2798,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2948,18 +2833,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2989,18 +2869,13 @@
 												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3024,13 +2899,18 @@
 								<Sound Name="h_good_to" ID="{221E61CB-1CCE-47BD-AA34-F794D3A47D1A}" ShortID="773912995">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3054,13 +2934,18 @@
 								<Sound Name="h_oh_hey" ID="{049CAA8D-24CD-4DDA-9635-9CFB32A2CE3D}" ShortID="157900210">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3084,13 +2969,18 @@
 								<Sound Name="h_hello" ID="{B6A3FD4A-7482-4CC7-BECF-43735B0ABA27}" ShortID="707673280">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3114,13 +3004,18 @@
 								<Sound Name="h_howdy" ID="{F1DD5CF8-5888-46AE-9A91-1772BB742B2F}" ShortID="147164844">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3144,13 +3039,18 @@
 								<Sound Name="h_alrighty" ID="{0DBF694D-1EA8-45DD-BA4E-AB74BC99A4F5}" ShortID="252450970">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3176,13 +3076,18 @@
 								<Sound Name="h_see_ya" ID="{8B6ED48F-CF5F-4473-9B11-5D9BB89568D2}" ShortID="1059316447">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3208,13 +3113,18 @@
 								<Sound Name="h_adios" ID="{B2B6AEB6-323A-4B6B-B395-F820E3033A51}" ShortID="397551677">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3240,13 +3150,18 @@
 								<Sound Name="h_till" ID="{E7802AFC-1E5B-4DC4-9B45-12C087F80292}" ShortID="811617467">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Harold" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4006,6 +3921,640 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Folder Name="Costa" ID="{52B26F0F-859F-4D7C-AE4B-62A93B952175}" ShortID="724810970">
+							<ChildrenList>
+								<Sound Name="c_step_off" ID="{98F44345-8B4E-4F14-BB7A-5F9A73E9ED3B}" ShortID="789029156">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_step_off_final" ID="{EC4AD6AF-3835-4CEA-A8EE-4B28B0C5E6EF}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.568519480519481"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.568519480519481"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_step_off_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="760044785"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_step_off_final" ID="{EC4AD6AF-3835-4CEA-A8EE-4B28B0C5E6EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_what_do_you" ID="{33E8B8C4-648C-427E-8307-23D26931ACBB}" ShortID="608783823">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_what_do_you_final" ID="{4A39CDEF-89EE-409F-9AA0-0A159E167822}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.397113997113998"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.397113997113998"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_what_do_you_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="512427271"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_what_do_you_final" ID="{4A39CDEF-89EE-409F-9AA0-0A159E167822}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_why_do_you" ID="{B97927C0-6A5C-443B-B1B2-4FC8BB43DAC3}" ShortID="381849142">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_why_do_you_final" ID="{AD2933CC-AE26-4B14-BCD8-3360C4F2A1A5}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.461804834054834"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.461804834054834"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_why_do_you_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="65695282"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_why_do_you_final" ID="{AD2933CC-AE26-4B14-BCD8-3360C4F2A1A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_you_again" ID="{D9B76EAE-6AB2-4C09-8334-60D597E7276C}" ShortID="310385763">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_you_again_final" ID="{ACD55BBD-22D6-4E3A-8BF1-612C0ECF3FEC}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.482235119047619"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.482235119047619"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_you_again_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="583042767"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_you_again_final" ID="{ACD55BBD-22D6-4E3A-8BF1-612C0ECF3FEC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_you_drunks" ID="{289B471E-9676-4A7C-A2FE-3F85233169C6}" ShortID="24535051">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_you_drunks_final" ID="{9A72CDEB-165E-4B8B-A49E-6B1F487A40EF}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.496484848484849"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.496484848484849"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_you_drunks_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="493430459"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_you_drunks_final" ID="{9A72CDEB-165E-4B8B-A49E-6B1F487A40EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_anything_else" ID="{EF9749F5-0E22-4AF6-85E3-091720EBBCBB}" ShortID="890996094">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="NPC_Speech" ID="{88373690-6E29-42A8-AB8E-43489BDA65DB}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_anything_else_final" ID="{701AB5CD-2F55-463B-AF60-00A33129233A}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.206868686868687"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.206868686868687"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_anything_else_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="492918245"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_anything_else_final" ID="{701AB5CD-2F55-463B-AF60-00A33129233A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_are_you_deaf" ID="{3CE8FB3E-5F95-49B5-B371-283A19CDC738}" ShortID="989626986">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_are_you_deaf_final" ID="{3E97CDBA-59BC-48A1-A706-A328C78FD196}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.496484848484849"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.496484848484849"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_are_you_deaf_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="773313027"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_are_you_deaf_final" ID="{3E97CDBA-59BC-48A1-A706-A328C78FD196}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_bottle_for_you" ID="{4D16E951-BCD3-4C60-A351-CD9CCA0909D0}" ShortID="984781630">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_bottle_for_you_final" ID="{B58BAFBC-F948-436B-8B85-53B3896CC918}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.429437229437229"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.08900432900433"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_bottle_for_you_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="17291793"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_bottle_for_you_final" ID="{B58BAFBC-F948-436B-8B85-53B3896CC918}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_city_law" ID="{F7B408A7-556D-498D-BD48-2FF694843E61}" ShortID="387063242">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_city_law_final" ID="{66E61C67-A8B9-45DF-872A-54DC949DB234}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.474135642135642"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.474135642135642"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_city_law_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="518276305"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_city_law_final" ID="{66E61C67-A8B9-45DF-872A-54DC949DB234}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_have_good" ID="{27343939-4F54-4D81-B986-7B2E07D521D6}" ShortID="380697313">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_have_good_final" ID="{6C656213-7354-42DD-A75E-67D98721D6C0}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.401731601731601"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.401731601731601"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_have_good_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="515395011"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_have_good_final" ID="{6C656213-7354-42DD-A75E-67D98721D6C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_here_friend" ID="{BE76F6E7-5142-4939-B45C-7B44D0EFC427}" ShortID="925943437">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_here_friend_final" ID="{F0ED9297-8637-44B9-BAB3-DFE5101D5D57}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.406349206349206"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.404040404040404"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_here_friend_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="251571169"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_here_friend_final" ID="{F0ED9297-8637-44B9-BAB3-DFE5101D5D57}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_heres_a_pack" ID="{57266EF5-6B27-48AD-8399-9D443D48F9EA}" ShortID="865864179">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_heres_a_pack_final" ID="{831E53AD-2E92-444D-8186-53C48FBEB86F}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.562424242424242"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.562424242424242"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_heres_a_pack_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="610796487"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_heres_a_pack_final" ID="{831E53AD-2E92-444D-8186-53C48FBEB86F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_is_there_something" ID="{3EF4F9EE-0188-4936-BCA3-9E2056812891}" ShortID="649726033">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_is_there_something_final" ID="{77D16FC9-D411-4450-884F-8B056BFF67F7}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.464438672438672"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.464438672438672"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_is_there_something_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="658903553"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_is_there_something_final" ID="{77D16FC9-D411-4450-884F-8B056BFF67F7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_looking_to" ID="{785240F4-F35B-4A6C-B683-9FA1E92682DB}" ShortID="946048925">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_looking_to_final" ID="{6F549766-CFA9-45AE-A231-423D12D81AC6}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.419647907647907"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.419647907647907"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_looking_to_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="209821453"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_looking_to_final" ID="{6F549766-CFA9-45AE-A231-423D12D81AC6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_one_bottle" ID="{A2BFD1F0-051F-413B-866A-44C85237E3D3}" ShortID="236889456">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_one_bottle_final" ID="{3E642459-603C-45A7-B9EB-C6146198D6E5}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.579047619047618"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.579047619047618"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_one_bottle_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1045574099"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_one_bottle_final" ID="{3E642459-603C-45A7-B9EB-C6146198D6E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_police" ID="{15EC411D-86D5-4C04-AD58-D890B4A9D131}" ShortID="998991903">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_police_final" ID="{913BA6B1-B62D-4403-BB38-2F1CE159DA99}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.820215097402599"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.820215097402599"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_police_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="558685149"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_police_final" ID="{913BA6B1-B62D-4403-BB38-2F1CE159DA99}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_scramble" ID="{382AA458-AF0A-49C9-80F3-7CB584980FEF}" ShortID="1039248976">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_scramble_final" ID="{66366E99-E803-4935-9FE3-BCCA0941C851}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.213194805194805"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.213194805194805"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_scramble_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1016297375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_scramble_final" ID="{66366E99-E803-4935-9FE3-BCCA0941C851}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="c_so_many_eggs" ID="{D961DF87-2CB9-4751-9628-B79572B0DA2A}" ShortID="36452709">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="c_so_many_eggs_final" ID="{DFE2D60E-1B70-45E4-8B2E-B97FFE96FCC8}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.303376623376623"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.303376623376623"/>
+											</PropertyList>
+											<Language>English(US)</Language>
+											<AudioFile>c_so_many_eggs_final.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="156705247"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="c_so_many_eggs_final" ID="{DFE2D60E-1B70-45E4-8B2E-B97FFE96FCC8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FX" ID="{D9050B47-7B9E-43A6-88CC-0127D7859201}" ShortID="958512556">

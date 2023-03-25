@@ -13,60 +13,93 @@ MonoBehaviour:
   m_Name: Costa
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: Costa
-  <Groups>k__BackingField: []
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 41a17512-0305-479c-a083-7745509508e7
+    <Name>k__BackingField: anger
+    <Position>k__BackingField: {x: 1561, y: 1771}
+  - <ID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <Name>k__BackingField: cigs
+    <Position>k__BackingField: {x: 1757, y: 808}
+  - <ID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <Name>k__BackingField: alcohol
+    <Position>k__BackingField: {x: 1740, y: 192}
+  - <ID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
+    <Name>k__BackingField: eggs
+    <Position>k__BackingField: {x: 1740, y: -446}
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: 6eded411-84e7-4b09-a427-09da205bcd5c
-    <Name>k__BackingField: _entry
+  - <ID>k__BackingField: 4b6ca5ee-241e-48ee-bea1-aadac2d8c6df
+    <Name>k__BackingField: _delay_anger
     <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
-    - <Text>k__BackingField: First Node
-      <NodeID>k__BackingField: 648ab943-18a2-4227-b97a-35c270f1c4db
+    - <Text>k__BackingField: .3
+      <NodeID>k__BackingField: 695a2442-b5c1-41e9-a40c-97a7fa2e7d36
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 41a17512-0305-479c-a083-7745509508e7
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 1586, y: 1830}
+  - <ID>k__BackingField: 7ba639b6-1f78-40a8-9533-148a66d3efd4
+    <Name>k__BackingField: _exit_nothing
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 41a17512-0305-479c-a083-7745509508e7
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 2584, y: 2040}
+  - <ID>k__BackingField: 71f4d84f-a896-45b7-9829-ffafc23a3238
+    <Name>k__BackingField: 71f4d84f-a896-45b7-9829-ffafc23a3238
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: 3eb6e91a-490d-496e-bad5-e5b12cb867d0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 3229, y: 1000}
+  - <ID>k__BackingField: 11598475-0ded-476e-ac52-d716f78fe253
+    <Name>k__BackingField: 11598475-0ded-476e-ac52-d716f78fe253
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: 3eb6e91a-490d-496e-bad5-e5b12cb867d0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 3197, y: 415}
+  - <ID>k__BackingField: 45fe87f0-fd39-46a3-8d2d-7c4ec155e1a7
+    <Name>k__BackingField: buy_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: eggs
+      <NodeID>k__BackingField: eceb7c3d-b8ab-4c41-9cce-73236776f1b2
+    - <Text>k__BackingField: alcohol
+      <NodeID>k__BackingField: 624977d5-db79-4e8d-8868-da7ad0d24eb0
+    - <Text>k__BackingField: cigs
+      <NodeID>k__BackingField: 119e6193-20f8-4003-9dfe-38197080e427
+    - <Text>k__BackingField: nothing
+      <NodeID>k__BackingField: 070920cf-95a8-42d3-8f54-7b7ff73fbb49
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 2
-    <Position>k__BackingField: {x: 81, y: 309}
-  - <ID>k__BackingField: 648ab943-18a2-4227-b97a-35c270f1c4db
-    <Name>k__BackingField: visits_check
-    <Text>k__BackingField: 
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 4e1b0dc7-d024-4efa-bd55-0eb88d95fc50
-      <contextVariableName>k__BackingField: bodega_visits
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: 1
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 6473ce6a-9b0c-4b90-8e91-d9d51ddb5131
-      <contextVariableName>k__BackingField: bodega_visits
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: 2
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 22c55992-42ed-45bd-883c-6bcc3c1db0a9
-      <contextVariableName>k__BackingField: bodega_visits
-      <comparisonSign>k__BackingField: '>'
-      <comparisonValue>k__BackingField: 2
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
-      <contextVariableName>k__BackingField: 
-      <comparisonSign>k__BackingField: 
-      <comparisonValue>k__BackingField: 
-      <isMetaVariableComparison>k__BackingField: 0
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: bodega_visits
-      <callbackAction>k__BackingField: Increment
-      <callbackValue>k__BackingField: 1
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 5
-    <Position>k__BackingField: {x: 266, y: 262.5}
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1215, y: 235}
   - <ID>k__BackingField: 4e1b0dc7-d024-4efa-bd55-0eb88d95fc50
     <Name>k__BackingField: c_what_do_you
     <Text>k__BackingField: what do you want?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -75,10 +108,513 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 783, y: 176.5}
+    <Position>k__BackingField: {x: 783, y: 175}
+  - <ID>k__BackingField: 648ab943-18a2-4227-b97a-35c270f1c4db
+    <Name>k__BackingField: visits_check
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4e1b0dc7-d024-4efa-bd55-0eb88d95fc50
+      <contextVariableName>k__BackingField: bVisits
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 6473ce6a-9b0c-4b90-8e91-d9d51ddb5131
+      <contextVariableName>k__BackingField: bVisits
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 2
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 22c55992-42ed-45bd-883c-6bcc3c1db0a9
+      <contextVariableName>k__BackingField: bVisits
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 3
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4b6ca5ee-241e-48ee-bea1-aadac2d8c6df
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bVisits
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: 266, y: 263}
+  - <ID>k__BackingField: 19c0a1ce-a2ba-46c1-9d61-3bafb7500f04
+    <Name>k__BackingField: _delay_egg
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: .3
+      <NodeID>k__BackingField: adcfbe87-b502-42bd-a44b-246e798a25be
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 2740, y: -387}
+  - <ID>k__BackingField: 8545c072-45a1-423a-b06f-5c462e162ac7
+    <Name>k__BackingField: 8545c072-45a1-423a-b06f-5c462e162ac7
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: 3eb6e91a-490d-496e-bad5-e5b12cb867d0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 3298, y: -219}
+  - <ID>k__BackingField: f7aa89ee-0bb5-4d20-a3aa-ee82539875d8
+    <Name>k__BackingField: c_bottle_for_you
+    <Text>k__BackingField: one bottle, for you
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 11598475-0ded-476e-ac52-d716f78fe253
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bAlcoholAttempt
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    - <callbackVariableName>k__BackingField: alcohol
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2888, y: 251}
+  - <ID>k__BackingField: 9cd16531-a370-41db-8a34-e26059b1ad2a
+    <Name>k__BackingField: _delay_alcohol
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: .3
+      <NodeID>k__BackingField: f7aa89ee-0bb5-4d20-a3aa-ee82539875d8
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 2673, y: 251}
+  - <ID>k__BackingField: 130e6711-6876-4055-8405-2059d957f996
+    <Name>k__BackingField: alcohol_check
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 072af320-3e00-4c9f-9ccf-9fefd8a6f4ca
+      <contextVariableName>k__BackingField: bAlcoholAttempt
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 0
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 44b9d7a7-a0a5-4059-a9d8-9f0b53c5cab5
+      <contextVariableName>k__BackingField: bAlcoholAttempt
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ff290812-d40f-4282-9480-e299cde1f043
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: 2083, y: 313}
+  - <ID>k__BackingField: f7e6c7d1-490e-463a-8f3a-762abb5798af
+    <Name>k__BackingField: egg_check
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 9202a5b6-6ce3-4d27-b7f2-21cf3228cee2
+      <contextVariableName>k__BackingField: bEggAttempt
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 0
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4075363a-71b4-417a-a408-be134f5ec1c0
+      <contextVariableName>k__BackingField: bEggAttempt
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 2c71af5f-ae77-402d-b13e-aa035989249c
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: 2056, y: -276}
+  - <ID>k__BackingField: 072af320-3e00-4c9f-9ccf-9fefd8a6f4ca
+    <Name>k__BackingField: c_looking_to
+    <Text>k__BackingField: 'looking to drown your troubles, huh? '
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9cd16531-a370-41db-8a34-e26059b1ad2a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2421, y: 251}
+  - <ID>k__BackingField: c91a0e03-5728-4912-abf9-e13084a3edee
+    <Name>k__BackingField: c91a0e03-5728-4912-abf9-e13084a3edee
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: out
+      <NodeID>k__BackingField: 0da26450-bdea-489e-bafe-adbcea1c1c7a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 8
+    <Position>k__BackingField: {x: 3483, y: 770}
+  - <ID>k__BackingField: b3b3b7ec-4d96-44c3-ae86-60028ce74f81
+    <Name>k__BackingField: _exit_anger
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 3795, y: 734}
+  - <ID>k__BackingField: 8851ae57-e340-4eff-99b8-b2ed5aca7a69
+    <Name>k__BackingField: cigs_check
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 9acc4a4e-416e-4c67-886c-d1d1e975c528
+      <contextVariableName>k__BackingField: bCigsAttempt
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 0
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: fb0634c8-0bbc-401b-a814-e7b72adad81d
+      <contextVariableName>k__BackingField: bCigsAttempt
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: f06e999f-f84b-461c-bfe4-3925349af9e7
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: 2084, y: 929}
+  - <ID>k__BackingField: fb0634c8-0bbc-401b-a814-e7b72adad81d
+    <Name>k__BackingField: c_city_law
+    <Text>k__BackingField: one pack, new city law
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 71f4d84f-a896-45b7-9829-ffafc23a3238
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bCigsAttempt
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2458, y: 1041}
+  - <ID>k__BackingField: 9acc4a4e-416e-4c67-886c-d1d1e975c528
+    <Name>k__BackingField: c_heres_a_pack
+    <Text>k__BackingField: here's a pack of newports
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 71f4d84f-a896-45b7-9829-ffafc23a3238
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bCigsAttempt
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    - <callbackVariableName>k__BackingField: cigs
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2458, y: 867}
+  - <ID>k__BackingField: adcfbe87-b502-42bd-a44b-246e798a25be
+    <Name>k__BackingField: c_here_friend
+    <Text>k__BackingField: here you are, friend
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8545c072-45a1-423a-b06f-5c462e162ac7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bEggAttempt
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    - <callbackVariableName>k__BackingField: eggs
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2937, y: -387}
+  - <ID>k__BackingField: 6eded411-84e7-4b09-a427-09da205bcd5c
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 0267ffdd-3f82-4815-8ed7-25d2550c6d2f
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -405, y: 304}
+  - <ID>k__BackingField: 0267ffdd-3f82-4815-8ed7-25d2550c6d2f
+    <Name>k__BackingField: pissed_check
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 41d85a48-84fb-4c43-be8c-d7c0de255bba
+      <contextVariableName>k__BackingField: bPissedOffCosta
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: true
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 648ab943-18a2-4227-b97a-35c270f1c4db
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 4
+    <Position>k__BackingField: {x: -169, y: 279}
+  - <ID>k__BackingField: 695a2442-b5c1-41e9-a40c-97a7fa2e7d36
+    <Name>k__BackingField: c_why_do_you
+    <Text>k__BackingField: why do you waste my time like this? get away from my store
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7ba639b6-1f78-40a8-9533-148a66d3efd4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bPissedOffCosta
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: true
+    <GroupID>k__BackingField: 41a17512-0305-479c-a083-7745509508e7
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2215, y: 2040}
+  - <ID>k__BackingField: 0da26450-bdea-489e-bafe-adbcea1c1c7a
+    <Name>k__BackingField: _delay_anger
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: .5
+      <NodeID>k__BackingField: b3b3b7ec-4d96-44c3-ae86-60028ce74f81
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bPissedOffCosta
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: true
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 3584, y: 734}
+  - <ID>k__BackingField: f06e999f-f84b-461c-bfe4-3925349af9e7
+    <Name>k__BackingField: c_step_off
+    <Text>k__BackingField: step off, i told you no
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c91a0e03-5728-4912-abf9-e13084a3edee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2458, y: 1236}
+  - <ID>k__BackingField: 2deec761-9a19-46ed-907b-5f5713fe1b0b
+    <Name>k__BackingField: buy_another_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: eggs
+      <NodeID>k__BackingField: eceb7c3d-b8ab-4c41-9cce-73236776f1b2
+    - <Text>k__BackingField: alcohol
+      <NodeID>k__BackingField: 624977d5-db79-4e8d-8868-da7ad0d24eb0
+    - <Text>k__BackingField: cigs
+      <NodeID>k__BackingField: 119e6193-20f8-4003-9dfe-38197080e427
+    - <Text>k__BackingField: no
+      <NodeID>k__BackingField: f08be778-eba8-4468-afa1-3e338601858e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 3983, y: 314}
+  - <ID>k__BackingField: 20b19b8a-a8d8-4b56-8dc2-e1e01a4605b9
+    <Name>k__BackingField: c_anything_else
+    <Text>k__BackingField: anything else?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 2deec761-9a19-46ed-907b-5f5713fe1b0b
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3699, y: 338}
+  - <ID>k__BackingField: 3eb6e91a-490d-496e-bad5-e5b12cb867d0
+    <Name>k__BackingField: _delay_second
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: .5
+      <NodeID>k__BackingField: 20b19b8a-a8d8-4b56-8dc2-e1e01a4605b9
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 3486, y: 338}
+  - <ID>k__BackingField: eceb7c3d-b8ab-4c41-9cce-73236776f1b2
+    <Name>k__BackingField: p_bodega_eggs
+    <Text>k__BackingField: some eggs
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: f7e6c7d1-490e-463a-8f3a-762abb5798af
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1765, y: -227}
+  - <ID>k__BackingField: 624977d5-db79-4e8d-8868-da7ad0d24eb0
+    <Name>k__BackingField: p_bodega_alcohol
+    <Text>k__BackingField: some liquor
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 130e6711-6876-4055-8405-2059d957f996
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1765, y: 353}
+  - <ID>k__BackingField: 119e6193-20f8-4003-9dfe-38197080e427
+    <Name>k__BackingField: p_bodega_cigs
+    <Text>k__BackingField: a pack of menthols
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8851ae57-e340-4eff-99b8-b2ed5aca7a69
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1782, y: 979}
+  - <ID>k__BackingField: 070920cf-95a8-42d3-8f54-7b7ff73fbb49
+    <Name>k__BackingField: p_bodega_im_alright
+    <Text>k__BackingField: i'm alright
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 695a2442-b5c1-41e9-a40c-97a7fa2e7d36
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 41a17512-0305-479c-a083-7745509508e7
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1855, y: 2040}
+  - <ID>k__BackingField: d734f9b2-1a24-4393-94c0-2caee1e8f352
+    <Name>k__BackingField: c_have_good
+    <Text>k__BackingField: okay, have a good one
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 0051ef97-4a3c-4826-9da4-18143e80d478
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4542, y: 415}
+  - <ID>k__BackingField: 0051ef97-4a3c-4826-9da4-18143e80d478
+    <Name>k__BackingField: _delay_exit
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 1.0
+      <NodeID>k__BackingField: f6ff2e15-dcaf-4b4e-bf88-7bc202fcbc86
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 4797, y: 415}
+  - <ID>k__BackingField: f6ff2e15-dcaf-4b4e-bf88-7bc202fcbc86
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 4982, y: 415}
+  - <ID>k__BackingField: f08be778-eba8-4468-afa1-3e338601858e
+    <Name>k__BackingField: p_bodega_no
+    <Text>k__BackingField: no, thanks
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d734f9b2-1a24-4393-94c0-2caee1e8f352
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4275, y: 415}
   - <ID>k__BackingField: 6473ce6a-9b0c-4b90-8e91-d9d51ddb5131
     <Name>k__BackingField: c_you_again
     <Text>k__BackingField: you again? do you want something?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
@@ -90,306 +626,186 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 783, y: 329}
   - <ID>k__BackingField: 22c55992-42ed-45bd-883c-6bcc3c1db0a9
     <Name>k__BackingField: c_is_there_something
-    <Text>k__BackingField: is there something you need friend?
+    <Text>k__BackingField: is there something you need that you did not get last
+      time?
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 45fe87f0-fd39-46a3-8d2d-7c4ec155e1a7
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 783, y: 477}
-  - <ID>k__BackingField: 45fe87f0-fd39-46a3-8d2d-7c4ec155e1a7
-    <Name>k__BackingField: buy_choice
-    <Text>k__BackingField: 
+    <Position>k__BackingField: {x: 783, y: 486}
+  - <ID>k__BackingField: 2c71af5f-ae77-402d-b13e-aa035989249c
+    <Name>k__BackingField: c_are_you_deaf
+    <Text>k__BackingField: are you deaf? i have told you. no more eggs for you. go
+      home
+    <SpeechTime>k__BackingField: 5
     <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: eggs
-      <NodeID>k__BackingField: eceb7c3d-b8ab-4c41-9cce-73236776f1b2
-    - <Text>k__BackingField: alcohol
-      <NodeID>k__BackingField: 624977d5-db79-4e8d-8868-da7ad0d24eb0
-    - <Text>k__BackingField: cigs
-      <NodeID>k__BackingField: 119e6193-20f8-4003-9dfe-38197080e427
-    - <Text>k__BackingField: new choice
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1246, y: 228.5}
-  - <ID>k__BackingField: 21e57792-83cc-4995-83c6-a0193b1c949c
-    <Name>k__BackingField: check_alcohol
-    <Text>k__BackingField: 
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 44b9d7a7-a0a5-4059-a9d8-9f0b53c5cab5
-      <contextVariableName>k__BackingField: bodega_bought_alcohol
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: true
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 072af320-3e00-4c9f-9ccf-9fefd8a6f4ca
-      <contextVariableName>k__BackingField: 
-      <comparisonSign>k__BackingField: 
-      <comparisonValue>k__BackingField: 
-      <isMetaVariableComparison>k__BackingField: 0
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 4
-    <Position>k__BackingField: {x: 1910, y: 203.5}
-  - <ID>k__BackingField: eceb7c3d-b8ab-4c41-9cce-73236776f1b2
-    <Name>k__BackingField: p_bodega_egg
-    <Text>k__BackingField: egg, please
-    <IsPlayer>k__BackingField: 1
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 843d3c55-e1b0-4e7f-977b-f489811665eb
+      <NodeID>k__BackingField: c91a0e03-5728-4912-abf9-e13084a3edee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2449, y: -20}
+  - <ID>k__BackingField: 41d85a48-84fb-4c43-be8c-d7c0de255bba
+    <Name>k__BackingField: c_police
+    <Text>k__BackingField: i said get out of here, now git, before i call the police
+    <SpeechTime>k__BackingField: 4.5
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8c9d0a03-6096-48a5-97ae-282f7797d69c
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1611.5, y: -176.5}
-  - <ID>k__BackingField: 843d3c55-e1b0-4e7f-977b-f489811665eb
-    <Name>k__BackingField: check_egg
+    <Position>k__BackingField: {x: 449, y: -265}
+  - <ID>k__BackingField: 8c9d0a03-6096-48a5-97ae-282f7797d69c
+    <Name>k__BackingField: _delay_police
     <Text>k__BackingField: 
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 4075363a-71b4-417a-a408-be134f5ec1c0
-      <contextVariableName>k__BackingField: bodega_bought_eggs
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: true
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 9202a5b6-6ce3-4d27-b7f2-21cf3228cee2
-      <contextVariableName>k__BackingField: 
-      <comparisonSign>k__BackingField: 
-      <comparisonValue>k__BackingField: 
-      <isMetaVariableComparison>k__BackingField: 0
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 4
-    <Position>k__BackingField: {x: 1891, y: -200}
-  - <ID>k__BackingField: 19c0a1ce-a2ba-46c1-9d61-3bafb7500f04
-    <Name>k__BackingField: _delay_egg
-    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
-    - <Text>k__BackingField: .3
-      <NodeID>k__BackingField: adcfbe87-b502-42bd-a44b-246e798a25be
+    - <Text>k__BackingField: .5
+      <NodeID>k__BackingField: 1a3ce8fe-b564-4de1-9d82-2d46918e97bc
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 7
-    <Position>k__BackingField: {x: 2509.5, y: -111.5}
+    <Position>k__BackingField: {x: 725, y: -265}
+  - <ID>k__BackingField: 1a3ce8fe-b564-4de1-9d82-2d46918e97bc
+    <Name>k__BackingField: _exit_police
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 915, y: -265}
+  - <ID>k__BackingField: ff290812-d40f-4282-9480-e299cde1f043
+    <Name>k__BackingField: c_you_drunks
+    <Text>k__BackingField: you drunks ruin this town. don't come back until tomorrow
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c91a0e03-5728-4912-abf9-e13084a3edee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2421, y: 589}
   - <ID>k__BackingField: 9202a5b6-6ce3-4d27-b7f2-21cf3228cee2
-    <Name>k__BackingField: c_my_babushka
-    <Text>k__BackingField: my babushka would always make the best of egg dish
+    <Name>k__BackingField: c_scramble
+    <Text>k__BackingField: are you a scramble or over easy guy, ahaha
+    <SpeechTime>k__BackingField: 3.9
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
       <NodeID>k__BackingField: 19c0a1ce-a2ba-46c1-9d61-3bafb7500f04
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2218.5, y: -111.5}
+    <Position>k__BackingField: {x: 2449, y: -387}
   - <ID>k__BackingField: 4075363a-71b4-417a-a408-be134f5ec1c0
     <Name>k__BackingField: c_so_many_eggs
     <Text>k__BackingField: i only have so many eggs, come back tomorrow for more
+    <SpeechTime>k__BackingField: 3.4
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 8545c072-45a1-423a-b06f-5c462e162ac7
     <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bEggAttempt
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: 69936d47-a7eb-470c-8907-3a38757f5f80
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2218.5, y: -265.5}
-  - <ID>k__BackingField: 624977d5-db79-4e8d-8868-da7ad0d24eb0
-    <Name>k__BackingField: p_bodega_alcohol
-    <Text>k__BackingField: some liquor, please
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 21e57792-83cc-4995-83c6-a0193b1c949c
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1611.5, y: 228.5}
-  - <ID>k__BackingField: 072af320-3e00-4c9f-9ccf-9fefd8a6f4ca
-    <Name>k__BackingField: c_looking_to
-    <Text>k__BackingField: 'looking to drown your troubles, huh? '
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 9cd16531-a370-41db-8a34-e26059b1ad2a
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2237, y: 311}
-  - <ID>k__BackingField: f7aa89ee-0bb5-4d20-a3aa-ee82539875d8
-    <Name>k__BackingField: c_one_bottle
-    <Text>k__BackingField: one bottle, for you
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2724, y: 311}
+    <Position>k__BackingField: {x: 2449, y: -219}
   - <ID>k__BackingField: 44b9d7a7-a0a5-4059-a9d8-9f0b53c5cab5
-    <Name>k__BackingField: c_i_have_a_limit
-    <Text>k__BackingField: I have a limit of one bottle per customer
+    <Name>k__BackingField: c_one_bottle
+    <Text>k__BackingField: only one bottle a day, lots of folk buy this in the evening
+    <SpeechTime>k__BackingField: 4
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 11598475-0ded-476e-ac52-d716f78fe253
     <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bAlcoholAttempt
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2237, y: 146.5}
-  - <ID>k__BackingField: 0ef0612a-04fb-456d-9a73-b0f70cd69dad
-    <Name>k__BackingField: _delay_cigs
-    <Text>k__BackingField: 
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: .3
-      <NodeID>k__BackingField: e2815775-81c8-4e45-a1aa-4a5a957eb330
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 7
-    <Position>k__BackingField: {x: 2528, y: 708}
-  - <ID>k__BackingField: 119e6193-20f8-4003-9dfe-38197080e427
-    <Name>k__BackingField: p_bodega_cigs
-    <Text>k__BackingField: a pack of menthols, please
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 5d0f36f1-f53f-480a-bd50-2000e975229e
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1611.5, y: 642}
-  - <ID>k__BackingField: 5d0f36f1-f53f-480a-bd50-2000e975229e
-    <Name>k__BackingField: check_cigs
-    <Text>k__BackingField: 
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: fb0634c8-0bbc-401b-a814-e7b72adad81d
-      <contextVariableName>k__BackingField: bodega_bought_cigs
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: true
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 9acc4a4e-416e-4c67-886c-d1d1e975c528
-      <contextVariableName>k__BackingField: 
-      <comparisonSign>k__BackingField: 
-      <comparisonValue>k__BackingField: 
-      <isMetaVariableComparison>k__BackingField: 0
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 4
-    <Position>k__BackingField: {x: 1891, y: 617}
-  - <ID>k__BackingField: 9cd16531-a370-41db-8a34-e26059b1ad2a
-    <Name>k__BackingField: _delay_alcohol
-    <Text>k__BackingField: 
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: .3
-      <NodeID>k__BackingField: f7aa89ee-0bb5-4d20-a3aa-ee82539875d8
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 7
-    <Position>k__BackingField: {x: 2508.5, y: 311}
-  - <ID>k__BackingField: e2815775-81c8-4e45-a1aa-4a5a957eb330
-    <Name>k__BackingField: c_here_you_are
-    <Text>k__BackingField: here you are
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2724, y: 708}
-  - <ID>k__BackingField: adcfbe87-b502-42bd-a44b-246e798a25be
-    <Name>k__BackingField: c_here_friend
-    <Text>k__BackingField: here you are, friend
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2705.5, y: -111.5}
-  - <ID>k__BackingField: 9acc4a4e-416e-4c67-886c-d1d1e975c528
-    <Name>k__BackingField: c_one_pack
-    <Text>k__BackingField: one pack of newports
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 0ef0612a-04fb-456d-9a73-b0f70cd69dad
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2237, y: 708}
-  - <ID>k__BackingField: fb0634c8-0bbc-401b-a814-e7b72adad81d
-    <Name>k__BackingField: c_out_of_concern
-    <Text>k__BackingField: out of concern for your lung health, I have to cut you
-      off on one pack
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2237, y: 543.5}
-  <OldGroupNames>k__BackingField: []
+    <Position>k__BackingField: {x: 2421, y: 390}
+  <OldGroupNames>k__BackingField:
+  - anger
+  - cigs
+  - alcohol
+  - eggs
   <OldUngroupedNames>k__BackingField:
-  - _entry
-  - visits_check
+  - buy_choice
   - c_what_do_you
+  - visits_check
+  - c91a0e03-5728-4912-abf9-e13084a3edee
+  - _exit_anger
+  - _entry
+  - pissed_check
+  - _delay_anger
+  - buy_another_choice
+  - c_anything_else
+  - _delay_second
+  - c_have_good
+  - _delay_exit
+  - _exit
+  - p_bodega_no
   - c_you_again
   - c_is_there_something
-  - buy_choice
-  - check_alcohol
-  - p_bodega_egg
-  - check_egg
-  - _delay_egg
-  - c_my_babushka
-  - c_so_many_eggs
-  - p_bodega_alcohol
-  - c_looking_to
-  - c_one_bottle
-  - c_i_have_a_limit
-  - _delay_cigs
-  - p_bodega_cigs
-  - check_cigs
-  - _delay_alcohol
-  - c_here_you_are
-  - c_here_friend
-  - c_one_pack
-  - c_out_of_concern
+  - c_police
+  - _delay_police
+  - _exit_police
   <OldGroupedNames>k__BackingField:
-    list: []
+    list:
+    - Key: anger
+      Value:
+      - _delay_anger
+      - _exit_nothing
+      - c_why_do_you
+      - p_bodega_im_alright
+    - Key: cigs
+      Value:
+      - 71f4d84f-a896-45b7-9829-ffafc23a3238
+      - cigs_check
+      - c_city_law
+      - c_heres_a_pack
+      - c_step_off
+      - p_bodega_cigs
+    - Key: alcohol
+      Value:
+      - 11598475-0ded-476e-ac52-d716f78fe253
+      - c_bottle_for_you
+      - _delay_alcohol
+      - alcohol_check
+      - c_looking_to
+      - p_bodega_alcohol
+      - c_you_drunks
+      - c_one_bottle
+    - Key: eggs
+      Value:
+      - _delay_egg
+      - 8545c072-45a1-423a-b06f-5c462e162ac7
+      - egg_check
+      - c_here_friend
+      - p_bodega_eggs
+      - c_are_you_deaf
+      - c_scramble
+      - c_so_many_eggs
