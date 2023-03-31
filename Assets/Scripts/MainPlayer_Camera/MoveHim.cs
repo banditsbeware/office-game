@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveHim : MonoBehaviour {
-
-    [SerializeField] private float speed = 1000f;
     
     //player's rigidbody
     private Rigidbody2D rb;
 
     //velocity
-    private Vector2 v;
+    public float speed = 1000f;
+    private Vector2 velocity;
 
     //spawning
     public static string doorToExit = null;
@@ -18,6 +17,11 @@ public class MoveHim : MonoBehaviour {
     private Transform doorTransform;
 
     [SerializeField] private Animator toupee;
+
+    //used for position animation through code (mainly during "cutscenes")
+    public bool isAnimating = false; 
+    public Vector3 destination;
+
 
     void Awake()
     {
@@ -42,8 +46,13 @@ public class MoveHim : MonoBehaviour {
     void Update()
     {
       //get keyboard/controller input, put into Vector2 v
-      v.x = Input.GetAxisRaw("Horizontal");   
-      v.y = Input.GetAxisRaw("Vertical");
+      velocity.x = Input.GetAxisRaw("Horizontal");   
+      velocity.y = Input.GetAxisRaw("Vertical");
+
+      if (isAnimating)
+      {
+        velocity = AnimatedVelocity(destination);
+      }
     }
 
     void FixedUpdate()
@@ -54,10 +63,43 @@ public class MoveHim : MonoBehaviour {
         toupee.SetBool("moving", false);
       }
       //if playing, change the position of the regidbody
-      if ((v.magnitude != 0) && (UIManager.gameState == "play")) 
+      if ((velocity.magnitude != 0) && (UIManager.gameState == "play")) 
       {
-        rb.AddForce(v/v.magnitude * speed);
+        rb.AddForce(velocity/velocity.magnitude * speed);
         toupee.SetBool("moving", true);
       }
+      if (isAnimating)
+      {
+        rb.AddForce(velocity/velocity.magnitude * speed);
+      }
+
     }
+
+    public Vector3 AnimatedVelocity(Vector3 destination)
+    {
+      Vector3 difference = destination - transform.position;
+
+      Debug.Log(difference);
+
+      if (difference.x < .05 && difference.y < .05)
+      {
+        isAnimating = false;
+        difference = new Vector3(0, 0);
+      }
+
+      return Vector3.Normalize(difference);
+    }
+
+    public void AnimateMovement(Vector3 dest, float spd)
+    {
+      isAnimating = true;
+      destination = dest;
+      speed = spd;
+    }
+
+    public void Sleep()
+    {
+      toupee.SetTrigger("sleep");
+    }
+    
 }

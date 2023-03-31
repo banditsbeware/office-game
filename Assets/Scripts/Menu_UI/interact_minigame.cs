@@ -5,7 +5,7 @@ public class interact_minigame : interact
 {
     public GameObject theGame;
     public AK.Wwise.Bank minigameBank;
-    virtual public void Update()
+    private void Update()
     {
         if (isInteractable)
         {

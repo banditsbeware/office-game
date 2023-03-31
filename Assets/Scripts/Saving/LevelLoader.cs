@@ -7,7 +7,7 @@ public class LevelLoader : MonoBehaviour
 {
     public Animator fadeTransition;
     public float transitionTime = 1f;
-    private Transform door;  //door you will be exiting from
+    internal Transform door;  //door you will be exiting from
     public TMP_Text debugText;
 
     void Start()

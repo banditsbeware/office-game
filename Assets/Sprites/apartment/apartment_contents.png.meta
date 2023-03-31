@@ -158,7 +158,7 @@ TextureImporter:
         width: 59
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
         width: 51
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,7 +200,7 @@ TextureImporter:
         width: 37
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,6 +208,27 @@ TextureImporter:
       bones: []
       spriteID: 48a9fd439c08ba641b289bb0bdcc5c04
       internalID: 378465939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed_sheets
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 933
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bab74642797c48b3987a47eb74b4115
+      internalID: -208265996
       vertices: []
       indices: 
       edges: []
@@ -226,6 +247,7 @@ TextureImporter:
       apartment_bed: -1957104316
       apartment_fridge: -1425698110
       apartment_counter: 378465939
+      bed_sheets: -208265996
       apartment_desk: -1586390633
   spritePackingTag: 
   pSDRemoveMatte: 0

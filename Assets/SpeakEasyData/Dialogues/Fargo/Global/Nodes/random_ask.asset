@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: random_ask
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: random_ask
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: 1
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 261801a558bb94a3aa584b75a0ef0e44, type: 2}
+  - <Text>k__BackingField: 1
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a7ff7cd1f0f70407db3ba117b1892fda, type: 2}
+  - <Text>k__BackingField: 1
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 59ac4eeac86f5454183116fe6dbf2e0b, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 6
+  <SpeechTime>k__BackingField: 0

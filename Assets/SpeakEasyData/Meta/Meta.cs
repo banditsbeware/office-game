@@ -15,7 +15,7 @@ public static class Meta
 
     //world variables
     public static Dictionary<string, dynamic> Global = new Dictionary<string, dynamic>();
-    public static Dictionary<string, dynamic> Dailies = new Dictionary<string, dynamic>();
+    public static Dictionary<string, dynamic> Daily = new Dictionary<string, dynamic>();
 
     private static void InitializeVariables()
     {
@@ -33,12 +33,15 @@ public static class Meta
 
     public static void ResetDailies()
     {
-        SetValue("waRepeatedChoice", 0, Dailies);
-        SetValue("bVisits", 0, Dailies);
-        SetValue("bEggAttempt", 0, Dailies);
-        SetValue("bAlcoholAttempt", 0, Dailies);
-        SetValue("bCigsAttempt", 0, Dailies);
-        SetValue("bPissedOffCosta", false, Dailies);
+        SetValue("waRepeatedChoice", 0, Daily);
+        SetValue("bVisits", 0, Daily);
+        SetValue("bEggAttempt", 0, Daily);
+        SetValue("bAlcoholAttempt", 0, Daily);
+        SetValue("bCigsAttempt", 0, Daily);
+        SetValue("bPissedOffCosta", false, Daily);
+        SetValue("alVisits", 0, Daily);
+        SetValue("alGaveAlcohol", false, Daily);
+        SetValue("alGaveCigs", false, Daily);
     }
 
     //only used when editing dialogue graphs
@@ -49,7 +52,7 @@ public static class Meta
         List<string> names = new List<string>();
 
         names.AddRange(Global.Keys.ToList<string>());
-        names.AddRange(Dailies.Keys.ToList<string>());
+        names.AddRange(Daily.Keys.ToList<string>());
 
         foreach (string name in names)
         {
@@ -235,9 +238,9 @@ public static class Meta
 
     public static Dictionary<string, dynamic> BlackboardThatContains(string variableName)
     {
-        if (Dailies.ContainsKey(variableName))
+        if (Daily.ContainsKey(variableName))
         {
-            return Dailies;
+            return Daily;
         }
         if (Global.ContainsKey(variableName))
         {

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: visits_check
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: visits_check
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 
+  <Choices>k__BackingField: []
+  <IfStatements>k__BackingField:
+  - <Text>k__BackingField: 
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 608177f6c5aa944cba4c160749d76981, type: 2}
+    <contextVariableName>k__BackingField: alVisits
+    <comparisonSign>k__BackingField: ==
+    <comparisonValue>k__BackingField: 1
+    <isMetaVariableComparison>k__BackingField: 0
+  - <Text>k__BackingField: 
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 97f9af6d4f5ae4205858402e3063f2e5, type: 2}
+    <contextVariableName>k__BackingField: alVisits
+    <comparisonSign>k__BackingField: ==
+    <comparisonValue>k__BackingField: 2
+    <isMetaVariableComparison>k__BackingField: 0
+  - <Text>k__BackingField: 
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 596164c318fc84b9e98d57d64e81a2a7, type: 2}
+    <contextVariableName>k__BackingField: alVisits
+    <comparisonSign>k__BackingField: ==
+    <comparisonValue>k__BackingField: 3
+    <isMetaVariableComparison>k__BackingField: 0
+  - <Text>k__BackingField: 
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 18be28f07710c45758fdf5f144b655ec, type: 2}
+    <contextVariableName>k__BackingField: 
+    <comparisonSign>k__BackingField: 
+    <comparisonValue>k__BackingField: 
+    <isMetaVariableComparison>k__BackingField: 0
+  <Callbacks>k__BackingField:
+  - <callbackVariableName>k__BackingField: alVisits
+    <callbackAction>k__BackingField: Increment
+    <callbackValue>k__BackingField: 1
+  <NodeType>k__BackingField: 5
+  <SpeechTime>k__BackingField: 0

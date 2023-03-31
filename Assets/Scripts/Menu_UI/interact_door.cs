@@ -7,7 +7,7 @@ public class interact_door : interact
     public LevelLoader loader;
     public string scene;
 
-    private void Update()
+    virtual public void Update()
     {
         if (isInteractable)
         {
