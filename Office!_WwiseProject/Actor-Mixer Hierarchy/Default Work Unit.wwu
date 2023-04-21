@@ -3188,6 +3188,7 @@
 						</Folder>
 						<RandomSequenceContainer Name="Player" ID="{C4EE45B7-4A91-47B6-B044-46B6170B2BF2}" ShortID="108127988">
 							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-500</Value>
