@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 1
   xyzMin: {x: -5, y: 1, z: -7}
   xyzMax: {x: 5, y: 1, z: -7}
   player: {fileID: 1219150083}
@@ -1291,6 +1292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 0
   xyzMin: {x: -5, y: 3, z: -10}
   xyzMax: {x: 5, y: 3, z: -10}
   player: {fileID: 1219150083}
@@ -1655,6 +1657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 0
   xyzMin: {x: 10, y: 3, z: -5}
   xyzMax: {x: 10, y: 3, z: 5}
   player: {fileID: 1219150083}
@@ -1959,6 +1962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 0
   xyzMin: {x: -5, y: 10, z: -5}
   xyzMax: {x: 5, y: 10, z: 5}
   player: {fileID: 1219150083}
@@ -2052,6 +2056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 0
   xyzMin: {x: -10, y: 3, z: -5}
   xyzMax: {x: -10, y: 3, z: 5}
   player: {fileID: 1219150083}

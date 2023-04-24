@@ -16,6 +16,7 @@ public static class Meta
     //world variables
     public static Dictionary<string, dynamic> Global = new Dictionary<string, dynamic>();
     public static Dictionary<string, dynamic> Daily = new Dictionary<string, dynamic>();
+    public static Dictionary<string, dynamic> Yesterdaily = new Dictionary<string, dynamic>();
 
     private static void InitializeVariables()
     {
@@ -28,10 +29,11 @@ public static class Meta
         SetValue("flappyHighScore", 0, Global);
         SetValue("currentScene", "Office", Global);
 
-        ResetDailies();
+        SetDaily();
+        SetYesterday();
     }
 
-    public static void ResetDailies()
+    public static void SetDaily()
     {
         SetValue("waRepeatedChoice", 0, Daily);
         SetValue("bVisits", 0, Daily);
@@ -42,6 +44,24 @@ public static class Meta
         SetValue("alVisits", 0, Daily);
         SetValue("alGaveAlcohol", false, Daily);
         SetValue("alGaveCigs", false, Daily);
+        SetValue("dVisits", 0, Daily);
+        SetValue("dTotal", 0, Daily);
+
+    }
+
+    public static void SetYesterday()
+    {
+        foreach (string key in Daily.Keys.ToList<string>())
+        {
+            SetValue("y_" + key, Daily[key], Yesterdaily);
+
+        }
+    }
+
+    public static void DayReset()
+    {
+        SetYesterday();
+        SetDaily();
     }
 
     //only used when editing dialogue graphs
@@ -53,6 +73,7 @@ public static class Meta
 
         names.AddRange(Global.Keys.ToList<string>());
         names.AddRange(Daily.Keys.ToList<string>());
+        names.AddRange(Yesterdaily.Keys.ToList<string>());
 
         foreach (string name in names)
         {
@@ -68,6 +89,7 @@ public static class Meta
         {
             if (blackboard[name] is string) blackboard[name] = value;
             if (blackboard[name] is int) blackboard[name] = int.Parse(value.ToString());
+            if (blackboard[name] is float) blackboard[name] = float.Parse(value.ToString());
             if (blackboard[name] is bool) blackboard[name] = bool.Parse(value.ToString());
         }
         else
@@ -257,6 +279,7 @@ public static class Meta
 public class SerializableMeta
 {
     public SerializableDictionary<string, int> metaInts = new SerializableDictionary<string, int>();
+    public SerializableDictionary<string, float> metaFloats = new SerializableDictionary<string, float>();
     public SerializableDictionary<string, string> metaStrings = new SerializableDictionary<string, string>();
     public SerializableDictionary<string, bool> metaBools = new SerializableDictionary<string, bool>();
 

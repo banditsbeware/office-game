@@ -58,7 +58,8 @@ namespace SpeakEasy.Windows
             AddMinimap();
             AddGridBackground();
 
-            OnElementsDeleted();  //overriding methods from the inherited Element and Group classes
+            //overriding methods from the inherited Element and Group classes
+            OnElementsDeleted();  
             OnGroupElementsAdded();
             OnGroupElementsRemoved();
             OnGroupRenamed();

@@ -2963,7 +2963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -334, y: 0}
+  m_AnchoredPosition: {x: -333.99997, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &400552950
@@ -3883,6 +3883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 1
   xyzMin: {x: -2, y: -8.5, z: -10}
   xyzMax: {x: 10.5, y: 8.5, z: -10}
   player: {fileID: 564603694}
@@ -4236,6 +4237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1000
   toupee: {fileID: 564603698}
+  isAnimating: 0
+  destination: {x: 0, y: 0, z: 0}
 --- !u!50 &564603696
 Rigidbody2D:
   serializedVersion: 4

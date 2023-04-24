@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FollowMan : MonoBehaviour
 {
+    [SerializeField] private bool smoothFollow;
     [SerializeField] private Vector3 xyzMin = new Vector3(0, -5, -10);
     [SerializeField] private Vector3 xyzMax = new Vector3(9, 8, -10);
 
@@ -21,9 +22,17 @@ public class FollowMan : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 desiredPos = player.transform.position + offset;
+
+        if (!smoothFollow)
+        {
+            transform.position = desiredPos;
+            return;
+        }
+
         Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothSpeed);
         transform.position = Clamp(smoothedPos, xyzMin, xyzMax);
     }
+        
 
     // public static int Clamp(int value, int min, int max)
     // {

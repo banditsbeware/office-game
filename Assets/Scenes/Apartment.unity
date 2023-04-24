@@ -1077,6 +1077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 1
   xyzMin: {x: 0, y: -7, z: -7}
   xyzMax: {x: 9, y: 8, z: -7}
   player: {fileID: 550407831}

@@ -15,19 +15,6 @@ MonoBehaviour:
   <FileName>k__BackingField: Jax
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: 849c3e03-e941-4eb4-a40a-209aabd81ca9
-    <Name>k__BackingField: j_my_name
-    <Text>k__BackingField: My name is Jax and I would love to take your order today!
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 661, y: 487}
   - <ID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
     <Name>k__BackingField: j_why_hello
     <Text>k__BackingField: WHY HELLO! Welcome to Dawg's hot dog emporium!
@@ -73,19 +60,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1364, y: 262}
-  - <ID>k__BackingField: 914b51b3-20b7-49de-8da6-e83c336a80c3
-    <Name>k__BackingField: p_actually_im
-    <Text>k__BackingField: actually I'm good, thanks
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1364, y: 729}
   - <ID>k__BackingField: 019d76f7-3d77-4006-a8f9-c695fdc1dc52
     <Name>k__BackingField: p_steamed_ham
     <Text>k__BackingField: just a steamed ham, please
@@ -99,21 +73,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1364, y: 572}
-  - <ID>k__BackingField: 34aab8d9-df7f-4979-8bfe-15c4e06f4c41
-    <Name>k__BackingField: j_of_course
-    <Text>k__BackingField: Of course, sir! We have our classic hot dogs, our specialty
-      hawt dog, that has a little extra zing to it, and our locally famous rambunctious
-      dawg. Which one would you like?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c49ceedb-f2a8-46d1-9724-2a442b464521
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1765, y: 169}
   - <ID>k__BackingField: 781bebfd-ee6d-40fe-a1d4-3f3ed5ff462d
     <Name>k__BackingField: _entry
     <Text>k__BackingField: 
@@ -281,19 +240,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1776, y: 350}
-  - <ID>k__BackingField: 40520455-2392-4176-85ea-5f68724ea5bd
-    <Name>k__BackingField: j_an_albany
-    <Text>k__BackingField: 'An Albany speciality! '
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1776, y: 572}
   - <ID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
     <Name>k__BackingField: j_incredible_rest
     <Text>k__BackingField: alrighty, have an incredible rest of your day, okay?
@@ -446,15 +392,80 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 5709, y: 22}
+  - <ID>k__BackingField: 849c3e03-e941-4eb4-a40a-209aabd81ca9
+    <Name>k__BackingField: j_my_name
+    <Text>k__BackingField: My name is Jax and I would love to take your order today!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 661, y: 487}
+  - <ID>k__BackingField: 40520455-2392-4176-85ea-5f68724ea5bd
+    <Name>k__BackingField: j_an_albany
+    <Text>k__BackingField: 'An Albany speciality! '
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1776, y: 572}
+  - <ID>k__BackingField: 34aab8d9-df7f-4979-8bfe-15c4e06f4c41
+    <Name>k__BackingField: j_of_course
+    <Text>k__BackingField: Of course, sir! We have our classic hot dogs, our specialty
+      hawt dog, that has a little extra zing to it, and our locally famous rambunctious
+      dawg. Which one would you like?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c49ceedb-f2a8-46d1-9724-2a442b464521
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1765, y: 169}
+  - <ID>k__BackingField: 914b51b3-20b7-49de-8da6-e83c336a80c3
+    <Name>k__BackingField: p_actually_im
+    <Text>k__BackingField: actually I'm good, thanks
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6c5f3567-9515-432e-a931-840364b4b580
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1364, y: 729}
+  - <ID>k__BackingField: 6c5f3567-9515-432e-a931-840364b4b580
+    <Name>k__BackingField: j_oh_okay
+    <Text>k__BackingField: Oh... Okay well, uh, let me know if you change your mind
+      and decide to get anything!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1784, y: 885.5}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
-  - j_my_name
   - j_why_hello
   - food_choice
   - p_hot_dog
-  - p_actually_im
   - p_steamed_ham
-  - j_of_course
   - _entry
   - p_fries
   - dawg_choice
@@ -467,7 +478,6 @@ MonoBehaviour:
   - p_loaded
   - p_small
   - j_amazing
-  - j_an_albany
   - j_incredible_rest
   - everything_choice
   - j_was_that_all
@@ -479,5 +489,10 @@ MonoBehaviour:
   - j_cash_card
   - j_no_obligation
   - j_unfortunately
+  - j_my_name
+  - j_an_albany
+  - j_of_course
+  - p_actually_im
+  - j_oh_okay
   <OldGroupedNames>k__BackingField:
     list: []
