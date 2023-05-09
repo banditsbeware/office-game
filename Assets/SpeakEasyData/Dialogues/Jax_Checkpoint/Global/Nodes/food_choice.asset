@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: food_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: food_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: hot dog
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 31a3f03831ff10c45872ad80d48513a0, type: 2}
+  - <Text>k__BackingField: fries
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 44d06c08a894a144a9d7162b284eba23, type: 2}
+  - <Text>k__BackingField: hams
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8fec44bbdbef98648a654c409a27cce5, type: 2}
+  - <Text>k__BackingField: nevermind
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 063d9d9b6218ee847a83da9b40b4f08e, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <SpeechTime>k__BackingField: 0

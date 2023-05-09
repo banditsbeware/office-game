@@ -2,6 +2,7 @@ using System.IO;
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.UIElements;
+using UnityEditor.AnimatedValues;
 using UnityEngine.UIElements;
 
 namespace SpeakEasy.Windows

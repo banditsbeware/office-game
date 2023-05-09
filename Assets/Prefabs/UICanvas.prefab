@@ -257,9 +257,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: pauseControl
+      - m_Target: {fileID: 3825592577010687676, guid: 4f244e494a6f6b640bba525e177ea9db, type: 3}
+        m_TargetAssemblyTypeName: UIManagerInstance, Assembly-CSharp
+        m_MethodName: PauseControl
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

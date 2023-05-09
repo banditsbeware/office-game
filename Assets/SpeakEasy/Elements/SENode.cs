@@ -169,10 +169,10 @@ namespace SpeakEasy.Elements
             RefreshExpandedState();
         }
 
-        #region Elements
+    #region Elements
 
-        #region Callbacks
-        public Foldout CreateCallbackFoldout()
+    #region Callbacks
+    public Foldout CreateCallbackFoldout()
         {
             Foldout callbackFoldout = SEElementUtility.CreateFoldout("Callback");
 
@@ -221,15 +221,10 @@ namespace SpeakEasy.Elements
                 callbackData.callbackVariableName = evt.newValue;
             });
 
-            changeVariables.RegisterValueChangedCallback(evt => 
-            {
-                callbackData.callbackVariableName = evt.newValue;
-            });
-
             PopupField<string> changeAction = SEElementUtility.CreatePopupField(callbackActions, callbackActionIndex);
             changeAction.RegisterValueChangedCallback (evt => 
             {
-                callbackData.callbackAction =  evt.newValue;
+                callbackData.callbackAction = evt.newValue;
             });
 
             TextField changeValue = SEElementUtility.CreateTextField(callbackData.callbackValue, null, callback =>
@@ -302,7 +297,7 @@ namespace SpeakEasy.Elements
 
         public Foldout CreateDialogueFoldout()
         {
-            Foldout textFoldout = SEElementUtility.CreateFoldout("Dialogue Text");
+            Foldout textFoldout = SEElementUtility.CreateFoldout("Text");
 
             textFoldout.AddToClassList("se-node__custom-data-container");
             textFoldout.RegisterValueChangedCallback((evt) => this.BringToFront());
@@ -341,6 +336,7 @@ namespace SpeakEasy.Elements
 
             return timeFoldout;
         }
+
         #endregion
 
         #region Utilities

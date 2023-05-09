@@ -47,19 +47,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
     <Position>k__BackingField: {x: 979, y: 463}
-  - <ID>k__BackingField: be64b9cb-07ec-49d5-8b10-7b19bb8db9da
-    <Name>k__BackingField: p_hot_dog
-    <Text>k__BackingField: just a hot dog
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 34aab8d9-df7f-4979-8bfe-15c4e06f4c41
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1364, y: 262}
   - <ID>k__BackingField: 019d76f7-3d77-4006-a8f9-c695fdc1dc52
     <Name>k__BackingField: p_steamed_ham
     <Text>k__BackingField: just a steamed ham, please
@@ -418,21 +405,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1776, y: 572}
-  - <ID>k__BackingField: 34aab8d9-df7f-4979-8bfe-15c4e06f4c41
-    <Name>k__BackingField: j_of_course
-    <Text>k__BackingField: Of course, sir! We have our classic hot dogs, our specialty
-      hawt dog, that has a little extra zing to it, and our locally famous rambunctious
-      dawg. Which one would you like?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c49ceedb-f2a8-46d1-9724-2a442b464521
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1765, y: 169}
   - <ID>k__BackingField: 914b51b3-20b7-49de-8da6-e83c336a80c3
     <Name>k__BackingField: p_actually_im
     <Text>k__BackingField: actually I'm good, thanks
@@ -459,12 +431,52 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1784, y: 885.5}
+    <Position>k__BackingField: {x: 1784, y: 886}
+  - <ID>k__BackingField: be64b9cb-07ec-49d5-8b10-7b19bb8db9da
+    <Name>k__BackingField: p_hot_dog
+    <Text>k__BackingField: just a hot dog
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1364, y: 262}
+  - <ID>k__BackingField: 34aab8d9-df7f-4979-8bfe-15c4e06f4c41
+    <Name>k__BackingField: j_of_course
+    <Text>k__BackingField: Of course, sir! We have our classic hot dogs, our specialty
+      hawt dog, that has a little extra zing to it, and our locally famous rambunctious
+      dawg. Which one would you like?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c49ceedb-f2a8-46d1-9724-2a442b464521
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1938, y: 133}
+  - <ID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
+    <Name>k__BackingField: anim
+    <Text>k__BackingField: bendOver
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 34aab8d9-df7f-4979-8bfe-15c4e06f4c41
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 1688, y: 136}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - j_why_hello
   - food_choice
-  - p_hot_dog
   - p_steamed_ham
   - _entry
   - p_fries
@@ -491,8 +503,10 @@ MonoBehaviour:
   - j_unfortunately
   - j_my_name
   - j_an_albany
-  - j_of_course
   - p_actually_im
   - j_oh_okay
+  - p_hot_dog
+  - j_of_course
+  - anim
   <OldGroupedNames>k__BackingField:
     list: []

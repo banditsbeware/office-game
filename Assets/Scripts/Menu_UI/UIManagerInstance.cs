@@ -29,4 +29,9 @@ public class UIManagerInstance : MonoBehaviour
 				UIManager.pauseControl();
 		}
 	}
+
+	public void PauseControl()
+	{
+		UIManager.pauseControl();
+	}
 }

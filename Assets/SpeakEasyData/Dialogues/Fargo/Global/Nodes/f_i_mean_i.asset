@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: f_i_mean_i
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: f_i_mean_i
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: i mean i used to work. it's true, i was one of the
+    best. best worker. the only one. and where did that get me? i mean it's just
+    so hard being human sometimes. what do we spend our time on. waste our time.
+    time. that's my grandfather's clock i'm talkin about
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Node
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9cc91fd9583e23448a2d03f6bda98cfa, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 0
+  <SpeechTime>k__BackingField: 13.6531

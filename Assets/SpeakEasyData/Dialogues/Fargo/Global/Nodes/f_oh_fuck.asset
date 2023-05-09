@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: f_oh_fuck
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: f_oh_fuck
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 'oh fuck out of here, what you think just cause
+    you work all day you deserve to enjoy yourself and I don''t? '
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Node
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c74a054cc02eac0429f609c25a67fe2f, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 0
+  <SpeechTime>k__BackingField: 6.2088585

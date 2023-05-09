@@ -132,12 +132,17 @@ namespace SpeakEasy
                     node = NextNode();
                     BeginNode();
                     break;
+                
+                case Animate:
+                    StartCoroutine(TriggerAnimation());
+                    break;
 
                 default:
                     Debug.Log("Whoops, this node shouldn't exist!");
                     break;
             } 
         }
+
 
         internal virtual SENodeSO NextNode(int choiceIndex = 0)
         {
@@ -237,6 +242,13 @@ namespace SpeakEasy
 
             node = NextNode();
             BeginNode();
+        }
+
+        public IEnumerator TriggerAnimation()
+        {
+            npcAnimator.SetTrigger(node.DialogueText);
+
+            yield return new WaitForSeconds(node.SpeechTime);
         }
 
         #endregion

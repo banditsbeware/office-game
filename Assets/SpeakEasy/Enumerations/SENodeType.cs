@@ -11,6 +11,7 @@ namespace SpeakEasy.Enumerations
         IfElseIf,
         WeightedRandom,
         Delay,
-        Connector
+        Connector,
+        Animate
     }
 } 

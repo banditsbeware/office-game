@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: payment_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: payment_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: cash
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9ec1db03408596441871c59cdc11f854, type: 2}
+  - <Text>k__BackingField: card
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9ec1db03408596441871c59cdc11f854, type: 2}
+  - <Text>k__BackingField: phone pay
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: bc32b2acc533c5141a489138c15a07ad, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <SpeechTime>k__BackingField: 0

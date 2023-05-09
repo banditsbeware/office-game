@@ -27,7 +27,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 2
-    <Position>k__BackingField: {x: -427.5, y: 633}
+    <Position>k__BackingField: {x: -427, y: 633}
   - <ID>k__BackingField: 68d80d69-9922-42ec-acc6-4a842d8486b1
     <Name>k__BackingField: visits_check
     <Text>k__BackingField: 
@@ -66,59 +66,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 5
     <Position>k__BackingField: {x: -232, y: 587}
-  - <ID>k__BackingField: 7330f997-4ee5-48b9-843c-d5bdaa7d6f05
-    <Name>k__BackingField: f_pretty_boy
-    <Text>k__BackingField: pretty boy has returned!
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 339.5, y: 794.5}
-  - <ID>k__BackingField: c868c3da-4c7c-46a9-abc8-19a69624c09d
-    <Name>k__BackingField: f_theyve_got
-    <Text>k__BackingField: they've got cameras all over the place. not safe! haha..
-      they're listening
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 339.5, y: 973.5}
-  - <ID>k__BackingField: d66160b0-61ef-4b3e-800a-26f6d83ba80a
-    <Name>k__BackingField: f_run_run
-    <Text>k__BackingField: run! run! get out! get! out!
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 343.5, y: 1293}
-  - <ID>k__BackingField: 15dd8671-9c40-4dea-944e-531e5dffc209
-    <Name>k__BackingField: f_welcome_pretty
-    <Text>k__BackingField: ooh, hellooo pretty boyyy, hahahaaa....
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 311.5, y: 438.5}
   - <ID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
     <Name>k__BackingField: random_ask
     <Text>k__BackingField: 
@@ -135,33 +82,166 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 6
-    <Position>k__BackingField: {x: 627.5, y: 414.5}
-  - <ID>k__BackingField: 8c0af667-773f-433c-be3e-0544eb5d504b
-    <Name>k__BackingField: f_spare_change
-    <Text>k__BackingField: any spare change?
+    <Position>k__BackingField: {x: 628, y: 415}
+  - <ID>k__BackingField: b0ddf557-6fb4-4f6a-b9e7-9beb54dd6633
+    <Name>k__BackingField: cig_choice
+    <Text>k__BackingField: 
     <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
+    - <Text>k__BackingField: yes
       <NodeID>k__BackingField: 
+    - <Text>k__BackingField: no
+      <NodeID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1275, y: 237}
+  - <ID>k__BackingField: abe32ace-5af7-4074-9369-3f089bd9668a
+    <Name>k__BackingField: drinkie_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: yes
+      <NodeID>k__BackingField: 
+    - <Text>k__BackingField: no
+      <NodeID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1275, y: 429}
+  - <ID>k__BackingField: a78071a7-a296-404f-944f-1973083b3438
+    <Name>k__BackingField: change_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: yes
+      <NodeID>k__BackingField: 
+    - <Text>k__BackingField: no
+      <NodeID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1275, y: 625}
+  - <ID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
+    <Name>k__BackingField: p_alley_no_sorry
+    <Text>k__BackingField: no, sorry
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 21b6611c-fae3-4a4d-b917-60a4c294b4c0
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 923, y: 649}
-  - <ID>k__BackingField: 1b52b013-9684-4e5e-a3b4-4a01fe055bb5
-    <Name>k__BackingField: f_drinkie
-    <Text>k__BackingField: got any drinkie you wanna share?
+    <Position>k__BackingField: {x: 1713, y: 750}
+  - <ID>k__BackingField: 21b6611c-fae3-4a4d-b917-60a4c294b4c0
+    <Name>k__BackingField: f_oh_fuck
+    <Text>k__BackingField: 'oh fuck out of here, what you think just cause you work
+      all day you deserve to enjoy yourself and I don''t? '
     <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: c265d11f-91b8-4235-9c8e-fa33aa4f90cc
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 920.5, y: 453}
+    <Position>k__BackingField: {x: 2019, y: 750}
+  - <ID>k__BackingField: c265d11f-91b8-4235-9c8e-fa33aa4f90cc
+    <Name>k__BackingField: f_theres_something
+    <Text>k__BackingField: there's something wrong going on, i'm tellin ya. it's
+      all wrong, it's all gone. it's all this and that, and who even knows anymore?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8b3b301c-7d3c-4337-9dc9-ca48a99d0dcd
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2317, y: 750}
+  - <ID>k__BackingField: 8b3b301c-7d3c-4337-9dc9-ca48a99d0dcd
+    <Name>k__BackingField: f_i_mean_i
+    <Text>k__BackingField: i mean i used to work. it's true, i was one of the best.
+      best worker. the only one. and where did that get me? i mean it's just so hard
+      being human sometimes. what do we spend our time on. waste our time. time.
+      that's my grandfather's clock i'm talkin about
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: bcd1207b-a5c6-4403-acbe-b3b0010599b7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2630, y: 750}
+  - <ID>k__BackingField: bcd1207b-a5c6-4403-acbe-b3b0010599b7
+    <Name>k__BackingField: f_a_big_one
+    <Text>k__BackingField: a big one, it .. tick tock tick tick tick. haha. you probably
+      think i'm crazy huh? well guess who's crazy now, those damn kids got their
+      whole lives and the screen. look at all this they're missing out on huh?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 416ee9cf-81ef-45c3-a234-559e9f412906
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2928, y: 750}
+  - <ID>k__BackingField: 416ee9cf-81ef-45c3-a234-559e9f412906
+    <Name>k__BackingField: f_but_maybe
+    <Text>k__BackingField: 'but maybe they got it figured out i mean maybe this aint
+      all the shit it cracked up to be y''know? what makes this brick any good any
+      better than a computer brick haha, brick.. brick..    brick '
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 12fcd26d-92ba-4a59-86e7-cc516a795969
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3226, y: 750}
+  - <ID>k__BackingField: 12fcd26d-92ba-4a59-86e7-cc516a795969
+    <Name>k__BackingField: f_woah
+    <Text>k__BackingField: woah hey you're still here? usually people leave after
+      a few seconds of hearing me talk.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3524, y: 750}
+  - <ID>k__BackingField: 15dd8671-9c40-4dea-944e-531e5dffc209
+    <Name>k__BackingField: f_welcome_pretty
+    <Text>k__BackingField: ooh, hellooo pretty boyyy, hahahaaa....
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 312, y: 439}
   - <ID>k__BackingField: 45d35eeb-2148-45dc-a39f-27746f29985e
     <Name>k__BackingField: f_cigarette
     <Text>k__BackingField: hey you have a cigarette?
@@ -169,23 +249,114 @@ MonoBehaviour:
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: b0ddf557-6fb4-4f6a-b9e7-9beb54dd6633
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 921, y: 260}
+  - <ID>k__BackingField: 1b52b013-9684-4e5e-a3b4-4a01fe055bb5
+    <Name>k__BackingField: f_drinkie
+    <Text>k__BackingField: got any drinkie you wanna share?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: abe32ace-5af7-4074-9369-3f089bd9668a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 921, y: 453}
+  - <ID>k__BackingField: 8c0af667-773f-433c-be3e-0544eb5d504b
+    <Name>k__BackingField: f_spare_change
+    <Text>k__BackingField: any spare change?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: a78071a7-a296-404f-944f-1973083b3438
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 923, y: 649}
+  - <ID>k__BackingField: c868c3da-4c7c-46a9-abc8-19a69624c09d
+    <Name>k__BackingField: f_theyve_got
+    <Text>k__BackingField: they've got cameras all over the place. not safe! haha..
+      they're listening
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
       <NodeID>k__BackingField: 
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 920.5, y: 259.5}
+    <Position>k__BackingField: {x: 312, y: 1232}
+  - <ID>k__BackingField: d66160b0-61ef-4b3e-800a-26f6d83ba80a
+    <Name>k__BackingField: f_run_run
+    <Text>k__BackingField: run! run! get out! get! out!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 316, y: 1551}
+  - <ID>k__BackingField: 7330f997-4ee5-48b9-843c-d5bdaa7d6f05
+    <Name>k__BackingField: f_pretty_boy
+    <Text>k__BackingField: pretty boy has returned!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 312, y: 884}
+  - <ID>k__BackingField: f6ca3e6b-e634-48f0-abbc-e416cbcade30
+    <Name>k__BackingField: f_obama
+    <Text>k__BackingField: hey i wanna tell you about how barack hussein obama killed
+      my brother in law
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1580, y: 1113}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - _entry
   - visits_check
-  - f_pretty_boy
+  - random_ask
+  - cig_choice
+  - drinkie_choice
+  - change_choice
+  - p_alley_no_sorry
+  - f_oh_fuck
+  - f_theres_something
+  - f_i_mean_i
+  - f_a_big_one
+  - f_but_maybe
+  - f_woah
+  - f_welcome_pretty
+  - f_cigarette
+  - f_drinkie
+  - f_spare_change
   - f_theyve_got
   - f_run_run
-  - f_welcome_pretty
-  - random_ask
-  - f_spare_change
-  - f_drinkie
-  - f_cigarette
+  - f_pretty_boy
+  - f_obama
   <OldGroupedNames>k__BackingField:
     list: []

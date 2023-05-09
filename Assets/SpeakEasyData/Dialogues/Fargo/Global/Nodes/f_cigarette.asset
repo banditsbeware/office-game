@@ -17,8 +17,8 @@ MonoBehaviour:
   <DialogueText>k__BackingField: hey you have a cigarette?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0eba5fe5f6bc96146b205ffdaa401ba8, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 1.4963689
+  <SpeechTime>k__BackingField: 1.3447673
