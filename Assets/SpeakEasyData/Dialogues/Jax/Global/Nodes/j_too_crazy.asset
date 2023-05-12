@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: anim
+  m_Name: j_too_crazy
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: anim
+  <NodeName>k__BackingField: j_too_crazy
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: bendOver
+  <DialogueText>k__BackingField: okay okay, nothing too crazy, I'll get you one of
+    our classic dawgs
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e8b7c70fc799fc14289823d8c0b17906, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
-  <NodeType>k__BackingField: 9
-  <SpeechTime>k__BackingField: 0
+  <NodeType>k__BackingField: 0
+  <SpeechTime>k__BackingField: 3.8275716

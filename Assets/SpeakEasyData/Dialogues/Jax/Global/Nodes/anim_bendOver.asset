@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: j_no_obligation
+  m_Name: anim_bendOver
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: j_no_obligation
+  <NodeName>k__BackingField: anim_bendOver
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: And if you could double check the total, tap any
-    option, and then sign your name.
+  <DialogueText>k__BackingField: bendOver
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 0}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
-  <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 4.910837
+  <NodeType>k__BackingField: 9
+  <SpeechTime>k__BackingField: 0

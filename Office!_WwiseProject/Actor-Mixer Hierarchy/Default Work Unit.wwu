@@ -2022,6 +2022,7 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Apartment" ID="{9A6D7CA7-D4AB-4568-85DE-0070FB12249A}" ShortID="282133675"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Dialogue" ID="{C0102D99-C4A8-4CEB-955F-875F7B707E37}" ShortID="738307289">

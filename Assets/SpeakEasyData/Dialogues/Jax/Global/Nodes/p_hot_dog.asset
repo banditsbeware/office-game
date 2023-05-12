@@ -17,8 +17,8 @@ MonoBehaviour:
   <DialogueText>k__BackingField: just a hot dog
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 29fa9f8da1e9e1248ac71bce00fb434b, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e8b7c70fc799fc14289823d8c0b17906, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 1.1195649
+  <SpeechTime>k__BackingField: 1.22855
