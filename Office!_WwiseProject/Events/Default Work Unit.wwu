@@ -145,6 +145,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Apartment_Amb" ID="{76F02AB9-B73E-43D8-8733-CC7E21FD71EB}">
+							<ChildrenList>
+								<Action Name="" ID="{1E8ACF91-E2F5-48A9-9B4C-4EA5A40D8966}" ShortID="56899171">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="10"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OtherRoom" ID="{9B05915B-90D4-4E26-AB61-15215399EFFE}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{95B7AB1C-E229-4FB5-9B8B-2B8266FD27D0}" ShortID="876226598">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Outside" ID="{C3B06A2C-593D-4AA8-BCF5-CA2D134DC4E6}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CA3AFE05-4FAE-47DF-B22B-234E53323EA9}" ShortID="343739091">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Apartment_Amb_01" ID="{2D9FC54C-4F3B-4301-A6A0-6CA72F8FD8DD}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4483B3B2-4BAC-495C-8BA5-421EE72A3978}" ShortID="1051254781">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Apartment_Buzz_01" ID="{C90494D9-E8FE-4427-8381-C6DAA8F3C109}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{67A74528-226F-4296-9E65-0E562382C928}" ShortID="159148259">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Apartment_Buzz_02" ID="{59E5CE3C-177A-407C-BBB2-4BB6E92EC306}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FX" ID="{9E7B2728-D305-427C-B194-76E3D99C3B5E}" ShortID="677138562">
@@ -1059,45 +1101,6 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Apartment_Amb" ID="{660FBC2A-AAF0-4063-A034-DB8D2723993C}">
-					<ChildrenList>
-						<Action Name="" ID="{F9042FD9-C97A-4E64-8A3A-023CE11FC324}" ShortID="648111029">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="OtherRoom" ID="{9B05915B-90D4-4E26-AB61-15215399EFFE}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{1CF05DA8-1F56-4995-8FF0-E67B44850D6E}" ShortID="429820396">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Outside" ID="{C3B06A2C-593D-4AA8-BCF5-CA2D134DC4E6}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{E4C8652A-00ED-4F80-914F-6CDF25F21353}" ShortID="499006858">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Apartment_Amb_01" ID="{48E8F5B1-3185-4FF4-B01E-A2FE619FBE17}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{E0231FD5-E6EA-45AC-AFE4-3D22FF2203B9}" ShortID="178572461">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Apartment_Buzz_01" ID="{C90494D9-E8FE-4427-8381-C6DAA8F3C109}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{E9D16ADC-3B00-4269-A78F-083EFADF7A5E}" ShortID="1052847313">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Apartment_Buzz_02" ID="{59E5CE3C-177A-407C-BBB2-4BB6E92EC306}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

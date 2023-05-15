@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e81f804df421e44eb02bcb6dc234a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smoothFollow: 0
   xyzMin: {x: 0, y: -5, z: -10}
   xyzMax: {x: 9, y: 8, z: -10}
   player: {fileID: 1695458651}
@@ -840,7 +841,7 @@ Animator:
   m_GameObject: {fileID: 1695458645}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a1d966dd9dd65442babc94512532656, type: 2}
+  m_Controller: {fileID: 9100000, guid: 26cba6e5606e81348a887b2bf3312fd0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -120,7 +120,7 @@ namespace SpeakEasy
 
                 case Exit:
                     UIManager.gameState = "play";
-                    transform.parent.gameObject.SetActive(false);
+                    transform.parent.parent.gameObject.SetActive(false);
                     break;
 
                 case Delay:

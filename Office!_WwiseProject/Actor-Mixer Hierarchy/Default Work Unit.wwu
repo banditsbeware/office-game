@@ -2024,51 +2024,12 @@
 						</Folder>
 						<Folder Name="Apartment" ID="{9A6D7CA7-D4AB-4568-85DE-0070FB12249A}" ShortID="282133675">
 							<ChildrenList>
-								<Sound Name="Apartment_Amb_01" ID="{48E8F5B1-3185-4FF4-B01E-A2FE619FBE17}" ShortID="505963239">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-20</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Ambience, Room Tone, Apartment, Distant Train Horns, Distant Traffic SND8359 1" ID="{3DF904F5-ACCE-47F4-933F-2A9CD3EACFD6}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.01892583120205"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.71713554987213"/>
-												<Property Name="LoopBegin" Type="Real64" Value="9.67979539641944"/>
-												<Property Name="LoopEnd" Type="Real64" Value="126.516624040921"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.73606138107417"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Ambience, Room Tone, Apartment, Distant Train Horns, Distant Traffic SND8359 1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="808125337"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Ambience, Room Tone, Apartment, Distant Train Horns, Distant Traffic SND8359 1" ID="{3DF904F5-ACCE-47F4-933F-2A9CD3EACFD6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Apartment_Buzz_01" ID="{C90494D9-E8FE-4427-8381-C6DAA8F3C109}" ShortID="761312702">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2105,7 +2066,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-20</Value>
+												<Value>-31</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2136,6 +2097,13 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{EBB118F0-D0DB-4766-8913-94BB6E0EC4F6}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="30.0675675675676"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Electricity, Buzz &amp; Hum, Fluorescent Light, Basement 02 SND1349" ID="{D803AFF6-2E60-428E-8293-26D0AE39E2A6}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -2168,6 +2136,9 @@
 								</Folder>
 								<RandomSequenceContainer Name="Outside" ID="{C3B06A2C-593D-4AA8-BCF5-CA2D134DC4E6}" ShortID="803597376">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -2185,6 +2156,7 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2218,6 +2190,12 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Apartment_Amb_Outside_Motocross" ID="{E7C698BD-8D75-489B-9EB7-AB47299C8AF0}" ShortID="97616928">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -2235,6 +2213,53 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{19A21A3B-9324-4858-ABE5-1870B10CE04D}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="Apartment_Amb_Outside_Motocross_Path" ID="{BB5EB6CE-E46A-4A7C-8248-EEA4BA36B44C}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>62.94416</XPos>
+																	<YPos>-78.2486</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-91.87817</XPos>
+																	<YPos>-77.40113</YPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="Apartment_Amb_Outside_Motocross_Path_01" ID="{D7B17CC5-FC5C-44EE-A46E-148BDD5A1154}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="20000"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-58.37563</XPos>
+																	<YPos>69.20904</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>83.24873</XPos>
+																	<YPos>69.49153</YPos>
+																	<Flags>0</Flags>
+																	<Time>20000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="Apartment_Amb_Outside-009" ID="{6828E2D7-0272-4129-AE27-EA055872D524}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -2262,9 +2287,42 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{F5EFBE57-4FF5-4D66-AAA3-F7582D0929C7}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-9.45945945945945"/>
+												<Property Name="PanY" Type="Real64" Value="-7.60869565217391"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{9478B331-68CD-435E-B764-FABC95B2AF0D}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Outside_Path" ID="{AA3BE38C-EA15-410E-A965-FB7646A2E2FD}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+														<Property Name="RandomY" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>1.12994</YPos>
+															<ZPos>-20</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="OtherRoom" ID="{9B05915B-90D4-4E26-AB61-15215399EFFE}" ShortID="224969843">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -2293,6 +2351,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Apartment_Amb_OtherRoom_Argument" ID="{9766F230-2D66-4DC7-AA58-580AC324F75F}" ShortID="465442053">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
@@ -2310,6 +2374,23 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{85EA6600-06BF-4843-B68D-D2636C63112B}">
+													<ChildrenList>
+														<Path2D Name="Apartment_Amb_OtherRoom_Argument_Path" ID="{C3D4711A-A7A3-4B1D-9880-7873887C5349}">
+															<PointList>
+																<Point>
+																	<XPos>65.48223</XPos>
+																	<YPos>23.44633</YPos>
+																	<ZPos>100</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="Apartment_Amb_OtherRoom-018" ID="{D57FF679-4B36-412A-975B-0A76906E10B2}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -2359,7 +2440,69 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{AA3581CB-1D62-452C-BEA5-EF420AF71DF8}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="OtherRoom_Path" ID="{7358752E-FA72-447D-ACE7-E0FB4AAC7F3F}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="20"/>
+														<Property Name="RandomY" Type="Real64" Value="50"/>
+														<Property Name="RandomZ" Type="Real64" Value="30"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0.50762</XPos>
+															<YPos>1.41243</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 								</RandomSequenceContainer>
+								<Sound Name="Apartment_Amb_01" ID="{2D9FC54C-4F3B-4301-A6A0-6CA72F8FD8DD}" ShortID="939669381">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-27</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Room Tone, Apartment, Distant Train Horns, Distant Traffic SND8359 2" ID="{E0794133-DFE8-4D1F-ACB2-1E68B126A08E}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="10"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.06101311063218"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.06101311063219"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.49650143678161"/>
+												<Property Name="LoopEnd" Type="Real64" Value="52.4889427083333"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Room Tone, Apartment, Distant Train Horns, Distant Traffic SND8359 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="650799851"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience, Room Tone, Apartment, Distant Train Horns, Distant Traffic SND8359 2" ID="{E0794133-DFE8-4D1F-ACB2-1E68B126A08E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

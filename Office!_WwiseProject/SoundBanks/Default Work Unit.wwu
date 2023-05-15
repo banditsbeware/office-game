@@ -13,50 +13,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Crossword" ID="{BAF11F32-56C2-47DF-9526-9C9437CABE9B}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Harold" ID="{D27BA07D-4B1C-44BA-BF8B-DAD8386D98FE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Bird" ID="{A0E76B54-A151-493F-9B72-FCE2B4434EFD}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Bird" ID="{80A3D1BD-EAE0-45D6-A09F-AA46DD9E9232}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Street" ID="{FCB3612A-CD64-4D88-B331-5211DC0D5B6E}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Street" ID="{61B7A30C-4728-4278-BB24-E14DEFAC5FAA}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Printer" ID="{ED7AA986-3D87-4211-93B0-42157264B564}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Printer" ID="{EF9D30F7-2FD7-4A7F-BF70-651793FFE643}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Boss" ID="{D726C75B-749B-4368-819C-3B032892AD3B}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Boss" ID="{80F518F7-F7FF-4624-8E67-CD477BE097E9}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Office" ID="{0E3EB1D2-1DAD-4A13-8693-5024AB0BF4A4}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Office" ID="{BAB3AA77-5F26-422C-B376-04425E5DBCDE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="Bodega" ID="{FE92B717-B107-47B8-B5D2-B77D964CBB84}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Costa" ID="{83F61FA7-E54E-48A2-ACB9-44C01858AE85}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
@@ -64,6 +20,65 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<Folder Name="Scene" ID="{EC1A0CA0-55E3-44CB-9400-42F4FD737DAD}" ShortID="776031918">
+					<ChildrenList>
+						<SoundBank Name="Street" ID="{FCB3612A-CD64-4D88-B331-5211DC0D5B6E}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Street" ID="{61B7A30C-4728-4278-BB24-E14DEFAC5FAA}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Office" ID="{0E3EB1D2-1DAD-4A13-8693-5024AB0BF4A4}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Office" ID="{BAB3AA77-5F26-422C-B376-04425E5DBCDE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Apartment" ID="{1CA1A552-DB1C-4D82-973B-0B3738415E04}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Play_Apartment_Amb" ID="{76F02AB9-B73E-43D8-8733-CC7E21FD71EB}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Minigame" ID="{EA3FCF22-2DAB-4ACA-AC2D-5504F156B9C9}" ShortID="607615897">
+					<ChildrenList>
+						<SoundBank Name="Crossword" ID="{BAF11F32-56C2-47DF-9526-9C9437CABE9B}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Harold" ID="{D27BA07D-4B1C-44BA-BF8B-DAD8386D98FE}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Bird" ID="{A0E76B54-A151-493F-9B72-FCE2B4434EFD}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Bird" ID="{80A3D1BD-EAE0-45D6-A09F-AA46DD9E9232}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Printer" ID="{ED7AA986-3D87-4211-93B0-42157264B564}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Printer" ID="{EF9D30F7-2FD7-4A7F-BF70-651793FFE643}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Boss" ID="{D726C75B-749B-4368-819C-3B032892AD3B}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Boss" ID="{80F518F7-F7FF-4624-8E67-CD477BE097E9}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

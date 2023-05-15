@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FADE_ALL = 432238011U;
+        static const AkUniqueID PLAY_APARTMENT_AMB = 2781381665U;
         static const AkUniqueID PLAY_BATH_AMB = 1523620308U;
         static const AkUniqueID PLAY_BIRD_COIN = 2159632377U;
         static const AkUniqueID PLAY_BIRD_FLAPS = 2261578938U;
@@ -171,6 +172,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID APARTMENT = 4154495109U;
         static const AkUniqueID BIRD = 1544377644U;
         static const AkUniqueID BODEGA = 2424680877U;
         static const AkUniqueID BOSS = 1560169506U;

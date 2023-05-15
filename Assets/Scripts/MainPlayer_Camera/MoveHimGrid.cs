@@ -20,6 +20,8 @@ public class MoveHimGrid : MonoBehaviour {
     public bool isAnimating = false; 
     public Vector3 destination;
 
+    private int movemInt;
+
     void Awake()
     {
       //always have a door to exit from
@@ -40,44 +42,33 @@ public class MoveHimGrid : MonoBehaviour {
 
     void FixedUpdate()
     {
-      //check to see if player is on grid line
-      bool x_check = Math.Abs(transform.position.x - (float)Math.Truncate(transform.position.x))  <= .01f || Math.Abs(transform.position.x - (float)Math.Truncate(transform.position.x)) >= .99f;
-      bool y_check = Math.Abs(transform.position.y - (float)Math.Truncate(transform.position.y)) <= .01f || Math.Abs(transform.position.y - (float)Math.Truncate(transform.position.y)) >= .99f;
-
-      Debug.Log(transform.position.x - (float)Math.Truncate(transform.position.x));
-
-      //determine movement at grid line intersection
-      if (x_check && y_check)
+      //while moving
+      if (movemInt != 0)
       {
-        velocity = Vector2.zero;
+        movemInt -= 1;
 
-        if (Input.GetAxisRaw("Horizontal") != 0)
-        {
-          velocity.x = Input.GetAxisRaw("Horizontal") / 10f;
-          animator.SetBool("moving", true);
-        }
-        else if (Input.GetAxisRaw("Vertical") != 0)
-        {
-          velocity.y = Input.GetAxisRaw("Vertical") / 10f;
-          animator.SetBool("moving", true);
-        }
-        else
-        {
-          animator.SetBool("moving", false);
-        }
+        transform.position += velocity;
+
+        return;
       }
 
-      //move
+      velocity = Vector2.zero;
+      animator.SetBool("moving", false);
+
+      if (Input.GetAxisRaw("Horizontal") != 0)
+      {
+        velocity.x = Math.Sign(Input.GetAxisRaw("Horizontal")) * .1f;
+        animator.SetBool("moving", true);
+        movemInt = 9;
+      }
+      else if (Input.GetAxisRaw("Vertical") != 0)
+      {
+        velocity.y = Math.Sign(Input.GetAxisRaw("Vertical")) * .1f;
+        animator.SetBool("moving", true);
+        movemInt = 9;
+      }
+
       transform.position += velocity;
-
-
-
-        // if (isAnimating)
-        // {
-        //   rb.AddForce(velocity/velocity.magnitude * speed);
-        // }
-      
-
     }
 
     public Vector3 AnimatedVelocity(Vector3 destination)
