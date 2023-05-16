@@ -8,6 +8,9 @@ TagManager:
   - notif
   - minigame
   - submenu
+  - interior
+  - interiorCollider
+  - exteriorCollider
   layers:
   - Default
   - TransparentFX
