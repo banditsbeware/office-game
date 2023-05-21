@@ -1340,6 +1340,7 @@ GameObject:
   - component: {fileID: 298436396}
   - component: {fileID: 298436394}
   - component: {fileID: 298436393}
+  - component: {fileID: 298436397}
   m_Layer: 5
   m_Name: computerScreen
   m_TagString: Untagged
@@ -1405,6 +1406,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 79.5}
   m_SizeDelta: {x: 1200, y: 740}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &298436397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298436392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &300380856
 GameObject:
   m_ObjectHideFlags: 0
@@ -5378,7 +5393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682657774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.91, y: 4.15, z: 0}
+  m_LocalPosition: {x: 0.31, y: -3.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14878,9 +14893,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d35777f9f9c114850ae1eff32477b95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textplate: {fileID: 5241724575022042298, guid: c42852a7211c45d4ea374f29f1af5070, type: 3}
-  textSpeedOnEn: 0.3
-  wordSpeedOnEn: 6
+  canvas: {fileID: 0}
+  referenceWindow: {fileID: 7694365368787871223, guid: 86bbc51f84dcb496b804e72e09d380f9, type: 3}
+  windows: []
+  activeWindow: {fileID: 0}
 --- !u!114 &1890632086 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3825592577010687676, guid: 4f244e494a6f6b640bba525e177ea9db, type: 3}

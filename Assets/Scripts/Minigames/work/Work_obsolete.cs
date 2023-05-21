@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class Work : MonoBehaviour
+public class Work_obsolete : MonoBehaviour
 {
     //letter/word tracker
     private char nextLetter;
