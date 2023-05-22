@@ -10,19 +10,24 @@ public class work : MonoBehaviour
 {
     //references
     private GameObject screenSpace;
-    public Canvas canvas;
-    [SerializeField] private GameObject referenceWindow;
+    [SerializeField] private GameObject docReference;
+    [SerializeField] private GameObject emailReference;
+    [SerializeField] private GameObject slackReference;
+    [SerializeField] private GameObject sheetReference;
+
+    private List<GameObject> referenceWindows;
 
     //windows
-    public List<workWindow> windows;
-    public workWindow activeWindow;
+    public static List<workWindow> windows = new List<workWindow>();
+    public static workWindow activeWindow;
 
 
     private void OnEnable() 
     {
-        canvas = gameObject.GetComponent<Canvas>();
+        referenceWindows = new List<GameObject>(){docReference, emailReference, slackReference, sheetReference};
+
         screenSpace = GameObject.Find("computerScreen");
-        CreateWindow();
+        CreateWindow(emailReference);
     }
 
     private void OnDisable() {
@@ -35,54 +40,31 @@ public class work : MonoBehaviour
 
     void Update()
     {
-        if (!activeWindow.backRequired && Input.inputString != "")
+        if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            foreach (char c in Input.inputString)
-            {
-                if (c == nextLetter && charIndex == currentPhrase.words.Length - 1 && wordIndex + 1 >= activePhrases.Count)
-                {
-                    textSpeed -= .02f;
-                    wordSpeed -= .5f;
-                    resetBoard(textSpeed);
-                    beginPhrase(currentPhrase);
-                }
-                else if (c == nextLetter && charIndex == currentPhrase.words.Length - 1)
-                {
-                    currentPhrase.topText.text = "<color=green>" + currentPhrase.words + " </color>";
-                    currentPhrase.completed = true;
-                    StartCoroutine(bye(currentPhrase));
-                    charIndex = 0;
-                    wordIndex++;
-                    currentPhrase = activePhrases[wordIndex];
-                    nextLetter = currentPhrase.words[charIndex];
-                    
-                    
-                }
-                else if (c == nextLetter)
-                {
-                    charIndex++;
-                    nextLetter = currentPhrase.words[charIndex];
-                    currentPhrase.topText.text = "<color=green>" + currentPhrase.words.Substring(0, charIndex) + " </color>" + "<alpha=#00>" + currentPhrase.words.Substring(charIndex) + "</alpha>";
-                }
-                else
-                {
-                    currentPhrase.topText.text = "<color=green>" + currentPhrase.words.Substring(0, charIndex) + "</color><color=red><mark=#ff000080>" + currentPhrase.words.Substring(charIndex, 1)
-                    + "</mark> </color><alpha=#00>" + currentPhrase.words.Substring(charIndex) + "</alpha>";
-
-                    backRequired = true;
-                }
-            }
+            activeWindow.Back();
+            return;
         }
-        else if (backRequired && Input.GetKeyDown(KeyCode.Backspace))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            backRequired = false;
-            currentPhrase.topText.text = "<color=green>" + currentPhrase.words.Substring(0, charIndex) + " </color>" + "<alpha=#00>" + currentPhrase.words.Substring(charIndex) + "</alpha>";
+            activeWindow.Enter();
+            return;
+        }
+        if (Input.inputString != "")
+        {
+            activeWindow.InputRecieved(Input.inputString);
         }
     }
 
-    private void CreateWindow()
+    private void CreateWindow(GameObject reference)
     {
-        workWindow window = Instantiate(referenceWindow, screenSpace.transform).GetComponent<workWindow>();
+        workWindow window = Instantiate(reference, screenSpace.transform).GetComponent<workWindow>();
         windows.Add(window);
+    }
+
+    private void CreateRandomWindow()
+    {
+        int windowIndex = Random.Range(0, referenceWindows.Count);
+        CreateWindow(referenceWindows[windowIndex]);
     }
 }
