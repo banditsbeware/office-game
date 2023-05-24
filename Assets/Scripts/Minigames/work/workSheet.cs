@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class workEmail : workWindow
+public class workSheet : workWindow
 {
     private List<List<string>> emailChains = new List<List<string>>()    //List is Thread title, incoming1, outgoing1, incoming2, outgoing2, etc.
     {

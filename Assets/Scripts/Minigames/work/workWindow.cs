@@ -110,13 +110,15 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
         texts = gameObject.GetComponentsInChildren<TMP_Text>().ToList();
     }
 
-    protected IEnumerator FadeDestroy()
+    protected IEnumerator FadeDestroy(float delayTime = 0f)
     {
         List<Image> images = gameObject.GetComponentsInChildren<Image>().ToList();
         images.Add(imageComponent);
         List<TMP_Text> texts = gameObject.GetComponentsInChildren<TMP_Text>().ToList();
 
         byte alp = 255;
+
+        yield return new WaitForSeconds(delayTime);
 
         while (imageComponent.color.a > 0f)
         {
