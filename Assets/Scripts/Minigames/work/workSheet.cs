@@ -7,33 +7,37 @@ using TMPro;
 
 public class workSheet : workWindow
 {
-    private List<List<string>> emailChains = new List<List<string>>()    //List is Thread title, incoming1, outgoing1, incoming2, outgoing2, etc.
+    private List<string> cellPossibilities = new List<string>()
     {
-        new List<string>(){"Onboarding event --  bcc. Everyone", "To whom it may concern\n\nEat ass and die\n\nCheers,\nAccounting", "Test\n\nTest", "Test Test my ass\n\n-Acct.", "Literally go die"}
+        "Return On Investment (ROI)",
+        "Synergy",
+        "Core Competency",
+        "unmatched logistics",
+        "holistic customer experience",
+        "work ecosystem",
+        "restructuring",
+        "quota shaping",
+        "target consumer",
+        "colloquial pricing",
+        "cloud-based computing",
+        "touch base",
+        "shift the paradigm",
+        "growth hacking",
+        "machine learning algorithm",
+        "blockchain standard",
+        "110%",
+        "Elite Onboarding",
+        "diversity quota",
+        "data-driven insight"
     };
-    private bool messageComplete = false;
-    private bool sendReady = false;  //neccesary for using enter to call send method
-    private List<string> chain;
-    private int threadNumber = 3;  //after instantiating title, incoming1, outgoing1, list index is 3
-    private float timeAfterSend = 2f;
-    private float timeAfterRecieve = 3f;
-    private float timeAfterCompletion = 6f;
+    
+    public sheetsCell activeCell;
 
-
-
-    [SerializeField] private GameObject incomingTemplate;
-    [SerializeField] private GameObject outgoingTemplate;
-
-
-    [SerializeField] private GameObject contents;
-    [SerializeField] private GameObject currentIncoming;
-    [SerializeField] private GameObject currentOutgoing;
-    private GameObject sendButton;
+    [SerializeField] private GameObject cellTemplate;
 
     //text objects
     public TMP_Text textplate;
-    public TMP_Text chainTitle;
-    private TMP_Text incomingText;
+    public TMP_Text sheetTitle;
     
     public override void Start()
     {
@@ -46,7 +50,7 @@ public class workSheet : workWindow
 
         base.Start();
 
-        chain = emailChains[Random.Range(0, emailChains.Count)];
+        chain = cellPossibilities[Random.Range(0, cellPossibilities.Count)];
 
         chainTitle.text = chain[0];
         SetIncomingText(chain[1]);

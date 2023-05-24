@@ -27,7 +27,7 @@ public class work : MonoBehaviour
         referenceWindows = new List<GameObject>(){docReference, emailReference, slackReference, sheetReference};
 
         screenSpace = GameObject.Find("computerScreen");
-        CreateWindow(emailReference);
+        CreateWindow(sheetReference);
     }
 
     private void OnDisable() {

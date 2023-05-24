@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using TMPro;
 
-public class sheetsCell : MonoBehaviour
+public class sheetsCell : MonoBehaviour, IPointerDownHandler
 {
-    // Start is called before the first frame update
+    private workSheet parentWindow;
+    private TMP_Text cellContent;
+
     void Start()
     {
-        
+        parentWindow = transform.parent.parent.GetComponent<workSheet>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
-        
+        parentWindow.activeCell = this;
     }
 }
