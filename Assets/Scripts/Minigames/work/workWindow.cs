@@ -13,10 +13,11 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
 
     //window parameters
     protected Image imageComponent;
-    protected Color32 defaultWindowColor = new Color32(0, 0, 0, 255);
     protected byte transparentAlpha = 200;
     protected List<Image> images;
     protected List<TMP_Text> texts;
+    protected float timeAfterCompletion = 6f;
+    public bool completedLoad = false;
 
     //window contents
     protected Phrase activePhrase;
@@ -35,7 +36,7 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
         work.activeWindow = this;
     }
 
-    private void FixedUpdate() 
+    protected virtual void FixedUpdate() 
     {
         if(activePhrase != null) 
         {
@@ -141,7 +142,7 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
         GameObject.Destroy(gameObject);
     }
 
-    public void Destroy()
+    public void DestroyWindow()
     {
         GameObject.Destroy(gameObject);
     }

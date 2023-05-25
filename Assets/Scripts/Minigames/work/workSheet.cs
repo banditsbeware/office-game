@@ -7,7 +7,7 @@ using TMPro;
 
 public class workSheet : workWindow
 {
-    private List<string> cellPossibilities = new List<string>()
+    private List<string> phrases = new List<string>()
     {
         "Return On Investment (ROI)",
         "Synergy",
@@ -31,37 +31,65 @@ public class workSheet : workWindow
         "data-driven insight"
     };
     
+    public List<sheetsCell> cells;
+    public List<sheetsCell> cellsWithoutPhrases;
     public sheetsCell activeCell;
+
+    private int phraseCounter = 300;
+    private (int, int) phraseTimingBoundaries = (50, 150);
+    [SerializeField] private int delayPerPhrase = 20;
 
     [SerializeField] private GameObject cellTemplate;
 
     //text objects
-    public TMP_Text textplate;
     public TMP_Text sheetTitle;
+    public TMP_Text textplate;
     
     public override void Start()
-    {
-        StartCoroutine(StartCor());
-    }
+    {   
+        cells = new List<sheetsCell>();
 
-    public IEnumerator StartCor()
-    {
-        SetButtonObject();
+        Transform contentObject = transform.Find("contents");
+        for (int i = 0; i < 30; i++)
+        {
+            GameObject tempCellObject = Instantiate(cellTemplate, contentObject);
+            cells.Add(tempCellObject.GetComponent<sheetsCell>());
+        }
+
+        cellsWithoutPhrases = new List<sheetsCell>();
+        cellsWithoutPhrases.AddRange(cells);
+
+        AddRandPhraseToRandCell();
+        AddRandPhraseToRandCell();
+        AddRandPhraseToRandCell();
 
         base.Start();
+    }
 
-        chain = cellPossibilities[Random.Range(0, cellPossibilities.Count)];
+    protected override void FixedUpdate() 
+    {
+        base.FixedUpdate();
 
-        chainTitle.text = chain[0];
-        SetIncomingText(chain[1]);
-        activePhrase = new Phrase(chain[2], textplate, currentOutgoing.transform, this);
+        if (phraseCounter > 0)
+        {
+            phraseCounter--;
+            return;
+        }
 
-        currentOutgoing.SetActive(false);
+        AddRandPhraseToRandCell();
+        phraseCounter = Random.Range(phraseTimingBoundaries.Item1, phraseTimingBoundaries.Item2) + delayPerPhrase * cellsWithoutPhrases.Count;
+    }
 
-        yield return new WaitForSeconds(timeAfterRecieve);
+    private void AddRandPhraseToRandCell()
+    {
+        Debug.Log("e");
 
-        currentOutgoing.SetActive(true);
-        
+        int phraseIndex = Random.Range(0, phrases.Count - 1);
+        int cellIndex = Random.Range(0, cellsWithoutPhrases.Count - 1);
+
+        sheetsCell c = cellsWithoutPhrases[cellIndex];
+
+        c.cellPhrase = new Phrase(phrases[phraseIndex], textplate, c.transform, this);
     }
 
     public override void Complete()
@@ -69,96 +97,37 @@ public class workSheet : workWindow
         work.windows.Remove(this);
         StartCoroutine(FadeDestroy(timeAfterCompletion));
     }
+
+    public void CellSelected(sheetsCell cell)
+    {
+        foreach(sheetsCell c in cells)
+        {
+            c.Deselect();
+        }
+
+        activeCell = cell;
+        activePhrase = cell.cellPhrase;
+        activeCell.SelectCell();
+    }
     
     public override void InputRecieved(string input)
     {
-        if(!messageComplete) 
-        {
-            activePhrase.CheckInput(input, this);
-        }
+        activePhrase.CheckInput(input, this);
     }
 
     public override void Back()
     {
-        if(!messageComplete) 
-        {
-            activePhrase.Backspace();
-        }
+        activePhrase.Backspace();
     }
 
     public override void Enter()
     {
-        if(!messageComplete) 
-        {
-            activePhrase.CheckInput("\n");
-            return;
-        }
-
-        if (sendReady)
-        {
-            StartCoroutine(SendEmail());
-            sendReady = false;
-        }
+        activePhrase.CheckInput("\n");
     }
 
     public override void PhraseComplete()
     {
-        messageComplete = true;
-        sendReady = true;
-        sendButton.SetActive(true);
-    }
 
-    public IEnumerator SendEmail()
-    {
-        //send action
-        sendButton.SetActive(false);
-        activePhrase.Solifify();
-
-        if (threadNumber == chain.Count)
-        {
-            Complete();
-            yield break;
-        }
-
-        yield return new WaitForSeconds(timeAfterSend);
-
-        //update incoming email
-        currentIncoming = Instantiate(incomingTemplate, contents.transform);
-
-        SetIncomingText(chain[threadNumber]);
-        threadNumber++;
-
-        UpdateColoredObjects();
-        
-        if (threadNumber == chain.Count)
-        {
-            Complete();
-            yield break;
-        }
-        
-
-        yield return new WaitForSeconds(timeAfterRecieve);
-
-        //update next outgoing
-        messageComplete = false;
-        currentOutgoing = Instantiate(outgoingTemplate, contents.transform);
-        activePhrase = new Phrase(chain[threadNumber], textplate, currentOutgoing.transform, this);
-        threadNumber++;
-
-        SetButtonObject();
-
-        UpdateColoredObjects();
-    }
-
-    private void SetIncomingText(string txt)
-    {
-        currentIncoming.transform.Find("emailText").GetComponent<TMP_Text>().text = txt;
-    }
-
-    private void SetButtonObject()
-    {
-        sendButton = currentOutgoing.transform.Find("sendButton").gameObject;
-        sendButton.SetActive(false);
     }
 }
 

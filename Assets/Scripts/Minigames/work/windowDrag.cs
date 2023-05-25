@@ -33,7 +33,7 @@ public class windowDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
         window.SetColorToDefault();
         if (!GameObject.ReferenceEquals(eventData.pointerCurrentRaycast.gameObject, gameObject))
         {
-            window.Destroy();
+            window.DestroyWindow();
         }
     }
 }

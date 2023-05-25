@@ -17,7 +17,7 @@ public class workEmail : workWindow
     private int threadNumber = 3;  //after instantiating title, incoming1, outgoing1, list index is 3
     private float timeAfterSend = 2f;
     private float timeAfterRecieve = 3f;
-    private float timeAfterCompletion = 6f;
+
 
 
 
@@ -57,7 +57,7 @@ public class workEmail : workWindow
         yield return new WaitForSeconds(timeAfterRecieve);
 
         currentOutgoing.SetActive(true);
-        
+        completedLoad = true;
     }
 
     public override void Complete()

@@ -24,8 +24,6 @@ public class workDoc : workWindow
         printButton = transform.Find("sendButton").gameObject;
         printButton.SetActive(false);
 
-        defaultWindowColor = transform.GetComponent<Image>().color;
-
         base.Start();
 
         (string, string) randomDoc = possibleDocs[Random.Range(0, possibleDocs.Count)];

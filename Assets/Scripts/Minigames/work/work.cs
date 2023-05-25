@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
-
+using UnityEditor;
 
 public class work : MonoBehaviour
 {
@@ -24,18 +24,20 @@ public class work : MonoBehaviour
 
     private void OnEnable() 
     {
+        windows.Clear();
+
         referenceWindows = new List<GameObject>(){docReference, emailReference, slackReference, sheetReference};
 
         screenSpace = GameObject.Find("computerScreen");
         CreateWindow(sheetReference);
     }
 
-    private void OnDisable() {
+    private void OnDisable() 
+    {    
         foreach (workWindow window in windows)
         {
-            window.Destroy();
+            window.DestroyWindow();
         }
-        windows.Clear();
     }
 
     void Update()
