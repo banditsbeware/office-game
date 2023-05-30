@@ -9,33 +9,51 @@ using static workWindow;
 public class sheetsCell : MonoBehaviour, IPointerDownHandler
 {
     private workSheet parentWindow;
+    private Image cellImage;
+    public Phrase cellPhrase;
+    public bool complete;
+
     private Color32 defaultColor;
     private Color32 selectedColor;
-    private Image cellImage;
+    [SerializeField] private Color32 completedColor;
 
-    public Phrase cellPhrase;
-
-    void Start()
+    void Awake()
     {
         parentWindow = transform.parent.parent.GetComponent<workSheet>();
 
         cellImage = GetComponent<Image>();
         defaultColor = cellImage.color;
         selectedColor = new Color32((byte) ((int) defaultColor.r - 15), defaultColor.g, defaultColor.b, defaultColor.a);
+        completedColor = new Color32();
     }
 
-    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
-        parentWindow.CellSelected(this);
+        if(!complete) 
+        {
+            parentWindow.CellSelected(this);
+        }
     }
 
     public void Deselect()
     {
         cellImage.color = defaultColor;
+        
+        if(cellPhrase != null) 
+        {
+            cellPhrase.RemoveCursor();
+        }
     }
 
     public void SelectCell()
     {
         cellImage.color = selectedColor;
+    }
+
+    public void cellComplete()
+    {
+        cellPhrase.Solifify();
+        cellImage.color = completedColor;
+        complete = true;
     }
 }

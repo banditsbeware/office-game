@@ -541,8 +541,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1413185462229099357}
-        m_TargetAssemblyTypeName: workDoc, Assembly-CSharp
-        m_MethodName: Complete
+        m_TargetAssemblyTypeName: workWindow, Assembly-CSharp
+        m_MethodName: ExitWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -670,6 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661887248da0809499514dfe83ae8fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  completedLoad: 0
   textplate: {fileID: 8631790168479055110, guid: c42852a7211c45d4ea374f29f1af5070, type: 3}
   titleText: {fileID: 7081528040459031447}
 --- !u!1 &8199899026210106387

@@ -22,6 +22,8 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
     //window contents
     protected Phrase activePhrase;
     protected int cursorFrames = 25;
+    protected string cursorText;
+    protected bool cursorUp;
 
     public virtual void Start() {
         work_ref = transform.parent.parent.GetComponent<work>(); 
@@ -48,15 +50,26 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
     
             cursorFrames = 25;
             string drawnText = activePhrase.cursorText.text;
+
             if (drawnText.Length > 0)
             {
-                if (drawnText[drawnText.Length - 1] == '|')
+                if (cursorUp)
                 {
-                    activePhrase.cursorText.text = drawnText.Remove(drawnText.Length - 1);
+                    activePhrase.RemoveCursor();
+                    cursorUp = false;
                     return;
                 }
             }
+
             activePhrase.cursorText.text += '|';
+
+            if(activePhrase.words.Length >= activePhrase.selectionIndex + 1)   //handles cases of incorrect input
+            {
+                activePhrase.cursorText.text += "<color=#00000000>" + activePhrase.words.Substring(activePhrase.selectionIndex + 1) + "</color>";
+            }
+            
+
+            cursorUp = true;
         }
     }
 
@@ -96,6 +109,12 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
     public abstract void Enter();
 
     public abstract void Complete();
+
+    public void ExitWindow()
+    {
+        work.windows.Remove(this);
+        StartCoroutine(FadeDestroy());
+    }
     
 
     public void OnPointerDown(PointerEventData eventData)
@@ -213,12 +232,12 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
                 typed += c;
                 selectionIndex++;
 
-                if(selectionIndex == charIndex) 
+                if(selectionIndex == charIndex)   //handles all cases of correct input
                 {
                     if (c == nextLetter)
                     {
                         charIndex++;
-                        topText.text = "<color=green>" + typed + "</color>";
+                        topText.text = "<color=green>" + typed + "</color><color=#00000000>" + words.Substring(selectionIndex + 1) + "</color>";
                         UpdateCursorPos();
 
                         if (charIndex == words.Length)
@@ -232,8 +251,18 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
                     }
                 }
                 
-                topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color><color=red><mark=#ff000080>" + typed.Substring(charIndex)
-                + "</mark></color>";
+
+                if(words.Length < selectionIndex + 1)   //handles cases of incorrect input
+                {
+                    topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color><color=red><mark=#ff000080>" + typed.Substring(charIndex)
+                    + "</mark>";
+                }
+                else
+                {
+                    topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color><color=red><mark=#ff000080>" + typed.Substring(charIndex)
+                    + "</mark><color=#00000000>" + words.Substring(selectionIndex + 1) + "</color>";
+                }
+
                 UpdateCursorPos();
             }
         }
@@ -243,6 +272,7 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
             if (cursorText != null)
             {
                 cursorText.text = "<color=#00000000>" + typed + "</color>";
+                parentWindow.cursorUp = false;
             }
         }
 
@@ -259,12 +289,12 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
                     charIndex--;
                     nextLetter = words[charIndex];
 
-                    topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color>";
+                    topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color><color=#00000000>" + words.Substring(selectionIndex + 1) + "</color>";
                     return;
                 }
                 
                 topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color><color=red><mark=#ff000080>" + typed.Substring(charIndex)
-                + "</mark></color>";
+                + "</mark><color=#00000000>" + words.Substring(selectionIndex + 1) + "</color>";
             }
         }
 
@@ -272,6 +302,11 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
         {
             GameObject.Destroy(cursorText.gameObject);
             GameObject.Destroy(topText.gameObject);
+        }
+
+        public void RemoveCursor()
+        {
+            cursorText.text = "<color=#00000000>" + typed + "</color>";
         }
 
         IEnumerator fadeOutText()

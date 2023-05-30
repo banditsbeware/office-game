@@ -20,6 +20,9 @@ public class work : MonoBehaviour
     //windows
     public static List<workWindow> windows = new List<workWindow>();
     public static workWindow activeWindow;
+    private int newWindowCounter = 100;
+    private int windowCounterMinimum = 4000;
+    private int delayPerWindow = 2000;
 
 
     private void OnEnable() 
@@ -56,6 +59,18 @@ public class work : MonoBehaviour
         {
             activeWindow.InputRecieved(Input.inputString);
         }
+    }
+
+    void FixedUpdate()
+    {
+        if (newWindowCounter > 0)
+        {
+            newWindowCounter--;
+            return;
+        }
+
+        CreateRandomWindow();
+        newWindowCounter = windowCounterMinimum + delayPerWindow * windows.Count;
     }
 
     private void CreateWindow(GameObject reference)

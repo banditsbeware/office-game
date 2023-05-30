@@ -475,9 +475,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: workDoc, Assembly-CSharp
-        m_MethodName: Complete
+      - m_Target: {fileID: -9084409318143752807}
+        m_TargetAssemblyTypeName: workWindow, Assembly-CSharp
+        m_MethodName: ExitWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -608,6 +608,7 @@ MonoBehaviour:
   completedLoad: 0
   cells: []
   cellsWithoutPhrases: []
+  openCells: []
   activeCell: {fileID: 0}
   delayPerPhrase: 20
   cellTemplate: {fileID: 6971489856811730428, guid: 692c4e78123d53640bf95de7bb5a058c, type: 3}
