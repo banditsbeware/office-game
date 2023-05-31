@@ -35,7 +35,6 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
         SetColorToDefault();
 
         transform.SetAsLastSibling();
-        work.activeWindow = this;
     }
 
     protected virtual void FixedUpdate() 
@@ -115,8 +114,6 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
         work.windows.Remove(this);
         StartCoroutine(FadeDestroy());
     }
-    
-
     public void OnPointerDown(PointerEventData eventData)
     {
         work.activeWindow = this;
@@ -157,7 +154,7 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
 
             yield return new WaitForSeconds(.2f);
         }
-        
+        work.windows.Remove(this);
         GameObject.Destroy(gameObject);
     }
 
@@ -293,6 +290,12 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
                     return;
                 }
                 
+                if(words.Length < selectionIndex + 1)   //handles cases of incorrect input longer than phrase length
+                {
+                    topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color><color=red><mark=#ff000080>" + typed.Substring(charIndex);
+                    return;
+                }
+
                 topText.text = "<color=green>" + words.Substring(0, charIndex) + "</color><color=red><mark=#ff000080>" + typed.Substring(charIndex)
                 + "</mark><color=#00000000>" + words.Substring(selectionIndex + 1) + "</color>";
             }

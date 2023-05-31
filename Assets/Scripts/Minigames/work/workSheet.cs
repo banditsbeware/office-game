@@ -42,7 +42,7 @@ public class workSheet : workWindow
         "pivot",
         "brand identity",
         "#1 in innovation",
-        "Mobiliza and Optimize",
+        "Mobilize and Optimize",
         "Real-time engagement",
         "cash flow report",
         "quarterly earnings",
@@ -57,7 +57,7 @@ public class workSheet : workWindow
         "pi * omega^2",
         "the integral of 4",
         "68.99",
-        ".04& return",
+        ".04% return",
         "12% APR",
         "tax rebate"
     };
@@ -113,8 +113,9 @@ public class workSheet : workWindow
 
     protected override void FixedUpdate() 
     {
-        if(work.activeWindow = this) 
+        if(work.activeWindow == this) 
         {
+            Debug.Log("e");
             base.FixedUpdate();
     
             if (phraseCounter > 0)

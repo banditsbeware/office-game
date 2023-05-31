@@ -1404,7 +1404,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -600, y: 450}
-  m_SizeDelta: {x: 1200, y: 740}
+  m_SizeDelta: {x: 1190, y: 750}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &298436397
 MonoBehaviour:
@@ -14897,6 +14897,8 @@ MonoBehaviour:
   emailReference: {fileID: 7694365368787871223, guid: 73b8dcee02829aa49ac163fdb54820f7, type: 3}
   slackReference: {fileID: 7694365368787871223, guid: 73b8dcee02829aa49ac163fdb54820f7, type: 3}
   sheetReference: {fileID: 7694365368787871223, guid: 600eebdbd049549cfa0a987b00b26c9a, type: 3}
+  windowXYMin: {x: 0, y: -250}
+  windowXYMax: {x: 450, y: 0}
 --- !u!114 &1890632086 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3825592577010687676, guid: 4f244e494a6f6b640bba525e177ea9db, type: 3}

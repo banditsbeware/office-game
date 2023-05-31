@@ -24,11 +24,12 @@ public class sheetsCell : MonoBehaviour, IPointerDownHandler
         cellImage = GetComponent<Image>();
         defaultColor = cellImage.color;
         selectedColor = new Color32((byte) ((int) defaultColor.r - 15), defaultColor.g, defaultColor.b, defaultColor.a);
-        completedColor = new Color32();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        parentWindow.OnPointerDown(eventData);
+
         if(!complete) 
         {
             parentWindow.CellSelected(this);

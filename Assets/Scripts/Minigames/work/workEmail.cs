@@ -11,7 +11,7 @@ public class workEmail : workWindow
     {
         new List<string>(){"Onboarding event --  bcc. Everyone", "To whom it may concern\n\nEat ass and die\n\nCheers,\nAccounting", "Test\n\nTest", "Test Test my ass\n\n-Acct.", "Literally go die"}
     };
-    private bool messageComplete = false;
+    private bool messageComplete = true;
     private bool sendReady = false;  //neccesary for using enter to call send method
     private List<string> chain;
     private int threadNumber = 3;  //after instantiating title, incoming1, outgoing1, list index is 3
@@ -57,7 +57,7 @@ public class workEmail : workWindow
         yield return new WaitForSeconds(timeAfterRecieve);
 
         currentOutgoing.SetActive(true);
-        completedLoad = true;
+        messageComplete = false;
     }
 
     public override void Complete()
