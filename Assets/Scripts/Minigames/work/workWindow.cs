@@ -111,7 +111,6 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
 
     public void ExitWindow()
     {
-        work.windows.Remove(this);
         StartCoroutine(FadeDestroy());
     }
     public void OnPointerDown(PointerEventData eventData)
@@ -154,12 +153,17 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
 
             yield return new WaitForSeconds(.2f);
         }
-        work.windows.Remove(this);
-        GameObject.Destroy(gameObject);
+        
+        DestroyWindow();
     }
 
     public void DestroyWindow()
     {
+        if(work.windows.Contains(this)) 
+        {
+            work.windows.Remove(this);
+        }
+        
         GameObject.Destroy(gameObject);
     }
 

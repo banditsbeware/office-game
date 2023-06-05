@@ -9,7 +9,6 @@ public class workDoc : workWindow
 {
     private List<(string, string)> possibleDocs = new List<(string, string)>()  // (Doc Title, Contents)
     {
-        ("Test 'em, bad boy", "Test\n\nTest"),
         ("Documents  --  Workplace Ecosystem Draft", "To our beloved shareholders at [insert company name here],\n\nWe are quite thrilled to present our newest innovation in company workplace ecosystem technology. Our teams have been working tirelessly to bring to you only the best, most quality-focused end product on the market today. Among our team's diverse creative potential, we explored collaborative pathways to achieve maximum efficiency in our product workspace, and the desired effect has not gone unnoticed.\n\nThank you for your time,\nWorkplace Innovation Team")    };
 
     private bool docComplete = false;

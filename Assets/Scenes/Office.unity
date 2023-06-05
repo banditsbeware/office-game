@@ -7267,6 +7267,7 @@ GameObject:
   - component: {fileID: 871836201}
   - component: {fileID: 871836197}
   - component: {fileID: 871836196}
+  - component: {fileID: 871836202}
   m_Layer: 5
   m_Name: orange
   m_TagString: Untagged
@@ -7349,6 +7350,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871836194}
   m_CullTransparentMesh: 1
+--- !u!114 &871836202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871836194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 874f873f3668847ecb6cb76b4d381ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &895259983
 GameObject:
   m_ObjectHideFlags: 0
@@ -14899,6 +14912,9 @@ MonoBehaviour:
   sheetReference: {fileID: 7694365368787871223, guid: 600eebdbd049549cfa0a987b00b26c9a, type: 3}
   windowXYMin: {x: 0, y: -250}
   windowXYMax: {x: 450, y: 0}
+  newWindowCounter: 100
+  windowCounterMinimum: 600
+  delayPerWindow: 400
 --- !u!114 &1890632086 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3825592577010687676, guid: 4f244e494a6f6b640bba525e177ea9db, type: 3}

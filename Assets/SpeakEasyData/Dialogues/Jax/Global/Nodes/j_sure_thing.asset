@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: j_unfortunately
+  m_Name: j_sure_thing
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: j_unfortunately
+  <NodeName>k__BackingField: j_sure_thing
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: Unfortuantely we don't offer tap to pay quite yet,
-    small business and all, haha. Do you have another payment option?
+  <DialogueText>k__BackingField: sure thing! I'll grab you one classic dawg
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: df099e3afb762454c96d9a58fa936f9b, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3ec64072bb268594596d13055ce28a7d, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 6.1775775
+  <SpeechTime>k__BackingField: 3.0596597

@@ -22,14 +22,17 @@ public class work : MonoBehaviour
     public static workWindow activeWindow;
     [SerializeField] private Vector2 windowXYMin = new Vector2(0, -250);
     [SerializeField] private Vector2 windowXYMax = new Vector2(450, 0);
-    private int newWindowCounter = 100;
-    private int windowCounterMinimum = 4000;
-    private int delayPerWindow = 2000;
+    private int initalWindowCounter = 150;
+    [SerializeField] private int newWindowCounter;
+    [SerializeField] private int windowCounterMinimum;
+    [SerializeField] private int delayPerWindow;
 
 
     private void OnEnable() 
     {
         windows.Clear();
+
+        newWindowCounter = initalWindowCounter;
 
         referenceWindows = new List<GameObject>(){docReference, emailReference, slackReference, sheetReference};
 
@@ -39,7 +42,10 @@ public class work : MonoBehaviour
 
     private void OnDisable() 
     {    
-        foreach (workWindow window in windows)
+        List<workWindow> windowsToDestroy = new List<workWindow>();
+        windowsToDestroy.AddRange(windows);
+
+        foreach (workWindow window in windowsToDestroy)
         {
             window.DestroyWindow();
         }
@@ -71,8 +77,7 @@ public class work : MonoBehaviour
             return;
         }
 
-        // CreateRandomWindow();
-        CreateWindow(emailReference);
+        CreateRandomWindow();
         newWindowCounter = windowCounterMinimum + delayPerWindow * windows.Count;
     }
 
