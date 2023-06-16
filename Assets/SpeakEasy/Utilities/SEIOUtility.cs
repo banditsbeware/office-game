@@ -237,6 +237,7 @@ namespace SpeakEasy.Utilities
             {
                 SEIfData ifData = new SEIfData()
                 {
+                    Text = ifStatement.Text,
                     contextVariableName = ifStatement.contextVariableName,
                     comparisonSign = ifStatement.comparisonSign,
                     comparisonValue = ifStatement.comparisonValue,

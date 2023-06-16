@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: j_sure_thing
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: sure thing! I'll grab you one classic dawg
+  <DialogueText>k__BackingField: sure thing!
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3ec64072bb268594596d13055ce28a7d, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 3.0596597
+  <SpeechTime>k__BackingField: 1.4428905

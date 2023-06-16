@@ -20,7 +20,7 @@ namespace SpeakEasy.Windows
         private Button saveButton;
         private Button miniMapButton;
 
-        [MenuItem("Window/SpeakEasy/DialogueGraph")]
+        [MenuItem("Window/SpeakEasy")]
         public static void Open()
         {
             Texture icon = AssetDatabase.LoadAssetAtPath<Texture>("Assets/SpeakEasy/Icons/SpeakingIcon.png");

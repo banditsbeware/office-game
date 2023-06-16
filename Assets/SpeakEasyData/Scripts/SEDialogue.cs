@@ -151,9 +151,9 @@ namespace SpeakEasy
             return nextNode;
         }
 
-        internal virtual SENodeSO NextLogicStep(SENodeSO currentNode, int choiceIndex = 0)
+        internal virtual SENodeSO NextLogicStep(int choiceIndex = 0)
         {
-            SENodeSO nextNode = currentNode.IfStatements[choiceIndex].NextDialogue;
+            SENodeSO nextNode = node.IfStatements[choiceIndex].NextDialogue;
 
             return nextNode;
         }
@@ -162,6 +162,34 @@ namespace SpeakEasy
         {
             int choiceIndex = choiceButtons.IndexOf(button);
 
+            if (choiceIndex < node.Choices.Count)
+            {
+                node = NextNode(choiceIndex);
+            }
+            else
+            {
+                node = NextLogicStep(choiceIndex - node.Choices.Count);
+            }
+
+            HideChoices();
+            ClearNPC();
+
+            BeginNode();
+        }
+
+        public virtual void ChoiceMade(string stringInput)
+        {
+            int choiceIndex = 0;
+
+            foreach (SEChoiceData choice in node.Choices)
+            {
+                if (stringInput == choice.Text)
+                {
+                    choiceIndex = node.Choices.IndexOf(choice);
+                    break;
+                }
+            }
+    
             node = NextNode(choiceIndex);
 
             HideChoices();
@@ -261,12 +289,12 @@ namespace SpeakEasy
             {
                 if (i == node.IfStatements.Count - 1) //don't send the else statement thru Meta.isIfStatementTrue
                 {
-                    node = NextLogicStep(node, i);
+                    node = NextLogicStep(i);
                     break;
                 }
                 if (Meta.isIfStatementTrue(node.IfStatements[i]))
                 {
-                    node = NextLogicStep(node, i);
+                    node = NextLogicStep(i);
                     break;
                 }
             }
@@ -313,6 +341,16 @@ namespace SpeakEasy
             {
                 choiceButtons[i].SetActive(true);
                 choiceButtons[i].GetComponentInChildren<TMP_Text>().text = node.Choices[i].Text;  
+            }
+
+            int numberOfDependentChoices = node.IfStatements.Count;
+            for (int i = 0; i < numberOfDependentChoices; i++)
+            {
+                if(Meta.isIfStatementTrue(node.IfStatements[i])) 
+                {
+                    choiceButtons[i + numberOfChoices].SetActive(true);
+                    choiceButtons[i + numberOfChoices].GetComponentInChildren<TMP_Text>().text = node.IfStatements[i].Text;
+                }  
             }
         }
 

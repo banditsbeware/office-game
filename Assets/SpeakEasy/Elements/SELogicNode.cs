@@ -15,8 +15,6 @@ namespace SpeakEasy.Elements
     //node used for testing values in meta. changes dialogue based on game state
     public class SELogicNode : SENode
     {
-        List<string> comparisons = new List<string>(){"==", "!=", "<", ">", "<=", ">="};
-
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
             base.Initialize(seGraphView, position, nodeName, isPlayer);

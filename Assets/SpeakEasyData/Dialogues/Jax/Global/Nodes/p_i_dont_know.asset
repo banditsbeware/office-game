@@ -23,5 +23,8 @@ MonoBehaviour:
   - <callbackVariableName>k__BackingField: dTotal
     <callbackAction>k__BackingField: Increment
     <callbackValue>k__BackingField: 2.5
+  - <callbackVariableName>k__BackingField: dChosenItem
+    <callbackAction>k__BackingField: SetValue
+    <callbackValue>k__BackingField: classic
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.7765307
+  <SpeechTime>k__BackingField: 2.3863826

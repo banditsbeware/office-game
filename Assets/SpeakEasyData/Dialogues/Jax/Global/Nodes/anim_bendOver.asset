@@ -17,7 +17,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: bendOver
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5ee9152abfb34a646a0ee6f060ad0f6e, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 9

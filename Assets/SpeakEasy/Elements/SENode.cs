@@ -17,6 +17,7 @@ namespace SpeakEasy.Elements
     public class SENode : Node
     {
         private static List<string> callbackActions = new List<string>(){"SetValue", "Increment", "Decrement"};   //used to draw callbacks
+        protected List<string> comparisons = new List<string>(){"==", "!=", "<", ">", "<=", ">="};   //used in logic comparisons (If nodes, MultiChoice Dependent Ports)
 
         public string ID {get; set;}  //unique ID
         public string NodeName {get; set;}   //node title, used for playing audio/identifying

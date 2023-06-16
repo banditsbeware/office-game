@@ -12,6 +12,6 @@ namespace SpeakEasy.Enumerations
         WeightedRandom,
         Delay,
         Connector,
-        Animate
+        Animate,
     }
 } 

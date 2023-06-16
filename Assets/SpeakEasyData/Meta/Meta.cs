@@ -45,6 +45,7 @@ public static class Meta
         SetValue("alGaveAlcohol", false, Daily);
         SetValue("alGaveCigs", false, Daily);
         SetValue("dVisits", 0, Daily);
+        SetValue("dChosenItem", "Hot Dog", Daily);
         SetValue("dTotal", 0, Daily);
 
     }

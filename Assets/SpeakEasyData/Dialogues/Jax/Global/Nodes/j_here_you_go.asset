@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: untime
+  m_Name: j_here_you_go
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: untime
-  <IsPlayer>k__BackingField: 1
-  <DialogueText>k__BackingField: this dhit whack
+  <NodeName>k__BackingField: j_here_you_go
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 'here you go! '
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a5af4ea1cb9b1fc4db5057ac0b71e6ea, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 0.99052155
+  <SpeechTime>k__BackingField: 1.6112067

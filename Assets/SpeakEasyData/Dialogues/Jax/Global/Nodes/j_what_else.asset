@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: j_loyalty
+  m_Name: j_what_else
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: j_loyalty
+  <NodeName>k__BackingField: j_what_else
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: And did you happen to have a loyalty phone number
-    with us sir?
+  <DialogueText>k__BackingField: Sure, what else can I get for you today?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 55f852be9c45da94aa605c48b8fa752f, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 4.040449
+  <SpeechTime>k__BackingField: 2.88087

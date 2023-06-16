@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: j_amazing
+  m_Name: j_incredible
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: j_amazing
+  <NodeName>k__BackingField: j_incredible
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: Amazing! We offer both a smol fry and our gourmet
-    loaded fry, named after local fry legend, Big Hoss. Which would you prefer?
+  <DialogueText>k__BackingField: Incredible!
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9b46304e41e436b4e9b159f201828677, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: fedb15a7faeab994f930c5ddf3e1b4f4, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 6.4837823
+  <SpeechTime>k__BackingField: 0.68343204
