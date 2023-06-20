@@ -35,6 +35,7 @@ public static class Meta
 
     public static void SetDaily()
     {
+        SetValue("afterWork", false, Daily);
         SetValue("waRepeatedChoice", 0, Daily);
         SetValue("bVisits", 0, Daily);
         SetValue("bEggAttempt", 0, Daily);
@@ -44,7 +45,9 @@ public static class Meta
         SetValue("alVisits", 0, Daily);
         SetValue("alGaveAlcohol", false, Daily);
         SetValue("alGaveCigs", false, Daily);
-        SetValue("dVisits", 0, Daily);
+        SetValue("dJaxVisits", 0, Daily);
+        SetValue("dPatVisits", 0, Daily);
+        SetValue("dOrderedItem", 0, Daily);
         SetValue("dChosenItem", "Hot Dog", Daily);
         SetValue("dTotal", 0, Daily);
 

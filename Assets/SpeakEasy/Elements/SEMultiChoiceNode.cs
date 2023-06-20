@@ -89,12 +89,11 @@ namespace SpeakEasy.Elements
 
         public Port CreateDependentPort(object userData)
         {
-            Port choicePort = this.CreatePort();
+            Port ifPort = this.CreatePort();
 
-            SEIfSaveData ifData = new SEIfSaveData();
-            
-            ifData = (SEIfSaveData) userData;
-            choicePort.userData = ifData;  //storing save data about the if statement in the Port's userData
+            ifPort.userData = userData;  //storing save data about the if statement in the Port's userData
+
+            SEIfSaveData ifData = (SEIfSaveData) userData;
 
             int contextVariableIndex = Meta.GetVaraibleKeys().IndexOf(ifData.contextVariableName);
             int comparisonIndex = comparisons.IndexOf(ifData.comparisonSign);
@@ -107,17 +106,17 @@ namespace SpeakEasy.Elements
                     return;
                 }
 
-                if (choicePort.connected)
+                if (ifPort.connected)
                 {
-                    graphView.DeleteElements(choicePort.connections);
+                    graphView.DeleteElements(ifPort.connections);
                 }
 
                 IfStatements.Remove(ifData);
-                graphView.RemoveElement(choicePort);
+                graphView.RemoveElement(ifPort);
             });
             deletePortButton.AddToClassList("se-node__button");
 
-             TextField choiceTextField = SEElementUtility.CreateTextField(ifData.Text, null, callback =>
+            TextField choiceTextField = SEElementUtility.CreateTextField(ifData.Text, null, callback =>
             {
                 ifData.Text = callback.newValue;
             });
@@ -128,7 +127,7 @@ namespace SpeakEasy.Elements
                 "se-node__text-field__hidden"
             );
 
-            choicePort.Add(choiceTextField);
+            ifPort.Add(choiceTextField);
 
             PopupField<string> contextVariables = SEElementUtility.CreatePopupField(Meta.GetVaraibleKeys(), contextVariableIndex);
             contextVariables.RegisterValueChangedCallback(evt => 
@@ -154,7 +153,7 @@ namespace SpeakEasy.Elements
                 });
                 comparisonVariablePopup.contentContainer.AddToClassList("se-node__context-popup-field");
 
-                choicePort.Add(comparisonVariablePopup);
+                ifPort.Add(comparisonVariablePopup);
                 
             }
             else
@@ -169,18 +168,18 @@ namespace SpeakEasy.Elements
                     "se-node__text-field__hidden"
                 );
 
-                choicePort.Add(comparisonTextField);
+                ifPort.Add(comparisonTextField);
             }
 
             contextVariables.contentContainer.AddToClassList("se-node__context-popup-field");
             comparisonSigns.contentContainer.AddToClassList("se-node__symbol-popup-field");
 
-            choicePort.Add(comparisonSigns);
-            choicePort.Add(contextVariables);
+            ifPort.Add(comparisonSigns);
+            ifPort.Add(contextVariables);
 
-            choicePort.Add(deletePortButton);
+            ifPort.Add(deletePortButton);
 
-            return choicePort;
+            return ifPort;
         }
     }
 }

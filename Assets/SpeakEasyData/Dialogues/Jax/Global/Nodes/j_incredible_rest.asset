@@ -17,8 +17,8 @@ MonoBehaviour:
   <DialogueText>k__BackingField: alrighty, have an incredible rest of your day, okay?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1456b0b8181a04debbdf915e24dbf8a9, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.6644423
+  <SpeechTime>k__BackingField: 2.6175249

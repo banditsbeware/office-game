@@ -347,6 +347,7 @@ namespace SpeakEasy.Utilities
             {
                 SEIfSaveData choiceData = new SEIfSaveData()
                 {
+                    Text = ifStatement.Text,
                     NodeID = ifStatement.NodeID,
                     contextVariableName = ifStatement.contextVariableName,
                     comparisonSign = ifStatement.comparisonSign,

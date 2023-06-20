@@ -19,9 +19,6 @@ MonoBehaviour:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 01f8e87b349cc454b80ba1ca525d789f, type: 2}
   <IfStatements>k__BackingField: []
-  <Callbacks>k__BackingField:
-  - <callbackVariableName>k__BackingField: dVisits
-    <callbackAction>k__BackingField: Increment
-    <callbackValue>k__BackingField: 1
+  <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 0.49810874
+  <SpeechTime>k__BackingField: 0.99457395
