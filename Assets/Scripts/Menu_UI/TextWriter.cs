@@ -6,96 +6,97 @@ using UnityEngine.UI;
 using TMPro;
 
 //this is direct from this tutorial: https://www.youtube.com/watch?v=ZVh4nH8Mayg
-public class TextWriter : MonoBehaviour
-{
-    private static TextWriter instance;
-    private List<TextWriterSingle> writerList;
+public class TextWriter : MonoBehaviour {
 
-    private void Awake()
+    private static TextWriter       instance;
+    private List<TextWriterSingle>  writerList;
+
+    private void Awake() 
     {
         instance = this;
         writerList = new List<TextWriterSingle>();
     }
 
-    public static void AddWriter_Static(TMP_Text uiText, string text, float time)
+    /// AddWriter
+    /// Creates a new TextWriterSingle
+    public static void AddWriter(TMP_Text   uiText
+                                ,string     text
+                                ,float      dt=0.05f
+                                ,bool       invis=true) 
     {
-        instance?.AddWriter(uiText, text, time);
+        instance._AddWriter(uiText, text, dt, invis);
     }
 
-    public static void AddWriter_Static(TMP_Text uiText, string text)
+    private void _AddWriter(TMP_Text    uiText
+                           ,string      text
+                           ,float       dt=0.05f 
+                           ,bool        invis=true) 
     {
-        instance?.AddWriter(uiText, text);
+        writerList.Add(new TextWriterSingle(uiText, text, dt, invis));
     }
 
-    public void AddWriter(TMP_Text uiText, string text, float time)
+    private void Update() 
     {
-        writerList.Add(new TextWriterSingle(uiText, text, time));
-    }
+        // iterate over writerList each frame
+        for (int i = 0; i < writerList.Count; i++) {
 
-    public void AddWriter(TMP_Text uiText, string text)
-    {
-        writerList.Add(new TextWriterSingle(uiText, text));
-    }
-
-    private void Update() {
-        for (int i = 0; i < writerList.Count; i++)
-        {
+            // true if the writer is finished printing its text
             bool destroyInstance = writerList[i].Update();
-            if (destroyInstance)
-            {
+
+            if (destroyInstance) {
                 writerList.RemoveAt(i);
                 i--;
             }
         }
     }
 
-    public class TextWriterSingle 
+    private class TextWriterSingle 
     {
-        private TMP_Text uiText;
-        public string textToWrite;
-        private int charIndex;
-        private float timePerChar;
-        private float timer;
-        bool invisChars;
+        private TMP_Text    uiText;
+        private string      currentText;
+        private string      text;
+        private float       dt;
+        private bool        invis;
+        private int         charIndex;
+        private float       timer;
 
-        public TextWriterSingle(TMP_Text uiText, string text, float time)
+        public TextWriterSingle(TMP_Text    _uiText
+                               ,string      _text
+                               ,float       _dt=0.05f
+                               ,bool        _invis=true)
         {
-            this.uiText = uiText;
-            textToWrite = text;
-            timePerChar = time;
-            invisChars = true;
-            charIndex = 0;
-            timer = -.1f; 
+            uiText      = _uiText;
+            text        = _text;
+            dt          = _dt;
+            invis       = _invis;
+            charIndex   = 0;
+            timer       = -.1f; 
         }
         
-        public TextWriterSingle(TMP_Text uiText, string text)
-        {
-            this.uiText = uiText;
-            textToWrite = text;
-            timePerChar = .05f;
-            invisChars = true;
-            charIndex = 0;    
-            timer = 0f;   
-        }
-        
-        //return true on isComplete
+        // Return true when finished writing text
         public bool Update()
         {
+            // Time.deltaTime gives the time between frames, i.e. the time
+            // since the last call to Update, so use a while loop to account
+            // for any characters that "should" have been printed in case
+            // of a slow frame rate.
             timer -= Time.deltaTime;
             while (timer <= 0f)
             {
-                //display next char
-                timer += timePerChar;
+                timer += dt;
                 charIndex++;
-                string text = textToWrite.Substring(0, charIndex);
-                if (invisChars)
-                {
-                    text += " <alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
-                }
 
-                uiText.text = text;
+                // The visible portion of text
+                currentText = text.Substring(0, charIndex);
 
-                if (charIndex >= textToWrite.Length)
+                // Add the rest of text with zero alpha so that the length
+                // of the text in the UI is constant throughout printing
+                if (invis) currentText += "<alpha=#00>" + text.Substring(charIndex) + "</alpha>";
+
+                // Write text to the UI element
+                uiText.text = currentText;
+
+                if (charIndex >= text.Length)
                 {
                     uiText = null;
                     return true;

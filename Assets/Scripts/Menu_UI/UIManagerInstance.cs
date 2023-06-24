@@ -17,21 +17,21 @@ public class UIManagerInstance : MonoBehaviour
 		UIManager.notifs = GameObject.FindGameObjectsWithTag("notif");
 		UIManager.minigames = GameObject.FindGameObjectsWithTag("minigame");
 
-		UIManager.hide(UIManager.pauseObjects);
-		UIManager.hide(UIManager.notifs);
-		UIManager.hide(UIManager.minigames);
+		UIManager.Hide(UIManager.pauseObjects);
+		UIManager.Hide(UIManager.notifs);
+		UIManager.Hide(UIManager.minigames);
 	}
 
 	void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-				UIManager.pauseControl();
+			UIManager.PauseControl();
 		}
 	}
 
-	public void PauseControl()
-	{
-		UIManager.pauseControl();
-	}
+//	public void PauseControl()
+//	{
+//		UIManager.PauseControl();
+//	}
 }

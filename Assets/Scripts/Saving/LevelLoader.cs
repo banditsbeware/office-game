@@ -31,8 +31,8 @@ public class LevelLoader : MonoBehaviour
         if(Meta.Global["currentScene"] != "MainMenu") 
         {
             Time.timeScale = 1;
-			UIManager.hide(UIManager.pauseObjects);
-			UIManager.gameState = "play";
+			UIManager.Hide(UIManager.pauseObjects);
+			UIManager.gameState = UIManager.state.PLAY;
         }
 
         yield return new WaitForSeconds(transitionTime);

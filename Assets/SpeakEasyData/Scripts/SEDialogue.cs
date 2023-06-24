@@ -119,7 +119,7 @@ namespace SpeakEasy
                     break;
 
                 case Exit:
-                    UIManager.gameState = "play";
+                    UIManager.gameState = UIManager.state.PLAY;
                     transform.parent.parent.gameObject.SetActive(false);
                     break;
 
@@ -225,7 +225,7 @@ namespace SpeakEasy
 
         internal virtual IEnumerator PlayerSpeak()
         {
-            TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText);
+            TextWriter.AddWriter(playerSpeechText, node.DialogueText);
             playerBubbleImage.sprite = playerBubbleSprite;
 
             AkSoundEngine.PostEvent("Play_Player", gameObject);
@@ -261,7 +261,7 @@ namespace SpeakEasy
                 AkSoundEngine.PostEvent($"Play_{node.NodeName}", gameObject);
             }
 
-            TextWriter.AddWriter_Static(npcSpeechText, node.DialogueText);
+            TextWriter.AddWriter(npcSpeechText, node.DialogueText);
 
             yield return new WaitForSeconds(node.SpeechTime);
 

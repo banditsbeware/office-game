@@ -947,7 +947,7 @@ PrefabInstance:
       objectReference: {fileID: 1479889299}
     - target: {fileID: 5633993762556738237, guid: e8494f0ef75489b4597ae9ee4eca38b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: pauseControl
+      value: PauseControl
       objectReference: {fileID: 0}
     - target: {fileID: 5633993762942770618, guid: e8494f0ef75489b4597ae9ee4eca38b7, type: 3}
       propertyPath: m_Name

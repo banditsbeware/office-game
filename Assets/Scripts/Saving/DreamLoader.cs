@@ -47,12 +47,12 @@ public class DreamLoader : LevelLoader
         AkSoundEngine.PostEvent("Fade_All", gameObject);
 
         Time.timeScale = 1;
-        UIManager.hide(UIManager.pauseObjects);
+        UIManager.Hide(UIManager.pauseObjects);
 
         yield return new WaitForSeconds(transitionTime);
 
         Meta.Global["currentScene"] = levelName;
-        UIManager.gameState = "play";
+        UIManager.gameState = UIManager.state.PLAY;
 
         SceneManager.LoadScene(levelName);
     }

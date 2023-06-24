@@ -17,7 +17,7 @@ public class menuOption : MonoBehaviour, ISelectHandler, IPointerEnterHandler
         if (submenus.Length == 0)
         {
             submenus = GameObject.FindGameObjectsWithTag("submenu");
-            UIManager.hide(submenus);
+            UIManager.Hide(submenus);
         }
 
         saveLoad = GameObject.Find("LevelLoader").GetComponent<SaveLoadSystem>();
@@ -26,7 +26,7 @@ public class menuOption : MonoBehaviour, ISelectHandler, IPointerEnterHandler
 
     public void enableSubmenu()
     {
-        UIManager.hide(submenus);
+        UIManager.Hide(submenus);
         submenu.SetActive(true);
     }
 

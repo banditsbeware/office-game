@@ -63,7 +63,7 @@ public class MoveHim : MonoBehaviour {
         toupee.SetBool("moving", false);
       }
       //if playing, change the position of the regidbody
-      if ((velocity.magnitude != 0) && (UIManager.gameState == "play")) 
+      if ((velocity.magnitude != 0) && (UIManager.gameState == UIManager.state.PLAY)) 
       {
         rb.AddForce(velocity/velocity.magnitude * speed);
         toupee.SetBool("moving", true);
