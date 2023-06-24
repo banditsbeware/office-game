@@ -13,7 +13,7 @@ public class interact : MonoBehaviour
         if (other.tag == "Player") 
         {
             //changes popup text and shows popup notification in UIManager
-            UIManager.notify(eMessage);
+            UIManager.Notify(eMessage);
             isInteractable = true;
         }
     }
@@ -22,7 +22,7 @@ public class interact : MonoBehaviour
         if (other.tag == "Player") 
         {
             //hides popup notification in UIManager
-            UIManager.denoitfy();
+            UIManager.Denotify();
             isInteractable = false;
         }
     }

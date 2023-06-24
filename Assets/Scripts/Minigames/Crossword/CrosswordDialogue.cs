@@ -98,27 +98,27 @@ namespace SpeakEasy
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
         internal override void OnEnable() 
         {
-          if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
-          {
-              AkSoundEngine.SetState("room", "officeMinigame");
-          }
+            if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
+            {
+                AkSoundEngine.SetState("room", "officeMinigame");
+            }
 
-          npcSpeechText.text = "";
-          playerSpeechText.text = "";
+            npcSpeechText.text = "";
+            playerSpeechText.text = "";
 
-          npcBubbleImage.sprite = emptySprite;
-          playerBubbleImage.sprite = emptySprite;
+            npcBubbleImage.sprite = emptySprite;
+            playerBubbleImage.sprite = emptySprite;
 
-          avalibleWords = new List<Word>();
+            avalibleWords = new List<Word>();
 
-          node = entryNode;
+            node = entryNode;
 
-          if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
-          {
-              node = NextNode();
-              DoGrid();
-              BeginNode();
-          }
+            if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
+            {
+                node = NextNode();
+                DoGrid();
+                BeginNode();
+            }
             
         }
 
@@ -168,7 +168,7 @@ namespace SpeakEasy
                     break;
 
                 case Exit:
-                    UIManager.gameState = "play";
+                    UIManager.gameState = UIManager.state.PLAY;
                     transform.parent.gameObject.SetActive(false);
                     break;
 
@@ -204,7 +204,8 @@ namespace SpeakEasy
     
         internal override IEnumerator PlayerSpeak()
         {
-            TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText.Split("\n")[0]); //first half of text box, excludes post it description
+            //first half of text box, excludes post it description
+            TextWriter.AddWriter(playerSpeechText, node.DialogueText.Split("\n")[0]); 
             playerBubbleImage.sprite = playerBubbleSprite;
 
             AkSoundEngine.PostEvent("Play_Player", gameObject);
@@ -222,8 +223,8 @@ namespace SpeakEasy
 
             if (wordRepeated)
             {
-              wordRepeated = false;
-              node = repeatWordNode;
+                wordRepeated = false;
+                node = repeatWordNode;
             }
 
             node = NextNode();

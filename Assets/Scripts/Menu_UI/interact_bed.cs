@@ -21,17 +21,16 @@ public class interact_bed : interact_door
     {
         if (isInteractable)
         {
-            if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == "play")
+            if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == UIManager.state.PLAY)
             {
                 //work out functionality about deciding which dream to choose
 
                 Meta.Global["day"] += 1;
-                UIManager.denoitfy();
-                UIManager.gameState = "window";
+                UIManager.Denotify();
+                UIManager.gameState = UIManager.state.WINDOW;
                 dreamer.LoadDream(scene, bedsidePosition, sleepPosition);
             }
         }
-
     }
 
     public override void OnTriggerEnter2D(Collider2D other)

@@ -8,80 +8,93 @@ public static class UIManager
 {
 	public static UIManagerInstance instance;
 
-  [HideInInspector] public static GameObject[] pauseObjects; //Objects in Pause menu
+	[HideInInspector] public static GameObject[] pauseObjects; //Objects in Pause menu
 	[HideInInspector] public static GameObject[] notifs; //any UI popups not part of pause menu
 
 	//minigames are all made in UI, I'm so sorry
 	[HideInInspector] public static GameObject[] minigames; 
 
-	// gamestates are: pause, play, window
-	public static string gameState = "play";
+	public enum state {
+		PAUSE,
+		PLAY,
+		WINDOW
+	}
+
+	// Global game state
+	public static state gameState = state.PLAY;
 
 	// reloads current scene index (in Build Management)
 	public static void Reload(){
 	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
-	public static void pauseControl()
+	// PauseControl is called from UIManagerInstance to handle game state
+	// logic when the player presses the escape key.
+	public static void PauseControl()
 	{
-		if (gameState == "play") //when esc is it while playing
+		// Escape pressed while in PLAY state
+		if (gameState == state.PLAY)
 		{
 			Time.timeScale = 0;
-			show(pauseObjects);
-			gameState = "pause";
+			Show(pauseObjects);
+			gameState = state.PAUSE;
 		} 
-		else if (gameState == "pause") //when resume or esc are hit in pause menu
+		// Escape pressed while in PAUSE state
+		else if (gameState == state.PAUSE) 
 		{
 			Time.timeScale = 1;
-			hide(pauseObjects);
-			gameState = "play";
+			Hide(pauseObjects);
+			gameState = state.PLAY;
 		}
-		else if (gameState == "window") // exit from minigame
+		// Escape pressed while in WINDOW state (minigames, ...?)
+		else if (gameState == state.WINDOW) 
 		{
-			hide(minigames);
-			gameState = "play";
+			Hide(minigames);
+			gameState = state.PLAY;
 		}
 	}
 
-	//  shows objects with tag
-	public static void show(GameObject[] tagg){
-		foreach(GameObject g in tagg)
-		{
-			show(g);
-		}
+	// Shows a list of GameObjects
+	public static void Show(GameObject[] objList)
+	{
+		foreach(GameObject g in objList) Show(g);
 	}
 
-	public static void show(GameObject obj){
-			obj.SetActive(true);
+	// Shows a GameObject
+	public static void Show(GameObject obj)
+	{
+		obj.SetActive(true);
 	}
 
-	// hides objects with tag
-	public static void hide(GameObject[] tagg){
-		foreach(GameObject g in tagg)
-		{
-			hide(g);
-		}
+	// Hides a list of GameObjects
+	public static void Hide(GameObject[] objList)
+	{
+		foreach(GameObject g in objList) Hide(g);
 	}
 
-	public static void hide(GameObject obj){
-			obj.SetActive(false);
+	// Hides a GameObject
+	public static void Hide(GameObject obj)
+	{
+		obj.SetActive(false);
 	}
 	
-	// changes text in popup notification
-	public static void notify(string popup){
+	// Changes text in popup notification and shows all notifs
+	public static void Notify(string popup)
+	{
 		instance.canvasText.text = popup;
-		show(notifs);
+		Show(notifs);
 	}
 
-	public static void denoitfy()
+	// Hide all notifs
+	public static void Denotify()
 	{
-		hide(notifs);
+		Hide(notifs);
 	}
 
 	public static Vector3 mouseLocation()
     {
-			Vector3 screenPoint = Input.mousePosition;
-			screenPoint.z = -Camera.main.transform.position.z; //distance of the plane from the camera
-			return Camera.main.ScreenToWorldPoint(screenPoint); 
+		Vector3 screenPoint = Input.mousePosition;
+		screenPoint.z = -Camera.main.transform.position.z; //distance of the plane from the camera
+		return Camera.main.ScreenToWorldPoint(screenPoint); 
     }
 }

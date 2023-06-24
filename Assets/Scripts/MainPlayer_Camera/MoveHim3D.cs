@@ -52,7 +52,7 @@ public class MoveHim3D : MonoBehaviour {
         toupee.SetBool("moving", false);
       }
       //if playing, change the position of the regidbody
-      if ((v.magnitude != 0) && (UIManager.gameState == "play")) 
+      if ((v.magnitude != 0) && (UIManager.gameState == UIManager.state.PLAY)) 
       {
         rb.AddForce(v/v.magnitude * speed);
         toupee.SetBool("moving", true);

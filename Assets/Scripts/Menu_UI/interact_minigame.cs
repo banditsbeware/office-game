@@ -9,11 +9,11 @@ public class interact_minigame : interact
     {
         if (isInteractable)
         {
-            if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == "play")
+            if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == UIManager.state.PLAY)
             {
-                UIManager.denoitfy();
-                UIManager.gameState = "window";
-                UIManager.show(theGame);
+                UIManager.Denotify();
+                UIManager.gameState = UIManager.state.WINDOW;
+                UIManager.Show(theGame);
             }
         }
 
