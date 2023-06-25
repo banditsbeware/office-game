@@ -12,7 +12,8 @@ namespace SpeakEasy
     using static Enumerations.SENodeType;
     using Data;
     using Data.Save;
-  
+  using UnityEngine.EventSystems;
+
 
   //The Class you place on a Dialogue Handler to operate in Game
   public class SEDialogue : MonoBehaviour
@@ -40,14 +41,16 @@ namespace SpeakEasy
 
         [SerializeField] private List<GameObject> choiceButtons;
 
-        internal Coroutine speakingCoroutine;
-
         [HideInInspector] internal Image playerBubbleImage;
         [HideInInspector] internal Image npcBubbleImage;
 
         [HideInInspector] internal Sprite playerBubbleSprite;
         [HideInInspector] internal Sprite npcBubbleSprite;
         [HideInInspector] internal Sprite emptySprite;
+
+        //Speaker tracking
+        internal Coroutine speakingCoroutine;
+        internal uint activeWwiseEvent;
 
         internal virtual void Awake() 
         {
@@ -64,7 +67,7 @@ namespace SpeakEasy
         }
 
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
-        internal virtual void OnEnable() 
+        internal virtual void BeginDialogue()
         {
             playerSpeechText.text = "";
             playerBubbleImage.sprite = emptySprite;
@@ -77,14 +80,6 @@ namespace SpeakEasy
 
             BeginNode();
         }
-
-        // private void Update() 
-        // {
-        //     if (Input.GetKeyDown(KeyCode.P))
-        //     {
-        //         Debug.Log(Meta.Dailies["bodega_bought_cigs"]);
-        //     }
-        // }
 
         #region Event Handling
 
@@ -141,6 +136,14 @@ namespace SpeakEasy
                     Debug.Log("Whoops, this node shouldn't exist!");
                     break;
             } 
+        }
+
+        internal virtual void OnDisable() 
+        {
+            if (SomeoneIsSpeaking())
+            {
+                AkSoundEngine.StopPlayingID(activeWwiseEvent);
+            }
         }
 
 
@@ -210,9 +213,20 @@ namespace SpeakEasy
                         Meta.SetValue(callback.callbackVariableName, callback.callbackValue, blackboard);
                         break;
                     case "Increment":
+                        if (blackboard[callback.callbackVariableName] is float)
+                        {
+                            blackboard[callback.callbackVariableName] += float.Parse(callback.callbackValue);
+                            break;
+                        }
+
                         blackboard[callback.callbackVariableName] += int.Parse(callback.callbackValue);
                         break;
                     case "Decrement":
+                        if (blackboard[callback.callbackVariableName] is float)
+                        {
+                            blackboard[callback.callbackVariableName] -= float.Parse(callback.callbackValue);
+                            break;
+                        }
                         blackboard[callback.callbackVariableName] -= int.Parse(callback.callbackValue);
                         break;
                 }
@@ -228,7 +242,7 @@ namespace SpeakEasy
             TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText);
             playerBubbleImage.sprite = playerBubbleSprite;
 
-            AkSoundEngine.PostEvent("Play_Player", gameObject);
+            activeWwiseEvent = AkSoundEngine.PostEvent("Play_Player", gameObject);
 
             yield return new WaitForSeconds(node.SpeechTime);
 
@@ -258,7 +272,7 @@ namespace SpeakEasy
             }
             else
             {
-                AkSoundEngine.PostEvent($"Play_{node.NodeName}", gameObject);
+                activeWwiseEvent = AkSoundEngine.PostEvent($"Play_{node.NodeName}", gameObject);
             }
 
             TextWriter.AddWriter_Static(npcSpeechText, node.DialogueText);
@@ -277,6 +291,9 @@ namespace SpeakEasy
             npcAnimator.SetTrigger(node.DialogueText);
 
             yield return new WaitForSeconds(node.SpeechTime);
+
+            node = NextNode();
+            BeginNode();
         }
 
         #endregion
@@ -356,6 +373,8 @@ namespace SpeakEasy
 
         private void HideChoices()
         {
+            EventSystem.current.SetSelectedGameObject(null);
+
             foreach (GameObject button in choiceButtons)
             {
                 button.SetActive(false);

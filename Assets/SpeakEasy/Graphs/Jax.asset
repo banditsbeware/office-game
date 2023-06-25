@@ -139,19 +139,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 4749, y: -474}
-  - <ID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
-    <Name>k__BackingField: anim_bendOver
-    <Text>k__BackingField: bendOver
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c999e17f-3cc2-4b56-bbf0-b1c01fab4bac
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 3561, y: -414}
   - <ID>k__BackingField: 2d748394-2839-44c0-80c3-26f1ba9e1067
     <Name>k__BackingField: j_does_the_total
     <Text>k__BackingField: If the total on the screen looks alright, you can go a
@@ -286,7 +273,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 6827.5, y: -474}
+    <Position>k__BackingField: {x: 6828, y: -474}
   - <ID>k__BackingField: 08d5cdb4-5031-4605-8ed3-57dcff7160a7
     <Name>k__BackingField: p_classic
     <Text>k__BackingField: how about the classic dog
@@ -431,7 +418,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2132, y: 113.5}
+    <Position>k__BackingField: {x: 2132, y: 114}
   - <ID>k__BackingField: 78f49197-6c1f-4d14-af7b-41cc4ec9e8d6
     <Name>k__BackingField: p_small
     <Text>k__BackingField: sure, just a small fries
@@ -496,7 +483,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3247, y: -241.5}
+    <Position>k__BackingField: {x: 3247, y: -241}
   - <ID>k__BackingField: 9b7e56b0-076d-4833-ab70-6a188d334c13
     <Name>k__BackingField: j_we_dont_do
     <Text>k__BackingField: Well, we don't do smalls here, but I can offer you one
@@ -580,7 +567,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 5716, y: -700.5}
+    <Position>k__BackingField: {x: 5716, y: -700}
   - <ID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
     <Name>k__BackingField: _exit_main
     <Text>k__BackingField: 
@@ -591,7 +578,20 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
-    <Position>k__BackingField: {x: 7172.5, y: -474}
+    <Position>k__BackingField: {x: 7173, y: -474}
+  - <ID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
+    <Name>k__BackingField: anim_bendOver
+    <Text>k__BackingField: bendOver
+    <SpeechTime>k__BackingField: 3
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c999e17f-3cc2-4b56-bbf0-b1c01fab4bac
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 3561, y: -414}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - food_choice
@@ -602,7 +602,6 @@ MonoBehaviour:
   - j_here_you_go
   - j_was_that_all
   - p_yep
-  - anim_bendOver
   - j_does_the_total
   - p_not_quite
   - j_incredible
@@ -633,5 +632,6 @@ MonoBehaviour:
   - _exit
   - anim_pay
   - _exit_main
+  - anim_bendOver
   <OldGroupedNames>k__BackingField:
     list: []

@@ -1,26 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using SpeakEasy;
 using UnityEngine;
 
 public class characterSwitcher : MonoBehaviour
 {
     public GameObject characterA;
     public GameObject characterB;
+    private interact_dialogue interactObject; //place on Station Object
 
-    void Start()
+    private GameObject activeCharacter;
+
+    void Awake()
     {
+        interactObject = gameObject.GetComponent<interact_dialogue>();
+
         if (Meta.Daily["afterWork"])
         {
+            activeCharacter = characterA;
+            characterB.SetActive(false);
+        }
+        else
+        {
+            activeCharacter = characterB;
             characterA.SetActive(false);
-            return;
         }
 
-        characterB.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        interactObject.characterObject = activeCharacter;
+        interactObject.dialogue = activeCharacter.transform.Find("Dialogue").GetComponent<SEDialogue>();
     }
 }

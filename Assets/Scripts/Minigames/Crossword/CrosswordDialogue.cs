@@ -96,12 +96,9 @@ namespace SpeakEasy
         }
 
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
-        internal override void OnEnable() 
+        internal override void BeginDialogue() 
         {
-          if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
-          {
-              AkSoundEngine.SetState("room", "officeMinigame");
-          }
+          AkSoundEngine.SetState("room", "officeMinigame");
 
           npcSpeechText.text = "";
           playerSpeechText.text = "";
@@ -112,28 +109,17 @@ namespace SpeakEasy
           avalibleWords = new List<Word>();
 
           node = entryNode;
+          node = NextNode();
 
-          if(transform.parent.parent.GetComponent<interact_minigame>().isInteractable) 
-          {
-              node = NextNode();
-              DoGrid();
-              BeginNode();
-          }
-            
+          DoGrid();
+          BeginNode(); 
         }
 
-        void OnDisable()
+        internal override void OnDisable()
         {
-            AkSoundEngine.SetState("room", "office");
+          base.OnDisable();
+          AkSoundEngine.SetState("room", "office");
         }
-
-        // private void Update() 
-        // {
-        //     if (Input.anyKeyDown)
-        //     {
-        //         Debug.Log(speakingCoroutine != null);
-        //     }
-        // }
 
         #region Event Handling
 
@@ -207,7 +193,7 @@ namespace SpeakEasy
             TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText.Split("\n")[0]); //first half of text box, excludes post it description
             playerBubbleImage.sprite = playerBubbleSprite;
 
-            AkSoundEngine.PostEvent("Play_Player", gameObject);
+            activeWwiseEvent = AkSoundEngine.PostEvent("Play_Player", gameObject);
 
             yield return new WaitForSeconds(node.SpeechTime);
 

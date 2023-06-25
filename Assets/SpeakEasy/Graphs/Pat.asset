@@ -114,7 +114,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2132, y: 113.5}
+    <Position>k__BackingField: {x: 2132, y: 114}
   - <ID>k__BackingField: 884f4038-2903-4848-a5e6-b470617de112
     <Name>k__BackingField: _exit
     <Text>k__BackingField: 
@@ -138,7 +138,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 5716, y: -700.5}
+    <Position>k__BackingField: {x: 5716, y: -700}
   - <ID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
     <Name>k__BackingField: _exit_main
     <Text>k__BackingField: 
@@ -149,7 +149,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
-    <Position>k__BackingField: {x: 7172.5, y: -474}
+    <Position>k__BackingField: {x: 7173, y: -474}
   - <ID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
     <Name>k__BackingField: food_choice
     <Text>k__BackingField: 
@@ -264,7 +264,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3197, y: -241.5}
+    <Position>k__BackingField: {x: 3197, y: -241}
   - <ID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
     <Name>k__BackingField: anim_bendOver
     <Text>k__BackingField: bendOver
@@ -305,7 +305,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 4437, y: -433.5}
+    <Position>k__BackingField: {x: 4437, y: -433}
   - <ID>k__BackingField: d49c7247-259c-43f9-afa5-f62878c047a2
     <Name>k__BackingField: p_yep
     <Text>k__BackingField: yep
@@ -384,7 +384,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 6827.5, y: -474}
+    <Position>k__BackingField: {x: 6828, y: -474}
   - <ID>k__BackingField: 0bada3e6-62fb-4384-89dd-e33989d34191
     <Name>k__BackingField: p_fries
     <Text>k__BackingField: how bout some fries

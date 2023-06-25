@@ -49,7 +49,7 @@ public static class Meta
         SetValue("dPatVisits", 0, Daily);
         SetValue("dOrderedItem", 0, Daily);
         SetValue("dChosenItem", "Hot Dog", Daily);
-        SetValue("dTotal", 0, Daily);
+        SetValue("dTotal", 0f, Daily);
 
     }
 
@@ -131,6 +131,10 @@ public static class Meta
             {
                 data.metaInts.Add(pair.Key, pair.Value);
             }
+            if (pair.Value is float)
+            {
+                data.metaFloats.Add(pair.Key, pair.Value);
+            }
             if (pair.Value is string)
             {
                 data.metaStrings.Add(pair.Key, pair.Value);
@@ -148,6 +152,10 @@ public static class Meta
     public static void Import(SerializableMeta data)
     {
         foreach (KeyValuePair<string, int> datum in data.metaInts)
+        {
+            SetValue(datum.Key, datum.Value, Global);
+        }
+        foreach (KeyValuePair<string, float> datum in data.metaFloats)
         {
             SetValue(datum.Key, datum.Value, Global);
         }
@@ -184,6 +192,44 @@ public static class Meta
             else
             {
                 toCompareValue = int.Parse(toCompare);
+            }
+            
+            switch (symbol)
+            {
+                case "==":
+                    return variableValue == toCompareValue;
+
+                case "!=":
+                    return variableValue != toCompareValue;
+
+                case ">":
+                    return variableValue > toCompareValue;
+
+                case "<":  
+                    return variableValue < toCompareValue;
+
+                case ">=":
+                    return variableValue >= toCompareValue;
+
+                case "<=":
+                    return variableValue <= toCompareValue;
+            }
+            return false;
+        }
+
+        if (blackboard[variable] is float)
+        {
+            float variableValue = blackboard[variable];
+            float toCompareValue = 0f;
+            
+            //sets comparison value either to the contents of the data, or the variable value
+            if (ifData.isMetaVariableComparison)
+            {
+                toCompareValue = blackboard[toCompare];
+            }
+            else
+            {
+                toCompareValue = float.Parse(toCompare);
             }
             
             switch (symbol)
@@ -292,6 +338,7 @@ public class SerializableMeta
     public SerializableMeta()
     {
         dictionaries.Add(metaInts);
+        dictionaries.Add(metaFloats);
         dictionaries.Add(metaStrings);
         dictionaries.Add(metaBools);
     }

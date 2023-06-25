@@ -8,7 +8,7 @@ public class UIManagerInstance : MonoBehaviour
 {
 	[SerializeField] public TMP_Text canvasText;
 
-	void Awake()
+	void Start()
 	{
 		UIManager.instance = this;
 

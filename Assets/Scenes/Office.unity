@@ -1284,7 +1284,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1900030906}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1801,7 +1801,7 @@ GameObject:
   - component: {fileID: 336800008}
   - component: {fileID: 336800009}
   m_Layer: 5
-  m_Name: Harold_Dialogue
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1814,7 +1814,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336800007}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1823,12 +1823,12 @@ RectTransform:
   - {fileID: 2028910260}
   - {fileID: 1945808981}
   - {fileID: 245682864}
-  m_Father: {fileID: 1900030906}
-  m_RootOrder: 1
+  m_Father: {fileID: 1799542790}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 657.56, y: 163.23001}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336800009
@@ -11383,11 +11383,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1370609478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d7f890adf5714f4abb4f82424155417, type: 3}
+  m_Script: {fileID: 11500000, guid: ef6cdfe4d0362ae478b89389d95a3568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eMessage: Harold [E]
-  theGame: {fileID: 1900030901}
+  dialogueWindow: {fileID: 1900030901}
+  characterObject: {fileID: 1799542789}
+  dialogue: {fileID: 0}
   minigameBank:
     idInternal: 0
     valueGuidInternal: 
@@ -13749,9 +13751,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 336800008}
   m_Father: {fileID: 1900030906}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15019,7 +15022,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 918402518}
-  - {fileID: 336800008}
   - {fileID: 254921668}
   - {fileID: 1799542790}
   m_Father: {fileID: 1370609482}
