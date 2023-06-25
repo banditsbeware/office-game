@@ -9,7 +9,6 @@ TagManager:
   - minigame
   - submenu
   - interior
-  - interiorCollider
   - exteriorCollider
   layers:
   - Default

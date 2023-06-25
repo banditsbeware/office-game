@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class adventureBuilding : MonoBehaviour
 {
@@ -12,24 +13,38 @@ public class adventureBuilding : MonoBehaviour
     public MoveHim8bit playerMovement;
 
     //building and collider animation
-    public GameObject interior;
-    public GameObject interiorCollider;
-    public GameObject exteriorCollider;
+    private GameObject interior;
+    private GameObject interiorCollider;
+    private GameObject exterior;
+    private GameObject exteriorCollider;
+    private GameObject buildingEntrance; 
+    public static List<GameObject> allExteriorsAndEntrances; // total collection
+    private List<GameObject> otherExteriorsAndEntrances; // all minus those belonging to this instance
 
     private void Start() {
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>();
-        interior = GameObject.FindGameObjectWithTag("interior");
-        interiorCollider = GameObject.FindGameObjectWithTag("interiorCollider");
-        exteriorCollider = GameObject.FindGameObjectWithTag("exteriorCollider");
+        interior = transform.Find("interior").gameObject;
+        interiorCollider = interior.transform.Find("interiorCollider").gameObject;
+        exterior = transform.Find("exterior").gameObject;
+        exteriorCollider = exterior.transform.Find("exteriorCollider").gameObject;
+        buildingEntrance = transform.Find("entrance").gameObject;
+
+        if(allExteriorsAndEntrances == null) 
+        {
+            allExteriorsAndEntrances = GameObject.FindGameObjectsWithTag("exteriorCollider").ToList<GameObject>();
+        }
+
+        otherExteriorsAndEntrances = allExteriorsAndEntrances.GetRange(0, allExteriorsAndEntrances.Count);
+        otherExteriorsAndEntrances.Remove(exterior);
+        otherExteriorsAndEntrances.Remove(buildingEntrance);
+
         interior.SetActive(false);
     }
 
     private void FixedUpdate() {
-
         //when the player moves into a door, begin the proper building fades
         if (playerMovement.isNode && playerMovement.velocity == directionOfDoor && directionOfDoor != Vector2Int.zero)
         {
-            Debug.Log("movement trigger!");
             if (onWelcomeMat)
             {
                 StartCoroutine(FadeInInterior());
@@ -44,35 +59,36 @@ public class adventureBuilding : MonoBehaviour
         }
     }
 
-    private IEnumerator FadeOutInterior()
-    {
-        Debug.Log("Started Fade out");
-
-        interiorCollider.SetActive(false);
-        playerMovement.skipNode = true;
-
-        yield return new WaitForSeconds(.3f);
-
-        interior.SetActive(false);
-        exteriorCollider.SetActive(true);
-        
-
-        Debug.Log("Ended Fade Out");
-        
-    }
-
     private IEnumerator FadeInInterior()
     {
-        Debug.Log("ee");
-
         exteriorCollider.SetActive(false);
         playerMovement.skipNode = true;
 
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds((float) playerMovement.speed * 1.5f / 50f);  // speed/50 is the amount of time it will take to travel one grid tile, so * 1.5 will trigger the animations halfway between the entrance and the next grid node. 
 
         interior.SetActive(true);
         interiorCollider.SetActive(true);
-        
+        foreach (GameObject externalObj in otherExteriorsAndEntrances)
+        {
+            externalObj.SetActive(false);
+        }
     }
+
+    private IEnumerator FadeOutInterior()
+    {
+        interiorCollider.SetActive(false);
+        playerMovement.skipNode = true;
+
+        yield return new WaitForSeconds((float) playerMovement.speed * 1.1f / 50f);
+
+        interior.SetActive(false);
+        exteriorCollider.SetActive(true);
+        foreach (GameObject externalObj in otherExteriorsAndEntrances)
+        {
+            externalObj.SetActive(true);
+        }
+    }
+
+    
 }
 

@@ -4,12 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveHim8bit : MonoBehaviour {
-    
-
     //velocity
-    public Vector2Int pos = new Vector2Int(0, 0);
-    public float speed = 1000f;
+    public Vector2Int intPosition = new Vector2Int(0, 0);
     public Vector2Int velocity;
+    public int speed = 10; //also the number of fixedUpdates per grid point
+    
 
     //spawning
     public static string doorToExit = null;
@@ -39,12 +38,14 @@ public class MoveHim8bit : MonoBehaviour {
       doorTransform = door.transform;
 
       transform.position = doorTransform.position + door.spawnPointOffset;
+
+      intPosition = new Vector2Int((int) transform.position.x * speed, (int) transform.position.y * speed);
     }
 
     void FixedUpdate()
     {
       //while not in grid
-      if (pos.x % 10 != 0 || pos.y % 10 != 0)
+      if (intPosition.x % speed != 0 || intPosition.y % speed != 0)
       {
         isNode = false;
         ExecuteMovementFrame();
@@ -55,6 +56,7 @@ public class MoveHim8bit : MonoBehaviour {
       {
         ExecuteMovementFrame();
         skipNode = false;
+        Debug.Log(isNode);
         return;
       }
 
@@ -80,9 +82,8 @@ public class MoveHim8bit : MonoBehaviour {
 
     void ExecuteMovementFrame()
     {
-      pos += velocity;
-      Debug.Log("moved!");
-      transform.position = new Vector3((float) pos.x / 10f, (float) pos.y / 10f, 0);
+      intPosition += velocity;
+      transform.position = new Vector3((float) intPosition.x / (float) speed, (float) intPosition.y / (float) speed, 0);
 
       return;
     }

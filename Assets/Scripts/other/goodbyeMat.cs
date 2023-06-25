@@ -12,6 +12,7 @@ public class goodbyeMat : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("Entered  Goodbye");
         building.onGoodbyeMat = true;
         building.directionOfDoor = dir;
     }
