@@ -87,4 +87,19 @@ public static class TextUtility
  
         return new string(textCharacters, 0, currentWhitespacelessTextLength);
     }
+
+    public static string GetSubstringBefore(this string text, string stopAt = "_")
+    {
+        if (!string.IsNullOrWhiteSpace(text))
+        {
+            int charLocation = text.IndexOf(stopAt, System.StringComparison.Ordinal);
+
+            if (charLocation > 0)
+            {
+                return text.Substring(0, charLocation);
+            }
+        }
+
+        return string.Empty;
+    }
 }

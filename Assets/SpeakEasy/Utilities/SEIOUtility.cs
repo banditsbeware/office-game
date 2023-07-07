@@ -35,6 +35,19 @@ namespace SpeakEasy.Utilities
 
         private static SEGraphSaveDataSO bufferGraph;
 
+        private static Dictionary<string, string> nameAbbr = new Dictionary<string, string>{
+            {"j", "Jax"},
+            {"p", "Player"},
+            {"pa", "Pat"},
+            {"h", "Harold"},
+            {"f", "Fargo"},
+            {"c", "Costa"},
+            {"hy", "Harley"},
+            {"g", "Gouda"},
+            {"s", "Sacha"},
+            {"m", "Marisol"}
+        };
+
         public static void Initialize(SEGraphView seGraphView, string graphName)
         {
             graphView = seGraphView;
@@ -150,6 +163,8 @@ namespace SpeakEasy.Utilities
             List<string> ungroupedNodeNames = new List<string>();
             SerializableDictionary<string, List<string>> groupedNodeNames = new SerializableDictionary<string, List<string>>();
 
+            CSVwriter.OpenCSV(graphData.FileName + ".csv");
+
             foreach (SENode node in nodes)
             {
                 SaveNodeToGraph(node, graphData);
@@ -162,8 +177,15 @@ namespace SpeakEasy.Utilities
                     continue;
                 }
 
+                if (node.NodeType == SENodeType.Speaking)
+                {
+                    SaveNodeToSpreadsheet(node);
+                }
+
                 ungroupedNodeNames.Add(node.NodeName);
             }
+
+            CSVwriter.CloseCSV();
 
             UpdateChoiceConnections();
 
@@ -248,6 +270,20 @@ namespace SpeakEasy.Utilities
             }
 
             return (dialogueChoices, dialogueIfs);
+        }
+
+        private static void SaveNodeToSpreadsheet(SENode node)
+        {
+            string CSVline = string.Format("\"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\", \"{5}\"",
+                nameAbbr[node.NodeName.GetSubstringBefore()],
+                node.DialogueText,
+                "",
+                node.NodeName,
+                "TRUE",
+                "FALSE"
+                );
+
+            CSVwriter.WriteCSV(CSVline);
         }
 
         private static void UpdateChoiceConnections()
