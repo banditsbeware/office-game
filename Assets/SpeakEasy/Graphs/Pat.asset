@@ -53,51 +53,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 2849, y: -440}
-  - <ID>k__BackingField: 914b51b3-20b7-49de-8da6-e83c336a80c3
-    <Name>k__BackingField: p_actually_im
-    <Text>k__BackingField: actually I'm good, thanks
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 6c5f3567-9515-432e-a931-840364b4b580
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1364, y: 729}
-  - <ID>k__BackingField: 781bebfd-ee6d-40fe-a1d4-3f3ed5ff462d
-    <Name>k__BackingField: _entry
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: First Node
-      <NodeID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 2
-    <Position>k__BackingField: {x: -213, y: 487}
-  - <ID>k__BackingField: 019d76f7-3d77-4006-a8f9-c695fdc1dc52
-    <Name>k__BackingField: p_steamed_ham
-    <Text>k__BackingField: just a steamed ham, please
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 40520455-2392-4176-85ea-5f68724ea5bd
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: dTotal
-      <callbackAction>k__BackingField: Increment
-      <callbackValue>k__BackingField: 4.0
-    - <callbackVariableName>k__BackingField: dChosenItem
-      <callbackAction>k__BackingField: SetValue
-      <callbackValue>k__BackingField: ham
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1364, y: 572}
   - <ID>k__BackingField: fd3fba27-8a3c-4d3f-98cd-90bbd36f035a
     <Name>k__BackingField: fries_choice
     <Text>k__BackingField: 
@@ -126,19 +81,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
     <Position>k__BackingField: {x: 2149, y: 729}
-  - <ID>k__BackingField: 30a38b1a-104c-4163-b331-bcc7819c6667
-    <Name>k__BackingField: anim_pay
-    <Text>k__BackingField: pay
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 5716, y: -700}
   - <ID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
     <Name>k__BackingField: _exit_main
     <Text>k__BackingField: 
@@ -252,19 +194,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 2849, y: -276}
-  - <ID>k__BackingField: d5eb7c14-178d-4e17-aaf8-381c6befeb81
-    <Name>k__BackingField: pa_i_feel
-    <Text>k__BackingField: i feel you, man. we'll just do a classic for today
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3197, y: -241}
   - <ID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
     <Name>k__BackingField: anim_bendOver
     <Text>k__BackingField: bendOver
@@ -278,19 +207,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 9
     <Position>k__BackingField: {x: 3561, y: -414}
-  - <ID>k__BackingField: f15b1ff1-69a6-446f-bb0e-709a444eed9c
-    <Name>k__BackingField: pa_anything_else
-    <Text>k__BackingField: anything else man?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: ea2d27e4-c1f6-4e68-9930-1dd55cd5f27a
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4072, y: -414}
   - <ID>k__BackingField: ea2d27e4-c1f6-4e68-9930-1dd55cd5f27a
     <Name>k__BackingField: anythingelse_choice
     <Text>k__BackingField: 
@@ -306,72 +222,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
     <Position>k__BackingField: {x: 4437, y: -433}
-  - <ID>k__BackingField: d49c7247-259c-43f9-afa5-f62878c047a2
-    <Name>k__BackingField: p_yep
-    <Text>k__BackingField: yep
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 36cdd099-3874-49dd-a53c-df70ed5a4312
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4749, y: -474}
-  - <ID>k__BackingField: 38d297e6-5b8e-4474-a538-cf429141fb1a
-    <Name>k__BackingField: p_not_quite
-    <Text>k__BackingField: not quite
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: a3d595fa-ad01-4e77-8dab-8acc6ca8f3ae
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 4749, y: -330}
-  - <ID>k__BackingField: a3d595fa-ad01-4e77-8dab-8acc6ca8f3ae
-    <Name>k__BackingField: pa_what_else
-    <Text>k__BackingField: k, what else?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5064, y: -330}
-  - <ID>k__BackingField: 36cdd099-3874-49dd-a53c-df70ed5a4312
-    <Name>k__BackingField: pa_aight
-    <Text>k__BackingField: aight, if the total looks fine, go ahead and swipe
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5064, y: -474}
-  - <ID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
-    <Name>k__BackingField: pa_tap
-    <Text>k__BackingField: then just tap any option at all, no obligation, and sign
-      your name below.
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5957, y: -474}
   - <ID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
     <Name>k__BackingField: pa_good_one
     <Text>k__BackingField: cool, have a day, dude
@@ -411,19 +261,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1789, y: 157}
-  - <ID>k__BackingField: 0c721a8c-701f-4eb2-92d1-8ec6c0ec3b12
-    <Name>k__BackingField: pa_gotcha
-    <Text>k__BackingField: gotcha
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3215, y: -604}
   - <ID>k__BackingField: cf8a3781-9f4b-4004-988e-ef36c6fa095f
     <Name>k__BackingField: p_lets_do_smol
     <Text>k__BackingField: lets do a smol fry
@@ -533,6 +370,125 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1776, y: 572}
+  - <ID>k__BackingField: 019d76f7-3d77-4006-a8f9-c695fdc1dc52
+    <Name>k__BackingField: p_steamed_ham
+    <Text>k__BackingField: just a steamed ham, please
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 40520455-2392-4176-85ea-5f68724ea5bd
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dTotal
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 4.0
+    - <callbackVariableName>k__BackingField: dChosenItem
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: ham
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1364, y: 572}
+  - <ID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
+    <Name>k__BackingField: pa_sup
+    <Text>k__BackingField: sup man, what can I get you
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 359, y: 391}
+  - <ID>k__BackingField: 06e07122-4194-41b7-b277-19e432381344
+    <Name>k__BackingField: pa_more_really
+    <Text>k__BackingField: more? really dude?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 359, y: 735}
+  - <ID>k__BackingField: 781bebfd-ee6d-40fe-a1d4-3f3ed5ff462d
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 63f18c26-adb7-45d9-b3d4-0356e5f50d82
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dPatVisits
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -434, y: 482.5}
+  - <ID>k__BackingField: 63f18c26-adb7-45d9-b3d4-0356e5f50d82
+    <Name>k__BackingField: visits_check
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
+      <contextVariableName>k__BackingField: dPatVisits
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 33423f4c-ff81-4d29-9d04-fb76366c8828
+      <contextVariableName>k__BackingField: dPatVisits
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 2
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 06e07122-4194-41b7-b277-19e432381344
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: -189, y: 439}
+  - <ID>k__BackingField: 33423f4c-ff81-4d29-9d04-fb76366c8828
+    <Name>k__BackingField: pa_oh_hey_again
+    <Text>k__BackingField: oh, uhh... hey again. need something else?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 359, y: 545.5}
+  - <ID>k__BackingField: 914b51b3-20b7-49de-8da6-e83c336a80c3
+    <Name>k__BackingField: p_actually_im
+    <Text>k__BackingField: actually I'm good, thanks
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6c5f3567-9515-432e-a931-840364b4b580
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dUpsatPat
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1364, y: 729}
   - <ID>k__BackingField: 6c5f3567-9515-432e-a931-840364b4b580
     <Name>k__BackingField: pa_uh
     <Text>k__BackingField: uhh... okay? goodbye then?
@@ -546,9 +502,48 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1776, y: 729}
-  - <ID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
-    <Name>k__BackingField: pa_sup
-    <Text>k__BackingField: sup man, what can I get you
+  - <ID>k__BackingField: 0c721a8c-701f-4eb2-92d1-8ec6c0ec3b12
+    <Name>k__BackingField: pa_gotcha
+    <Text>k__BackingField: gotcha
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3215, y: -604}
+  - <ID>k__BackingField: d5eb7c14-178d-4e17-aaf8-381c6befeb81
+    <Name>k__BackingField: pa_i_feel
+    <Text>k__BackingField: i feel you, man. we'll just do a classic for today
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3197, y: -241}
+  - <ID>k__BackingField: f15b1ff1-69a6-446f-bb0e-709a444eed9c
+    <Name>k__BackingField: pa_anything_else
+    <Text>k__BackingField: anything else man?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: ea2d27e4-c1f6-4e68-9930-1dd55cd5f27a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4072, y: -414}
+  - <ID>k__BackingField: a3d595fa-ad01-4e77-8dab-8acc6ca8f3ae
+    <Name>k__BackingField: pa_what_else
+    <Text>k__BackingField: k, what else?
     <SpeechTime>k__BackingField: 0
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
@@ -558,17 +553,92 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 385, y: 487}
+    <Position>k__BackingField: {x: 5064, y: -330}
+  - <ID>k__BackingField: d49c7247-259c-43f9-afa5-f62878c047a2
+    <Name>k__BackingField: p_yes
+    <Text>k__BackingField: yes
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: a3d595fa-ad01-4e77-8dab-8acc6ca8f3ae
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4749, y: -474}
+  - <ID>k__BackingField: 38d297e6-5b8e-4474-a538-cf429141fb1a
+    <Name>k__BackingField: p_no
+    <Text>k__BackingField: no
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 36cdd099-3874-49dd-a53c-df70ed5a4312
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4749, y: -330}
+  - <ID>k__BackingField: 36cdd099-3874-49dd-a53c-df70ed5a4312
+    <Name>k__BackingField: pa_aight
+    <Text>k__BackingField: aight, if the total looks fine, go ahead and swipe
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5069, y: -474}
+  - <ID>k__BackingField: 30a38b1a-104c-4163-b331-bcc7819c6667
+    <Name>k__BackingField: anim_pay
+    <Text>k__BackingField: pay
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 5507, y: -587}
+  - <ID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
+    <Name>k__BackingField: pa_tap
+    <Text>k__BackingField: then just tap any option at all, no obligation, and sign
+      your name below.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5957, y: -474}
+  - <ID>k__BackingField: 006b7498-c8bc-461e-a660-1d522525614d
+    <Name>k__BackingField: tip_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: new choice
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 6364.5, y: -598}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - dawg_choice
   - p_rambunctious
-  - p_actually_im
-  - _entry
-  - p_steamed_ham
   - fries_choice
   - _exit
-  - anim_pay
   - _exit_main
   - food_choice
   - p_hot_dog
@@ -576,19 +646,11 @@ MonoBehaviour:
   - p_classic
   - p_hawt
   - p_i_dont_know
-  - pa_i_feel
   - anim_bendOver
-  - pa_anything_else
   - anythingelse_choice
-  - p_yep
-  - p_not_quite
-  - pa_what_else
-  - pa_aight
-  - pa_tap
   - pa_good_one
   - p_fries
   - pa_yep_what_kind
-  - pa_gotcha
   - p_lets_do_smol
   - p_small
   - pa_here
@@ -596,7 +658,23 @@ MonoBehaviour:
   - p_loaded
   - pa_big_h
   - pa_one_burger
-  - pa_uh
+  - p_steamed_ham
   - pa_sup
+  - pa_more_really
+  - _entry
+  - visits_check
+  - pa_oh_hey_again
+  - p_actually_im
+  - pa_uh
+  - pa_gotcha
+  - pa_i_feel
+  - pa_anything_else
+  - pa_what_else
+  - p_yes
+  - p_no
+  - pa_aight
+  - anim_pay
+  - pa_tap
+  - tip_choice
   <OldGroupedNames>k__BackingField:
     list: []

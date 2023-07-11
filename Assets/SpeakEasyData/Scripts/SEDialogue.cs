@@ -76,6 +76,9 @@ namespace SpeakEasy
             HideChoices();
 
             node = entryNode;
+
+            PerformCallbacks();
+            
             node = NextNode();
 
             BeginNode();

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: p_not_quite
+  m_Name: pa_more_really
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: p_not_quite
-  <IsPlayer>k__BackingField: 1
-  <DialogueText>k__BackingField: not quite
+  <NodeName>k__BackingField: pa_more_really
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: more? really dude?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2c2313308278a49838080e626eacba2d, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a63e372350b5c4b68a138d3f52460fbf, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 0.48277268
+  <SpeechTime>k__BackingField: 1.4725248

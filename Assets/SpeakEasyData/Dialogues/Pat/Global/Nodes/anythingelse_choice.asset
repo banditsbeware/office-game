@@ -17,9 +17,9 @@ MonoBehaviour:
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: yep
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 550b1ca61292940e9bbc47fa6042cf5e, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d87deaa4fb4ab447791477af7f38205c, type: 2}
   - <Text>k__BackingField: nope
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8e011374568d0456d96729ed4f0f11be, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: df05558aed9724e8e9cfad17818b2b70, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 1
