@@ -7,6 +7,8 @@ public class characterSwitcher : MonoBehaviour
 {
     public GameObject characterA;
     public GameObject characterB;
+    public GameObject characterASprite;
+    public GameObject characterBSprite;
     private interact_dialogue interactObject; //place on Station Object
 
     private GameObject activeCharacter;
@@ -18,15 +20,19 @@ public class characterSwitcher : MonoBehaviour
         if (Meta.Daily["afterWork"])
         {
             activeCharacter = characterA;
+            characterBSprite.SetActive(false);
             characterB.SetActive(false);
         }
         else
         {
             activeCharacter = characterB;
+            characterASprite.SetActive(false);
             characterA.SetActive(false);
         }
 
         interactObject.characterObject = activeCharacter;
         interactObject.dialogue = activeCharacter.transform.Find("Dialogue").GetComponent<SEDialogue>();
+
+
     }
 }

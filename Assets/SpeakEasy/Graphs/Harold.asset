@@ -68,7 +68,7 @@ MonoBehaviour:
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+      <NodeID>k__BackingField: 89964d35-7e26-4d1e-84ed-15c785a9e00a
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
@@ -81,7 +81,7 @@ MonoBehaviour:
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+      <NodeID>k__BackingField: 89964d35-7e26-4d1e-84ed-15c785a9e00a
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
@@ -94,7 +94,7 @@ MonoBehaviour:
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+      <NodeID>k__BackingField: 89964d35-7e26-4d1e-84ed-15c785a9e00a
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
@@ -107,23 +107,12 @@ MonoBehaviour:
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+      <NodeID>k__BackingField: 89964d35-7e26-4d1e-84ed-15c785a9e00a
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 264, y: -968}
-  - <ID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
-    <Name>k__BackingField: _exit_goodbyes
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
-    <NodeType>k__BackingField: 3
-    <Position>k__BackingField: {x: 593, y: -1206}
   - <ID>k__BackingField: 68d68f69-997b-41be-82df-76c721bfaeab
     <Name>k__BackingField: _entry_goodbye
     <Text>k__BackingField: 
@@ -1450,6 +1439,30 @@ MonoBehaviour:
     <GroupID>k__BackingField: df81f0eb-475c-4abd-ae1e-480495e14f75
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 300, y: 452}
+  - <ID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+    <Name>k__BackingField: _exit_goodbyes
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 922, y: -1199}
+  - <ID>k__BackingField: 89964d35-7e26-4d1e-84ed-15c785a9e00a
+    <Name>k__BackingField: _delay
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: .6
+      <NodeID>k__BackingField: c82bd884-1d3d-4e13-8601-5649f7472b06
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 681, y: -1199}
   <OldGroupNames>k__BackingField:
   - starters
   - goodbye
@@ -1472,8 +1485,9 @@ MonoBehaviour:
       - h_alrighty
       - h_see_ya
       - h_till
-      - _exit_goodbyes
       - _entry_goodbye
+      - _exit_goodbyes
+      - _delay
     - Key: starters
       Value:
       - p_water_weather

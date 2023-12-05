@@ -17,8 +17,8 @@ MonoBehaviour:
   <DialogueText>k__BackingField: till next time
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2ce218542d4f7094084edfdfbf6e888e, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5f711fe3317e7164599b4b8fab8c66f9, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 1.3133421
+  <SpeechTime>k__BackingField: 1.4304055

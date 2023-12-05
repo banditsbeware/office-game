@@ -155,7 +155,7 @@ namespace SpeakEasy
 
                 case Exit:
                     UIManager.gameState = "play";
-                    transform.parent.gameObject.SetActive(false);
+                    transform.parent.parent.gameObject.SetActive(false);
                     break;
 
                 case Delay:
@@ -181,8 +181,10 @@ namespace SpeakEasy
 
         IEnumerator DelayNode(float delay)
         {
-            yield return new WaitForSeconds(delay);
+            node = NextNode();
 
+            yield return new WaitForSeconds(delay);
+            
             BeginNode();
         }
 
@@ -468,8 +470,6 @@ namespace SpeakEasy
 
               int choiceIndex = avalibleWords.IndexOf(word);
               node = NextNode(choiceIndex);
-
-              
 
               ClearNPC();
               BeginNode();

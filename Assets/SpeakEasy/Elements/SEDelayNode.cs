@@ -9,8 +9,7 @@ namespace SpeakEasy.Elements
     using Windows;
     using Data.Save;
 
-  //node to be used to begin the dialogue tree from a runtime event (opening a minigame)
-  //should be only one per graph
+
   public class SEDelayNode : SELogicNode
     {
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
