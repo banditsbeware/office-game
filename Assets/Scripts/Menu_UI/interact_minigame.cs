@@ -13,6 +13,7 @@ public class interact_minigame : interact
             {
                 UIManager.denoitfy();
                 UIManager.gameState = "window";
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
                 UIManager.show(theGame);
             }
         }
@@ -34,6 +35,7 @@ public class interact_minigame : interact
         base.OnTriggerExit2D(other);
         if (other.tag == "Player" && minigameBank != null)
         {
+            Debug.Log("Oof");
             minigameBank.Unload();
         }
     }

@@ -120,13 +120,14 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID BATH = 1375321530U;
+                static const AkUniqueID APARTMENTBATH = 1885238650U;
                 static const AkUniqueID BED = 446279778U;
                 static const AkUniqueID DREAM = 2120052594U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OFFICE = 1547173777U;
-                static const AkUniqueID OFFICEMINIGAME = 1411971626U;
+                static const AkUniqueID OFFICEBATH = 787752046U;
                 static const AkUniqueID OUTDOORS = 2730119150U;
+                static const AkUniqueID WATERMINI = 1449999795U;
             } // namespace STATE
         } // namespace ROOM
 

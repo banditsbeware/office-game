@@ -18,11 +18,11 @@ public class LevelLoader : MonoBehaviour
     public void LoadLevel(string levelName)
     {
         MoveHim.doorToExit = "door_" + SceneManager.GetActiveScene().name;
-        StartCoroutine(LoadScene(levelName));
+        StartCoroutine(LoadNextScene(levelName));
     }
 
     //fade in/out
-    IEnumerator LoadScene(string levelName)
+    IEnumerator LoadNextScene(string levelName)
     {
         fadeTransition.SetTrigger("Start");
 

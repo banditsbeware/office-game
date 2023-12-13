@@ -39,6 +39,7 @@ public static class UIManager
 		else if (gameState == "window") // exit from minigame
 		{
 			hide(minigames);
+			GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
 			gameState = "play";
 		}
 	}

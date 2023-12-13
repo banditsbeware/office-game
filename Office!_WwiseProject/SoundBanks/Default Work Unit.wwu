@@ -58,6 +58,7 @@
 						</SoundBank>
 						<SoundBank Name="Bird" ID="{A0E76B54-A151-493F-9B72-FCE2B4434EFD}">
 							<ObjectInclusionList>
+								<ObjectRef Name="Play_Bath_Amb" ID="{A6A61ED4-A724-43DD-BCAA-3B8224F65A51}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="Bird" ID="{80A3D1BD-EAE0-45D6-A09F-AA46DD9E9232}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>

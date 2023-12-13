@@ -146,7 +146,7 @@ public class literallyFlappyBird : MonoBehaviour
     {
         if (inGame && pipes.Count != 0)
         {
-            if ((pipes.Peek().transform.position.x < -30))
+            if (pipes.Peek().transform.position.x < -30)
             {
                 float offset = numOfPipes * 20f;
                 GameObject first = pipes.Dequeue();

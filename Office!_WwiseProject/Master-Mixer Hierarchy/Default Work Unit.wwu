@@ -65,6 +65,43 @@
 									<ObjectRef Name="Bathroom1" ID="{1969D30F-C165-45C0-B290-DE3ED07A7AA3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="room" ID="{49D4860A-7F86-43E2-8EF0-E102949A9A37}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
+										<CustomState Name="" ID="{BD717EB3-8721-4F50-9AC5-FCE098FA8763}" ShortID="798985011"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="waterMini" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+										<CustomState Name="" ID="{447B9E3A-7315-48AC-8681-212560D0EF51}" ShortID="791175492"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+										<CustomState Name="" ID="{5255525C-052B-4FEA-856C-93092EB8EE94}" ShortID="551197074"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
+										<CustomState Name="" ID="{67A021F0-DC0D-4C1D-8722-CD8DF13E314B}" ShortID="410052089"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="apartmentBath" ID="{010D6AA5-E374-46F9-8B2F-736967499920}"/>
+										<CustomState Name="" ID="{29B7EAC0-DF95-4DC7-9E5A-E6D4F8E07B1F}" ShortID="126917755"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
+										<CustomState Name="" ID="{EC20EB8F-0524-46A3-BD5F-82B42C7CEA75}" ShortID="1039914216"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="office" ID="{93422278-5900-493B-9DD5-28205C0CA9AD}"/>
+										<CustomState Name="" ID="{01193B11-08AD-4CB0-A7C6-1449A41E40D0}" ShortID="457025552"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</AuxBus>
 					</ChildrenList>
 				</Bus>

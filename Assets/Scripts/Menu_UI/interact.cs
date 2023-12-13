@@ -6,7 +6,6 @@ using UnityEngine;
 public class interact : MonoBehaviour
 { 
     [System.NonSerialized] public bool isInteractable = false; //isInteractable is true when the player is within the trigger for the interactable object
-    
     [SerializeField] private string eMessage;
 
     virtual public void OnTriggerEnter2D(Collider2D other) {

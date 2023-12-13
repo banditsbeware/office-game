@@ -60,11 +60,11 @@
 												<CustomState Name="" ID="{963C2FC6-5F20-4669-BC47-612246BCD759}" ShortID="68630025"/>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="officeMinigame" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+												<StateRef Name="waterMini" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
 												<CustomState Name="" ID="{0DD2E922-891A-4CBC-B494-F738B99DA54F}" ShortID="583906359"/>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+												<StateRef Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
 												<CustomState Name="" ID="{FDA93CC9-B112-4380-95EA-265238BAABE7}" ShortID="146492561">
 													<PropertyList>
 														<Property Name="OutputBusVolume" Type="Real64" Value="-44"/>
@@ -74,6 +74,10 @@
 											<CustomState>
 												<StateRef Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
 												<CustomState Name="" ID="{8DB8237B-CC57-455D-AAD7-1438F2DD79CD}" ShortID="1057757250"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="apartmentBath" ID="{010D6AA5-E374-46F9-8B2F-736967499920}"/>
+												<CustomState Name="" ID="{D30DCDC5-7BF5-4A22-B07C-077C3EF4981A}" ShortID="380021516"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
@@ -315,7 +319,7 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="officeMinigame" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+												<StateRef Name="waterMini" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
 												<CustomState Name="" ID="{B703ED33-1A03-4C03-9B6F-36BA1D17288B}" ShortID="626184452">
 													<PropertyList>
 														<Property Name="Lowpass" Type="int16" Value="20"/>
@@ -325,7 +329,7 @@
 												</CustomState>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+												<StateRef Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
 												<CustomState Name="" ID="{8FE2DE96-27BB-4BE1-9DE5-DE8B261E72EC}" ShortID="1071728475">
 													<PropertyList>
 														<Property Name="Lowpass" Type="int16" Value="10"/>
@@ -340,6 +344,10 @@
 														<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
 													</PropertyList>
 												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="apartmentBath" ID="{010D6AA5-E374-46F9-8B2F-736967499920}"/>
+												<CustomState Name="" ID="{AA6E5235-1562-44C3-9C25-D2C5C7DA0D06}" ShortID="818559365"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
@@ -1700,6 +1708,47 @@
 											<PositioningInfo>
 												<Position Name="" ID="{ED77A137-6517-4A18-BF62-E0D9603EA34C}"/>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="room" ID="{49D4860A-7F86-43E2-8EF0-E102949A9A37}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
+														<CustomState Name="" ID="{CB9A8CEE-64BC-40EB-9F22-78827E144DC2}" ShortID="590269738"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="waterMini" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+														<CustomState Name="" ID="{A2871887-4889-47F0-99CC-84AD0440BC1A}" ShortID="362902214"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+														<CustomState Name="" ID="{EF706594-18B1-4ED0-A9A5-CD316373B505}" ShortID="575011431"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
+														<CustomState Name="" ID="{B84DEC6E-42D2-4D8D-809D-12A65314D1D4}" ShortID="538232775"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="apartmentBath" ID="{010D6AA5-E374-46F9-8B2F-736967499920}"/>
+														<CustomState Name="" ID="{F9DE2B5F-3011-439A-BF74-A4E72D6068AB}" ShortID="1032369223">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
+														<CustomState Name="" ID="{08C604FB-49C7-4D41-B06C-842D86A75A52}" ShortID="611564162"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="office" ID="{93422278-5900-493B-9DD5-28205C0CA9AD}"/>
+														<CustomState Name="" ID="{573E43E0-C0C4-45E8-851E-BB44966CE2B0}" ShortID="569569303"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>

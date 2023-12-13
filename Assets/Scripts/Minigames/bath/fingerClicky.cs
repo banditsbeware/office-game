@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class fingerClicky : MonoBehaviour
 {
-    [SerializeField] private Collider2D interactor;
+    [SerializeField] private BoxCollider2D interactor;
     private Animator toClick;
     private bool interactable = false;
     [System.NonSerialized] public bool clicked = false;

@@ -98,7 +98,7 @@ namespace SpeakEasy
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
         internal override void BeginDialogue() 
         {
-          AkSoundEngine.SetState("room", "officeMinigame");
+          AkSoundEngine.SetState("room", "waterMini");
 
           npcSpeechText.text = "";
           playerSpeechText.text = "";
@@ -233,6 +233,8 @@ namespace SpeakEasy
 
         void DoGrid() 
         {
+          wordCompleted = true; //reset word, so first click is always starting a word (if someone clicks mid-reset)
+
           //destroy prior grid
           foreach (Transform butt in gridObject.transform)
           {
@@ -481,6 +483,7 @@ namespace SpeakEasy
           //if no word is found
           firstSel.GetComponent<WordsearchButton>().Reset();
           secondSel.GetComponent<WordsearchButton>().Reset();
+          
         }
 
     #endregion

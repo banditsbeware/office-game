@@ -15,17 +15,18 @@
 				<StateGroup Name="room" ID="{49D4860A-7F86-43E2-8EF0-E102949A9A37}">
 					<ChildrenList>
 						<State Name="None" ID="{0939C9D3-FB2E-428A-87C0-450D8F0A8789}"/>
-						<State Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+						<State Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
 						<State Name="office" ID="{93422278-5900-493B-9DD5-28205C0CA9AD}"/>
 						<State Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
 						<State Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
 						<State Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
-						<State Name="officeMinigame" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+						<State Name="waterMini" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+						<State Name="apartmentBath" ID="{010D6AA5-E374-46F9-8B2F-736967499920}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
 							<StartState Name="None" ID="{0939C9D3-FB2E-428A-87C0-450D8F0A8789}"/>
-							<EndState Name="bath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+							<EndState Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
 							<Time>1</Time>
 							<IsShared>false</IsShared>
 						</Transition>
