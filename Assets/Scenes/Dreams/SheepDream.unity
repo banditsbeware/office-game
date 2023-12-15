@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 495239393}
   - component: {fileID: 495239392}
   - component: {fileID: 495239391}
+  - component: {fileID: 495239395}
   m_Layer: 7
   m_Name: fence
   m_TagString: Untagged
@@ -398,8 +399,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.8255248, z: 1}
+  m_Center: {x: 0, y: 0.087238126, z: 0}
 --- !u!23 &495239392
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -465,6 +466,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495239395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495239390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c348e73be9b32e6428a51355e47a332c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +699,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641604559}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 19f778771c2374146a39d88e4dbebd81, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.32
@@ -701,13 +714,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641604559}
   serializedVersion: 2
-  m_Mass: 0.0000001
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!1 &682657774
 GameObject:
@@ -884,7 +897,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769171647}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 805525ae56d7a8648bfa039d923cc0c5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
