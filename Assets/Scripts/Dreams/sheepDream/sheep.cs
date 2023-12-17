@@ -23,9 +23,9 @@ public class sheep : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown("space"))
+        if (transform.position.x >= 25f)
         {
-            jump();
+            Destroy(gameObject);
         }
     }
 
