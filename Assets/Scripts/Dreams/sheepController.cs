@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Tex
+using TMPro;
 
 public class sheepController : MonoBehaviour
 {
     [SerializeField] private GameObject sheepTemplate;
-    [SerializeField] private  counter;
+    [SerializeField] private TMP_Text counter;
     private Queue<GameObject> sheepQueue = new Queue<GameObject>{};
+    private int sheepCount = 0;
     private int i = 120;
 
     // Start is called before the first frame update
@@ -19,7 +20,7 @@ public class sheepController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space")) //jump sheep
         {
             GameObject currentSheep = sheepQueue.Dequeue();
             currentSheep.GetComponent<sheep>().jump();
@@ -42,6 +43,13 @@ public class sheepController : MonoBehaviour
     {
         sheepQueue.Enqueue(GameObject.Instantiate(sheepTemplate, transform));
     }
+
+    public void sheepCleared()
+    {
+        sheepCount++;
+        counter.text = sheepCount.ToString();
+    }
+
 
 
 

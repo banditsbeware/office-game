@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,7 +134,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1552
-        width: 64
+        width: 128
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -153,10 +153,10 @@ TextureImporter:
       name: Cubicle_Mug
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1594
-        width: 6
-        height: 6
+        x: 128
+        y: 1589
+        width: 11
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,12 +174,12 @@ TextureImporter:
       name: Cubicle_Computer
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1588
-        width: 13
-        height: 12
+        x: 160
+        y: 1576
+        width: 26
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Cubicle_Keyboart
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1582
-        width: 12
-        height: 4
+        x: 160
+        y: 1564
+        width: 24
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: Cubicle_Mouse
       rect:
         serializedVersion: 2
-        x: 94
-        y: 1583
-        width: 2
-        height: 3
+        x: 188
+        y: 1566
+        width: 4
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: Cubicle_Picture
       rect:
         serializedVersion: 2
-        x: 96
-        y: 1594
-        width: 7
-        height: 6
+        x: 192
+        y: 1588
+        width: 13
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: Cubicle_Laptop
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1568
-        width: 12
-        height: 11
+        x: 160
+        y: 1537
+        width: 25
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: Cubicle_Gamer
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1554
-        width: 28
-        height: 13
+        x: 160
+        y: 1508
+        width: 56
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: Cubicle_Poster
       rect:
         serializedVersion: 2
-        x: 112
-        y: 1594
-        width: 11
-        height: 6
+        x: 224
+        y: 1588
+        width: 22
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: Cubicle_Chair
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1581
-        width: 8
-        height: 19
+        x: 256
+        y: 1565
+        width: 14
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
