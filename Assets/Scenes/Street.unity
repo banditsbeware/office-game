@@ -3283,6 +3283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768814079}
   - component: {fileID: 768814080}
+  - component: {fileID: 768814081}
   m_Layer: 5
   m_Name: pat
   m_TagString: Untagged
@@ -3336,6 +3337,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &768814081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768814078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb718fd710ff4f0bb18ce48f69bd198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &776858334 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1235472951587911453, guid: e8494f0ef75489b4597ae9ee4eca38b7, type: 3}

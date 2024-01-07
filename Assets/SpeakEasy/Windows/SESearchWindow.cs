@@ -77,6 +77,11 @@ namespace SpeakEasy.Windows
                     level = 2,
                     userData = SENodeType.Animate
                 },
+                new SearchTreeEntry(new GUIContent("Action", indentation))
+                {
+                    level = 2,
+                    userData = SENodeType.Action
+                },
 
                 new SearchTreeGroupEntry(new GUIContent("Dialogue Group"), 1),
                 new SearchTreeEntry(new GUIContent("Single Group", indentation))
@@ -153,6 +158,12 @@ namespace SpeakEasy.Windows
                 {
                     SEAnimateNode animateNode = (SEAnimateNode) graphView.CreateNode(SENodeType.Animate, localMousePosition);
                     graphView.AddElement(animateNode);
+                    return true;
+                }
+                case SENodeType.Action:
+                {
+                    SEActionNode actionNode = (SEActionNode) graphView.CreateNode(SENodeType.Action, localMousePosition);
+                    graphView.AddElement(actionNode);
                     return true;
                 }
                 case Group _:

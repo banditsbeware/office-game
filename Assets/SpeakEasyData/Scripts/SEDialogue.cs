@@ -47,6 +47,7 @@ namespace SpeakEasy
         [HideInInspector] internal Sprite playerBubbleSprite;
         [HideInInspector] internal Sprite npcBubbleSprite;
         [HideInInspector] internal Sprite emptySprite;
+    
 
         //Speaker tracking
         internal Coroutine speakingCoroutine;
@@ -133,6 +134,11 @@ namespace SpeakEasy
                 
                 case Animate:
                     StartCoroutine(TriggerAnimation());
+                    break;
+                
+                //Next dialog will not be called until the function called in Action says so
+                case Action:
+                    node = NextNode();
                     break;
 
                 default:

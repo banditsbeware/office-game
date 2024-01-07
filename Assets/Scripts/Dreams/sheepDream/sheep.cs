@@ -42,6 +42,7 @@ public class sheep : MonoBehaviour
     {
         selfRigidbody.velocity = new Vector3(Random.Range(ejectVelMin.x, ejectVelMax.x), Random.Range(ejectVelMin.y, ejectVelMax.y), Random.Range(ejectVelMin.z, ejectVelMax.z));
         selfRigidbody.angularVelocity = new Vector3(Random.Range(-ejectRotation.x, ejectRotation.x), Random.Range(-ejectRotation.y, ejectRotation.y), Random.Range(-ejectRotation.z, ejectRotation.z));
+        Camera.main.GetComponent<FollowMan>().player = transform;
     }
 
     public void jump()

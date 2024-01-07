@@ -13,5 +13,6 @@ namespace SpeakEasy.Enumerations
         Delay,
         Connector,
         Animate,
+        Action
     }
 } 

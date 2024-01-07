@@ -45,7 +45,8 @@ namespace SpeakEasy.Utilities
             {"hy", "Harley"},
             {"g", "Gouda"},
             {"s", "Sacha"},
-            {"m", "Marisol"}
+            {"m", "Marisol"},
+            {"d", "Dean"}
         };
 
         public static void Initialize(SEGraphView seGraphView, string graphName)
