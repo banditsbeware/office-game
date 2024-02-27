@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: dawg_choice
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: dawg_choice
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: classic
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 269061c4a1bcccb40a35fa7854e3c7ba, type: 2}
+  - <Text>k__BackingField: hawt
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a8d915bea5840b44887ccf04711d2102, type: 2}
+  - <Text>k__BackingField: rambunctious
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4f23e466fd35ea5429d9d247280442ac, type: 2}
+  - <Text>k__BackingField: hot dog
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0608e9b3b5c39ff45a77d049a4256e46, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <SpeechTime>k__BackingField: 0

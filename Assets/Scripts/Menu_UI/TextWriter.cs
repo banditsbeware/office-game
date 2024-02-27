@@ -56,14 +56,12 @@ public class TextWriter : MonoBehaviour
         private int charIndex;
         private float timePerChar;
         private float timer;
-        bool invisChars;
 
         public TextWriterSingle(TMP_Text uiText, string text, float time)
         {
             this.uiText = uiText;
             textToWrite = text;
             timePerChar = time;
-            invisChars = true;
             charIndex = 0;
             timer = -.1f; 
         }
@@ -73,7 +71,6 @@ public class TextWriter : MonoBehaviour
             this.uiText = uiText;
             textToWrite = text;
             timePerChar = .05f;
-            invisChars = true;
             charIndex = 0;    
             timer = 0f;   
         }
@@ -88,11 +85,7 @@ public class TextWriter : MonoBehaviour
                 timer += timePerChar;
                 charIndex++;
                 string text = textToWrite.Substring(0, charIndex);
-                if (invisChars)
-                {
-                    text += " <alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
-                }
-
+                text += " <alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
                 uiText.text = text;
 
                 if (charIndex >= textToWrite.Length)

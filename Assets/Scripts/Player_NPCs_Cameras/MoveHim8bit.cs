@@ -56,7 +56,6 @@ public class MoveHim8bit : MonoBehaviour {
       {
         ExecuteMovementFrame();
         skipNode = false;
-        Debug.Log(isNode);
         return;
       }
 

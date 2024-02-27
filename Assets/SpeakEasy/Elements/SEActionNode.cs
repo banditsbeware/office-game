@@ -12,15 +12,15 @@ namespace SpeakEasy.Elements
     using Windows;
     using Utilities;
 
-    //used to call a function using trigger animations and events linked to those animations
-    //wait for a specific action (within the perscribed function) to continue to the next dialogue
-    //for this node to work, the animator must be placed on the parent of the dialogue object
+    //used to call a function using Monobehavior.Invoke()
+    //waits for a specific action (within the perscribed function) to continue to the next dialogue
+    //for this node to work, the function Invoked must end with SEDialogue.BeginNode()
     public class SEActionNode : SENode
     {
 
         public override void Initialize(SEGraphView seGraphView, Vector2 position, string nodeName, bool isPlayer = false)
         {
-            DialogueText = "trigger name";
+            DialogueText = "function to invoke";
 
             base.Initialize(seGraphView, position, nodeName, isPlayer);
 

@@ -133,9 +133,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1552
+        y: 1549
         width: 128
-        height: 48
+        height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,9 +322,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1565
+        y: 1557
         width: 14
-        height: 35
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,6 +334,90 @@ TextureImporter:
       bones: []
       spriteID: 083e798ea640120439b9ebed7db4e4f9
       internalID: -1256183574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_PlantA
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1556
+        width: 14
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad203b4398be6ab4ab6f1a51bbdb8d57
+      internalID: -1280261734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_PlantB
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1556
+        width: 9
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17c290286eaa384e9c72047a5b3bc88
+      internalID: -354277443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_MemoBoard
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1522
+        width: 18
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978f77d8dafd6904c957e2e8f44e913c
+      internalID: -439658709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cubicle_Printer
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1525
+        width: 44
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9434a9622251eba429ed9d93627bd01e
+      internalID: 633615683
       vertices: []
       indices: 
       edges: []
@@ -351,13 +435,17 @@ TextureImporter:
     nameFileIdTable:
       Cubicle_Keyboart: -869329538
       Cubicle_: -1041934110
+      Cubicle_MemoBoard: -439658709
       Cubicle_Gamer: -125182391
       Cubicle_Picture: 1945529810
       Cubicle_Poster: 1914601303
       Cubicle_Laptop: -1961622119
       Cubicle_Computer: -2022498750
+      Cubicle_Printer: 633615683
       Cubicle_Chair: -1256183574
+      Cubicle_PlantB: -354277443
       Cubicle_Mouse: -1812794706
+      Cubicle_PlantA: -1280261734
       Cubicle_Mug: -660247512
   spritePackingTag: 
   pSDRemoveMatte: 0

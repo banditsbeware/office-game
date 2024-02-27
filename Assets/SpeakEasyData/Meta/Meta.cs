@@ -28,6 +28,8 @@ public static class Meta
         SetValue("cigs", 0, Global);
         SetValue("flappyHighScore", 0, Global);
         SetValue("currentScene", "Office", Global);
+        
+        SetValue("dialogueChoiceButtonMode", "default", Global);
 
         SetDaily();
         SetYesterday();
@@ -35,7 +37,7 @@ public static class Meta
 
     public static void SetDaily()
     {
-        SetValue("afterWork", false, Daily);
+        SetValue("afterWork", true, Daily);
         SetValue("waRepeatedChoice", 0, Daily);
         SetValue("bVisits", 0, Daily);
         SetValue("bEggAttempt", 0, Daily);

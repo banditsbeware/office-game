@@ -123,7 +123,7 @@ namespace SpeakEasy
 
         #region Event Handling
 
-        internal override void BeginNode()
+        public override void BeginNode()
         {
             PerformCallbacks();
 

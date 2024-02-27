@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: act_eee
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: action
+  <DialogueText>k__BackingField: SayHello
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 66f4413045bdf445a8edafab5be045d8, type: 2}

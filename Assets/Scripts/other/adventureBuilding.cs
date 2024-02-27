@@ -7,8 +7,8 @@ using System.Linq;
 public class adventureBuilding : MonoBehaviour
 {
     //entrance/exit mats and doors
-    public bool onWelcomeMat;
-    public bool onGoodbyeMat;
+    [HideInInspector] public bool onWelcomeMat;
+    [HideInInspector] public bool onGoodbyeMat;
     public Vector2Int directionOfDoor;
     public MoveHim8bit playerMovement;
 
@@ -18,8 +18,8 @@ public class adventureBuilding : MonoBehaviour
     private GameObject exterior;
     private GameObject exteriorCollider;
     private GameObject buildingEntrance; 
-    public static List<GameObject> allExteriorsAndEntrances; // total collection
-    private List<GameObject> otherExteriorsAndEntrances; // all minus those belonging to this instance
+    public static List<GameObject> allExteriorsAndEntrances; // total collection among all entrances/exteriors that have collider components in map
+    private List<GameObject> otherExteriorsAndEntrances; // above, minus those belonging to this instance of a building ()
 
     private void Start() {
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>();

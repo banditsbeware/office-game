@@ -18,8 +18,8 @@ MonoBehaviour:
     obligation, and sign your name below.
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 316046b5af4154c40ab3a26efe8203e4, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 54c4c21a93cfe1a448d22383beaef24c, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 5.0657744
+  <SpeechTime>k__BackingField: 4.3217387

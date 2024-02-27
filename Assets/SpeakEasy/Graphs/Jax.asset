@@ -139,20 +139,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 4749, y: -474}
-  - <ID>k__BackingField: 2d748394-2839-44c0-80c3-26f1ba9e1067
-    <Name>k__BackingField: j_does_the_total
-    <Text>k__BackingField: If the total on the screen looks alright, you can go a
-      head and tap or swipe your card now.
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5389, y: -474}
   - <ID>k__BackingField: 38d297e6-5b8e-4474-a538-cf429141fb1a
     <Name>k__BackingField: p_not_quite
     <Text>k__BackingField: not quite
@@ -247,33 +233,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1789, y: 157}
-  - <ID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
-    <Name>k__BackingField: j_then_just_tap
-    <Text>k__BackingField: Perfect! Finally just tap any option at all, no obligation,
-      and sign your name below.
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 5957, y: -474}
-  - <ID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
-    <Name>k__BackingField: j_incredible_rest
-    <Text>k__BackingField: alrighty, have an incredible rest of your day, okay?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 6828, y: -474}
   - <ID>k__BackingField: 08d5cdb4-5031-4605-8ed3-57dcff7160a7
     <Name>k__BackingField: p_classic
     <Text>k__BackingField: how about the classic dog
@@ -344,32 +303,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1364, y: 729}
-  - <ID>k__BackingField: 781bebfd-ee6d-40fe-a1d4-3f3ed5ff462d
-    <Name>k__BackingField: _entry
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: First Node
-      <NodeID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 2
-    <Position>k__BackingField: {x: -213, y: 487}
-  - <ID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
-    <Name>k__BackingField: j_why_hello
-    <Text>k__BackingField: WHY HELLO! Welcome to Dawg's hot dog emporium!
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 849c3e03-e941-4eb4-a40a-209aabd81ca9
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 385, y: 487}
   - <ID>k__BackingField: 019d76f7-3d77-4006-a8f9-c695fdc1dc52
     <Name>k__BackingField: p_steamed_ham
     <Text>k__BackingField: just a steamed ham, please
@@ -555,30 +488,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
     <Position>k__BackingField: {x: 2149, y: 729}
-  - <ID>k__BackingField: 30a38b1a-104c-4163-b331-bcc7819c6667
-    <Name>k__BackingField: anim_pay
-    <Text>k__BackingField: pay
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 5716, y: -700}
-  - <ID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
-    <Name>k__BackingField: _exit_main
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 3
-    <Position>k__BackingField: {x: 7173, y: -474}
   - <ID>k__BackingField: 9713be50-dbe1-4002-b6c6-cdcf0edc0119
     <Name>k__BackingField: anim_bendOver
     <Text>k__BackingField: bendOver
@@ -592,6 +501,160 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 9
     <Position>k__BackingField: {x: 3561, y: -414}
+  - <ID>k__BackingField: 781bebfd-ee6d-40fe-a1d4-3f3ed5ff462d
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: 43, y: 490}
+  - <ID>k__BackingField: a8eb326a-2c0d-467d-a437-01b104f4a612
+    <Name>k__BackingField: j_why_hello
+    <Text>k__BackingField: WHY HELLO! Welcome to Dawg's hot dog emporium!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 849c3e03-e941-4eb4-a40a-209aabd81ca9
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 308, y: 487}
+  - <ID>k__BackingField: 2d748394-2839-44c0-80c3-26f1ba9e1067
+    <Name>k__BackingField: j_does_the_total
+    <Text>k__BackingField: If the total on the screen looks alright, you can go a
+      head and tap or swipe your card now.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5389, y: -474}
+  - <ID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
+    <Name>k__BackingField: j_then_just_tap
+    <Text>k__BackingField: Perfect! Finally just tap any option at all, no obligation,
+      and sign your name below.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 0e2568b8-1d00-44ea-98f4-51d0347f9550
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5740, y: -474}
+  - <ID>k__BackingField: 5c045c00-bb2a-4f31-b90b-19b0cb6d17d5
+    <Name>k__BackingField: tip_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: No Tip
+      <NodeID>k__BackingField: 5e3b0ffb-fc3a-4ee9-b909-e434ea9e3b18
+    - <Text>k__BackingField: $1.00
+      <NodeID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
+    - <Text>k__BackingField: $3.00
+      <NodeID>k__BackingField: e7712bbd-d543-430c-a52e-83fac28f1cac
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 6316, y: -518}
+  - <ID>k__BackingField: 5e3b0ffb-fc3a-4ee9-b909-e434ea9e3b18
+    <Name>k__BackingField: j_incredible_rest
+    <Text>k__BackingField: alrighty, have an incredible rest of your day, okay?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7f0edceb-d90d-4d36-9682-51715b0d0512
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6774, y: -615}
+  - <ID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
+    <Name>k__BackingField: j_thank_incredible
+    <Text>k__BackingField: Thank you sir! have an incredible rest of your day, okay?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7f0edceb-d90d-4d36-9682-51715b0d0512
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6774, y: -409}
+  - <ID>k__BackingField: e7712bbd-d543-430c-a52e-83fac28f1cac
+    <Name>k__BackingField: j_oh_my
+    <Text>k__BackingField: Oh my goodness! Thank you so, so much sir! I hope you
+      have an amazing rest of your day!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7f0edceb-d90d-4d36-9682-51715b0d0512
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6774, y: -259}
+  - <ID>k__BackingField: 0e2568b8-1d00-44ea-98f4-51d0347f9550
+    <Name>k__BackingField: act_buttonChange
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 5c045c00-bb2a-4f31-b90b-19b0cb6d17d5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: tip
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 6049, y: -474}
+  - <ID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
+    <Name>k__BackingField: _exit_main
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 7567, y: -474}
+  - <ID>k__BackingField: 7f0edceb-d90d-4d36-9682-51715b0d0512
+    <Name>k__BackingField: act_buttonChange2
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: default
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 7263, y: -474}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - food_choice
@@ -602,7 +665,6 @@ MonoBehaviour:
   - j_here_you_go
   - j_was_that_all
   - p_yep
-  - j_does_the_total
   - p_not_quite
   - j_incredible
   - j_what_else
@@ -610,14 +672,10 @@ MonoBehaviour:
   - p_hot_dog
   - p_fries
   - j_amazing
-  - j_then_just_tap
-  - j_incredible_rest
   - p_classic
   - p_rambunctious
   - p_hawt
   - p_actually_im
-  - _entry
-  - j_why_hello
   - p_steamed_ham
   - j_an_albany
   - fries_choice
@@ -630,8 +688,17 @@ MonoBehaviour:
   - j_hoss
   - j_oh_okay
   - _exit
-  - anim_pay
-  - _exit_main
   - anim_bendOver
+  - _entry
+  - j_why_hello
+  - j_does_the_total
+  - j_then_just_tap
+  - tip_choice
+  - j_incredible_rest
+  - j_thank_incredible
+  - j_oh_my
+  - act_buttonChange
+  - _exit_main
+  - act_buttonChange2
   <OldGroupedNames>k__BackingField:
     list: []

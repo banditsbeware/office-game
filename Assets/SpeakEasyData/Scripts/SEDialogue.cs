@@ -13,10 +13,11 @@ namespace SpeakEasy
     using Data;
     using Data.Save;
   using UnityEngine.EventSystems;
+    using UnityEngine.InputSystem;
 
 
-  //The Class you place on a Dialogue Handler to operate in Game
-  public class SEDialogue : MonoBehaviour
+    //The Class you place on a Dialogue Handler to operate in Game
+    public class SEDialogue : MonoBehaviour
     {
         //Dialogue ScriptableObjects
         [SerializeField] internal SEContainerSO container;
@@ -39,7 +40,7 @@ namespace SpeakEasy
         [SerializeField] internal TMP_Text npcSpeechText;
         [SerializeField] internal Animator npcAnimator;
 
-        [SerializeField] private List<GameObject> choiceButtons;
+        [SerializeField] public List<GameObject> choiceButtons = new List<GameObject>();
 
         [HideInInspector] internal Image playerBubbleImage;
         [HideInInspector] internal Image npcBubbleImage;
@@ -47,6 +48,7 @@ namespace SpeakEasy
         [HideInInspector] internal Sprite playerBubbleSprite;
         [HideInInspector] internal Sprite npcBubbleSprite;
         [HideInInspector] internal Sprite emptySprite;
+        [HideInInspector] internal DialogueActions actions;
     
 
         //Speaker tracking
@@ -65,6 +67,8 @@ namespace SpeakEasy
             playerBubbleSprite = playerBubbleImage.sprite;
 
             emptySprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Sprites/empty.png");
+
+            actions = GetComponent<DialogueActions>();
         }
 
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
@@ -87,7 +91,7 @@ namespace SpeakEasy
 
         #region Event Handling
 
-        internal virtual void BeginNode()
+        public virtual void BeginNode()
         {
             PerformCallbacks();
 
@@ -138,6 +142,7 @@ namespace SpeakEasy
                 
                 //Next dialog will not be called until the function called in Action says so
                 case Action:
+                    actions.Invoke(node.DialogueText, 0);
                     node = NextNode();
                     break;
 
@@ -170,9 +175,10 @@ namespace SpeakEasy
             return nextNode;
         }
 
+        //sees which button in choices list was selected, moved to that node in the dialogue tree
         public virtual void ChoiceMade(GameObject button)
         {
-            int choiceIndex = choiceButtons.IndexOf(button);
+            int choiceIndex = choiceButtons.IndexOf(button); 
 
             if (choiceIndex < node.Choices.Count)
             {
@@ -285,7 +291,7 @@ namespace SpeakEasy
             }
 
             TextWriter.AddWriter_Static(npcSpeechText, node.DialogueText);
-
+            
             yield return new WaitForSeconds(node.SpeechTime);
 
             npcAnimator.SetBool("isSpeaking", false);
@@ -362,6 +368,7 @@ namespace SpeakEasy
 
         internal virtual void PresentChoices()
         {
+            
             int numberOfChoices = node.Choices.Count;
             for (int i = 0; i < numberOfChoices; i++)
             {

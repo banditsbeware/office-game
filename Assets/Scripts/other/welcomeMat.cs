@@ -13,7 +13,6 @@ public class welcomeMat : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("Entered Welcome!");
         building.onWelcomeMat = true;
         building.directionOfDoor = dir;
     }
