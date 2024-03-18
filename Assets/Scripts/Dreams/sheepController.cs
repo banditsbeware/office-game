@@ -37,7 +37,6 @@ public class sheepController : MonoBehaviour
         {
             i = 240;
             spawnSheep();
-            Debug.Log("ep");
         }
         
     }
@@ -51,10 +50,5 @@ public class sheepController : MonoBehaviour
     {
         sheepCount++;
         counter.text = sheepCount.ToString();
-    }
-
-
-
-
-    
+    }  
 }
