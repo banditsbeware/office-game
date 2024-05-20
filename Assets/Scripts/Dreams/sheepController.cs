@@ -8,6 +8,7 @@ public class sheepController : MonoBehaviour
     [SerializeField] private GameObject sheepTemplate;
     [SerializeField] private TMP_Text counter;
     private Queue<GameObject> sheepQueue = new Queue<GameObject>{};
+     GameObject currentSheep = null;
     private int sheepCount = 0;
     private int i = 100;
 
@@ -21,8 +22,11 @@ public class sheepController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("space")) //jump sheep
-        {
-            GameObject currentSheep = sheepQueue.Dequeue();
+        {           
+            if (sheepQueue.Count != 0)
+            {
+                currentSheep = sheepQueue.Dequeue();
+            }
             if (currentSheep != null)
             {
                 currentSheep.GetComponent<sheep>().jump();
@@ -43,7 +47,7 @@ public class sheepController : MonoBehaviour
 
     public void spawnSheep()
     {
-        sheepQueue.Enqueue(GameObject.Instantiate(sheepTemplate, transform));   
+        sheepQueue.Enqueue(Instantiate(sheepTemplate, transform));   
     }
 
     public void sheepCleared()
