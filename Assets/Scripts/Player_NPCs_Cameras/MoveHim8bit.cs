@@ -51,7 +51,6 @@ public class MoveHim8bit : MonoBehaviour {
         ExecuteMovementFrame();
         return;
       }
-
       if (skipNode)
       {
         ExecuteMovementFrame();
@@ -68,12 +67,16 @@ public class MoveHim8bit : MonoBehaviour {
       if (Input.GetAxisRaw("Horizontal") != 0)
       {
         velocity.x = (int) Input.GetAxisRaw("Horizontal");
+        Collider2D hitCollider = Physics2D.OverlapCircle(new Vector2(transform.position.x + velocity.x, transform.position.y), 0f);
         animator.SetBool("moving", true);
         ExecuteMovementFrame();
+        
+        
       }
       else if (Input.GetAxisRaw("Vertical") != 0)
       {
         velocity.y = (int) Input.GetAxisRaw("Vertical");
+        Collider2D hitCollider = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y + velocity.y), 0f);
         animator.SetBool("moving", true);
         ExecuteMovementFrame();
       }      
