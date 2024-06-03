@@ -277,16 +277,12 @@ namespace SpeakEasy
 
           //apply postIt header
           postIt.text = "acceptable topics\nof conversation:\n";
-          List<string> postItDescriptions = new List<string>();
 
           foreach (SEChoiceData choice in node.Choices)
           {
-            string correctPostIt = node.DialogueText.Split("\n")[node.Choices.IndexOf(choice)];
-            postItDescriptions.Add(correctPostIt);
-
             avalibleWords.Add(new Word(){
               word = choice.Text.ToUpper(),
-              postItDes = correctPostIt
+              postItDes = "-" + choice.Text
               });
           }
 
@@ -315,7 +311,7 @@ namespace SpeakEasy
           Word goodbye = new Word()
           {
             word = "GOODBYE",
-            postItDes = "-say your goodbyes"
+            postItDes = "-goodbye"
           };
 
           avalibleWords.Add(goodbye);

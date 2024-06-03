@@ -17,7 +17,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: SetChoiceButtonsToPreset
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7f3a3a2d439ad4c4badf176b84c5ae35, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ec210f09d8fbd2e4f9f59691873546e3, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField:
   - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode

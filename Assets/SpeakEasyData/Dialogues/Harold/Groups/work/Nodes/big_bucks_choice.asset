@@ -14,11 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: big_bucks_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-9 to 5
-
-    -getting bought
-
-    -company customer'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: hours
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 16233c1e57d4b2e469eb580eb502692e, type: 2}

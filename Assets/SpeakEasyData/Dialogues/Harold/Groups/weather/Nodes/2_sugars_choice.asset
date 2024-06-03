@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: 2_sugars_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-solid precipitation
-
-    -garments'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: snow
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: e66ba5777bb3d8248acfbd468ac37774, type: 2}

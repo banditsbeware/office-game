@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: child_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-education
-
-    -enlargement
-
-    -foot sport
-
-    -www'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: school
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 89b293d33c62abe46b0f112587ddc077, type: 2}

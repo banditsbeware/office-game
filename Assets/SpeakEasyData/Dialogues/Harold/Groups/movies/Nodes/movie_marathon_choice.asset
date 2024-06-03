@@ -14,16 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: movie_marathon_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-famous man
-
-    -science movie
-
-    -ticket cost
-
-    -solid
-    precipitate
-
-    -posterity'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: actor
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8d7f420a43b101341b0f2c8718558e42, type: 2}

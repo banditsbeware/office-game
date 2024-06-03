@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: comeback_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-sport collaborators
-
-    -elite team'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: team
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6fd02c6900ff2cb48801abe22da8e0dd, type: 2}

@@ -14,8 +14,9 @@ public static class UIManager
 	//minigames are all made in UI, I'm so sorry
 	[HideInInspector] public static GameObject[] minigames; 
 
-	// gamestates are: pause, play, window
+	// gamestates are: pause, play, window, cutscene
 	public static string gameState = "play";
+	public static string bufferState = null;
 
 	// reloads current scene index (in Build Management)
 	public static void Reload(){
@@ -24,24 +25,38 @@ public static class UIManager
 
 	public static void pauseControl()
 	{
-		if (gameState == "play") //when esc is it while playing
+		switch (gameState)
 		{
-			Time.timeScale = 0;
-			show(pauseObjects);
-			gameState = "pause";
-		} 
-		else if (gameState == "pause") //when resume or esc are hit in pause menu
-		{
-			Time.timeScale = 1;
-			hide(pauseObjects);
-			gameState = "play";
+			case "play": //when esc is pressed when in standard play mode or cutscene, game will move to pause
+				Time.timeScale = 0;
+				show(pauseObjects);
+				bufferState = "play";
+				gameState = "pause";
+			break;
+			case "cutscene": 
+				Time.timeScale = 0;
+				show(pauseObjects);
+				bufferState = "cutscene";
+				gameState = "pause";
+			break;
+			case "pause": //game will revery to whatever state it was in when it was paused
+				Time.timeScale = 1;
+				hide(pauseObjects);
+				gameState = bufferState;
+				bufferState = null;
+			break;
+			case "window": //esc will only exit you from a minigame, not pause.
+				hide(minigames);
+				GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+				gameState = "play";
+			break;
 		}
-		else if (gameState == "window") // exit from minigame
-		{
-			hide(minigames);
-			GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
-			gameState = "play";
-		}
+	}
+
+	public static void EnterCutscene()
+	{
+		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+		gameState = "cutscene";
 	}
 
 	//  shows objects with tag

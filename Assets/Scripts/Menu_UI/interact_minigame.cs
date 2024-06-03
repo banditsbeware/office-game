@@ -35,7 +35,6 @@ public class interact_minigame : interact
         base.OnTriggerExit2D(other);
         if (other.tag == "Player" && minigameBank != null)
         {
-            Debug.Log("Oof");
             minigameBank.Unload();
         }
     }

@@ -22,10 +22,10 @@ MonoBehaviour:
     <Position>k__BackingField: {x: -327, y: -1543}
   - <ID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
     <Name>k__BackingField: weather
-    <Position>k__BackingField: {x: 1403, y: -2362}
+    <Position>k__BackingField: {x: 1403, y: -2361.9998}
   - <ID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
     <Name>k__BackingField: child
-    <Position>k__BackingField: {x: 1408, y: -1567}
+    <Position>k__BackingField: {x: 1408.0001, y: -1566.9999}
   - <ID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
     <Name>k__BackingField: work
     <Position>k__BackingField: {x: 1383, y: -587}
@@ -40,7 +40,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 313, y: -566}
   - <ID>k__BackingField: df81f0eb-475c-4abd-ae1e-480495e14f75
     <Name>k__BackingField: repeat
-    <Position>k__BackingField: {x: -341, y: 260}
+    <Position>k__BackingField: {x: -340.99988, y: 260.00012}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 2461de9a-72d8-4e3c-8709-d819d4d4f3c5
     <Name>k__BackingField: random_goodbye
@@ -746,382 +746,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 919, y: -374}
-  - <ID>k__BackingField: dac58ef7-79b4-4beb-910e-ee0a0435acff
-    <Name>k__BackingField: weather_choice
-    <Text>k__BackingField: '-solid precipitation
-
-      -garments
-
-      -warm caffiene'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: snow
-      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
-    - <Text>k__BackingField: clothes
-      <NodeID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
-    - <Text>k__BackingField: coffee
-      <NodeID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1700, y: -2103}
-  - <ID>k__BackingField: 473f0d34-ac2b-4c4e-b094-7341911c37fa
-    <Name>k__BackingField: starter_choice
-    <Text>k__BackingField: '-climate
-
-      -posterity
-
-      -occupation
-
-      -cinema
-
-      -athletics'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: weather
-      <NodeID>k__BackingField: b7366ce3-dfd1-44ff-a955-6f1c77a076e9
-    - <Text>k__BackingField: child
-      <NodeID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
-    - <Text>k__BackingField: work
-      <NodeID>k__BackingField: 0854f783-cb83-42f5-b96e-61ae2ff4a945
-    - <Text>k__BackingField: movies
-      <NodeID>k__BackingField: 8e4bb26c-c279-4266-a82e-4753aec0b587
-    - <Text>k__BackingField: sports
-      <NodeID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 661, y: -333}
-  - <ID>k__BackingField: 96f55f3f-53c5-4449-b246-f7eaf45c8e99
-    <Name>k__BackingField: sunshine_choice
-    <Text>k__BackingField: '-garments
-
-      -warm caffiene'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: clothes
-      <NodeID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
-    - <Text>k__BackingField: coffee
-      <NodeID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2631, y: -2303}
-  - <ID>k__BackingField: c8d9ded9-a14e-4f02-922b-b51ee3bd7c7f
-    <Name>k__BackingField: jacket_store_choice
-    <Text>k__BackingField: '-posterity
-
-      -warm caffiene
-
-      -solid precipitation'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: child
-      <NodeID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
-    - <Text>k__BackingField: coffee
-      <NodeID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
-    - <Text>k__BackingField: snow
-      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2613, y: -2103}
-  - <ID>k__BackingField: bc6f7ec3-7d0f-4007-a6ce-0a5558b33aaa
-    <Name>k__BackingField: 2_sugars_choice
-    <Text>k__BackingField: '-solid precipitation
-
-      -garments'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: snow
-      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
-    - <Text>k__BackingField: clothes
-      <NodeID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2613, y: -1866}
-  - <ID>k__BackingField: 8c671cf5-93cb-4430-8f4d-a873429415f6
-    <Name>k__BackingField: child_choice
-    <Text>k__BackingField: '-education
-
-      -enlargement
-
-      -foot sport
-
-      -www'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: school
-      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
-    - <Text>k__BackingField: growth
-      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
-    - <Text>k__BackingField: soccer
-      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
-    - <Text>k__BackingField: internet
-      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1685, y: -1226}
-  - <ID>k__BackingField: 375ded9f-e54d-406e-86b0-7475e067c5e8
-    <Name>k__BackingField: pass_me_choice
-    <Text>k__BackingField: '-education
-
-      -foot sport
-
-      -www'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: school
-      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
-    - <Text>k__BackingField: soccer
-      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
-    - <Text>k__BackingField: internet
-      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2619, y: -1289}
-  - <ID>k__BackingField: 64b00520-6a35-4b9a-a6b2-886a7696feca
-    <Name>k__BackingField: Bs_choice
-    <Text>k__BackingField: '-enlargement
-
-      -foot sport
-
-      -www'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: growth
-      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
-    - <Text>k__BackingField: soccer
-      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
-    - <Text>k__BackingField: internet
-      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2619, y: -1508}
-  - <ID>k__BackingField: 8af2a81d-8ac9-45f0-adce-4d7acc6a8a43
-    <Name>k__BackingField: scrimmage_choice
-    <Text>k__BackingField: '-education
-
-      -www
-
-      -enlargement
-
-      -athletics'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: school
-      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
-    - <Text>k__BackingField: internet
-      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
-    - <Text>k__BackingField: growth
-      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
-    - <Text>k__BackingField: sports
-      <NodeID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2619, y: -1084}
-  - <ID>k__BackingField: e2b056e7-910e-4a36-bc4b-fa57c16ce98b
-    <Name>k__BackingField: tinktonk_choice
-    <Text>k__BackingField: '-enlargement
-
-      -foot sport
-
-      -education'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: growth
-      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
-    - <Text>k__BackingField: soccer
-      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
-    - <Text>k__BackingField: school
-      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2619, y: -842}
-  - <ID>k__BackingField: d61eba2b-d7ac-4924-9c52-21a9a5672d20
-    <Name>k__BackingField: work_choice
-    <Text>k__BackingField: '-management
-
-      -9 to 5
-
-      -getting bought
-
-      -company
-      customer'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: boss
-      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
-    - <Text>k__BackingField: hours
-      <NodeID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
-    - <Text>k__BackingField: merger
-      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
-    - <Text>k__BackingField: client
-      <NodeID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1660, y: -263}
-  - <ID>k__BackingField: d6979519-4b17-43e3-a1df-5e2898a32284
-    <Name>k__BackingField: big_bucks_choice
-    <Text>k__BackingField: '-9 to 5
-
-      -getting bought
-
-      -company customer'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: hours
-      <NodeID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
-    - <Text>k__BackingField: merger
-      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
-    - <Text>k__BackingField: client
-      <NodeID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2575, y: -528}
-  - <ID>k__BackingField: f3e3b356-ba74-4090-8ebe-1e642d45c3d6
-    <Name>k__BackingField: watch_ball_choice
-    <Text>k__BackingField: '-management
-
-      -getting bought
-
-      -athletics'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: boss
-      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
-    - <Text>k__BackingField: merger
-      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
-    - <Text>k__BackingField: sports
-      <NodeID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2579, y: -323}
-  - <ID>k__BackingField: 274972a6-d898-4ae6-9573-0653ebdd42a8
-    <Name>k__BackingField: no_updates_choice
-    <Text>k__BackingField: '-management
-
-      -company customer'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: boss
-      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
-    - <Text>k__BackingField: client
-      <NodeID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2579, y: -118}
-  - <ID>k__BackingField: 35b28374-90fd-40d7-a22d-7a6a136cccae
-    <Name>k__BackingField: whine_choice
-    <Text>k__BackingField: '-management
-
-      -9 to 5
-
-      -getting bought
-
-      -posterity'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: boss
-      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
-    - <Text>k__BackingField: hours
-      <NodeID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
-    - <Text>k__BackingField: merger
-      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
-    - <Text>k__BackingField: child
-      <NodeID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2579, y: 69}
-  - <ID>k__BackingField: ba339992-97d3-4e04-b417-7736b0013a2b
-    <Name>k__BackingField: movies_choice
-    <Text>k__BackingField: '-new to theaters
-
-      -famous man
-
-      -science movie
-
-      -ticket
-      cost'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: release
-      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
-    - <Text>k__BackingField: actor
-      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
-    - <Text>k__BackingField: scifi
-      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
-    - <Text>k__BackingField: prices
-      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1705, y: 724}
-  - <ID>k__BackingField: f16ae404-34a9-49ab-997e-1c1068759feb
-    <Name>k__BackingField: hes_in_choice
-    <Text>k__BackingField: '-new to theaters
-
-      -science movie
-
-      -ticket
-      cost'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: release
-      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
-    - <Text>k__BackingField: scifi
-      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
-    - <Text>k__BackingField: prices
-      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2655, y: 648}
   - <ID>k__BackingField: 74cb0dc1-1f18-46a9-95aa-1cab24c0eea5
     <Name>k__BackingField: h_visual_effects
     <Text>k__BackingField: visual effects have come such a long way
@@ -1135,78 +759,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 2246, y: 853}
-  - <ID>k__BackingField: 4a553791-c23f-4d75-ae8d-a51c145438c4
-    <Name>k__BackingField: movie_marathon_choice
-    <Text>k__BackingField: '-famous man
-
-      -science movie
-
-      -ticket cost
-
-      -solid
-      precipitate
-
-      -posterity'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: actor
-      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
-    - <Text>k__BackingField: scifi
-      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
-    - <Text>k__BackingField: prices
-      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
-    - <Text>k__BackingField: snow
-      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
-    - <Text>k__BackingField: child
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2655, y: 395}
-  - <ID>k__BackingField: 0f7d03b7-9bf4-4107-a67b-e082b06f239f
-    <Name>k__BackingField: visual_effects_choice
-    <Text>k__BackingField: '-new to theaters
-
-      -famous man
-
-      -ticket cost'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: release
-      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
-    - <Text>k__BackingField: actor
-      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
-    - <Text>k__BackingField: prices
-      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2655, y: 853}
-  - <ID>k__BackingField: 4c87e2fe-170f-43ca-92fa-7c26e3b02628
-    <Name>k__BackingField: tickets_choice
-    <Text>k__BackingField: '-new to theaters
-
-      -famous man
-
-      -science movie'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: release
-      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
-    - <Text>k__BackingField: actor
-      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
-    - <Text>k__BackingField: scifi
-      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2655, y: 1070}
   - <ID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
     <Name>k__BackingField: p_water_soccer
     <Text>k__BackingField: Jimmy still playing ball with the team?
@@ -1220,84 +772,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1963, y: -1084}
-  - <ID>k__BackingField: eecb9867-a023-4815-94f4-414e3b1abf75
-    <Name>k__BackingField: sports_choice
-    <Text>k__BackingField: '-competition
-
-      -sport collaborators
-
-      -elite
-      team'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: game
-      <NodeID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
-    - <Text>k__BackingField: team
-      <NodeID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
-    - <Text>k__BackingField: varsity
-      <NodeID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1846, y: 1612}
-  - <ID>k__BackingField: 4b50c438-9e47-44ca-a284-9a89f93ff1f0
-    <Name>k__BackingField: comeback_choice
-    <Text>k__BackingField: '-sport collaborators
-
-      -elite team'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: team
-      <NodeID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
-    - <Text>k__BackingField: varsity
-      <NodeID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2730, y: 1392}
-  - <ID>k__BackingField: 0e7397aa-93da-4fee-8218-0cdab98bf836
-    <Name>k__BackingField: takes_me_back_choice
-    <Text>k__BackingField: '-competition
-
-      -sport collaborators
-
-      -foot
-      sport'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: game
-      <NodeID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
-    - <Text>k__BackingField: team
-      <NodeID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
-    - <Text>k__BackingField: soccer
-      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2730, y: 1769}
-  - <ID>k__BackingField: f830d96b-8692-4cd2-8de8-51360081d754
-    <Name>k__BackingField: red_team_choice
-    <Text>k__BackingField: '-competition
-
-      -elite team'
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: game
-      <NodeID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
-    - <Text>k__BackingField: varsity
-      <NodeID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2738, y: 1573}
   - <ID>k__BackingField: d60718b6-1d24-4d63-87ac-c4af4a78e955
     <Name>k__BackingField: _exit_repeats
     <Text>k__BackingField: 
@@ -1309,44 +783,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: df81f0eb-475c-4abd-ae1e-480495e14f75
     <NodeType>k__BackingField: 3
     <Position>k__BackingField: {x: 585, y: 596}
-  - <ID>k__BackingField: 58a987f8-286e-4af6-b4c6-b2f2621e5c7b
-    <Name>k__BackingField: repeat_check
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 2400d754-d18b-4c8a-91b6-1394340f1916
-      <contextVariableName>k__BackingField: waRepeatedChoice
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: 1
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 98bd7db2-28af-4ded-bf7a-5ba600f05f7a
-      <contextVariableName>k__BackingField: waRepeatedChoice
-      <comparisonSign>k__BackingField: ==
-      <comparisonValue>k__BackingField: 2
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: ae132ec2-ee1d-4a92-9674-a7e026f073b8
-      <contextVariableName>k__BackingField: waRepeatedChoice
-      <comparisonSign>k__BackingField: '>'
-      <comparisonValue>k__BackingField: 2
-      <isMetaVariableComparison>k__BackingField: 0
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
-      <contextVariableName>k__BackingField: 
-      <comparisonSign>k__BackingField: 
-      <comparisonValue>k__BackingField: 
-      <isMetaVariableComparison>k__BackingField: 0
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: waRepeatedChoice
-      <callbackAction>k__BackingField: Increment
-      <callbackValue>k__BackingField: 1
-    <GroupID>k__BackingField: df81f0eb-475c-4abd-ae1e-480495e14f75
-    <NodeType>k__BackingField: 5
-    <Position>k__BackingField: {x: -87, y: 383}
   - <ID>k__BackingField: 7b438ea5-e326-4344-a577-e52b27ba9fe5
     <Name>k__BackingField: _entry_repeated
     <Text>k__BackingField: 
@@ -1463,6 +899,460 @@ MonoBehaviour:
     <GroupID>k__BackingField: accb5c69-24b5-4266-aad8-1a83050795e4
     <NodeType>k__BackingField: 7
     <Position>k__BackingField: {x: 681, y: -1199}
+  - <ID>k__BackingField: 473f0d34-ac2b-4c4e-b094-7341911c37fa
+    <Name>k__BackingField: starter_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: weather
+      <NodeID>k__BackingField: b7366ce3-dfd1-44ff-a955-6f1c77a076e9
+    - <Text>k__BackingField: child
+      <NodeID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
+    - <Text>k__BackingField: work
+      <NodeID>k__BackingField: 0854f783-cb83-42f5-b96e-61ae2ff4a945
+    - <Text>k__BackingField: movies
+      <NodeID>k__BackingField: 8e4bb26c-c279-4266-a82e-4753aec0b587
+    - <Text>k__BackingField: sports
+      <NodeID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 6f8c3fbb-1fbe-4bda-b8b8-459fdd1e7d88
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 661, y: -333}
+  - <ID>k__BackingField: d61eba2b-d7ac-4924-9c52-21a9a5672d20
+    <Name>k__BackingField: work_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: boss
+      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
+    - <Text>k__BackingField: hours
+      <NodeID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
+    - <Text>k__BackingField: merger
+      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
+    - <Text>k__BackingField: client
+      <NodeID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1660, y: -263}
+  - <ID>k__BackingField: 35b28374-90fd-40d7-a22d-7a6a136cccae
+    <Name>k__BackingField: whine_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: boss
+      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
+    - <Text>k__BackingField: hours
+      <NodeID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
+    - <Text>k__BackingField: merger
+      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
+    - <Text>k__BackingField: child
+      <NodeID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2579, y: 69}
+  - <ID>k__BackingField: d6979519-4b17-43e3-a1df-5e2898a32284
+    <Name>k__BackingField: big_bucks_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: hours
+      <NodeID>k__BackingField: aff77797-85d7-4879-bbfa-ac543f1f29e8
+    - <Text>k__BackingField: merger
+      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
+    - <Text>k__BackingField: client
+      <NodeID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2575, y: -528}
+  - <ID>k__BackingField: f3e3b356-ba74-4090-8ebe-1e642d45c3d6
+    <Name>k__BackingField: watch_ball_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: boss
+      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
+    - <Text>k__BackingField: merger
+      <NodeID>k__BackingField: 9dfde597-f267-49e8-8d53-d1b3c0fa7736
+    - <Text>k__BackingField: sports
+      <NodeID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2579, y: -323}
+  - <ID>k__BackingField: 274972a6-d898-4ae6-9573-0653ebdd42a8
+    <Name>k__BackingField: no_updates_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: boss
+      <NodeID>k__BackingField: cf748f6f-e265-4e5c-b34b-2af5f25f4e7d
+    - <Text>k__BackingField: client
+      <NodeID>k__BackingField: 791d914d-d8e4-4f1a-8c08-3c8b3955e205
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: dc49a111-8a88-4ac9-b528-ddd1376ab78b
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2579, y: -118}
+  - <ID>k__BackingField: ba339992-97d3-4e04-b417-7736b0013a2b
+    <Name>k__BackingField: movies_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: release
+      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
+    - <Text>k__BackingField: actor
+      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
+    - <Text>k__BackingField: scifi
+      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
+    - <Text>k__BackingField: prices
+      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1705, y: 724}
+  - <ID>k__BackingField: 4c87e2fe-170f-43ca-92fa-7c26e3b02628
+    <Name>k__BackingField: tickets_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: release
+      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
+    - <Text>k__BackingField: actor
+      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
+    - <Text>k__BackingField: scifi
+      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2655, y: 1070}
+  - <ID>k__BackingField: 0f7d03b7-9bf4-4107-a67b-e082b06f239f
+    <Name>k__BackingField: visual_effects_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: release
+      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
+    - <Text>k__BackingField: actor
+      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
+    - <Text>k__BackingField: prices
+      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2655, y: 853}
+  - <ID>k__BackingField: f16ae404-34a9-49ab-997e-1c1068759feb
+    <Name>k__BackingField: hes_in_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: release
+      <NodeID>k__BackingField: a49f9181-040c-4752-9e2b-8a3c23edc127
+    - <Text>k__BackingField: scifi
+      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
+    - <Text>k__BackingField: prices
+      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2655, y: 648}
+  - <ID>k__BackingField: 4a553791-c23f-4d75-ae8d-a51c145438c4
+    <Name>k__BackingField: movie_marathon_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: actor
+      <NodeID>k__BackingField: 0a37733d-f6d3-49d3-8916-42c870672301
+    - <Text>k__BackingField: scifi
+      <NodeID>k__BackingField: a4a7664c-da6b-4995-b580-34ed266104bc
+    - <Text>k__BackingField: prices
+      <NodeID>k__BackingField: f2f6d08b-d6ab-4f0d-a51b-1b55a777e279
+    - <Text>k__BackingField: snow
+      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
+    - <Text>k__BackingField: child
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 7ba5f9a9-810a-4fcf-8bee-6da1b25f8cdf
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2655, y: 395}
+  - <ID>k__BackingField: eecb9867-a023-4815-94f4-414e3b1abf75
+    <Name>k__BackingField: sports_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: game
+      <NodeID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
+    - <Text>k__BackingField: team
+      <NodeID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
+    - <Text>k__BackingField: varsity
+      <NodeID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1846, y: 1612}
+  - <ID>k__BackingField: 0e7397aa-93da-4fee-8218-0cdab98bf836
+    <Name>k__BackingField: takes_me_back_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: game
+      <NodeID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
+    - <Text>k__BackingField: team
+      <NodeID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
+    - <Text>k__BackingField: soccer
+      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2730, y: 1769}
+  - <ID>k__BackingField: f830d96b-8692-4cd2-8de8-51360081d754
+    <Name>k__BackingField: red_team_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: game
+      <NodeID>k__BackingField: eb1074d8-14ac-47f7-a7e8-989d0e555953
+    - <Text>k__BackingField: varsity
+      <NodeID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2738, y: 1573}
+  - <ID>k__BackingField: 4b50c438-9e47-44ca-a284-9a89f93ff1f0
+    <Name>k__BackingField: comeback_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: team
+      <NodeID>k__BackingField: 524f8263-627e-4696-98a5-fc7fa640311c
+    - <Text>k__BackingField: varsity
+      <NodeID>k__BackingField: b505e051-d26b-4834-9176-894ff3f79b47
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 934c577f-1754-4096-a2b7-4664927eb18d
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2730, y: 1392}
+  - <ID>k__BackingField: 8c671cf5-93cb-4430-8f4d-a873429415f6
+    <Name>k__BackingField: child_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: school
+      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
+    - <Text>k__BackingField: growth
+      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
+    - <Text>k__BackingField: soccer
+      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
+    - <Text>k__BackingField: internet
+      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1685, y: -1226}
+  - <ID>k__BackingField: e2b056e7-910e-4a36-bc4b-fa57c16ce98b
+    <Name>k__BackingField: tinktonk_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: growth
+      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
+    - <Text>k__BackingField: soccer
+      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
+    - <Text>k__BackingField: school
+      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2619, y: -842}
+  - <ID>k__BackingField: 8af2a81d-8ac9-45f0-adce-4d7acc6a8a43
+    <Name>k__BackingField: scrimmage_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: school
+      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
+    - <Text>k__BackingField: internet
+      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
+    - <Text>k__BackingField: growth
+      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
+    - <Text>k__BackingField: sports
+      <NodeID>k__BackingField: bc08d92a-db00-4726-9e4b-640e6ae772ee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2619, y: -1084}
+  - <ID>k__BackingField: 375ded9f-e54d-406e-86b0-7475e067c5e8
+    <Name>k__BackingField: pass_me_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: school
+      <NodeID>k__BackingField: 9bc3e954-4b0e-4819-a4d2-7aa58925a1d7
+    - <Text>k__BackingField: soccer
+      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
+    - <Text>k__BackingField: internet
+      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2619, y: -1289}
+  - <ID>k__BackingField: 64b00520-6a35-4b9a-a6b2-886a7696feca
+    <Name>k__BackingField: Bs_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: growth
+      <NodeID>k__BackingField: 28464417-9789-4c14-bc8d-0504b8397dd7
+    - <Text>k__BackingField: soccer
+      <NodeID>k__BackingField: a886ffa4-a7e2-4c1a-b139-f67db6221cfc
+    - <Text>k__BackingField: internet
+      <NodeID>k__BackingField: a49e0d5d-0ee0-467f-9964-58052f5e2ae4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 3f3ac18b-11f2-47fa-8aa2-07c2c107416a
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2619, y: -1508}
+  - <ID>k__BackingField: dac58ef7-79b4-4beb-910e-ee0a0435acff
+    <Name>k__BackingField: weather_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: snow
+      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
+    - <Text>k__BackingField: clothes
+      <NodeID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
+    - <Text>k__BackingField: coffee
+      <NodeID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1700, y: -2103}
+  - <ID>k__BackingField: bc6f7ec3-7d0f-4007-a6ce-0a5558b33aaa
+    <Name>k__BackingField: 2_sugars_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: snow
+      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
+    - <Text>k__BackingField: clothes
+      <NodeID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2613, y: -1866}
+  - <ID>k__BackingField: c8d9ded9-a14e-4f02-922b-b51ee3bd7c7f
+    <Name>k__BackingField: jacket_store_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: child
+      <NodeID>k__BackingField: 34290b09-429b-4252-b29d-5dc2c43a7fa8
+    - <Text>k__BackingField: coffee
+      <NodeID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
+    - <Text>k__BackingField: snow
+      <NodeID>k__BackingField: 51a07c50-a957-4944-a157-dd6d2577c2de
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2613, y: -2103}
+  - <ID>k__BackingField: 96f55f3f-53c5-4449-b246-f7eaf45c8e99
+    <Name>k__BackingField: sunshine_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: clothes
+      <NodeID>k__BackingField: 9fa518ec-0c69-428c-be82-fdc64939ec04
+    - <Text>k__BackingField: coffee
+      <NodeID>k__BackingField: 92279996-a06c-4e81-89bc-305e3933f155
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 053298b8-0cee-47e6-aa15-9e34e0dc6de9
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2631, y: -2303}
+  - <ID>k__BackingField: 58a987f8-286e-4af6-b4c6-b2f2621e5c7b
+    <Name>k__BackingField: repeat_check
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 2400d754-d18b-4c8a-91b6-1394340f1916
+      <contextVariableName>k__BackingField: waRepeatedChoice
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 98bd7db2-28af-4ded-bf7a-5ba600f05f7a
+      <contextVariableName>k__BackingField: waRepeatedChoice
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: 2
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ae132ec2-ee1d-4a92-9674-a7e026f073b8
+      <contextVariableName>k__BackingField: waRepeatedChoice
+      <comparisonSign>k__BackingField: '>'
+      <comparisonValue>k__BackingField: 2
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: waRepeatedChoice
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: df81f0eb-475c-4abd-ae1e-480495e14f75
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: -87, y: 383}
   <OldGroupNames>k__BackingField:
   - starters
   - goodbye
@@ -1502,13 +1392,13 @@ MonoBehaviour:
       - h_sunshine
       - h_jacket_store
       - h_2_sugars
-      - weather_choice
-      - sunshine_choice
-      - jacket_store_choice
-      - 2_sugars_choice
       - p_water_snow
       - p_water_clothes
       - p_water_coffee
+      - weather_choice
+      - 2_sugars_choice
+      - jacket_store_choice
+      - sunshine_choice
     - Key: child
       Value:
       - h_soccer
@@ -1519,12 +1409,12 @@ MonoBehaviour:
       - h_pass_me
       - h_scrimmage
       - h_tinktonk
+      - p_water_soccer
       - child_choice
+      - tinktonk_choice
+      - scrimmage_choice
       - pass_me_choice
       - Bs_choice
-      - scrimmage_choice
-      - tinktonk_choice
-      - p_water_soccer
     - Key: work
       Value:
       - h_tell_me
@@ -1537,10 +1427,10 @@ MonoBehaviour:
       - h_no_updates
       - h_whine
       - work_choice
+      - whine_choice
       - big_bucks_choice
       - watch_ball_choice
       - no_updates_choice
-      - whine_choice
     - Key: movies
       Value:
       - h_big_screen
@@ -1551,12 +1441,12 @@ MonoBehaviour:
       - h_tickets
       - h_movie_marathon
       - h_hes_in
-      - movies_choice
-      - hes_in_choice
       - h_visual_effects
-      - movie_marathon_choice
-      - visual_effects_choice
+      - movies_choice
       - tickets_choice
+      - visual_effects_choice
+      - hes_in_choice
+      - movie_marathon_choice
     - Key: sports
       Value:
       - h_yup
@@ -1567,9 +1457,9 @@ MonoBehaviour:
       - h_red_team
       - h_takes_me_back
       - sports_choice
-      - comeback_choice
       - takes_me_back_choice
       - red_team_choice
+      - comeback_choice
     - Key: hello
       Value:
       - h_howdy
@@ -1579,8 +1469,8 @@ MonoBehaviour:
     - Key: repeat
       Value:
       - _exit_repeats
-      - repeat_check
       - _entry_repeated
       - h_deja_vu
       - h_are_you_alright
       - h_huh_have_we
+      - repeat_check

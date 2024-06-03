@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class adventureCutscene : MonoBehaviour
+public class adventureCutscene : cutscene
 {
     [SerializeField] private float scrollV;
     [SerializeField] private Rigidbody2D bg;
@@ -21,11 +21,13 @@ public class adventureCutscene : MonoBehaviour
         {
             body.velocity = new Vector2(scrollV, 0f);
         }
+        GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>().isAnimating = true;
+        Debug.Log("Here");
+        StartCutscene();
     }
 
     void Update()
     {
-        Debug.Log(bg.position.x);
         if (bg.position.x > xCrossoverValue)
         {
             repo(bg);
@@ -34,6 +36,11 @@ public class adventureCutscene : MonoBehaviour
         {
             repo(bg2);
         }
+    }
+
+    void EndCutscene()
+    {
+
     }
 
     //reposition backgrounds

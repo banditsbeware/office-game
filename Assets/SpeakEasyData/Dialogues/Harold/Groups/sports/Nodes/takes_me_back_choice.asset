@@ -14,12 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: takes_me_back_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-competition
-
-    -sport collaborators
-
-    -foot
-    sport'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: game
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2e795c86c6d0e3f45a40767ec636bd95, type: 2}

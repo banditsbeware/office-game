@@ -14,12 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: tickets_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-new to theaters
-
-    -famous man
-
-    -science
-    movie'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: release
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9ea5794fb1c723f4fb8b237c04d223d2, type: 2}

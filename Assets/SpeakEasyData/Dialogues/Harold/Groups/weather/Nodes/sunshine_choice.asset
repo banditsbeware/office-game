@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: sunshine_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-garments
-
-    -warm caffiene'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: clothes
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3c24d183027866e42be5687c8a6363a9, type: 2}

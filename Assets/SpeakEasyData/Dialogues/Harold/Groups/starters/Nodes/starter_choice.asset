@@ -14,15 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: starter_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-climate
-
-    -posterity
-
-    -occupation
-
-    -cinema
-
-    -athletics'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: weather
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f50263c29393260419534200c24cd3cc, type: 2}

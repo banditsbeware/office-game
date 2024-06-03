@@ -20,6 +20,9 @@ public class MoveHim8bit : MonoBehaviour {
     //used for door passage
     public bool isNode;
     public bool skipNode;
+
+    //animation & cutscenes
+    public bool isAnimating = false; 
     
 
     void Awake()
@@ -68,7 +71,6 @@ public class MoveHim8bit : MonoBehaviour {
       {
         velocity.x = (int) Input.GetAxisRaw("Horizontal");
         Collider2D hitCollider = Physics2D.OverlapCircle(new Vector2(transform.position.x + velocity.x, transform.position.y), 0f);
-        animator.SetBool("moving", true);
         ExecuteMovementFrame();
         
         
@@ -77,15 +79,19 @@ public class MoveHim8bit : MonoBehaviour {
       {
         velocity.y = (int) Input.GetAxisRaw("Vertical");
         Collider2D hitCollider = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y + velocity.y), 0f);
-        animator.SetBool("moving", true);
         ExecuteMovementFrame();
       }      
     }
 
     void ExecuteMovementFrame()
     {
-      intPosition += velocity;
-      transform.position = new Vector3((float) intPosition.x / (float) speed, (float) intPosition.y / (float) speed, 0);
+      if (!isAnimating)
+      {
+        animator.SetBool("moving", true);
+        
+        intPosition += velocity;
+        transform.position = new Vector3((float) intPosition.x / (float) speed, (float) intPosition.y / (float) speed, 0);
+      }
 
       return;
     }

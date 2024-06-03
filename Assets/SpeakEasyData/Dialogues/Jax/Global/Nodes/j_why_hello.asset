@@ -19,6 +19,9 @@ MonoBehaviour:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: b5aa0131e5a808d4f86dd913a8c228e7, type: 2}
   <IfStatements>k__BackingField: []
-  <Callbacks>k__BackingField: []
+  <Callbacks>k__BackingField:
+  - <callbackVariableName>k__BackingField: dTotal
+    <callbackAction>k__BackingField: SetValue
+    <callbackValue>k__BackingField: 0
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.800426
+  <SpeechTime>k__BackingField: 2.8952746

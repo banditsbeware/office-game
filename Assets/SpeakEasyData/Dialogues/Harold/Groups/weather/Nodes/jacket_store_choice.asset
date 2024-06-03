@@ -14,11 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: jacket_store_choice
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: '-posterity
-
-    -warm caffiene
-
-    -solid precipitation'
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: child
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60f4be1b89528984fa734aab4efd2502, type: 2}
