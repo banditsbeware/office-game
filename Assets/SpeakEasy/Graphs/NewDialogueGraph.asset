@@ -14,20 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: NewDialogueGraph
   <Groups>k__BackingField: []
-  <Nodes>k__BackingField:
-  - <ID>k__BackingField: e90b3c09-a256-42b5-b38c-d847574421ae
-    <Name>k__BackingField: Dialogue Node
-    <Text>k__BackingField: bendOver
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField: []
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 676, y: 431}
+  <Nodes>k__BackingField: []
   <OldGroupNames>k__BackingField: []
-  <OldUngroupedNames>k__BackingField:
-  - Dialogue Node
+  <OldUngroupedNames>k__BackingField: []
   <OldGroupedNames>k__BackingField:
     list: []

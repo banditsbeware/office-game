@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: toupee_still_8
+  m_Name: toupee_moving_8
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 290360221, guid: 76a270f97d0c5a44689bef8184f8cf17, type: 3}
-    - time: 1
-      value: {fileID: 1912393939, guid: 76a270f97d0c5a44689bef8184f8cf17, type: 3}
-    - time: 1.1666666
-      value: {fileID: 290360221, guid: 76a270f97d0c5a44689bef8184f8cf17, type: 3}
+      value: {fileID: 760197444, guid: 341d46e45f6d7c3428fa03fdfd2fc9f9, type: 3}
+    - time: 0.25
+      value: {fileID: 2048623789, guid: 341d46e45f6d7c3428fa03fdfd2fc9f9, type: 3}
+    - time: 0.5833333
+      value: {fileID: 2048623789, guid: 341d46e45f6d7c3428fa03fdfd2fc9f9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 290360221, guid: 76a270f97d0c5a44689bef8184f8cf17, type: 3}
-    - {fileID: 1912393939, guid: 76a270f97d0c5a44689bef8184f8cf17, type: 3}
-    - {fileID: 290360221, guid: 76a270f97d0c5a44689bef8184f8cf17, type: 3}
+    - {fileID: 760197444, guid: 341d46e45f6d7c3428fa03fdfd2fc9f9, type: 3}
+    - {fileID: 2048623789, guid: 341d46e45f6d7c3428fa03fdfd2fc9f9, type: 3}
+    - {fileID: 2048623789, guid: 341d46e45f6d7c3428fa03fdfd2fc9f9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.25
+    m_StopTime: 0.6666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

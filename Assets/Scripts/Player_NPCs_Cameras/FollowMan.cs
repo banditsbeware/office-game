@@ -5,8 +5,10 @@ using UnityEngine;
 public class FollowMan : MonoBehaviour
 {
     [SerializeField] private bool smoothFollow;
+    public bool inCutscene;
     [SerializeField] private Vector3 xyzMin = new Vector3(0, -5, -10);
     [SerializeField] private Vector3 xyzMax = new Vector3(9, 8, -10);
+    public Vector3 cutscenePos = new Vector3(0, 0, 0);
 
 
     public Transform player;
@@ -15,6 +17,12 @@ public class FollowMan : MonoBehaviour
 
     void Start()
     {
+        if (inCutscene)
+        {
+            transform.position = cutscenePos;
+            return;
+        }
+
         transform.position = player.position;
     }
 
@@ -22,6 +30,12 @@ public class FollowMan : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 desiredPos = player.transform.position + offset;
+
+        if (inCutscene)
+        {
+            transform.position = cutscenePos;
+            return;
+        }
 
         if (!smoothFollow)
         {

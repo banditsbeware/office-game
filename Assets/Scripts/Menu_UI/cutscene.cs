@@ -9,13 +9,13 @@ public class cutscene : MonoBehaviour
     [HideInInspector] public SEDialogue dialogue;
     public AK.Wwise.Bank minigameBank;
     
-    private void Start() 
+    public virtual void Start() 
     {
         dialogue = characterObject.transform.Find("Dialogue").GetComponent<SEDialogue>();
+        GameObject.Find("Main Camera").GetComponent<FollowMan>().inCutscene = true;
     }
     public void StartCutscene()
     {
-        Debug.Log(dialogue.gameObject.name);
         UIManager.denoitfy();
         UIManager.EnterCutscene();
         UIManager.show(dialogueWindow);
@@ -29,6 +29,11 @@ public class cutscene : MonoBehaviour
     public void UnloadBank()
     {
         minigameBank.Unload();
+    }
+
+    public virtual void EndCutscene()
+    {
+        GameObject.Find("Main Camera").GetComponent<FollowMan>().inCutscene = false;
     }
     
 }

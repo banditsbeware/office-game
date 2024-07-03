@@ -15,5 +15,4 @@ MonoBehaviour:
   <FileName>k__BackingField: NewDialogueGraph
   <NodeGroups>k__BackingField:
     list: []
-  <UngroupedNodes>k__BackingField:
-  - {fileID: 11400000, guid: 93e8dfe250d369c4ea689d88b34fe313, type: 2}
+  <UngroupedNodes>k__BackingField: []

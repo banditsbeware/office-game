@@ -12,8 +12,9 @@ public class adventureCutscene : cutscene
     [SerializeField] private int xBGSpriteSize;
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
    
-    public void Start()
+    public override void Start()
     {
+        base.Start();
         scrollers.Add(bg);
         scrollers.Add(bg2);
 
@@ -22,7 +23,6 @@ public class adventureCutscene : cutscene
             body.velocity = new Vector2(scrollV, 0f);
         }
         GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>().isAnimating = true;
-        Debug.Log("Here");
         StartCutscene();
     }
 
@@ -38,7 +38,7 @@ public class adventureCutscene : cutscene
         }
     }
 
-    void EndCutscene()
+    public override void EndCutscene()
     {
 
     }
