@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: t_endcutscene
+  m_Name: _delay
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: t_endcutscene
+  <NodeName>k__BackingField: _delay
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: ExitCutscene
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 00bd6a45a8881db40a2389c6af463afd, type: 2}
+  - <Text>k__BackingField: 1
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7df03d9052df110439306c0f410d2618, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
-  <NodeType>k__BackingField: 10
+  <NodeType>k__BackingField: 7
   <SpeechTime>k__BackingField: 0

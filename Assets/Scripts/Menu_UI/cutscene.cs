@@ -8,11 +8,16 @@ public class cutscene : MonoBehaviour
     public GameObject characterObject;
     [HideInInspector] public SEDialogue dialogue;
     public AK.Wwise.Bank minigameBank;
+    public Animator cutsceneAnimation;
+    internal Camera mainCamera;
+    internal bool endFlag = false;
     
     public virtual void Start() 
     {
         dialogue = characterObject.transform.Find("Dialogue").GetComponent<SEDialogue>();
-        GameObject.Find("Main Camera").GetComponent<FollowMan>().inCutscene = true;
+        cutsceneAnimation = gameObject.GetComponent<Animator>();
+        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        mainCamera.GetComponent<FollowMan>().inCutscene = true;
     }
     public void StartCutscene()
     {
@@ -33,7 +38,13 @@ public class cutscene : MonoBehaviour
 
     public virtual void EndCutscene()
     {
-        GameObject.Find("Main Camera").GetComponent<FollowMan>().inCutscene = false;
+        endFlag = true;
     }
     
+    public virtual void CutsceneFinished()
+    {
+        UIManager.ExitCutscene();
+        GameObject.Find("Main Camera").GetComponent<FollowMan>().inCutscene = false;
+        cutsceneAnimation.enabled = false;   
+    }
 }

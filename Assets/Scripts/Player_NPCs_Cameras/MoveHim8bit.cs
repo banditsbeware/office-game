@@ -96,6 +96,13 @@ public class MoveHim8bit : MonoBehaviour {
       return;
     }
 
+    // intPosition is only updated as part of a movement frame, so if any animation happens outside of the player moving in the 8bitverse
+    // you will have to manuall update intPosition after saif cutscene/animation
+    public void UpdateIntPosition()
+    {
+      intPosition = new Vector2Int((int) transform.position.x * speed, (int) transform.position.y * speed);
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
       velocity = new Vector2Int(-velocity.x, -velocity.y);

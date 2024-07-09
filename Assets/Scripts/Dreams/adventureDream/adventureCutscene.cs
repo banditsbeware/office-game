@@ -10,6 +10,8 @@ public class adventureCutscene : cutscene
     [SerializeField] private Rigidbody2D bg2;
     [SerializeField] private int xCrossoverValue;
     [SerializeField] private int xBGSpriteSize;
+    
+    
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
    
     public override void Start()
@@ -28,6 +30,20 @@ public class adventureCutscene : cutscene
 
     void Update()
     {
+        if (endFlag)
+        {
+            if (bg.position.x > xCrossoverValue || bg2.position.x > xCrossoverValue)
+            {
+                foreach (Rigidbody2D body in scrollers)
+                {
+                    body.velocity = new Vector2(0, 0f);
+                    
+                }
+                cutsceneAnimation.SetTrigger("endCutscene");
+            }
+            
+        }
+
         if (bg.position.x > xCrossoverValue)
         {
             repo(bg);
@@ -40,7 +56,17 @@ public class adventureCutscene : cutscene
 
     public override void EndCutscene()
     {
+        base.EndCutscene();
+    }
 
+    public override void CutsceneFinished()
+    {
+        base.CutsceneFinished();
+        mainCamera.transform.SetParent(null);
+        characterObject.transform.SetParent(null);
+        GameObject.Find("Player").transform.SetParent(null);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>().isAnimating = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>().UpdateIntPosition();
     }
 
     //reposition backgrounds

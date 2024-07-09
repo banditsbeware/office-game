@@ -17,7 +17,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: First Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1ebaf8fd832a3474ea88aee483610b93, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3bbfac9aba5a94442823e5c7eaba488a, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 2

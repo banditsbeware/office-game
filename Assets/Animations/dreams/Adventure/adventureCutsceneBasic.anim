@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: cutsceneBasic
+  m_Name: adventureCutsceneBasic
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,8 +21,6 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -615295623, guid: 526f8350f4554fe41a2099f4b62b4fa7, type: 3}
-    - time: 0.33333334
-      value: {fileID: -594573112, guid: 526f8350f4554fe41a2099f4b62b4fa7, type: 3}
     - time: 0.8333333
       value: {fileID: -615295623, guid: 526f8350f4554fe41a2099f4b62b4fa7, type: 3}
     attribute: m_Sprite
@@ -45,7 +43,6 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: -615295623, guid: 526f8350f4554fe41a2099f4b62b4fa7, type: 3}
-    - {fileID: -594573112, guid: 526f8350f4554fe41a2099f4b62b4fa7, type: 3}
     - {fileID: -615295623, guid: 526f8350f4554fe41a2099f4b62b4fa7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2

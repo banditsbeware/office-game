@@ -7,7 +7,10 @@ public class DialogueActions : MonoBehaviour
 {
     private List<GameObject> defaultButtonsObjects = new List<GameObject>();
     [SerializeField] private List<GameObject> tipButtons = new List<GameObject>();
+
+    [SerializeField] private cutscene CutsceneToExit;
     private SEDialogue dialogueController;
+
 
     private void Awake() {
         //stash default button objects for SetChoiceButtonsToPreset()
@@ -41,5 +44,10 @@ public class DialogueActions : MonoBehaviour
                 dialogueController.BeginNode();
                 break;
         }
+    }
+
+    public void ExitCutscene()
+    {
+        CutsceneToExit.EndCutscene();
     }
 }

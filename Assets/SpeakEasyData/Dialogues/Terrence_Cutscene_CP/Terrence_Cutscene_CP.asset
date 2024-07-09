@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d266f52100b31b40a524330299ec5cb, type: 3}
+  m_Name: Terrence_Cutscene_CP
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Terrence_Cutscene_CP
+  <NodeGroups>k__BackingField:
+    list: []
+  <UngroupedNodes>k__BackingField:
+  - {fileID: 11400000, guid: 2860457878cac472ab26b11fb2ff61bd, type: 2}
+  - {fileID: 11400000, guid: d421a51b7bf3d4b80974ca067e35561f, type: 2}
+  - {fileID: 11400000, guid: 03cedfeeeb0b54f3fb1f9713a9a6978d, type: 2}
+  - {fileID: 11400000, guid: 180fe6ef0c3ad4381939a1eec851519a, type: 2}
+  - {fileID: 11400000, guid: 54cb898d3107640a8a1c5a39e8ab1707, type: 2}
+  - {fileID: 11400000, guid: 0ff4db353597f49d38410a3ff71b5e56, type: 2}
+  - {fileID: 11400000, guid: aa24c37613c3b4fe5b64eb57910a341e, type: 2}

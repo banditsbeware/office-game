@@ -20,6 +20,7 @@ namespace SpeakEasy.Inspectors
 
         //Index
         private SerializedProperty selectedNodeIndexProperty;
+        private SerializedProperty overlappingDialoguePropertys;
 
         //Objects
         private SerializedProperty playerSpeechBubbleProperty;
@@ -37,6 +38,7 @@ namespace SpeakEasy.Inspectors
 
             startingNodesOnlyProperty = serializedObject.FindProperty("startingNodesOnly");
             selectedNodeIndexProperty = serializedObject.FindProperty("selectedNodeIndex");
+            overlappingDialoguePropertys = serializedObject.FindProperty("overlappingDialogues");
 
             playerSpeechBubbleProperty = serializedObject.FindProperty("playerSpeechBubble");
             npcSpeechBubbleProperty = serializedObject.FindProperty("npcSpeechBubble");
@@ -104,6 +106,8 @@ namespace SpeakEasy.Inspectors
             SEInspectorUtility.DrawHeader("Filters");
 
             startingNodesOnlyProperty.DrawPropertyField();
+
+            overlappingDialoguePropertys.DrawPropertyField();
 
             SEInspectorUtility.DrawSpace();
         }

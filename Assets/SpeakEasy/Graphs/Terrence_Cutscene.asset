@@ -15,84 +15,6 @@ MonoBehaviour:
   <FileName>k__BackingField: Terrence_Cutscene
   <Groups>k__BackingField: []
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: db8a7a72-81b8-49c6-b894-a9a589338b5e
-    <Name>k__BackingField: _entry
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: First Node
-      <NodeID>k__BackingField: 7ecd6647-945f-40f3-a7ee-c5290cfcb17c
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 2
-    <Position>k__BackingField: {x: 249, y: 255}
-  - <ID>k__BackingField: 7ecd6647-945f-40f3-a7ee-c5290cfcb17c
-    <Name>k__BackingField: t_heyyou
-    <Text>k__BackingField: Hey...you, you're finally awake.
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 8ac44669-f4d5-46fb-b5dc-8b1c5eb35acd
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 443, y: 255}
-  - <ID>k__BackingField: 4b212f56-0a4c-4230-96fa-cbffc8939b88
-    <Name>k__BackingField: p_no
-    <Text>k__BackingField: Uh ... No
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: ad246641-95e1-48ea-84c2-783ec7838806
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1041, y: 255}
-  - <ID>k__BackingField: 8ac44669-f4d5-46fb-b5dc-8b1c5eb35acd
-    <Name>k__BackingField: t_youwere
-    <Text>k__BackingField: You were trying to cross the border, right?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 4b212f56-0a4c-4230-96fa-cbffc8939b88
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 732, y: 255}
-  - <ID>k__BackingField: ad246641-95e1-48ea-84c2-783ec7838806
-    <Name>k__BackingField: t_ohmybad
-    <Text>k__BackingField: 'Oh, my bad man. Uh ... enjoy the town I guess? '
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 91346c17-9270-49a0-9461-d39a5543884b
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1332, y: 255}
-  - <ID>k__BackingField: 91346c17-9270-49a0-9461-d39a5543884b
-    <Name>k__BackingField: t_endcutscene
-    <Text>k__BackingField: EndCutscene
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 7b9722a1-6e19-460c-a6cd-892f08db6502
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 10
-    <Position>k__BackingField: {x: 1640, y: 255}
   - <ID>k__BackingField: 7b9722a1-6e19-460c-a6cd-892f08db6502
     <Name>k__BackingField: _exit
     <Text>k__BackingField: 
@@ -103,15 +25,51 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
-    <Position>k__BackingField: {x: 1847, y: 255}
+    <Position>k__BackingField: {x: 894, y: 255}
+  - <ID>k__BackingField: 91346c17-9270-49a0-9461-d39a5543884b
+    <Name>k__BackingField: t_endcutscene
+    <Text>k__BackingField: ExitCutscene
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7b9722a1-6e19-460c-a6cd-892f08db6502
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 687, y: 255}
+  - <ID>k__BackingField: db8a7a72-81b8-49c6-b894-a9a589338b5e
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: 9b454185-604b-46ff-a2fa-0fa8038466d2
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: 115, y: 255}
+  - <ID>k__BackingField: 9b454185-604b-46ff-a2fa-0fa8038466d2
+    <Name>k__BackingField: _delay
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: 91346c17-9270-49a0-9461-d39a5543884b
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 423, y: 246}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
-  - _entry
-  - t_heyyou
-  - p_no
-  - t_youwere
-  - t_ohmybad
-  - t_endcutscene
   - _exit
+  - t_endcutscene
+  - _entry
+  - _delay
   <OldGroupedNames>k__BackingField:
     list: []

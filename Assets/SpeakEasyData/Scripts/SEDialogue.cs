@@ -12,7 +12,7 @@ namespace SpeakEasy
     using static Enumerations.SENodeType;
     using Data;
     using Data.Save;
-  using UnityEngine.EventSystems;
+    using UnityEngine.EventSystems;
     using UnityEngine.InputSystem;
 
 
@@ -31,6 +31,7 @@ namespace SpeakEasy
         //Indexes
         [SerializeField] internal int selectedGroupIndex;
         [SerializeField] internal int selectedNodeIndex;
+        [SerializeField] internal bool overlappingDialogues = true;
 
         //Objects
         [SerializeField] internal GameObject playerSpeechBubble;
@@ -254,6 +255,11 @@ namespace SpeakEasy
 
         internal virtual IEnumerator PlayerSpeak()
         {
+            if (!overlappingDialogues)
+            {
+                ClearNPC();
+            }
+            
             TextWriter.AddWriter_Static(playerSpeechText, node.DialogueText);
             playerBubbleImage.sprite = playerBubbleSprite;
 

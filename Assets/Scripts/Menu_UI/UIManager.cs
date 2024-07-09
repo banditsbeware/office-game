@@ -59,6 +59,12 @@ public static class UIManager
 		gameState = "cutscene";
 	}
 
+	public static void ExitCutscene()
+	{
+		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+		gameState = "play";
+	}
+	
 	//  shows objects with tag
 	public static void show(GameObject[] tagg){
 		foreach(GameObject g in tagg)

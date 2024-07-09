@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: t_ohmybad
+  m_Name: _entry
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: t_ohmybad
+  <NodeName>k__BackingField: _entry
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: 'Oh, my bad man. Uh ... enjoy the town I guess? '
+  <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7df03d9052df110439306c0f410d2618, type: 2}
+  - <Text>k__BackingField: First Node
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d421a51b7bf3d4b80974ca067e35561f, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
-  <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.9180682
+  <NodeType>k__BackingField: 2
+  <SpeechTime>k__BackingField: 0
