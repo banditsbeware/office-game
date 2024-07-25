@@ -79,7 +79,7 @@ public class adventureBuilding : MonoBehaviour
         interiorCollider.SetActive(false);
         playerMovement.skipNode = true;
 
-        yield return new WaitForSeconds((float) playerMovement.speed * 1.1f / 50f);
+        yield return new WaitForSeconds((float) playerMovement.speed * 1.5f / 50f);
 
         interior.SetActive(false);
         exteriorCollider.SetActive(true);

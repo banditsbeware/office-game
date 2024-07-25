@@ -1,0 +1,8 @@
+character, cue, inflection, node name, implemented, recorded
+"Costa", "what do you want?", "", "c_what_do_you", "TRUE", "FALSE"
+"Costa", "anything else?", "", "c_anything_else", "TRUE", "FALSE"
+"Costa", "okay, have a good one", "", "c_have_good", "TRUE", "FALSE"
+"Player", "no, thanks", "", "p_bodega_no", "TRUE", "FALSE"
+"Costa", "you again? do you want something?", "", "c_you_again", "TRUE", "FALSE"
+"Costa", "is there something you need that you did not get last time?", "", "c_is_there_something", "TRUE", "FALSE"
+"Costa", "i said get out of here, now git, before i call the police", "", "c_police", "TRUE", "FALSE"

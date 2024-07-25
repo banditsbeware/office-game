@@ -5,26 +5,27 @@ using UnityEngine;
 public class cutscene : MonoBehaviour
 {
     public GameObject dialogueWindow;
-    public GameObject characterObject;
+    internal GameObject playerObject;
+    public GameObject dialogueObject;
     [HideInInspector] public SEDialogue dialogue;
     public AK.Wwise.Bank minigameBank;
-    public Animator cutsceneAnimation;
+    internal Animator cutsceneAnimation;
     internal Camera mainCamera;
     internal bool endFlag = false;
     
     public virtual void Start() 
     {
-        dialogue = characterObject.transform.Find("Dialogue").GetComponent<SEDialogue>();
+        dialogue = dialogueObject.GetComponent<SEDialogue>();
         cutsceneAnimation = gameObject.GetComponent<Animator>();
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
         mainCamera.GetComponent<FollowMan>().inCutscene = true;
+        playerObject = GameObject.FindGameObjectWithTag("Player");
     }
-    public void StartCutscene()
+    public virtual void StartCutscene()
     {
         UIManager.denoitfy();
         UIManager.EnterCutscene();
         UIManager.show(dialogueWindow);
-        UIManager.show(dialogue.gameObject);
 
         minigameBank.Load();
         dialogue.BeginDialogue();
@@ -44,6 +45,7 @@ public class cutscene : MonoBehaviour
     public virtual void CutsceneFinished()
     {
         UIManager.ExitCutscene();
+        UIManager.hide(dialogueWindow);
         GameObject.Find("Main Camera").GetComponent<FollowMan>().inCutscene = false;
         cutsceneAnimation.enabled = false;   
     }

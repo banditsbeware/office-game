@@ -13,10 +13,16 @@ public class adventureCutscene : cutscene
     
     
     private List<Rigidbody2D> scrollers = new List<Rigidbody2D>();
-   
+
     public override void Start()
     {
         base.Start();
+        StartCutscene();
+    }
+
+    public override void StartCutscene()
+    {
+        base.StartCutscene();
         scrollers.Add(bg);
         scrollers.Add(bg2);
 
@@ -24,8 +30,7 @@ public class adventureCutscene : cutscene
         {
             body.velocity = new Vector2(scrollV, 0f);
         }
-        GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>().isAnimating = true;
-        StartCutscene();
+        playerObject.GetComponent<MoveHim8bit>().isAnimating = true;
     }
 
     void Update()
@@ -62,11 +67,12 @@ public class adventureCutscene : cutscene
     public override void CutsceneFinished()
     {
         base.CutsceneFinished();
+        playerObject.transform.SetParent(null);
         mainCamera.transform.SetParent(null);
-        characterObject.transform.SetParent(null);
-        GameObject.Find("Player").transform.SetParent(null);
-        GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>().isAnimating = false;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<MoveHim8bit>().UpdateIntPosition();
+        mainCamera.transform.position = playerObject.transform.position;
+        dialogueObject.transform.SetParent(null);
+        playerObject.GetComponent<MoveHim8bit>().isAnimating = false;
+        playerObject.GetComponent<MoveHim8bit>().UpdateIntPosition();
     }
 
     //reposition backgrounds

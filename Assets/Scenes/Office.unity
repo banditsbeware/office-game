@@ -328,7 +328,7 @@ Transform:
   - {fileID: 1581296543}
   - {fileID: 682657775}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &72873630
 GameObject:
@@ -2646,6 +2646,7 @@ MonoBehaviour:
   startingNodesOnly: 1
   selectedGroupIndex: 0
   selectedNodeIndex: 0
+  overlappingDialogues: 1
   playerSpeechBubble: {fileID: 1945808980}
   playerSpeechText: {fileID: 0}
   npcSpeechBubble: {fileID: 2028910259}
@@ -3218,7 +3219,7 @@ Transform:
   - {fileID: 238488945}
   - {fileID: 512407498}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &368170824
 GameObject:
@@ -3318,7 +3319,7 @@ Transform:
   m_Children:
   - {fileID: 1217866232}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &369943046
 GameObject:
@@ -4629,8 +4630,7 @@ Transform:
   m_LocalPosition: {x: 12.564, y: 5.953, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.4353}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1370609482}
+  m_Children: []
   m_Father: {fileID: 363870060}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4872,8 +4872,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothFollow: 1
+  inCutscene: 0
   xyzMin: {x: -2, y: -8.5, z: -10}
   xyzMax: {x: 10.5, y: 8.5, z: -10}
+  cutscenePos: {x: 0, y: 0, z: 0}
   player: {fileID: 564603694}
   offset: {x: 0, y: 0, z: -10}
   smoothSpeed: 0.1
@@ -4987,13 +4989,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532221784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.060848817, y: 0.014500942, z: 1}
+  m_LocalPosition: {x: 0, y: -2.3000002, z: 0}
+  m_LocalScale: {x: 0.24339527, y: 0.043502826, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1880701871}
-  m_Father: {fileID: 2028789742}
-  m_RootOrder: 7
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &532221789
 MonoBehaviour:
@@ -6535,7 +6537,7 @@ Transform:
   - {fileID: 1853264405}
   - {fileID: 509083988}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &672221624
 BoxCollider2D:
@@ -7788,6 +7790,7 @@ MonoBehaviour:
   startingNodesOnly: 1
   selectedGroupIndex: 0
   selectedNodeIndex: 0
+  overlappingDialogues: 1
   playerSpeechBubble: {fileID: 2028270325}
   playerSpeechText: {fileID: 0}
   npcSpeechBubble: {fileID: 107577784}
@@ -7812,6 +7815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipButtons: []
+  CutsceneToExit: {fileID: 0}
 --- !u!1 &794250608
 GameObject:
   m_ObjectHideFlags: 0
@@ -8747,7 +8751,7 @@ Transform:
   m_Children:
   - {fileID: 1391994538}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &871836194
 GameObject:
@@ -11522,7 +11526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22422917, y: 0.9085173}
   m_AnchorMax: {x: 0.22422917, y: 0.9085173}
-  m_AnchoredPosition: {x: -405.99997, y: 72}
+  m_AnchoredPosition: {x: -406, y: 72}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.045, y: 0.98}
 --- !u!114 &1183255294
@@ -13372,13 +13376,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370609478}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.43725136, y: 0.5937546, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.69671845}
+  m_LocalPosition: {x: 13.001251, y: 6.546755, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1900030906}
-  m_Father: {fileID: 512407498}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1370609483
 MonoBehaviour:
@@ -13758,7 +13762,7 @@ Transform:
   - {fileID: 1705738309}
   - {fileID: 1529804991}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1495084835
 GameObject:
@@ -19841,7 +19845,7 @@ Transform:
   m_Children:
   - {fileID: 895259987}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2104704438
 GameObject:

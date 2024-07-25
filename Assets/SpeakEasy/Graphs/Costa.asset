@@ -329,22 +329,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
     <NodeType>k__BackingField: 5
     <Position>k__BackingField: {x: 2084, y: 929}
-  - <ID>k__BackingField: fb0634c8-0bbc-401b-a814-e7b72adad81d
-    <Name>k__BackingField: c_city_law
-    <Text>k__BackingField: one pack, new city law
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 71f4d84f-a896-45b7-9829-ffafc23a3238
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: bCigsAttempt
-      <callbackAction>k__BackingField: Increment
-      <callbackValue>k__BackingField: 1
-    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2458, y: 1041}
   - <ID>k__BackingField: 9acc4a4e-416e-4c67-886c-d1d1e975c528
     <Name>k__BackingField: c_heres_a_pack
     <Text>k__BackingField: here's a pack of newports
@@ -747,6 +731,22 @@ MonoBehaviour:
     <GroupID>k__BackingField: a5878165-4f95-4459-bcc7-9388a61b1e9d
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 2421, y: 390}
+  - <ID>k__BackingField: fb0634c8-0bbc-401b-a814-e7b72adad81d
+    <Name>k__BackingField: c_city_law
+    <Text>k__BackingField: one pack, new city law
+    <SpeechTime>k__BackingField: 2
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 71f4d84f-a896-45b7-9829-ffafc23a3238
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: bCigsAttempt
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: cdc1837c-e329-4b7d-bc2c-d00c94f9aaa3
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2458, y: 1041}
   <OldGroupNames>k__BackingField:
   - anger
   - cigs
@@ -785,10 +785,10 @@ MonoBehaviour:
       Value:
       - 71f4d84f-a896-45b7-9829-ffafc23a3238
       - cigs_check
-      - c_city_law
       - c_heres_a_pack
       - c_step_off
       - p_bodega_cigs
+      - c_city_law
     - Key: alcohol
       Value:
       - 11598475-0ded-476e-ac52-d716f78fe253

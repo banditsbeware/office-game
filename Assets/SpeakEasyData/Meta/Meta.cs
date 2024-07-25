@@ -35,6 +35,10 @@ public static class Meta
         SetYesterday();
     }
 
+    // wa - water Cooler
+    // b - bodega
+    // al - alleyway
+    // d - dawgs
     public static void SetDaily()
     {
         SetValue("afterWork", true, Daily);
@@ -48,12 +52,14 @@ public static class Meta
         SetValue("alGaveAlcohol", false, Daily);
         SetValue("alGaveCigs", false, Daily);
         SetValue("dJaxVisits", 0, Daily);
-        SetValue("dUpsetJax", 0, Daily);
+        SetValue("dUpsetJax", false, Daily);
         SetValue("dPatVisits", 0, Daily);
-        SetValue("dUpsatPat", 0, Daily);
+        SetValue("dUpsatPat", false, Daily);
         SetValue("dItemsOrdered", 0, Daily);
         SetValue("dChosenItem", "Hot Dog", Daily);
+        SetValue("dPaid", true, Daily);
         SetValue("dTotal", 0f, Daily);
+
 
     }
 

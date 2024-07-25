@@ -9,6 +9,7 @@ public class FollowMan : MonoBehaviour
     [SerializeField] private Vector3 xyzMin = new Vector3(0, -5, -10);
     [SerializeField] private Vector3 xyzMax = new Vector3(9, 8, -10);
     public Vector3 cutscenePos = new Vector3(0, 0, 0);
+    private Vector3 desiredPos = new Vector3(0, 0, 0);
 
 
     public Transform player;
@@ -29,7 +30,7 @@ public class FollowMan : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 desiredPos = player.transform.position + offset;
+        desiredPos = player.transform.position + offset;
 
         if (inCutscene)
         {

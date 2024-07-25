@@ -1,1 +1,5 @@
 character, cue, inflection, node name, implemented, recorded
+"Terrence", "Hey...you, you're finally awake.", "", "t_heyyou", "TRUE", "FALSE"
+"Player", "Uh ... No", "", "p_no", "TRUE", "FALSE"
+"Terrence", "You were trying to cross the border, right?", "", "t_youwere", "TRUE", "FALSE"
+"Terrence", "Oh, my bad man. Uh ... enjoy the town I guess? ", "", "t_ohmybad", "TRUE", "FALSE"

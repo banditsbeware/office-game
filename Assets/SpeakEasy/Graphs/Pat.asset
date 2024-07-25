@@ -365,22 +365,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 359, y: 735}
-  - <ID>k__BackingField: 781bebfd-ee6d-40fe-a1d4-3f3ed5ff462d
-    <Name>k__BackingField: _entry
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: First Node
-      <NodeID>k__BackingField: 63f18c26-adb7-45d9-b3d4-0356e5f50d82
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: dPatVisits
-      <callbackAction>k__BackingField: Increment
-      <callbackValue>k__BackingField: 1
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 2
-    <Position>k__BackingField: {x: -434, y: 483}
   - <ID>k__BackingField: 63f18c26-adb7-45d9-b3d4-0356e5f50d82
     <Name>k__BackingField: visits_check
     <Text>k__BackingField: 
@@ -568,19 +552,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
     <Position>k__BackingField: {x: 7631, y: -473}
-  - <ID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
-    <Name>k__BackingField: pa_good_one
-    <Text>k__BackingField: cool, have a day, dude
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7286, y: -473}
   - <ID>k__BackingField: 30a38b1a-104c-4163-b331-bcc7819c6667
     <Name>k__BackingField: anim_pay
     <Text>k__BackingField: pay
@@ -652,6 +623,304 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
     <Position>k__BackingField: {x: 6423, y: -522}
+  - <ID>k__BackingField: d34db9de-0300-4b36-b322-0b0d4cd8bba8
+    <Name>k__BackingField: pay_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: fine
+      <NodeID>k__BackingField: 7addeb16-4b47-4170-ab6d-b2f2288f52ee
+    - <Text>k__BackingField: no
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: fuck you
+      <NodeID>k__BackingField: 
+      <contextVariableName>k__BackingField: chaos
+      <comparisonSign>k__BackingField: '>'
+      <comparisonValue>k__BackingField: 60
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 258, y: 1167}
+  - <ID>k__BackingField: 0123d935-15f7-458a-8855-67bd5304b22d
+    <Name>k__BackingField: if_paid
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: fab78271-976b-4f8a-8b80-ddad60e23643
+      <contextVariableName>k__BackingField: dPaid
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: true
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 311e1fb4-bea5-4456-a70d-c93eae9cefb2
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 4
+    <Position>k__BackingField: {x: -1008, y: 458}
+  - <ID>k__BackingField: 7addeb16-4b47-4170-ab6d-b2f2288f52ee
+    <Name>k__BackingField: p_fine
+    <Text>k__BackingField: fine
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: eff57273-ceaa-46bf-8ab4-0cf0b9a33334
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 828, y: 1123}
+  - <ID>k__BackingField: eff57273-ceaa-46bf-8ab4-0cf0b9a33334
+    <Name>k__BackingField: anim_swipeCard_2
+    <Text>k__BackingField: swipeCard
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 41190c9b-da21-4794-ab5d-3655762297e7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dPaid
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: true
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 1383, y: 1123}
+  - <ID>k__BackingField: 41190c9b-da21-4794-ab5d-3655762297e7
+    <Name>k__BackingField: pa_youbetter
+    <Text>k__BackingField: you better leave a fat tip dude, i should have called
+      the cops on you
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 4241a53b-6f7c-4884-8623-f819ce5c381d
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1673, y: 1123}
+  - <ID>k__BackingField: 4241a53b-6f7c-4884-8623-f819ce5c381d
+    <Name>k__BackingField: act_buttonChange_2
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 86cd7c2d-c584-40ad-ae62-35e4c8528ae2
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: tip
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 2006, y: 1123}
+  - <ID>k__BackingField: b0ebdb5c-ecf1-499c-a583-78150c591b2e
+    <Name>k__BackingField: pa_good_one
+    <Text>k__BackingField: cool, have a day, dude
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 41608dcf-96cd-4fa4-9594-aee4dd5e29fa
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 7286, y: -473}
+  - <ID>k__BackingField: 69ef0af1-65c7-48c0-9adc-a6db5b845fdc
+    <Name>k__BackingField: tip_choice_2
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: No Tip
+      <NodeID>k__BackingField: 7c6e2f29-4ff8-4a8a-9201-b19e27d8d54d
+    - <Text>k__BackingField: $1.00
+      <NodeID>k__BackingField: 0604b876-5110-4206-b2d0-3e7dcfea3178
+    - <Text>k__BackingField: $3.00
+      <NodeID>k__BackingField: 5ad502d2-9ef4-40cf-b0a1-69e7598e8d82
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2566, y: 1079}
+  - <ID>k__BackingField: 86cd7c2d-c584-40ad-ae62-35e4c8528ae2
+    <Name>k__BackingField: anim_signName_2
+    <Text>k__BackingField: signName
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 69ef0af1-65c7-48c0-9adc-a6db5b845fdc
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 2269, y: 1123}
+  - <ID>k__BackingField: fab78271-976b-4f8a-8b80-ddad60e23643
+    <Name>k__BackingField: act_buttonChange
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 63f18c26-adb7-45d9-b3d4-0356e5f50d82
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: default
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: -549, y: 482}
+  - <ID>k__BackingField: eca6d010-6e07-4b5e-8b86-13f3349eadf0
+    <Name>k__BackingField: _exit_fuck
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 3712, y: 997}
+  - <ID>k__BackingField: 311e1fb4-bea5-4456-a70d-c93eae9cefb2
+    <Name>k__BackingField: pa_heydude
+    <Text>k__BackingField: hey dude, you just dipped last time you were here, you
+      gotta pay for your last meal if you expect to order anything else.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d34db9de-0300-4b36-b322-0b0d4cd8bba8
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dUpsatPat
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: true
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: -79, y: 1214}
+  - <ID>k__BackingField: 7c6e2f29-4ff8-4a8a-9201-b19e27d8d54d
+    <Name>k__BackingField: pa_fuckyou
+    <Text>k__BackingField: fuck you dude, I don't want to see you arond here
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: eca6d010-6e07-4b5e-8b86-13f3349eadf0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3003, y: 997}
+  - <ID>k__BackingField: 5ad502d2-9ef4-40cf-b0a1-69e7598e8d82
+    <Name>k__BackingField: pa_thanksdidyou
+    <Text>k__BackingField: thanks. did you want more food?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dUpsatPat
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: false
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3003, y: 1353}
+  - <ID>k__BackingField: 0604b876-5110-4206-b2d0-3e7dcfea3178
+    <Name>k__BackingField: pa_fineiguess
+    <Text>k__BackingField: fine, i guess. did you want more food?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c113fc96-1a76-4d6e-844e-97ce5434fd49
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dUpsatPat
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: false
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3003, y: 1172}
+  - <ID>k__BackingField: 03aaaf79-0370-4097-9887-352248d66fd5
+    <Name>k__BackingField: pa_yourenotwelcome
+    <Text>k__BackingField: you're not welcome back here man, please leave
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: f40c330d-9ff4-4074-8a81-7485fc21d085
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: -1027, y: 129}
+  - <ID>k__BackingField: f40c330d-9ff4-4074-8a81-7485fc21d085
+    <Name>k__BackingField: _exit_mad
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: -678, y: 129}
+  - <ID>k__BackingField: 781bebfd-ee6d-40fe-a1d4-3f3ed5ff462d
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: e427dc47-04ba-4876-9183-1325a8d78693
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dPatVisits
+      <callbackAction>k__BackingField: Increment
+      <callbackValue>k__BackingField: 1
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -1559, y: 463}
+  - <ID>k__BackingField: e427dc47-04ba-4876-9183-1325a8d78693
+    <Name>k__BackingField: Dialogue Node
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 03aaaf79-0370-4097-9887-352248d66fd5
+      <contextVariableName>k__BackingField: dUpsatPat
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: true
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 0123d935-15f7-458a-8855-67bd5304b22d
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 4
+    <Position>k__BackingField: {x: -1362, y: 439}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - dawg_choice
@@ -676,7 +945,6 @@ MonoBehaviour:
   - p_steamed_ham
   - pa_sup
   - pa_more_really
-  - _entry
   - visits_check
   - pa_oh_hey_again
   - p_actually_im
@@ -690,11 +958,29 @@ MonoBehaviour:
   - pa_aight
   - pa_tap
   - _exit_main
-  - pa_good_one
   - anim_pay
   - anim_food
   - pa_here
   - anim_bendOver
   - tip_choice
+  - pay_choice
+  - if_paid
+  - p_fine
+  - anim_swipeCard_2
+  - pa_youbetter
+  - act_buttonChange_2
+  - pa_good_one
+  - tip_choice_2
+  - anim_signName_2
+  - act_buttonChange
+  - _exit_fuck
+  - pa_heydude
+  - pa_fuckyou
+  - pa_thanksdidyou
+  - pa_fineiguess
+  - pa_yourenotwelcome
+  - _exit_mad
+  - _entry
+  - Dialogue Node
   <OldGroupedNames>k__BackingField:
     list: []
