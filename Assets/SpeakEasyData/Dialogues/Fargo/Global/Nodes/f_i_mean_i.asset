@@ -14,14 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: f_i_mean_i
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: i mean i used to work. it's true, i was one of the
-    best. best worker. the only one. and where did that get me? i mean it's just
-    so hard being human sometimes. what do we spend our time on. waste our time.
-    time. that's my grandfather's clock i'm talkin about
+  <DialogueText>k__BackingField: i mean i had a job, i was one of the best. best
+    worker, I stayed late an everything, i mean what I'm just spposed to...  i mean
+    it's just so hard being human sometimes.
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9cc91fd9583e23448a2d03f6bda98cfa, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 13.6531
+  <SpeechTime>k__BackingField: 9.023229

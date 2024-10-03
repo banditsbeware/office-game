@@ -16,11 +16,15 @@ MonoBehaviour:
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: yes
-    <NextDialogue>k__BackingField: {fileID: 0}
   - <Text>k__BackingField: no
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 26649f72a7a51154da0e3f98423e12fd, type: 2}
-  <IfStatements>k__BackingField: []
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 04b93606dfe7849ffbe9eb03e43ca484, type: 2}
+  <IfStatements>k__BackingField:
+  - <Text>k__BackingField: yes
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 406004017d08b4c1aac75d3d7dc1ebfe, type: 2}
+    <contextVariableName>k__BackingField: cigs
+    <comparisonSign>k__BackingField: '>='
+    <comparisonValue>k__BackingField: 1
+    <isMetaVariableComparison>k__BackingField: 0
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 1
   <SpeechTime>k__BackingField: 0

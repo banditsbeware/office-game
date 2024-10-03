@@ -16,10 +16,14 @@ MonoBehaviour:
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: show me your tinctures
-    <NextDialogue>k__BackingField: {fileID: 0}
-  - <Text>k__BackingField: tell me about the town
-    <NextDialogue>k__BackingField: {fileID: 0}
+  - <Text>k__BackingField: shop
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 346d4499e7ac2412d9a8c134290858ee, type: 2}
+  - <Text>k__BackingField: town
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5986d751921af47b5bb7b2ac02d11c5e, type: 2}
+  - <Text>k__BackingField: who are you?
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a25330bac9d3549b5897184c611f6c23, type: 2}
+  - <Text>k__BackingField: leave
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b7e9fda72380f4131a02f9d96643c4de, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 1

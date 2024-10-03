@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: f_obama
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: hey i wanna tell you about how barack hussein obama
-    killed my brother in law
+  <DialogueText>k__BackingField: hey i ever tell you the story bout how barack HUSSEIN
+    obama killed my brother in law
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b4903a44a54de428392a60fd228522f6, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 4.7815547
+  <SpeechTime>k__BackingField: 4.492698

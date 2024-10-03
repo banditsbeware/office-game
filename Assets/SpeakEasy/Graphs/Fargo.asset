@@ -28,6 +28,565 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 2
     <Position>k__BackingField: {x: -427, y: 633}
+  - <ID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
+    <Name>k__BackingField: random_ask
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: 45d35eeb-2148-45dc-a39f-27746f29985e
+    - <Text>k__BackingField: 1
+      <NodeID>k__BackingField: 1b52b013-9684-4e5e-a3b4-4a01fe055bb5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 6
+    <Position>k__BackingField: {x: 628, y: 415}
+  - <ID>k__BackingField: b0ddf557-6fb4-4f6a-b9e7-9beb54dd6633
+    <Name>k__BackingField: cig_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: no
+      <NodeID>k__BackingField: 77c328d8-fd71-4122-ba5d-c92b9211f2a9
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: yes
+      <NodeID>k__BackingField: 717c8a1e-92d1-49ca-a685-d339ecf99631
+      <contextVariableName>k__BackingField: cigs
+      <comparisonSign>k__BackingField: '>='
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1275, y: 237}
+  - <ID>k__BackingField: 15dd8671-9c40-4dea-944e-531e5dffc209
+    <Name>k__BackingField: f_welcome_pretty
+    <Text>k__BackingField: ooh, hellooo pretty boyyy, hahahaaa....
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 312, y: 439}
+  - <ID>k__BackingField: 7330f997-4ee5-48b9-843c-d5bdaa7d6f05
+    <Name>k__BackingField: f_pretty_boy
+    <Text>k__BackingField: pretty boy has returned!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 312, y: 884}
+  - <ID>k__BackingField: abe32ace-5af7-4074-9369-3f089bd9668a
+    <Name>k__BackingField: drinkie_choice
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: no
+      <NodeID>k__BackingField: 77c328d8-fd71-4122-ba5d-c92b9211f2a9
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: yes
+      <NodeID>k__BackingField: a0e27ebb-a804-41ed-bf97-ccd7a4a77454
+      <contextVariableName>k__BackingField: alcohol
+      <comparisonSign>k__BackingField: '>='
+      <comparisonValue>k__BackingField: 1
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1243.5, y: 453}
+  - <ID>k__BackingField: 1b52b013-9684-4e5e-a3b4-4a01fe055bb5
+    <Name>k__BackingField: f_drinkie
+    <Text>k__BackingField: got any drinkie you wanna share?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: abe32ace-5af7-4074-9369-3f089bd9668a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 921, y: 453}
+  - <ID>k__BackingField: 45d35eeb-2148-45dc-a39f-27746f29985e
+    <Name>k__BackingField: f_cigarette
+    <Text>k__BackingField: hey you have a cigarette?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: b0ddf557-6fb4-4f6a-b9e7-9beb54dd6633
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 921, y: 260}
+  - <ID>k__BackingField: a0e27ebb-a804-41ed-bf97-ccd7a4a77454
+    <Name>k__BackingField: p_yeah_have_this
+    <Text>k__BackingField: Yeah, have this
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: alcohol
+      <callbackAction>k__BackingField: Decrement
+      <callbackValue>k__BackingField: 1
+    - <callbackVariableName>k__BackingField: alGaveAlcohol
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: true
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2000.5, y: 710}
+  - <ID>k__BackingField: 717c8a1e-92d1-49ca-a685-d339ecf99631
+    <Name>k__BackingField: p_sure_here
+    <Text>k__BackingField: Sure, here you go.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6b14906b-a93b-4124-92d4-b5b434728e31
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: cigs
+      <callbackAction>k__BackingField: Decrement
+      <callbackValue>k__BackingField: 1
+    - <callbackVariableName>k__BackingField: alGaveCigs
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: true
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1997.5, y: 333.5}
+  - <ID>k__BackingField: 6b14906b-a93b-4124-92d4-b5b434728e31
+    <Name>k__BackingField: f_god_bless
+    <Text>k__BackingField: god bless you absolute savior. i cant tell you how hard
+      it is to get my nicotine fix out here man, shit sucks
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: eec702cf-7041-40b8-8a8a-091b146bb355
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2287.5, y: 333.5}
+  - <ID>k__BackingField: eec702cf-7041-40b8-8a8a-091b146bb355
+    <Name>k__BackingField: f_hey_you_ever
+    <Text>k__BackingField: hey you ever realize how we say the same shit to people
+      when they do something nice as when they sneeze?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7bc8f567-2c92-45c5-b866-b519519a2d88
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2576.5, y: 333.5}
+  - <ID>k__BackingField: 77c328d8-fd71-4122-ba5d-c92b9211f2a9
+    <Name>k__BackingField: if_gave
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: e4a18f57-dcfc-4101-ae58-b89752f4f148
+      <contextVariableName>k__BackingField: alGaveAlcohol
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: true
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: e4a18f57-dcfc-4101-ae58-b89752f4f148
+      <contextVariableName>k__BackingField: alGaveCigs
+      <comparisonSign>k__BackingField: ==
+      <comparisonValue>k__BackingField: true
+      <isMetaVariableComparison>k__BackingField: 0
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
+      <contextVariableName>k__BackingField: 
+      <comparisonSign>k__BackingField: 
+      <comparisonValue>k__BackingField: 
+      <isMetaVariableComparison>k__BackingField: 0
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 5
+    <Position>k__BackingField: {x: 1617.5, y: -152}
+  - <ID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
+    <Name>k__BackingField: p_alley_no_sorry
+    <Text>k__BackingField: no, sorry
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 21b6611c-fae3-4a4d-b917-60a4c294b4c0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2191, y: -84}
+  - <ID>k__BackingField: 556873d1-eff2-4791-bc78-9228ce4ee11c
+    <Name>k__BackingField: f_and_the
+    <Text>k__BackingField: and the fuck do we get out of it huh? to look up at their
+      shiny gold bootyholes from down here in rotten dumb stupid, stupid, STUPID
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: f20adc99-2efa-48ef-b440-545d770a89c7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4317.5, y: -84}
+  - <ID>k__BackingField: 416ee9cf-81ef-45c3-a234-559e9f412906
+    <Name>k__BackingField: f_but_maybe
+    <Text>k__BackingField: but maybe they got it figured out i mean maybe this aint
+      all the shit it cracked up to be y'know? what makes my shit smell any bettter
+      yhan yours huh? shit FUCK! sorry *sniff*
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8f5f7e58-234f-4295-a0fc-7a966d44fcf4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3704, y: -84}
+  - <ID>k__BackingField: bcd1207b-a5c6-4403-acbe-b3b0010599b7
+    <Name>k__BackingField: f_a_big_one
+    <Text>k__BackingField: a big ol' .. big guy fart, a big society fart we're all
+      smelling. well guess who gets to sniff it all up. those damn kids. all over
+      the place, where the heck are they goin?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 416ee9cf-81ef-45c3-a234-559e9f412906
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3406, y: -84}
+  - <ID>k__BackingField: 8f5f7e58-234f-4295-a0fc-7a966d44fcf4
+    <Name>k__BackingField: f_and_it
+    <Text>k__BackingField: and it's not even like they, you know, they know about
+      us. like theyre all up in their penthouse tower abodes taking their proper
+      posh pure gold shits, right?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 556873d1-eff2-4791-bc78-9228ce4ee11c
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4002, y: -84}
+  - <ID>k__BackingField: c265d11f-91b8-4235-9c8e-fa33aa4f90cc
+    <Name>k__BackingField: f_theres_something
+    <Text>k__BackingField: there's something wrong going on, i'm tellin ya. it's
+      all wrong, those fuckers. it's all this and that, here and there, and who even
+      knows anymore?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8b3b301c-7d3c-4337-9dc9-ca48a99d0dcd
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2795, y: -84}
+  - <ID>k__BackingField: 8b3b301c-7d3c-4337-9dc9-ca48a99d0dcd
+    <Name>k__BackingField: f_i_mean_i
+    <Text>k__BackingField: i mean i had a job, i was one of the best. best worker,
+      I stayed late an everything, i mean what I'm just spposed to...  i mean it's
+      just so hard being human sometimes.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: bcd1207b-a5c6-4403-acbe-b3b0010599b7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3108, y: -84}
+  - <ID>k__BackingField: f20adc99-2efa-48ef-b440-545d770a89c7
+    <Name>k__BackingField: f_aaaaa
+    <Text>k__BackingField: aaaaAA, i mean what's the destination even for if the
+      journey there is always loopin back on itself. you're never actually gonna
+      GET there, did you think you would?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 12fcd26d-92ba-4a59-86e7-cc516a795969
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4634.5, y: -84}
+  - <ID>k__BackingField: 05682cbb-5d3b-4394-ac06-3c29f5c149f1
+    <Name>k__BackingField: f_and_even
+    <Text>k__BackingField: and even wen you finally see that light comin at you,
+      it's like a wild - e coyote moment with the whole brick wall
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 5c65cdc1-8deb-43ef-a339-636b2c9e241a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4944.5, y: -84}
+  - <ID>k__BackingField: 5c65cdc1-8deb-43ef-a339-636b2c9e241a
+    <Name>k__BackingField: f_what_an
+    <Text>k__BackingField: what an awesome show that whole thing was, i remember
+      sittin with my little brother watching the whole burd thing run around
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5264.5, y: -84}
+  - <ID>k__BackingField: 1c2b59dd-4673-40b6-afc9-bf82516430aa
+    <Name>k__BackingField: f_and_i
+    <Text>k__BackingField: and i didnt even figure out what a darn anvil was actually
+      friggin used for until uh ... *sniff*
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5573.5, y: -84}
+  - <ID>k__BackingField: 12fcd26d-92ba-4a59-86e7-cc516a795969
+    <Name>k__BackingField: f_wait
+    <Text>k__BackingField: wait hey you're still here?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6196, y: -84}
+  - <ID>k__BackingField: 21b6611c-fae3-4a4d-b917-60a4c294b4c0
+    <Name>k__BackingField: f_oh_fuck
+    <Text>k__BackingField: oh fuck out of here, what you think just your pretty boy
+      desk job and it all makes you deserve all that nn..
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: c265d11f-91b8-4235-9c8e-fa33aa4f90cc
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2497, y: -84}
+  - <ID>k__BackingField: e4a18f57-dcfc-4101-ae58-b89752f4f148
+    <Name>k__BackingField: f_hey_all_good
+    <Text>k__BackingField: hey all good my friend. thenks for keeping an eye out
+      for the little guy
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7cfefa85-2b7a-44c7-b948-c7441dc8e450
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2180, y: -310}
+  - <ID>k__BackingField: 7cfefa85-2b7a-44c7-b948-c7441dc8e450
+    <Name>k__BackingField: f_hey_all_good_copy
+    <Text>k__BackingField: you have an amazing day alright? god bless
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: add10006-7cd7-48ed-9ea0-54400d7e43dd
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2488, y: -310}
+  - <ID>k__BackingField: add10006-7cd7-48ed-9ea0-54400d7e43dd
+    <Name>k__BackingField: nice_exit
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 2905.5, y: -321.5}
+  - <ID>k__BackingField: 7bc8f567-2c92-45c5-b866-b519519a2d88
+    <Name>k__BackingField: f_and_what
+    <Text>k__BackingField: and what god ever have to do with a little nose tickle?
+      i mean shouldnt you be getting blessed by a fuckin dust mite? HAH
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 466680b0-4ab0-4279-af52-991b0c5fc45b
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2886.5, y: 333.5}
+  - <ID>k__BackingField: 466680b0-4ab0-4279-af52-991b0c5fc45b
+    <Name>k__BackingField: f_imagine
+    <Text>k__BackingField: imagine that a little pixie dust girlie jizzin her sneeze
+      dust all over you each time you get a litte nasty nostril.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: b8df92b1-a7e4-47a7-8be0-9f258bc07324
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3196.5, y: 333.5}
+  - <ID>k__BackingField: b8df92b1-a7e4-47a7-8be0-9f258bc07324
+    <Name>k__BackingField: f_did_you
+    <Text>k__BackingField: now did YOU know that twinklefuck whatever her name was
+      from peter pan, was my FAVORITE growing up. i mean i was proper obsessed
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: afba73ff-f4e5-4307-aa69-1d4988549bb7
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3505.5, y: 333.5}
+  - <ID>k__BackingField: afba73ff-f4e5-4307-aa69-1d4988549bb7
+    <Name>k__BackingField: f_but_then
+    <Text>k__BackingField: but then i found that different kind of pixie dust if
+      you know what i'm snorting... HAH
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8495ab25-5bbf-4f31-8faf-d1ce0a41cc17
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3831, y: 333.5}
+  - <ID>k__BackingField: 8495ab25-5bbf-4f31-8faf-d1ce0a41cc17
+    <Name>k__BackingField: f_ahh
+    <Text>k__BackingField: ahhhh
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 12fcd26d-92ba-4a59-86e7-cc516a795969
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4149, y: 333.5}
+  - <ID>k__BackingField: c868c3da-4c7c-46a9-abc8-19a69624c09d
+    <Name>k__BackingField: f_theyve_got
+    <Text>k__BackingField: they've got cameras all over the place. they'll see you
+      keep coming back here!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: f6ca3e6b-e634-48f0-abbc-e416cbcade30
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 312, y: 1232}
+  - <ID>k__BackingField: f6ca3e6b-e634-48f0-abbc-e416cbcade30
+    <Name>k__BackingField: f_obama
+    <Text>k__BackingField: hey i ever tell you the story bout how barack HUSSEIN
+      obama killed my brother in law
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 5e700fb4-9f0c-47f8-809c-01e76f698197
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 680, y: 1232}
+  - <ID>k__BackingField: 5e700fb4-9f0c-47f8-809c-01e76f698197
+    <Name>k__BackingField: f_probably_cause
+    <Text>k__BackingField: no? okay good cause if i did you KNOW they would be coming
+      after me for it. you better get to safety,  boy
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8b907ff4-cebe-42a5-90de-255d5b9f7a16
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1037, y: 1232}
+  - <ID>k__BackingField: 8b907ff4-cebe-42a5-90de-255d5b9f7a16
+    <Name>k__BackingField: third_exit
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 1395.5, y: 1232}
+  - <ID>k__BackingField: d66160b0-61ef-4b3e-800a-26f6d83ba80a
+    <Name>k__BackingField: f_run_run
+    <Text>k__BackingField: run! run! get out! get! out!
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 8b907ff4-cebe-42a5-90de-255d5b9f7a16
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 316, y: 1551}
   - <ID>k__BackingField: 68d80d69-9922-42ec-acc6-4a842d8486b1
     <Name>k__BackingField: visits_check
     <Text>k__BackingField: 
@@ -66,297 +625,47 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 5
     <Position>k__BackingField: {x: -232, y: 587}
-  - <ID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
-    <Name>k__BackingField: random_ask
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 1
-      <NodeID>k__BackingField: 45d35eeb-2148-45dc-a39f-27746f29985e
-    - <Text>k__BackingField: 1
-      <NodeID>k__BackingField: 1b52b013-9684-4e5e-a3b4-4a01fe055bb5
-    - <Text>k__BackingField: 1
-      <NodeID>k__BackingField: 8c0af667-773f-433c-be3e-0544eb5d504b
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 6
-    <Position>k__BackingField: {x: 628, y: 415}
-  - <ID>k__BackingField: b0ddf557-6fb4-4f6a-b9e7-9beb54dd6633
-    <Name>k__BackingField: cig_choice
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: yes
-      <NodeID>k__BackingField: 
-    - <Text>k__BackingField: no
-      <NodeID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1275, y: 237}
-  - <ID>k__BackingField: abe32ace-5af7-4074-9369-3f089bd9668a
-    <Name>k__BackingField: drinkie_choice
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: yes
-      <NodeID>k__BackingField: 
-    - <Text>k__BackingField: no
-      <NodeID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1275, y: 429}
-  - <ID>k__BackingField: a78071a7-a296-404f-944f-1973083b3438
-    <Name>k__BackingField: change_choice
-    <Text>k__BackingField: 
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: yes
-      <NodeID>k__BackingField: 
-    - <Text>k__BackingField: no
-      <NodeID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1275, y: 625}
-  - <ID>k__BackingField: 0fe1ed43-be3b-495b-bcb3-52e24c2ccdd3
-    <Name>k__BackingField: p_alley_no_sorry
-    <Text>k__BackingField: no, sorry
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 1
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 21b6611c-fae3-4a4d-b917-60a4c294b4c0
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1713, y: 750}
-  - <ID>k__BackingField: 21b6611c-fae3-4a4d-b917-60a4c294b4c0
-    <Name>k__BackingField: f_oh_fuck
-    <Text>k__BackingField: 'oh fuck out of here, what you think just cause you work
-      all day you deserve to enjoy yourself and I don''t? '
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: c265d11f-91b8-4235-9c8e-fa33aa4f90cc
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2019, y: 750}
-  - <ID>k__BackingField: c265d11f-91b8-4235-9c8e-fa33aa4f90cc
-    <Name>k__BackingField: f_theres_something
-    <Text>k__BackingField: there's something wrong going on, i'm tellin ya. it's
-      all wrong, it's all gone. it's all this and that, and who even knows anymore?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 8b3b301c-7d3c-4337-9dc9-ca48a99d0dcd
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2317, y: 750}
-  - <ID>k__BackingField: 8b3b301c-7d3c-4337-9dc9-ca48a99d0dcd
-    <Name>k__BackingField: f_i_mean_i
-    <Text>k__BackingField: i mean i used to work. it's true, i was one of the best.
-      best worker. the only one. and where did that get me? i mean it's just so hard
-      being human sometimes. what do we spend our time on. waste our time. time.
-      that's my grandfather's clock i'm talkin about
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: bcd1207b-a5c6-4403-acbe-b3b0010599b7
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2630, y: 750}
-  - <ID>k__BackingField: bcd1207b-a5c6-4403-acbe-b3b0010599b7
-    <Name>k__BackingField: f_a_big_one
-    <Text>k__BackingField: a big one, it .. tick tock tick tick tick. haha. you probably
-      think i'm crazy huh? well guess who's crazy now, those damn kids got their
-      whole lives and the screen. look at all this they're missing out on huh?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 416ee9cf-81ef-45c3-a234-559e9f412906
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2928, y: 750}
-  - <ID>k__BackingField: 416ee9cf-81ef-45c3-a234-559e9f412906
-    <Name>k__BackingField: f_but_maybe
-    <Text>k__BackingField: 'but maybe they got it figured out i mean maybe this aint
-      all the shit it cracked up to be y''know? what makes this brick any good any
-      better than a computer brick haha, brick.. brick..    brick '
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 12fcd26d-92ba-4a59-86e7-cc516a795969
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3226, y: 750}
-  - <ID>k__BackingField: 12fcd26d-92ba-4a59-86e7-cc516a795969
-    <Name>k__BackingField: f_woah
-    <Text>k__BackingField: woah hey you're still here? usually people leave after
-      a few seconds of hearing me talk.
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3524, y: 750}
-  - <ID>k__BackingField: 15dd8671-9c40-4dea-944e-531e5dffc209
-    <Name>k__BackingField: f_welcome_pretty
-    <Text>k__BackingField: ooh, hellooo pretty boyyy, hahahaaa....
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: d6f58885-dfd3-4739-9f27-dd30d6098aee
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 312, y: 439}
-  - <ID>k__BackingField: 45d35eeb-2148-45dc-a39f-27746f29985e
-    <Name>k__BackingField: f_cigarette
-    <Text>k__BackingField: hey you have a cigarette?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: b0ddf557-6fb4-4f6a-b9e7-9beb54dd6633
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 921, y: 260}
-  - <ID>k__BackingField: 1b52b013-9684-4e5e-a3b4-4a01fe055bb5
-    <Name>k__BackingField: f_drinkie
-    <Text>k__BackingField: got any drinkie you wanna share?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: abe32ace-5af7-4074-9369-3f089bd9668a
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 921, y: 453}
-  - <ID>k__BackingField: 8c0af667-773f-433c-be3e-0544eb5d504b
-    <Name>k__BackingField: f_spare_change
-    <Text>k__BackingField: any spare change?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: a78071a7-a296-404f-944f-1973083b3438
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 923, y: 649}
-  - <ID>k__BackingField: c868c3da-4c7c-46a9-abc8-19a69624c09d
-    <Name>k__BackingField: f_theyve_got
-    <Text>k__BackingField: they've got cameras all over the place. not safe! haha..
-      they're listening
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 312, y: 1232}
-  - <ID>k__BackingField: d66160b0-61ef-4b3e-800a-26f6d83ba80a
-    <Name>k__BackingField: f_run_run
-    <Text>k__BackingField: run! run! get out! get! out!
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 316, y: 1551}
-  - <ID>k__BackingField: 7330f997-4ee5-48b9-843c-d5bdaa7d6f05
-    <Name>k__BackingField: f_pretty_boy
-    <Text>k__BackingField: pretty boy has returned!
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 312, y: 884}
-  - <ID>k__BackingField: f6ca3e6b-e634-48f0-abbc-e416cbcade30
-    <Name>k__BackingField: f_obama
-    <Text>k__BackingField: hey i wanna tell you about how barack hussein obama killed
-      my brother in law
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1580, y: 1113}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - _entry
-  - visits_check
   - random_ask
   - cig_choice
+  - f_welcome_pretty
+  - f_pretty_boy
   - drinkie_choice
-  - change_choice
+  - f_drinkie
+  - f_cigarette
+  - p_yeah_have_this
+  - p_sure_here
+  - f_god_bless
+  - f_hey_you_ever
+  - if_gave
   - p_alley_no_sorry
-  - f_oh_fuck
+  - f_and_the
+  - f_but_maybe
+  - f_a_big_one
+  - f_and_it
   - f_theres_something
   - f_i_mean_i
-  - f_a_big_one
-  - f_but_maybe
-  - f_woah
-  - f_welcome_pretty
-  - f_cigarette
-  - f_drinkie
-  - f_spare_change
+  - f_aaaaa
+  - f_and_even
+  - f_what_an
+  - f_and_i
+  - f_wait
+  - f_oh_fuck
+  - f_hey_all_good
+  - f_hey_all_good_copy
+  - nice_exit
+  - f_and_what
+  - f_imagine
+  - f_did_you
+  - f_but_then
+  - f_ahh
   - f_theyve_got
-  - f_run_run
-  - f_pretty_boy
   - f_obama
+  - f_probably_cause
+  - third_exit
+  - f_run_run
+  - visits_check
   <OldGroupedNames>k__BackingField:
     list: []

@@ -17,8 +17,8 @@ MonoBehaviour:
   <DialogueText>k__BackingField: Incredible!
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: fedb15a7faeab994f930c5ddf3e1b4f4, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 943148dcedc8cb14ea3b188be75d1f3a, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 0.90066063
+  <SpeechTime>k__BackingField: 0.85155165

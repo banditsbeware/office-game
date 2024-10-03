@@ -15,11 +15,12 @@ MonoBehaviour:
   <NodeName>k__BackingField: f_theres_something
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: there's something wrong going on, i'm tellin ya.
-    it's all wrong, it's all gone. it's all this and that, and who even knows anymore?
+    it's all wrong, those fuckers. it's all this and that, here and there, and who
+    even knows anymore?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8fedbd77d97c2014881d62cfa6e3e87e, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 7.4322457
+  <SpeechTime>k__BackingField: 7.812009

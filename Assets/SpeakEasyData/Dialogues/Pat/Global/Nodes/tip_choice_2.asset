@@ -17,11 +17,11 @@ MonoBehaviour:
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: No Tip
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 32a857e13c05ff14baaa7f5feb6b1c74, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9356a58e8fb5946d38dbeb30be57e797, type: 2}
   - <Text>k__BackingField: $1.00
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2c27fa9867a6df0478742c727e399f9b, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8e41ae5eaf3c74acea2cb538e2a5bc81, type: 2}
   - <Text>k__BackingField: $3.00
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d84636a366a71fe429e3cf3b39f09992, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: db63f2bf4bb0c45fab9d96e000b0ac9c, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 1

@@ -17,7 +17,7 @@ MonoBehaviour:
   <DialogueText>k__BackingField: swipeCard
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3f0362aa2c6f14256b8859fc9f6264bd, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField:
   - <callbackVariableName>k__BackingField: dPaid

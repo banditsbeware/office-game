@@ -14,14 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: f_a_big_one
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: a big one, it .. tick tock tick tick tick. haha.
-    you probably think i'm crazy huh? well guess who's crazy now, those damn kids
-    got their whole lives and the screen. look at all this they're missing out on
-    huh?
+  <DialogueText>k__BackingField: a big ol' .. big guy fart, a big society fart we're
+    all smelling. well guess who gets to sniff it all up. those damn kids. all over
+    the place, where the heck are they goin?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4bbaeb4fca091154aa7c7568d20c4f00, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 10.571041
+  <SpeechTime>k__BackingField: 9.301993

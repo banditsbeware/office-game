@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: f_god_bless
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: f_god_bless
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: god bless you absolute savior. i cant tell you how
+    hard it is to get my nicotine fix out here man, shit sucks
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Next Node
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6c7a1c8d70e914f2cabdac7b7c51ad92, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 0
+  <SpeechTime>k__BackingField: 6.340035

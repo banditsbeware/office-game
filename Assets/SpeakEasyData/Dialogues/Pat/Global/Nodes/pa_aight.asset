@@ -17,8 +17,8 @@ MonoBehaviour:
   <DialogueText>k__BackingField: aight, if the total looks fine, go ahead and swipe
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e5d7e09c5f5184283a5c54582efd7a16, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: bd796fc6f42da40fca3ff98b58b8e0e9, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 3.3648448
+  <SpeechTime>k__BackingField: 3.0653667

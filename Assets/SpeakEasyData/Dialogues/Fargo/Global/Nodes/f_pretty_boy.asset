@@ -17,8 +17,8 @@ MonoBehaviour:
   <DialogueText>k__BackingField: pretty boy has returned!
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 12d96a26ab6344510bee8c087abd165a, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 1.2406571
+  <SpeechTime>k__BackingField: 2.0641692

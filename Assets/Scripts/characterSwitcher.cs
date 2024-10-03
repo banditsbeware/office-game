@@ -13,7 +13,7 @@ public class characterSwitcher : MonoBehaviour
 
     private GameObject activeCharacter;
 
-    void Awake()
+    void Start()
     {
         interactObject = gameObject.GetComponent<interact_dialogue>();
 

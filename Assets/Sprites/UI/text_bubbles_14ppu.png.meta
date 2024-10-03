@@ -129,48 +129,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: text_bubbles_14ppu_0
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 753
-        width: 59
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92fa2e4c7d88e3b469fdfbef54f67560
-      internalID: -1102559207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: text_bubbles_14ppu_1
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 703
-        width: 72
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 982aa3aafbc7ed8448e9a6dd613233d5
-      internalID: 665816856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: text_bubbles_14ppu_2
       rect:
         serializedVersion: 2
@@ -179,56 +137,14 @@ TextureImporter:
         width: 77
         height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd321a0b45e56545b0b37ef0cbaacef
-      internalID: -412031149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: text_bubbles_empty
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 791
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f8f2b146e01eb741b415f226c7a4ab6
-      internalID: 1754910736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: text_bubbles_14ppu_3
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 531
-        width: 77
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d271d81e62c4b7b4ea5493ae966785b5
-      internalID: -1403493056
+      spriteID: 982aa3aafbc7ed8448e9a6dd613233d5
+      internalID: 665816856
       vertices: []
       indices: 
       edges: []
@@ -242,14 +158,14 @@ TextureImporter:
         width: 76
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ca81b258396bb24795798ec9bce5618
-      internalID: -252633185
+      spriteID: d271d81e62c4b7b4ea5493ae966785b5
+      internalID: -1403493056
       vertices: []
       indices: 
       edges: []
@@ -263,14 +179,203 @@ TextureImporter:
         width: 59
         height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578ab216dfac7924e86f60929becbfbd
-      internalID: 1780941523
+      spriteID: 9ca81b258396bb24795798ec9bce5618
+      internalID: -252633185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 753
+        width: 59
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0606294c2274c8ba8a4decb41e2a5e
+      internalID: -1189291503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 703
+        width: 72
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b9ee290e090462795b25fdc9dac094
+      internalID: 1725278458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 531
+        width: 77
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d721fa150c9e143e9b25bd600a62962f
+      internalID: -1990198997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 385
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697be61fefbea48f2b0051563ec14547
+      internalID: 14878665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 343
+        width: 72
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf7c05a66d1b4e82bf5eebbb6df8567
+      internalID: -858299040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 240
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ae89294c41a45daab6d991c65b0818
+      internalID: 1081268678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 171
+        width: 77
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6b53c3e10c04c09b85cdf20e51cfea
+      internalID: 191806515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 76
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316c5e3d6a04a43a1aeb22fe25be8cf2
+      internalID: -808048674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_bubbles_14ppu_11
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 91
+        width: 59
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1fc1135b0b84de1b9c85ef58c235bf
+      internalID: 1619920888
       vertices: []
       indices: 
       edges: []
@@ -286,13 +391,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      text_bubbles_14ppu_7: -858299040
       text_bubbles_14ppu_2: 665816856
-      text_bubbles_empty: -412031149
+      text_bubbles_14ppu_6: 14878665
       text_bubbles_14ppu_1: 1725278458
       text_bubbles_14ppu_0: -1189291503
+      text_bubbles_14ppu_9: 191806515
       text_bubbles_14ppu_5: -252633185
+      text_bubbles_14ppu_11: 1619920888
       text_bubbles_14ppu_3: -1990198997
       text_bubbles_14ppu_4: -1403493056
+      text_bubbles_14ppu_8: 1081268678
+      text_bubbles_14ppu_10: -808048674
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
