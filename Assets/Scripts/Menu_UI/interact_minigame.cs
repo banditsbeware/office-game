@@ -12,12 +12,10 @@ public class interact_minigame : interact
             if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == "play")
             {
                 UIManager.denoitfy();
-                UIManager.gameState = "window";
-                GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+                UIManager.EnterMinigame();
                 UIManager.show(theGame);
             }
         }
-
     }
 
     //loads/unloads a soundbank specific to the minigame before the minigame starts

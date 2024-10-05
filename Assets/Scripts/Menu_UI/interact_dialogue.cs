@@ -20,7 +20,7 @@ public class interact_dialogue : interact
             if (Input.GetKeyDown(KeyCode.E) && UIManager.gameState == "play")
             {
                 UIManager.denoitfy();
-                UIManager.gameState = "window";
+                UIManager.EnterMinigame();
                 UIManager.show(dialogueWindow);
                 UIManager.show(dialogue.gameObject);
 

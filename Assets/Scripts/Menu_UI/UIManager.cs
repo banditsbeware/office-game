@@ -18,6 +18,11 @@ public static class UIManager
 	public static string gameState = "play";
 	public static string bufferState = null;
 
+	// rigid body constraints are different in different scenes, this stores them temporarily when paused
+
+	public static RigidbodyConstraints2D currentPlayerConstraints;
+
+
 	// reloads current scene index (in Build Management)
 	public static void Reload(){
 	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -47,7 +52,7 @@ public static class UIManager
 			break;
 			case "window": //esc will only exit you from a minigame, not pause.
 				hide(minigames);
-				GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+				GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;
 				gameState = "play";
 			break;
 		}
@@ -55,15 +60,31 @@ public static class UIManager
 
 	public static void EnterCutscene()
 	{
+		currentPlayerConstraints = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints;
 		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
 		gameState = "cutscene";
 	}
 
 	public static void ExitCutscene()
 	{
-		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;
 		gameState = "play";
 	}
+
+	public static void EnterMinigame()
+	{
+		currentPlayerConstraints = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints;
+		Debug.Log(currentPlayerConstraints);
+		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+		gameState = "window";
+	}
+
+	public static void ExitMinigame()
+	{
+		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;
+		gameState = "play";
+	}
+	
 	
 	//  shows objects with tag
 	public static void show(GameObject[] tagg){
