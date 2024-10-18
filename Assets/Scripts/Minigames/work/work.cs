@@ -77,6 +77,7 @@ public class work : MonoBehaviour
             return;
         }
 
+        //If day task calls for specific email, need new function
         CreateRandomWindow();
         newWindowCounter = windowCounterMinimum + delayPerWindow * windows.Count;
     }

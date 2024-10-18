@@ -41,13 +41,4 @@ public class LevelLoader : MonoBehaviour
 
         SceneManager.LoadScene(levelName);
     }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            Meta.DebuggingMode = !Meta.DebuggingMode;
-            debugText.text = Meta.DebuggingMode.ToString();
-        }
-    }
 }

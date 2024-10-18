@@ -10,9 +10,6 @@ using SpeakEasy.Enumerations;
 [System.Serializable]
 public static class Meta
 {
-    public static bool DebuggingMode = true;
-
-
     //world variables
     public static Dictionary<string, dynamic> Global = new Dictionary<string, dynamic>();
     public static Dictionary<string, dynamic> Daily = new Dictionary<string, dynamic>();
@@ -34,23 +31,30 @@ public static class Meta
         SetDaily();
         SetYesterday();
     }
-
-    // wa - water Cooler
-    // b - bodega
-    // al - alleyway
-    // d - dawgs
+    
     public static void SetDaily()
     {
-        SetValue("afterWork", true, Daily);
+        // unlabeled - office
+        SetValue("workComplete", false, Daily);
+        SetValue("afterWork", false, Daily);
+        SetValue("triedLeavingWork", 0, Daily);
+        
+        // wa - water cooler
         SetValue("waRepeatedChoice", 0, Daily);
+        
+        // b - bodega
         SetValue("bVisits", 0, Daily);
         SetValue("bEggAttempt", 0, Daily);
         SetValue("bAlcoholAttempt", 0, Daily);
         SetValue("bCigsAttempt", 0, Daily);
         SetValue("bPissedOffCosta", false, Daily);
+        
+        // al - alleyway
         SetValue("alVisits", 0, Daily);
         SetValue("alGaveAlcohol", false, Daily);
         SetValue("alGaveCigs", false, Daily);
+        
+        // d - dawgs
         SetValue("dJaxVisits", 0, Daily);
         SetValue("dUpsetJax", false, Daily);
         SetValue("dPatVisits", 0, Daily);
@@ -59,8 +63,6 @@ public static class Meta
         SetValue("dChosenItem", "Hot Dog", Daily);
         SetValue("dPaid", true, Daily);
         SetValue("dTotal", 0f, Daily);
-
-
     }
 
     public static void SetYesterday()

@@ -386,11 +386,6 @@ namespace SpeakEasy
             button = letterMatrix[word.origin.Item1 + word.direction.Item1 * x, word.origin.Item2 + word.direction.Item2 * x];
             ButtonTextComponent(button).text = wordString[x].ToString();
             button.GetComponent<WordsearchButton>().usedByOtherWord = true;
-
-            if (Meta.DebuggingMode)
-            {
-              button.GetComponent<Image>().color = new Color32(200, 200, 0, 150);
-            }
             
             //assign first and last button to Word object
             if (x == 0)
@@ -401,8 +396,6 @@ namespace SpeakEasy
             {
               word.endButton = button;
             }
-
-            // Debug.Log(origin.ToString() + direction.ToString());
           }
         }
 

@@ -74,7 +74,6 @@ public static class UIManager
 	public static void EnterMinigame()
 	{
 		currentPlayerConstraints = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints;
-		Debug.Log(currentPlayerConstraints);
 		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
 		gameState = "window";
 	}
@@ -84,7 +83,6 @@ public static class UIManager
 		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;
 		gameState = "play";
 	}
-	
 	
 	//  shows objects with tag
 	public static void show(GameObject[] tagg){

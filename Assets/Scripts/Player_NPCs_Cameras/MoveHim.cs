@@ -20,7 +20,7 @@ public class MoveHim : MonoBehaviour {
 
     //used for position animation through code (mainly during "cutscenes")
     public bool isAnimating = false; 
-    public Vector3 destination;
+    public Vector2 destination;
 
 
     void Awake()
@@ -52,6 +52,7 @@ public class MoveHim : MonoBehaviour {
       if (isAnimating)
       {
         velocity = AnimatedVelocity(destination);
+
       }
     }
 
@@ -75,22 +76,19 @@ public class MoveHim : MonoBehaviour {
 
     }
 
-    public Vector3 AnimatedVelocity(Vector3 destination)
+    public Vector2 AnimatedVelocity(Vector2 destination)
     {
-      Vector3 difference = destination - transform.position;
-
-      Debug.Log(difference);
+      Vector2 difference = destination - new Vector2(transform.position.x, transform.position.y);
 
       if (difference.x < .05 && difference.y < .05)
       {
         isAnimating = false;
-        difference = new Vector3(0, 0);
+        difference = new Vector2(0, 0);
       }
-
-      return Vector3.Normalize(difference);
+      return difference.normalized;
     }
 
-    public void AnimateMovement(Vector3 dest, float spd)
+    public void AnimateMovement(Vector2 dest, float spd)
     {
       isAnimating = true;
       destination = dest;

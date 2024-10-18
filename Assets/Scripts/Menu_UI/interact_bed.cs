@@ -27,7 +27,7 @@ public class interact_bed : interact_door
 
                 Meta.Global["day"] += 1;
                 UIManager.denoitfy();
-                UIManager.EnterMinigame();
+                UIManager.gameState = "window";
                 dreamer.LoadDream(scene, bedsidePosition, sleepPosition);
             }
         }

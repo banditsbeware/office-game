@@ -13,8 +13,17 @@ public class interact_door : interact
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                UIManager.denoitfy();
-                loader.LoadLevel(scene);
+                if (ProgressChecks.LeaveWorkCheck(scene)) // Returns true unless attempting to leave office before tasks complete
+                {
+                    UIManager.denoitfy();
+                    loader.LoadLevel(scene);
+                }
+                else
+                {
+                    Debug.Log("Fuck you, respectfully");
+                    //trigger boss stopping you at door / dialog
+                    //remove interactivity of door until leave trigger
+                }
             }
         }
     }

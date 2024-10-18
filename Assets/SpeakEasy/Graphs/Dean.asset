@@ -22,7 +22,7 @@ MonoBehaviour:
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: First Node
-      <NodeID>k__BackingField: 89a8809f-e64f-4b09-860e-6d31031e5d07
+      <NodeID>k__BackingField: 7b6c6c5a-e9f9-4d72-8e39-e9d6cdb4be23
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
@@ -51,25 +51,11 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 844, y: 397}
-  - <ID>k__BackingField: 89a8809f-e64f-4b09-860e-6d31031e5d07
-    <Name>k__BackingField: act_eee
-    <Text>k__BackingField: SayHello
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 7b6c6c5a-e9f9-4d72-8e39-e9d6cdb4be23
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 10
-    <Position>k__BackingField: {x: 532, y: 370}
+    <Position>k__BackingField: {x: 556, y: 405}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - _entry
   - _exit
   - d_heyBoy
-  - act_eee
   <OldGroupedNames>k__BackingField:
     list: []
