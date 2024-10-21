@@ -154,7 +154,7 @@ namespace SpeakEasy
                     break;
 
                 case Exit:
-                    UIManager.gameState = "play";
+                    UIManager.ExitCutscene();
                     transform.parent.parent.gameObject.SetActive(false);
                     break;
 

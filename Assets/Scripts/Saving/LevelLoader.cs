@@ -2,17 +2,27 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UIElements;
+using System.Collections.Generic;
+
 
 public class LevelLoader : MonoBehaviour
 {
     public Animator fadeTransition;
     public float transitionTime = 1f;
     internal Transform door;  //door you will be exiting from
-    public TMP_Text debugText;
 
     void Start()
     {
         Meta.Global["currentScene"] = SceneManager.GetActiveScene().name;
+    }
+
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            Meta.SetValue("todaysTasks", new List<TaskType>(){TaskType.Email, TaskType.Document}, Meta.Daily);
+        }
     }
 
     public void LoadLevel(string levelName)

@@ -65,6 +65,7 @@ public static class UIManager
 		gameState = "cutscene";
 	}
 
+
 	public static void ExitCutscene()
 	{
 		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;

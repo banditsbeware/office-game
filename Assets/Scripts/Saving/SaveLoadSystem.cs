@@ -58,7 +58,7 @@ public class SaveLoadSystem : MonoBehaviour
     {
         string path = Path.Combine(dataDirPath, dataFileName);
 
-        SerializableMeta data = new SerializableMeta();
+        SerializableMeta data;
         data = Meta.Serialize();
 
         try

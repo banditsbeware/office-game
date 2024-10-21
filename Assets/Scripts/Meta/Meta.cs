@@ -4,7 +4,8 @@ using System.Reflection;
 using System;
 using SpeakEasy.Data;
 using UnityEngine;
-using SpeakEasy.Enumerations;
+using static ListExtensions;
+using System.Collections.ObjectModel;
 
 //contains saved data that transcends an entire play of the game
 [System.Serializable]
@@ -38,6 +39,7 @@ public static class Meta
         SetValue("workComplete", false, Daily);
         SetValue("afterWork", false, Daily);
         SetValue("triedLeavingWork", 0, Daily);
+        SetValue("todaysTasks", new List<TaskType>(){TaskType.Spreadsheet}, Daily);
         
         // wa - water cooler
         SetValue("waRepeatedChoice", 0, Daily);
@@ -99,14 +101,11 @@ public static class Meta
         return names;
     }
 
-    public static void SetValue(string name, object value, Dictionary<string, dynamic> blackboard)
+    public static void SetValue(string name, dynamic value, Dictionary<string, dynamic> blackboard)
     {
         if (blackboard.ContainsKey(name))
         {
-            if (blackboard[name] is string) blackboard[name] = value;
-            if (blackboard[name] is int) blackboard[name] = int.Parse(value.ToString());
-            if (blackboard[name] is float) blackboard[name] = float.Parse(value.ToString());
-            if (blackboard[name] is bool) blackboard[name] = bool.Parse(value.ToString());
+            blackboard[name]  = value;
         }
         else
         {
@@ -137,23 +136,73 @@ public static class Meta
     public static SerializableMeta Serialize()
     {
         SerializableMeta data = new SerializableMeta();
+
         foreach (KeyValuePair<string, dynamic> pair in Global)
         {
-            if (pair.Value is int)
+            switch (pair.Value)
             {
-                data.metaInts.Add(pair.Key, pair.Value);
+                case int i: 
+                    data.metaInts.Add(pair.Key, i);
+                    break;
+                case float f:
+                    data.metaFloats.Add(pair.Key, f);
+                    break;
+                case string s:
+                    data.metaStrings.Add(pair.Key, s);
+                    break;
+                case bool b:
+                    data.metaBools.Add(pair.Key, b);
+                    break;
+                case List<TaskType> l:
+                    data.metaLists.Add(pair.Key, string.Join(",", l.ToArray()));
+                    Debug.Log(string.Join(",", pair.Value.ToArray()));
+                    break;
             }
-            if (pair.Value is float)
+        }
+
+        foreach (KeyValuePair<string, dynamic> pair in Daily)
+        {
+            switch (pair.Value)
             {
-                data.metaFloats.Add(pair.Key, pair.Value);
+                case int i: 
+                    data.dailyInts.Add(pair.Key, i);
+                    break;
+                case float f:
+                    data.dailyFloats.Add(pair.Key, f);
+                    break;
+                case string s:
+                    data.dailyStrings.Add(pair.Key, s);
+                    break;
+                case bool b:
+                    data.dailyBools.Add(pair.Key, b);
+                    break;
+                case List<TaskType> l:
+                    data.dailyLists.Add(pair.Key, string.Join(",", l.ToArray()));
+                    Debug.Log(string.Join(",", pair.Value.ToArray()));
+                    break;
             }
-            if (pair.Value is string)
+        }
+
+        foreach (KeyValuePair<string, dynamic> pair in Yesterdaily)
+        {
+            switch (pair.Value)
             {
-                data.metaStrings.Add(pair.Key, pair.Value);
-            }
-            if (pair.Value is bool)
-            {
-                data.metaBools.Add(pair.Key, pair.Value);
+                case int i: 
+                    data.yesterdailyInts.Add(pair.Key, i);
+                    break;
+                case float f:
+                    data.yesterdailyFloats.Add(pair.Key, f);
+                    break;
+                case string s:
+                    data.yesterdailyStrings.Add(pair.Key, s);
+                    break;
+                case bool b:
+                    data.yesterdailyBools.Add(pair.Key, b);
+                    break;
+                case List<TaskType> l:
+                    data.yesterdailyLists.Add(pair.Key, string.Join(",", l.ToArray()));
+                    Debug.Log(string.Join(",", pair.Value.ToArray()));
+                    break;
             }
         }
         
@@ -176,6 +225,10 @@ public static class Meta
             SetValue(datum.Key, datum.Value, Global);
         }
         foreach (KeyValuePair<string, bool> datum in data.metaBools)
+        {
+            SetValue(datum.Key, datum.Value, Global);
+        }
+        foreach (KeyValuePair<string, string> datum in data.metaLists)
         {
             SetValue(datum.Key, datum.Value, Global);
         }
@@ -344,6 +397,20 @@ public class SerializableMeta
     public SerializableDictionary<string, float> metaFloats = new SerializableDictionary<string, float>();
     public SerializableDictionary<string, string> metaStrings = new SerializableDictionary<string, string>();
     public SerializableDictionary<string, bool> metaBools = new SerializableDictionary<string, bool>();
+    public SerializableDictionary<string, string> metaLists = new SerializableDictionary<string, string>();
+
+    public SerializableDictionary<string, int> dailyInts = new SerializableDictionary<string, int>();
+    public SerializableDictionary<string, float> dailyFloats = new SerializableDictionary<string, float>();
+    public SerializableDictionary<string, string> dailyStrings = new SerializableDictionary<string, string>();
+    public SerializableDictionary<string, bool> dailyBools = new SerializableDictionary<string, bool>();
+    public SerializableDictionary<string, string> dailyLists = new SerializableDictionary<string, string>();
+
+    public SerializableDictionary<string, int> yesterdailyInts = new SerializableDictionary<string, int>();
+    public SerializableDictionary<string, float> yesterdailyFloats = new SerializableDictionary<string, float>();
+    public SerializableDictionary<string, string> yesterdailyStrings = new SerializableDictionary<string, string>();
+    public SerializableDictionary<string, bool> yesterdailyBools = new SerializableDictionary<string, bool>();
+    public SerializableDictionary<string, string> yesterdailyLists = new SerializableDictionary<string, string>();
+
 
     public List<SerializableDictionary> dictionaries = new List<SerializableDictionary>();
 
@@ -353,5 +420,18 @@ public class SerializableMeta
         dictionaries.Add(metaFloats);
         dictionaries.Add(metaStrings);
         dictionaries.Add(metaBools);
+        dictionaries.Add(metaLists);
+
+        dictionaries.Add(dailyInts);
+        dictionaries.Add(dailyFloats);
+        dictionaries.Add(dailyStrings);
+        dictionaries.Add(dailyBools);
+        dictionaries.Add(dailyLists);
+
+        dictionaries.Add(yesterdailyInts);
+        dictionaries.Add(yesterdailyFloats);
+        dictionaries.Add(yesterdailyStrings);
+        dictionaries.Add(yesterdailyBools);
+        dictionaries.Add(yesterdailyLists);
     }
 }

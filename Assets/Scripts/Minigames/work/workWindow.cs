@@ -16,7 +16,7 @@ public abstract class workWindow : MonoBehaviour, IPointerDownHandler
     protected byte transparentAlpha = 200;
     protected List<Image> images;
     protected List<TMP_Text> texts;
-    protected float timeAfterCompletion = 6f;
+    protected float timeAfterCompletion = 1f;
     public bool completedLoad = false;
 
     //window contents

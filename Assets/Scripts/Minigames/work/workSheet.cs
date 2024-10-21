@@ -72,10 +72,12 @@ public class workSheet : workWindow
     public sheetsCell activeCell;
 
     private int phraseCounter = 200;
-    private int phraseTimingMinimum = 200;
+    private int phraseTimingMinimum = 500; //200 was default before debugging
     [SerializeField] private int delayPerPhrase = 80;
 
     [SerializeField] private GameObject cellTemplate;
+
+    private bool sheetComplete = false;
 
     //text objects
     public TMP_Text sheetTitle;
@@ -115,7 +117,6 @@ public class workSheet : workWindow
     {
         if(work.activeWindow == this) 
         {
-            Debug.Log("e");
             base.FixedUpdate();
     
             if (phraseCounter > 0)
@@ -123,7 +124,7 @@ public class workSheet : workWindow
                 phraseCounter--;
                 return;
             }
-    
+
             AddRandPhraseToRandCell();
             phraseCounter = phraseTimingMinimum + delayPerPhrase * openCells.Count;
         }
@@ -146,6 +147,7 @@ public class workSheet : workWindow
     {
         work.windows.Remove(this);
         StartCoroutine(FadeDestroy(timeAfterCompletion));
+        TaskManager.TaskComplete(TaskType.Spreadsheet);
     }
     
     public void CellSelected(sheetsCell cell)
@@ -189,9 +191,16 @@ public class workSheet : workWindow
 
     public override void PhraseComplete()
     {
+        Debug.Log("Phrase Complete");
         activeCell.cellComplete();
         openCells.Remove(activeCell);
         activeCell = null;
+        if(openCells.Count == 0)
+        {
+            Debug.Log("openCells 0");
+            work.activeWindow = null;
+            Complete();
+        }
     }
 }
 
