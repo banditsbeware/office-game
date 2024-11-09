@@ -22,16 +22,34 @@
 						<State Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
 						<State Name="waterMini" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
 						<State Name="apartmentBath" ID="{010D6AA5-E374-46F9-8B2F-736967499920}"/>
+						<State Name="boss" ID="{6A81C3E0-A8B0-407A-909F-DB6054F7B26B}"/>
 					</ChildrenList>
-					<TransitionList>
-						<Transition>
-							<StartState Name="None" ID="{0939C9D3-FB2E-428A-87C0-450D8F0A8789}"/>
-							<EndState Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
-							<Time>1</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-					</TransitionList>
 				</StateGroup>
+				<Folder Name="Boss_mini" ID="{71D0F0FF-DF60-4D7C-A4B5-CA4A0FDE52B9}" ShortID="974775165">
+					<ChildrenList>
+						<StateGroup Name="Dean_Speaking" ID="{F61BF12F-BF06-4ED5-82BB-6D89CE506B29}">
+							<ChildrenList>
+								<State Name="None" ID="{429453DE-0CE0-42D2-AC5B-239156A5DF85}"/>
+								<State Name="true" ID="{8C89252E-8710-45A1-B764-84B1967A7244}"/>
+								<State Name="false" ID="{F3D7BCA4-600D-43C7-9202-AFEDC9CB2E4B}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Marisol_Speaking" ID="{C9F6FE03-814C-499E-83A8-D9302C57BB47}">
+							<ChildrenList>
+								<State Name="None" ID="{29D6C084-22B9-4132-A5F2-21780B5B9AC3}"/>
+								<State Name="true" ID="{CC5C81CB-9D8C-4F2B-A7D9-510B161C1555}"/>
+								<State Name="false" ID="{9B23D4BC-FF06-49A2-8CE8-9C21F75932CF}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Marc_Speaking" ID="{6D41777C-0E02-4940-9F82-A1E18B65CD16}">
+							<ChildrenList>
+								<State Name="None" ID="{D90A750D-8B2F-44FF-A52F-794E4AE06DA1}"/>
+								<State Name="true" ID="{37259C81-1100-475A-9A1C-431CFB3A0B44}"/>
+								<State Name="false" ID="{724AEE5E-0869-4052-A343-8C8355212B07}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

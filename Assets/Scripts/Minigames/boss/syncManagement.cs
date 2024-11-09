@@ -4,6 +4,7 @@ using System.Runtime;
 using static System.Math;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class syncManagement : MonoBehaviour
 {
@@ -31,6 +32,20 @@ public class syncManagement : MonoBehaviour
     //holds multiple beats
     public Queue<Cue> cues = new Queue<Cue>();
 
+    //player animation states
+    public AK.Wwise.State deanSpeakingT;
+    public AK.Wwise.State deanSpeakingF;
+    public AK.Wwise.State marisolSpeakingT;
+    public AK.Wwise.State marisolSpeakingF;
+    public AK.Wwise.State marcSpeakingT;
+    public AK.Wwise.State marcSpeakingF;
+
+    //animation controllers
+    public Animator dean_anim;
+    public Animator marisol_anim;
+    public Animator marc_anim;
+
+
     void Update()
     {
         if (cues.Count != 0)
@@ -44,11 +59,17 @@ public class syncManagement : MonoBehaviour
 
             }
         }
+
+        UpdateAnimatorsFromState(dean_anim, deanSpeakingT, deanSpeakingF);
+        UpdateAnimatorsFromState(marisol_anim, marisolSpeakingT, marisolSpeakingF);
+        UpdateAnimatorsFromState(marc_anim, marcSpeakingT, marcSpeakingF);
     }
 
     //called when player clicks
     public void playerCue()
     {
+
+        AkSoundEngine.PostEvent("Play_Player_60bmp_16ths", gameObject);
         if(cues.Count == 0)
         {
             feedback.text = "imagine clicking when there's nothing to click";
@@ -114,7 +135,7 @@ public class syncManagement : MonoBehaviour
             barTime = bar;
             word = text;
 
-            //immediately create word on right side of screen, add a velocity to the left so it hits center the moment you're supposed to click
+            //immediately create word on top side of screen, add a velocity downward so it hits center the moment you're supposed to click
             this.text = Instantiate(sync.bossWord, sync.transform.parent);
             this.target = Instantiate(sync.target, sync.transform.parent);
             this.text.text = word;
@@ -122,26 +143,37 @@ public class syncManagement : MonoBehaviour
 
             this.text.transform.localPosition = ResituateWordPosition(sync);
 
-            Vector2 targetPosition = new Vector2(Random.Range(sync.targetXBounds.x, sync.targetXBounds.y), Random.Range(sync.targetYBounds.x, sync.targetYBounds.y));
+            Vector2 targetPosition = new Vector2(this.text.transform.localPosition.x, Random.Range(sync.targetYBounds.x, sync.targetYBounds.y));
             this.target.transform.localPosition = targetPosition;
 
             this.text.GetComponent<wordMovement>().vel = new Vector2((targetPosition.x - this.text.transform.localPosition.x) / (barTime * 50), (targetPosition.y - this.text.transform.localPosition.y) / (barTime * 50));
-            Debug.Log(targetPosition.x - this.text.transform.localPosition.x);
         }
 
         private Vector2 ResituateWordPosition(syncManagement sync)
         {
+            //pulls random Vector 2 within the camera viewport and randomized y position
             float y = Random.Range(sync.wordSpawnYBounds.x, sync.wordSpawnYBounds.y);
-            if (y > 570f)
-            {
-                return new Vector2(Random.Range(-900f, 900f), y);
-            }
-            if (Random.Range(0, 1) > .5f)
+            return new Vector2(Random.Range(sync.targetXBounds.x, sync.targetXBounds.y), y);
+            /* if (Random.Range(0, 1) > .5f)
             {
                 return new Vector2 (1200, y);
             }
 
-            return new Vector2 (-1200, y);
+            return new Vector2 (-1200, y); */
+        }
+    }
+
+    private void UpdateAnimatorsFromState(Animator animator, AK.Wwise.State AKTrueState, AK.Wwise.State AKFalseState)
+    {
+        uint currentStateID = 10;
+        AkSoundEngine.GetState(AKTrueState.GroupId, out currentStateID);
+        if (currentStateID == AKTrueState.Id)
+        {
+            animator.SetBool("isSpeaking", true);
+        }
+        else if (currentStateID == AKFalseState.Id)
+        {
+            animator.SetBool("isSpeaking", false);
         }
     }
 }

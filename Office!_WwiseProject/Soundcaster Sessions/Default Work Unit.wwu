@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3817DA7A-8866-451C-858D-726FA19956C5}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{3817DA7A-8866-451C-858D-726FA19956C5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3817DA7A-8866-451C-858D-726FA19956C5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Boss" ID="{5695C155-407C-41CD-94D2-DAC892BA7EB0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Boss_Day1" ID="{DAF895D0-FB27-48BE-92CE-2A1AB7F083A5}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Office_Amb" ID="{434E933B-39FF-45C6-B5BE-312AA1A9F62F}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="playerDG_repeatDuration" ID="{3A964051-39F6-405B-8F1E-5B1800419020}"/>
+							<Value>0.12470354570821</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="boss" ID="{6A81C3E0-A8B0-407A-909F-DB6054F7B26B}"/>
+						<CurrentStateRef Name="false" ID="{724AEE5E-0869-4052-A343-8C8355212B07}"/>
+						<CurrentStateRef Name="true" ID="{CC5C81CB-9D8C-4F2B-A7D9-510B161C1555}"/>
+						<CurrentStateRef Name="false" ID="{F3D7BCA4-600D-43C7-9202-AFEDC9CB2E4B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Succeeded" ID="{E9A52477-E0A1-4607-9929-E4EF43BE4FA7}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

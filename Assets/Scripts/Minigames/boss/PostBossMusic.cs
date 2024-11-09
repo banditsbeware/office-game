@@ -28,6 +28,7 @@ public class PostBossMusic : MonoBehaviour
     //called every CueSync in Wwise
     void CallCueSync(object in_cookie, AkCallbackType in_type, object in_info)
     {
+        Debug.Log(in_type);
         AkMusicSyncCallbackInfo info = (AkMusicSyncCallbackInfo)in_info;
         sync.cues.Enqueue(new syncManagement.Cue(Time.time + info.segmentInfo_fBarDuration, info.segmentInfo_fBarDuration, info.userCueName, sync));
     }

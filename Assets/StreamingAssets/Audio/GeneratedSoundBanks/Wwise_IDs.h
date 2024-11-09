@@ -13,12 +13,19 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DEAN_F = 3841864650U;
+        static const AkUniqueID DEAN_T = 3841864664U;
         static const AkUniqueID FADE_ALL = 432238011U;
+        static const AkUniqueID MARC_F = 875806737U;
+        static const AkUniqueID MARC_T = 875806723U;
+        static const AkUniqueID MARISOL_F = 2249503293U;
+        static const AkUniqueID MARISOL_T = 2249503279U;
         static const AkUniqueID PLAY_APARTMENT_AMB = 2781381665U;
         static const AkUniqueID PLAY_BATH_AMB = 1523620308U;
         static const AkUniqueID PLAY_BIRD_COIN = 2159632377U;
         static const AkUniqueID PLAY_BIRD_FLAPS = 2261578938U;
         static const AkUniqueID PLAY_BIRD_IMPACT = 2704207640U;
+        static const AkUniqueID PLAY_BOSS_DAY1 = 446631395U;
         static const AkUniqueID PLAY_C_ANYTHING_ELSE = 3614802538U;
         static const AkUniqueID PLAY_C_ARE_YOU_DEAF = 111059461U;
         static const AkUniqueID PLAY_C_BOTTLE_FOR_YOU = 4141825396U;
@@ -38,7 +45,6 @@ namespace AK
         static const AkUniqueID PLAY_C_YOU_AGAIN = 1598758000U;
         static const AkUniqueID PLAY_C_YOU_DRUNKS = 690378273U;
         static const AkUniqueID PLAY_CAR = 2690797144U;
-        static const AkUniqueID PLAY_CONVERT_TEST = 1932424354U;
         static const AkUniqueID PLAY_EXTRA_COUGH = 393588247U;
         static const AkUniqueID PLAY_EXTRA_HUH = 1498563514U;
         static const AkUniqueID PLAY_H_2_SUGARS = 721620661U;
@@ -75,6 +81,7 @@ namespace AK
         static const AkUniqueID PLAY_HELVETICA = 3069382355U;
         static const AkUniqueID PLAY_OFFICE_AMB = 219189707U;
         static const AkUniqueID PLAY_PLAYER = 3608805445U;
+        static const AkUniqueID PLAY_PLAYER_60BMP_16THS = 968031514U;
         static const AkUniqueID PLAY_PRINTER_CLICK_KEYPAD = 294769442U;
         static const AkUniqueID PLAY_PRINTER_CLICK_OTHER_OFF = 3710204462U;
         static const AkUniqueID PLAY_PRINTER_CLICK_OTHER_ON = 887450000U;
@@ -93,13 +100,25 @@ namespace AK
         static const AkUniqueID PLAY_UI_SELECT_05 = 4294397215U;
         static const AkUniqueID PLAY_UI_SELECT_06 = 4294397212U;
         static const AkUniqueID PLAY_UI_SELECT_07 = 4294397213U;
-        static const AkUniqueID STOP_CONVERT_TEST = 436755844U;
+        static const AkUniqueID STOP_BOSS_DAY1 = 1367648049U;
         static const AkUniqueID STOP_HELVETICA = 2823449565U;
         static const AkUniqueID STOP_PLAYER = 503260239U;
     } // namespace EVENTS
 
     namespace STATES
     {
+        namespace DEAN_SPEAKING
+        {
+            static const AkUniqueID GROUP = 2612111282U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FALSE = 2452206122U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TRUE = 3053630529U;
+            } // namespace STATE
+        } // namespace DEAN_SPEAKING
+
         namespace GAMESTATE
         {
             static const AkUniqueID GROUP = 4091656514U;
@@ -114,6 +133,30 @@ namespace AK
             } // namespace STATE
         } // namespace GAMESTATE
 
+        namespace MARC_SPEAKING
+        {
+            static const AkUniqueID GROUP = 1595898427U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FALSE = 2452206122U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TRUE = 3053630529U;
+            } // namespace STATE
+        } // namespace MARC_SPEAKING
+
+        namespace MARISOL_SPEAKING
+        {
+            static const AkUniqueID GROUP = 4193900047U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FALSE = 2452206122U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TRUE = 3053630529U;
+            } // namespace STATE
+        } // namespace MARISOL_SPEAKING
+
         namespace ROOM
         {
             static const AkUniqueID GROUP = 2077253480U;
@@ -122,6 +165,7 @@ namespace AK
             {
                 static const AkUniqueID APARTMENTBATH = 1885238650U;
                 static const AkUniqueID BED = 446279778U;
+                static const AkUniqueID BOSS = 1560169506U;
                 static const AkUniqueID DREAM = 2120052594U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OFFICE = 1547173777U;
@@ -135,39 +179,24 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace GOODBYESWITCH
+        namespace BOSS_DAY1
         {
-            static const AkUniqueID GROUP = 3961472506U;
+            static const AkUniqueID GROUP = 897914390U;
 
             namespace SWITCH
             {
-                static const AkUniqueID ADIOS = 2233318497U;
-                static const AkUniqueID ALRIGHTY = 3403688825U;
-                static const AkUniqueID SEEYA = 4102371168U;
-                static const AkUniqueID TILLNEXT = 405470859U;
+                static const AkUniqueID FAILED = 1655200910U;
+                static const AkUniqueID SUCCEEDED = 4017689572U;
             } // namespace SWITCH
-        } // namespace GOODBYESWITCH
-
-        namespace HELLOSWITCH
-        {
-            static const AkUniqueID GROUP = 1227038859U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID GOODTOSEE = 162350874U;
-                static const AkUniqueID HELLO = 3069866343U;
-                static const AkUniqueID HOWDY = 79545204U;
-                static const AkUniqueID OHHEY = 4289414342U;
-            } // namespace SWITCH
-        } // namespace HELLOSWITCH
+        } // namespace BOSS_DAY1
 
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BOSSDAY1 = 789747109U;
         static const AkUniqueID DOPPLERNUM = 4066377393U;
-        static const AkUniqueID GOODBYESWITCH = 3961472506U;
-        static const AkUniqueID HELLOSWITCH = 1227038859U;
+        static const AkUniqueID PLAYERDG_REPEATDURATION = 2894044893U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -195,6 +224,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID CONFERENCEROOMREVERB = 2682400486U;
         static const AkUniqueID WORKBATHROOMREVERB = 1485913236U;
     } // namespace AUX_BUSSES
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+//adventure cutscene needs the player obejct inside of the cart
+
 public class adventureCutscene : cutscene
 {
     [SerializeField] private float scrollV;

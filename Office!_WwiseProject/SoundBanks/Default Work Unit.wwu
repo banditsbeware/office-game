@@ -73,7 +73,7 @@
 						</SoundBank>
 						<SoundBank Name="Boss" ID="{D726C75B-749B-4368-819C-3B032892AD3B}">
 							<ObjectInclusionList>
-								<ObjectRef Name="Boss" ID="{80F518F7-F7FF-4624-8E67-CD477BE097E9}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="Boss" ID="{1CC00569-B892-4C90-A7F1-421EAEC75D15}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

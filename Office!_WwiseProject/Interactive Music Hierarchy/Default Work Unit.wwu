@@ -580,11 +580,6 @@
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="84000.0000000001"/>
 										<Property Name="Tempo" Type="Real64" Value="104"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-17</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1036,6 +1031,1669 @@
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
+				<Folder Name="Boss" ID="{22B4573E-1282-4C37-B293-096990454EEF}" ShortID="754482553">
+					<ChildrenList>
+						<MusicSegment Name="Boss_Day1" ID="{CBECD952-3876-4646-8DE6-3BD55CA98F99}" ShortID="357341368">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="117000"/>
+								<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+								<Property Name="Tempo" Type="Real64" Value="60"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Boss_ClockMet_mm3" ID="{D5C97885-754F-4304-A9AE-146B4CCABAAF}" ShortID="436559939">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Boss_ClockMet_mm3" ID="{0DE6C11E-8B7C-4EAE-BA57-9BF7EE0A4B7A}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_ClockMet_mm3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="617352582"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{A350B1AC-F413-4958-84BE-0072DA1C270A}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-32.6424870466321"/>
+												<Property Name="PanY" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{33BC2755-6543-4C48-AF77-37E3E73781D7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0F8C66A3-EA75-46DE-81EF-015B79C4D320}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_ClockMet_mm3" ID="{A4133726-DFF0-4201-93CB-FEA548F9A4C5}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="1.93693742221616"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="112000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="88.7596135512576"/>
+																				<Property Name="PlayAt" Type="Real64" Value="149.420886856687"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_ClockMet_mm3" ID="{0DE6C11E-8B7C-4EAE-BA57-9BF7EE0A4B7A}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{F49384FD-DC2D-4DE6-BDA4-4ADA7DBEBDAE}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0.00194</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>112</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{C35724AA-274B-4FB6-8131-B178BE79BA27}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0.00194</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>112</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{0E721773-96E9-4FA5-89CE-03495DAA1BBB}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0.00194</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>112</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Boss_AuxVox_mm3" ID="{4E6E3829-D7FF-401A-AF4F-24F3D62C48CA}" ShortID="35310700">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="conferenceRoomReverb" ID="{C8292BBF-3361-4AC3-A3B9-465F0B2C2F7D}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Boss_AuxVox_mm3" ID="{F615B388-9EC9-443E-92A6-09D89C6397CA}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_AuxVox_mm3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="693507541"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{0C4950B2-2F9B-4A62-8739-844DF10EF65C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5537C532-3BF1-46B6-AED3-BA91D9847F4D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_AuxVox_mm3" ID="{FDCC252A-22D9-4CFD-AF1F-58596E8CE028}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="48175.6985889867"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="180.780826073522"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_AuxVox_mm3" ID="{F615B388-9EC9-443E-92A6-09D89C6397CA}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{D1A74D8D-5923-4F73-BADD-4509CFDECEE0}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>48.1757</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{10BF9517-EC7E-4E6C-BC39-97A46D63B56D}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>48.1757</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{5A9D587E-736B-4A7E-86A3-AC73C758A11B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>48.1757</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_AuxVox_mm3" ID="{1A20D3A1-EF46-4422-B0EB-8B60D6FB81E4}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="48175.6985889867"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="50343.75"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-353.691688266212"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_AuxVox_mm3" ID="{F615B388-9EC9-443E-92A6-09D89C6397CA}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Boss_Marisol_mm6,3" ID="{53B0E169-8BB6-48C3-A67E-0243DEF2546F}" ShortID="543323076">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="conferenceRoomReverb" ID="{C8292BBF-3361-4AC3-A3B9-465F0B2C2F7D}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Boss_Marisol_mm6,3" ID="{2E736223-99B6-41AA-81F8-0B664E0B8B83}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_Marisol_mm6,3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="245766840"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{2B09A662-8F0B-46A8-9F7D-4EB3749EA726}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-33.8514680483592"/>
+												<Property Name="PanY" Type="Real64" Value="81.2615955473098"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{09F05CBD-6BFE-48D5-AF39-F209DD6A2A09}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{987DEAB3-3621-474D-8987-9CD6AC2FBFD8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_Marisol_mm6,3" ID="{ED6F5FA8-6280-4988-8518-4381CCA35510}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="37852.9375"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="14347.6066814437"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_Marisol_mm6,3" ID="{2E736223-99B6-41AA-81F8-0B664E0B8B83}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{64F15D80-0885-44FF-BF65-332CC8BBFDC2}" ShortID="439608897">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="15180.3852889664"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{B587C2C7-74B0-424C-BA3E-31B7E88AA0AA}" ShortID="982148387">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="15688.9667250434"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{A9C034B2-626C-4DA4-B527-5836E895997F}" ShortID="42016049">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="24896.6725043777"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{45BCCA79-7804-41D8-9F3E-A4D255C27724}" ShortID="99283459">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="26000.4921046151"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{BCCA53F9-D3EF-479C-A9BA-C05BC82C9C99}" ShortID="98035824">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="28921.2777351602"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{34700889-1E01-4979-9606-F2421A7BBC66}" ShortID="110101166">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="30938.9066593326"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{BAEDA655-F3B9-4047-B84D-CC8763D20D86}" ShortID="71836456">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="33674.4293757501"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{6D9E0C05-A248-4299-A59E-DFED89BE0B10}" ShortID="821062413">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="38583.8966001352"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{37A67712-A753-487D-9B1C-0C576C85FD2F}" ShortID="936139080">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="44879.9409474451"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{9DA952B2-597A-4B30-88FA-D5E90D29500A}" ShortID="217277963">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="46987.3065956482"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{2703F67F-47D6-4003-AE6F-A2FA21E6F579}" ShortID="833667770">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="49997.8289502239"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{67AC1882-8047-45DF-83B3-234825B83027}" ShortID="207579234">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="25555.4540280351"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{0F265F22-BCD0-4B3B-9DB2-811D8413BDD8}" ShortID="899048389">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="28183.2549697278"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{64FA7A52-3383-4AF7-9B2E-6B3D227B38FC}" ShortID="1057073016">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="29687.6799958542"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{B159D2FE-63C5-4CAB-9D69-0A80697FB693}" ShortID="1051974277">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="32777.4131140278"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{24AE8890-323D-47EC-972E-9261FEDF9830}" ShortID="505866557">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="37928.7657124487"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{BFF37D4F-7D53-473D-9CE6-EF8527681C47}" ShortID="754228278">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="44424.5746066194"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{DE9B8494-EC59-45E5-8239-750D9C2023A9}" ShortID="100251268">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="46428.6772399897"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{03FB0167-5B2B-4357-BFF5-7F99FA206B1D}" ShortID="1054496523">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="48184.738471203"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{CA1272B4-7D0C-4C2E-9F3B-ABB53638C281}" ShortID="203262358">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="51934.1179269971"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Boss_Dean_mm4" ID="{172395E7-94E5-4D72-9663-F378CF1F099B}" ShortID="230186753">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="conferenceRoomReverb" ID="{C8292BBF-3361-4AC3-A3B9-465F0B2C2F7D}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Boss_Dean_mm4" ID="{BC31AC1C-FAD1-4D91-95E0-D4E227254B99}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_Dean_mm4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1071321457"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Boss_Marisol_mm6,3_01" ID="{82091310-EED0-4012-91A7-22252D957286}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_Marisol_mm6,3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="245766840"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{718159DE-B012-4B24-9043-5F74E9A76DFD}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-1.11022302462516E-16"/>
+												<Property Name="PanY" Type="Real64" Value="77.9220779220779"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{9FE0E050-7DC7-4DCF-96F0-4F8C8D336F37}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{100D857D-3AFF-42DF-9B95-7C73B15FAAAE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_Dean_mm4" ID="{55A205A8-41B5-44E3-9F10-66A8B6583702}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="68174.8125"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="4180.78082607353"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_Dean_mm4" ID="{BC31AC1C-FAD1-4D91-95E0-D4E227254B99}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_Marisol_mm6,3_01" ID="{F94C4BD1-BCB9-4A5F-8132-868ACE2122B8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="48328.2230368286"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_Marisol_mm6,3_01" ID="{82091310-EED0-4012-91A7-22252D957286}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{6AD250A5-B258-4C9C-8B82-AEB811E4477B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{52916182-0D7B-4FCA-8C6C-420DF0A1ECF1}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{9709D86E-D9D6-4D4B-9A91-F7846577ADEC}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-9.17873</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2</XPos>
+																								<YPos>-9.67955</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{AC0A406C-18C7-496A-A38B-3CEE01167FAD}" ShortID="966457099">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="8126.10108865748"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{DE060861-458D-4D7C-8910-A893AB0D37B6}" ShortID="925193377">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="14782.7764902592"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{0975AE7D-BE92-4941-AE62-E7F0796D2E28}" ShortID="964991561">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="16145.9786336724"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{66B7EB10-63F0-4D8D-B771-4C0EE2423231}" ShortID="503593064">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="24714.6778208406"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{39E7F166-6923-4CB7-A317-93457FEBA97D}" ShortID="396861838">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="52810.8051143028"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{AE4BA304-A0B3-48CB-96A5-6268572B731C}" ShortID="624023169">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="57909.5352091467"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{58EB3838-9997-48C0-BF4A-DA5BDAD7D1E3}" ShortID="652017484">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="68200.4446619942"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{A3FFEE17-E8A7-4482-A7FC-9DB3478FE2D0}" ShortID="220589600">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="71954.5406514862"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Boss_ConferenceRT_mm3" ID="{F244EBDB-552C-4CFF-958B-98A50D829581}" ShortID="99558226">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Boss_ConferenceRT_mm3" ID="{3AF95D2E-9160-4E74-970A-A3D8C5B362DF}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_ConferenceRT_mm3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="80916189"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{888388A3-5333-4A0A-9E07-7C9D8C0CC690}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C5A30C7D-92A3-48EB-9FD0-9E61087E0861}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_ConferenceRT_mm3" ID="{C81C40A9-2B65-4121-8D58-74C7A3B3E545}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="112000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="133.139420326886"/>
+																				<Property Name="PlayAt" Type="Real64" Value="180.780826073522"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_ConferenceRT_mm3" ID="{3AF95D2E-9160-4E74-970A-A3D8C5B362DF}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{CCA9EB57-B1D0-46E2-9F3F-10E8AA3053B3}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>112</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{8A0CF3C0-DCAD-4230-BA5F-957841B31317}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>112</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{20123D21-B2C0-457D-91CD-248300185BCB}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>112</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Boss_Marc_mm6,3" ID="{235DA361-47F6-4AA3-9289-07AB4BAECE18}" ShortID="444089217">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="conferenceRoomReverb" ID="{C8292BBF-3361-4AC3-A3B9-465F0B2C2F7D}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Boss_Marc_mm6,3" ID="{575F97DB-816C-4C19-BB7B-47B4FEAF0EC7}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_Marc_mm6,3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="664410303"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{FAC305CC-AFDF-44E8-80A9-E08E12A9CDBC}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="27.6338514680484"/>
+												<Property Name="PanY" Type="Real64" Value="64.9350649350649"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{BB9ABE59-CFD5-4AF2-ACC7-2F758101C15D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0C48A069-C600-430A-9CD2-7D465BD7639F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_Marc_mm6,3" ID="{F6EDAEDB-3153-499B-BF4E-3BEF7E6911BD}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="54621.6875"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="14343.216527355"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_Marc_mm6,3" ID="{575F97DB-816C-4C19-BB7B-47B4FEAF0EC7}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_Marc_mm6,3" ID="{5887CA2D-5BD9-4CD6-A6BE-D56E47A3660E}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6770.22187202122"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="48336.3158482432"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_Marc_mm6,3" ID="{575F97DB-816C-4C19-BB7B-47B4FEAF0EC7}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{B1F2BA47-BB30-4CD9-85FF-52C16D463EE1}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6.77022</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{D4C18DE0-AD1F-4583-BF3B-713F43FE3A3E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6.77022</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{C13C9D1F-4AA5-4CDE-953B-209D505952E4}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6.77022</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{5A0743AD-A37A-49FF-9486-8062AA2D7DB9}" ShortID="546717222">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="15177.3065845828"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marc_T" ID="{6A778AD8-175D-450E-8B5B-65D2ED08D576}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{BB2F6FD2-4B06-46C7-B2B2-0914F3FB047B}" ShortID="27910314">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="15471.6969071595"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marc_F" ID="{B632BC97-564F-400C-A46E-FD45AF2ADA10}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{1080A430-4562-4476-9ACB-C5A9B3428826}" ShortID="929232086">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="49145.3590192631"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marc_T" ID="{6A778AD8-175D-450E-8B5B-65D2ED08D576}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{6AF992A1-1618-4BEC-8A3D-D2C39268626F}" ShortID="159853997">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="49464.0980735538"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marc_F" ID="{B632BC97-564F-400C-A46E-FD45AF2ADA10}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{E4106529-EDB4-4714-A59D-72EC7F2B6F8A}" ShortID="901558973">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="58185.6392294204"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marc_T" ID="{6A778AD8-175D-450E-8B5B-65D2ED08D576}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{5680734C-2370-47AB-83CD-DEF65F139FE8}" ShortID="674440716">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="67608.2654939595"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Marc_F" ID="{B632BC97-564F-400C-A46E-FD45AF2ADA10}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Boss_Dean_mm23" ID="{91489842-68B7-41A0-83EB-AAEFE86D33D2}" ShortID="130646812">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Succeeded" ID="{E9A52477-E0A1-4607-9929-E4EF43BE4FA7}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Boss_Day1" ID="{595ACCAA-B26F-4D08-A2D0-224A4CAEDE3C}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="conferenceRoomReverb" ID="{C8292BBF-3361-4AC3-A3B9-465F0B2C2F7D}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Boss_Dean_mm23 Take 2" ID="{E5CF6A14-FFA8-4E4E-9233-1137DE9CD4F4}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_Dean_mm23 Take 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="754777618"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Boss_Dean_2_mm23,3" ID="{B7E720BC-76E8-4CEC-A6FB-9CB806DEB779}">
+											<Language>SFX</Language>
+											<AudioFile>Boss_Dean_2_mm23,3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="903300039"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{680DE829-A722-41DE-85EE-4939186034B3}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{A1C2D525-09CA-48AB-806B-DE51DB0B9BAA}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7DAAF7AC-1ABF-4106-AEAA-EA474B144F8E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_Dean_mm23 Take 2" ID="{87C12582-AA11-4EC1-B661-B856EFEC6581}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="23698.7708333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="82180.7808260735"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_Dean_mm23 Take 2" ID="{E5CF6A14-FFA8-4E4E-9233-1137DE9CD4F4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{C653450D-2198-41CB-9FAD-ABF0F1D23AC5}" ShortID="1044822452">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="82727.2113543599"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{5F2B8ED3-EFA6-48FE-A437-1AB90DF452EB}" ShortID="1071191209">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="96196.6849017727"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{56F2EAC4-6703-445D-957A-561B3F8B2174}" ShortID="792157683">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="98180.7808260735"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{DF1414A2-EDFD-4BDB-A041-D0FF16319516}" ShortID="796901727">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="103558.444277404"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Succeeded" ID="{E9A52477-E0A1-4607-9929-E4EF43BE4FA7}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2AF53C64-08A5-41FA-8861-3351D0DAE53D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Boss_Dean_2_mm23,3" ID="{B7ADA099-2015-4193-90E6-97A17F4B728F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="19516.6666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="82180.7808260735"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Boss_Dean_2_mm23,3" ID="{B7E720BC-76E8-4CEC-A6FB-9CB806DEB779}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{C5D760B3-D6C7-47DF-80C6-3C0F90F91CE6}" ShortID="641267189">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="82263.3709378423"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{A932FB13-E01F-4E4D-8D70-8B52B4C7BCFF}" ShortID="837377319">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="89703.4282902028"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{975E811C-10BD-4FE7-8E89-BF64AD6DF1DE}" ShortID="108054092">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="91125.3540821931"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{F5C027A5-7795-4089-B1B6-DEA45E1ECED8}" ShortID="829639144">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="91544.6584938672"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{C8F49631-ADF2-460D-BD6F-D93CC54C0023}" ShortID="851800058">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="92210.0525394014"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{973EBDBF-F4A6-469E-B7EF-6E0A4034E9E9}" ShortID="969403260">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="97751.8756467701"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{7DD0DA89-452F-4B2F-B51E-611A803FE314}" ShortID="734662356">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="98740.3254845674"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicEventCue Name="" ID="{978AAEA3-0024-43D8-AC11-EA291B02B3AC}" ShortID="445277475">
+																			<PropertyList>
+																				<Property Name="PlayAt" Type="Real64" Value="101033.30962792"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="PostEventTarget">
+																					<ObjectRef Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+																				</Reference>
+																			</ReferenceList>
+																		</MusicEventCue>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Failed" ID="{98725BD8-E746-4DE3-A304-16CCAAA4DCED}" WorkUnitID="{23CAC8B8-60CD-4D50-A86A-8A1524FF77B2}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{DAA2974B-8D71-48B9-8BEA-479EFE114605}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="180.780826073522"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{D779B937-B4A6-421C-848D-B06E15423B5B}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="104180.780826074"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="CHECK" ID="{7B10EB85-E966-449D-AD0E-3F65D4119ACD}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="80180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="yes" ID="{23EB8381-395D-4B52-884C-67906B94491D}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="11180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="yes" ID="{9B3EE834-3FFD-4EBA-A020-BF32C495A191}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="45180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="finance" ID="{D0CBDAC5-2E62-4931-93AB-67AC5E7A0956}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="68180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="labor" ID="{18198EC8-9FF9-4112-BAD0-AEF11F144ABD}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="70180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="work" ID="{2969C9A3-36E3-413D-9639-E592195F7E64}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="71180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="work" ID="{2DCCCF70-0D64-42B3-8564-98B590A5C5B7}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="71680.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="work" ID="{6370A12A-9A54-40C8-BBB3-F3C75516A9D7}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="72180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="typing" ID="{59BE8B12-1836-4A51-AE68-7A2D5E3E5DD3}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="73180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="money" ID="{5768E872-2F4C-4AD4-93BF-8AFAB43D952F}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="2"/>
+													<Property Name="TimeMs" Type="Real64" Value="74180.7808260735"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

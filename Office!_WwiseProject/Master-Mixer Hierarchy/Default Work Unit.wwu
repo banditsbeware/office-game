@@ -24,6 +24,51 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="room" ID="{49D4860A-7F86-43E2-8EF0-E102949A9A37}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="boss" ID="{6A81C3E0-A8B0-407A-909F-DB6054F7B26B}"/>
+										<CustomState Name="" ID="{0A0F1931-7046-4961-AC1A-4C26CF6AE564}" ShortID="150174628">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-30"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
+										<CustomState Name="" ID="{1F09E5E8-4D0C-4422-94C4-39823A11F074}" ShortID="145332257"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="waterMini" ID="{67C089E6-50D4-4347-A1FB-80248B9D3C9F}"/>
+										<CustomState Name="" ID="{68D7CACF-6BFD-471C-9235-461FBE53EE8B}" ShortID="828096185"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="officeBath" ID="{9F6EED94-0A80-44B7-80E3-1FE8D99764CE}"/>
+										<CustomState Name="" ID="{E1B3C070-021E-4BE1-9F85-05C3626A51D4}" ShortID="242792798"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="outdoors" ID="{98432932-6879-44E6-8F44-69656418B4B8}"/>
+										<CustomState Name="" ID="{5BED7135-DBDC-4D16-B8B5-C868536CFE09}" ShortID="885512024"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="apartmentBath" ID="{010D6AA5-E374-46F9-8B2F-736967499920}"/>
+										<CustomState Name="" ID="{1277FD61-81ED-4561-B7CE-23DB009EE3C6}" ShortID="122256947"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="bed" ID="{069B22D0-F59C-4907-B17F-03F944C8AC28}"/>
+										<CustomState Name="" ID="{CF9853FC-C8FC-41F9-94A6-9EFB25694CC6}" ShortID="507069060"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="office" ID="{93422278-5900-493B-9DD5-28205C0CA9AD}"/>
+										<CustomState Name="" ID="{F807A420-6D37-4BD1-9C30-EBD760CA2EE7}" ShortID="162789473"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="Dialogue" ID="{2F115066-DBB0-4674-87C8-47FFEFC5606E}">
 							<PropertyList>
@@ -45,6 +90,13 @@
 										</Property>
 									</PropertyList>
 								</Bus>
+								<AuxBus Name="conferenceRoomReverb" ID="{C8292BBF-3361-4AC3-A3B9-465F0B2C2F7D}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 							<DuckingList>
 								<DuckItem>
@@ -72,6 +124,10 @@
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="boss" ID="{6A81C3E0-A8B0-407A-909F-DB6054F7B26B}"/>
+										<CustomState Name="" ID="{640EB07F-D9A1-4465-8553-804D360E1A1E}" ShortID="746934687"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="dream" ID="{E9C0F64A-2F3D-42C5-B44E-77B3A083727D}"/>
 										<CustomState Name="" ID="{BD717EB3-8721-4F50-9AC5-FCE098FA8763}" ShortID="798985011"/>

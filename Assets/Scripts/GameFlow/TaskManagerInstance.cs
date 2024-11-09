@@ -8,6 +8,7 @@ public class TaskManagerInstance : MonoBehaviour
     void Awake()
 	{
 		TaskManager.instance = this;
+        TaskManager.checklist = Meta.Daily["todaysTasks"];
     }
     void Update()
     {

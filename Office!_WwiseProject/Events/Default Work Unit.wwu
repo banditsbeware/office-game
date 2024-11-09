@@ -252,35 +252,6 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Boss" ID="{80F518F7-F7FF-4624-8E67-CD477BE097E9}" ShortID="657697978">
-							<ChildrenList>
-								<Event Name="Play_convert_test" ID="{B7FE9BED-2BA2-4F28-A493-720B0BB8548A}">
-									<ChildrenList>
-										<Action Name="" ID="{B09EC34B-4F05-48D2-A06F-C936B2E6E99C}" ShortID="24777680">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="convert_test" ID="{2A99377D-97B0-401A-8EF3-403F2F8C76B0}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Stop_convert_test" ID="{25EB755B-70D3-4706-B15A-F0230C57DA7D}">
-									<ChildrenList>
-										<Action Name="" ID="{4D23F5AD-A29B-48BB-86FC-86EE25356188}" ShortID="298247065">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="convert_test" ID="{2A99377D-97B0-401A-8EF3-403F2F8C76B0}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
 						<Folder Name="Printer" ID="{AB174E0C-237C-48FC-BAC4-F5C0A5FD284E}" ShortID="315821028">
 							<ChildrenList>
 								<Event Name="Play_printer_click_other_off" ID="{967D6B9C-F298-4F0A-9C39-DB5888219CE5}">
@@ -895,6 +866,27 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Player_60bmp_16ths" ID="{2D72349B-6E77-4B62-BE2A-FF859861681D}">
+									<ChildrenList>
+										<Action Name="" ID="{C99AA0E3-463C-4A09-B4B7-4DD127584E2D}" ShortID="420180633">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Single" ID="{CB429BDF-E3A0-4878-817E-4D6C8D6AF925}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{60E32FB0-BABA-4CF7-87AA-FA83FC668188}" ShortID="339171406">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.25"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Single" ID="{CB429BDF-E3A0-4878-817E-4D6C8D6AF925}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Costa" ID="{83F61FA7-E54E-48A2-ACB9-44C01858AE85}" ShortID="910051257">
@@ -1099,8 +1091,146 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Boss" ID="{1CC00569-B892-4C90-A7F1-421EAEC75D15}" ShortID="285170477">
+							<ChildrenList>
+								<Folder Name="Boss_State_Speaking_Cues" ID="{D257D1F3-E88E-4011-A0B5-8B2A4484CF7A}" ShortID="358116734">
+									<ChildrenList>
+										<Event Name="Dean_F" ID="{C7BE2060-F9B2-4470-AAFA-A6C4024D4E80}">
+											<ChildrenList>
+												<Action Name="" ID="{13DBA3CB-BBBB-4D45-8810-CCF7B5BA1376}" ShortID="121040298">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="false" ID="{F3D7BCA4-600D-43C7-9202-AFEDC9CB2E4B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Marisol_T" ID="{D084F739-0F4E-4ABF-881E-D4D7CE41F6F8}">
+											<ChildrenList>
+												<Action Name="" ID="{D4330A22-01C2-41CB-A0A0-22F99CB2D43E}" ShortID="133749311">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="true" ID="{CC5C81CB-9D8C-4F2B-A7D9-510B161C1555}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Dean_T" ID="{62DC8DF7-6C73-42C6-B34D-E8B742BB8B25}">
+											<ChildrenList>
+												<Action Name="" ID="{AA23889C-80C7-47D8-97D4-453060505CB0}" ShortID="606221241">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="true" ID="{8C89252E-8710-45A1-B764-84B1967A7244}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Marisol_F" ID="{6377B64C-AA9C-4675-969F-3E6CABF44EAD}">
+											<ChildrenList>
+												<Action Name="" ID="{143087F8-0B58-4EFB-BCE4-C12E96775582}" ShortID="358620305">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="false" ID="{9B23D4BC-FF06-49A2-8CE8-9C21F75932CF}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Marc_F" ID="{B632BC97-564F-400C-A46E-FD45AF2ADA10}">
+											<ChildrenList>
+												<Action Name="" ID="{7D244E0B-A51A-4E5F-A607-98AC3C454BFC}" ShortID="391963384">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="false" ID="{724AEE5E-0869-4052-A343-8C8355212B07}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Marc_T" ID="{6A778AD8-175D-450E-8B5B-65D2ED08D576}">
+											<ChildrenList>
+												<Action Name="" ID="{ADBAC3E2-9E7D-47F9-8A53-B2AF41B85618}" ShortID="332635116">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="22"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="true" ID="{37259C81-1100-475A-9A1C-431CFB3A0B44}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Event Name="Stop_Boss_Day1" ID="{1DE084F6-ED22-4923-831E-F7E6BC92784B}">
+									<ChildrenList>
+										<Action Name="" ID="{C84BF361-99DB-43EB-BB55-94E58198715C}" ShortID="485905245">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss_Day1" ID="{CBECD952-3876-4646-8DE6-3BD55CA98F99}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{B027441B-A72D-4476-9551-2F7759F109E5}" ShortID="1066458341">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="office" ID="{93422278-5900-493B-9DD5-28205C0CA9AD}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Boss_Day1" ID="{DAF895D0-FB27-48BE-92CE-2A1AB7F083A5}">
+									<ChildrenList>
+										<Action Name="" ID="{AF718724-31D6-40A9-A189-F2BBDE864C26}" ShortID="49756041">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boss_Day1" ID="{CBECD952-3876-4646-8DE6-3BD55CA98F99}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AC87EBCC-3D1C-4161-BED5-BE6D27E62799}" ShortID="1030517694">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="boss" ID="{6A81C3E0-A8B0-407A-909F-DB6054F7B26B}" WorkUnitID="{7592D753-E46A-4A90-B25A-CC58D3CC630A}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Player_TriggerRate" ID="{E90C0097-CAF3-4DE3-AEDB-253A1DDFAC63}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

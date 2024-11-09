@@ -436,7 +436,6 @@ namespace SpeakEasy
                 button = letterMatrix[word.origin.Item1 + word.direction.Item1 * x, word.origin.Item2 + word.direction.Item2 * x];
                 button.GetComponent<Image>().color = new Color32(200, 100, 100, 200);
                 button.GetComponent<Button>().enabled = false;
-                  
               }
 
               if (word.word == "GOODBYE")

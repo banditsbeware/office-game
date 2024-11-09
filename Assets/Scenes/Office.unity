@@ -1403,6 +1403,7 @@ GameObject:
   - component: {fileID: 229288438}
   - component: {fileID: 229288440}
   - component: {fileID: 229288439}
+  - component: {fileID: 229288441}
   m_Layer: 5
   m_Name: marisol
   m_TagString: Untagged
@@ -1467,6 +1468,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229288437}
   m_CullTransparentMesh: 1
+--- !u!95 &229288441
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229288437}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e7430c8c58440f43ab2669ea3fb7495, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &238488944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,7 +3275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 478, y: 461}
+  m_AnchoredPosition: {x: 12, y: 490.08}
   m_SizeDelta: {x: 399.3917, y: 99.8479}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &359855416
@@ -4480,6 +4502,7 @@ GameObject:
   - component: {fileID: 477664599}
   - component: {fileID: 477664601}
   - component: {fileID: 477664600}
+  - component: {fileID: 477664602}
   m_Layer: 5
   m_Name: dean
   m_TagString: Untagged
@@ -4544,6 +4567,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477664598}
   m_CullTransparentMesh: 1
+--- !u!95 &477664602
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477664598}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe3c1194d832f4247b3523f5721bdc64, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &488755539
 GameObject:
   m_ObjectHideFlags: 0
@@ -6742,7 +6786,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: beat
+  m_text: SPEAK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b8a366ddc1c41264e81e179c6bd6c29b, type: 2}
   m_sharedMaterial: {fileID: -6866245081631686180, guid: b8a366ddc1c41264e81e179c6bd6c29b, type: 2}
@@ -6769,13 +6813,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6943,7 +6987,7 @@ Transform:
   m_GameObject: {fileID: 682657774}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -5.23, z: -10.405286}
+  m_LocalPosition: {x: -4.01, y: 10.79, z: -10.405286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11733,11 +11777,11 @@ MonoBehaviour:
   playBossMusicEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a3a57aca5fefba3479a7845dbb4f1f31, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: cb7529ff4648724479228e53f06671b5, type: 2}
   stopBossMusicEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e7aa5cba97e4b0145ad0249f43e8302c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 012acfb60dfc2454b9011c33ebcadf23, type: 2}
   sync: {fileID: 1169456495}
 --- !u!114 &1169456495
 MonoBehaviour:
@@ -11752,8 +11796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetXBounds: {x: -300, y: 300}
-  targetYBounds: {x: -400, y: 50}
-  wordSpawnYBounds: {x: -400, y: 700}
+  targetYBounds: {x: -200, y: -50}
+  wordSpawnYBounds: {x: 570, y: 800}
   nice: 0.1
   good: 0.05
   great: 0.025
@@ -11763,6 +11807,45 @@ MonoBehaviour:
   feedback: {fileID: 359855416}
   bossWord: {fileID: 3885039427109419875, guid: 357ecd0e3ac4420488a04c3ed400f564, type: 3}
   target: {fileID: 5250492815055291060, guid: 54e11f55128af4849b2f9e5441da5cba, type: 3}
+  deanSpeakingT:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b3d5637cd4b7fb845b2aa83a55ec1047, type: 2}
+  deanSpeakingF:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cb44fdd14747f7442a939554a4c38983, type: 2}
+  marisolSpeakingT:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0b4295a1a167101409ccdd415c340d8d, type: 2}
+  marisolSpeakingF:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 457cbbcf5db1fe645a97177d864ed6ac, type: 2}
+  marcSpeakingT:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: edf00859bce6b0446a178676750ec601, type: 2}
+  marcSpeakingF:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e4ec03e59b5466b42ba317f71bb9f665, type: 2}
+  dean_anim: {fileID: 477664602}
+  marisol_anim: {fileID: 229288441}
+  marc_anim: {fileID: 2104704442}
 --- !u!1 &1172060490
 GameObject:
   m_ObjectHideFlags: 0
@@ -12520,11 +12603,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1785042009}
+  - {fileID: 359855415}
   - {fileID: 1153790510}
   - {fileID: 1786544495}
   - {fileID: 1718263548}
   - {fileID: 1169456493}
-  - {fileID: 359855415}
   m_Father: {fileID: 368170829}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -16201,7 +16284,7 @@ GameObject:
   - component: {fileID: 1718263550}
   - component: {fileID: 1718263549}
   m_Layer: 5
-  m_Name: beat
+  m_Name: speakButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16224,7 +16307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000050545, y: -366}
+  m_AnchoredPosition: {x: -0.00001049, y: -410}
   m_SizeDelta: {x: 332.3152, y: 143.1622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1718263549
@@ -16296,7 +16379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7803922, g: 0.5411765, b: 0.7607844, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20622,6 +20705,7 @@ GameObject:
   - component: {fileID: 2104704439}
   - component: {fileID: 2104704441}
   - component: {fileID: 2104704440}
+  - component: {fileID: 2104704442}
   m_Layer: 5
   m_Name: marc
   m_TagString: Untagged
@@ -20686,6 +20770,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104704438}
   m_CullTransparentMesh: 1
+--- !u!95 &2104704442
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104704438}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1052a433408e4944cb7081aab16c87f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2133245742
 GameObject:
   m_ObjectHideFlags: 0

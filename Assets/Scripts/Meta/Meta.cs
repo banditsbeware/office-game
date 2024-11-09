@@ -16,6 +16,8 @@ public static class Meta
     public static Dictionary<string, dynamic> Daily = new Dictionary<string, dynamic>();
     public static Dictionary<string, dynamic> Yesterdaily = new Dictionary<string, dynamic>();
 
+    public static int chaos = 0;
+
     private static void InitializeVariables()
     {
         // Set initial values for the static variables here
@@ -36,10 +38,10 @@ public static class Meta
     public static void SetDaily()
     {
         // unlabeled - office
-        SetValue("workComplete", false, Daily);
+        SetValue("workComplete", true, Daily);
         SetValue("afterWork", false, Daily);
         SetValue("triedLeavingWork", 0, Daily);
-        SetValue("todaysTasks", new List<TaskType>(){TaskType.Spreadsheet}, Daily);
+        SetValue("todaysTasks", new List<TaskType>(){}, Daily);
         
         // wa - water cooler
         SetValue("waRepeatedChoice", 0, Daily);
@@ -136,7 +138,7 @@ public static class Meta
     public static SerializableMeta Serialize()
     {
         SerializableMeta data = new SerializableMeta();
-
+        
         foreach (KeyValuePair<string, dynamic> pair in Global)
         {
             switch (pair.Value)
@@ -178,7 +180,6 @@ public static class Meta
                     break;
                 case List<TaskType> l:
                     data.dailyLists.Add(pair.Key, string.Join(",", l.ToArray()));
-                    Debug.Log(string.Join(",", pair.Value.ToArray()));
                     break;
             }
         }
