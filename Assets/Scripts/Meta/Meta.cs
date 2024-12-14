@@ -41,7 +41,7 @@ public static class Meta
         SetValue("workComplete", true, Daily);
         SetValue("afterWork", false, Daily);
         SetValue("triedLeavingWork", 0, Daily);
-        SetValue("todaysTasks", new List<TaskType>(){}, Daily);
+        SetValue("todaysTasks", new List<TaskType>(){TaskType.Spreadsheet, TaskType.Harold}, Daily);
         
         // wa - water cooler
         SetValue("waRepeatedChoice", 0, Daily);
