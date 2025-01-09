@@ -15,12 +15,12 @@ MonoBehaviour:
   <NodeName>k__BackingField: je_you_have
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: You have wandered into Quiddleston, and of course
-    I am in no place to ask why you came, but it is a mystery to me why anyone at
-    all would want to visit here, there's not much at all going on.
+    I am in no place to ask why you're here, but it is a mystery to me why anyone
+    at all would want to visit, this town is quite lackluster.
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: c2cb82aeaa1a044abb677d858276eb3e, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 9.881678
+  <SpeechTime>k__BackingField: 9.4737

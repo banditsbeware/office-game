@@ -81,7 +81,7 @@ namespace SpeakEasy.Utilities
 
             GetElementsFromGraphView();
 
-            SEGraphSaveDataSO graphData = CreateAsset<SEGraphSaveDataSO>("Assets/SpeakEasy/Graphs", graphFileName);
+            SEGraphSaveDataSO graphData = CreateAsset<SEGraphSaveDataSO>("Assets/Editor/SpeakEasy/Graphs", graphFileName);
             graphData.Initialize(graphFileName);
 
             SEContainerSO container = CreateAsset<SEContainerSO>(containerFolderPath, graphFileName);
@@ -429,7 +429,7 @@ namespace SpeakEasy.Utilities
 
         public static void Load()
         {
-            SEGraphSaveDataSO graphData = LoadAsset<SEGraphSaveDataSO>("Assets/SpeakEasy/Graphs", graphFileName);
+            SEGraphSaveDataSO graphData = LoadAsset<SEGraphSaveDataSO>("Assets/Editor/SpeakEasy/Graphs", graphFileName);
 
             if (graphData == null)
             {
@@ -554,7 +554,7 @@ namespace SpeakEasy.Utilities
 
         public static void CreatePermanentFolders()
         {
-            CreateFolder("Assets/SpeakEasy", "Graphs");
+            CreateFolder("Assets/Editor/SpeakEasy", "Graphs");
             CreateFolder("Assets", "SpeakEasyData");                        
             CreateFolder("Assets/SpeakEasyData", "Dialogues");              //the folder containing every graph data folder
             CreateFolder("Assets/SpeakEasyData/Dialogues", graphFileName);  //the container folder for the single graph, the container folder
