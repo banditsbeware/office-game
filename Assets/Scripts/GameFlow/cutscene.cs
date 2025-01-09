@@ -44,7 +44,7 @@ public class cutscene : MonoBehaviour
     
     public virtual void CutsceneFinished()
     {
-        UIManager.ExitCutscene();
+        UIManager.ExitWindow();
         UIManager.hide(dialogueWindow);
         GameObject.Find("Main Camera").GetComponent<FollowMan>().inCutscene = false;
         cutsceneAnimation.enabled = false;   

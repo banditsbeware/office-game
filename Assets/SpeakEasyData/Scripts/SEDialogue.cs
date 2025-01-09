@@ -123,7 +123,7 @@ namespace SpeakEasy
                     break;
 
                 case Exit:
-                    UIManager.ExitCutscene();
+                    UIManager.ExitWindow();
                     transform.parent.parent.gameObject.SetActive(false);
                     break;
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4476912730330090}
   - component: {fileID: 3324417696951808932}
   m_Layer: 0
-  m_Name: tile_
+  m_Name: tile_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4476912730330090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -147,11 +147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7539ce6d5dbc404c907aab54615f303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 9033356cc8727a14d9a2670632818a24, type: 3}
+  texture: {fileID: 2800000, guid: 91e7613d561494f4d80022baa562a5bc, type: 3}
   aomap: {fileID: 0}
-  ambient: 0.554
+  ambient: 0.6
   specular: 0
   shininess: 0
   colorize: {r: 1, g: 1, b: 1, a: 1}
   noise: {r: 0, g: 0, b: 0, a: 0.007843138}
-  overrideBoundaryAO: 1
+  overrideBoundaryAO: -1

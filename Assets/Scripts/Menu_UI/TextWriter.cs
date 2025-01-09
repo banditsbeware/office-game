@@ -49,6 +49,13 @@ public class TextWriter : MonoBehaviour
         }
     }
 
+    public static void ClearAllWriters_Static() {
+        for (int i = 0; i < instance?.writerList.Count; i++)
+        {
+                instance?.writerList.RemoveAt(i);
+        }
+    }
+
     public class TextWriterSingle 
     {
         private TMP_Text uiText;

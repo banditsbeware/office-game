@@ -291,6 +291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1213464075859502, guid: 72fdf8d2e01c9c9449aa48bca5a04e57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4279067317253862, guid: 72fdf8d2e01c9c9449aa48bca5a04e57, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -307,6 +311,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4279067317253862, guid: 72fdf8d2e01c9c9449aa48bca5a04e57, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 20137509623078008, guid: 72fdf8d2e01c9c9449aa48bca5a04e57, type: 3}
       propertyPath: field of view
       value: 70
@@ -321,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114683464652271422, guid: 72fdf8d2e01c9c9449aa48bca5a04e57, type: 3}
       propertyPath: height
-      value: 0.07
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 114683464652271422, guid: 72fdf8d2e01c9c9449aa48bca5a04e57, type: 3}
       propertyPath: mapCam
@@ -456,8 +464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounryAO: 0.62
-  fog: {r: 0, g: 0, b: 0, a: 0}
-  fogInvDist: 1
+  fog: {r: 1, g: 1, b: 1, a: 0}
+  fogInvDist: 0.1
   lattice3D: 0
   dualLight: 0
   debug_tile: {fileID: 1010955766223932, guid: 8bd2951d860f0094fa6593f4a990d3ce, type: 3}
