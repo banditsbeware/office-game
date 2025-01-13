@@ -92,6 +92,7 @@ namespace AK
         static const AkUniqueID PLAY_PRINTER_PAPER = 2551381385U;
         static const AkUniqueID PLAY_PRINTER_PRINT = 2216146290U;
         static const AkUniqueID PLAY_PRINTER_WIRES = 3867243761U;
+        static const AkUniqueID PLAY_STREET = 2779137687U;
         static const AkUniqueID PLAY_STREET_AMB = 3151250082U;
         static const AkUniqueID PLAY_UI_SELECT_01 = 4294397211U;
         static const AkUniqueID PLAY_UI_SELECT_02 = 4294397208U;
@@ -174,6 +175,18 @@ namespace AK
                 static const AkUniqueID WATERMINI = 1449999795U;
             } // namespace STATE
         } // namespace ROOM
+
+        namespace STREET
+        {
+            static const AkUniqueID GROUP = 4142189312U;
+
+            namespace STATE
+            {
+                static const AkUniqueID A = 84696446U;
+                static const AkUniqueID B = 84696445U;
+                static const AkUniqueID OUT = 645492555U;
+            } // namespace STATE
+        } // namespace STREET
 
     } // namespace STATES
 

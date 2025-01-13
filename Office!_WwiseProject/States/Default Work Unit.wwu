@@ -50,6 +50,20 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music States" ID="{63ECBD5A-647E-4977-8CFF-C00CA5AFAB0B}" ShortID="970794642">
+					<ChildrenList>
+						<StateGroup Name="Street" ID="{BD42FD6D-CDBB-40A9-95B0-0D1D8AAB26AC}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="A" ID="{C85644DD-36CF-4F30-9E5B-9AEC46FC8C08}"/>
+								<State Name="B" ID="{D89103BA-2BBE-4DF7-A306-BE5278E9B185}"/>
+								<State Name="Out" ID="{60FAE482-0E93-4BD6-AA00-162DC74D3882}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

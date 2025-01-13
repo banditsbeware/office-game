@@ -21,13 +21,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="B" ID="{D89103BA-2BBE-4DF7-A306-BE5278E9B185}"/>
 						<CurrentStateRef Name="boss" ID="{6A81C3E0-A8B0-407A-909F-DB6054F7B26B}"/>
 						<CurrentStateRef Name="false" ID="{724AEE5E-0869-4052-A343-8C8355212B07}"/>
 						<CurrentStateRef Name="true" ID="{CC5C81CB-9D8C-4F2B-A7D9-510B161C1555}"/>
 						<CurrentStateRef Name="false" ID="{F3D7BCA4-600D-43C7-9202-AFEDC9CB2E4B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Succeeded" ID="{E9A52477-E0A1-4607-9929-E4EF43BE4FA7}"/>
+						<CurrentSwitchRef Name="Failed" ID="{98725BD8-E746-4DE3-A304-16CCAAA4DCED}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

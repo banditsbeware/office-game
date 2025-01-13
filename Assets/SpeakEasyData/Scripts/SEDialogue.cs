@@ -67,7 +67,7 @@ namespace SpeakEasy
             npcBubbleSprite = npcBubbleImage.sprite;
             playerBubbleSprite = playerBubbleImage.sprite;
 
-            emptySprite = Resources.Load<Sprite>("Assets/Sprites/empty.png");
+            emptySprite = Resources.Load<Sprite>("empty");
 
             actions = GetComponent<DialogueActions>();
         }

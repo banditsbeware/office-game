@@ -57,6 +57,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Street" ID="{A9C68C70-3439-40B9-8E57-A6FD66E33997}">
+							<ChildrenList>
+								<Action Name="" ID="{B37261B2-9876-45F1-9C5C-EFD444C87A92}" ShortID="35878178">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Street" ID="{092F9DEF-C7A9-4217-8073-F215B6B12655}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{C571CADC-947F-45BA-984D-9FD346FBDD87}" ShortID="1022302060">
