@@ -15,6 +15,36 @@
 								<Property Name="MaxDuckVolume" Type="Real64" Value="-10"/>
 								<Property Name="RecoveryTime" Type="Real64" Value="4"/>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Street" ID="{75D34E79-4823-4D87-BD33-8C43A84B4B11}">
+									<ChildrenList>
+										<Bus Name="Pads" ID="{59FD481C-0619-4451-AC77-1838C3EA1FA7}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Melody" ID="{612D4238-AC51-4416-94C8-1165DFD2508F}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Clave" ID="{6051F4E4-D2F3-4D7A-8A92-6F5ECA1D8064}"/>
+										<Bus Name="Bass" ID="{96F3B5B0-F0E5-452F-BDB8-AA7D774AC1FC}"/>
+										<Bus Name="Toms" ID="{1C11E4D2-7888-46D9-A0F5-2854EF1FC2A6}"/>
+										<Bus Name="Woodblock" ID="{FAE3A328-FF87-480B-9921-24C7DC3628D7}"/>
+										<Bus Name="Shaker" ID="{BD48B75B-8708-4143-8F23-A826F401029E}"/>
+										<Bus Name="Castanets" ID="{08AE1318-F57D-4EDA-B3FE-4BC725DFE3A9}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="Ambience" ID="{E8E611ED-7694-41BA-968B-50190E4F06A1}">
 							<PropertyList>

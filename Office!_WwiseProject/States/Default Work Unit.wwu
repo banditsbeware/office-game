@@ -57,6 +57,7 @@
 								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
 							</PropertyList>
 							<ChildrenList>
+								<State Name="None" ID="{D5A6541C-E1FF-45F0-87EA-0770296779EC}"/>
 								<State Name="A" ID="{C85644DD-36CF-4F30-9E5B-9AEC46FC8C08}"/>
 								<State Name="B" ID="{D89103BA-2BBE-4DF7-A306-BE5278E9B185}"/>
 								<State Name="Out" ID="{60FAE482-0E93-4BD6-AA00-162DC74D3882}"/>

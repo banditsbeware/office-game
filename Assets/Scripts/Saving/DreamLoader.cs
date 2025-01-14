@@ -44,7 +44,7 @@ public class DreamLoader : LevelLoader
         fadeTransition.speed = .3f;
         fadeTransition.SetTrigger("Start");
 
-        AkSoundEngine.PostEvent("Fade_All", gameObject);
+        AkSoundEngine.PostEvent("Fade_All_Sleep", gameObject);
 
         Time.timeScale = 1;
         UIManager.hide(UIManager.pauseObjects);

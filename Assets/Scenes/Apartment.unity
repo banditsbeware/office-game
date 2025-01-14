@@ -2935,11 +2935,7 @@ MonoBehaviour:
   sleepPosition: {x: 3.9, y: -2.8}
   interrumPosition: {x: 0, y: 0}
   scenes:
-  - AdventureGameDream
-  - GrassDream
   - ReflectionBoxDream
-  - SheepDream
-  - SphericalDream
 --- !u!1 &1246420269
 GameObject:
   m_ObjectHideFlags: 0

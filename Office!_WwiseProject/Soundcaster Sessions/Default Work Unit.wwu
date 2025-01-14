@@ -6,18 +6,18 @@
 				<SoundcasterSession Name="Boss" ID="{5695C155-407C-41CD-94D2-DAC892BA7EB0}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Boss_Day1" ID="{DAF895D0-FB27-48BE-92CE-2A1AB7F083A5}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
+							<ObjectRef Name="Play_Mirror_Ambience" ID="{11C848AC-450F-4653-A281-ACB9E0BF202B}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
 							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_Office_Amb" ID="{434E933B-39FF-45C6-B5BE-312AA1A9F62F}" WorkUnitID="{B1462724-8C87-404B-B983-6C0496AAF6A3}"/>
-							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="playerDG_repeatDuration" ID="{3A964051-39F6-405B-8F1E-5B1800419020}"/>
 							<Value>0.12470354570821</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MirrorRealm_WalkSpeed" ID="{C889AA54-ED1E-4AE4-A9D7-B2A715B6E008}"/>
+							<Value>1.98155440414508</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
