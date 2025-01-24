@@ -10,6 +10,7 @@ public class FollowMan : MonoBehaviour
     [SerializeField] private Vector3 xyzMax = new Vector3(9, 8, -10);
     public Vector3 cutscenePos = new Vector3(0, 0, 0);
     private Vector3 desiredPos = new Vector3(0, 0, 0);
+    public float desiredSize;
 
 
     public Transform player;
@@ -25,6 +26,7 @@ public class FollowMan : MonoBehaviour
         }
 
         transform.position = player.position;
+        desiredSize = GetComponent<Camera>().orthographicSize;
     }
 
     // Update is called once per frame
@@ -45,7 +47,9 @@ public class FollowMan : MonoBehaviour
         }
 
         Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothSpeed);
+        GetComponent<Camera>().orthographicSize = GetComponent<Camera>().orthographicSize + (desiredSize - GetComponent<Camera>().orthographicSize) * smoothSpeed * 1.5f;
         transform.position = Clamp(smoothedPos, xyzMin, xyzMax);
+
     }
         
 

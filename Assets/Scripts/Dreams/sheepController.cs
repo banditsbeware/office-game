@@ -5,7 +5,7 @@ using TMPro;
 
 public class sheepController : MonoBehaviour
 {
-    [SerializeField] private GameObject sheepTemplate;
+    [SerializeField] private GameObject[] sheepTemplates;
     [SerializeField] private TMP_Text counter;
     private Queue<GameObject> sheepQueue = new Queue<GameObject>{};
      GameObject currentSheep = null;
@@ -47,7 +47,7 @@ public class sheepController : MonoBehaviour
 
     public void spawnSheep()
     {
-        sheepQueue.Enqueue(Instantiate(sheepTemplate, transform));   
+        sheepQueue.Enqueue(Instantiate(sheepTemplates[Random.Range(0, sheepTemplates.Length)], transform));   
     }
 
     public void sheepCleared()

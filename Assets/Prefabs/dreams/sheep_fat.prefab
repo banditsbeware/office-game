@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7760582969955911729}
   - component: {fileID: 5742490492993500986}
   m_Layer: 0
-  m_Name: sheep
+  m_Name: sheep_fat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 1430677867
   m_SortingLayer: 4
   m_SortingOrder: 2
-  m_Sprite: {fileID: 229942092, guid: 8092064c3e16c3447b282a5d5939bab4, type: 3}
+  m_Sprite: {fileID: -1404858203, guid: 8092064c3e16c3447b282a5d5939bab4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -149,10 +149,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.5704842
-  m_Height: 3.1409683
+  m_Radius: 1.8675414
+  m_Height: 3.7350829
   m_Direction: 1
-  m_Center: {x: -0.078113556, y: -0.031812668, z: -0.24363887}
+  m_Center: {x: 0.010475993, y: 0.015112281, z: -0.24363887}
 --- !u!95 &5742490492993500986
 Animator:
   serializedVersion: 5
@@ -163,7 +163,7 @@ Animator:
   m_GameObject: {fileID: 7509851346604466963}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d164f4c4f402f594fab7aaf622aa52a6, type: 2}
+  m_Controller: {fileID: 9100000, guid: ab96bdbce3825eb44a74d4769b952849, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

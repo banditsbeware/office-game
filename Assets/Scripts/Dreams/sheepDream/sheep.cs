@@ -8,9 +8,11 @@ public class sheep : MonoBehaviour
 {
     public Vector3 sheepVelocity;
     private Rigidbody selfRigidbody;
-    public Rigidbody fenceRigidbody;
+    private Collider boundCollider;
 
     private sheepController parentController;
+
+    [SerializeField] private Sprite[] sheepSprites;
 
     private bool cleared = false;
 
@@ -25,16 +27,23 @@ public class sheep : MonoBehaviour
     {
         selfRigidbody = gameObject.GetComponent<Rigidbody>();
         selfRigidbody.velocity = sheepVelocity;
-
         parentController = transform.parent.GetComponent<sheepController>();
+        boundCollider = GameObject.Find("fencingBound").GetComponent<Collider>();
     }
 
-    private void Update() {
-        
-        if (!cleared && transform.position.x > 0)
+    private void OnTriggerEnter(Collider other) {
+        if (!cleared && other == boundCollider)
         {
             cleared = true;
             parentController.sheepCleared();
+            GetComponent<Renderer>().sortingOrder = 0;
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if (other == boundCollider)
+        {
+            GetComponent<Renderer>().sortingOrder = 2;
         }
     }
 
@@ -43,11 +52,12 @@ public class sheep : MonoBehaviour
         selfRigidbody.velocity = new Vector3(Random.Range(ejectVelMin.x, ejectVelMax.x), Random.Range(ejectVelMin.y, ejectVelMax.y), Random.Range(ejectVelMin.z, ejectVelMax.z));
         selfRigidbody.angularVelocity = new Vector3(Random.Range(-ejectRotation.x, ejectRotation.x), Random.Range(-ejectRotation.y, ejectRotation.y), Random.Range(-ejectRotation.z, ejectRotation.z));
         Camera.main.GetComponent<FollowMan>().player = transform;
+        Camera.main.GetComponent<FollowMan>().desiredSize = 10;
     }
 
     public void jump()
     {
-        Debug.Log("eek");
+        gameObject.GetComponent<Animator>().SetTrigger("jump");
         selfRigidbody.velocity = new Vector3(selfRigidbody.velocity.x, 15, selfRigidbody.velocity.z);
     }
 }
