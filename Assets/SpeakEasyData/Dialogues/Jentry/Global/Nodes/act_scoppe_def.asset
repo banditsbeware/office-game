@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: act_scoppe
+  m_Name: act_scoppe_def
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: act_scoppe
+  <NodeName>k__BackingField: act_scoppe_def
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: function to invoke
+  <DialogueText>k__BackingField: SetChoiceButtonsToPreset
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2e8d52198d6b84a4896d7da576e5ecc6, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8c8587195795a40b68846394c0ba6bc8, type: 2}
   <IfStatements>k__BackingField: []
-  <Callbacks>k__BackingField: []
+  <Callbacks>k__BackingField:
+  - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+    <callbackAction>k__BackingField: SetValue
+    <callbackValue>k__BackingField: default
   <NodeType>k__BackingField: 10
   <SpeechTime>k__BackingField: 0

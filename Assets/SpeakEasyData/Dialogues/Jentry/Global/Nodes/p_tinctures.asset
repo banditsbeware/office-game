@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: p_tinctures
   <IsPlayer>k__BackingField: 1
-  <DialogueText>k__BackingField: Please, show me your tinctures.
+  <DialogueText>k__BackingField: show me your tinctures.
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9a607b05fd3bd45c4b3aa19bc644fdf6, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.0164328
+  <SpeechTime>k__BackingField: 2.0544753

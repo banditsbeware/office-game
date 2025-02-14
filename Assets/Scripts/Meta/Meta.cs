@@ -202,7 +202,6 @@ public static class Meta
                     break;
                 case List<TaskType> l:
                     data.yesterdailyLists.Add(pair.Key, string.Join(",", l.ToArray()));
-                    Debug.Log(string.Join(",", pair.Value.ToArray()));
                     break;
             }
         }

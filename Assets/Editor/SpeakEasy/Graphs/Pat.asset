@@ -792,7 +792,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
-    <Position>k__BackingField: {x: 6912.5, y: -518}
+    <Position>k__BackingField: {x: 6913, y: -518}
   - <ID>k__BackingField: d7e46126-9cd2-4365-bcff-80626a217b87
     <Name>k__BackingField: _exit_main
     <Text>k__BackingField: 
@@ -803,7 +803,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
-    <Position>k__BackingField: {x: 8175.5, y: -459}
+    <Position>k__BackingField: {x: 8176, y: -459}
   - <ID>k__BackingField: 36cdd099-3874-49dd-a53c-df70ed5a4312
     <Name>k__BackingField: pa_aight
     <Text>k__BackingField: aight, if the total looks fine, go ahead and swipe
@@ -829,7 +829,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 5762.5, y: -474}
+    <Position>k__BackingField: {x: 5763, y: -474}
   - <ID>k__BackingField: cc79e9e8-016b-43c1-a434-df239702fd42
     <Name>k__BackingField: pa_then_go_ahead
     <Text>k__BackingField: then go ahead and tap an option
@@ -842,36 +842,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 6015.5, y: -474}
-  - <ID>k__BackingField: 672ea9a2-4e07-4a55-9865-8596c958fe2e
-    <Name>k__BackingField: act_buttonChange_0
-    <Text>k__BackingField: SetChoiceButtonsToPreset
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 7705e009-ff65-44e3-8989-1cd15dd9d463
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
-      <callbackAction>k__BackingField: SetValue
-      <callbackValue>k__BackingField: tip
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 10
-    <Position>k__BackingField: {x: 6385.5, y: -474}
-  - <ID>k__BackingField: 7705e009-ff65-44e3-8989-1cd15dd9d463
-    <Name>k__BackingField: anim_signName
-    <Text>k__BackingField: signName
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 94c92262-a736-483f-9fd0-4e260d29af4a
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 6648.5, y: -474}
+    <Position>k__BackingField: {x: 6016, y: -474}
   - <ID>k__BackingField: 6f44b9b7-942e-4857-89c4-b8b4c308f1fe
     <Name>k__BackingField: pa_ugh_alright
     <Text>k__BackingField: ugh, alright man enjoy your food
@@ -884,7 +855,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7382.5, y: -600}
+    <Position>k__BackingField: {x: 7383, y: -600}
   - <ID>k__BackingField: 20b4606f-545a-4fd4-ac40-2df9edb5bdae
     <Name>k__BackingField: pa_cool_have
     <Text>k__BackingField: cool, have a good one man
@@ -897,7 +868,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7382.5, y: -424}
+    <Position>k__BackingField: {x: 7383, y: -424}
   - <ID>k__BackingField: ff64cb99-7cbb-49bf-86ed-e3e893b6984a
     <Name>k__BackingField: pa_thanks_man
     <Text>k__BackingField: thanks man, i appreceate that. have a good one.
@@ -910,7 +881,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 7382.5, y: -244}
+    <Position>k__BackingField: {x: 7383, y: -244}
   - <ID>k__BackingField: 03aaaf79-0370-4097-9887-352248d66fd5
     <Name>k__BackingField: pa_yourenotwelcome
     <Text>k__BackingField: you're not welcome back here man, please leave
@@ -964,7 +935,7 @@ MonoBehaviour:
     <Callbacks>k__BackingField: []
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 3
-    <Position>k__BackingField: {x: 776.5, y: 1355.5}
+    <Position>k__BackingField: {x: 777, y: 1356}
   - <ID>k__BackingField: 09824f07-0bc6-4d65-a50b-e42743a4c84c
     <Name>k__BackingField: act_buttonChange2
     <Text>k__BackingField: SetChoiceButtonsToPreset
@@ -980,7 +951,7 @@ MonoBehaviour:
       <callbackValue>k__BackingField: default
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 10
-    <Position>k__BackingField: {x: 7835.5, y: -416}
+    <Position>k__BackingField: {x: 7836, y: -416}
   - <ID>k__BackingField: 7f580ad4-4c10-4c82-8e9f-1b453c64e6eb
     <Name>k__BackingField: act_buttonChange3
     <Text>k__BackingField: SetChoiceButtonsToPreset
@@ -996,7 +967,36 @@ MonoBehaviour:
       <callbackValue>k__BackingField: default
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 10
-    <Position>k__BackingField: {x: 3404, y: 1253.5}
+    <Position>k__BackingField: {x: 3404, y: 1254}
+  - <ID>k__BackingField: 672ea9a2-4e07-4a55-9865-8596c958fe2e
+    <Name>k__BackingField: act_buttonChange_0
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 7705e009-ff65-44e3-8989-1cd15dd9d463
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: other
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 6386, y: -474}
+  - <ID>k__BackingField: 7705e009-ff65-44e3-8989-1cd15dd9d463
+    <Name>k__BackingField: anim_signName
+    <Text>k__BackingField: signName
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 94c92262-a736-483f-9fd0-4e260d29af4a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 6649, y: -474}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - dawg_choice
@@ -1053,8 +1053,6 @@ MonoBehaviour:
   - pa_aight
   - anim_swipeCard
   - pa_then_go_ahead
-  - act_buttonChange_0
-  - anim_signName
   - pa_ugh_alright
   - pa_cool_have
   - pa_thanks_man
@@ -1064,5 +1062,7 @@ MonoBehaviour:
   - _exit_pay
   - act_buttonChange2
   - act_buttonChange3
+  - act_buttonChange_0
+  - anim_signName
   <OldGroupedNames>k__BackingField:
     list: []

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: p_town_je
   <IsPlayer>k__BackingField: 1
-  <DialogueText>k__BackingField: Where am I?
+  <DialogueText>k__BackingField: where am I?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 41725b14a8f7348b0a77ef49d0ce6d3a, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 0.9025446
+  <SpeechTime>k__BackingField: 1.4426072

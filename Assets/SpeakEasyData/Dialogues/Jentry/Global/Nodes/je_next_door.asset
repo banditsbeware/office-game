@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: je_next_door
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: Next door is Cree, our local butcher. He's a lovely
-    young man if you can stand his thick skin.
+  <DialogueText>k__BackingField: 'Nextdoor is Cree, local butcher. He''s a lovely
+    fella if you can stand his thick skin. Across the way is Brick, the blacksmith.
+    Not the nicest of gentlemen, but he makes good tools. '
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 39e29fd70b83c4f00a17aa7b0ac49ea3, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: de58338845da13c4189960b35cee911d, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 5.542963
+  <SpeechTime>k__BackingField: 9.218395

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Policy;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.UIElements;
@@ -11,8 +12,6 @@ public class sheep : MonoBehaviour
     private Collider boundCollider;
 
     private sheepController parentController;
-
-    [SerializeField] private Sprite[] sheepSprites;
 
     private bool cleared = false;
 
@@ -29,6 +28,10 @@ public class sheep : MonoBehaviour
         selfRigidbody.velocity = sheepVelocity;
         parentController = transform.parent.GetComponent<sheepController>();
         boundCollider = GameObject.Find("fencingBound").GetComponent<Collider>();
+        if (parentController.isBurning)
+        {
+            gameObject.GetComponent<Animator>().SetTrigger("burn");
+        }
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -53,6 +56,8 @@ public class sheep : MonoBehaviour
         selfRigidbody.angularVelocity = new Vector3(Random.Range(-ejectRotation.x, ejectRotation.x), Random.Range(-ejectRotation.y, ejectRotation.y), Random.Range(-ejectRotation.z, ejectRotation.z));
         Camera.main.GetComponent<FollowMan>().player = transform;
         Camera.main.GetComponent<FollowMan>().desiredSize = 10;
+        gameObject.GetComponent<Animator>().SetTrigger("bleed");
+        parentController.sheepHit();
     }
 
     public void jump()

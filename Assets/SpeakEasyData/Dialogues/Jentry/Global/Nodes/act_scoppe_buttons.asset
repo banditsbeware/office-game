@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: je_across_the_way
+  m_Name: act_scoppe_buttons
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: je_across_the_way
+  <NodeName>k__BackingField: act_scoppe_buttons
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: Across the way is Brick, the blacksmith. Not the
-    greatest sense of humor, but he makes good tools. Plenty of other nice folk around
-    town to laugh with though.
+  <DialogueText>k__BackingField: SetChoiceButtonsToPreset
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 073d71f3223c541589332e65aef51ae5, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 316bc34525201e34499bb869fe800c23, type: 2}
   <IfStatements>k__BackingField: []
-  <Callbacks>k__BackingField: []
-  <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 8.3844185
+  <Callbacks>k__BackingField:
+  - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+    <callbackAction>k__BackingField: SetValue
+    <callbackValue>k__BackingField: other
+  <NodeType>k__BackingField: 10
+  <SpeechTime>k__BackingField: 0

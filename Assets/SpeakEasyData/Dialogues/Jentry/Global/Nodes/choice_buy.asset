@@ -10,22 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
-  m_Name: Dialogue Node
+  m_Name: choice_buy
   m_EditorClassIdentifier: 
-  <NodeName>k__BackingField: Dialogue Node
+  <NodeName>k__BackingField: choice_buy
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
   - <Text>k__BackingField: healing salve  ~  4
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6ff8ad75b0971ea4faa9c217eb618ddf, type: 2}
   - <Text>k__BackingField: energy tincture  ~  5
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6ff8ad75b0971ea4faa9c217eb618ddf, type: 2}
   - <Text>k__BackingField: mana potion  ~  8
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6ff8ad75b0971ea4faa9c217eb618ddf, type: 2}
   - <Text>k__BackingField: salve of the ancients  ~  17
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6ff8ad75b0971ea4faa9c217eb618ddf, type: 2}
   - <Text>k__BackingField: ketamine  ~  2
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6ff8ad75b0971ea4faa9c217eb618ddf, type: 2}
+  - <Text>k__BackingField: leave
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 471f1de064955ed4aa03f6beae69cb3b, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 1

@@ -180,7 +180,8 @@ namespace SpeakEasy
         public virtual void ChoiceMade(GameObject button)
         {
             int choiceIndex = choiceButtons.IndexOf(button); 
-
+            Debug.Log(choiceIndex);
+            Debug.Log(node.Choices[1].Text);
             if (choiceIndex < node.Choices.Count)
             {
                 node = NextNode(choiceIndex);

@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: je_anyway
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: Anyway, that's most of what's going on here in Quiddleston.
-    Feel free to visit as long as you like.
+  <DialogueText>k__BackingField: Anyway, do feel welcome to visit as long as you
+    like.
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8c8587195795a40b68846394c0ba6bc8, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 5.001049
+  <SpeechTime>k__BackingField: 3.0470722

@@ -6,7 +6,7 @@ using UnityEngine;
 public class DialogueActions : MonoBehaviour
 {
     private List<GameObject> defaultButtonsObjects = new List<GameObject>();
-    [SerializeField] private List<GameObject> tipButtons = new List<GameObject>();
+    [SerializeField] private List<GameObject> otherButtons = new List<GameObject>();
 
     [SerializeField] private cutscene CutsceneToExit;
     private SEDialogue dialogueController;
@@ -35,9 +35,9 @@ public class DialogueActions : MonoBehaviour
                 }
                 dialogueController.BeginNode();
                 break;
-            case "tip":
+            case "other":
                 dialogueController.choiceButtons.Clear();
-                foreach (GameObject button in tipButtons)
+                foreach (GameObject button in otherButtons)
                 {
                     dialogueController.choiceButtons.Add(button);
                 }

@@ -722,35 +722,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 1
     <Position>k__BackingField: {x: 6908, y: -518}
-  - <ID>k__BackingField: 0e2568b8-1d00-44ea-98f4-51d0347f9550
-    <Name>k__BackingField: act_buttonChange
-    <Text>k__BackingField: SetChoiceButtonsToPreset
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 0036305a-eba2-485a-961a-766ff7a5bd05
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField:
-    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
-      <callbackAction>k__BackingField: SetValue
-      <callbackValue>k__BackingField: tip
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 10
-    <Position>k__BackingField: {x: 6381, y: -474}
-  - <ID>k__BackingField: 0036305a-eba2-485a-961a-766ff7a5bd05
-    <Name>k__BackingField: anim_signName
-    <Text>k__BackingField: signName
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 5c045c00-bb2a-4f31-b90b-19b0cb6d17d5
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 9
-    <Position>k__BackingField: {x: 6644, y: -474}
   - <ID>k__BackingField: 38065b56-5a56-4c20-bc75-cec79345c75a
     <Name>k__BackingField: j_then_just_tap
     <Text>k__BackingField: Perfect! Finally just tap any option at all, no obligation
@@ -925,7 +896,7 @@ MonoBehaviour:
       <callbackValue>k__BackingField: false
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2774, y: 1034.5}
+    <Position>k__BackingField: {x: 2774, y: 1035}
   - <ID>k__BackingField: 15ebb4dc-a046-49f4-a5de-2d5114275d98
     <Name>k__BackingField: act_buttonChange3
     <Text>k__BackingField: SetChoiceButtonsToPreset
@@ -941,7 +912,36 @@ MonoBehaviour:
       <callbackValue>k__BackingField: default
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 10
-    <Position>k__BackingField: {x: 2548, y: 1034.5}
+    <Position>k__BackingField: {x: 2548, y: 1035}
+  - <ID>k__BackingField: 0036305a-eba2-485a-961a-766ff7a5bd05
+    <Name>k__BackingField: anim_signName
+    <Text>k__BackingField: signName
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 5c045c00-bb2a-4f31-b90b-19b0cb6d17d5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 6644, y: -474}
+  - <ID>k__BackingField: 0e2568b8-1d00-44ea-98f4-51d0347f9550
+    <Name>k__BackingField: act_buttonChange
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 0036305a-eba2-485a-961a-766ff7a5bd05
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: other
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 6381, y: -474}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - food_choice
@@ -990,8 +990,6 @@ MonoBehaviour:
   - j_oh_my
   - choice_pay
   - tip_choice
-  - act_buttonChange
-  - anim_signName
   - j_then_just_tap
   - anim_signName_2
   - act_buttonChange_2
@@ -1005,5 +1003,7 @@ MonoBehaviour:
   - act_buttonChange2
   - j_alright
   - act_buttonChange3
+  - anim_signName
+  - act_buttonChange
   <OldGroupedNames>k__BackingField:
     list: []

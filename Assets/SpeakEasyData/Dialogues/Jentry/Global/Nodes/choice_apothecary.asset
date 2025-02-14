@@ -16,7 +16,7 @@ MonoBehaviour:
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: shop
+  - <Text>k__BackingField: tinctures
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 346d4499e7ac2412d9a8c134290858ee, type: 2}
   - <Text>k__BackingField: town
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5986d751921af47b5bb7b2ac02d11c5e, type: 2}
