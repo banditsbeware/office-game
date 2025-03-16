@@ -1,0 +1,285 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: Cree
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Cree
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <Name>k__BackingField: choice_butcher
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: meats
+      <NodeID>k__BackingField: 2c56e1a3-d4f8-4620-b3da-32e18fc83473
+    - <Text>k__BackingField: town
+      <NodeID>k__BackingField: ebcb3c62-a61c-4837-8442-0843755ed6fa
+    - <Text>k__BackingField: you
+      <NodeID>k__BackingField: a738e2f3-11f9-4007-add3-ce479cdf0b1d
+    - <Text>k__BackingField: leave
+      <NodeID>k__BackingField: 93f2b217-1483-4dd4-bc00-3fc8aaeb2d4e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 604, y: 144}
+  - <ID>k__BackingField: ca8e72d3-f50d-4904-8598-abaded8aaa0d
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: b9c8303f-e428-47dd-9b0a-3ef93738c16c
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -106, y: 190}
+  - <ID>k__BackingField: e7fe2b5b-b28e-47d3-9d0e-5d5f11bdd8a0
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 1418, y: 782}
+  - <ID>k__BackingField: 2f8c0612-cb01-418d-bdb2-2e9f4fa2ba64
+    <Name>k__BackingField: act_scoppe_buttons
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 43cb1970-1a38-4a10-8073-c8c818e3e1a0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: other
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 1707, y: -128}
+  - <ID>k__BackingField: 43cb1970-1a38-4a10-8073-c8c818e3e1a0
+    <Name>k__BackingField: choice_buy
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: fresh deer ~ 5
+      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    - <Text>k__BackingField: ox tail ~ 6
+      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    - <Text>k__BackingField: troll skin  ~  15
+      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    - <Text>k__BackingField: wolf eye  ~  4
+      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    - <Text>k__BackingField: generic meat ~ 1
+      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    - <Text>k__BackingField: leave
+      <NodeID>k__BackingField: 3b5a7a8d-a920-4dc7-8598-6e3ce006770c
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1946, y: -178}
+  - <ID>k__BackingField: a738e2f3-11f9-4007-add3-ce479cdf0b1d
+    <Name>k__BackingField: p_who_je
+    <Text>k__BackingField: who are you?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 60af92b6-19f1-4e98-bef5-b45a42316e12
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 398}
+  - <ID>k__BackingField: a6b6a049-924d-4a90-8d00-128cf2d04b1d
+    <Name>k__BackingField: cr_brick
+    <Text>k__BackingField: Brick the blacksmith's across the way, next to Jentry,
+      who whips up cocktails. Otherwise, nothin' much going on here. ESPECIALLY NOT
+      UP NORTH. Dont you go headed up there.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1748, y: 136}
+  - <ID>k__BackingField: 3b5a7a8d-a920-4dc7-8598-6e3ce006770c
+    <Name>k__BackingField: act_scoppe_def
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: default
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: -39, y: 692}
+  - <ID>k__BackingField: b9c8303f-e428-47dd-9b0a-3ef93738c16c
+    <Name>k__BackingField: cr_what_can
+    <Text>k__BackingField: hm. you're a stranger if i've ever seen one. what can
+      i do y' for
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 113, y: 190}
+  - <ID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <Name>k__BackingField: cr_what_else
+    <Text>k__BackingField: what else do you need
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 190, y: 692}
+  - <ID>k__BackingField: 2c56e1a3-d4f8-4620-b3da-32e18fc83473
+    <Name>k__BackingField: p_meat
+    <Text>k__BackingField: meat
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: cc01c7c7-218a-4fc9-8cc0-cf0625c01707
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: -128}
+  - <ID>k__BackingField: cc01c7c7-218a-4fc9-8cc0-cf0625c01707
+    <Name>k__BackingField: cr_heres
+    <Text>k__BackingField: hm. you look more like a vegitarian type, but here's today's
+      cuts
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 2f8c0612-cb01-418d-bdb2-2e9f4fa2ba64
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1409, y: -128}
+  - <ID>k__BackingField: ebcb3c62-a61c-4837-8442-0843755ed6fa
+    <Name>k__BackingField: p_town_je
+    <Text>k__BackingField: where am I?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 0bd285d8-47e0-453c-953d-84b06bb7f298
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 136}
+  - <ID>k__BackingField: 0bd285d8-47e0-453c-953d-84b06bb7f298
+    <Name>k__BackingField: cr_quiddleston
+    <Text>k__BackingField: Quiddleston, my dear old home. You best not be up to any
+      trouble here, or you'll be meeting my cleaver in no time.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: a6b6a049-924d-4a90-8d00-128cf2d04b1d
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1418, y: 136}
+  - <ID>k__BackingField: 60af92b6-19f1-4e98-bef5-b45a42316e12
+    <Name>k__BackingField: cr_the_names
+    <Text>k__BackingField: the name's Cree. I'm a butcher. I think that's just about
+      as much as you need to know at this here moment.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1418, y: 398}
+  - <ID>k__BackingField: 93f2b217-1483-4dd4-bc00-3fc8aaeb2d4e
+    <Name>k__BackingField: p_i_am_going
+    <Text>k__BackingField: I am going to go now
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: e7fe2b5b-b28e-47d3-9d0e-5d5f11bdd8a0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 782}
+  - <ID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    <Name>k__BackingField: cr_aright_fella
+    <Text>k__BackingField: hm. alright fella. here are your meats.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 3b5a7a8d-a920-4dc7-8598-6e3ce006770c
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2291, y: -178}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNames>k__BackingField:
+  - choice_butcher
+  - _entry
+  - _exit
+  - act_scoppe_buttons
+  - choice_buy
+  - p_who_je
+  - cr_brick
+  - act_scoppe_def
+  - cr_what_can
+  - cr_what_else
+  - p_meat
+  - cr_heres
+  - p_town_je
+  - cr_quiddleston
+  - cr_the_names
+  - p_i_am_going
+  - cr_aright_fella
+  <OldGroupedNames>k__BackingField:
+    list: []

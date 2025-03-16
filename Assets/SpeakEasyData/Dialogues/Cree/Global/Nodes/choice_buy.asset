@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811edf926d019dc468d1a180e8dce732, type: 3}
+  m_Name: choice_buy
+  m_EditorClassIdentifier: 
+  <NodeName>k__BackingField: choice_buy
+  <IsPlayer>k__BackingField: 0
+  <DialogueText>k__BackingField: 
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: fresh deer ~ 5
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 03b089133a1264594afe3a3036fa88f9, type: 2}
+  - <Text>k__BackingField: ox tail ~ 6
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 03b089133a1264594afe3a3036fa88f9, type: 2}
+  - <Text>k__BackingField: troll skin  ~  15
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 03b089133a1264594afe3a3036fa88f9, type: 2}
+  - <Text>k__BackingField: wolf eye  ~  4
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 03b089133a1264594afe3a3036fa88f9, type: 2}
+  - <Text>k__BackingField: generic meat ~ 1
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 03b089133a1264594afe3a3036fa88f9, type: 2}
+  - <Text>k__BackingField: leave
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 036a5d9a7a9ba4c1fa427ec5001c7e37, type: 2}
+  <IfStatements>k__BackingField: []
+  <Callbacks>k__BackingField: []
+  <NodeType>k__BackingField: 1
+  <SpeechTime>k__BackingField: 0
