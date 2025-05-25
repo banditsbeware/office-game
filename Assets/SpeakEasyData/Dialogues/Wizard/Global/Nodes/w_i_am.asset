@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: w_i_am
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: i am the wizard up north. EEEEHEEEHE
+  <DialogueText>k__BackingField: ooohhoo, eeheeheee, i am the wizard up north. EEEEHEEEHE
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: cca9002c806c045eaa309c814e211c7a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9e25a6c0e4c704a6f8aa5391b02f073e, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.000047
+  <SpeechTime>k__BackingField: 3.7136922

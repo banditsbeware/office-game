@@ -207,19 +207,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 0
     <Position>k__BackingField: {x: 1743, y: 398}
-  - <ID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
-    <Name>k__BackingField: je_how_else
-    <Text>k__BackingField: How else might I help?
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 190, y: 692}
   - <ID>k__BackingField: 93f2b217-1483-4dd4-bc00-3fc8aaeb2d4e
     <Name>k__BackingField: p_i_am_going
     <Text>k__BackingField: I am going to go now
@@ -240,16 +227,16 @@ MonoBehaviour:
     <IsPlayer>k__BackingField: 0
     <Choices>k__BackingField:
     - <Text>k__BackingField: healing salve  ~  4
-      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
     - <Text>k__BackingField: energy tincture  ~  5
-      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
     - <Text>k__BackingField: mana potion  ~  8
-      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
     - <Text>k__BackingField: salve of the ancients  ~  17
-      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
     - <Text>k__BackingField: ketamine  ~  2
-      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
-    - <Text>k__BackingField: leave
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    - <Text>k__BackingField: that is all
       <NodeID>k__BackingField: 3b5a7a8d-a920-4dc7-8598-6e3ce006770c
     <IfStatements>k__BackingField: []
     <Callbacks>k__BackingField: []
@@ -272,19 +259,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 10
     <Position>k__BackingField: {x: 1707, y: -128}
-  - <ID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
-    <Name>k__BackingField: je_great_choice
-    <Text>k__BackingField: Great choice, for strength
-    <SpeechTime>k__BackingField: 0
-    <IsPlayer>k__BackingField: 0
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Next Node
-      <NodeID>k__BackingField: 43cb1970-1a38-4a10-8073-c8c818e3e1a0
-    <IfStatements>k__BackingField: []
-    <Callbacks>k__BackingField: []
-    <GroupID>k__BackingField: 
-    <NodeType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2291, y: -178}
   - <ID>k__BackingField: 3b5a7a8d-a920-4dc7-8598-6e3ce006770c
     <Name>k__BackingField: act_scoppe_def
     <Text>k__BackingField: SetChoiceButtonsToPreset
@@ -301,6 +275,45 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <NodeType>k__BackingField: 10
     <Position>k__BackingField: {x: -39, y: 692}
+  - <ID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <Name>k__BackingField: je_how_else
+    <Text>k__BackingField: How else might I help?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 190, y: 692}
+  - <ID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    <Name>k__BackingField: je_great_choice
+    <Text>k__BackingField: Great choice, for strength
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 43cb1970-1a38-4a10-8073-c8c818e3e1a0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2569, y: -178}
+  - <ID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    <Name>k__BackingField: anim_purchase
+    <Text>k__BackingField: purchase_jentry
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 2286, y: -178}
   <OldGroupNames>k__BackingField: []
   <OldUngroupedNames>k__BackingField:
   - choice_apothecary
@@ -317,11 +330,12 @@ MonoBehaviour:
   - p_town_je
   - je_my_name
   - je_i_craft
-  - je_how_else
   - p_i_am_going
   - choice_buy
   - act_scoppe_buttons
-  - je_great_choice
   - act_scoppe_def
+  - je_how_else
+  - je_great_choice
+  - anim_purchase
   <OldGroupedNames>k__BackingField:
     list: []
