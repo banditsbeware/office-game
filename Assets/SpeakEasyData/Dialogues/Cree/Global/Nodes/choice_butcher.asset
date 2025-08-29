@@ -19,9 +19,9 @@ MonoBehaviour:
   - <Text>k__BackingField: meats
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f2d31b0d5677d40b98551f1d9335d4c7, type: 2}
   - <Text>k__BackingField: town
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0a4b78dbc8b9142efa14e620cbfdb14d, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 72f9f3f80fcca4a09bd417831de59ff4, type: 2}
   - <Text>k__BackingField: you
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a55caa2d4e54240529405d13bd3cf3fb, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 573e3aa6b1c1a4d548755a738d7c1788, type: 2}
   - <Text>k__BackingField: leave
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: cf376d1eda116433b94fe017910dddce, type: 2}
   <IfStatements>k__BackingField: []

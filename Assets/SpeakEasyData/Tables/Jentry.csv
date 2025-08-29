@@ -10,6 +10,6 @@ character, cue, inflection, node name, implemented, recorded
 "Player", "where am I?", "", "p_town_je", "TRUE", "FALSE"
 "Jentry", "My name is Jentry, pleased to meet you.", "", "je_my_name", "TRUE", "FALSE"
 "Jentry", "I craft the finest of salves and potions for any ailment. My family has lived in this here town for three hundred years now.", "", "je_i_craft", "TRUE", "FALSE"
-"Jentry", "How else might I help?", "", "je_how_else", "TRUE", "FALSE"
 "Player", "I am going to go now", "", "p_i_am_going", "TRUE", "FALSE"
+"Jentry", "How else might I help?", "", "je_how_else", "TRUE", "FALSE"
 "Jentry", "Great choice, for strength", "", "je_great_choice", "TRUE", "FALSE"
