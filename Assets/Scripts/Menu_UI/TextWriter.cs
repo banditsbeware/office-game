@@ -92,7 +92,7 @@ public class TextWriter : MonoBehaviour
                 timer += timePerChar;
                 charIndex++;
                 string text = textToWrite.Substring(0, charIndex);
-                text += " <alpha=#00>" + textToWrite.Substring(charIndex) + "</alpha>";
+                text += " <color=#00000000>" + textToWrite.Substring(charIndex) + "</color>";
                 uiText.text = text;
 
                 if (charIndex >= textToWrite.Length)

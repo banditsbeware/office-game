@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: j_we_dont_do
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: Well, we don't do "smalls" here, but I can offer
-    you one of our smol fries, I think you'll love it
+  <DialogueText>k__BackingField: Well, we don't do "smalls" here, but I can get you
+    one of our smol fries, I think you'll love it
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3ec64072bb268594596d13055ce28a7d, type: 2}
   <IfStatements>k__BackingField: []
-  <Callbacks>k__BackingField: []
+  <Callbacks>k__BackingField:
+  - <callbackVariableName>k__BackingField: correctedSmolFry
+    <callbackAction>k__BackingField: SetValue
+    <callbackValue>k__BackingField: true
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 5.610872
+  <SpeechTime>k__BackingField: 5.010254

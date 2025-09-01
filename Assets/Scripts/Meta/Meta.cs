@@ -28,36 +28,37 @@ public static class Meta
         SetValue("cigs", 0, Global);
         SetValue("flappyHighScore", 0, Global);
         SetValue("currentScene", "Office", Global);
+        SetValue("correctedSmolFry", false, Global);
         
         SetValue("dialogueChoiceButtonMode", "default", Global);
 
         SetDaily();
         SetYesterday();
     }
-    
+
     public static void SetDaily()
     {
         // unlabeled - office
         SetValue("workComplete", true, Daily);
-        SetValue("afterWork", false, Daily);
+        SetValue("afterWork", true, Daily);
         SetValue("triedLeavingWork", 0, Daily);
-        SetValue("todaysTasks", new List<TaskType>(){TaskType.Spreadsheet, TaskType.Harold}, Daily);
-        
+        SetValue("todaysTasks", new List<TaskType>() { TaskType.Spreadsheet, TaskType.Harold }, Daily);
+
         // wa - water cooler
         SetValue("waRepeatedChoice", 0, Daily);
-        
+
         // b - bodega
         SetValue("bVisits", 0, Daily);
         SetValue("bEggAttempt", 0, Daily);
         SetValue("bAlcoholAttempt", 0, Daily);
         SetValue("bCigsAttempt", 0, Daily);
         SetValue("bPissedOffCosta", false, Daily);
-        
+
         // al - alleyway
         SetValue("alVisits", 0, Daily);
         SetValue("alGaveAlcohol", false, Daily);
         SetValue("alGaveCigs", false, Daily);
-        
+
         // d - dawgs
         SetValue("dJaxVisits", 0, Daily);
         SetValue("dUpsetJax", false, Daily);
@@ -66,7 +67,8 @@ public static class Meta
         SetValue("dItemsOrdered", 0, Daily);
         SetValue("dChosenItem", "Hot Dog", Daily);
         SetValue("dPaid", true, Daily);
-        SetValue("dTotal", 0f, Daily);
+        SetValue("dTotal", 0, Daily);
+        
     }
 
     public static void SetYesterday()
@@ -107,7 +109,7 @@ public static class Meta
     {
         if (blackboard.ContainsKey(name))
         {
-            blackboard[name]  = value;
+            blackboard[name] = value;
         }
         else
         {

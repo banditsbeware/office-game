@@ -179,9 +179,7 @@ namespace SpeakEasy
         //sees which button in choices list was selected, moved to that node in the dialogue tree
         public virtual void ChoiceMade(GameObject button)
         {
-            int choiceIndex = choiceButtons.IndexOf(button); 
-            Debug.Log(choiceIndex);
-            Debug.Log(node.Choices[1].Text);
+            int choiceIndex = choiceButtons.IndexOf(button);
             if (choiceIndex < node.Choices.Count)
             {
                 node = NextNode(choiceIndex);
@@ -223,7 +221,7 @@ namespace SpeakEasy
             foreach (SECallbackSaveData callback in node.Callbacks)
             {
                 Dictionary<string, dynamic> blackboard = Meta.BlackboardThatContains(callback.callbackVariableName);
-
+                Debug.Log(blackboard[callback.callbackVariableName]);
                 switch (callback.callbackAction)
                 {
                     case "SetValue":
@@ -235,7 +233,6 @@ namespace SpeakEasy
                             blackboard[callback.callbackVariableName] += float.Parse(callback.callbackValue);
                             break;
                         }
-
                         blackboard[callback.callbackVariableName] += int.Parse(callback.callbackValue);
                         break;
                     case "Decrement":
@@ -288,7 +285,7 @@ namespace SpeakEasy
             npcBubbleImage.sprite = npcBubbleSprite;
 
             //for implementing dialogue prior to recording. only tries playing if event exists
-            if (AkSoundEngine.PrepareEvent(AkPreparationType.Preparation_Load, new string[]{$"Play_{node.NodeName}"}, 1) == AKRESULT.AK_IDNotFound)
+            if (AkSoundEngine.PrepareEvent(AkPreparationType.Preparation_Load, new string[] { $"Play_{node.NodeName}" }, 1) == AKRESULT.AK_IDNotFound)
             {
                 Debug.Log("Whoops, Wwise event doesn't exist yet");
             }

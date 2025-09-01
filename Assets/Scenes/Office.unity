@@ -811,7 +811,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -27.916214, y: -8.713406, z: -3.485184, w: -31.368244}
+  m_margin: {x: -27.916214, y: -8.713406, z: 70.54355, w: -31.368244}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -841,7 +841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.201416, y: 6.986603}
+  m_AnchoredPosition: {x: -5, y: 4.1075}
   m_SizeDelta: {x: 370.1055, y: 79.215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &143577163
@@ -5160,6 +5160,7 @@ MonoBehaviour:
   xyzMin: {x: -2, y: -8.5, z: -10}
   xyzMax: {x: 10.5, y: 8.5, z: -10}
   cutscenePos: {x: 0, y: 0, z: 0}
+  desiredSize: 0
   player: {fileID: 564603694}
   offset: {x: 0, y: 0, z: -10}
   smoothSpeed: 0.1
@@ -8210,7 +8211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f491f38f658760d459d9bee8e8edf4da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipButtons: []
+  otherButtons: []
   CutsceneToExit: {fileID: 0}
 --- !u!1 &794250608
 GameObject:
@@ -13628,7 +13629,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -10.456085, y: 0, z: -17.426804, w: 0}
+  m_margin: {x: -10.456085, y: 0, z: 9.183548, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

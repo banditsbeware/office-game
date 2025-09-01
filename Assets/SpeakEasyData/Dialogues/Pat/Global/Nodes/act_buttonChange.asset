@@ -23,5 +23,8 @@ MonoBehaviour:
   - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
     <callbackAction>k__BackingField: SetValue
     <callbackValue>k__BackingField: default
+  - <callbackVariableName>k__BackingField: dTotal
+    <callbackAction>k__BackingField: SetValue
+    <callbackValue>k__BackingField: 0
   <NodeType>k__BackingField: 10
   <SpeechTime>k__BackingField: 0
