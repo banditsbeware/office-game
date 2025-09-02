@@ -496,12 +496,121 @@
 									<ChildrenList>
 										<Effect Name="Born_In_1950" ID="{3B3A31C2-C9A6-430E-A3CF-62963E332052}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
-												<Property Name="FrequencyBand1" Type="Real32" Value="150"/>
-												<Property Name="FrequencyBand3" Type="Real32" Value="9500"/>
-												<Property Name="GainBand1" Type="Real32" Value="6"/>
-												<Property Name="GainBand3" Type="Real32" Value="12"/>
-												<Property Name="OnOffBand2" Type="bool" Value="False"/>
+												<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+												<Property Name="FrequencyBand1" Type="Real32" Value="1600"/>
+												<Property Name="FrequencyBand2" Type="Real32" Value="350"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="443"/>
+												<Property Name="ProcessLFE" Type="bool" Value="False"/>
 											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{2F60E6B1-AE3E-4674-BA32-98F37A2E11A9}" ShortID="94816933">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="GainBand1"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="MirrorRealm_GroanGrain_Band1" ID="{B84355E3-67E7-48EF-A9E5-E339013AA499}" WorkUnitID="{BBED47E2-8564-4B85-A8BA-5C24BDB7EF61}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{98D73571-8AE1-4E9B-84BA-25DD54164BAD}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-5.26641</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>21.00584</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{4374103D-F405-4B49-A719-3761357D96B3}" ShortID="628695325">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="GainBand2"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="MirrorRealm_GroanGrain_Band2" ID="{37BA51CC-A979-4C11-90B9-F93B77A76F28}" WorkUnitID="{BBED47E2-8564-4B85-A8BA-5C24BDB7EF61}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{10545356-C151-4F9B-B1DD-04ED41E3C230}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-6.90526</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>16.91459</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{50038343-F984-46EF-BCBA-5BF3608C6956}" ShortID="535404224">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="GainBand3"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="MirrorRealm_GroanGrain_Band3" ID="{02E4D1A3-0ABE-44F8-B197-0392804FC2CA}" WorkUnitID="{BBED47E2-8564-4B85-A8BA-5C24BDB7EF61}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{0CCF2417-A786-4EE0-9AE1-6E10AFED9E14}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-8.6077</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>6.92109</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
 										</Effect>
 										<Effect Name="Club_Music_Distant_01" ID="{972799F5-C6E5-4E4F-83E3-95AA307CDFD1}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
@@ -633,7 +742,7 @@
 								<Effect Name="Single_Band_1Khz_Wide" ID="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-										<Property Name="FilterTypeBand2" Type="int32" Value="2"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="3"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
 										<Property Name="FrequencyBand1" Type="Real32" Value="1000"/>
 										<Property Name="FrequencyBand3" Type="Real32" Value="10000"/>
@@ -654,11 +763,14 @@
 								</Effect>
 								<Effect Name="Dual_Filters_Narrow_Bandwidth" ID="{A24607C6-04E1-4D41-B513-28C0914D138D}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
-										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand1" Type="int32" Value="3"/>
 										<Property Name="FilterTypeBand2" Type="int32" Value="3"/>
-										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="500"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="3"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="227"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="2292"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
+										<Property Name="OnOffBand3" Type="bool" Value="False"/>
+										<Property Name="QFactorBand1" Type="Real32" Value="37.1"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">

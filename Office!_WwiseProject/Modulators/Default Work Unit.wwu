@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BBED47E2-8564-4B85-A8BA-5C24BDB7EF61}" SchemaVersion="110">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{BBED47E2-8564-4B85-A8BA-5C24BDB7EF61}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BBED47E2-8564-4B85-A8BA-5C24BDB7EF61}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="MirrorRealm_GroanGrain_Band1" ID="{B84355E3-67E7-48EF-A9E5-E339013AA499}" ShortID="49697943">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.12"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="100"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{2A23C353-0644-488C-93A3-1D5F4DD07F8C}" ShortID="1716424">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="MirrorRealm_GroanGrain_Band1_LFO-Freq" ID="{E0BDD9C0-36EE-4BE6-8AE9-115E4A70EC3C}" WorkUnitID="{BBED47E2-8564-4B85-A8BA-5C24BDB7EF61}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{93389696-D2A8-4548-A5E5-1D410E59A58D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>200</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ModulatorLfo>
+				<ModulatorLfo Name="MirrorRealm_GroanGrain_Band2" ID="{37BA51CC-A979-4C11-90B9-F93B77A76F28}" ShortID="654279126">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.13"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="100"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="MirrorRealm_GroanGrain_Band3" ID="{02E4D1A3-0ABE-44F8-B197-0392804FC2CA}" ShortID="698655623">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.06"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="100"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="MirrorRealm_GroanGrain_Band1_LFO-Freq" ID="{E0BDD9C0-36EE-4BE6-8AE9-115E4A70EC3C}" ShortID="975348455">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="2"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="50"/>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

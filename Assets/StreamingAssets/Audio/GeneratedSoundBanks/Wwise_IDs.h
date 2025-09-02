@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID DEAN_F = 3841864650U;
         static const AkUniqueID DEAN_T = 3841864664U;
         static const AkUniqueID FADE_ALL = 432238011U;
+        static const AkUniqueID FADE_ALL_SLEEP = 3278498575U;
         static const AkUniqueID MARC_F = 875806737U;
         static const AkUniqueID MARC_T = 875806723U;
         static const AkUniqueID MARISOL_F = 2249503293U;
@@ -79,6 +80,8 @@ namespace AK
         static const AkUniqueID PLAY_H_WHINE = 4136248618U;
         static const AkUniqueID PLAY_H_YUP = 577461237U;
         static const AkUniqueID PLAY_HELVETICA = 3069382355U;
+        static const AkUniqueID PLAY_MIRROR_AMBIENCE = 2430502642U;
+        static const AkUniqueID PLAY_MIRRORREALM_METALPINGS = 521110523U;
         static const AkUniqueID PLAY_OFFICE_AMB = 219189707U;
         static const AkUniqueID PLAY_PLAYER = 3608805445U;
         static const AkUniqueID PLAY_PLAYER_60BMP_16THS = 968031514U;
@@ -92,6 +95,7 @@ namespace AK
         static const AkUniqueID PLAY_PRINTER_PAPER = 2551381385U;
         static const AkUniqueID PLAY_PRINTER_PRINT = 2216146290U;
         static const AkUniqueID PLAY_PRINTER_WIRES = 3867243761U;
+        static const AkUniqueID PLAY_STREET = 2779137687U;
         static const AkUniqueID PLAY_STREET_AMB = 3151250082U;
         static const AkUniqueID PLAY_UI_SELECT_01 = 4294397211U;
         static const AkUniqueID PLAY_UI_SELECT_02 = 4294397208U;
@@ -175,6 +179,19 @@ namespace AK
             } // namespace STATE
         } // namespace ROOM
 
+        namespace STREET
+        {
+            static const AkUniqueID GROUP = 4142189312U;
+
+            namespace STATE
+            {
+                static const AkUniqueID A = 84696446U;
+                static const AkUniqueID B = 84696445U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUT = 645492555U;
+            } // namespace STATE
+        } // namespace STREET
+
     } // namespace STATES
 
     namespace SWITCHES
@@ -196,6 +213,7 @@ namespace AK
     {
         static const AkUniqueID BOSSDAY1 = 789747109U;
         static const AkUniqueID DOPPLERNUM = 4066377393U;
+        static const AkUniqueID MIRRORREALM_WALKSPEED = 1391585172U;
         static const AkUniqueID PLAYERDG_REPEATDURATION = 2894044893U;
     } // namespace GAME_PARAMETERS
 
@@ -208,6 +226,7 @@ namespace AK
         static const AkUniqueID BOSS = 1560169506U;
         static const AkUniqueID CROSSWORD = 630707431U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID MIRROR = 2039020852U;
         static const AkUniqueID OFFICE = 1547173777U;
         static const AkUniqueID PRINTER = 1425580747U;
         static const AkUniqueID STREET = 4142189312U;
@@ -216,10 +235,19 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID BASS = 1291433344U;
+        static const AkUniqueID CASTANETS = 2512087909U;
+        static const AkUniqueID CLAVE = 1669676002U;
         static const AkUniqueID DIALOGUE = 3930136735U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MELODY = 1040548709U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NPC_SPEECH = 3577798351U;
+        static const AkUniqueID PADS = 1778030307U;
+        static const AkUniqueID SHAKER = 3777095081U;
+        static const AkUniqueID STREET = 4142189312U;
+        static const AkUniqueID TOMS = 3259346054U;
+        static const AkUniqueID WOODBLOCK = 1935220921U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

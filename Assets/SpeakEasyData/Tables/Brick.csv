@@ -1,0 +1,12 @@
+character, cue, inflection, node name, implemented, recorded
+"Player", "I am going to go now", "", "p_i_am_going", "TRUE", "FALSE"
+"Brick", "what", "", "b_what", "TRUE", "FALSE"
+"Brick", "mm. here.", "", "b_mm_here", "TRUE", "FALSE"
+"Brick", "good.", "", "b_good", "TRUE", "FALSE"
+"Brick", "more?", "", "b_more", "TRUE", "FALSE"
+"Player", "can I peruse your tools and weapons?", "", "p_wares", "TRUE", "FALSE"
+"Player", "where am I?", "", "p_town_je", "TRUE", "FALSE"
+"Brick", "small town. ", "", "b_town", "TRUE", "FALSE"
+"Brick", "stay south.", "", "b_stay", "TRUE", "FALSE"
+"Brick", "mm.", "", "b_mm", "TRUE", "FALSE"
+"Player", "you don't talk much huh", "", "p_who_b", "TRUE", "FALSE"

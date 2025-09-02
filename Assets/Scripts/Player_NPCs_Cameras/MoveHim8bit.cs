@@ -47,6 +47,10 @@ public class MoveHim8bit : MonoBehaviour {
 
     void FixedUpdate()
     {
+      if (UIManager.gameState != "play")
+      {
+        return;
+      }
       //while not in grid
       if (intPosition.x % speed != 0 || intPosition.y % speed != 0)
       {

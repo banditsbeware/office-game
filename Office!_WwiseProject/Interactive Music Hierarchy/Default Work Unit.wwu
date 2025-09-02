@@ -2694,6 +2694,3097 @@
 						</MusicSegment>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Street" ID="{C31784DF-25E8-4A1B-916F-C2D29EE9D917}" ShortID="525602108">
+					<ChildrenList>
+						<MusicSwitchContainer Name="Street" ID="{092F9DEF-C7A9-4217-8073-F215B6B12655}" ShortID="199812456">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="100"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{6FA18C4F-EC5F-4CF0-BEEA-C395FA5BEB43}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="A_Loop" ID="{4728F4F8-2A64-4FBF-BB06-729E055108A0}" ShortID="34775678">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="A" ID="{3C89808E-B2EC-4A71-B00C-406921A94782}" ShortID="466240602">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="60000"/>
+												<Property Name="Tempo" Type="Real64" Value="100"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="streetBasic_bass_A" ID="{19080E72-B573-4E0F-BE98-4BC712467F2F}" ShortID="153484229">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bass" ID="{96F3B5B0-F0E5-452F-BDB8-AA7D774AC1FC}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_bass_A" ID="{C662BBE4-B580-426F-ADCF-A02DB95A138E}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_bass_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="744858507"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{35F05610-6B8B-49F8-92C2-D4CEC6DC56A5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{A74A350F-85F2-40E9-B6FB-95E0C121BCCE}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_bass_A" ID="{FDA50752-B30A-4D7B-92E3-B3837C04A749}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_bass_A" ID="{C662BBE4-B580-426F-ADCF-A02DB95A138E}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_castanets_A" ID="{A3130CDB-35AE-446F-A62A-99A15937B6F1}" ShortID="481443639">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Castanets" ID="{08AE1318-F57D-4EDA-B3FE-4BC725DFE3A9}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_castanets_A" ID="{000A3FDF-CFB2-4528-AB49-A1C87D58D83B}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_castanets_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="417942434"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{9E107F78-8BCD-4BED-80B1-EEABDEC1D798}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{BADCFE9C-5959-4D1E-93B8-3E01CDA391F7}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_castanets_A" ID="{0FDD7DD7-D303-43A6-81DD-EDE93C5F81DB}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_castanets_A" ID="{000A3FDF-CFB2-4528-AB49-A1C87D58D83B}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_clave_A" ID="{40914918-AF25-4D1A-B531-D8CE44AF43A7}" ShortID="444341187">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Clave" ID="{6051F4E4-D2F3-4D7A-8A92-6F5ECA1D8064}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_clave_A" ID="{B4C5B009-B859-453D-9585-918ACC0BC4DB}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_clave_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="657062795"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_clave_alt_A" ID="{540BED1D-3A16-4D77-8049-DFE377B0008F}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_clave_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="983617662"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{BCF6E6D3-24AE-49BB-8D24-561628CC6B6B}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{41C0263D-1F6A-4D1B-A429-578A7EE6EB5C}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_clave_A" ID="{432E952D-97D4-4F06-BD61-C98F74102307}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_clave_A" ID="{B4C5B009-B859-453D-9585-918ACC0BC4DB}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{B8DA0659-7ECC-4332-B788-3E0C55F30751}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_clave_alt_A" ID="{092A59A8-D0C2-4108-964B-521E2C7B5D7A}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_clave_alt_A" ID="{540BED1D-3A16-4D77-8049-DFE377B0008F}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_melody_A" ID="{67A8D95F-7E95-4BE9-95F6-E0176EEF31A4}" ShortID="649340416">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="2"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Melody" ID="{612D4238-AC51-4416-94C8-1165DFD2508F}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_melody_A" ID="{C0856BB2-6431-4ED5-8F7C-225F95D995E0}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_melody_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="897938944"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_melody_alt_A" ID="{19DB08AB-320A-42DF-B346-B1DAC7A905CD}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_melody_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="971353604"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{2924AD16-41E4-4B37-A206-38C0B488DF6E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{5D013F7E-44A9-44AA-AC95-7564D80D2207}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{4F53976F-C9E9-4FEA-9F40-7B4D0F346390}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_melody_A" ID="{8354924C-4B1D-4171-B842-888CA7484294}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_melody_A" ID="{C0856BB2-6431-4ED5-8F7C-225F95D995E0}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{E3F6D1AF-7684-4B19-8588-3826292AFC07}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_melody_alt_A" ID="{6C69CBF5-5A7E-4891-BACE-05F7F877B1A3}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_melody_alt_A" ID="{19DB08AB-320A-42DF-B346-B1DAC7A905CD}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_shaker_A" ID="{1C4DFEB4-CF0C-4ACC-843F-B2419DA6E50C}" ShortID="63284896">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Shaker" ID="{BD48B75B-8708-4143-8F23-A826F401029E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_shaker_A" ID="{1A9A8612-9522-4BDD-A671-452D2243D0D5}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_shaker_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1025191727"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_shaker_alt_A" ID="{ABA8D8B5-4F16-4BC4-AC7E-8F2D32E76A7E}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_shaker_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="157040438"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{08B9D663-5F58-4DE2-AC30-F239678BCE9D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{F12B30BA-0948-4DD8-AED8-735AA4EFA832}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_shaker_A" ID="{44983896-E097-4DB8-82ED-546AFE596061}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_shaker_A" ID="{1A9A8612-9522-4BDD-A671-452D2243D0D5}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{48E34307-B6D7-422F-B5FD-EFA5E5F32983}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_shaker_alt_A" ID="{6C386CF9-5E19-473D-B662-FC71301F8C8E}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_shaker_alt_A" ID="{ABA8D8B5-4F16-4BC4-AC7E-8F2D32E76A7E}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_tom_A" ID="{B2F265F5-EDD1-408A-A861-3D135B4757B6}" ShortID="1058115892">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Toms" ID="{1C11E4D2-7888-46D9-A0F5-2854EF1FC2A6}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_tom_A" ID="{7F873F0E-21CD-4DFB-8150-05772D3AAB9F}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_tom_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="565996820"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_tom_alt_A" ID="{7280C79D-BCB6-43FE-B8B2-748D915BF02E}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_tom_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="229568634"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{C9F7FFDE-17CB-44EE-9ADB-7F76C032AF69}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{86F49DB6-59ED-4FCC-AD6B-61F4A4E4FDDD}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_tom_A" ID="{0D03E256-21DA-4D35-A00C-A255E1D12431}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_tom_A" ID="{7F873F0E-21CD-4DFB-8150-05772D3AAB9F}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{9698203E-CB30-40DC-B9B9-6E6BAD7B1B19}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_tom_alt_A" ID="{418465E8-BFA1-4721-8291-FE766C99CBE0}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_tom_alt_A" ID="{7280C79D-BCB6-43FE-B8B2-748D915BF02E}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_woodblocks_A" ID="{2FA0A091-F950-41C6-82BE-3E36E52A03DE}" ShortID="1055121318">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Woodblock" ID="{FAE3A328-FF87-480B-9921-24C7DC3628D7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_woodblocks_A" ID="{0C0C3D79-1927-4A67-8464-CFF1C4D77294}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_woodblocks_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="748612661"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_woodblocks_alt_A" ID="{992E91AC-740F-49AD-A686-277BEB65B831}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_woodblocks_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="585607727"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{D734288E-79B8-4BE6-9DA6-239FD1D21D73}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{1A285B21-79D5-407B-9A40-445093153B57}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_woodblocks_A" ID="{559CB55D-7985-4942-BADE-55333A7C9845}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_woodblocks_A" ID="{0C0C3D79-1927-4A67-8464-CFF1C4D77294}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{D9B339DD-0BFF-4317-8061-AF68F6E81D17}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_woodblocks_alt_A" ID="{94C64355-5859-44FB-A472-B6C8B77451E2}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_woodblocks_alt_A" ID="{992E91AC-740F-49AD-A686-277BEB65B831}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_pads_A" ID="{E57E9441-C155-4D6A-A943-4A23FF1A187C}" ShortID="537361368">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="2"/>
+														<Property Name="OverrideConversion" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Pads" ID="{59FD481C-0619-4451-AC77-1838C3EA1FA7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_pads_A" ID="{F64A6CFB-9CC5-4F96-8CBA-80ECAF2E0EC0}">
+															<Language>SFX</Language>
+															<AudioFile>streetBasic_pads_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="195040884"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_pads_alt_A" ID="{DC8AF4B6-4D79-485A-A70F-DC1DB02D9C06}">
+															<Language>SFX</Language>
+															<AudioFile>streetBasic_pads_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="575769957"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{7B8644B5-C48B-40A3-8249-EEC59F5F80E9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{801B06F7-1AFB-43E2-8C43-E81880FC964A}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_pads_A" ID="{2910CB68-174A-4F21-A1B1-68B70F9FCC47}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_pads_A" ID="{F64A6CFB-9CC5-4F96-8CBA-80ECAF2E0EC0}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{E3C393C4-5B9A-4861-8638-B78BD7932209}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_pads_alt_A" ID="{002F7031-166E-4243-901E-43B4BAB94AAC}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_pads_alt_A" ID="{DC8AF4B6-4D79-485A-A70F-DC1DB02D9C06}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{969EDC79-F31F-468D-97AE-3A3484F2C26F}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{5C436DA1-5AEC-4C31-9BE9-A22CF292F469}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="19200"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="B" ID="{55242830-8D86-4A71-90D3-246E87AD6E3D}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="2"/>
+																	<Property Name="TimeMs" Type="Real64" Value="4800"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="B" ID="{3ED3F1F7-6A67-40B4-8E77-B215874C8B5F}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="2"/>
+																	<Property Name="TimeMs" Type="Real64" Value="9600"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="B" ID="{195C76BF-BDC0-4C29-8B3C-BF460EF12B0B}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="2"/>
+																	<Property Name="TimeMs" Type="Real64" Value="19200"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+										<MusicSegment Name="A_Perc" ID="{043554E0-8A3B-4429-9CAC-2D2503CDD40D}" ShortID="28622032">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="60000"/>
+												<Property Name="Tempo" Type="Real64" Value="100"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="streetBasic_castanets_A" ID="{08198E26-0E8F-4C8E-9BDA-8147E302D083}" ShortID="989640070">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Castanets" ID="{08AE1318-F57D-4EDA-B3FE-4BC725DFE3A9}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_castanets_A" ID="{F39F6212-B3CD-4A56-97D8-F6B9601B5483}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_castanets_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="417942434"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{46C0A812-5FBA-4D4D-BBFC-87122803993C}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{29574F62-74FB-450E-9D00-4250AF6AB979}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_castanets_A" ID="{DBEB0E52-A441-49A0-AE30-F5143B99EA12}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_castanets_A" ID="{F39F6212-B3CD-4A56-97D8-F6B9601B5483}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_clave_A" ID="{2494E75B-E174-4F58-AEA5-759A4FFE2235}" ShortID="575628447">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Clave" ID="{6051F4E4-D2F3-4D7A-8A92-6F5ECA1D8064}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_clave_A" ID="{0A5F8B6C-6A22-4997-80C7-CD2CB4EF4A82}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_clave_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="657062795"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_clave_alt_A" ID="{C37F16F4-48DB-4298-BB88-59B649F8E4C4}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_clave_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="983617662"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{8735BBF1-2C60-4BCB-AD9F-0DA8368B4E56}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{1A8D10F5-FF13-4A14-BFC8-C44CA9692E5E}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_clave_A" ID="{AD4B70CD-7B6F-4FA1-9F64-FFB6B8D42DD9}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_clave_A" ID="{0A5F8B6C-6A22-4997-80C7-CD2CB4EF4A82}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{6AFA195A-2CB7-4413-A526-2A8BA3F2A8CB}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_clave_alt_A" ID="{960B26F3-555E-46D7-9B83-7C86252E8329}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_clave_alt_A" ID="{C37F16F4-48DB-4298-BB88-59B649F8E4C4}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_shaker_A" ID="{74D773A4-71CF-4EA7-B684-45665384ACF4}" ShortID="842429984">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Shaker" ID="{BD48B75B-8708-4143-8F23-A826F401029E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_shaker_A" ID="{29D5B44F-849F-4A13-AF1B-1DF39D629938}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_shaker_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1025191727"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_shaker_alt_A" ID="{C0BA146E-AB4A-4E5B-A151-5600D5614FB0}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_shaker_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="157040438"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{875AB380-E428-44D5-9A3B-4C74358838E1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{5FBC2B96-9B00-495C-AFA8-8CDD3E1FCD20}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_shaker_A" ID="{A498D418-F954-4C0F-BD75-F7A1C27DB23A}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_shaker_A" ID="{29D5B44F-849F-4A13-AF1B-1DF39D629938}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{FDFEF804-1E97-49B5-BC01-C149938BFF4E}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_shaker_alt_A" ID="{B1C12AC8-DE72-4220-9145-C6814DDE435D}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_shaker_alt_A" ID="{C0BA146E-AB4A-4E5B-A151-5600D5614FB0}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_tom_A" ID="{A2E384EE-9830-4A7A-BC39-0D664BD739DB}" ShortID="42614094">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Toms" ID="{1C11E4D2-7888-46D9-A0F5-2854EF1FC2A6}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_tom_A" ID="{122A3D48-A895-4CAC-B878-DB86EDFE5B14}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_tom_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="565996820"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_tom_alt_A" ID="{6A8C4E7B-D12F-4578-863F-A7DD37AD970A}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_tom_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="229568634"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{288ED792-B16A-4175-8F54-634A7AB794A2}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{2E411D85-117B-4263-93E2-381BAD2F6946}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_tom_A" ID="{54FD1FB3-E93E-4045-9835-58D889751948}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_tom_A" ID="{122A3D48-A895-4CAC-B878-DB86EDFE5B14}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{37A2F5ED-BD13-4696-8C71-68C809BFEE66}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_tom_alt_A" ID="{6CF101F3-E23E-4C5F-A360-B8531922A5A3}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_tom_alt_A" ID="{6A8C4E7B-D12F-4578-863F-A7DD37AD970A}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_woodblocks_A" ID="{B5C44804-5AEE-444C-97E1-43636C292011}" ShortID="356479883">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Woodblock" ID="{FAE3A328-FF87-480B-9921-24C7DC3628D7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_woodblocks_A" ID="{1D0C0D8C-9169-42E6-8AA2-EC3B81205FBB}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_woodblocks_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="748612661"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_woodblocks_alt_A" ID="{CBAD27FB-4669-4C84-8118-DF7B666D56D6}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_woodblocks_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="585607727"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{367C11E8-D09F-4077-A267-EED4B1771F2F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{E71E5F57-8206-4744-9E15-FD343313F532}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_woodblocks_A" ID="{3C414C8A-2A95-4A1A-95B2-A13E6F0B9767}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_woodblocks_A" ID="{1D0C0D8C-9169-42E6-8AA2-EC3B81205FBB}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{FFA3FC3C-B4DF-4489-B9A0-C6D9074E5811}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_woodblocks_alt_A" ID="{31077D81-3AD7-4A56-BF9D-910BFA2D6732}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_woodblocks_alt_A" ID="{CBAD27FB-4669-4C84-8118-DF7B666D56D6}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{84BFB176-0F87-437B-98A0-02FCC50DCBD8}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{FC5AA8A1-1B90-45E8-9F30-CD6CCF4850EE}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="19200"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{90C2E052-9BF2-4995-B3B8-5DFAF9037D4E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{0656B85A-927B-4659-B0DC-1A7B6B9686F8}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{ABA23F52-1198-4F0A-8F34-E57A5CDC9803}" ShortID="175493337">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{E764FC7A-9240-4C1D-B013-E56D7F2CDAA3}" ShortID="897555632">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="A" ID="{3C89808E-B2EC-4A71-B00C-406921A94782}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicSegment Name="A_Out" ID="{6697879C-9668-4287-8DD7-AF516C2B091F}" ShortID="676999947">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="24000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="streetBasic_bass_A_Out" ID="{897E5D20-60EA-4912-A259-B7973E9215C8}" ShortID="556821605">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bass" ID="{96F3B5B0-F0E5-452F-BDB8-AA7D774AC1FC}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_bass_A_Out" ID="{6E61480A-222D-4313-8BF9-88A4565197FF}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_bass_A_Out.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="924042288"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{A45091E6-8F95-4DBA-9212-4F56930F08B5}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{66305135-C3A1-44E4-A60F-DDF906486FEE}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_bass_A_Out" ID="{B22E4C1B-EBE7-45B6-B240-9452853298B7}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_bass_A_Out" ID="{6E61480A-222D-4313-8BF9-88A4565197FF}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_clave_A_Out" ID="{DA413B67-956C-451F-9DBB-EAB1B5727F04}" ShortID="41612847">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Clave" ID="{6051F4E4-D2F3-4D7A-8A92-6F5ECA1D8064}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_clave_A_Out" ID="{55866A11-9FF4-4970-911E-F67F3F161C1E}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_clave_A_Out.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222744544"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{D26BC9B7-D19D-4CF2-A2F3-C0C23ECFD27D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{7A4C1911-8212-437F-B042-8E4CA7A5DC66}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_clave_A_Out" ID="{AECA2803-AA07-48CA-B375-FF58CB756179}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_clave_A_Out" ID="{55866A11-9FF4-4970-911E-F67F3F161C1E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_melody_A_Out" ID="{09892C6F-B7B4-47E8-A341-C81CB40AE383}" ShortID="369229446">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Melody" ID="{612D4238-AC51-4416-94C8-1165DFD2508F}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_melody_A_Out" ID="{74CEA416-6193-48D0-9C6B-507467D78744}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_melody_A_Out.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="241864017"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{845FD140-5668-40C9-903F-F8F7BAFF728D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B3DB936F-06D6-4893-BC88-D7D08BC81FFB}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_melody_A_Out" ID="{CF9EEEBF-BFA1-4047-A218-B7B753DB5B22}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_melody_A_Out" ID="{74CEA416-6193-48D0-9C6B-507467D78744}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_pads_A_Out" ID="{C69BBFF7-63CB-4466-9D8E-6947028C6224}" ShortID="506377163">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Pads" ID="{59FD481C-0619-4451-AC77-1838C3EA1FA7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_pads_A_Out" ID="{36DB210A-3A69-4F83-988A-076FC8EE352B}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_pads_A_Out.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="935324295"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{D21B517A-07E4-4525-A1B2-087E31855E95}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E861B709-3806-4D14-8507-1C7C3DEDA7E5}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_pads_A_Out" ID="{BABC928C-3308-4E02-821E-256A73506279}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_pads_A_Out" ID="{36DB210A-3A69-4F83-988A-076FC8EE352B}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_shaker_A_Out" ID="{9DAB1C75-66D6-475E-91EA-E3060D93B191}" ShortID="860256734">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Shaker" ID="{BD48B75B-8708-4143-8F23-A826F401029E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_shaker_A_Out" ID="{BFD5FDA1-7BA6-406D-B816-71F527A207B0}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_shaker_A_Out.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="136311268"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{F3E252A2-3976-43E2-80F6-E3D848B553F0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{107FCC3F-5308-4CF6-AF9F-CDEA26CA0BE1}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_shaker_A_Out" ID="{9B07B89A-FA6D-4AB0-BC10-359B6FBD7A9F}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_shaker_A_Out" ID="{BFD5FDA1-7BA6-406D-B816-71F527A207B0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_tom_A_Out" ID="{DBF9D03F-80B5-4285-A24B-4544510C09BF}" ShortID="895469932">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Toms" ID="{1C11E4D2-7888-46D9-A0F5-2854EF1FC2A6}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_tom_A_Out" ID="{140244F3-6C08-426C-9B7A-91F2C47E08DA}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_tom_A_Out.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1048137905"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{F160788D-9735-40A5-8AAC-E01F627860F0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{BE3FC7C3-3864-4EB6-ABF8-6F3C95E52493}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_tom_A_Out" ID="{8C205697-920B-4C18-A4F1-E25CF1BBD0FB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_tom_A_Out" ID="{140244F3-6C08-426C-9B7A-91F2C47E08DA}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_woodblocks_A_Out" ID="{777B761B-88F0-4768-8444-89543E9ABD0D}" ShortID="656764785">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Woodblock" ID="{FAE3A328-FF87-480B-9921-24C7DC3628D7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_woodblocks_A_Out" ID="{CFA28DE7-1CA4-40A4-BB6E-39B0ECA04DC7}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_woodblocks_A_Out.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="364608893"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{8471F4F6-3327-458B-A2C9-7A2E67D6F157}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2FC45A0B-69C9-414E-8E05-9B249AD98A6B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_woodblocks_A_Out" ID="{61B939F6-3BCC-4738-A76E-AA184C238DE9}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_woodblocks_A_Out" ID="{CFA28DE7-1CA4-40A4-BB6E-39B0ECA04DC7}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{64C43874-BB81-4602-8A56-4457B9BAB081}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{817A7FF9-D1A2-497F-9E71-C3C18B8638F3}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="19200"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicPlaylistContainer Name="B_Loop" ID="{0EEE8B42-341B-4BE4-BDF9-BAC929F3AE96}" ShortID="758750613">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="B" ID="{E8B230C2-BE09-4F80-98ED-049FA1761225}" ShortID="4625340">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="21600"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="streetBasic_bass_B" ID="{BF633B78-32E1-431B-A633-1304119D486D}" ShortID="222385312">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bass" ID="{96F3B5B0-F0E5-452F-BDB8-AA7D774AC1FC}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_bass_B" ID="{7FA86E79-80F2-4CAC-98FD-762FECA13701}">
+															<Language>SFX</Language>
+															<AudioFile>B\streetBasic_bass_B.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1003303016"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{010D2B44-C830-4601-94E7-41FBE029DD65}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{7C47C64D-728D-42FF-8552-BD648A0835F0}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_bass_B" ID="{D9C4E944-DC7E-46F9-9017-49E4F0BD580F}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInDuration" Type="Real64" Value="57.6512455516013"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_bass_B" ID="{7FA86E79-80F2-4CAC-98FD-762FECA13701}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_melody_B" ID="{A096042D-E9C3-4CBA-9CE1-0AEA84F50EDA}" ShortID="990893046">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Melody" ID="{612D4238-AC51-4416-94C8-1165DFD2508F}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_melody_B" ID="{39158696-0E02-4CF0-8531-B5A7CB74946C}">
+															<Language>SFX</Language>
+															<AudioFile>B\streetBasic_melody_B.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="125929305"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{76F45B63-ABC7-4AA9-A17E-ECCE1B0C661F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{F40CFD9C-06C2-4337-8E0D-B48CE248FCF4}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_melody_B" ID="{A59AECBE-0AEC-4562-A2EF-F0C10E280777}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_melody_B" ID="{39158696-0E02-4CF0-8531-B5A7CB74946C}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_pads_B" ID="{51FDA434-A358-4CCD-BB20-E95DAB63C89F}" ShortID="259263268">
+													<PropertyList>
+														<Property Name="OverrideConversion" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Pads" ID="{59FD481C-0619-4451-AC77-1838C3EA1FA7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_pads_B" ID="{13F3411C-3E76-4E29-8000-04360D8C5BFE}">
+															<Language>SFX</Language>
+															<AudioFile>B\streetBasic_pads_B.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="238598632"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{9B27BDD8-8EAE-43B9-A1C4-11EA4AFF1624}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{E79FC428-63DF-43E8-A5B5-3563947575CA}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_pads_B" ID="{8BF21D37-B852-4759-8BCD-B855748961DD}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_pads_B" ID="{13F3411C-3E76-4E29-8000-04360D8C5BFE}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_castanets_A" ID="{6A0E84EA-D27C-4D57-B593-B8022E7741F2}" ShortID="96714045">
+													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Castanets" ID="{08AE1318-F57D-4EDA-B3FE-4BC725DFE3A9}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_castanets_A" ID="{1B4889A1-20AF-4CDF-A906-5D2E64BC768D}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_castanets_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="417942434"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{4779D4B9-686A-472C-8152-28C9F2A45FAD}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{44D78326-FE74-4F88-9571-C5CE5F1A1943}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_castanets_A" ID="{EDDAF95E-E918-4313-AF1E-384B932490BF}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_castanets_A" ID="{1B4889A1-20AF-4CDF-A906-5D2E64BC768D}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_clave_A" ID="{1B0C0A6D-866E-4DCF-89BC-3D492BACA53F}" ShortID="923596196">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Clave" ID="{6051F4E4-D2F3-4D7A-8A92-6F5ECA1D8064}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_clave_A" ID="{A5B7A0F0-5F22-45EC-8417-1717E81DAC45}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_clave_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="657062795"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_clave_alt_A" ID="{49750C3D-78B1-44F4-BF0C-018D24E9D4D7}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_clave_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="983617662"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{B34CE047-7B9F-4654-A562-67B2D332653D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{1A6DC447-C5DA-4DBD-A8E4-3F3BF6A79BD6}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_clave_A" ID="{85848AFE-29ED-4931-B3EF-D356B7BD7615}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_clave_A" ID="{A5B7A0F0-5F22-45EC-8417-1717E81DAC45}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{7938C644-7268-4637-9CBC-8CDD79AFB164}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_clave_alt_A" ID="{727370DA-64DA-41F6-89F2-42D729CA8DEF}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_clave_alt_A" ID="{49750C3D-78B1-44F4-BF0C-018D24E9D4D7}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_shaker_A" ID="{8DB2A4BC-5778-4DB1-893C-B2DAE9EFCB26}" ShortID="506369422">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Shaker" ID="{BD48B75B-8708-4143-8F23-A826F401029E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_shaker_A" ID="{540396E2-FFE5-4691-B083-6167049437E4}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_shaker_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1025191727"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_shaker_alt_A" ID="{3B7F0FF8-F1CD-4073-805C-A8790E1422BE}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_shaker_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="157040438"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{6AFFF417-CFB2-4AE6-89EB-5C8F6B542709}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{98BCC760-83AA-46F0-B9A9-3216DABE3E91}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_shaker_A" ID="{93E2B9B9-C987-4E0A-926B-5D3CAB57EB3D}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_shaker_A" ID="{540396E2-FFE5-4691-B083-6167049437E4}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{85A59A8F-1FF0-40F4-AA5F-CFFB74F11471}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_shaker_alt_A" ID="{6203454D-BD5A-4A5D-AC9D-ABB7DDCED777}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_shaker_alt_A" ID="{3B7F0FF8-F1CD-4073-805C-A8790E1422BE}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="streetBasic_tom_A" ID="{7295559D-A7EC-473D-A0DC-C3014E7E72E1}" ShortID="521128263">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Toms" ID="{1C11E4D2-7888-46D9-A0F5-2854EF1FC2A6}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="streetBasic_tom_A" ID="{17CE998F-964E-49AE-B95A-39FA0190D733}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_tom_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="565996820"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="streetBasic_tom_alt_A" ID="{B408F5E2-D7A5-462E-8C45-C1A091C816D9}">
+															<Language>SFX</Language>
+															<AudioFile>Street_Music_Stems\Street Music\streetBasic_tom_alt_A.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="229568634"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{48E01DBD-2D2F-498E-8A5B-919042A281CA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{8D9CE8EB-1201-49A7-8F3C-201C5F13AB7A}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_tom_A" ID="{F75083C7-05B1-4688-BC8B-5D8AF71AE60A}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_tom_A" ID="{17CE998F-964E-49AE-B95A-39FA0190D733}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{27BF8244-DA26-48F9-A4FE-A73A0DC9D70E}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="streetBasic_tom_alt_A" ID="{1E37CE42-45F9-4F82-ACA1-7AE79C004CF9}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="21600"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="streetBasic_tom_alt_A" ID="{B408F5E2-D7A5-462E-8C45-C1A091C816D9}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{69045075-2AE8-47CE-957F-1956A8EE4DFD}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{3091740F-1AA4-4215-892E-BF7E9DE135A9}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="19200"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B0021065-4055-44B3-B0FF-C425B1A4B7A6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{9BEBC7EA-6398-4FAC-B52B-6B41AEF75A89}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{3E48B844-A084-49B8-85D7-12A15315353F}" ShortID="978619888">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{792815D7-E2B9-4E33-9475-EAB9909ACDDC}" ShortID="504510932">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="B" ID="{E8B230C2-BE09-4F80-98ED-049FA1761225}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicSegment Name="AtoB_mm9" ID="{466A5315-AEED-4D0A-966C-EBBD83AA3EE8}" ShortID="92998019">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="19200"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="streetBasic_bass_AtoB_9" ID="{2FB8DEA8-A646-4A85-83FC-399348AC6D1C}" ShortID="34548533">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bass" ID="{96F3B5B0-F0E5-452F-BDB8-AA7D774AC1FC}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_bass_AtoB_9" ID="{E1FE4D32-07C0-4216-AFD9-8B022A57128B}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_bass_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="882830885"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{40033712-6A3A-4E28-BAC5-A31A9FF885F3}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{684B7A13-E0A2-4367-9A18-D1CA7E9DF97C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_bass_AtoB_9" ID="{3C0E8041-AE2B-4B91-AA3A-620C732CA9BA}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_bass_AtoB_9" ID="{E1FE4D32-07C0-4216-AFD9-8B022A57128B}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_clave_AtoB_9" ID="{5160C280-F7F5-46C0-BE89-79E1693DD95D}" ShortID="717364265">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Clave" ID="{6051F4E4-D2F3-4D7A-8A92-6F5ECA1D8064}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_clave_AtoB_9" ID="{DC3EE7AA-E79A-45F9-B482-D9D7B3FED6E7}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_clave_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512369821"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{589F68A0-16CA-450D-B416-017DA49EB561}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{6037C555-3AD5-4A84-8715-406B47707CEC}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_clave_AtoB_9" ID="{BAEF4947-7D91-42FE-9E7B-7E906EC0A054}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_clave_AtoB_9" ID="{DC3EE7AA-E79A-45F9-B482-D9D7B3FED6E7}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_melody_AtoB_9" ID="{4EBE0C52-C4CB-4A49-A3BF-3A835D2A6648}" ShortID="154926574">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Melody" ID="{612D4238-AC51-4416-94C8-1165DFD2508F}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_melody_AtoB_9" ID="{DEB2737E-2B25-47F7-9544-B1AB968362CA}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_melody_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1069132895"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{BDC139D4-134B-4B0E-8F9F-7AB33F580B59}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{53422A13-D4B1-46DB-80FA-100E598A9031}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_melody_AtoB_9" ID="{C886766C-6511-4D2E-9E66-2BCFB86396CA}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_melody_AtoB_9" ID="{DEB2737E-2B25-47F7-9544-B1AB968362CA}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_pads_AtoB_9" ID="{FF58CF0C-3695-4529-B484-C31E8DB7A9CA}" ShortID="616562458">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Pads" ID="{59FD481C-0619-4451-AC77-1838C3EA1FA7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_pads_AtoB_9" ID="{F74FE6C3-746B-4412-A212-3C66356D4432}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_pads_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1015202173"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{244D4DE0-3527-4AC8-9C0B-C90B4E819CAC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D5798B46-CD8F-4F39-B3A1-FDAB3372DF42}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_pads_AtoB_9" ID="{76707673-7B04-4B64-9F2F-8E66E0D367E0}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_pads_AtoB_9" ID="{F74FE6C3-746B-4412-A212-3C66356D4432}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_shaker_AtoB_9" ID="{D29638D4-9174-4322-BA76-ED7B4D2C78AF}" ShortID="785412923">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Shaker" ID="{BD48B75B-8708-4143-8F23-A826F401029E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_shaker_AtoB_9" ID="{DC38450C-0BC2-4290-A892-99F2D6ADA2CC}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_shaker_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="361683659"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{85377BE0-1864-46F3-A95A-90990E12934B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{53F1015A-689E-489C-964E-BBDCB6F8B6F1}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_shaker_AtoB_9" ID="{D5F0F835-64B9-4ADB-9AC7-68394A6E5736}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_shaker_AtoB_9" ID="{DC38450C-0BC2-4290-A892-99F2D6ADA2CC}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_woodblocks_AtoB_9" ID="{C4AD6513-EBAD-4275-B107-C6B2F23E0101}" ShortID="216053833">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Woodblock" ID="{FAE3A328-FF87-480B-9921-24C7DC3628D7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_woodblocks_AtoB_9" ID="{CF9C6B7F-3B7A-490E-B45A-643FAB6AEE25}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_woodblocks_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="323262203"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{27AAE51E-68F2-4DC7-8667-F6A28E9707DE}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4DAFD229-843B-4C6E-A242-5538139E200D}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_woodblocks_AtoB_9" ID="{3C0432AF-8006-400B-BBB8-86A5DB6A7330}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_woodblocks_AtoB_9" ID="{CF9C6B7F-3B7A-490E-B45A-643FAB6AEE25}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_pads_A" ID="{E95071B2-CA76-44FF-B873-570F999C438D}" ShortID="317367341">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Pads" ID="{59FD481C-0619-4451-AC77-1838C3EA1FA7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_pads_A" ID="{7DB3800F-1931-4986-866B-817AF0B873C7}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_pads_A.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="195040884"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="streetBasic_pads_alt_A" ID="{6B799596-9691-4547-A398-E8FE7C5226D6}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_pads_alt_A.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="575769957"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7620E3CB-8B22-42E1-820B-F60CEEF96A4E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D6CF3931-CC7E-455E-9E77-CF150DB1C642}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_pads_A" ID="{728F2310-1EAC-4BBB-B9A0-E4B40F1342FE}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="4800"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="9508.29836298932"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="285.334910436919"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-4800"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_pads_A" ID="{7DB3800F-1931-4986-866B-817AF0B873C7}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{8B885B6C-8FFF-4BB1-90CE-6FDF1A32CB08}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>4.8</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>9.5083</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{F73BA98E-A4F6-45EB-B502-E470B18F34D5}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>4.8</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>9.5083</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{EBA03098-E1E4-4CC9-BB4A-4C538E7A3240}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>4.8</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>9.5083</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{35405F9D-10D8-47A2-9580-6D7B49F262A1}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{A7F7EA27-C80B-4E02-AEE1-6B0B35D8DE63}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="4800"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="BtoA_mm9" ID="{A000C4DC-795D-4DB5-8D22-041B53697B45}" ShortID="96438142">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="9000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="streetBasic_bass_BtoA_mm9" ID="{68547142-6CF2-4F49-B4DA-99C808090FB4}" ShortID="665182927">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bass" ID="{96F3B5B0-F0E5-452F-BDB8-AA7D774AC1FC}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_bass_BtoA_mm9" ID="{5CB424F7-1F23-4EEB-8CDD-6B71DDD479B6}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_bass_BtoA_mm9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1002780096"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{BE607F3F-1CCF-4D45-94D8-5212E6F9A3D7}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{0EE96838-7416-435B-AEEC-369353CA4325}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_bass_BtoA_mm9" ID="{0BB964A3-718E-4FB2-9D5F-5DA3DD84DDE7}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_bass_BtoA_mm9" ID="{5CB424F7-1F23-4EEB-8CDD-6B71DDD479B6}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_melody_BtoA_mm9" ID="{AD3288F2-A8B2-4A8A-9341-67A0A5798E83}" ShortID="255851285">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Melody" ID="{612D4238-AC51-4416-94C8-1165DFD2508F}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_melody_BtoA_mm9" ID="{B6765A4F-1E02-4E8B-BB2B-0743FD4154DA}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_melody_BtoA_mm9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="85353577"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{08ADF2A7-E234-47A3-866B-8F8D311D88F9}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4FAA4F0B-8DEB-43D2-AF61-096D87A0EB67}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_melody_BtoA_mm9" ID="{A3C45AA0-CDEE-46D0-9A16-8861FA655ACB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_melody_BtoA_mm9" ID="{B6765A4F-1E02-4E8B-BB2B-0743FD4154DA}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_pads_BtoA_mm9" ID="{C0452E5D-C3E7-4CEF-A149-F98FA526DB1F}" ShortID="579111745">
+											<PropertyList>
+												<Property Name="OverrideConversion" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Pads" ID="{59FD481C-0619-4451-AC77-1838C3EA1FA7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_pads_BtoA_mm9" ID="{C53F126F-94FC-490D-884B-8CA78063EAF2}">
+													<Language>SFX</Language>
+													<AudioFile>streetBasic_pads_BtoA_mm9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="358863006"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AE092CF0-E3F8-4C02-BA68-356572D791C3}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{7BD06D58-763D-425D-8E9C-8E4FF312C863}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_pads_BtoA_mm9" ID="{ED3C22FD-847A-4B20-8C12-FC4456ECBD94}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_pads_BtoA_mm9" ID="{C53F126F-94FC-490D-884B-8CA78063EAF2}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_clave_AtoB_9" ID="{3B29F454-BAEB-4334-8227-1824EFE613AE}" ShortID="724243943">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Clave" ID="{6051F4E4-D2F3-4D7A-8A92-6F5ECA1D8064}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_clave_AtoB_9" ID="{1D99F1C8-1D55-4904-9D6C-1C4E332D055E}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_clave_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512369821"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{57156DF5-88A8-429A-A89B-5768FBDE2901}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3DE52140-CAA4-4B0F-83CF-56EC0ADCD5C0}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_clave_AtoB_9" ID="{8AB07514-538C-4427-91AE-748C568FF878}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_clave_AtoB_9" ID="{1D99F1C8-1D55-4904-9D6C-1C4E332D055E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_shaker_AtoB_9" ID="{ADC5EED0-3BE8-4637-83DD-29F2BEFD5931}" ShortID="274710009">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Shaker" ID="{BD48B75B-8708-4143-8F23-A826F401029E}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_shaker_AtoB_9" ID="{CED973A3-86C8-484F-937E-6C743372CA80}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_shaker_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="361683659"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{FCA75971-BE7C-47DC-B023-2EFE89A50E72}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3B46509B-960A-4FC7-A0BC-626ADFC25FF8}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_shaker_AtoB_9" ID="{A03E35CC-FCB1-44A3-9CE1-65189D0D4598}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_shaker_AtoB_9" ID="{CED973A3-86C8-484F-937E-6C743372CA80}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="streetBasic_woodblocks_AtoB_9" ID="{62719134-B2B7-4F9B-AFF7-D19B2CDF927E}" ShortID="112984573">
+											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Woodblock" ID="{FAE3A328-FF87-480B-9921-24C7DC3628D7}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="streetBasic_woodblocks_AtoB_9" ID="{090AD436-BA70-4F85-9F61-46A7D6FEA51A}">
+													<Language>SFX</Language>
+													<AudioFile>AtoB\streetBasic_woodblocks_AtoB_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="323262203"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{2BE36455-E8EC-4005-A2F0-0A8A72769420}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3D350F86-22FB-4623-BF68-C83592021B1A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="streetBasic_woodblocks_AtoB_9" ID="{E6B47A08-5B5E-418A-8589-758DABD82370}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7200"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="streetBasic_woodblocks_AtoB_9" ID="{090AD436-BA70-4F85-9F61-46A7D6FEA51A}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{862C7E99-D26C-4340-8982-1E4120077027}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{A68EDC96-A400-4513-A41F-894C577B7964}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="4800"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{96B4AA2F-227A-4A83-95AA-82160C3EE2BB}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{AE8384CF-4B43-4117-B0DB-CB56209FBCCC}">
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{7B27268B-048A-42E5-8282-544407F8C3F1}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableTransitionFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlayTransitionPostExit" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="A_Out" ID="{6697879C-9668-4287-8DD7-AF516C2B091F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="A" ID="{3C89808E-B2EC-4A71-B00C-406921A94782}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{C92CD8B1-AB7A-4C18-B60E-00B9BF2FB231}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{3AC5051C-2F5F-4FA7-B972-484C2D997876}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+												<TransitionFadeIn>
+													<MusicFade Name="Transition Fade-in" ID="{FF559D3B-88E2-4824-92CB-AD2B382D1037}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="-0.25"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</TransitionFadeIn>
+												<TransitionFadeOut>
+													<MusicFade Name="Transition Fade-out" ID="{BF0E4F3D-B84A-40D1-AC01-0944CACF2F54}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="0.25"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</TransitionFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="A_B_Main" ID="{C0B079B2-339A-4A14-BF0B-7753FD501C41}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+												<Property Name="ExitSourceCustomCueMatchName" Type="string" Value="B"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="B_Loop" ID="{0EEE8B42-341B-4BE4-BDF9-BAC929F3AE96}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="A" ID="{3C89808E-B2EC-4A71-B00C-406921A94782}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="AtoB_mm9" ID="{466A5315-AEED-4D0A-966C-EBBD83AA3EE8}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{0534BFDB-C53D-4CC6-B42C-CEE8633871CF}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="0.1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<TransitionFadeOut>
+													<MusicFade Name="Transition Fade-out" ID="{0DF3D52C-A693-4F27-AE89-30224CEB0624}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="0.1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</TransitionFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="B_A_mm9" ID="{89BF3D1D-6571-4771-B198-ABDA3D0CC789}">
+											<PropertyList>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="B_Loop" ID="{0EEE8B42-341B-4BE4-BDF9-BAC929F3AE96}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="BtoA_mm9" ID="{A000C4DC-795D-4DB5-8D22-041B53697B45}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+											</TransitionInfo>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ArgumentList>
+								<ArgumentRef Name="Street" ID="{BD42FD6D-CDBB-40A9-95B0-0D1D8AAB26AC}"/>
+							</ArgumentList>
+							<EntryList>
+								<Entry>
+									<Path>
+										<PathElementRef Name="A" ID="{C85644DD-36CF-4F30-9E5B-9AEC46FC8C08}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="A_Loop" ID="{4728F4F8-2A64-4FBF-BB06-729E055108A0}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Out" ID="{60FAE482-0E93-4BD6-AA00-162DC74D3882}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="A_Out" ID="{6697879C-9668-4287-8DD7-AF516C2B091F}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="B" ID="{D89103BA-2BBE-4DF7-A306-BE5278E9B185}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="B_Loop" ID="{0EEE8B42-341B-4BE4-BDF9-BAC929F3AE96}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+							</EntryList>
+						</MusicSwitchContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

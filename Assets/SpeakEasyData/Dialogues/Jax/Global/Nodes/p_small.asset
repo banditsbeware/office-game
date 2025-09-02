@@ -22,9 +22,9 @@ MonoBehaviour:
   <Callbacks>k__BackingField:
   - <callbackVariableName>k__BackingField: dTotal
     <callbackAction>k__BackingField: Increment
-    <callbackValue>k__BackingField: 2.00
+    <callbackValue>k__BackingField: 200
   - <callbackVariableName>k__BackingField: dChosenItem
     <callbackAction>k__BackingField: SetValue
     <callbackValue>k__BackingField: smol
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 1.5115163
+  <SpeechTime>k__BackingField: 1.7118243

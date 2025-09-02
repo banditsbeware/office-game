@@ -2578,6 +2578,448 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Dreams" ID="{C923C85A-C155-4229-96F6-8260FA1B8981}" ShortID="554283759">
+							<ChildrenList>
+								<Folder Name="Mirror_Realm" ID="{00B273B1-4C7B-4A89-BEA6-856079523FD1}" ShortID="996497263">
+									<ChildrenList>
+										<Sound Name="_MAX_Groan-Grain_Stable_1" ID="{36B0D9F2-064E-414E-BBBE-A2AEB944871C}" ShortID="26540399">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Born_In_1950" ID="{3B3A31C2-C9A6-430E-A3CF-62963E332052}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_MAX_Groan-Grain_Stable_1" ID="{ACFFD243-4471-4791-8396-4E81CC690F4D}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="50"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.105017502917153"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.15169194865811"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.198366394399067"/>
+														<Property Name="LoopEnd" Type="Real64" Value="9.74329054842474"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>_MAX_Groan-Grain_Stable_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="428024572"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="_MAX_Groan-Grain_Stable_1" ID="{ACFFD243-4471-4791-8396-4E81CC690F4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ether Whispers_1" ID="{26ABF5ED-19AE-467E-AA26-E3977ECA2768}" ShortID="944839126">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ether Whispers_1" ID="{368FB70A-B816-4B97-9BC4-13C54423CB7E}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="50"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.129259694477086"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.188014101057579"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.411280846063455"/>
+														<Property Name="LoopEnd" Type="Real64" Value="9.56521739130435"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ether Whispers_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1032873673"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ether Whispers_1" ID="{368FB70A-B816-4B97-9BC4-13C54423CB7E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<BlendContainer Name="Pings" ID="{561476B2-D13C-496F-94B2-5C749610D34F}" ShortID="629895186">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="MetalPing_MED" ID="{638FB967-6FCE-4475-A222-05245A5A1F21}" ShortID="341902338">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="MirrorRealm_MetalPing_MED_1" ID="{586F7CAA-16C3-4B71-B3A9-2D10B820958E}" ShortID="319669443">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Metal, Impact, Dark, Long Reverb x3 03 SND37314" ID="{1383D164-67A1-4FC4-9D63-B3A90C0FD88F}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.151448745265152"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Metal, Impact, Dark, Long Reverb x3 03 SND37314.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="739161284"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Metal, Impact, Dark, Long Reverb x3 03 SND37314" ID="{1383D164-67A1-4FC4-9D63-B3A90C0FD88F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="MirrorRealm_MetalPing_MED_2" ID="{E20F0555-4188-472C-B210-EB0D9709D052}" ShortID="149153206">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-11</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Metal, Impact, Dark, Long Reverb x3 03 SND37314 1" ID="{365A8F42-512E-4FAD-9007-6E799A1D0EDD}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0985520833333333"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Metal, Impact, Dark, Long Reverb x3 03 SND37314 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="842599005"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Metal, Impact, Dark, Long Reverb x3 03 SND37314 1" ID="{365A8F42-512E-4FAD-9007-6E799A1D0EDD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="MirrorRealm_MetalPing_MED_3" ID="{3677C7DD-8439-4EF8-973C-2573388E7F96}" ShortID="34915878">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-7</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Metal, Impact, Barb Wire Vibration, Contact Mic 01 SND79406 1" ID="{E4660E47-D0DD-457E-920C-4D3CC65AECBE}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.182956123737374"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.160086608270202"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Metal, Impact, Barb Wire Vibration, Contact Mic 01 SND79406 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="582132076"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Metal, Impact, Barb Wire Vibration, Contact Mic 01 SND79406 1" ID="{E4660E47-D0DD-457E-920C-4D3CC65AECBE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="MetalPing_LIGHT" ID="{F2381151-6E2D-4BC8-98E8-C71A8C9EF6C7}" ShortID="666578619">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="MirrorRealm_MetalPing_LIGHT_2" ID="{8EDED324-B881-4B3D-881D-631B3E718EEC}" ShortID="382394709">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-11</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Metal, Impact, Dark, Long Reverb x3 03 SND37314 2" ID="{9B2D2C28-3F68-4FD1-A0EA-F8D9A8DBCD16}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0672323232323233"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0672323232323233"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Metal, Impact, Dark, Long Reverb x3 03 SND37314 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="85806297"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Metal, Impact, Dark, Long Reverb x3 03 SND37314 2" ID="{9B2D2C28-3F68-4FD1-A0EA-F8D9A8DBCD16}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="MirrorRealm_MetalPing_LIGHT_1" ID="{DDC6754D-6024-4E6E-B395-387911374B30}" ShortID="806267454">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Metal, Impact, Deep In, Pipes, Reverberant, Underground SND76536 - Pitch 151" ID="{9DF530F4-CA15-49EA-BAAE-F4E01F8A1F36}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.105347222222222"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Metal, Impact, Deep In, Pipes, Reverberant, Underground SND76536 - Pitch 151.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="545267006"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Metal, Impact, Deep In, Pipes, Reverberant, Underground SND76536 - Pitch 151" ID="{9DF530F4-CA15-49EA-BAAE-F4E01F8A1F36}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="MetalPing_HARD" ID="{3503ADD0-1121-44FA-BF8A-0BA5D52DBCB6}" ShortID="838238770">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="MirrorRealm_MetalPing_HARD_1" ID="{583B4604-CECF-438F-8FE5-9699638C6A2C}" ShortID="171832914">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8638769A-E5CB-4F14-844C-D65C266D51F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1117315-C97E-4BB2-8671-EE5C2B7E20D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Metal, Impact, Barb Wire Vibration, Contact Mic 02 SND79412" ID="{1F998928-D0CB-4C65-9C8D-A0A6DB66C658}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0359360006313131"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.125776002209596"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Metal, Impact, Barb Wire Vibration, Contact Mic 02 SND79412.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="971833782"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Metal, Impact, Barb Wire Vibration, Contact Mic 02 SND79412" ID="{1F998928-D0CB-4C65-9C8D-A0A6DB66C658}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Ping_Hardness" ID="{7B833FFC-8D2E-4B83-8EF3-EB5084C9FDE3}" ShortID="804775454">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="MirrorRealm_WalkSpeed" ID="{C889AA54-ED1E-4AE4-A9D7-B2A715B6E008}" WorkUnitID="{AD6EE1F6-773E-4512-BEC9-912B1E12A5BC}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{BA52965C-52E7-4A20-AA3B-E62D75A5E238}" ShortID="793641079">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="MirrorRealm_WalkSpeed" ID="{C889AA54-ED1E-4AE4-A9D7-B2A715B6E008}" WorkUnitID="{AD6EE1F6-773E-4512-BEC9-912B1E12A5BC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{2D486E8D-F8E0-4953-B17F-FECBC0B68004}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-17.17339</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.21762</XPos>
+																								<YPos>-8.6919</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.35232</XPos>
+																								<YPos>-3.33445</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.2487046</XPos>
+																								<YPos>-0.60495</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.82383419689119</XPos>
+																								<YPos>1.16530923079667</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2</XPos>
+																								<YPos>6.43104</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="MetalPing_LIGHT" ID="{F2381151-6E2D-4BC8-98E8-C71A8C9EF6C7}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>1.13575129533679</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="MetalPing_MED" ID="{638FB967-6FCE-4475-A222-05245A5A1F21}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.307510453367876</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>1.65051563471503</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="MetalPing_HARD" ID="{3503ADD0-1121-44FA-BF8A-0BA5D52DBCB6}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>1.45181347150259</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>2</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Dialogue" ID="{C0102D99-C4A8-4CEB-955F-875F7B707E37}" ShortID="738307289">

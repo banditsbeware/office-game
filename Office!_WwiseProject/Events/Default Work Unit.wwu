@@ -57,6 +57,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Street" ID="{A9C68C70-3439-40B9-8E57-A6FD66E33997}">
+							<ChildrenList>
+								<Action Name="" ID="{B37261B2-9876-45F1-9C5C-EFD444C87A92}" ShortID="35878178">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Street" ID="{092F9DEF-C7A9-4217-8073-F215B6B12655}" WorkUnitID="{640B5997-BB88-4D3E-8619-A06537BA78B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{C571CADC-947F-45BA-984D-9FD346FBDD87}" ShortID="1022302060">
@@ -133,18 +144,6 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}">
-							<ChildrenList>
-								<Action Name="" ID="{C9AB29A2-2648-499D-A112-12738BCED8CE}" ShortID="724652482">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="3"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.9"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList/>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Apartment_Amb" ID="{76F02AB9-B73E-43D8-8733-CC7E21FD71EB}">
 							<ChildrenList>
 								<Action Name="" ID="{1E8ACF91-E2F5-48A9-9B4C-4EA5A40D8966}" ShortID="56899171">
@@ -211,6 +210,46 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Dreams" ID="{D375DBCB-723D-421F-A21C-75042FD22DAD}" ShortID="370274524">
+							<ChildrenList>
+								<Folder Name="Mirror" ID="{D39F1AEC-29A8-47DC-85C7-D7685A0AB078}" ShortID="54334860">
+									<ChildrenList>
+										<Event Name="Play_Mirror_Ambience" ID="{11C848AC-450F-4653-A281-ACB9E0BF202B}">
+											<ChildrenList>
+												<Action Name="" ID="{E00FD992-3C09-40D2-A562-B1062D9173C7}" ShortID="996612071">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="_MAX_Groan-Grain_Stable_1" ID="{36B0D9F2-064E-414E-BBBE-A2AEB944871C}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{640A8D96-38A6-4673-884E-6CA013A718D9}" ShortID="802419461">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Ether Whispers_1" ID="{26ABF5ED-19AE-467E-AA26-E3977ECA2768}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_MirrorRealm_MetalPings" ID="{2410A472-C4CE-48E4-84FD-22D612F76AA9}">
+											<ChildrenList>
+												<Action Name="" ID="{6863CA47-2629-45EB-9290-0A4CE0534C4A}" ShortID="185411457">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Pings" ID="{561476B2-D13C-496F-94B2-5C749610D34F}" WorkUnitID="{1E6673B4-7B71-46C8-B18A-EB14CE5C8CF1}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FX" ID="{9E7B2728-D305-427C-B194-76E3D99C3B5E}" ShortID="677138562">
@@ -1231,6 +1270,32 @@
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_Player_TriggerRate" ID="{E90C0097-CAF3-4DE3-AEDB-253A1DDFAC63}"/>
+				<Event Name="Fade_All" ID="{19961803-2A3C-4AD6-9FA3-642D7E6A1ADF}">
+					<ChildrenList>
+						<Action Name="" ID="{C9AB29A2-2648-499D-A112-12738BCED8CE}" ShortID="724652482">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.9"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fade_All_Sleep" ID="{E30011A8-18ED-45EF-A154-D9CFB4225D0C}">
+					<ChildrenList>
+						<Action Name="" ID="{788C33C9-DFAD-4475-BAC8-8730B308E286}" ShortID="1017703900">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2.9"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

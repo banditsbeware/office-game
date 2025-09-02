@@ -1,0 +1,12 @@
+character, cue, inflection, node name, implemented, recorded
+"Cree", "Brick the blacksmith's across the way, next to Jentry, who whips up cocktails. Otherwise, nothin' much going on here. ESPECIALLY NOT UP NORTH. Dont you go headed up there.", "", "cr_brick", "TRUE", "FALSE"
+"Cree", "hm. you're a stranger if i've ever seen one. what can i do y' for", "", "cr_what_can", "TRUE", "FALSE"
+"Cree", "what else do you need", "", "cr_what_else", "TRUE", "FALSE"
+"Player", "meat", "", "p_meat", "TRUE", "FALSE"
+"Cree", "hm. you look more like a vegitarian type, but here's today's cuts", "", "cr_heres", "TRUE", "FALSE"
+"Cree", "Quiddleston, my dear old home. You best not be up to any trouble here, or you'll be meeting my cleaver in no time.", "", "cr_quiddleston", "TRUE", "FALSE"
+"Cree", "the name's Cree. I'm a butcher. I think that's just about as much as you need to know at this here moment.", "", "cr_the_names", "TRUE", "FALSE"
+"Cree", "hm. alright fella. here are your meats.", "", "cr_aright_fella", "TRUE", "FALSE"
+"Player", "who are you?", "", "p_who_cr", "TRUE", "FALSE"
+"Player", "where am I?", "", "p_town_cr", "TRUE", "FALSE"
+"Player", "I am going to go now", "", "p_i_am_going", "TRUE", "FALSE"

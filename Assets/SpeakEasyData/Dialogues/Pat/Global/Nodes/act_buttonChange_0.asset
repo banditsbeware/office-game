@@ -22,6 +22,6 @@ MonoBehaviour:
   <Callbacks>k__BackingField:
   - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
     <callbackAction>k__BackingField: SetValue
-    <callbackValue>k__BackingField: tip
+    <callbackValue>k__BackingField: other
   <NodeType>k__BackingField: 10
   <SpeechTime>k__BackingField: 0

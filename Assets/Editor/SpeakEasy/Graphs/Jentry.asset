@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: Jentry
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Jentry
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <Name>k__BackingField: choice_apothecary
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: tinctures
+      <NodeID>k__BackingField: 2c56e1a3-d4f8-4620-b3da-32e18fc83473
+    - <Text>k__BackingField: town
+      <NodeID>k__BackingField: ebcb3c62-a61c-4837-8442-0843755ed6fa
+    - <Text>k__BackingField: you
+      <NodeID>k__BackingField: a738e2f3-11f9-4007-add3-ce479cdf0b1d
+    - <Text>k__BackingField: leave
+      <NodeID>k__BackingField: 93f2b217-1483-4dd4-bc00-3fc8aaeb2d4e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 604, y: 144}
+  - <ID>k__BackingField: ca8e72d3-f50d-4904-8598-abaded8aaa0d
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: b9c8303f-e428-47dd-9b0a-3ef93738c16c
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -106, y: 190}
+  - <ID>k__BackingField: e7fe2b5b-b28e-47d3-9d0e-5d5f11bdd8a0
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 1418, y: 782}
+  - <ID>k__BackingField: b9c8303f-e428-47dd-9b0a-3ef93738c16c
+    <Name>k__BackingField: je_a_weary
+    <Text>k__BackingField: Ah, a weary traveler. What can I do y' for?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 113, y: 190}
+  - <ID>k__BackingField: 2c56e1a3-d4f8-4620-b3da-32e18fc83473
+    <Name>k__BackingField: p_tinctures
+    <Text>k__BackingField: show me your tinctures.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: cc01c7c7-218a-4fc9-8cc0-cf0625c01707
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: -128}
+  - <ID>k__BackingField: cc01c7c7-218a-4fc9-8cc0-cf0625c01707
+    <Name>k__BackingField: je_of_course
+    <Text>k__BackingField: of course, please peruse my wares
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 2f8c0612-cb01-418d-bdb2-2e9f4fa2ba64
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1408, y: -128}
+  - <ID>k__BackingField: 0bd285d8-47e0-453c-953d-84b06bb7f298
+    <Name>k__BackingField: je_you_have
+    <Text>k__BackingField: 'Well, you''ve wandered into Quiddleston, and I dare not
+      ask why, cause it sure is a mystery to me. Almost nothing happens here. '
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: a6b6a049-924d-4a90-8d00-128cf2d04b1d
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1418, y: 136}
+  - <ID>k__BackingField: a6b6a049-924d-4a90-8d00-128cf2d04b1d
+    <Name>k__BackingField: je_next_door
+    <Text>k__BackingField: 'Nextdoor is Cree, local butcher. He''s a lovely fella
+      if you can stand his thick skin. Across the way is Brick, the blacksmith. Not
+      the nicest of gentlemen, but he makes good tools. '
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 3fd3bf7e-039c-4b97-9e94-0ff42118029f
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1743, y: 136}
+  - <ID>k__BackingField: 3fd3bf7e-039c-4b97-9e94-0ff42118029f
+    <Name>k__BackingField: je_plenty
+    <Text>k__BackingField: 'Plenty of other kind folk around town though. But if
+      I were you, I''d stay away from that mean old Wizard up North. He aint never
+      brought nothing but trouble to this here town. Not one bit. '
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: f413fa32-c300-49a0-8a0b-3f105be1d35d
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2059, y: 136}
+  - <ID>k__BackingField: f413fa32-c300-49a0-8a0b-3f105be1d35d
+    <Name>k__BackingField: je_anyway
+    <Text>k__BackingField: Anyway, do feel welcome to visit as long as you like.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2382, y: 136}
+  - <ID>k__BackingField: a738e2f3-11f9-4007-add3-ce479cdf0b1d
+    <Name>k__BackingField: p_who_je
+    <Text>k__BackingField: who are you?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 60af92b6-19f1-4e98-bef5-b45a42316e12
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 398}
+  - <ID>k__BackingField: ebcb3c62-a61c-4837-8442-0843755ed6fa
+    <Name>k__BackingField: p_town_je
+    <Text>k__BackingField: where am I?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 0bd285d8-47e0-453c-953d-84b06bb7f298
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 136}
+  - <ID>k__BackingField: 60af92b6-19f1-4e98-bef5-b45a42316e12
+    <Name>k__BackingField: je_my_name
+    <Text>k__BackingField: My name is Jentry, pleased to meet you.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 35cd7c64-70d9-4dff-8468-ea01a7ca95a5
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1418, y: 398}
+  - <ID>k__BackingField: 35cd7c64-70d9-4dff-8468-ea01a7ca95a5
+    <Name>k__BackingField: je_i_craft
+    <Text>k__BackingField: I craft the finest of salves and potions for any ailment.
+      My family has lived in this here town for three hundred years now.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1743, y: 398}
+  - <ID>k__BackingField: 93f2b217-1483-4dd4-bc00-3fc8aaeb2d4e
+    <Name>k__BackingField: p_i_am_going
+    <Text>k__BackingField: I am going to go now
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: e7fe2b5b-b28e-47d3-9d0e-5d5f11bdd8a0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 782}
+  - <ID>k__BackingField: 43cb1970-1a38-4a10-8073-c8c818e3e1a0
+    <Name>k__BackingField: choice_buy
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: healing salve  ~  4
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    - <Text>k__BackingField: energy tincture  ~  5
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    - <Text>k__BackingField: mana potion  ~  8
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    - <Text>k__BackingField: salve of the ancients  ~  17
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    - <Text>k__BackingField: ketamine  ~  2
+      <NodeID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    - <Text>k__BackingField: that is all
+      <NodeID>k__BackingField: 3b5a7a8d-a920-4dc7-8598-6e3ce006770c
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1946, y: -178}
+  - <ID>k__BackingField: 2f8c0612-cb01-418d-bdb2-2e9f4fa2ba64
+    <Name>k__BackingField: act_scoppe_buttons
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 43cb1970-1a38-4a10-8073-c8c818e3e1a0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: other
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: 1707, y: -128}
+  - <ID>k__BackingField: 3b5a7a8d-a920-4dc7-8598-6e3ce006770c
+    <Name>k__BackingField: act_scoppe_def
+    <Text>k__BackingField: SetChoiceButtonsToPreset
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField:
+    - <callbackVariableName>k__BackingField: dialogueChoiceButtonMode
+      <callbackAction>k__BackingField: SetValue
+      <callbackValue>k__BackingField: default
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 10
+    <Position>k__BackingField: {x: -39, y: 692}
+  - <ID>k__BackingField: 6d94e010-f43f-4285-a949-c55b68706e6e
+    <Name>k__BackingField: je_how_else
+    <Text>k__BackingField: How else might I help?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 190, y: 692}
+  - <ID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    <Name>k__BackingField: je_great_choice
+    <Text>k__BackingField: Great choice, for strength
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 43cb1970-1a38-4a10-8073-c8c818e3e1a0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2569, y: -178}
+  - <ID>k__BackingField: a4f5c7e7-bbc4-4a1b-a98a-31468d9e43cc
+    <Name>k__BackingField: anim_purchase
+    <Text>k__BackingField: purchase_jentry
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 60f9f5f4-cd92-4291-838b-85c8f711a226
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 2286, y: -178}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNames>k__BackingField:
+  - choice_apothecary
+  - _entry
+  - _exit
+  - je_a_weary
+  - p_tinctures
+  - je_of_course
+  - je_you_have
+  - je_next_door
+  - je_plenty
+  - je_anyway
+  - p_who_je
+  - p_town_je
+  - je_my_name
+  - je_i_craft
+  - p_i_am_going
+  - choice_buy
+  - act_scoppe_buttons
+  - act_scoppe_def
+  - je_how_else
+  - je_great_choice
+  - anim_purchase
+  <OldGroupedNames>k__BackingField:
+    list: []

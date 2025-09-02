@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8020532447481438697e24dff2564e, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Wizard
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <Name>k__BackingField: choice_wizard
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: magic
+      <NodeID>k__BackingField: 2c56e1a3-d4f8-4620-b3da-32e18fc83473
+    - <Text>k__BackingField: where
+      <NodeID>k__BackingField: ebcb3c62-a61c-4837-8442-0843755ed6fa
+    - <Text>k__BackingField: leave
+      <NodeID>k__BackingField: 93f2b217-1483-4dd4-bc00-3fc8aaeb2d4e
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 1
+    <Position>k__BackingField: {x: 604, y: 144}
+  - <ID>k__BackingField: ca8e72d3-f50d-4904-8598-abaded8aaa0d
+    <Name>k__BackingField: _entry
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: First Node
+      <NodeID>k__BackingField: b9c8303f-e428-47dd-9b0a-3ef93738c16c
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 2
+    <Position>k__BackingField: {x: -106, y: 190}
+  - <ID>k__BackingField: e7fe2b5b-b28e-47d3-9d0e-5d5f11bdd8a0
+    <Name>k__BackingField: _exit
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 1418, y: 782}
+  - <ID>k__BackingField: b9c8303f-e428-47dd-9b0a-3ef93738c16c
+    <Name>k__BackingField: w_i_am
+    <Text>k__BackingField: ooohhoo, eeheeheee, i am the wizard up north. EEEEHEEEHE
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: dfd3fdc3-0a5f-448d-b3fa-e6118fa3a112
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 113, y: 190}
+  - <ID>k__BackingField: 2c56e1a3-d4f8-4620-b3da-32e18fc83473
+    <Name>k__BackingField: p_magic
+    <Text>k__BackingField: what makes you a wizard, can you perform some magic?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: cc01c7c7-218a-4fc9-8cc0-cf0625c01707
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: -128}
+  - <ID>k__BackingField: cc01c7c7-218a-4fc9-8cc0-cf0625c01707
+    <Name>k__BackingField: w_magic_no
+    <Text>k__BackingField: "\xA1MAGIC?!? ohoho no no no! That silly stuff is not
+      for your eyes. HOWEVER, I will happily offer you some ... forebodings, ooOoohehEhe"
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 6e31e133-27e3-44c7-b864-7ad9ab0ed1b4
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1418, y: -128}
+  - <ID>k__BackingField: 86bb8c6c-767b-4360-9a21-4941947325af
+    <Name>k__BackingField: w_its_past
+    <Text>k__BackingField: It's past the cemetary on the riiiiidge, traveler.
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: a787d013-3ed0-41e7-8c19-30f07d95a500
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2665, y: -128}
+  - <ID>k__BackingField: ebcb3c62-a61c-4837-8442-0843755ed6fa
+    <Name>k__BackingField: p_town_w
+    <Text>k__BackingField: where am I?
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 0bd285d8-47e0-453c-953d-84b06bb7f298
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 136}
+  - <ID>k__BackingField: 0bd285d8-47e0-453c-953d-84b06bb7f298
+    <Name>k__BackingField: w_quiddleston
+    <Text>k__BackingField: ooooohehehe, my little old wizarding hole on the outskirts
+      of Quiddleston. I find the town folk like when I keep to myself, hohoeeeeeo
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 2c56e1a3-d4f8-4620-b3da-32e18fc83473
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1418, y: 136}
+  - <ID>k__BackingField: 93f2b217-1483-4dd4-bc00-3fc8aaeb2d4e
+    <Name>k__BackingField: p_i_am_going
+    <Text>k__BackingField: I am going to go now
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: e7fe2b5b-b28e-47d3-9d0e-5d5f11bdd8a0
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1099, y: 782}
+  - <ID>k__BackingField: 6e31e133-27e3-44c7-b864-7ad9ab0ed1b4
+    <Name>k__BackingField: p_wait_if
+    <Text>k__BackingField: 'wait, have you ever actually performed magic ... '
+    <SpeechTime>k__BackingField: 3
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 08166d6f-24e2-47d7-997e-f5aaeb5f4e31
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1726, y: -128}
+  - <ID>k__BackingField: 08166d6f-24e2-47d7-997e-f5aaeb5f4e31
+    <Name>k__BackingField: w_heed_this
+    <Text>k__BackingField: 'ooHOOO, eeeeeeeee. Heed this song of warning now, traveler. '
+    <SpeechTime>k__BackingField: 3
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 15af49e4-3f25-49e0-ad8a-75ffa28f2c68
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2040, y: -128}
+  - <ID>k__BackingField: 15af49e4-3f25-49e0-ad8a-75ffa28f2c68
+    <Name>k__BackingField: w_go_fight
+    <Text>k__BackingField: 'Go fight the troll that''s on the briiiidge, traveler. '
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 86bb8c6c-767b-4360-9a21-4941947325af
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2351, y: -128}
+  - <ID>k__BackingField: a787d013-3ed0-41e7-8c19-30f07d95a500
+    <Name>k__BackingField: p_what_the_futh
+    <Text>k__BackingField: what the futh ...
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: d83ef1da-331c-4c5b-a87b-50510cfefa41
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2979, y: -128}
+  - <ID>k__BackingField: 37573f29-36c9-461b-82dc-fc3e0dab1b1a
+    <Name>k__BackingField: anim_apparate
+    <Text>k__BackingField: apparate
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 1ec60bfc-e782-4702-9084-42c14fad75e8
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 9
+    <Position>k__BackingField: {x: 3577.5, y: -128}
+  - <ID>k__BackingField: 39994eb0-f39b-4071-bb77-9c7a097424b9
+    <Name>k__BackingField: _exit_apparate
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField: []
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 3
+    <Position>k__BackingField: {x: 4363, y: -128}
+  - <ID>k__BackingField: 3742d145-47ec-4928-a8a4-c377a661ef4f
+    <Name>k__BackingField: p_huh
+    <Text>k__BackingField: huh ...
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 1
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 39994eb0-f39b-4071-bb77-9c7a097424b9
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4087, y: -128}
+  - <ID>k__BackingField: 1ec60bfc-e782-4702-9084-42c14fad75e8
+    <Name>k__BackingField: apparate_delay
+    <Text>k__BackingField: 
+    <SpeechTime>k__BackingField: 0
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 3.0
+      <NodeID>k__BackingField: 3742d145-47ec-4928-a8a4-c377a661ef4f
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 7
+    <Position>k__BackingField: {x: 3836, y: -128}
+  - <ID>k__BackingField: d83ef1da-331c-4c5b-a87b-50510cfefa41
+    <Name>k__BackingField: w_now_tread
+    <Text>k__BackingField: Now tread South, traveler! eeeeheheoeoueo. All of Quiddleston
+      is counting on youuuuuu-ehehee!
+    <SpeechTime>k__BackingField: 3
+    <IsPlayer>k__BackingField: 0
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Node
+      <NodeID>k__BackingField: 37573f29-36c9-461b-82dc-fc3e0dab1b1a
+    <IfStatements>k__BackingField: []
+    <Callbacks>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <NodeType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3301, y: -128}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNames>k__BackingField:
+  - choice_wizard
+  - _entry
+  - _exit
+  - w_i_am
+  - p_magic
+  - w_magic_no
+  - w_its_past
+  - p_town_w
+  - w_quiddleston
+  - p_i_am_going
+  - p_wait_if
+  - w_heed_this
+  - w_go_fight
+  - p_what_the_futh
+  - anim_apparate
+  - _exit_apparate
+  - p_huh
+  - apparate_delay
+  - w_now_tread
+  <OldGroupedNames>k__BackingField:
+    list: []

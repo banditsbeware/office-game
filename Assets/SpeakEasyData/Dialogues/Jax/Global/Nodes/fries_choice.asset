@@ -16,13 +16,17 @@ MonoBehaviour:
   <IsPlayer>k__BackingField: 0
   <DialogueText>k__BackingField: 
   <Choices>k__BackingField:
-  - <Text>k__BackingField: smol
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 697e2688c0b3593459a3272a69d16b89, type: 2}
   - <Text>k__BackingField: small
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: c3808941abd3cb541996f69f7738f062, type: 2}
   - <Text>k__BackingField: loaded
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 58899e94f16074645b4d1a9e4be76ec1, type: 2}
-  <IfStatements>k__BackingField: []
+  <IfStatements>k__BackingField:
+  - <Text>k__BackingField: smol
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 697e2688c0b3593459a3272a69d16b89, type: 2}
+    <contextVariableName>k__BackingField: correctedSmolFry
+    <comparisonSign>k__BackingField: ==
+    <comparisonValue>k__BackingField: true
+    <isMetaVariableComparison>k__BackingField: 0
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 1
   <SpeechTime>k__BackingField: 0

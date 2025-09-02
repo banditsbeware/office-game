@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: je_of_course
   <IsPlayer>k__BackingField: 0
-  <DialogueText>k__BackingField: of course, peruse as ling as you like
+  <DialogueText>k__BackingField: of course, please peruse my wares
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5553e3cb0490a492786f78a4f61e7790, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 90d2eef9c3116d749afc97df92762bd0, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.6323218
+  <SpeechTime>k__BackingField: 2.5435352

@@ -92,7 +92,7 @@ namespace SpeakEasy
 
             gridObject = transform.Find("wordGrid").gameObject;
 
-            emptySprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Sprites/empty.png");
+            emptySprite = Resources.Load<Sprite>("empty");
         }
 
         //sets all the default sprites based on what is set up in the editor, starts the graph at _entry
@@ -154,7 +154,7 @@ namespace SpeakEasy
                     break;
 
                 case Exit:
-                    UIManager.ExitCutscene();
+                    UIManager.ExitWindow();
                     transform.parent.parent.gameObject.SetActive(false);
                     break;
 

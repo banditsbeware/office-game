@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class characterSwitcher : MonoBehaviour
 {
+    public string metaValueToTest;
     public GameObject characterA;
     public GameObject characterB;
     public GameObject characterASprite;
@@ -17,7 +18,7 @@ public class characterSwitcher : MonoBehaviour
     {
         interactObject = gameObject.GetComponent<interact_dialogue>();
 
-        if (Meta.Daily["afterWork"])
+        if (Meta.Daily[metaValueToTest])
         {
             activeCharacter = characterA;
             characterBSprite.SetActive(false);

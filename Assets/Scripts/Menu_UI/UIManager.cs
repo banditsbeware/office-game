@@ -24,8 +24,9 @@ public static class UIManager
 
 
 	// reloads current scene index (in Build Management)
-	public static void Reload(){
-	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	public static void Reload()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
 	public static void pauseControl()
@@ -44,15 +45,17 @@ public static class UIManager
 				bufferState = "cutscene";
 				gameState = "pause";
 			break;
-			case "pause": //game will revery to whatever state it was in when it was paused
+			case "pause": //game will revert to whatever state it was in when it was paused
 				Time.timeScale = 1;
 				hide(pauseObjects);
 				gameState = bufferState;
 				bufferState = null;
+
 			break;
-			case "window": //esc will only exit you from a minigame, not pause.
+			case "window": //esc will only exit you from a minigame, not pause. reconsider
 				hide(minigames);
 				GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;
+				ExitWindow();
 				gameState = "play";
 			break;
 		}
@@ -66,9 +69,10 @@ public static class UIManager
 	}
 
 
-	public static void ExitCutscene()
+	public static void ExitWindow()
 	{
 		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;
+		TextWriter.ClearAllWriters_Static();
 		gameState = "play";
 	}
 
@@ -77,12 +81,6 @@ public static class UIManager
 		currentPlayerConstraints = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints;
 		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
 		gameState = "window";
-	}
-
-	public static void ExitMinigame()
-	{
-		GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().constraints = currentPlayerConstraints;
-		gameState = "play";
 	}
 	
 	//  shows objects with tag

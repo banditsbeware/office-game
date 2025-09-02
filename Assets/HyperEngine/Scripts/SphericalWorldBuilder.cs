@@ -19,11 +19,15 @@ public class SphericalWorldBuilder : WorldBuilder
     {
         string path = pathToTiles + "/tile_" + coord;
         GameObject tile = Resources.Load<GameObject>(path);
+
+      
         
         if (tile == null)
         {  
+            Debug.Log("Used Debug!");
             return Instantiate(debug_tile);
         }
         return Instantiate(tile);
+
     }
 }

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NodeName>k__BackingField: p_who_je
   <IsPlayer>k__BackingField: 1
-  <DialogueText>k__BackingField: Excuse me, but what is it you do?
+  <DialogueText>k__BackingField: who are you?
   <Choices>k__BackingField:
   - <Text>k__BackingField: Next Node
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7ad733d0e484845bda096efecd672456, type: 2}
   <IfStatements>k__BackingField: []
   <Callbacks>k__BackingField: []
   <NodeType>k__BackingField: 0
-  <SpeechTime>k__BackingField: 2.15223
+  <SpeechTime>k__BackingField: 1.4495449
