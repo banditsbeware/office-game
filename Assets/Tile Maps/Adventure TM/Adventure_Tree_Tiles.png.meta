@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92f2d7db6a388a246b02efae1b92e328
+guid: 2cbf1daf2adcd6848a5f0028cd9ee834
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,9 +48,9 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 21
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -136,127 +136,124 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: text_bubbles_for_slicing_0
+      name: Adventure_Tree_Tiles_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 753
-        width: 59
-        height: 43
+        x: 0
+        y: 30
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 14, z: 20, w: 6}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -5, y: 5}
+        - {x: -5, y: 0}
+        - {x: 5, y: 0}
+        - {x: 5, y: 5}
       tessellationDetail: 0
       bones: []
-      spriteID: e2f4c141a2f38824abd28e362a032a2a
-      internalID: -1073260068
+      spriteID: ba871064ed5b5e44eba9ef4407d446fc
+      internalID: -1697462569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: text_bubbles_for_slicing_1
+      name: Adventure_Tree_Tiles_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 703
-        width: 72
-        height: 30
+        x: 10
+        y: 30
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 8, z: 18, w: 6}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -5, y: 5}
+        - {x: -5, y: 0}
+        - {x: 5, y: 0}
+        - {x: 5, y: 5}
       tessellationDetail: 0
       bones: []
-      spriteID: be40db75405997448b49c4e088fa0ab1
-      internalID: -236630173
+      spriteID: 5c74d97603632fd4fa46b25ebdaf4a97
+      internalID: -720035983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: text_bubbles_for_slicing_2
+      name: Adventure_Tree_Tiles_2
       rect:
         serializedVersion: 2
-        x: 13
-        y: 600
-        width: 75
-        height: 77
+        x: 20
+        y: 30
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 8, y: 7, z: 26, w: 13}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 0, y: 5}
+        - {x: 0, y: 0}
+        - {x: 5, y: 0}
+        - {x: 5, y: 5}
       tessellationDetail: 0
       bones: []
-      spriteID: 7fddb6eabadbe6440896011d8bae08e3
-      internalID: -1495145832
+      spriteID: 2b91367843cdebd47b4459fa94b252e2
+      internalID: -1943819628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: text_bubbles_for_slicing_3
+      name: Adventure_Tree_Tiles_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 536
-        width: 59
-        height: 43
+        x: 30
+        y: 30
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 5, y: 16, z: 6, w: 6}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -5, y: 5}
+        - {x: -5, y: -5}
+        - {x: 0, y: -5}
+        - {x: 0, y: 0}
+        - {x: 5, y: 0}
+        - {x: 5, y: 5}
       tessellationDetail: 0
       bones: []
-      spriteID: 378b088e4c14cdd45923cd57571e95de
-      internalID: -1557236081
+      spriteID: c388905584fefef429feb27fc0fc7f4e
+      internalID: -753059934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: text_bubbles_for_slicing_4
+      name: Adventure_Tree_Tiles_4
       rect:
         serializedVersion: 2
-        x: 5
-        y: 486
-        width: 72
-        height: 30
+        x: 0
+        y: 20
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 17, y: 8, z: 5, w: 6}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97ef6019b674b9d4e80db76b88cac20a
-      internalID: -829967088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: text_bubbles_for_slicing_5
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 390
-        width: 75
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 26, y: 9, z: 7, w: 10}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5ed22fe7c58cff4fb53c0b21523116a
-      internalID: 1734533595
+      spriteID: d7c1204f81d23f648bc9ec61d54da412
+      internalID: 1495503532
       vertices: []
       indices: 
       edges: []
@@ -272,12 +269,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      text_bubbles_for_slicing_0: -1073260068
-      text_bubbles_for_slicing_1: -236630173
-      text_bubbles_for_slicing_2: -1495145832
-      text_bubbles_for_slicing_3: -1557236081
-      text_bubbles_for_slicing_4: -829967088
-      text_bubbles_for_slicing_5: 1734533595
+      Adventure_Tree_Tiles_0: -1697462569
+      Adventure_Tree_Tiles_1: -720035983
+      Adventure_Tree_Tiles_2: -1943819628
+      Adventure_Tree_Tiles_3: -753059934
+      Adventure_Tree_Tiles_4: 1495503532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
