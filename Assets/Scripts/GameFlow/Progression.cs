@@ -2,7 +2,7 @@ using SpeakEasy;
 using UnityEngine;
 
 //game progress script
-public static class ProgressChecks
+public static class Progression
 {
     public static bool LeaveWorkCheck(string sceneName)
     {

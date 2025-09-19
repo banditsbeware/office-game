@@ -10,11 +10,4 @@ public class TaskManagerInstance : MonoBehaviour
 		TaskManager.instance = this;
         TaskManager.checklist = Meta.Daily["todaysTasks"];
     }
-    void Update()
-    {
-        
-    }
-
-    //TaskComplete function - each task calls once finished / started
-
 }

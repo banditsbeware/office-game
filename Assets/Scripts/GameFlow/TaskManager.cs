@@ -15,6 +15,8 @@ public static class TaskManager
         {
             checklist.Remove(task);
             ChecklistCheck();
+
+            // add some ui indicator of task completion (maybe at work desk, or on phone popup)
         }
     }
 
@@ -38,6 +40,7 @@ public enum TaskType
     Print,
     Dean,
     Marisol,
-    Sacha
+    Sacha,
+    Bathroom
 
 }
